@@ -217,8 +217,8 @@
    "year": 2022,
    "url": "https://www.utupub.fi/bitstream/10024/154009/1/Annales%20D%201636%20Rautakorpi%20DISS.pdf",
    "accessed": "2026-11-14",
-   "supports": "Time from last RT fraction to death was longer for patients living >100 km from Turku University Hospital",
-   "quote": "Patients living >100 km from the hospital were treated least frequently near death",
+   "supports": "Turku: patients living >100 km from the hospital were treated least often near death (median 110 days from last RT to death vs 80-83 days for others)",
+   "quote": "Patients living >100 km from the hospital were treated least frequently near death and had a median of 110 days to death",
    "note": "PDF page 47 (printed page 45). Continues: 'and had a median of 110 days to death from the last treatment. For other groups it was 80–83 days.' English abstract (PDF page 6): 'longer for patients living >100km from TUH'.",
    "kind": "report"
   },
@@ -269,7 +269,7 @@
    "year": 2026,
    "url": "https://files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpanon_tiekartta_2026_2031.pdf",
    "accessed": "2026-11-14",
-   "supports": "Palliative RT use is lower for patients living >100 km from the nearest RT unit",
+   "supports": "Roadmap states palliative RT use is lower for patients living >100 km from the nearest RT unit (cites Norwegian data, Åsli 2018)",
    "quote": "Palliatiivisen sädehoidon käyttö on tutkitusti vähäisempää potilailla, jotka asuvat yli 100 km:n päässä lähimmästä sädehoitoyksiköstä",
    "note": "EN: Use of palliative radiotherapy is demonstrably lower among patients living more than 100 km from the nearest radiotherapy unit. PDF page 13 = printed page 13. CAVEAT: the roadmap's footnote 8 cites a NORWEGIAN study (Åsli et al., Acta Oncol 2018;57(9):1250-8; distance band 100-499 km), not Finnish data.",
    "kind": "report"
@@ -282,7 +282,7 @@
    "year": 2026,
    "url": "https://files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpanon_tiekartta_2026_2031.pdf",
    "accessed": "2026-11-14",
-   "supports": "Outcomes are worse already beyond 50 km from the treating unit",
+   "supports": "Roadmap states outcomes are worse beyond 50 km from the treating unit (cites one Ostrobothnia lung cancer study, Paakkola 2024)",
    "quote": "hoitotulokset ovat heikompia jo silloin, jos potilas asuu yli 50 km:n päässä hoitoyksiköstä",
    "note": "EN: treatment outcomes are worse already when the patient lives more than 50 km from the treatment unit. PDF page 13 = printed page 13. Footnote 9 cites Paakkola et al., Acta Oncol 2024;63:146-153 (NSCLC, Vaasa).",
    "kind": "report"
@@ -323,7 +323,7 @@
    "accessed": "2026-11-14",
    "supports": "Goal 3 ('Varmistetaan yhdenvertainen ja vaikuttava syövänhoito') monitoring indicators incl. treatment within target times",
    "quote": "Potilaat pääsevät hoitoon tavoiteaikojen puitteissa",
-   "note": "EN: Patients get treatment within target times. Strategy Figure 1 (Kuva 1, monitoring indicators), PDF page 5,33 = printed page 5, under Goal 3 'Ensure equitable and effective cancer care'. Footnote: THL (Ohjaus 21/2016). Full list in data/raw/sources/goal3_indicators.json. Publisher not printed on the extracted pages; treat as the national cancer strategy (PDF created Dec 2025).",
+   "note": "EN: Patients get treatment within target times. Strategy Figure 1 (Kuva 1, monitoring indicators), PDF pages 5 and 33 = printed page 5, under Goal 3 'Ensure equitable and effective cancer care'. Footnote: THL (Ohjaus 21/2016). Full list in data/raw/sources/goal3_indicators.json. Publisher not printed on the extracted pages; treat as the national cancer strategy (PDF created Dec 2025).",
    "kind": "report"
   },
   {
@@ -345,7 +345,7 @@
    "title": "Geographical distance and reduced access to palliative radiotherapy: systematic review and meta-analysis",
    "publisher": "BMJ Supportive & Palliative Care",
    "year": 2022,
-   "url": "https://hull-repository.worktribe.com/output/3916737",
+   "url": "https://doi.org/10.1136/bmjspcare-2021-003356",
    "accessed": "2026-11-14",
    "supports": "Living ≥50 km from an RT centre: 16% lower odds of palliative RT (OR 0.84)",
    "quote": "living ≥50 km vs <50 km from the radiotherapy centre was associated with a reduced likelihood of receiving PRT (OR 0.84 (95%CI 0.80, 0.88))",
@@ -427,7 +427,7 @@
    "accessed": "2026-11-14",
    "supports": "New breast cancer cases in Finland 2024: 5,232 women (5,262 both sexes)",
    "quote": "Female;2024;5232;184,38;169,36;93,61",
-   "note": "CSV downloaded from the Registry's Shiny app (theme 'New cancer cases', sex Female / Both together, area Whole country, site Breast C50, by year; values: cases; crude rate; age-std rate Finland 2014; age-std rate world). Both sexes 2024: 5262 (row 'Both together;2024;5262;...'). The spec's ~5,262 is BOTH SEXES; women only = 5,232. 'Whole country' includes Åland (25 female cases in 2024) -> mainland women 5,207. Final statistics cover up to 2024; preliminary 2025 counts exist but were not used.",
+   "note": "CSV downloaded from the Registry's Shiny app (theme 'New cancer cases', sex Female / Both together, area Whole country, site Breast C50, by year; values: cases; crude rate; age-std rate Finland 2014; age-std rate world). Both sexes 2024: 5262 (row 'Both together;2024;5262;...'). The spec's ~5,262 is BOTH SEXES; women only = 5,232. 'Whole country' includes Åland (25 female cases in 2024) -> mainland women 5,207. Final statistics cover up to 2024; preliminary 2025 counts exist but were not used. Registry areas sum to 5,229 (3 cases have no area); mainland total excluding Åland is 5,204.",
    "kind": "data"
   },
   {
@@ -440,7 +440,7 @@
    "accessed": "2026-11-14",
    "supports": "County (hyvinvointialue) counts of new female breast cancers in 2024",
    "quote": "Lapland wellbeing services county;135;153,39;126,25;67,83",
-   "note": "Columns: cases; crude rate/100k; age-std (Finland 2014); age-std (world). Sum of 21 counties + City of Helsinki + Åland = 5232. Full table in data/raw/breast_cases.json.",
+   "note": "Columns: cases; crude rate/100k; age-std (Finland 2014); age-std (world). Sum of 21 counties + City of Helsinki + Åland = 5232. Full table in data/raw/breast_cases.json. Registry areas sum to 5,229 (3 cases have no area); mainland total excluding Åland is 5,204.",
    "kind": "data"
   },
   {
@@ -724,7 +724,7 @@
    "year": 2025,
    "url": "https://pubmed.ncbi.nlm.nih.gov/40967059/",
    "accessed": "2026-11-14",
-   "supports": "Finland had 13 radiotherapy units (incl. private Docrates, per author affiliations) in 2016-2020",
+   "supports": "A national study (2016-2020 data) reports 13 radiotherapy units in Finland, consistent with 12 public units plus the private Docrates clinic",
    "quote": "Data was gathered on all patients treated with CRT from every radiotherapy unit, in Finland, for a total of 13 radiotherapy units.",
    "note": "",
    "kind": "article"
@@ -792,6 +792,19 @@
    "supports": "Goal 3.1 indicator: national targets and key effectiveness monitoring indicators defined for agreed cancers",
    "quote": "Kansalliset ja yhtenäiset tavoitteet ja keskeisimmät vaikuttavuuden seurantamittarit määritetty sovittuihin syöpiin.",
    "note": "Strategy PDF page 33 (printed 33). EN: National, uniform targets and key effectiveness monitoring indicators defined for agreed cancers.",
+   "kind": "report"
+  },
+  {
+   "id": "S62",
+   "key": "rautakorpi_thesis_8gy",
+   "title": "Real-life perspectives on the end-of-life care of cancer patients (doctoral thesis, Annales D 1636)",
+   "publisher": "University of Turku",
+   "year": 2022,
+   "url": "https://www.utupub.fi/bitstream/10024/154009/1/Annales%20D%201636%20Rautakorpi%20DISS.pdf",
+   "accessed": "2026-11-14",
+   "supports": "ASCO guideline (Lutz 2011), as cited: single-fraction 8 Gy is as effective as 20 Gy in 5 fractions for painful bone metastases",
+   "quote": "ASCO states in a guideline for treating bone metastases that single-fraction 8 Gy is as effective as 20 Gy in 5 fractions",
+   "note": "Rautakorpi thesis, discussion section (cites Lutz et al. 2011 ASCO/ASTRO guideline).",
    "kind": "report"
   }
  ]

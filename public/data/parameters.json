@@ -106,9 +106,9 @@
    "unit": "sessions",
    "kind": "assumption",
    "source_ids": [
-    "rich_2018_bone_pain"
+    "rautakorpi_thesis_8gy"
    ],
-   "rationale": "Common multi-fraction schedules are 5 x 4 Gy and 10 x 3 Gy; 5 is the conservative choice."
+   "rationale": "Common multi-fraction comparators include 20 Gy in 5 fractions and 30 Gy in 10 fractions; 5 is the conservative choice."
   },
   {
    "id": "bone_fractions_single",
@@ -120,6 +120,7 @@
    "unit": "sessions",
    "kind": "sourced",
    "source_ids": [
+    "rautakorpi_thesis_8gy",
     "rich_2018_bone_pain",
     "chow_2012_bone"
    ],
@@ -161,11 +162,11 @@
    "max": 1,
    "step": 0.01,
    "unit": "share",
-   "kind": "sourced",
+   "kind": "assumption",
    "source_ids": [
     "rautakorpi_2017"
    ],
-   "rationale": "Turku University Hospital 2005-2013: 7% of all radiotherapy courses in the last year of life were single-fraction. Single centre, old and not bone-specific, so treat it as indicative."
+   "rationale": "The current mix is not public. Anchored on Turku University Hospital 2005-2013, where 7% of all radiotherapy courses in the last year of life were single-fraction: single centre, old and not bone-specific."
   },
   {
    "id": "kela_car_eur_per_km",
@@ -179,7 +180,7 @@
    "source_ids": [
     "kela_car_per_km"
    ],
-   "rationale": "Kela's own-car rate. Used to value the trip; Kela pays it above the 25 € copayment, and taxis cost more, so this is a lower bound."
+   "rationale": "Kela's own-car rate, used to value the trip cost. It is a lower bound on the cost of travel (taxis cost more); what Kela actually reimburses is less, because the patient pays up to 25 € per one-way trip, capped at 300 € a year."
   },
   {
    "id": "kela_overnight_eur",

@@ -48,6 +48,10 @@ def main():
                 continue
             entries.append(e)
     entries += DERIVED
+    # Later additions go last so earlier S-ids (cited in memos) stay stable.
+    addenda = FRAG / "addenda.json"
+    if addenda.exists():
+        entries += [e for e in json.loads(addenda.read_text()) if e.get("verified") is not False]
     keys = set()
     out = []
     for i, e in enumerate(entries, 1):

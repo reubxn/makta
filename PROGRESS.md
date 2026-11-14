@@ -18,40 +18,41 @@ Legend: [x] done · [~] in progress · [ ] not started · [!] blocked / changed 
 - [x] 05 cases.json (5,232 women 2024; 5,204 mainland; age-specific incidence, scaled to county counts) (national breast cases allocated by age-weighted female population)
 - [x] 06 sources.json (61 sources; 1 unverifiable dropped) (all section 4 facts + verified section 5 facts, quotes, roadmap page numbers)
 - [x] 07 parameters.json + facts.json (all section 8 parameters)
-- [~] Phase 1 reviewer sub-agent + fixes
+- [x] Phase 1 reviewer sub-agent + fixes (bone mix → assumption, 8 Gy sourced, wording, real-route tests)
 
 ## Phase 1b: model (section 8)
 - [x] src/model pure functions (commuter/stayer, retreatment, Kela lower bound, aggregates)
 - [x] Vitest: Utsjoki stayer, Helsinki-area commuter, threshold boundary, no NaN, national = sum of counties
 
 ## Phase 2: app (section 9)
-- [ ] Top bar, tabs, footer
-- [ ] Left panel: indication switch, lever toggles, assumptions drawer with sliders + reset
-- [ ] Map: GeoJsonLayer, county borders, ColumnLayer animated, metric switch, unit dots, pitch + flatten, click/hover
-- [ ] Right card: nearest unit, before → after
-- [ ] Bottom strip: national totals with tweening, Goal 3 chips, bone note
-- [ ] Provenance badges + popovers
-- [ ] Sources & limitations tab
-- [ ] Demo keys 0-7, ?
-- [ ] Playwright demo spec passes; screenshots reviewed against section 14
+- [x] Top bar, tabs, footer
+- [x] Left panel: indication switch, lever toggles, assumptions drawer with sliders + reset
+- [x] Map: GeoJsonLayer, county borders, ColumnLayer animated, metric switch, unit dots, pitch + flatten, click/hover
+- [x] Right card: nearest unit, before → after
+- [x] Bottom strip: national totals with tweening, Goal 3 chips, bone note
+- [x] Provenance badges + popovers
+- [x] Sources & limitations tab
+- [x] Demo keys 0-7, ?
+- [x] Playwright demo spec passes; screenshots reviewed against section 14
+- [x] Design pass: 3 critic rounds, screenshots/design/round0-before → round3-after (see screenshots/design/README.md)
 - [ ] Phase 2 reviewer + fixes
 
 ## Phase 3: AI reads unit schedules (section 10)
-- [ ] Page snapshots in data/raw/pages/
-- [ ] scripts/extract_schedules.py (llm-api or agent-extracted fallback), substring check
-- [ ] public/data/unit_statements.json
-- [ ] What units say tab; premise check logged
+- [x] Page snapshots in data/raw/pages/ (6 pages; most units publish none reachable)
+- [x] scripts/extract_schedules.py (agent-extracted fallback used: no API key in container), substring check
+- [x] public/data/unit_statements.json
+- [x] What units say tab; premise check: 0 units state 5 as standard → no reframe
 - [ ] Phase 3 reviewer + fixes
 
 ## Phase 4: county memos (section 11)
-- [ ] scripts/generate_memos.py with number validator
-- [ ] public/data/memos.json (every county)
-- [ ] County memo tab with typing effect, source chips, traced-numbers badge
+- [x] scripts/generate_memos.py with number validator
+- [x] public/data/memos.json (22 counties, agent-written, all numbers traced)
+- [x] County memo tab with typing effect, source chips, traced-numbers badge
 - [ ] Phase 4 reviewer + fixes
 
 ## Phase 5: polish and checks (section 12)
 - [ ] Vitest passes
-- [ ] Data check script
+- [x] Data check script
 - [ ] Playwright demo 1-7 screenshots reviewed
 - [ ] Build + preview offline, no external requests
 - [ ] Load < 2 s

@@ -18,9 +18,10 @@
    "source_ids": [
     "rich_2018_bone_pain",
     "rich_2018_bone_retreat",
-    "chow_2012_bone"
+    "chow_2012_bone",
+    "rautakorpi_thesis_8gy"
    ],
-   "text": "Randomised trials: a single 8 Gy session relieves pain as well as a multi-session course (61% vs 62% respond), at the cost of more retreatment (20% vs 8%)."
+   "text": "A systematic review of 29 randomised trials in uncomplicated painful bone metastases: a single session relieves pain as well as a multi-session course (61% vs 62% respond), at the cost of more retreatment (20% vs 8%). Guidelines name 8 Gy as the single dose."
   },
   {
    "id": "evidence_breast",
@@ -29,10 +30,31 @@
     "fastforward_2020",
     "fastforward_2020_n",
     "fastforward_10y_2026",
+    "healthday_ff10",
     "rcr_whole_breast",
     "rcr_nodal"
    ],
-   "text": "FAST-Forward (4,096 patients): 5 sessions in one week is at least as good as 15 sessions over three weeks; 10-year breast recurrence 2.1% vs 3.6%. Applies to whole breast or chest wall without nodal radiotherapy."
+   "text": "FAST-Forward (4,096 patients): 5 sessions in one week is non-inferior to 15 sessions over three weeks, with a similar level of cancer control at 10 years (breast recurrence 2.1% vs 3.6%). Applies to whole breast or chest wall without nodal radiotherapy."
+  },
+  {
+   "id": "evidence_bone_short",
+   "kind": "sourced",
+   "source_ids": [
+    "rich_2018_bone_pain",
+    "rich_2018_bone_retreat",
+    "rautakorpi_thesis_8gy"
+   ],
+   "text": "A single 8 Gy session relieves pain as well as a multi-session course, with more retreatment."
+  },
+  {
+   "id": "evidence_breast_short",
+   "kind": "sourced",
+   "source_ids": [
+    "fastforward_2020",
+    "fastforward_10y_2026",
+    "rcr_whole_breast"
+   ],
+   "text": "5 sessions in one week is non-inferior to 15 sessions over three weeks for eligible patients."
   },
   {
    "id": "turku_baseline",
@@ -100,6 +122,15 @@
    ],
    "text": "89 municipalities, home to 637,661 people, are more than 100 km by road from their nearest unit.",
    "note": "Road distance from each municipality's centre point; population 31 Dec 2025."
+  },
+  {
+   "id": "roadmap_far",
+   "kind": "sourced",
+   "source_ids": [
+    "roadmap_400_700km"
+   ],
+   "text": "For part of the population the nearest central hospital is more than 400 km away and the nearest university hospital more than 700 km.",
+   "note": "Roadmap p. 13."
   },
   {
    "id": "breast_cases",

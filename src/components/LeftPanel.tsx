@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import { ChevronDown, ChevronUp, RotateCcw } from 'lucide-react';
 import type { UiState } from '../App';
 import { useData } from '../context';
@@ -43,6 +44,11 @@ export function ParamSlider({ p, value, onChange, highlight }: { p: Parameter; v
 
 export function LeftPanel({ s, update }: { s: UiState; update: (p: Partial<UiState>) => void }) {
   const { data } = useData();
+  const [more, setMore] = useState(false);
+  const drawerRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (s.drawerOpen) drawerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, [s.drawerOpen]);
   const setParam = (id: keyof Params, v: number) => update({ params: { ...s.params, [id]: v } });
   const byId = Object.fromEntries(data.parameters.map((p) => [p.id, p]));
   const dial: keyof Params = s.indication === 'breast' ? 'breast_share_already_short' : 'bone_share_single_now';
@@ -83,15 +89,26 @@ export function LeftPanel({ s, update }: { s: UiState; update: (p: Partial<UiSta
         </button>
       </div>
 
-      <div className="evidence">
-        {s.indication === 'bone' ? <FactText id="evidence_bone" /> : <FactText id="evidence_breast" />}
+      <div>
+        <div className="evidence">
+          {more ? (
+            s.indication === 'bone' ? <FactText id="evidence_bone" /> : <FactText id="evidence_breast" />
+          ) : s.indication === 'bone' ? (
+            <FactText id="evidence_bone_short" />
+          ) : (
+            <FactText id="evidence_breast_short" />
+          )}
+        </div>
+        <button className="more-link" onClick={() => setMore(!more)}>
+          {more ? 'Less' : 'More evidence'}
+        </button>
       </div>
 
       {byId[dial] && (
         <ParamSlider p={byId[dial]} value={s.params[dial]} onChange={(v) => setParam(dial, v)} highlight />
       )}
 
-      <div>
+      <div ref={drawerRef}>
         <button className="drawer-toggle" onClick={() => update({ drawerOpen: !s.drawerOpen })} aria-expanded={s.drawerOpen}>
           Assumptions {s.drawerOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
         </button>

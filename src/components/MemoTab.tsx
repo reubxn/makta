@@ -33,7 +33,7 @@ export function MemoTab({ county, run, onCounty, onRun }: { county: string; run:
   );
 
   const body = memo ? renderMemo(memo.text.slice(0, shown), (id) => setOpenSrc(id)) : null;
-  const src = openSrc ? data.sourceById[openSrc] : null;
+  const srcs = openSrc ? openSrc.split(',').map((id) => data.sourceById[id]).filter(Boolean) : [];
 
   return (
     <div className="page">
@@ -64,8 +64,8 @@ export function MemoTab({ county, run, onCounty, onRun }: { county: string; run:
                 Written {memos.method === 'llm-api' ? `by ${memos.model ?? 'Claude'} via the API` : 'by an AI agent in-session'} on {memos.generated}. Proposals for clinical teams to evaluate.
               </div>
             )}
-            {src && (
-              <div className="src" style={{ borderTop: '1px solid var(--line)', paddingTop: 10, fontSize: 13.5 }}>
+            {srcs.map((src) => (
+              <div key={src.id} className="src" style={{ borderTop: '1px solid var(--line)', paddingTop: 10, fontSize: 14 }}>
                 <b>[{src.id}]</b> {src.title}
                 <div className="small-note">
                   {src.publisher}
@@ -76,7 +76,7 @@ export function MemoTab({ county, run, onCounty, onRun }: { county: string; run:
                   Open source
                 </a>
               </div>
-            )}
+            ))}
           </div>
           <article className="panel memo-paper" data-testid="memo">
             {!memo && <p className="small-note">No memo has been generated for this county yet.</p>}
@@ -109,13 +109,13 @@ function renderMemo(text: string, onSrc: (id: string) => void): ReactNode {
     let m: RegExpExecArray | null;
     while ((m = re.exec(para))) {
       parts.push(para.slice(last, m.index));
-      for (const id of m[1].split(/\s*,\s*/)) {
-        parts.push(
-          <button key={`${pi}-${m.index}-${id}`} className="src-chip" onClick={() => onSrc(id)}>
-            {id}
-          </button>,
-        );
-      }
+      const ids = m[1].split(/\s*,\s*/);
+      parts.push(
+        <button key={`${pi}-${m.index}`} className="src-group" onClick={() => onSrc(ids.join(','))} title={ids.join(', ')}>
+          {ids[0]}
+          {ids.length > 1 ? ` +${ids.length - 1}` : ''}
+        </button>,
+      );
       last = m.index + m[0].length;
     }
     parts.push(para.slice(last));

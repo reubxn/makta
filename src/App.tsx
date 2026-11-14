@@ -173,7 +173,7 @@ function Matka({ data }: { data: AppData }) {
             />
             <MunicipalityCard code={s.selected} indication={s.indication} lever={lever} params={s.params} />
           </div>
-          <TotalsStrip params={s.params} leverOn={s.levers.breast} indication={s.indication} highlight={s.highlightTotals} />
+          <TotalsStrip params={s.params} leverOn={s.levers.breast} boneLever={s.levers.bone} indication={s.indication} highlight={s.highlightTotals} />
         </div>
       )}
       {view === 'units' && <UnitsTab />}

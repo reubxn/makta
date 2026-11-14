@@ -1,0 +1,695 @@
+{
+ "county_code": "14",
+ "county_name_fi": "Pohjois-Karjalan hyvinvointialue",
+ "county_name_en": "North Karelia wellbeing services county",
+ "n_municipalities": 13,
+ "n_municipalities_beyond_commute_threshold": 2,
+ "breast_lever_yearly_removed_for_county": {
+  "affected_patients_per_year": 50.1,
+  "nights_away_removed": 71,
+  "round_trips_removed": 444,
+  "hours_on_road_removed": 413,
+  "km_removed": 25886,
+  "kela_lower_bound_eur_removed": 9981,
+  "machine_sessions_freed": 501,
+  "kind": "calculated",
+  "note": "Breast only; bone yearly counts are not public. Kela cost is a lower bound (own-car rate; taxis cost more)."
+ },
+ "hardest_hit_municipalities": [
+  {
+   "municipality": "Nurmes",
+   "nearest_unit_town": "Kuopio",
+   "road_km": 130,
+   "drive_hours": 1.8,
+   "breast_15_sessions": {
+    "nights_away": 16,
+    "round_trips": 4,
+    "hours_on_road": 15
+   },
+   "breast_5_sessions": {
+    "nights_away": 6,
+    "round_trips": 2,
+    "hours_on_road": 7
+   },
+   "bone_multi_fraction_expected": {
+    "nights_away": 6.2,
+    "round_trips": 2.2
+   },
+   "bone_single_8gy_expected": {
+    "nights_away": 2.4,
+    "round_trips": 2.4
+   },
+   "source_ids": [
+    "S33",
+    "S57",
+    "S34",
+    "S35",
+    "S60"
+   ]
+  },
+  {
+   "municipality": "Lieksa",
+   "nearest_unit_town": "Joensuu",
+   "road_km": 101,
+   "drive_hours": 1.5,
+   "breast_15_sessions": {
+    "nights_away": 16,
+    "round_trips": 4,
+    "hours_on_road": 12
+   },
+   "breast_5_sessions": {
+    "nights_away": 6,
+    "round_trips": 2,
+    "hours_on_road": 6
+   },
+   "bone_multi_fraction_expected": {
+    "nights_away": 6.2,
+    "round_trips": 2.2
+   },
+   "bone_single_8gy_expected": {
+    "nights_away": 2.4,
+    "round_trips": 2.4
+   },
+   "source_ids": [
+    "S33",
+    "S57",
+    "S34",
+    "S35",
+    "S60"
+   ]
+  },
+  {
+   "municipality": "Juuka",
+   "nearest_unit_town": "Joensuu",
+   "road_km": 90,
+   "drive_hours": 1.2,
+   "breast_15_sessions": {
+    "nights_away": 0,
+    "round_trips": 16,
+    "hours_on_road": 40
+   },
+   "breast_5_sessions": {
+    "nights_away": 0,
+    "round_trips": 6,
+    "hours_on_road": 15
+   },
+   "bone_multi_fraction_expected": {
+    "nights_away": 0.0,
+    "round_trips": 6.2
+   },
+   "bone_single_8gy_expected": {
+    "nights_away": 0.0,
+    "round_trips": 2.4
+   },
+   "source_ids": [
+    "S33",
+    "S57",
+    "S34",
+    "S35",
+    "S60"
+   ]
+  }
+ ],
+ "nearest_units": [
+  {
+   "unit": "Syöpäkeskus, sädehoitoyksikkö (Pohjois-Karjalan keskussairaala)",
+   "town": "Joensuu",
+   "municipalities_served_in_county": 12,
+   "statements": [],
+   "source_id": "S44"
+  },
+  {
+   "unit": "KYS sädehoitoyksikkö (Syöpätautien ja sädehoidon palvelut)",
+   "town": "Kuopio",
+   "municipalities_served_in_county": 1,
+   "statements": [
+    {
+     "indication": "bone",
+     "stated_default_fractions": null,
+     "distance_mentioned": false,
+     "quote_en": "Symptom-relieving, i.e. palliative, radiotherapy is shorter in duration and usually comprises one to ten treatment sessions.",
+     "url": "https://pshyvinvointialue.fi/sadehoito"
+    }
+   ],
+   "source_id": "S43"
+  }
+ ],
+ "parameters": [
+  {
+   "id": "commute_threshold_km",
+   "label": "Commuting threshold",
+   "value": 100,
+   "unit": "km",
+   "kind": "assumption",
+   "source_ids": [
+    "S21"
+   ]
+  },
+  {
+   "id": "planning_visit",
+   "label": "Planning visits before treatment",
+   "value": 1,
+   "unit": "trips",
+   "kind": "assumption",
+   "source_ids": []
+  },
+  {
+   "id": "breast_fractions_long",
+   "label": "Breast: long schedule",
+   "value": 15,
+   "unit": "sessions",
+   "kind": "sourced",
+   "source_ids": [
+    "S9",
+    "S14"
+   ]
+  },
+  {
+   "id": "breast_fractions_short",
+   "label": "Breast: short schedule",
+   "value": 5,
+   "unit": "sessions",
+   "kind": "sourced",
+   "source_ids": [
+    "S9",
+    "S15"
+   ]
+  },
+  {
+   "id": "breast_share_rt",
+   "label": "Breast: share treated with radiotherapy",
+   "value": 0.7,
+   "unit": "share",
+   "kind": "assumption",
+   "source_ids": []
+  },
+  {
+   "id": "breast_share_eligible_short",
+   "label": "Breast: share eligible for 5 sessions",
+   "value": 0.6,
+   "unit": "share",
+   "kind": "assumption",
+   "source_ids": [
+    "S15",
+    "S14"
+   ]
+  },
+  {
+   "id": "breast_share_already_short",
+   "label": "Breast: share already on 5 sessions",
+   "value": 0.2,
+   "unit": "share",
+   "kind": "assumption",
+   "source_ids": []
+  },
+  {
+   "id": "bone_fractions_multi",
+   "label": "Bone: multi-session course",
+   "value": 5,
+   "unit": "sessions",
+   "kind": "assumption",
+   "source_ids": [
+    "S62"
+   ]
+  },
+  {
+   "id": "bone_fractions_single",
+   "label": "Bone: single session",
+   "value": 1,
+   "unit": "sessions",
+   "kind": "sourced",
+   "source_ids": [
+    "S62",
+    "S31",
+    "S32"
+   ]
+  },
+  {
+   "id": "bone_retreat_single",
+   "label": "Bone: retreatment after single session",
+   "value": 0.2,
+   "unit": "share",
+   "kind": "sourced",
+   "source_ids": [
+    "S30"
+   ]
+  },
+  {
+   "id": "bone_retreat_multi",
+   "label": "Bone: retreatment after multi-session course",
+   "value": 0.08,
+   "unit": "share",
+   "kind": "sourced",
+   "source_ids": [
+    "S30"
+   ]
+  },
+  {
+   "id": "bone_share_single_now",
+   "label": "Bone: share already single session",
+   "value": 0.07,
+   "unit": "share",
+   "kind": "assumption",
+   "source_ids": [
+    "S16"
+   ]
+  },
+  {
+   "id": "kela_car_eur_per_km",
+   "label": "Kela own-car rate",
+   "value": 0.33,
+   "unit": "€/km",
+   "kind": "sourced",
+   "source_ids": [
+    "S6"
+   ]
+  },
+  {
+   "id": "kela_overnight_eur",
+   "label": "Kela overnight allowance",
+   "value": 20.18,
+   "unit": "€",
+   "kind": "sourced",
+   "source_ids": [
+    "S7"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "id": "story_distance",
+   "text": "The national cancer roadmap notes that palliative radiotherapy is used less by patients living more than 100 km from the nearest unit, and that outcomes are worse beyond 50 km.",
+   "kind": "sourced",
+   "source_ids": [
+    "S21",
+    "S22",
+    "S29"
+   ]
+  },
+  {
+   "id": "evidence_bone",
+   "text": "A systematic review of 29 randomised trials in uncomplicated painful bone metastases: a single session relieves pain as well as a multi-session course (61% vs 62% respond), at the cost of more retreatment (20% vs 8%). Guidelines name 8 Gy as the single dose.",
+   "kind": "sourced",
+   "source_ids": [
+    "S31",
+    "S30",
+    "S32",
+    "S62"
+   ]
+  },
+  {
+   "id": "evidence_breast",
+   "text": "FAST-Forward (4,096 patients): 5 sessions in one week is non-inferior to 15 sessions over three weeks, with a similar level of cancer control at 10 years (breast recurrence 2.1% vs 3.6%). Applies to whole breast or chest wall without nodal radiotherapy.",
+   "kind": "sourced",
+   "source_ids": [
+    "S9",
+    "S10",
+    "S11",
+    "S13",
+    "S15",
+    "S14"
+   ]
+  },
+  {
+   "id": "turku_baseline",
+   "text": "At Turku University Hospital in 2005-2013, only 7% of radiotherapy courses in patients' last year of life were single-session.",
+   "kind": "sourced",
+   "source_ids": [
+    "S16"
+   ]
+  },
+  {
+   "id": "distance_meta",
+   "text": "Meta-analysis: living 50 km or more from a radiotherapy centre goes with 16% lower odds of receiving palliative radiotherapy (OR 0.84).",
+   "kind": "sourced",
+   "source_ids": [
+    "S27"
+   ]
+  },
+  {
+   "id": "daily_weeks",
+   "text": "Radiotherapy patients often attend daily for several weeks.",
+   "kind": "sourced",
+   "source_ids": [
+    "S19"
+   ]
+  },
+  {
+   "id": "kela_spend",
+   "text": "Kela paid 364 million euros of travel reimbursement in 2025 for 4.6 million trips; per resident it was highest in Kainuu (157 €) and lowest in Helsinki (23 €).",
+   "kind": "sourced",
+   "source_ids": [
+    "S1",
+    "S3"
+   ]
+  },
+  {
+   "id": "kela_rules",
+   "text": "Patients pay up to 25 € per one-way trip and at most 300 € a year; own-car travel is valued at 0.33 €/km and the overnight allowance is up to 20.18 €.",
+   "kind": "sourced",
+   "source_ids": [
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ]
+  },
+  {
+   "id": "units_count",
+   "text": "12 public radiotherapy units serve mainland Finland. Lapland has none: its patients are treated in Oulu.",
+   "kind": "sourced",
+   "source_ids": [
+    "S52",
+    "S56",
+    "S45"
+   ]
+  },
+  {
+   "id": "over_100km",
+   "text": "89 municipalities, home to 637,661 people, are more than 100 km by road from their nearest unit.",
+   "kind": "calculated",
+   "source_ids": [
+    "S60",
+    "S57",
+    "S59"
+   ]
+  },
+  {
+   "id": "roadmap_far",
+   "text": "For part of the population the nearest central hospital is more than 400 km away and the nearest university hospital more than 700 km.",
+   "kind": "sourced",
+   "source_ids": [
+    "S23"
+   ]
+  },
+  {
+   "id": "breast_cases",
+   "text": "5,232 women were diagnosed with breast cancer in Finland in 2024 (5,204 on the mainland, excluding Åland).",
+   "kind": "sourced",
+   "source_ids": [
+    "S33",
+    "S34"
+   ]
+  }
+ ],
+ "goal3_indicators": [
+  {
+   "text_en": "Patients receive treatment within target times",
+   "source_ids": [
+    "S25",
+    "S24"
+   ]
+  },
+  {
+   "text_en": "National targets and key effectiveness indicators defined for agreed cancers",
+   "source_ids": [
+    "S61"
+   ]
+  },
+  {
+   "text_en": "Regional differences in treatment are available and used to steer services (cross-cutting indicator)",
+   "source_ids": [
+    "S26"
+   ]
+  }
+ ],
+ "memo_constants": {
+  "first_step_within_days": 30,
+  "goal_number": 3
+ },
+ "calculated_source_ids": [
+  "S33",
+  "S57",
+  "S34",
+  "S35",
+  "S60"
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "title": "Kelan matkakorvausmenot kasvoivat, taustalla etenkin arvonlisäveron ja taksitaksan korotukset",
+   "publisher": "Kela",
+   "year": 2026,
+   "supports": "Kela paid 364 M€ travel reimbursement in 2025 for 4.6 M trips, 3.3 M of them by taxi"
+  },
+  {
+   "id": "S3",
+   "title": "Kelan matkakorvausmenot kasvoivat (per-resident spend)",
+   "publisher": "Kela",
+   "year": 2026,
+   "supports": "Highest travel reimbursement per resident Kainuu 157 €, lowest Helsinki 23 € (2025)"
+  },
+  {
+   "id": "S4",
+   "title": "Matkakorvaukset",
+   "publisher": "Kela",
+   "year": 2026,
+   "supports": "Patient copayment is at most 25 € per one-way trip"
+  },
+  {
+   "id": "S5",
+   "title": "Matkakorvaukset (vuosiomavastuu)",
+   "publisher": "Kela",
+   "year": 2026,
+   "supports": "Annual travel copayment cap is 300 €"
+  },
+  {
+   "id": "S6",
+   "title": "Matkakorvaukset (oma auto)",
+   "publisher": "Kela",
+   "year": 2026,
+   "supports": "Own-car travel is reimbursed at 0.33 €/km"
+  },
+  {
+   "id": "S7",
+   "title": "Matkakorvaukset (yöpymisraha)",
+   "publisher": "Kela",
+   "year": 2026,
+   "supports": "Overnight allowance is up to 20.18 € per night"
+  },
+  {
+   "id": "S9",
+   "title": "Hypofractionated breast radiotherapy for 1 week versus 3 weeks (FAST-Forward): 5-year efficacy and late normal tissue effects results from a multicentre, non-inferiority, randomised, phase 3 trial",
+   "publisher": "The Lancet",
+   "year": 2020,
+   "supports": "26 Gy in 5 fractions over 1 week is non-inferior to 40 Gy in 15 fractions over 3 weeks (4,096 patients)"
+  },
+  {
+   "id": "S10",
+   "title": "FAST-Forward 2020 (sample size)",
+   "publisher": "The Lancet",
+   "year": 2020,
+   "supports": "FAST-Forward randomised 4,096 patients"
+  },
+  {
+   "id": "S11",
+   "title": "Hypofractionated breast radiotherapy for 1 week versus 3 weeks (FAST-Forward): 10-year efficacy and late normal tissue effects from a multicentre, open-label, non-inferiority, phase 3, randomised controlled trial and 5-year efficacy results from a randomised axillary substudy",
+   "publisher": "The Lancet Oncology",
+   "year": 2026,
+   "supports": "10-year ipsilateral breast recurrence 2.1% after 26 Gy/5 fractions vs 3.6% after 40 Gy/15 fractions"
+  },
+  {
+   "id": "S13",
+   "title": "One-Week Radiotherapy for Breast Cancer Safe, Effective Up to 10 Years",
+   "publisher": "HealthDay",
+   "year": 2025,
+   "supports": "ESTRO 2025 presentation of FAST-Forward 10-year results: similar level of cancer control"
+  },
+  {
+   "id": "S14",
+   "title": "Radiotherapy dose fractionation, fourth edition: 03 Breast cancer",
+   "publisher": "The Royal College of Radiologists",
+   "year": 2024,
+   "supports": "15 fractions (40 Gy/15) remains the recommended schedule for regional nodal irradiation"
+  },
+  {
+   "id": "S15",
+   "title": "Radiotherapy dose fractionation, fourth edition: 03 Breast cancer",
+   "publisher": "The Royal College of Radiologists",
+   "year": 2024,
+   "supports": "26 Gy/5 fractions is recommended for non-nodal breast or chest wall radiotherapy"
+  },
+  {
+   "id": "S16",
+   "title": "Assessing the utilization of radiotherapy near end of life at a Finnish University Hospital: a retrospective cohort study",
+   "publisher": "Acta Oncologica",
+   "year": 2017,
+   "supports": "Turku University Hospital 2005-2013: single-fraction RT used in only 7% of courses in the last year of life"
+  },
+  {
+   "id": "S19",
+   "title": "Päijät-Hämeen hyvinvointialue: Uusi sädehoitolaite vahvistaa syövänhoitoa",
+   "publisher": "Päijät-Hämeen hyvinvointialue (STT Info)",
+   "year": 2026,
+   "supports": "Radiotherapy patients often attend daily for several weeks"
+  },
+  {
+   "id": "S21",
+   "title": "Kansallinen syöpästrategia 2026–2035: Toimeenpanon tiekartta vuosille 2026–2031",
+   "publisher": "Kansallisen syöpästrategian toimeenpanon käynnistämisen ohjausryhmä",
+   "year": 2026,
+   "supports": "Roadmap states palliative RT use is lower for patients living >100 km from the nearest RT unit (cites Norwegian data, Åsli 2018)"
+  },
+  {
+   "id": "S22",
+   "title": "Kansallinen syöpästrategia 2026–2035: Toimeenpanon tiekartta vuosille 2026–2031",
+   "publisher": "Kansallisen syöpästrategian toimeenpanon käynnistämisen ohjausryhmä",
+   "year": 2026,
+   "supports": "Roadmap states outcomes are worse beyond 50 km from the treating unit (cites one Ostrobothnia lung cancer study, Paakkola 2024)"
+  },
+  {
+   "id": "S23",
+   "title": "Kansallinen syöpästrategia 2026–2035: Toimeenpanon tiekartta vuosille 2026–2031",
+   "publisher": "Kansallisen syöpästrategian toimeenpanon käynnistämisen ohjausryhmä",
+   "year": 2026,
+   "supports": "Some people live >400 km from the nearest central hospital and >700 km from the nearest university hospital"
+  },
+  {
+   "id": "S24",
+   "title": "Kansallinen syöpästrategia 2026–2035: Toimeenpanon tiekartta vuosille 2026–2031",
+   "publisher": "Kansallisen syöpästrategian toimeenpanon käynnistämisen ohjausryhmä",
+   "year": 2026,
+   "supports": "Goal 3 indicator (measure 3.1.2): patients receive treatment within target times"
+  },
+  {
+   "id": "S25",
+   "title": "Kansallinen syöpästrategia 2026–2035",
+   "publisher": "Sosiaali- ja terveysministeriö / Kansallinen syöpästrategia",
+   "year": 2026,
+   "supports": "Goal 3 ('Varmistetaan yhdenvertainen ja vaikuttava syövänhoito') monitoring indicators incl. treatment within target times"
+  },
+  {
+   "id": "S26",
+   "title": "Kansallinen syöpästrategia 2026–2035",
+   "publisher": "Sosiaali- ja terveysministeriö / Kansallinen syöpästrategia",
+   "year": 2026,
+   "supports": "Cross-cutting equity indicator: regional differences in treatment are available and steer services"
+  },
+  {
+   "id": "S27",
+   "title": "Geographical distance and reduced access to palliative radiotherapy: systematic review and meta-analysis",
+   "publisher": "BMJ Supportive & Palliative Care",
+   "year": 2022,
+   "supports": "Living ≥50 km from an RT centre: 16% lower odds of palliative RT (OR 0.84)"
+  },
+  {
+   "id": "S29",
+   "title": "Factors influencing access to palliative radiotherapy: a Norwegian population-based study",
+   "publisher": "Acta Oncologica",
+   "year": 2018,
+   "supports": "Source cited by the roadmap for the 100 km fact (Norway): travel distance 100-499 km associated with less palliative RT"
+  },
+  {
+   "id": "S30",
+   "title": "Update of the systematic review of palliative radiation therapy fractionation for bone metastases",
+   "publisher": "Radiotherapy and Oncology",
+   "year": 2018,
+   "supports": "Retreatment 20% after single fraction vs 8% after multiple fractions"
+  },
+  {
+   "id": "S31",
+   "title": "Update of the systematic review of palliative radiation therapy fractionation for bone metastases",
+   "publisher": "Radiotherapy and Oncology",
+   "year": 2018,
+   "supports": "Pain response similar for single vs multiple fractions (61% vs 62%)"
+  },
+  {
+   "id": "S32",
+   "title": "Update on the systematic review of palliative radiotherapy trials for bone metastases",
+   "publisher": "Clinical Oncology",
+   "year": 2012,
+   "supports": "Single and multiple fractions give equal pain relief; retreatment higher after single fraction"
+  },
+  {
+   "id": "S33",
+   "title": "Cancer statistics application: Breast (C50), new cancer cases, 2024",
+   "publisher": "Finnish Cancer Registry",
+   "year": 2024,
+   "supports": "New breast cancer cases in Finland 2024: 5,232 women (5,262 both sexes)"
+  },
+  {
+   "id": "S34",
+   "title": "Cancer statistics application: Breast (C50), women, 2024, by wellbeing services county",
+   "publisher": "Finnish Cancer Registry",
+   "year": 2024,
+   "supports": "County (hyvinvointialue) counts of new female breast cancers in 2024"
+  },
+  {
+   "id": "S35",
+   "title": "Cancer statistics application: Breast (C50), women, by 5-year age group, 2020-2024",
+   "publisher": "Finnish Cancer Registry",
+   "year": 2024,
+   "supports": "Age-specific breast cancer incidence in women (per 100,000 per year, 2020-2024)"
+  },
+  {
+   "id": "S43",
+   "title": "Sädehoito",
+   "publisher": "Pohjois-Savon hyvinvointialue",
+   "year": 2026,
+   "supports": "Kuopion yliopistollinen sairaala (KYS) (Kuopio) delivers external beam radiotherapy to public patients"
+  },
+  {
+   "id": "S44",
+   "title": "Syöpäsairaudet ja sädehoito",
+   "publisher": "Siun sote (Pohjois-Karjalan hyvinvointialue)",
+   "year": 2026,
+   "supports": "Pohjois-Karjalan keskussairaala (Joensuu) delivers external beam radiotherapy to public patients"
+  },
+  {
+   "id": "S45",
+   "title": "Sädehoito",
+   "publisher": "OYS / Pohde",
+   "year": 2026,
+   "supports": "Oulun yliopistollinen sairaala (OYS), E-talo (Oulu) delivers external beam radiotherapy to public patients"
+  },
+  {
+   "id": "S52",
+   "title": "Syöpätaudit",
+   "publisher": "Lapin hyvinvointialue",
+   "year": 2026,
+   "supports": "Lapland has no radiotherapy unit of its own; Lapland patients receive radiotherapy at OYS in Oulu"
+  },
+  {
+   "id": "S56",
+   "title": "Changes in the use of chemoradiotherapy for non-small cell lung cancer after guideline implementation in Finland between 2016 and 2020 (Cancer Treatment and Research Communications)",
+   "publisher": "Wichmann V et al.",
+   "year": 2025,
+   "supports": "A national study (2016-2020 data) reports 13 radiotherapy units in Finland, consistent with 12 public units plus the private Docrates clinic"
+  },
+  {
+   "id": "S57",
+   "title": "Väestö iän (1-v.) ja sukupuolen mukaan alueittain, 1972-2025 (StatFin table 11re)",
+   "publisher": "Statistics Finland (Tilastokeskus)",
+   "year": 2026,
+   "supports": "Municipal population on 31 Dec 2025 by sex and 1-year age (aggregated to 5-year bands), 2026-01-01 municipal division."
+  },
+  {
+   "id": "S59",
+   "title": "Wikidata: coordinate location (P625) of Finnish municipalities, matched on Finnish municipality number (P1203)",
+   "publisher": "Wikimedia Foundation (Wikidata)",
+   "year": 2026,
+   "supports": "Centre point of each municipality, used as the origin for distance calculations."
+  },
+  {
+   "id": "S60",
+   "title": "OSRM table service (Open Source Routing Machine, OpenStreetMap road network)",
+   "publisher": "Project OSRM / OpenStreetMap contributors",
+   "year": 2026,
+   "supports": "Road km and drive minutes from each municipality centre point to the 3 nearest radiotherapy units"
+  },
+  {
+   "id": "S61",
+   "title": "Kansallinen syöpästrategia 2026–2035 (sub-goal 3.1 indicators)",
+   "publisher": "Sosiaali- ja terveysministeriö",
+   "year": 2026,
+   "supports": "Goal 3.1 indicator: national targets and key effectiveness monitoring indicators defined for agreed cancers"
+  },
+  {
+   "id": "S62",
+   "title": "Real-life perspectives on the end-of-life care of cancer patients (doctoral thesis, Annales D 1636)",
+   "publisher": "University of Turku",
+   "year": 2022,
+   "supports": "ASCO guideline (Lutz 2011), as cited: single-fraction 8 Gy is as effective as 20 Gy in 5 fractions for painful bone metastases"
+  }
+ ]
+}

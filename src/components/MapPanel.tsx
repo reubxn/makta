@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import DeckGL from '@deck.gl/react';
-import { FlyToInterpolator, MapView, type MapViewState, type PickingInfo } from '@deck.gl/core';
+import { FlyToInterpolator, MapView, WebMercatorViewport, type MapViewState, type PickingInfo } from '@deck.gl/core';
 import { ColumnLayer, GeoJsonLayer, ScatterplotLayer, TextLayer } from '@deck.gl/layers';
 import { Box, Square, Shrink } from 'lucide-react';
 import { useData } from '../context';
@@ -16,13 +16,36 @@ export interface FlyRequest {
 }
 
 const FINLAND: MapViewState = { longitude: 26.3, latitude: 63.75, zoom: 4.5, pitch: 45, bearing: -8 };
-const FINLAND_FLAT: MapViewState = { ...FINLAND, latitude: 65.1, zoom: 4.5, pitch: 0, bearing: 0 };
+
+type BBox = [number, number, number, number];
+function bboxOf(features: GeoJSON.Feature[]): BBox {
+  const b: BBox = [180, 90, -180, -90];
+  const visit = (c: unknown): void => {
+    if (Array.isArray(c) && typeof c[0] === 'number') {
+      const [x, y] = c as number[];
+      b[0] = Math.min(b[0], x); b[1] = Math.min(b[1], y); b[2] = Math.max(b[2], x); b[3] = Math.max(b[3], y);
+    } else if (Array.isArray(c)) c.forEach(visit);
+  };
+  for (const f of features) visit((f.geometry as GeoJSON.Polygon | GeoJSON.MultiPolygon).coordinates);
+  return b;
+}
+
+/** Fit a bbox into the map, leaving room for the overlays (headline top-left, legend bottom-left). */
+function fitView(bbox: BBox, size: { width: number; height: number }, pitched: boolean): MapViewState {
+  const vp = new WebMercatorViewport({ width: size.width, height: size.height });
+  const pad = { top: 64, bottom: 36, left: Math.min(250, size.width * 0.33), right: 44 };
+  const { longitude, latitude, zoom } = vp.fitBounds([[bbox[0], bbox[1]], [bbox[2], bbox[3]]], { padding: pad });
+  if (!pitched) return { longitude, latitude, zoom, pitch: 0, bearing: 0 };
+  // Pitching compresses the far (north) side: move the centre south and zoom in slightly.
+  const latSpan = bbox[3] - bbox[1];
+  return { longitude, latitude: latitude - latSpan * 0.2, zoom: zoom + 0.3, pitch: 45, bearing: -8 };
+}
 
 const RAMP_LO = [0xe8, 0xee, 0xf5];
 const RAMP_HI = [0x0b, 0x3d, 0x6e];
 function ramp(t: number): [number, number, number] {
   const x = Math.max(0, Math.min(1, t));
-  const g = Math.pow(x, 0.75);
+  const g = x;
   return [0, 1, 2].map((i) => Math.round(RAMP_LO[i] + (RAMP_HI[i] - RAMP_LO[i]) * g)) as [number, number, number];
 }
 
@@ -53,22 +76,42 @@ export function MapPanel(props: Props) {
   const { data } = useData();
   const [viewState, setViewState] = useState<MapViewState>(FINLAND);
   const [hover, setHover] = useState<{ x: number; y: number; name: string } | null>(null);
+  const wrapRef = useRef<HTMLElement>(null);
+  const [size, setSize] = useState<{ width: number; height: number } | null>(null);
+  const finlandBox = useMemo(() => bboxOf(data.geo.features), [data]);
+  const currentTarget = useRef<{ target: FlyRequest['target']; code?: string }>({ target: 'finland' });
 
-  // Fly requests (demo keys) and the flatten button.
   useEffect(() => {
-    if (fly.target === 'finland') {
-      setViewState({ ...(pitched ? FINLAND : FINLAND_FLAT), transitionDuration: 1400, transitionInterpolator: new FlyToInterpolator({ curve: 1.2 }), transitionEasing: easeInOut } as MapViewState);
-    } else if (fly.code) {
-      const m = data.muniByCode[fly.code];
-      if (m) {
-        setViewState({ longitude: m.lon - 0.8, latitude: m.lat - 2.6, zoom: 4.95, pitch: pitched ? 45 : 0, bearing: -8, transitionDuration: 1600, transitionInterpolator: new FlyToInterpolator({ curve: 1.3 }), transitionEasing: easeInOut } as MapViewState);
-      }
+    const el = wrapRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => setSize({ width: el.clientWidth, height: el.clientHeight }));
+    ro.observe(el);
+    setSize({ width: el.clientWidth, height: el.clientHeight });
+    return () => ro.disconnect();
+  }, []);
+
+  const targetView = (target: FlyRequest['target'], code: string | undefined, pitch: boolean): MapViewState | null => {
+    if (!size || size.width < 50) return null;
+    if (target === 'muni' && code) {
+      const m = data.muniByCode[code];
+      const county = data.counties.features.filter((f) => f.properties!.county_code === m?.county_code);
+      if (county.length) return fitView(bboxOf(county), size, pitch);
     }
+    return fitView(finlandBox, size, pitch);
+  };
+
+  // Fly requests (demo keys), the flatten button and the first layout.
+  useEffect(() => {
+    currentTarget.current = { target: fly.target, code: fly.code };
+    const v = targetView(fly.target, fly.code, pitched);
+    if (v) setViewState({ ...v, transitionDuration: fly.nonce === 0 ? 0 : 1500, transitionInterpolator: new FlyToInterpolator({ curve: 1.2 }), transitionEasing: easeInOut } as MapViewState);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [fly.nonce]);
+  }, [fly.nonce, size === null]);
 
   useEffect(() => {
-    setViewState((v) => ({ ...v, pitch: pitched ? 45 : 0, transitionDuration: 700, transitionEasing: easeInOut } as MapViewState));
+    const v = targetView(currentTarget.current.target, currentTarget.current.code, pitched);
+    if (v) setViewState({ ...v, transitionDuration: 800, transitionEasing: easeInOut } as MapViewState);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pitched]);
 
   const rows = useMemo(
@@ -145,10 +188,11 @@ export function MapPanel(props: Props) {
       id: 'columns',
       data: rows,
       diskResolution: 14,
-      radius: 6500,
+      radius: 4800,
       extruded: true,
       getPosition: (d: (typeof rows)[number]) => [d.lon, d.lat],
       getElevation: (d: (typeof rows)[number]) => (d.value / maxLong) * MAX_COLUMN_M,
+      elevationScale: Math.pow(2, 4.6 - (viewState.zoom ?? 4.6)),
       getFillColor: (d: (typeof rows)[number]) => (d.code === selected ? [14, 124, 102, 255] : [...ramp(0.35 + 0.65 * (d.value / maxLong)), d.value > 0.01 ? 235 : 0]),
       material: { ambient: 0.55, diffuse: 0.55, shininess: 16, specularColor: [40, 40, 40] },
       pickable: true,
@@ -197,9 +241,27 @@ export function MapPanel(props: Props) {
   ];
 
   const metricLabel = METRICS.find(([k]) => k === metric)![1].toLowerCase();
+  const metricWord = metric === 'nights' ? 'nights away' : metric === 'hours' ? 'hours on the road' : 'round trips';
+  const fmtMetric = (v: number) => fmt(v, Math.abs(v - Math.round(v)) > 0.05 ? 1 : 0);
+  const headline = useMemo(() => {
+    const val = (code: string) => {
+      const r = data.routes[code];
+      return r ? currentBurden(r, indication, lever, params)[metric] : 0;
+    };
+    const longVal = (code: string) => {
+      const r = data.routes[code];
+      return r ? perPatient(r, indication, 'long', params)[metric] : 0;
+    };
+    const HELSINKI = '091';
+    const farCode = selected === HELSINKI ? '890' : selected;
+    return {
+      far: { name: data.muniByCode[farCode]?.name_fi ?? '', value: val(farCode), before: longVal(farCode) },
+      near: { name: data.muniByCode[HELSINKI]?.name_fi ?? 'Helsinki', value: val(HELSINKI) },
+    };
+  }, [data, indication, lever, params, metric, selected]);
 
   return (
-    <section className="panel map-wrap" aria-label="Map">
+    <section className="panel map-wrap" aria-label="Map" ref={wrapRef}>
       <div className="map-controls">
         <div className="metric-switch" role="group" aria-label="Metric">
           {METRICS.map(([k, label]) => (
@@ -217,8 +279,28 @@ export function MapPanel(props: Props) {
           </button>
         </div>
       </div>
-      <div className="story-caption">
-        <FactText id="story_distance" />
+      <div className="map-headline">
+        <p className="map-tagline">Same cancer, same treatment. Different distance.</p>
+        <h2 data-testid="map-headline">
+          {headline.far.name}:{' '}
+          {lever && Math.abs(headline.far.before - headline.far.value) > 0.05 ? (
+            <>
+              <span className="dimtxt">{fmtMetric(headline.far.before)}</span> → <span className={headline.far.value < headline.far.before ? 'aftertxt' : ''}>{fmtMetric(headline.far.value)}</span>
+            </>
+          ) : (
+            fmtMetric(headline.far.value)
+          )}{' '}
+        </h2>
+        <p className="map-near">
+          {metricWord} · {headline.near.name}: {fmtMetric(headline.near.value)}
+        </p>
+        <p className="map-subline">
+          Per patient, {indication === 'bone' ? 'one course for painful bone metastases' : 'one breast radiotherapy course'}{lever ? ', short schedule' : ''}{' '}
+          <Prov kind="calculated" ids={data.routesMeta.source_ids} note={data.routesMeta.note} />
+        </p>
+      </div>
+      <div className="map-story">
+        <FactText id={indication === 'bone' ? 'story_distance' : 'over_100km'} />
       </div>
       {fold && <div className="fold-banner">We can't move the hospital. The schedule can.</div>}
       <DeckGL

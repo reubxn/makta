@@ -15,7 +15,7 @@ const ROWS: RowDef[] = [
   { key: 'nights', label: 'Nights away', format: (v) => fmt(v, Number.isInteger(Math.round(v * 10) / 10) ? 0 : 1) },
   { key: 'roundTrips', label: 'Round trips', format: (v) => fmt(v, Number.isInteger(Math.round(v * 10) / 10) ? 0 : 1) },
   { key: 'hours', label: 'Hours on the road', format: fmtHours },
-  { key: 'kelaEur', label: 'Kela cost, lower bound (own-car rate; taxis cost more)', format: (v) => fmt(v), suffix: '€' },
+  { key: 'kelaEur', label: 'Kela cost, lower bound', format: (v) => fmt(v), suffix: '€' },
 ];
 
 function Tweened({ v, format, className }: { v: number; format: (v: number) => string; className: string }) {
@@ -54,7 +54,7 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
         <div className="card-sub">{m.county_name_fi}</div>
       </div>
       <div className="route-line">
-        <span style={{ display: 'inline-flex', gap: 5, alignItems: 'center' }}>
+        <span style={{ display: 'inline-flex', gap: 5, alignItems: 'center' }} title="Nearest radiotherapy unit by drive time">
           <MapPin size={15} /> <b>{unit?.town ?? route.unit_id}</b>
         </span>
         <span style={{ display: 'inline-flex', gap: 5, alignItems: 'center' }} className="num">
@@ -71,17 +71,38 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
         </span>
         <Prov kind="calculated" ids={Array.from(new Set(paramIds))} note={calcNote} />
       </div>
-      {ROWS.map((r) => (
-        <div className="ba-row" key={r.key}>
-          <div className="ba-label">{r.label}</div>
-          <div className="ba-values">
-            <Tweened v={before[r.key]} format={r.format} className={`big before${lever ? ' dim' : ''}`} />
-            <ArrowRight className="arrow" size={22} />
-            <Tweened v={after[r.key]} format={r.format} className={`big ${lever ? 'after' : 'dim'}`} />
-            {r.suffix && <span className="unit-suffix">{r.suffix}</span>}
+      {ROWS.map((r) => {
+        const diff = after[r.key] - before[r.key];
+        const up = diff > 0.05;
+        const label = r.key === 'kelaEur' ? 'Own-car rate plus overnight allowance; taxis cost more, so this is a lower bound.' : undefined;
+        return (
+          <div className="ba-row" key={r.key}>
+            <div className="ba-label" title={label}>
+              {r.label}
+              {up && lever && <span className="up-note">↑ {r.format(diff)} (retreatment)</span>}
+            </div>
+            {lever ? (
+              <div className="ba-values">
+                <Tweened v={before[r.key]} format={r.format} className="big before dim" />
+                <ArrowRight className="arrow" size={22} />
+                <Tweened v={after[r.key]} format={r.format} className={`big ${up ? 'before' : 'after'}`} />
+                {r.suffix && <span className="unit-suffix">{r.suffix}</span>}
+              </div>
+            ) : (
+              <div className="ba-values">
+                <Tweened v={before[r.key]} format={r.format} className="big before" />
+                {r.suffix && <span className="unit-suffix">{r.suffix}</span>}
+              </div>
+            )}
+            {!lever && (
+              <div className="after-hint">→ {r.format(after[r.key])}{r.suffix ? ` ${r.suffix}` : ''} with {indication === 'bone' ? 'a single session' : `${nShort} sessions`}</div>
+            )}
           </div>
-        </div>
-      ))}
+        );
+      })}
+      {lever && indication === 'bone' && (before.roundTrips < after.roundTrips) && (
+        <div className="bone-up-note">Fewer nights away; some patients need a second session, so trips can rise slightly.</div>
+      )}
       <div className="small-note">
         Today, with the assumed {Math.round(shareNow * 100)}% already on the short schedule: about{' '}
         <b className="num">{fmt(today.nights, 1)}</b> nights away per patient.{' '}

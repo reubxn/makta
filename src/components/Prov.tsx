@@ -1,4 +1,5 @@
 import { useState, type ReactNode } from 'react';
+import { createPortal } from 'react-dom';
 import { ExternalLink } from 'lucide-react';
 import type { Kind } from '../data';
 import { useData } from '../context';
@@ -17,8 +18,9 @@ export function Prov({ kind, ids, note, children }: { kind: Kind; ids: string[];
   const open = (e: React.MouseEvent) => {
     e.stopPropagation();
     const r = (e.currentTarget as HTMLElement).getBoundingClientRect();
-    const x = Math.min(window.innerWidth - 416, Math.max(16, r.left - 180));
-    const y = r.bottom + 6 + 420 > window.innerHeight ? Math.max(16, r.top - 426) : r.bottom + 6;
+    const h = Math.min(400, window.innerHeight * 0.6);
+    const x = Math.min(window.innerWidth - 396, Math.max(16, r.left - 180));
+    const y = r.bottom + 6 + h > window.innerHeight - 40 ? Math.max(16, r.top - h - 6) : r.bottom + 6;
     setPos({ x, y });
   };
   return (
@@ -32,7 +34,8 @@ export function Prov({ kind, ids, note, children }: { kind: Kind; ids: string[];
       >
         {LABEL[kind]}
       </button>
-      {pos && (
+      {pos &&
+        createPortal(
         <>
           <div className="popover-backdrop" onClick={() => setPos(null)} />
           <div className="popover" style={{ left: pos.x, top: pos.y }} role="dialog">
@@ -57,7 +60,8 @@ export function Prov({ kind, ids, note, children }: { kind: Kind; ids: string[];
             ))}
             {sources.length === 0 && <p className="meta">No external source: see the parameter rationale in Sources & limitations.</p>}
           </div>
-        </>
+        </>,
+        document.body,
       )}
     </>
   );

@@ -107,7 +107,7 @@ def build_facts(county_code):
                 "breast_5_sessions": {"nights_away": sh["nights_away"], "round_trips": sh["round_trips"], "hours_on_road": round(sh["hours_on_road"])},
                 "bone_multi_fraction_expected": {"nights_away": r1(bl["nights_away"]), "round_trips": r1(bl["round_trips"])},
                 "bone_single_8gy_expected": {"nights_away": r1(bs["nights_away"]), "round_trips": r1(bs["round_trips"])},
-                "source_ids": ["calculated"],
+                "source_ids": [sid(x) for x in cases["source_ids"]] + [sid("osrm_table")],
             }
         )
     unit_ids = sorted({routes[m["code"]]["unit_id"] for m in ms})
@@ -299,6 +299,7 @@ def main():
     ap.add_argument("--agent", help="JSON {county_code: memo text} written in-session (no-key fallback)")
     ap.add_argument("--facts-only", action="store_true")
     ap.add_argument("--only", help="comma-separated county codes")
+    ap.add_argument("--check-only", action="store_true", help="with --agent: validate and print, do not write memos.json")
     args = ap.parse_args()
 
     codes = sorted({m["county_code"] for m in munis})
@@ -315,6 +316,10 @@ def main():
     if args.agent:
         texts = json.loads(Path(args.agent).read_text())
         for c in codes:
+            if c not in texts:
+                print(f"{c}: no memo in {args.agent}")
+                failed.append(c)
+                continue
             text = texts[c].strip()
             checked, passed, problems = validate(text, all_facts[c])
             print(f"{c}: {passed}/{checked} numbers ok; problems: {problems}")
@@ -323,7 +328,8 @@ def main():
             memos.append(
                 {"county_code": c, "county_name": all_facts[c]["county_name_fi"], "text": text, "numbers_checked": checked, "numbers_passed": passed, "source_ids": sorted(set(re.findall(r"S\d+", text)), key=lambda x: int(x[1:])), "problems": problems}
             )
-        write_out(memos, "agent-written")
+        if not args.check_only:
+            write_out(memos, "agent-written")
         sys.exit(1 if failed else 0)
 
     c_api = client()

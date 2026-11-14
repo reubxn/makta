@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import {
   breastTotals,
@@ -119,6 +120,38 @@ describe('breastTotals', () => {
     const t = breastTotals(rows, P, true);
     for (const r of [t.national, ...Object.values(t.byCounty), ...Object.values(t.byMunicipality)]) {
       for (const v of Object.values(r)) expect(Number.isFinite(v)).toBe(true);
+    }
+  });
+});
+
+describe('real routes (public/data/routes.json)', () => {
+  const routes = JSON.parse(fs.readFileSync('public/data/routes.json', 'utf8')).routes;
+  const params = Object.fromEntries(
+    JSON.parse(fs.readFileSync('public/data/parameters.json', 'utf8')).parameters.map((p: { id: string; default: number }) => [p.id, p.default]),
+  ) as unknown as Params;
+
+  it('Utsjoki (890) patients are stayers and lose most of their nights away', () => {
+    const r = routes['890'];
+    expect(r.road_km).toBeGreaterThan(400);
+    expect(isCommuter(r, params)).toBe(false);
+    const long = perPatient(r, 'breast', 'long', params);
+    const short = perPatient(r, 'breast', 'short', params);
+    expect(short.nights).toBeLessThan(long.nights / 2);
+    expect(perPatient(r, 'bone', 'short', params).nights).toBeLessThan(perPatient(r, 'bone', 'long', params).nights / 2);
+  });
+
+  it('Helsinki (091) commutes', () => {
+    const r = routes['091'];
+    expect(r.road_km).toBeLessThan(20);
+    expect(isCommuter(r, params)).toBe(true);
+    expect(perPatient(r, 'breast', 'long', params).nights).toBe(0);
+  });
+
+  it('no NaN for any municipality, indication or schedule', () => {
+    for (const r of Object.values(routes) as { road_km: number; drive_min: number }[]) {
+      for (const ind of ['bone', 'breast'] as const)
+        for (const sch of ['long', 'short'] as const)
+          for (const v of Object.values(perPatient(r, ind, sch, params))) expect(Number.isFinite(v)).toBe(true);
     }
   });
 });

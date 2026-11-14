@@ -1,0 +1,16 @@
+[
+ {
+  "key": "rautakorpi_thesis_8gy",
+  "title": "Real-life perspectives on the end-of-life care of cancer patients (doctoral thesis, Annales D 1636)",
+  "publisher": "University of Turku",
+  "year": 2022,
+  "url": "https://www.utupub.fi/bitstream/10024/154009/1/Annales%20D%201636%20Rautakorpi%20DISS.pdf",
+  "accessed": "2026-11-14",
+  "supports": "ASCO guideline (Lutz 2011), as cited: single-fraction 8 Gy is as effective as 20 Gy in 5 fractions for painful bone metastases",
+  "quote": "ASCO states in a guideline for treating bone metastases that single-fraction 8 Gy is as effective as 20 Gy in 5 fractions",
+  "note": "Rautakorpi thesis, discussion section (cites Lutz et al. 2011 ASCO/ASTRO guideline).",
+  "kind": "report",
+  "verified": true,
+  "snapshot": "data/raw/sources/rautakorpi_thesis.txt"
+ }
+]

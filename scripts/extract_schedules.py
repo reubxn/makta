@@ -185,16 +185,10 @@ def main():
             )
         print(f"{p.name}: kept {len(kept)} dropped {d}")
 
-    # One statement per unit and indication: prefer one with a stated number, then higher confidence.
+    # Keep every verified statement (units can publish conflicting documents); order by unit,
+    # indication, then statements that state a number first.
     rank = {"high": 0, "medium": 1, "low": 2}
-    best = {}
-    for st in statements:
-        k = (st["unit_id"], st["indication"])
-        score = (st["stated_default_fractions"] is None, rank.get(st["confidence"], 3))
-        if k not in best or score < best[k][0]:
-            best[k] = (score, st)
-    final = [v[1] for v in best.values()]
-    final.sort(key=lambda s: (s["unit_id"], s["indication"]))
+    final = sorted(statements, key=lambda s: (s["unit_id"], s["indication"], s["stated_default_fractions"] is None, rank.get(s["confidence"], 3)))
 
     out = {
         "method": method,
