@@ -78,14 +78,14 @@
   },
   {
     "key": "unit_kuopio",
-    "title": "Implementing treatment according to the guidelines is of paramount importance in locally advanced cervical cancer: a real-world study (Frontiers in Oncology)",
-    "publisher": "Frontiers in Oncology (via PubMed/Europe PMC)",
-    "year": 2025,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/40406263/",
+    "title": "Sädehoito",
+    "publisher": "Pohjois-Savon hyvinvointialue",
+    "year": 2026,
+    "url": "https://pshyvinvointialue.fi/fi/sadehoito",
     "accessed": "2026-11-14",
     "supports": "Kuopion yliopistollinen sairaala (KYS) (Kuopio) delivers external beam radiotherapy to public patients",
-    "quote": "Medical records of consecutive patients receiving radiotherapy for cervical cancer at Kuopio University Hospital from 2009-2018 were examined.",
-    "kind": "article"
+    "quote": "Ulkoisen sädehoidon lisäksi KYS sädehoitoyksikön erityisosaamisalueisiin kuuluu mm. synnytyselinsyöpien hoitoon käytettävä sisäinen sädehoito (brakyterapia).",
+    "kind": "web"
   },
   {
     "key": "unit_joensuu",
@@ -100,13 +100,69 @@
   },
   {
     "key": "unit_oulu",
+    "title": "Sädehoito",
+    "publisher": "OYS / Pohde",
+    "year": 2026,
+    "url": "https://oys.fi/palvelut/sadehoito/",
+    "accessed": "2026-11-14",
+    "supports": "Oulun yliopistollinen sairaala (OYS), E-talo (Oulu) delivers external beam radiotherapy to public patients",
+    "quote": "Tarjoamme sädehoitoa syövän hoidossa osana parantavaa hoitoa, leikkauksen korvaavana hoitona tai oireita lievittävänä hoitona.",
+    "kind": "web"
+  },
+  {
+    "key": "unit_pori",
+    "title": "Sädehoitoyksikkö, Satasairaala",
+    "publisher": "Satakunnan hyvinvointialue",
+    "year": 2026,
+    "url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/",
+    "accessed": "2026-11-14",
+    "supports": "Satasairaala (Pori) delivers external beam radiotherapy to public patients",
+    "quote": "Sädehoitoa käytetään syövän parantavana hoitona joko yksin tai muihin hoitoihin yhdistettynä.",
+    "kind": "web"
+  },
+  {
+    "key": "unit_lappeenranta",
+    "title": "Syöpähoitoyksikkö",
+    "publisher": "Etelä-Karjalan hyvinvointialue",
+    "year": 2026,
+    "url": "https://www.ekhva.fi/toimipaikat/etela-karjalan-keskussairaala/syopahoitoyksikko/",
+    "accessed": "2026-11-14",
+    "supports": "Etelä-Karjalan keskussairaala (Lappeenranta) delivers external beam radiotherapy to public patients",
+    "quote": "Sädehoidon toteuttamista varten yksikössä on kaksi sädehoitolaitetta.",
+    "kind": "web"
+  },
+  {
+    "key": "unit_kuopio_paper",
+    "title": "Implementing treatment according to the guidelines is of paramount importance in locally advanced cervical cancer: a real-world study (Frontiers in Oncology)",
+    "publisher": "Frontiers in Oncology",
+    "year": 2025,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40406263/",
+    "accessed": "2026-11-14",
+    "supports": "Secondary: external beam radiotherapy delivered at Kuopio University Hospital (2009-2018 cohort)",
+    "quote": "Medical records of consecutive patients receiving radiotherapy for cervical cancer at Kuopio University Hospital from 2009-2018 were examined.",
+    "kind": "article",
+    "fetched_via": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40406263%20AND%20SRC:MED&format=json&resultType=core"
+  },
+  {
+    "key": "unit_oulu_lapland",
     "title": "Syöpätaudit",
     "publisher": "Lapin hyvinvointialue",
     "year": 2026,
     "url": "https://lapha.fi/syopataudit",
     "accessed": "2026-11-14",
-    "supports": "Oulun yliopistollinen sairaala (OYS) (Oulu) delivers external beam radiotherapy to public patients",
+    "supports": "Secondary: OYS in Oulu delivers radiotherapy, including for Lapland patients",
     "quote": "Lapin alueella syöpää sairastaville potilaille annetaan sädehoitoa Oulun yliopistollisessa sairaalassa (OYS).",
+    "kind": "web"
+  },
+  {
+    "key": "unit_lappeenranta_news",
+    "title": "Etelä-Karjalan keskussairaalan syöpäpoliklinikalle ja sädehoitoon johtava ovi 6 suljetaan 12.10. alkaen rakennustöiden vuoksi",
+    "publisher": "Etelä-Karjalan hyvinvointialue",
+    "year": 2026,
+    "url": "https://www.ekhva.fi/2026/10/etela-karjalan-keskussairaalan-syopapoliklinikalle-ja-sadehoitoon-johtava-ovi-6-suljetaan-12-10-alkaen-rakennustoiden-vuoksi/",
+    "accessed": "2026-11-14",
+    "supports": "Secondary: radiotherapy operating at Etelä-Karjalan keskussairaala (E-wing) in October 2026",
+    "quote": "Syöpäpoliklinikalle ja sädehoitoon kuljetaan tänä aikana pääaulan kautta.",
     "kind": "web"
   },
   {

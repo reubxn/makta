@@ -1,0 +1,8775 @@
+{
+ "generated": "2026-11-14",
+ "kind": "calculated",
+ "source_ids": [
+  "osrm_table",
+  "wikidata_coords"
+ ],
+ "note": "Road km and drive minutes from each municipality's centre point (not where patients live) to the radiotherapy unit with the shortest drive among the 3 nearest by straight line. OpenStreetMap data via the public OSRM demo server; 'estimated' = straight line x 1.3 at 70 km/h.",
+ "counts": {
+  "osrm": 292,
+  "estimated": 0
+ },
+ "routes": {
+  "005": {
+   "code": "005",
+   "unit_id": "vaasa",
+   "road_km": 126.5,
+   "drive_min": 106.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 111.4,
+     "road_km": 126.5,
+     "drive_min": 106.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 129.1,
+     "road_km": 150.4,
+     "drive_min": 144.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 166.3,
+     "road_km": 248.8,
+     "drive_min": 209.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "009": {
+   "code": "009",
+   "unit_id": "oulu",
+   "road_km": 145.3,
+   "drive_min": 122.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 110.1,
+     "road_km": 145.3,
+     "drive_min": 122.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 179.2,
+     "road_km": 211.9,
+     "drive_min": 177.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 217.4,
+     "road_km": 261.5,
+     "drive_min": 217.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "010": {
+   "code": "010",
+   "unit_id": "vaasa",
+   "road_km": 128.0,
+   "drive_min": 105.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 114.5,
+     "road_km": 138.4,
+     "drive_min": 128.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 115.9,
+     "road_km": 128.0,
+     "drive_min": 105.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 120.7,
+     "road_km": 156.9,
+     "drive_min": 135.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "016": {
+   "code": "016",
+   "unit_id": "lahti",
+   "road_km": 30.4,
+   "drive_min": 35.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 20.0,
+     "road_km": 30.4,
+     "drive_min": 35.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 99.6,
+     "road_km": 121.9,
+     "drive_min": 118.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 107.0,
+     "road_km": 141.1,
+     "drive_min": 123.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "018": {
+   "code": "018",
+   "unit_id": "hus",
+   "road_km": 66.1,
+   "drive_min": 59.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 51.7,
+     "road_km": 72.0,
+     "drive_min": 60.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 53.6,
+     "road_km": 66.1,
+     "drive_min": 59.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 72.1,
+     "road_km": 99.6,
+     "drive_min": 73.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "019": {
+   "code": "019",
+   "unit_id": "turku",
+   "road_km": 32.1,
+   "drive_min": 30.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 27.1,
+     "road_km": 32.1,
+     "drive_min": 30.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 101.2,
+     "road_km": 123.2,
+     "drive_min": 100.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 115.8,
+     "road_km": 133.9,
+     "drive_min": 108.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "020": {
+   "code": "020",
+   "unit_id": "tampere",
+   "road_km": 43.3,
+   "drive_min": 37.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 37.7,
+     "road_km": 43.3,
+     "drive_min": 37.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 93.4,
+     "road_km": 109.2,
+     "drive_min": 97.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 116.4,
+     "road_km": 151.1,
+     "drive_min": 120.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "046": {
+   "code": "046",
+   "unit_id": "joensuu",
+   "road_km": 103.0,
+   "drive_min": 110.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 70.9,
+     "road_km": 103.0,
+     "drive_min": 110.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 111.6,
+     "road_km": 156.6,
+     "drive_min": 156.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 120.2,
+     "road_km": 174.9,
+     "drive_min": 157.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "047": {
+   "code": "047",
+   "unit_id": "oulu",
+   "road_km": 472.3,
+   "drive_min": 390.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 384.5,
+     "road_km": 472.3,
+     "drive_min": 390.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 596.5,
+     "road_km": 791.2,
+     "drive_min": 655.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 636.9,
+     "road_km": 757.9,
+     "drive_min": 623.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "049": {
+   "code": "049",
+   "unit_id": "hus",
+   "road_km": 15.8,
+   "drive_min": 19.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 14.1,
+     "road_km": 15.8,
+     "drive_min": 19.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 100.7,
+     "road_km": 120.7,
+     "drive_min": 93.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 127.8,
+     "road_km": 143.9,
+     "drive_min": 104.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "050": {
+   "code": "050",
+   "unit_id": "pori",
+   "road_km": 50.8,
+   "drive_min": 44.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 41.1,
+     "road_km": 50.8,
+     "drive_min": 44.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 76.4,
+     "road_km": 104.1,
+     "drive_min": 91.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 101.1,
+     "road_km": 112.4,
+     "drive_min": 98.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "051": {
+   "code": "051",
+   "unit_id": "pori",
+   "road_km": 35.9,
+   "drive_min": 34.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 30.6,
+     "road_km": 35.9,
+     "drive_min": 34.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 88.4,
+     "road_km": 107.5,
+     "drive_min": 95.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 115.9,
+     "road_km": 141.7,
+     "drive_min": 125.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "052": {
+   "code": "052",
+   "unit_id": "vaasa",
+   "road_km": 122.8,
+   "drive_min": 109.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 98.3,
+     "road_km": 122.8,
+     "drive_min": 109.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 169.7,
+     "road_km": 203.0,
+     "drive_min": 176.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 207.5,
+     "road_km": 242.7,
+     "drive_min": 211.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "061": {
+   "code": "061",
+   "unit_id": "turku",
+   "road_km": 87.6,
+   "drive_min": 78.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 77.5,
+     "road_km": 102.1,
+     "drive_min": 84.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 82.9,
+     "road_km": 87.6,
+     "drive_min": 78.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 99.0,
+     "road_km": 113.4,
+     "drive_min": 91.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "069": {
+   "code": "069",
+   "unit_id": "oulu",
+   "road_km": 160.9,
+   "drive_min": 137.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 140.3,
+     "road_km": 160.9,
+     "drive_min": 137.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 149.9,
+     "road_km": 190.0,
+     "drive_min": 153.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 170.0,
+     "road_km": 189.9,
+     "drive_min": 158.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "071": {
+   "code": "071",
+   "unit_id": "oulu",
+   "road_km": 122.8,
+   "drive_min": 109.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 97.0,
+     "road_km": 122.8,
+     "drive_min": 109.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 178.3,
+     "road_km": 222.8,
+     "drive_min": 186.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 212.8,
+     "road_km": 247.6,
+     "drive_min": 208.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "072": {
+   "code": "072",
+   "unit_id": "oulu",
+   "road_km": 54.4,
+   "drive_min": 61.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 37.7,
+     "road_km": 54.4,
+     "drive_min": 61.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 262.5,
+     "road_km": 357.2,
+     "drive_min": 315.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 275.6,
+     "road_km": 323.9,
+     "drive_min": 283.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "074": {
+   "code": "074",
+   "unit_id": "vaasa",
+   "road_km": 163.5,
+   "drive_min": 152.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 134.5,
+     "road_km": 163.5,
+     "drive_min": 152.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 157.3,
+     "road_km": 183.4,
+     "drive_min": 171.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 184.0,
+     "road_km": 221.6,
+     "drive_min": 201.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "075": {
+   "code": "075",
+   "unit_id": "kotka",
+   "road_km": 24.0,
+   "drive_min": 22.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kotka",
+     "straight_km": 18.7,
+     "road_km": 24.0,
+     "drive_min": 22.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 77.7,
+     "road_km": 89.4,
+     "drive_min": 83.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 100.2,
+     "road_km": 121.7,
+     "drive_min": 108.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "077": {
+   "code": "077",
+   "unit_id": "jyvaskyla",
+   "road_km": 59.4,
+   "drive_min": 57.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 41.7,
+     "road_km": 59.4,
+     "drive_min": 57.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 83.8,
+     "road_km": 110.4,
+     "drive_min": 94.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 161.8,
+     "road_km": 196.6,
+     "drive_min": 164.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "078": {
+   "code": "078",
+   "unit_id": "hus",
+   "road_km": 127.0,
+   "drive_min": 120.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 79.4,
+     "road_km": 146.6,
+     "drive_min": 123.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 115.2,
+     "road_km": 127.0,
+     "drive_min": 120.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 192.5,
+     "road_km": 272.8,
+     "drive_min": 220.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "079": {
+   "code": "079",
+   "unit_id": "pori",
+   "road_km": 27.9,
+   "drive_min": 25.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 26.1,
+     "road_km": 27.9,
+     "drive_min": 25.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 91.4,
+     "road_km": 114.7,
+     "drive_min": 99.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 96.0,
+     "road_km": 125.9,
+     "drive_min": 103.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "081": {
+   "code": "081",
+   "unit_id": "lahti",
+   "road_km": 86.9,
+   "drive_min": 68.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 69.3,
+     "road_km": 86.9,
+     "drive_min": 68.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 74.2,
+     "road_km": 94.2,
+     "drive_min": 80.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 116.9,
+     "road_km": 207.7,
+     "drive_min": 168.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "082": {
+   "code": "082",
+   "unit_id": "tampere",
+   "road_km": 71.6,
+   "drive_min": 53.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 58.1,
+     "road_km": 71.6,
+     "drive_min": 53.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 64.9,
+     "road_km": 79.2,
+     "drive_min": 76.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 100.8,
+     "road_km": 108.0,
+     "drive_min": 79.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "086": {
+   "code": "086",
+   "unit_id": "lahti",
+   "road_km": 40.8,
+   "drive_min": 35.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 37.1,
+     "road_km": 40.8,
+     "drive_min": 35.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 66.9,
+     "road_km": 85.6,
+     "drive_min": 68.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 103.0,
+     "road_km": 128.5,
+     "drive_min": 94.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "090": {
+   "code": "090",
+   "unit_id": "joensuu",
+   "road_km": 80.7,
+   "drive_min": 84.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 61.7,
+     "road_km": 80.7,
+     "drive_min": 84.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 72.6,
+     "road_km": 106.4,
+     "drive_min": 101.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 152.6,
+     "road_km": 181.4,
+     "drive_min": 163.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "091": {
+   "code": "091",
+   "unit_id": "hus",
+   "road_km": 3.3,
+   "drive_min": 9.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 2.5,
+     "road_km": 3.3,
+     "drive_min": 9.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 97.7,
+     "road_km": 107.2,
+     "drive_min": 85.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 113.9,
+     "road_km": 130.3,
+     "drive_min": 95.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "092": {
+   "code": "092",
+   "unit_id": "hus",
+   "road_km": 20.0,
+   "drive_min": 25.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 13.9,
+     "road_km": 20.0,
+     "drive_min": 25.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 82.8,
+     "road_km": 93.6,
+     "drive_min": 72.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 104.9,
+     "road_km": 122.6,
+     "drive_min": 86.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "097": {
+   "code": "097",
+   "unit_id": "lahti",
+   "road_km": 119.1,
+   "drive_min": 94.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 86.5,
+     "road_km": 108.3,
+     "drive_min": 109.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 96.7,
+     "road_km": 119.1,
+     "drive_min": 94.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 99.4,
+     "road_km": 127.7,
+     "drive_min": 122.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "098": {
+   "code": "098",
+   "unit_id": "lahti",
+   "road_km": 3.7,
+   "drive_min": 5.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 3.0,
+     "road_km": 3.7,
+     "drive_min": 5.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 94.9,
+     "road_km": 110.1,
+     "drive_min": 85.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 95.0,
+     "road_km": 125.3,
+     "drive_min": 111.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "102": {
+   "code": "102",
+   "unit_id": "pori",
+   "road_km": 62.1,
+   "drive_min": 52.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 59.0,
+     "road_km": 62.1,
+     "drive_min": 52.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 69.7,
+     "road_km": 78.8,
+     "drive_min": 70.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 83.4,
+     "road_km": 92.3,
+     "drive_min": 77.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "103": {
+   "code": "103",
+   "unit_id": "tampere",
+   "road_km": 84.0,
+   "drive_min": 69.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 68.8,
+     "road_km": 84.0,
+     "drive_min": 69.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 78.6,
+     "road_km": 90.7,
+     "drive_min": 77.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 104.7,
+     "road_km": 109.4,
+     "drive_min": 89.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "105": {
+   "code": "105",
+   "unit_id": "oulu",
+   "road_km": 200.2,
+   "drive_min": 178.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 145.4,
+     "road_km": 200.2,
+     "drive_min": 178.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 202.1,
+     "road_km": 241.5,
+     "drive_min": 199.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 240.4,
+     "road_km": 286.9,
+     "drive_min": 233.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "106": {
+   "code": "106",
+   "unit_id": "hus",
+   "road_km": 54.5,
+   "drive_min": 48.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 49.2,
+     "road_km": 54.5,
+     "drive_min": 48.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 55.7,
+     "road_km": 74.8,
+     "drive_min": 61.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 112.3,
+     "road_km": 127.5,
+     "drive_min": 93.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "108": {
+   "code": "108",
+   "unit_id": "tampere",
+   "road_km": 38.5,
+   "drive_min": 40.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 35.5,
+     "road_km": 38.5,
+     "drive_min": 40.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 77.1,
+     "road_km": 94.3,
+     "drive_min": 77.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 140.0,
+     "road_km": 160.6,
+     "drive_min": 140.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "109": {
+   "code": "109",
+   "unit_id": "tampere",
+   "road_km": 79.6,
+   "drive_min": 58.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 59.4,
+     "road_km": 69.2,
+     "drive_min": 67.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 66.6,
+     "road_km": 79.6,
+     "drive_min": 58.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 92.8,
+     "road_km": 98.9,
+     "drive_min": 72.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "111": {
+   "code": "111",
+   "unit_id": "lahti",
+   "road_km": 43.5,
+   "drive_min": 37.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 34.5,
+     "road_km": 43.5,
+     "drive_min": 37.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 93.9,
+     "road_km": 123.0,
+     "drive_min": 105.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 115.3,
+     "road_km": 138.6,
+     "drive_min": 117.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "139": {
+   "code": "139",
+   "unit_id": "oulu",
+   "road_km": 37.2,
+   "drive_min": 31.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 35.1,
+     "road_km": 37.2,
+     "drive_min": 31.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 290.7,
+     "road_km": 322.7,
+     "drive_min": 265.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 307.6,
+     "road_km": 356.1,
+     "drive_min": 297.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "140": {
+   "code": "140",
+   "unit_id": "kuopio",
+   "road_km": 85.0,
+   "drive_min": 73.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 76.8,
+     "road_km": 85.0,
+     "drive_min": 73.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 165.6,
+     "road_km": 234.8,
+     "drive_min": 196.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 168.9,
+     "road_km": 201.0,
+     "drive_min": 180.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "142": {
+   "code": "142",
+   "unit_id": "lahti",
+   "road_km": 48.2,
+   "drive_min": 48.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 43.1,
+     "road_km": 48.2,
+     "drive_min": 48.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 55.1,
+     "road_km": 78.0,
+     "drive_min": 66.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 103.2,
+     "road_km": 110.4,
+     "drive_min": 93.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "143": {
+   "code": "143",
+   "unit_id": "tampere",
+   "road_km": 56.3,
+   "drive_min": 52.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 49.2,
+     "road_km": 56.3,
+     "drive_min": 52.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 75.4,
+     "road_km": 106.2,
+     "drive_min": 85.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 146.9,
+     "road_km": 210.7,
+     "drive_min": 174.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "145": {
+   "code": "145",
+   "unit_id": "vaasa",
+   "road_km": 70.7,
+   "drive_min": 63.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 62.7,
+     "road_km": 70.7,
+     "drive_min": 63.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 145.9,
+     "road_km": 190.8,
+     "drive_min": 158.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 150.8,
+     "road_km": 181.1,
+     "drive_min": 156.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "146": {
+   "code": "146",
+   "unit_id": "joensuu",
+   "road_km": 71.3,
+   "drive_min": 61.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 59.5,
+     "road_km": 71.3,
+     "drive_min": 61.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 168.8,
+     "road_km": 209.0,
+     "drive_min": 183.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 228.6,
+     "road_km": 264.4,
+     "drive_min": 228.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "148": {
+   "code": "148",
+   "unit_id": "oulu",
+   "road_km": 550.6,
+   "drive_min": 462.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 438.3,
+     "road_km": 550.6,
+     "drive_min": 462.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 668.7,
+     "road_km": 835.3,
+     "drive_min": 685.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 691.2,
+     "road_km": 869.5,
+     "drive_min": 727.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "149": {
+   "code": "149",
+   "unit_id": "hus",
+   "road_km": 57.6,
+   "drive_min": 58.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 52.5,
+     "road_km": 57.6,
+     "drive_min": 58.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 104.9,
+     "road_km": 127.7,
+     "drive_min": 107.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 135.6,
+     "road_km": 166.3,
+     "drive_min": 133.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "151": {
+   "code": "151",
+   "unit_id": "pori",
+   "road_km": 85.9,
+   "drive_min": 77.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 71.7,
+     "road_km": 85.9,
+     "drive_min": 77.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 109.4,
+     "road_km": 134.2,
+     "drive_min": 116.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 118.7,
+     "road_km": 142.1,
+     "drive_min": 140.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "152": {
+   "code": "152",
+   "unit_id": "vaasa",
+   "road_km": 42.1,
+   "drive_min": 36.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 36.6,
+     "road_km": 42.1,
+     "drive_min": 36.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 171.9,
+     "road_km": 215.2,
+     "drive_min": 170.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 183.5,
+     "road_km": 222.6,
+     "drive_min": 187.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "153": {
+   "code": "153",
+   "unit_id": "lappeenranta",
+   "road_km": 35.8,
+   "drive_min": 31.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 33.6,
+     "road_km": 35.8,
+     "drive_min": 31.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 128.6,
+     "road_km": 143.0,
+     "drive_min": 119.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 164.1,
+     "road_km": 197.8,
+     "drive_min": 163.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "165": {
+   "code": "165",
+   "unit_id": "lahti",
+   "road_km": 63.1,
+   "drive_min": 61.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 50.3,
+     "road_km": 63.1,
+     "drive_min": 61.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 78.6,
+     "road_km": 95.3,
+     "drive_min": 72.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 82.8,
+     "road_km": 94.6,
+     "drive_min": 73.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "167": {
+   "code": "167",
+   "unit_id": "joensuu",
+   "road_km": 1.8,
+   "drive_min": 4.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 1.3,
+     "road_km": 1.8,
+     "drive_min": 4.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 112.7,
+     "road_km": 137.7,
+     "drive_min": 126.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 189.2,
+     "road_km": 233.1,
+     "drive_min": 193.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "169": {
+   "code": "169",
+   "unit_id": "turku",
+   "road_km": 80.2,
+   "drive_min": 72.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 76.0,
+     "road_km": 80.2,
+     "drive_min": 72.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 79.8,
+     "road_km": 103.7,
+     "drive_min": 87.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 103.7,
+     "road_km": 118.9,
+     "drive_min": 98.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "171": {
+   "code": "171",
+   "unit_id": "kuopio",
+   "road_km": 90.6,
+   "drive_min": 74.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 80.4,
+     "road_km": 90.6,
+     "drive_min": 74.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 110.2,
+     "road_km": 134.4,
+     "drive_min": 120.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 110.5,
+     "road_km": 139.5,
+     "drive_min": 125.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "172": {
+   "code": "172",
+   "unit_id": "jyvaskyla",
+   "road_km": 74.8,
+   "drive_min": 64.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 58.4,
+     "road_km": 74.8,
+     "drive_min": 64.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 88.2,
+     "road_km": 106.8,
+     "drive_min": 85.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 124.5,
+     "road_km": 171.4,
+     "drive_min": 154.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "176": {
+   "code": "176",
+   "unit_id": "joensuu",
+   "road_km": 89.9,
+   "drive_min": 74.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 77.1,
+     "road_km": 89.9,
+     "drive_min": 74.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 89.5,
+     "road_km": 121.7,
+     "drive_min": 120.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 212.8,
+     "road_km": 271.5,
+     "drive_min": 243.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "177": {
+   "code": "177",
+   "unit_id": "tampere",
+   "road_km": 53.5,
+   "drive_min": 50.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 43.8,
+     "road_km": 53.5,
+     "drive_min": 50.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 84.7,
+     "road_km": 112.7,
+     "drive_min": 96.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 109.8,
+     "road_km": 155.7,
+     "drive_min": 144.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "178": {
+   "code": "178",
+   "unit_id": "kuopio",
+   "road_km": 123.7,
+   "drive_min": 99.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 94.5,
+     "road_km": 153.2,
+     "drive_min": 138.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 111.8,
+     "road_km": 123.7,
+     "drive_min": 99.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 118.1,
+     "road_km": 164.3,
+     "drive_min": 142.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "179": {
+   "code": "179",
+   "unit_id": "jyvaskyla",
+   "road_km": 3.3,
+   "drive_min": 6.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 2.4,
+     "road_km": 3.3,
+     "drive_min": 6.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 121.8,
+     "road_km": 147.0,
+     "drive_min": 126.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 130.2,
+     "road_km": 145.5,
+     "drive_min": 124.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "181": {
+   "code": "181",
+   "unit_id": "pori",
+   "road_km": 76.3,
+   "drive_min": 69.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 61.3,
+     "road_km": 76.3,
+     "drive_min": 69.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 68.6,
+     "road_km": 77.3,
+     "drive_min": 75.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 151.5,
+     "road_km": 189.5,
+     "drive_min": 158.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "182": {
+   "code": "182",
+   "unit_id": "jyvaskyla",
+   "road_km": 56.2,
+   "drive_min": 50.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 48.7,
+     "road_km": 56.2,
+     "drive_min": 50.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 82.9,
+     "road_km": 90.4,
+     "drive_min": 77.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 98.9,
+     "road_km": 124.0,
+     "drive_min": 115.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "186": {
+   "code": "186",
+   "unit_id": "hus",
+   "road_km": 39.5,
+   "drive_min": 39.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 33.1,
+     "road_km": 39.5,
+     "drive_min": 39.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 63.5,
+     "road_km": 70.6,
+     "drive_min": 57.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 99.9,
+     "road_km": 141.1,
+     "drive_min": 97.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "202": {
+   "code": "202",
+   "unit_id": "turku",
+   "road_km": 9.0,
+   "drive_min": 11.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 6.8,
+     "road_km": 9.0,
+     "drive_min": 11.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 122.8,
+     "road_km": 147.6,
+     "drive_min": 130.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 141.8,
+     "road_km": 156.6,
+     "drive_min": 108.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "204": {
+   "code": "204",
+   "unit_id": "kuopio",
+   "road_km": 57.5,
+   "drive_min": 56.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 43.2,
+     "road_km": 57.5,
+     "drive_min": 56.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 78.5,
+     "road_km": 92.5,
+     "drive_min": 90.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 164.5,
+     "road_km": 207.3,
+     "drive_min": 179.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "205": {
+   "code": "205",
+   "unit_id": "kuopio",
+   "road_km": 171.0,
+   "drive_min": 143.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 136.8,
+     "road_km": 200.1,
+     "drive_min": 165.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 147.7,
+     "road_km": 171.0,
+     "drive_min": 143.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 208.3,
+     "road_km": 234.4,
+     "drive_min": 187.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "208": {
+   "code": "208",
+   "unit_id": "oulu",
+   "road_km": 131.5,
+   "drive_min": 112.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 111.8,
+     "road_km": 131.5,
+     "drive_min": 112.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 174.1,
+     "road_km": 190.0,
+     "drive_min": 160.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 237.5,
+     "road_km": 285.8,
+     "drive_min": 237.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "211": {
+   "code": "211",
+   "unit_id": "tampere",
+   "road_km": 16.3,
+   "drive_min": 16.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 14.1,
+     "road_km": 16.3,
+     "drive_min": 16.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 96.0,
+     "road_km": 106.9,
+     "drive_min": 96.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 121.1,
+     "road_km": 140.9,
+     "drive_min": 123.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "213": {
+   "code": "213",
+   "unit_id": "jyvaskyla",
+   "road_km": 71.5,
+   "drive_min": 68.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 55.6,
+     "road_km": 71.5,
+     "drive_min": 68.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 113.3,
+     "road_km": 135.9,
+     "drive_min": 119.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 124.7,
+     "road_km": 150.3,
+     "drive_min": 127.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "214": {
+   "code": "214",
+   "unit_id": "pori",
+   "road_km": 57.7,
+   "drive_min": 52.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 48.9,
+     "road_km": 57.7,
+     "drive_min": 52.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 82.0,
+     "road_km": 98.9,
+     "drive_min": 98.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 147.9,
+     "road_km": 171.2,
+     "drive_min": 160.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "216": {
+   "code": "216",
+   "unit_id": "jyvaskyla",
+   "road_km": 101.3,
+   "drive_min": 99.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 86.0,
+     "road_km": 101.3,
+     "drive_min": 99.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 120.9,
+     "road_km": 179.9,
+     "drive_min": 157.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 180.1,
+     "road_km": 246.2,
+     "drive_min": 217.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "217": {
+   "code": "217",
+   "unit_id": "vaasa",
+   "road_km": 163.1,
+   "drive_min": 136.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 145.0,
+     "road_km": 168.0,
+     "drive_min": 140.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 145.9,
+     "road_km": 163.1,
+     "drive_min": 136.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 206.6,
+     "road_km": 258.3,
+     "drive_min": 230.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "218": {
+   "code": "218",
+   "unit_id": "pori",
+   "road_km": 105.8,
+   "drive_min": 89.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 86.6,
+     "road_km": 114.3,
+     "drive_min": 94.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 92.7,
+     "road_km": 105.8,
+     "drive_min": 89.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 141.9,
+     "road_km": 171.8,
+     "drive_min": 173.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "224": {
+   "code": "224",
+   "unit_id": "hus",
+   "road_km": 65.7,
+   "drive_min": 55.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 54.4,
+     "road_km": 65.7,
+     "drive_min": 55.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 89.6,
+     "road_km": 102.9,
+     "drive_min": 95.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 105.5,
+     "road_km": 129.4,
+     "drive_min": 104.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "226": {
+   "code": "226",
+   "unit_id": "jyvaskyla",
+   "road_km": 103.9,
+   "drive_min": 99.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 85.6,
+     "road_km": 103.9,
+     "drive_min": 99.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 144.1,
+     "road_km": 212.0,
+     "drive_min": 186.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 161.1,
+     "road_km": 194.0,
+     "drive_min": 177.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "230": {
+   "code": "230",
+   "unit_id": "pori",
+   "road_km": 95.1,
+   "drive_min": 87.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 83.9,
+     "road_km": 95.1,
+     "drive_min": 87.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 96.1,
+     "road_km": 118.9,
+     "drive_min": 112.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 116.3,
+     "road_km": 143.7,
+     "drive_min": 130.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "231": {
+   "code": "231",
+   "unit_id": "vaasa",
+   "road_km": 94.7,
+   "drive_min": 77.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 80.4,
+     "road_km": 94.7,
+     "drive_min": 77.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 105.4,
+     "road_km": 124.1,
+     "drive_min": 99.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 167.1,
+     "road_km": 238.4,
+     "drive_min": 193.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "232": {
+   "code": "232",
+   "unit_id": "vaasa",
+   "road_km": 92.4,
+   "drive_min": 87.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 78.9,
+     "road_km": 92.4,
+     "drive_min": 87.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 107.6,
+     "road_km": 126.5,
+     "drive_min": 121.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 133.3,
+     "road_km": 177.2,
+     "drive_min": 156.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "233": {
+   "code": "233",
+   "unit_id": "vaasa",
+   "road_km": 81.6,
+   "drive_min": 75.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 72.9,
+     "road_km": 81.6,
+     "drive_min": 75.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 166.0,
+     "road_km": 215.0,
+     "drive_min": 187.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 181.7,
+     "road_km": 219.9,
+     "drive_min": 184.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "235": {
+   "code": "235",
+   "unit_id": "hus",
+   "road_km": 11.5,
+   "drive_min": 15.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 10.2,
+     "road_km": 11.5,
+     "drive_min": 15.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 98.4,
+     "road_km": 116.4,
+     "drive_min": 90.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 123.7,
+     "road_km": 139.5,
+     "drive_min": 100.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "236": {
+   "code": "236",
+   "unit_id": "vaasa",
+   "road_km": 152.2,
+   "drive_min": 130.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 115.8,
+     "road_km": 152.2,
+     "drive_min": 130.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 178.6,
+     "road_km": 198.9,
+     "drive_min": 175.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 184.6,
+     "road_km": 213.7,
+     "drive_min": 181.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "239": {
+   "code": "239",
+   "unit_id": "kuopio",
+   "road_km": 102.3,
+   "drive_min": 89.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 72.5,
+     "road_km": 102.3,
+     "drive_min": 89.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 110.6,
+     "road_km": 142.6,
+     "drive_min": 125.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 185.7,
+     "road_km": 218.3,
+     "drive_min": 196.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "240": {
+   "code": "240",
+   "unit_id": "oulu",
+   "road_km": 107.4,
+   "drive_min": 91.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 92.1,
+     "road_km": 107.4,
+     "drive_min": 91.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 326.7,
+     "road_km": 426.3,
+     "drive_min": 356.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 348.5,
+     "road_km": 392.9,
+     "drive_min": 324.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "241": {
+   "code": "241",
+   "unit_id": "oulu",
+   "road_km": 115.3,
+   "drive_min": 97.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 98.9,
+     "road_km": 115.3,
+     "drive_min": 97.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 332.8,
+     "road_km": 434.2,
+     "drive_min": 362.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 355.5,
+     "road_km": 400.8,
+     "drive_min": 330.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "244": {
+   "code": "244",
+   "unit_id": "oulu",
+   "road_km": 14.7,
+   "drive_min": 15.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 10.6,
+     "road_km": 14.7,
+     "drive_min": 15.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 247.2,
+     "road_km": 276.3,
+     "drive_min": 229.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 278.0,
+     "road_km": 309.7,
+     "drive_min": 261.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "245": {
+   "code": "245",
+   "unit_id": "hus",
+   "road_km": 31.3,
+   "drive_min": 32.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 26.1,
+     "road_km": 31.3,
+     "drive_min": 32.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 70.4,
+     "road_km": 81.2,
+     "drive_min": 61.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 99.8,
+     "road_km": 132.9,
+     "drive_min": 91.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "249": {
+   "code": "249",
+   "unit_id": "jyvaskyla",
+   "road_km": 57.3,
+   "drive_min": 51.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 51.8,
+     "road_km": 57.3,
+     "drive_min": 51.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 96.2,
+     "road_km": 114.0,
+     "drive_min": 99.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 148.0,
+     "road_km": 189.0,
+     "drive_min": 177.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "250": {
+   "code": "250",
+   "unit_id": "tampere",
+   "road_km": 113.2,
+   "drive_min": 97.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 85.0,
+     "road_km": 113.2,
+     "drive_min": 97.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 109.7,
+     "road_km": 122.8,
+     "drive_min": 99.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 126.0,
+     "road_km": 144.9,
+     "drive_min": 131.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "256": {
+   "code": "256",
+   "unit_id": "jyvaskyla",
+   "road_km": 163.8,
+   "drive_min": 150.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 131.8,
+     "road_km": 163.8,
+     "drive_min": 150.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 144.4,
+     "road_km": 186.7,
+     "drive_min": 172.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 170.8,
+     "road_km": 239.8,
+     "drive_min": 201.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "257": {
+   "code": "257",
+   "unit_id": "hus",
+   "road_km": 31.3,
+   "drive_min": 34.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 26.9,
+     "road_km": 31.3,
+     "drive_min": 34.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 114.7,
+     "road_km": 140.0,
+     "drive_min": 109.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 123.9,
+     "road_km": 164.9,
+     "drive_min": 115.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "260": {
+   "code": "260",
+   "unit_id": "joensuu",
+   "road_km": 66.7,
+   "drive_min": 57.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 57.8,
+     "road_km": 66.7,
+     "drive_min": 57.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 153.7,
+     "road_km": 176.0,
+     "drive_min": 148.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 155.7,
+     "road_km": 204.4,
+     "drive_min": 179.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "261": {
+   "code": "261",
+   "unit_id": "oulu",
+   "road_km": 372.8,
+   "drive_min": 307.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 295.4,
+     "road_km": 372.8,
+     "drive_min": 307.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 530.3,
+     "road_km": 691.7,
+     "drive_min": 572.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 543.8,
+     "road_km": 657.5,
+     "drive_min": 531.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "263": {
+   "code": "263",
+   "unit_id": "kuopio",
+   "road_km": 122.4,
+   "drive_min": 103.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 98.4,
+     "road_km": 122.4,
+     "drive_min": 103.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 159.7,
+     "road_km": 196.2,
+     "drive_min": 158.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 164.8,
+     "road_km": 216.8,
+     "drive_min": 178.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "265": {
+   "code": "265",
+   "unit_id": "jyvaskyla",
+   "road_km": 126.2,
+   "drive_min": 122.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 104.1,
+     "road_km": 126.2,
+     "drive_min": 122.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 132.1,
+     "road_km": 192.5,
+     "drive_min": 177.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 174.1,
+     "road_km": 207.4,
+     "drive_min": 170.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "271": {
+   "code": "271",
+   "unit_id": "pori",
+   "road_km": 41.1,
+   "drive_min": 36.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 38.7,
+     "road_km": 41.1,
+     "drive_min": 36.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 82.8,
+     "road_km": 101.3,
+     "drive_min": 89.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 89.3,
+     "road_km": 112.5,
+     "drive_min": 93.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "272": {
+   "code": "272",
+   "unit_id": "vaasa",
+   "road_km": 122.3,
+   "drive_min": 102.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 112.6,
+     "road_km": 122.3,
+     "drive_min": 102.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 173.3,
+     "road_km": 199.7,
+     "drive_min": 172.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 220.8,
+     "road_km": 244.4,
+     "drive_min": 212.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "273": {
+   "code": "273",
+   "unit_id": "oulu",
+   "road_km": 319.5,
+   "drive_min": 269.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 269.8,
+     "road_km": 319.5,
+     "drive_min": 269.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 482.9,
+     "road_km": 638.4,
+     "drive_min": 534.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 524.8,
+     "road_km": 605.0,
+     "drive_min": 502.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "275": {
+   "code": "275",
+   "unit_id": "jyvaskyla",
+   "road_km": 69.6,
+   "drive_min": 65.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 53.4,
+     "road_km": 69.6,
+     "drive_min": 65.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 75.4,
+     "road_km": 105.8,
+     "drive_min": 96.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 178.6,
+     "road_km": 225.8,
+     "drive_min": 210.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "276": {
+   "code": "276",
+   "unit_id": "joensuu",
+   "road_km": 23.7,
+   "drive_min": 24.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 19.9,
+     "road_km": 23.7,
+     "drive_min": 24.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 112.8,
+     "road_km": 155.3,
+     "drive_min": 140.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 207.8,
+     "road_km": 252.8,
+     "drive_min": 209.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "280": {
+   "code": "280",
+   "unit_id": "vaasa",
+   "road_km": 52.4,
+   "drive_min": 45.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 40.0,
+     "road_km": 52.4,
+     "drive_min": 45.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 148.9,
+     "road_km": 163.7,
+     "drive_min": 130.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 197.2,
+     "road_km": 278.0,
+     "drive_min": 224.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "284": {
+   "code": "284",
+   "unit_id": "turku",
+   "road_km": 56.4,
+   "drive_min": 55.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 51.5,
+     "road_km": 56.4,
+     "drive_min": 55.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 101.2,
+     "road_km": 127.3,
+     "drive_min": 109.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 110.0,
+     "road_km": 140.0,
+     "drive_min": 107.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "285": {
+   "code": "285",
+   "unit_id": "kotka",
+   "road_km": 3.6,
+   "drive_min": 5.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kotka",
+     "straight_km": 2.2,
+     "road_km": 3.6,
+     "drive_min": 5.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 95.0,
+     "road_km": 126.2,
+     "drive_min": 112.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 95.6,
+     "road_km": 112.2,
+     "drive_min": 101.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "286": {
+   "code": "286",
+   "unit_id": "kotka",
+   "road_km": 54.0,
+   "drive_min": 47.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kotka",
+     "straight_km": 44.9,
+     "road_km": 54.0,
+     "drive_min": 47.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 62.9,
+     "road_km": 67.8,
+     "drive_min": 66.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 84.2,
+     "road_km": 89.0,
+     "drive_min": 77.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "287": {
+   "code": "287",
+   "unit_id": "pori",
+   "road_km": 100.3,
+   "drive_min": 81.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 91.0,
+     "road_km": 100.8,
+     "drive_min": 81.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 91.4,
+     "road_km": 100.3,
+     "drive_min": 81.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 153.6,
+     "road_km": 214.7,
+     "drive_min": 175.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "288": {
+   "code": "288",
+   "unit_id": "vaasa",
+   "road_km": 108.9,
+   "drive_min": 92.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 100.3,
+     "road_km": 108.9,
+     "drive_min": 92.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 186.1,
+     "road_km": 213.8,
+     "drive_min": 183.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 214.1,
+     "road_km": 241.5,
+     "drive_min": 214.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "290": {
+   "code": "290",
+   "unit_id": "kuopio",
+   "road_km": 206.5,
+   "drive_min": 176.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 165.3,
+     "road_km": 206.5,
+     "drive_min": 176.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 171.4,
+     "road_km": 211.2,
+     "drive_min": 177.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 214.5,
+     "road_km": 256.4,
+     "drive_min": 233.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "291": {
+   "code": "291",
+   "unit_id": "jyvaskyla",
+   "road_km": 93.5,
+   "drive_min": 81.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 67.0,
+     "road_km": 85.4,
+     "drive_min": 82.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 72.9,
+     "road_km": 83.9,
+     "drive_min": 86.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 78.7,
+     "road_km": 93.5,
+     "drive_min": 81.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "297": {
+   "code": "297",
+   "unit_id": "kuopio",
+   "road_km": 2.5,
+   "drive_min": 5.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 1.7,
+     "road_km": 2.5,
+     "drive_min": 5.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 112.1,
+     "road_km": 139.2,
+     "drive_min": 129.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 125.1,
+     "road_km": 152.6,
+     "drive_min": 130.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "300": {
+   "code": "300",
+   "unit_id": "vaasa",
+   "road_km": 116.7,
+   "drive_min": 104.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 100.6,
+     "road_km": 116.7,
+     "drive_min": 104.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 129.7,
+     "road_km": 161.1,
+     "drive_min": 145.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 145.6,
+     "road_km": 216.6,
+     "drive_min": 187.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "301": {
+   "code": "301",
+   "unit_id": "vaasa",
+   "road_km": 77.4,
+   "drive_min": 66.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 65.5,
+     "road_km": 77.4,
+     "drive_min": 66.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 131.1,
+     "road_km": 155.1,
+     "drive_min": 145.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 143.9,
+     "road_km": 169.3,
+     "drive_min": 144.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "304": {
+   "code": "304",
+   "unit_id": "turku",
+   "road_km": 69.2,
+   "drive_min": 72.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 52.1,
+     "road_km": 69.2,
+     "drive_min": 72.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 105.7,
+     "road_km": 139.9,
+     "drive_min": 131.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 169.8,
+     "road_km": 225.1,
+     "drive_min": 190.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "305": {
+   "code": "305",
+   "unit_id": "oulu",
+   "road_km": 217.5,
+   "drive_min": 191.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 199.9,
+     "road_km": 217.5,
+     "drive_min": 191.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 349.1,
+     "road_km": 418.3,
+     "drive_min": 342.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 376.4,
+     "road_km": 463.7,
+     "drive_min": 375.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "309": {
+   "code": "309",
+   "unit_id": "joensuu",
+   "road_km": 48.5,
+   "drive_min": 44.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 41.6,
+     "road_km": 48.5,
+     "drive_min": 44.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 72.3,
+     "road_km": 93.9,
+     "drive_min": 89.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 178.9,
+     "road_km": 241.4,
+     "drive_min": 211.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "312": {
+   "code": "312",
+   "unit_id": "jyvaskyla",
+   "road_km": 121.6,
+   "drive_min": 111.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 107.6,
+     "road_km": 121.6,
+     "drive_min": 111.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 148.6,
+     "road_km": 163.2,
+     "drive_min": 133.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 156.6,
+     "road_km": 214.6,
+     "drive_min": 182.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "316": {
+   "code": "316",
+   "unit_id": "lahti",
+   "road_km": 23.3,
+   "drive_min": 22.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 20.9,
+     "road_km": 23.3,
+     "drive_min": 22.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 78.2,
+     "road_km": 94.6,
+     "drive_min": 76.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 99.1,
+     "road_km": 153.0,
+     "drive_min": 114.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "317": {
+   "code": "317",
+   "unit_id": "oulu",
+   "road_km": 124.6,
+   "drive_min": 102.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 114.9,
+     "road_km": 124.6,
+     "drive_min": 102.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 152.6,
+     "road_km": 191.4,
+     "drive_min": 154.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 194.5,
+     "road_km": 216.3,
+     "drive_min": 176.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "320": {
+   "code": "320",
+   "unit_id": "oulu",
+   "road_km": 309.3,
+   "drive_min": 261.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 208.8,
+     "road_km": 309.3,
+     "drive_min": 261.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 424.6,
+     "road_km": 557.3,
+     "drive_min": 459.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 471.9,
+     "road_km": 602.7,
+     "drive_min": 493.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "322": {
+   "code": "322",
+   "unit_id": "turku",
+   "road_km": 62.4,
+   "drive_min": 60.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 40.2,
+     "road_km": 62.4,
+     "drive_min": 60.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 120.6,
+     "road_km": 155.1,
+     "drive_min": 123.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 154.4,
+     "road_km": 205.4,
+     "drive_min": 171.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "398": {
+   "code": "398",
+   "unit_id": "lahti",
+   "road_km": 6.2,
+   "drive_min": 9.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 4.9,
+     "road_km": 6.2,
+     "drive_min": 9.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 88.3,
+     "road_km": 117.4,
+     "drive_min": 101.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 97.1,
+     "road_km": 103.5,
+     "drive_min": 80.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "399": {
+   "code": "399",
+   "unit_id": "vaasa",
+   "road_km": 25.4,
+   "drive_min": 22.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 23.3,
+     "road_km": 25.4,
+     "drive_min": 22.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 167.5,
+     "road_km": 198.5,
+     "drive_min": 155.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 188.4,
+     "road_km": 217.5,
+     "drive_min": 183.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "400": {
+   "code": "400",
+   "unit_id": "turku",
+   "road_km": 61.9,
+   "drive_min": 56.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 57.5,
+     "road_km": 61.9,
+     "drive_min": 56.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 66.3,
+     "road_km": 79.8,
+     "drive_min": 68.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 133.2,
+     "road_km": 151.3,
+     "drive_min": 131.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "402": {
+   "code": "402",
+   "unit_id": "kuopio",
+   "road_km": 59.9,
+   "drive_min": 49.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 53.7,
+     "road_km": 59.9,
+     "drive_min": 49.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 148.2,
+     "road_km": 175.9,
+     "drive_min": 157.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 152.7,
+     "road_km": 209.7,
+     "drive_min": 173.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "403": {
+   "code": "403",
+   "unit_id": "vaasa",
+   "road_km": 118.8,
+   "drive_min": 111.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 102.2,
+     "road_km": 118.8,
+     "drive_min": 111.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 152.5,
+     "road_km": 193.9,
+     "drive_min": 171.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 190.8,
+     "road_km": 258.5,
+     "drive_min": 222.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "405": {
+   "code": "405",
+   "unit_id": "lappeenranta",
+   "road_km": 1.8,
+   "drive_min": 3.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 1.5,
+     "road_km": 1.8,
+     "drive_min": 3.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 94.6,
+     "road_km": 108.0,
+     "drive_min": 95.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 141.2,
+     "road_km": 153.8,
+     "drive_min": 132.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "407": {
+   "code": "407",
+   "unit_id": "kotka",
+   "road_km": 57.9,
+   "drive_min": 56.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kotka",
+     "straight_km": 42.3,
+     "road_km": 57.9,
+     "drive_min": 56.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 53.4,
+     "road_km": 76.0,
+     "drive_min": 76.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 85.8,
+     "road_km": 94.0,
+     "drive_min": 74.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "408": {
+   "code": "408",
+   "unit_id": "vaasa",
+   "road_km": 82.5,
+   "drive_min": 70.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 71.4,
+     "road_km": 82.5,
+     "drive_min": 70.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 160.7,
+     "road_km": 204.3,
+     "drive_min": 179.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 168.2,
+     "road_km": 206.1,
+     "drive_min": 174.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "410": {
+   "code": "410",
+   "unit_id": "jyvaskyla",
+   "road_km": 26.6,
+   "drive_min": 33.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 24.2,
+     "road_km": 26.6,
+     "drive_min": 33.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 101.8,
+     "road_km": 142.8,
+     "drive_min": 131.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 150.8,
+     "road_km": 169.1,
+     "drive_min": 150.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "416": {
+   "code": "416",
+   "unit_id": "lappeenranta",
+   "road_km": 26.8,
+   "drive_min": 28.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 21.8,
+     "road_km": 26.8,
+     "drive_min": 28.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 81.0,
+     "road_km": 102.6,
+     "drive_min": 96.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 120.7,
+     "road_km": 148.6,
+     "drive_min": 134.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "418": {
+   "code": "418",
+   "unit_id": "tampere",
+   "road_km": 25.2,
+   "drive_min": 24.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 21.4,
+     "road_km": 25.2,
+     "drive_min": 24.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 103.7,
+     "road_km": 126.7,
+     "drive_min": 108.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 106.4,
+     "road_km": 133.0,
+     "drive_min": 107.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "420": {
+   "code": "420",
+   "unit_id": "kuopio",
+   "road_km": 53.4,
+   "drive_min": 45.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 45.7,
+     "road_km": 53.4,
+     "drive_min": 45.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 102.7,
+     "road_km": 126.8,
+     "drive_min": 118.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 111.3,
+     "road_km": 145.6,
+     "drive_min": 128.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "421": {
+   "code": "421",
+   "unit_id": "jyvaskyla",
+   "road_km": 188.7,
+   "drive_min": 172.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 153.3,
+     "road_km": 188.7,
+     "drive_min": 172.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 160.0,
+     "road_km": 193.2,
+     "drive_min": 184.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 164.9,
+     "road_km": 211.6,
+     "drive_min": 194.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "422": {
+   "code": "422",
+   "unit_id": "joensuu",
+   "road_km": 101.0,
+   "drive_min": 90.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 81.8,
+     "road_km": 101.0,
+     "drive_min": 90.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 128.4,
+     "road_km": 185.7,
+     "drive_min": 156.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 250.8,
+     "road_km": 335.5,
+     "drive_min": 280.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "423": {
+   "code": "423",
+   "unit_id": "turku",
+   "road_km": 11.6,
+   "drive_min": 15.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 10.8,
+     "road_km": 11.6,
+     "drive_min": 15.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 113.8,
+     "road_km": 141.4,
+     "drive_min": 119.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 133.0,
+     "road_km": 155.3,
+     "drive_min": 131.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "425": {
+   "code": "425",
+   "unit_id": "oulu",
+   "road_km": 27.5,
+   "drive_min": 27.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 22.7,
+     "road_km": 27.5,
+     "drive_min": 27.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 238.9,
+     "road_km": 268.0,
+     "drive_min": 225.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 266.8,
+     "road_km": 295.7,
+     "drive_min": 249.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "426": {
+   "code": "426",
+   "unit_id": "joensuu",
+   "road_km": 28.4,
+   "drive_min": 30.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 21.3,
+     "road_km": 28.4,
+     "drive_min": 30.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 97.5,
+     "road_km": 125.5,
+     "drive_min": 117.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 174.4,
+     "road_km": 259.5,
+     "drive_min": 215.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "430": {
+   "code": "430",
+   "unit_id": "turku",
+   "road_km": 67.3,
+   "drive_min": 59.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 60.8,
+     "road_km": 67.3,
+     "drive_min": 59.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 83.3,
+     "road_km": 100.7,
+     "drive_min": 82.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 97.4,
+     "road_km": 110.6,
+     "drive_min": 94.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "433": {
+   "code": "433",
+   "unit_id": "lahti",
+   "road_km": 74.0,
+   "drive_min": 64.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 64.2,
+     "road_km": 84.5,
+     "drive_min": 66.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 68.2,
+     "road_km": 74.0,
+     "drive_min": 64.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 93.7,
+     "road_km": 128.1,
+     "drive_min": 93.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "434": {
+   "code": "434",
+   "unit_id": "kotka",
+   "road_km": 46.1,
+   "drive_min": 34.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kotka",
+     "straight_km": 37.7,
+     "road_km": 46.1,
+     "drive_min": 34.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 69.5,
+     "road_km": 82.2,
+     "drive_min": 91.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 78.4,
+     "road_km": 88.8,
+     "drive_min": 68.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "435": {
+   "code": "435",
+   "unit_id": "jyvaskyla",
+   "road_km": 61.0,
+   "drive_min": 62.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 47.8,
+     "road_km": 61.0,
+     "drive_min": 62.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 90.0,
+     "road_km": 139.7,
+     "drive_min": 118.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 104.9,
+     "road_km": 155.9,
+     "drive_min": 140.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "436": {
+   "code": "436",
+   "unit_id": "oulu",
+   "road_km": 39.2,
+   "drive_min": 38.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 24.5,
+     "road_km": 39.2,
+     "drive_min": 38.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 247.0,
+     "road_km": 279.8,
+     "drive_min": 236.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 261.5,
+     "road_km": 291.9,
+     "drive_min": 257.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "440": {
+   "code": "440",
+   "unit_id": "vaasa",
+   "road_km": 108.9,
+   "drive_min": 96.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 93.1,
+     "road_km": 108.9,
+     "drive_min": 96.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 193.0,
+     "road_km": 224.8,
+     "drive_min": 199.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 225.4,
+     "road_km": 265.3,
+     "drive_min": 235.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "441": {
+   "code": "441",
+   "unit_id": "lappeenranta",
+   "road_km": 41.7,
+   "drive_min": 38.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 38.4,
+     "road_km": 41.7,
+     "drive_min": 38.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 60.4,
+     "road_km": 68.6,
+     "drive_min": 64.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 108.2,
+     "road_km": 116.1,
+     "drive_min": 105.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "444": {
+   "code": "444",
+   "unit_id": "hus",
+   "road_km": 54.9,
+   "drive_min": 43.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 47.0,
+     "road_km": 54.9,
+     "drive_min": 43.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 100.3,
+     "road_km": 115.2,
+     "drive_min": 80.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 116.3,
+     "road_km": 135.7,
+     "drive_min": 114.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "445": {
+   "code": "445",
+   "unit_id": "turku",
+   "road_km": 24.8,
+   "drive_min": 29.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 17.1,
+     "road_km": 24.8,
+     "drive_min": 29.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 133.5,
+     "road_km": 173.2,
+     "drive_min": 147.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 144.5,
+     "road_km": 170.6,
+     "drive_min": 125.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "475": {
+   "code": "475",
+   "unit_id": "vaasa",
+   "road_km": 24.6,
+   "drive_min": 22.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 16.2,
+     "road_km": 24.6,
+     "drive_min": 22.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 163.6,
+     "road_km": 179.5,
+     "drive_min": 142.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 198.2,
+     "road_km": 234.4,
+     "drive_min": 202.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "480": {
+   "code": "480",
+   "unit_id": "turku",
+   "road_km": 40.1,
+   "drive_min": 41.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 36.4,
+     "road_km": 40.1,
+     "drive_min": 41.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 113.5,
+     "road_km": 140.6,
+     "drive_min": 118.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 115.7,
+     "road_km": 144.0,
+     "drive_min": 122.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "481": {
+   "code": "481",
+   "unit_id": "turku",
+   "road_km": 19.6,
+   "drive_min": 21.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 16.7,
+     "road_km": 19.6,
+     "drive_min": 21.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 101.9,
+     "road_km": 121.9,
+     "drive_min": 102.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 138.9,
+     "road_km": 175.6,
+     "drive_min": 139.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "483": {
+   "code": "483",
+   "unit_id": "oulu",
+   "road_km": 123.3,
+   "drive_min": 108.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 94.0,
+     "road_km": 123.3,
+     "drive_min": 108.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 194.0,
+     "road_km": 217.4,
+     "drive_min": 190.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 221.9,
+     "road_km": 280.6,
+     "drive_min": 238.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "484": {
+   "code": "484",
+   "unit_id": "pori",
+   "road_km": 54.9,
+   "drive_min": 47.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 45.4,
+     "road_km": 54.9,
+     "drive_min": 47.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 127.9,
+     "road_km": 169.3,
+     "drive_min": 141.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 136.2,
+     "road_km": 154.0,
+     "drive_min": 123.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "489": {
+   "code": "489",
+   "unit_id": "kotka",
+   "road_km": 63.5,
+   "drive_min": 47.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kotka",
+     "straight_km": 48.1,
+     "road_km": 63.5,
+     "drive_min": 47.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 51.8,
+     "road_km": 66.3,
+     "drive_min": 66.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 121.0,
+     "road_km": 161.3,
+     "drive_min": 133.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "491": {
+   "code": "491",
+   "unit_id": "lappeenranta",
+   "road_km": 110.9,
+   "drive_min": 104.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 85.4,
+     "road_km": 110.9,
+     "drive_min": 104.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 101.8,
+     "road_km": 120.3,
+     "drive_min": 108.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 119.3,
+     "road_km": 135.5,
+     "drive_min": 104.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "494": {
+   "code": "494",
+   "unit_id": "oulu",
+   "road_km": 33.5,
+   "drive_min": 34.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 31.6,
+     "road_km": 33.5,
+     "drive_min": 34.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 227.2,
+     "road_km": 283.0,
+     "drive_min": 242.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 286.9,
+     "road_km": 336.3,
+     "drive_min": 282.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "495": {
+   "code": "495",
+   "unit_id": "jyvaskyla",
+   "road_km": 58.7,
+   "drive_min": 51.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 51.0,
+     "road_km": 58.7,
+     "drive_min": 51.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 112.8,
+     "road_km": 132.9,
+     "drive_min": 118.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 155.5,
+     "road_km": 194.3,
+     "drive_min": 180.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "498": {
+   "code": "498",
+   "unit_id": "oulu",
+   "road_km": 396.0,
+   "drive_min": 328.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 338.2,
+     "road_km": 396.0,
+     "drive_min": 328.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 550.2,
+     "road_km": 715.0,
+     "drive_min": 593.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 591.7,
+     "road_km": 681.6,
+     "drive_min": 561.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "499": {
+   "code": "499",
+   "unit_id": "vaasa",
+   "road_km": 5.7,
+   "drive_min": 9.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 4.4,
+     "road_km": 5.7,
+     "drive_min": 9.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 182.3,
+     "road_km": 197.5,
+     "drive_min": 155.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 210.1,
+     "road_km": 245.7,
+     "drive_min": 207.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "500": {
+   "code": "500",
+   "unit_id": "jyvaskyla",
+   "road_km": 12.8,
+   "drive_min": 13.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 10.9,
+     "road_km": 12.8,
+     "drive_min": 13.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 120.2,
+     "road_km": 132.6,
+     "drive_min": 113.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 126.9,
+     "road_km": 169.5,
+     "drive_min": 147.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "503": {
+   "code": "503",
+   "unit_id": "turku",
+   "road_km": 34.4,
+   "drive_min": 34.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 30.0,
+     "road_km": 34.4,
+     "drive_min": 34.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 89.1,
+     "road_km": 107.9,
+     "drive_min": 91.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 134.3,
+     "road_km": 190.4,
+     "drive_min": 151.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "504": {
+   "code": "504",
+   "unit_id": "lahti",
+   "road_km": 43.3,
+   "drive_min": 54.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 39.1,
+     "road_km": 43.3,
+     "drive_min": 54.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 61.7,
+     "road_km": 81.8,
+     "drive_min": 68.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 74.5,
+     "road_km": 95.5,
+     "drive_min": 83.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "505": {
+   "code": "505",
+   "unit_id": "lahti",
+   "road_km": 47.2,
+   "drive_min": 39.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 41.9,
+     "road_km": 47.2,
+     "drive_min": 39.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 54.7,
+     "road_km": 61.0,
+     "drive_min": 51.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 88.8,
+     "road_km": 116.9,
+     "drive_min": 85.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "507": {
+   "code": "507",
+   "unit_id": "lahti",
+   "road_km": 105.3,
+   "drive_min": 87.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 81.3,
+     "road_km": 99.9,
+     "drive_min": 96.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 84.7,
+     "road_km": 105.3,
+     "drive_min": 87.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 104.6,
+     "road_km": 133.0,
+     "drive_min": 118.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "508": {
+   "code": "508",
+   "unit_id": "jyvaskyla",
+   "road_km": 82.8,
+   "drive_min": 75.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 60.6,
+     "road_km": 82.8,
+     "drive_min": 75.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 72.4,
+     "road_km": 86.4,
+     "drive_min": 78.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 126.2,
+     "road_km": 163.4,
+     "drive_min": 157.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "529": {
+   "code": "529",
+   "unit_id": "turku",
+   "road_km": 16.7,
+   "drive_min": 22.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 14.6,
+     "road_km": 16.7,
+     "drive_min": 22.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 112.6,
+     "road_km": 136.6,
+     "drive_min": 122.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 150.2,
+     "road_km": 174.9,
+     "drive_min": 144.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "531": {
+   "code": "531",
+   "unit_id": "pori",
+   "road_km": 17.9,
+   "drive_min": 17.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 16.9,
+     "road_km": 17.9,
+     "drive_min": 17.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 97.4,
+     "road_km": 113.6,
+     "drive_min": 103.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 102.6,
+     "road_km": 134.8,
+     "drive_min": 110.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "535": {
+   "code": "535",
+   "unit_id": "oulu",
+   "road_km": 152.3,
+   "drive_min": 133.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 122.7,
+     "road_km": 152.3,
+     "drive_min": 133.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 175.5,
+     "road_km": 217.2,
+     "drive_min": 176.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 191.4,
+     "road_km": 220.1,
+     "drive_min": 185.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "536": {
+   "code": "536",
+   "unit_id": "tampere",
+   "road_km": 18.9,
+   "drive_min": 22.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 16.6,
+     "road_km": 18.9,
+     "drive_min": 22.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 91.5,
+     "road_km": 96.6,
+     "drive_min": 80.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 122.8,
+     "road_km": 143.4,
+     "drive_min": 126.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "538": {
+   "code": "538",
+   "unit_id": "turku",
+   "road_km": 23.2,
+   "drive_min": 24.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 19.7,
+     "road_km": 23.2,
+     "drive_min": 24.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 98.7,
+     "road_km": 119.5,
+     "drive_min": 100.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 137.1,
+     "road_km": 179.1,
+     "drive_min": 142.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "541": {
+   "code": "541",
+   "unit_id": "kuopio",
+   "road_km": 129.5,
+   "drive_min": 110.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 103.5,
+     "road_km": 129.5,
+     "drive_min": 110.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 110.9,
+     "road_km": 134.3,
+     "drive_min": 110.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 227.0,
+     "road_km": 279.4,
+     "drive_min": 233.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "543": {
+   "code": "543",
+   "unit_id": "hus",
+   "road_km": 34.4,
+   "drive_min": 32.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 31.0,
+     "road_km": 34.4,
+     "drive_min": 32.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 72.0,
+     "road_km": 93.2,
+     "drive_min": 74.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 115.4,
+     "road_km": 152.0,
+     "drive_min": 107.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "545": {
+   "code": "545",
+   "unit_id": "vaasa",
+   "road_km": 81.9,
+   "drive_min": 66.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 69.4,
+     "road_km": 81.9,
+     "drive_min": 66.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 113.6,
+     "road_km": 125.1,
+     "drive_min": 99.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 168.3,
+     "road_km": 239.5,
+     "drive_min": 193.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "560": {
+   "code": "560",
+   "unit_id": "lahti",
+   "road_km": 25.0,
+   "drive_min": 29.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 22.8,
+     "road_km": 25.0,
+     "drive_min": 29.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 73.8,
+     "road_km": 99.3,
+     "drive_min": 90.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 82.0,
+     "road_km": 93.8,
+     "drive_min": 76.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "561": {
+   "code": "561",
+   "unit_id": "turku",
+   "road_km": 55.7,
+   "drive_min": 47.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 49.9,
+     "road_km": 55.7,
+     "drive_min": 47.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 84.5,
+     "road_km": 96.2,
+     "drive_min": 78.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 93.7,
+     "road_km": 114.7,
+     "drive_min": 98.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "562": {
+   "code": "562",
+   "unit_id": "tampere",
+   "road_km": 40.2,
+   "drive_min": 37.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 34.6,
+     "road_km": 40.2,
+     "drive_min": 37.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 93.5,
+     "road_km": 107.2,
+     "drive_min": 92.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 99.9,
+     "road_km": 142.4,
+     "drive_min": 131.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "563": {
+   "code": "563",
+   "unit_id": "oulu",
+   "road_km": 100.9,
+   "drive_min": 84.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 88.9,
+     "road_km": 100.9,
+     "drive_min": 84.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 205.4,
+     "road_km": 231.4,
+     "drive_min": 194.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 206.8,
+     "road_km": 254.6,
+     "drive_min": 222.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "564": {
+   "code": "564",
+   "unit_id": "oulu",
+   "road_km": 3.0,
+   "drive_min": 6.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 2.3,
+     "road_km": 3.0,
+     "drive_min": 6.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 258.2,
+     "road_km": 288.5,
+     "drive_min": 241.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 285.0,
+     "road_km": 321.8,
+     "drive_min": 272.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "576": {
+   "code": "576",
+   "unit_id": "lahti",
+   "road_km": 59.4,
+   "drive_min": 61.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 42.8,
+     "road_km": 59.4,
+     "drive_min": 61.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 79.7,
+     "road_km": 96.6,
+     "drive_min": 98.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 100.2,
+     "road_km": 123.2,
+     "drive_min": 107.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "577": {
+   "code": "577",
+   "unit_id": "turku",
+   "road_km": 25.8,
+   "drive_min": 22.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 21.7,
+     "road_km": 25.8,
+     "drive_min": 22.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 123.1,
+     "road_km": 168.7,
+     "drive_min": 133.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 125.9,
+     "road_km": 138.1,
+     "drive_min": 98.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "578": {
+   "code": "578",
+   "unit_id": "oulu",
+   "road_km": 144.5,
+   "drive_min": 133.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 128.8,
+     "road_km": 144.5,
+     "drive_min": 133.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 168.1,
+     "road_km": 208.5,
+     "drive_min": 175.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 223.7,
+     "road_km": 253.9,
+     "drive_min": 209.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "580": {
+   "code": "580",
+   "unit_id": "lappeenranta",
+   "road_km": 96.3,
+   "drive_min": 81.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 87.5,
+     "road_km": 96.3,
+     "drive_min": 81.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 116.7,
+     "road_km": 137.5,
+     "drive_min": 116.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 177.9,
+     "road_km": 219.0,
+     "drive_min": 205.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "581": {
+   "code": "581",
+   "unit_id": "tampere",
+   "road_km": 87.6,
+   "drive_min": 78.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 69.8,
+     "road_km": 87.6,
+     "drive_min": 78.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 88.4,
+     "road_km": 96.9,
+     "drive_min": 80.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 139.7,
+     "road_km": 156.3,
+     "drive_min": 128.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "583": {
+   "code": "583",
+   "unit_id": "oulu",
+   "road_km": 354.9,
+   "drive_min": 298.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 250.4,
+     "road_km": 354.9,
+     "drive_min": 298.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 468.4,
+     "road_km": 609.4,
+     "drive_min": 505.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 513.6,
+     "road_km": 654.7,
+     "drive_min": 539.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "584": {
+   "code": "584",
+   "unit_id": "jyvaskyla",
+   "road_km": 144.0,
+   "drive_min": 130.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 127.5,
+     "road_km": 144.0,
+     "drive_min": 130.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 141.8,
+     "road_km": 185.6,
+     "drive_min": 152.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 166.2,
+     "road_km": 237.1,
+     "drive_min": 201.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "592": {
+   "code": "592",
+   "unit_id": "jyvaskyla",
+   "road_km": 30.0,
+   "drive_min": 28.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 27.2,
+     "road_km": 30.0,
+     "drive_min": 28.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 110.4,
+     "road_km": 134.0,
+     "drive_min": 115.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 142.2,
+     "road_km": 172.4,
+     "drive_min": 167.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "593": {
+   "code": "593",
+   "unit_id": "kuopio",
+   "road_km": 92.0,
+   "drive_min": 81.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 70.9,
+     "road_km": 92.0,
+     "drive_min": 81.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 75.9,
+     "road_km": 92.3,
+     "drive_min": 83.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 138.3,
+     "road_km": 160.4,
+     "drive_min": 142.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "595": {
+   "code": "595",
+   "unit_id": "kuopio",
+   "road_km": 77.7,
+   "drive_min": 67.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 58.3,
+     "road_km": 77.7,
+     "drive_min": 67.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 123.6,
+     "road_km": 170.0,
+     "drive_min": 152.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 168.8,
+     "road_km": 193.7,
+     "drive_min": 175.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "598": {
+   "code": "598",
+   "unit_id": "vaasa",
+   "road_km": 98.7,
+   "drive_min": 85.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 84.3,
+     "road_km": 98.7,
+     "drive_min": 85.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 201.6,
+     "road_km": 237.1,
+     "drive_min": 204.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 220.4,
+     "road_km": 258.6,
+     "drive_min": 227.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "599": {
+   "code": "599",
+   "unit_id": "vaasa",
+   "road_km": 90.4,
+   "drive_min": 78.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 82.0,
+     "road_km": 90.4,
+     "drive_min": 78.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 204.4,
+     "road_km": 232.4,
+     "drive_min": 198.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 212.0,
+     "road_km": 254.5,
+     "drive_min": 223.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "601": {
+   "code": "601",
+   "unit_id": "jyvaskyla",
+   "road_km": 138.7,
+   "drive_min": 118.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 116.5,
+     "road_km": 161.6,
+     "drive_min": 140.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 126.6,
+     "road_km": 138.7,
+     "drive_min": 118.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 182.5,
+     "road_km": 203.8,
+     "drive_min": 165.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "604": {
+   "code": "604",
+   "unit_id": "tampere",
+   "road_km": 14.2,
+   "drive_min": 18.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 9.6,
+     "road_km": 14.2,
+     "drive_min": 18.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 99.2,
+     "road_km": 105.7,
+     "drive_min": 86.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 115.4,
+     "road_km": 133.6,
+     "drive_min": 118.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "607": {
+   "code": "607",
+   "unit_id": "joensuu",
+   "road_km": 43.8,
+   "drive_min": 43.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 35.9,
+     "road_km": 43.8,
+     "drive_min": 43.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 87.5,
+     "road_km": 118.3,
+     "drive_min": 112.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 200.3,
+     "road_km": 263.3,
+     "drive_min": 231.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "608": {
+   "code": "608",
+   "unit_id": "pori",
+   "road_km": 31.0,
+   "drive_min": 26.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 27.0,
+     "road_km": 31.0,
+     "drive_min": 26.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 97.7,
+     "road_km": 123.6,
+     "drive_min": 111.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 138.5,
+     "road_km": 168.8,
+     "drive_min": 144.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "609": {
+   "code": "609",
+   "unit_id": "pori",
+   "road_km": 2.6,
+   "drive_min": 4.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 1.6,
+     "road_km": 2.6,
+     "drive_min": 4.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 107.0,
+     "road_km": 114.7,
+     "drive_min": 98.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 117.9,
+     "road_km": 142.5,
+     "drive_min": 123.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "611": {
+   "code": "611",
+   "unit_id": "hus",
+   "road_km": 53.6,
+   "drive_min": 52.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 41.1,
+     "road_km": 53.6,
+     "drive_min": 52.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 58.4,
+     "road_km": 69.2,
+     "drive_min": 66.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 84.2,
+     "road_km": 106.7,
+     "drive_min": 82.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "614": {
+   "code": "614",
+   "unit_id": "oulu",
+   "road_km": 221.8,
+   "drive_min": 200.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 173.0,
+     "road_km": 221.8,
+     "drive_min": 200.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 358.1,
+     "road_km": 475.6,
+     "drive_min": 389.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 398.8,
+     "road_km": 521.0,
+     "drive_min": 423.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "615": {
+   "code": "615",
+   "unit_id": "oulu",
+   "road_km": 88.0,
+   "drive_min": 76.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 79.3,
+     "road_km": 88.0,
+     "drive_min": 76.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 275.6,
+     "road_km": 357.8,
+     "drive_min": 295.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 336.4,
+     "road_km": 403.2,
+     "drive_min": 328.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "616": {
+   "code": "616",
+   "unit_id": "lahti",
+   "road_km": 47.0,
+   "drive_min": 53.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 38.7,
+     "road_km": 47.0,
+     "drive_min": 53.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 62.8,
+     "road_km": 80.0,
+     "drive_min": 69.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 75.0,
+     "road_km": 93.8,
+     "drive_min": 81.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "619": {
+   "code": "619",
+   "unit_id": "pori",
+   "road_km": 90.9,
+   "drive_min": 78.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 57.8,
+     "road_km": 86.2,
+     "drive_min": 79.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 81.3,
+     "road_km": 90.9,
+     "drive_min": 78.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 85.5,
+     "road_km": 105.6,
+     "drive_min": 92.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "620": {
+   "code": "620",
+   "unit_id": "oulu",
+   "road_km": 127.4,
+   "drive_min": 133.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 102.5,
+     "road_km": 127.4,
+     "drive_min": 133.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 219.1,
+     "road_km": 270.0,
+     "drive_min": 224.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 273.6,
+     "road_km": 315.3,
+     "drive_min": 258.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "623": {
+   "code": "623",
+   "unit_id": "lappeenranta",
+   "road_km": 98.8,
+   "drive_min": 91.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 51.2,
+     "road_km": 98.8,
+     "drive_min": 91.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 135.1,
+     "road_km": 205.9,
+     "drive_min": 179.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 144.8,
+     "road_km": 225.6,
+     "drive_min": 206.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "624": {
+   "code": "624",
+   "unit_id": "kotka",
+   "road_km": 25.7,
+   "drive_min": 24.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kotka",
+     "straight_km": 20.0,
+     "road_km": 25.7,
+     "drive_min": 24.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 76.5,
+     "road_km": 102.0,
+     "drive_min": 107.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 96.8,
+     "road_km": 108.7,
+     "drive_min": 84.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "625": {
+   "code": "625",
+   "unit_id": "oulu",
+   "road_km": 101.5,
+   "drive_min": 87.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 85.0,
+     "road_km": 101.5,
+     "drive_min": 87.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 200.9,
+     "road_km": 219.6,
+     "drive_min": 185.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 241.3,
+     "road_km": 294.1,
+     "drive_min": 261.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "626": {
+   "code": "626",
+   "unit_id": "kuopio",
+   "road_km": 153.9,
+   "drive_min": 125.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 120.7,
+     "road_km": 153.9,
+     "drive_min": 125.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 149.0,
+     "road_km": 163.1,
+     "drive_min": 133.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 162.0,
+     "road_km": 182.6,
+     "drive_min": 151.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "630": {
+   "code": "630",
+   "unit_id": "oulu",
+   "road_km": 124.2,
+   "drive_min": 101.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 108.2,
+     "road_km": 124.2,
+     "drive_min": 101.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 148.7,
+     "road_km": 163.2,
+     "drive_min": 137.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 210.3,
+     "road_km": 250.2,
+     "drive_min": 203.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "631": {
+   "code": "631",
+   "unit_id": "pori",
+   "road_km": 79.0,
+   "drive_min": 70.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 61.0,
+     "road_km": 79.0,
+     "drive_min": 70.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 71.9,
+     "road_km": 82.4,
+     "drive_min": 74.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 141.0,
+     "road_km": 172.5,
+     "drive_min": 150.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "635": {
+   "code": "635",
+   "unit_id": "tampere",
+   "road_km": 34.4,
+   "drive_min": 33.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 30.4,
+     "road_km": 34.4,
+     "drive_min": 33.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 79.6,
+     "road_km": 87.7,
+     "drive_min": 77.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 124.6,
+     "road_km": 159.5,
+     "drive_min": 141.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "636": {
+   "code": "636",
+   "unit_id": "turku",
+   "road_km": 40.5,
+   "drive_min": 37.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 34.2,
+     "road_km": 40.5,
+     "drive_min": 37.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 94.8,
+     "road_km": 113.5,
+     "drive_min": 92.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 108.8,
+     "road_km": 134.1,
+     "drive_min": 111.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "638": {
+   "code": "638",
+   "unit_id": "hus",
+   "road_km": 51.4,
+   "drive_min": 45.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 47.5,
+     "road_km": 51.4,
+     "drive_min": 45.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 66.9,
+     "road_km": 85.9,
+     "drive_min": 71.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 69.1,
+     "road_km": 79.1,
+     "drive_min": 57.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "678": {
+   "code": "678",
+   "unit_id": "oulu",
+   "road_km": 75.1,
+   "drive_min": 67.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 60.8,
+     "road_km": 75.1,
+     "drive_min": 67.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 226.5,
+     "road_km": 247.9,
+     "drive_min": 210.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 252.3,
+     "road_km": 284.1,
+     "drive_min": 248.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "680": {
+   "code": "680",
+   "unit_id": "turku",
+   "road_km": 9.6,
+   "drive_min": 14.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 7.6,
+     "road_km": 9.6,
+     "drive_min": 14.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 111.8,
+     "road_km": 132.4,
+     "drive_min": 110.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 143.8,
+     "road_km": 165.3,
+     "drive_min": 131.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "681": {
+   "code": "681",
+   "unit_id": "kuopio",
+   "road_km": 115.6,
+   "drive_min": 102.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 96.1,
+     "road_km": 164.6,
+     "drive_min": 152.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 98.3,
+     "road_km": 115.6,
+     "drive_min": 102.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 111.5,
+     "road_km": 162.2,
+     "drive_min": 160.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "683": {
+   "code": "683",
+   "unit_id": "oulu",
+   "road_km": 160.1,
+   "drive_min": 133.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 112.2,
+     "road_km": 160.1,
+     "drive_min": 133.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 341.2,
+     "road_km": 426.4,
+     "drive_min": 347.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 393.5,
+     "road_km": 479.1,
+     "drive_min": 398.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "684": {
+   "code": "684",
+   "unit_id": "pori",
+   "road_km": 52.0,
+   "drive_min": 46.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 42.5,
+     "road_km": 52.0,
+     "drive_min": 46.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 85.3,
+     "road_km": 91.3,
+     "drive_min": 79.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 130.8,
+     "road_km": 147.9,
+     "drive_min": 129.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "686": {
+   "code": "686",
+   "unit_id": "kuopio",
+   "road_km": 68.9,
+   "drive_min": 59.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 51.5,
+     "road_km": 68.9,
+     "drive_min": 59.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 72.6,
+     "road_km": 107.4,
+     "drive_min": 92.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 150.7,
+     "road_km": 188.8,
+     "drive_min": 173.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "687": {
+   "code": "687",
+   "unit_id": "kuopio",
+   "road_km": 103.2,
+   "drive_min": 91.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 74.0,
+     "road_km": 103.2,
+     "drive_min": 91.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 125.1,
+     "road_km": 171.3,
+     "drive_min": 141.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 192.5,
+     "road_km": 253.0,
+     "drive_min": 214.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "689": {
+   "code": "689",
+   "unit_id": "lappeenranta",
+   "road_km": 79.4,
+   "drive_min": 67.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 73.5,
+     "road_km": 79.4,
+     "drive_min": 67.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 130.7,
+     "road_km": 156.2,
+     "drive_min": 131.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 169.1,
+     "road_km": 186.5,
+     "drive_min": 155.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "691": {
+   "code": "691",
+   "unit_id": "oulu",
+   "road_km": 192.2,
+   "drive_min": 163.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 157.0,
+     "road_km": 218.1,
+     "drive_min": 178.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 157.9,
+     "road_km": 186.1,
+     "drive_min": 167.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 158.4,
+     "road_km": 192.2,
+     "drive_min": 163.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "694": {
+   "code": "694",
+   "unit_id": "lahti",
+   "road_km": 58.7,
+   "drive_min": 52.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 52.1,
+     "road_km": 58.7,
+     "drive_min": 52.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 61.1,
+     "road_km": 66.2,
+     "drive_min": 53.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 99.9,
+     "road_km": 113.7,
+     "drive_min": 82.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "697": {
+   "code": "697",
+   "unit_id": "oulu",
+   "road_km": 173.0,
+   "drive_min": 158.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 139.5,
+     "road_km": 173.0,
+     "drive_min": 158.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 181.0,
+     "road_km": 214.3,
+     "drive_min": 180.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 226.5,
+     "road_km": 259.7,
+     "drive_min": 213.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "698": {
+   "code": "698",
+   "unit_id": "oulu",
+   "road_km": 224.0,
+   "drive_min": 192.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 166.5,
+     "road_km": 224.0,
+     "drive_min": 192.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 411.1,
+     "road_km": 507.9,
+     "drive_min": 413.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 426.9,
+     "road_km": 542.9,
+     "drive_min": 457.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "700": {
+   "code": "700",
+   "unit_id": "lappeenranta",
+   "road_km": 51.7,
+   "drive_min": 46.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 41.2,
+     "road_km": 51.7,
+     "drive_min": 46.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 137.2,
+     "road_km": 158.8,
+     "drive_min": 134.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 153.0,
+     "road_km": 192.9,
+     "drive_min": 162.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "702": {
+   "code": "702",
+   "unit_id": "tampere",
+   "road_km": 79.7,
+   "drive_min": 70.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 55.1,
+     "road_km": 79.7,
+     "drive_min": 70.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 88.7,
+     "road_km": 125.6,
+     "drive_min": 113.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 133.7,
+     "road_km": 170.0,
+     "drive_min": 152.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "704": {
+   "code": "704",
+   "unit_id": "turku",
+   "road_km": 12.5,
+   "drive_min": 21.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 10.5,
+     "road_km": 12.5,
+     "drive_min": 21.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 106.3,
+     "road_km": 133.4,
+     "drive_min": 116.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 137.1,
+     "road_km": 160.5,
+     "drive_min": 132.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "707": {
+   "code": "707",
+   "unit_id": "joensuu",
+   "road_km": 59.7,
+   "drive_min": 58.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 32.0,
+     "road_km": 59.7,
+     "drive_min": 58.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 120.2,
+     "road_km": 163.1,
+     "drive_min": 167.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 157.5,
+     "road_km": 204.4,
+     "drive_min": 174.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "710": {
+   "code": "710",
+   "unit_id": "hus",
+   "road_km": 93.3,
+   "drive_min": 89.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 82.7,
+     "road_km": 116.0,
+     "drive_min": 96.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 85.0,
+     "road_km": 93.3,
+     "drive_min": 89.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 162.6,
+     "road_km": 184.4,
+     "drive_min": 160.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "729": {
+   "code": "729",
+   "unit_id": "jyvaskyla",
+   "road_km": 67.6,
+   "drive_min": 66.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 57.7,
+     "road_km": 67.6,
+     "drive_min": 66.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 123.3,
+     "road_km": 175.3,
+     "drive_min": 160.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 153.2,
+     "road_km": 212.4,
+     "drive_min": 183.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "732": {
+   "code": "732",
+   "unit_id": "oulu",
+   "road_km": 328.5,
+   "drive_min": 294.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 248.0,
+     "road_km": 328.5,
+     "drive_min": 294.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 440.0,
+     "road_km": 529.4,
+     "drive_min": 445.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 474.4,
+     "road_km": 574.7,
+     "drive_min": 478.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "734": {
+   "code": "734",
+   "unit_id": "turku",
+   "road_km": 59.2,
+   "drive_min": 47.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 46.9,
+     "road_km": 59.2,
+     "drive_min": 47.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 100.2,
+     "road_km": 112.3,
+     "drive_min": 85.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 130.0,
+     "road_km": 165.9,
+     "drive_min": 145.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "738": {
+   "code": "738",
+   "unit_id": "turku",
+   "road_km": 35.7,
+   "drive_min": 30.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 25.3,
+     "road_km": 35.7,
+     "drive_min": 30.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 123.4,
+     "road_km": 147.9,
+     "drive_min": 106.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 135.0,
+     "road_km": 178.7,
+     "drive_min": 141.8,
+     "method": "osrm"
+    }
+   ]
+  },
+  "739": {
+   "code": "739",
+   "unit_id": "lappeenranta",
+   "road_km": 40.4,
+   "drive_min": 41.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 32.0,
+     "road_km": 40.4,
+     "drive_min": 41.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 90.6,
+     "road_km": 104.2,
+     "drive_min": 98.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 116.0,
+     "road_km": 141.9,
+     "drive_min": 133.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "740": {
+   "code": "740",
+   "unit_id": "joensuu",
+   "road_km": 140.6,
+   "drive_min": 125.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 92.8,
+     "road_km": 140.6,
+     "drive_min": 125.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 96.3,
+     "road_km": 155.8,
+     "drive_min": 139.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 131.1,
+     "road_km": 158.7,
+     "drive_min": 146.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "742": {
+   "code": "742",
+   "unit_id": "oulu",
+   "road_km": 397.7,
+   "drive_min": 341.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 280.4,
+     "road_km": 397.7,
+     "drive_min": 341.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 489.2,
+     "road_km": 609.8,
+     "drive_min": 526.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 528.2,
+     "road_km": 655.1,
+     "drive_min": 560.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "743": {
+   "code": "743",
+   "unit_id": "vaasa",
+   "road_km": 78.1,
+   "drive_min": 67.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 70.1,
+     "road_km": 78.1,
+     "drive_min": 67.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 151.6,
+     "road_km": 181.5,
+     "drive_min": 153.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 156.3,
+     "road_km": 191.2,
+     "drive_min": 156.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "746": {
+   "code": "746",
+   "unit_id": "oulu",
+   "road_km": 151.6,
+   "drive_min": 128.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 131.5,
+     "road_km": 151.6,
+     "drive_min": 128.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 170.5,
+     "road_km": 193.3,
+     "drive_min": 161.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 192.0,
+     "road_km": 243.3,
+     "drive_min": 199.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "747": {
+   "code": "747",
+   "unit_id": "pori",
+   "road_km": 58.3,
+   "drive_min": 52.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 45.6,
+     "road_km": 58.3,
+     "drive_min": 52.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 113.4,
+     "road_km": 136.4,
+     "drive_min": 136.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 134.0,
+     "road_km": 151.6,
+     "drive_min": 128.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "748": {
+   "code": "748",
+   "unit_id": "oulu",
+   "road_km": 64.1,
+   "drive_min": 67.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 41.6,
+     "road_km": 64.1,
+     "drive_min": 67.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 246.1,
+     "road_km": 270.1,
+     "drive_min": 234.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 255.6,
+     "road_km": 288.6,
+     "drive_min": 261.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "749": {
+   "code": "749",
+   "unit_id": "kuopio",
+   "road_km": 24.2,
+   "drive_min": 20.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 19.7,
+     "road_km": 24.2,
+     "drive_min": 20.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 120.3,
+     "road_km": 140.2,
+     "drive_min": 127.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 137.1,
+     "road_km": 174.0,
+     "drive_min": 143.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "751": {
+   "code": "751",
+   "unit_id": "oulu",
+   "road_km": 82.2,
+   "drive_min": 71.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 75.7,
+     "road_km": 82.2,
+     "drive_min": 71.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 330.9,
+     "road_km": 401.1,
+     "drive_min": 336.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 331.6,
+     "road_km": 367.7,
+     "drive_min": 304.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "753": {
+   "code": "753",
+   "unit_id": "hus",
+   "road_km": 34.2,
+   "drive_min": 38.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 28.6,
+     "road_km": 34.2,
+     "drive_min": 38.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 70.5,
+     "road_km": 87.4,
+     "drive_min": 68.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 91.3,
+     "road_km": 106.1,
+     "drive_min": 77.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "755": {
+   "code": "755",
+   "unit_id": "hus",
+   "road_km": 45.7,
+   "drive_min": 49.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 38.1,
+     "road_km": 45.7,
+     "drive_min": 49.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 112.4,
+     "road_km": 133.1,
+     "drive_min": 99.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 120.0,
+     "road_km": 154.4,
+     "drive_min": 125.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "758": {
+   "code": "758",
+   "unit_id": "oulu",
+   "road_km": 351.9,
+   "drive_min": 293.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 272.0,
+     "road_km": 351.9,
+     "drive_min": 293.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 504.7,
+     "road_km": 636.6,
+     "drive_min": 516.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 533.9,
+     "road_km": 670.8,
+     "drive_min": 558.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "759": {
+   "code": "759",
+   "unit_id": "jyvaskyla",
+   "road_km": 122.8,
+   "drive_min": 112.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 105.0,
+     "road_km": 122.8,
+     "drive_min": 112.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 133.0,
+     "road_km": 154.7,
+     "drive_min": 132.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 153.6,
+     "road_km": 198.4,
+     "drive_min": 183.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "761": {
+   "code": "761",
+   "unit_id": "turku",
+   "road_km": 85.0,
+   "drive_min": 63.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 69.7,
+     "road_km": 85.0,
+     "drive_min": 63.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 90.9,
+     "road_km": 116.2,
+     "drive_min": 92.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 98.6,
+     "road_km": 127.9,
+     "drive_min": 109.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "762": {
+   "code": "762",
+   "unit_id": "kuopio",
+   "road_km": 105.9,
+   "drive_min": 96.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 86.1,
+     "road_km": 105.9,
+     "drive_min": 96.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 165.0,
+     "road_km": 222.4,
+     "drive_min": 204.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 177.3,
+     "road_km": 219.3,
+     "drive_min": 190.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "765": {
+   "code": "765",
+   "unit_id": "joensuu",
+   "road_km": 210.3,
+   "drive_min": 168.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 141.9,
+     "road_km": 206.1,
+     "drive_min": 169.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 168.0,
+     "road_km": 194.2,
+     "drive_min": 180.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 184.8,
+     "road_km": 210.3,
+     "drive_min": 168.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "768": {
+   "code": "768",
+   "unit_id": "lappeenranta",
+   "road_km": 121.0,
+   "drive_min": 120.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 80.8,
+     "road_km": 121.0,
+     "drive_min": 120.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 115.4,
+     "road_km": 179.0,
+     "drive_min": 168.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 129.0,
+     "road_km": 160.3,
+     "drive_min": 140.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "777": {
+   "code": "777",
+   "unit_id": "oulu",
+   "road_km": 215.8,
+   "drive_min": 194.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 160.4,
+     "road_km": 215.8,
+     "drive_min": 194.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 229.5,
+     "road_km": 277.5,
+     "drive_min": 228.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 258.6,
+     "road_km": 322.9,
+     "drive_min": 261.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "778": {
+   "code": "778",
+   "unit_id": "kuopio",
+   "road_km": 51.0,
+   "drive_min": 45.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 40.4,
+     "road_km": 51.0,
+     "drive_min": 45.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 85.2,
+     "road_km": 101.8,
+     "drive_min": 90.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 136.0,
+     "road_km": 171.0,
+     "drive_min": 158.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "781": {
+   "code": "781",
+   "unit_id": "lahti",
+   "road_km": 91.0,
+   "drive_min": 72.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lahti",
+     "straight_km": 57.0,
+     "road_km": 91.0,
+     "drive_min": 72.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 80.9,
+     "road_km": 114.2,
+     "drive_min": 103.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 99.3,
+     "road_km": 156.8,
+     "drive_min": 159.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "783": {
+   "code": "783",
+   "unit_id": "pori",
+   "road_km": 65.3,
+   "drive_min": 59.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 56.1,
+     "road_km": 65.3,
+     "drive_min": 59.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 66.4,
+     "road_km": 76.1,
+     "drive_min": 71.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 93.1,
+     "road_km": 105.0,
+     "drive_min": 98.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "785": {
+   "code": "785",
+   "unit_id": "oulu",
+   "road_km": 90.0,
+   "drive_min": 84.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 80.0,
+     "road_km": 90.0,
+     "drive_min": 84.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 189.0,
+     "road_km": 227.0,
+     "drive_min": 198.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 262.7,
+     "road_km": 308.7,
+     "drive_min": 259.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "790": {
+   "code": "790",
+   "unit_id": "tampere",
+   "road_km": 55.6,
+   "drive_min": 53.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 51.4,
+     "road_km": 55.6,
+     "drive_min": 53.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 61.7,
+     "road_km": 72.1,
+     "drive_min": 66.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 104.3,
+     "road_km": 117.1,
+     "drive_min": 99.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "791": {
+   "code": "791",
+   "unit_id": "oulu",
+   "road_km": 91.5,
+   "drive_min": 76.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 84.0,
+     "road_km": 91.5,
+     "drive_min": 76.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 175.9,
+     "road_km": 196.1,
+     "drive_min": 163.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 226.6,
+     "road_km": 249.4,
+     "drive_min": 203.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "831": {
+   "code": "831",
+   "unit_id": "lappeenranta",
+   "road_km": 15.8,
+   "drive_min": 19.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 13.3,
+     "road_km": 15.8,
+     "drive_min": 19.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 98.1,
+     "road_km": 121.8,
+     "drive_min": 111.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 135.3,
+     "road_km": 167.7,
+     "drive_min": 148.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "832": {
+   "code": "832",
+   "unit_id": "oulu",
+   "road_km": 154.9,
+   "drive_min": 130.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 141.5,
+     "road_km": 154.9,
+     "drive_min": 130.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 299.3,
+     "road_km": 389.6,
+     "drive_min": 320.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 340.2,
+     "road_km": 434.9,
+     "drive_min": 353.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "833": {
+   "code": "833",
+   "unit_id": "turku",
+   "road_km": 53.6,
+   "drive_min": 56.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 39.2,
+     "road_km": 53.6,
+     "drive_min": 56.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 101.8,
+     "road_km": 124.8,
+     "drive_min": 115.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 158.3,
+     "road_km": 209.5,
+     "drive_min": 174.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "834": {
+   "code": "834",
+   "unit_id": "turku",
+   "road_km": 95.1,
+   "drive_min": 88.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 77.5,
+     "road_km": 94.4,
+     "drive_min": 93.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 89.3,
+     "road_km": 95.1,
+     "drive_min": 88.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "hus",
+     "straight_km": 93.3,
+     "road_km": 114.7,
+     "drive_min": 96.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "837": {
+   "code": "837",
+   "unit_id": "tampere",
+   "road_km": 4.7,
+   "drive_min": 8.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 2.9,
+     "road_km": 4.7,
+     "drive_min": 8.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 105.0,
+     "road_km": 111.1,
+     "drive_min": 93.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 111.8,
+     "road_km": 125.6,
+     "drive_min": 115.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "844": {
+   "code": "844",
+   "unit_id": "kuopio",
+   "road_km": 57.1,
+   "drive_min": 62.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 45.6,
+     "road_km": 57.1,
+     "drive_min": 62.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 97.0,
+     "road_km": 151.5,
+     "drive_min": 140.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 159.1,
+     "road_km": 195.0,
+     "drive_min": 186.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "845": {
+   "code": "845",
+   "unit_id": "oulu",
+   "road_km": 152.5,
+   "drive_min": 127.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 124.4,
+     "road_km": 152.5,
+     "drive_min": 127.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 366.9,
+     "road_km": 471.5,
+     "drive_min": 392.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 379.7,
+     "road_km": 438.1,
+     "drive_min": 360.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "846": {
+   "code": "846",
+   "unit_id": "vaasa",
+   "road_km": 80.5,
+   "drive_min": 70.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 66.9,
+     "road_km": 80.5,
+     "drive_min": 70.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 112.6,
+     "road_km": 132.1,
+     "drive_min": 106.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 153.4,
+     "road_km": 200.2,
+     "drive_min": 176.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "848": {
+   "code": "848",
+   "unit_id": "joensuu",
+   "road_km": 54.5,
+   "drive_min": 46.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "joensuu",
+     "straight_km": 49.5,
+     "road_km": 54.5,
+     "drive_min": 46.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 156.5,
+     "road_km": 192.2,
+     "drive_min": 168.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 171.0,
+     "road_km": 194.8,
+     "drive_min": 168.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "849": {
+   "code": "849",
+   "unit_id": "oulu",
+   "road_km": 172.4,
+   "drive_min": 146.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 150.3,
+     "road_km": 172.4,
+     "drive_min": 146.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 151.7,
+     "road_km": 186.9,
+     "drive_min": 161.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 186.5,
+     "road_km": 240.2,
+     "drive_min": 209.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "850": {
+   "code": "850",
+   "unit_id": "jyvaskyla",
+   "road_km": 40.1,
+   "drive_min": 38.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 24.5,
+     "road_km": 40.1,
+     "drive_min": 38.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 119.9,
+     "road_km": 140.9,
+     "drive_min": 119.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 125.8,
+     "road_km": 147.6,
+     "drive_min": 118.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "851": {
+   "code": "851",
+   "unit_id": "oulu",
+   "road_km": 133.7,
+   "drive_min": 109.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 113.2,
+     "road_km": 133.7,
+     "drive_min": 109.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 330.4,
+     "road_km": 452.6,
+     "drive_min": 375.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 368.8,
+     "road_km": 419.2,
+     "drive_min": 343.2,
+     "method": "osrm"
+    }
+   ]
+  },
+  "853": {
+   "code": "853",
+   "unit_id": "turku",
+   "road_km": 1.6,
+   "drive_min": 4.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 1.3,
+     "road_km": 1.6,
+     "drive_min": 4.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 116.6,
+     "road_km": 139.4,
+     "drive_min": 119.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 143.7,
+     "road_km": 164.1,
+     "drive_min": 134.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "854": {
+   "code": "854",
+   "unit_id": "oulu",
+   "road_km": 251.4,
+   "drive_min": 211.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 208.9,
+     "road_km": 251.4,
+     "drive_min": 211.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 425.0,
+     "road_km": 570.3,
+     "drive_min": 477.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 464.9,
+     "road_km": 537.0,
+     "drive_min": 445.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "857": {
+   "code": "857",
+   "unit_id": "kuopio",
+   "road_km": 60.3,
+   "drive_min": 56.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 43.9,
+     "road_km": 60.3,
+     "drive_min": 56.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 70.1,
+     "road_km": 79.4,
+     "drive_min": 74.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 156.9,
+     "road_km": 210.1,
+     "drive_min": 180.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "858": {
+   "code": "858",
+   "unit_id": "hus",
+   "road_km": 28.3,
+   "drive_min": 31.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 24.8,
+     "road_km": 28.3,
+     "drive_min": 31.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 71.9,
+     "road_km": 84.2,
+     "drive_min": 64.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kotka",
+     "straight_km": 103.6,
+     "road_km": 135.8,
+     "drive_min": 94.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "859": {
+   "code": "859",
+   "unit_id": "oulu",
+   "road_km": 30.9,
+   "drive_min": 31.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 27.8,
+     "road_km": 30.9,
+     "drive_min": 31.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 229.4,
+     "road_km": 262.2,
+     "drive_min": 218.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 271.6,
+     "road_km": 309.6,
+     "drive_min": 263.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "886": {
+   "code": "886",
+   "unit_id": "pori",
+   "road_km": 8.1,
+   "drive_min": 8.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "pori",
+     "straight_km": 7.0,
+     "road_km": 8.1,
+     "drive_min": 8.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 102.8,
+     "road_km": 110.3,
+     "drive_min": 95.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 111.1,
+     "road_km": 145.0,
+     "drive_min": 119.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "887": {
+   "code": "887",
+   "unit_id": "tampere",
+   "road_km": 59.7,
+   "drive_min": 49.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 48.9,
+     "road_km": 59.7,
+     "drive_min": 49.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 97.9,
+     "road_km": 106.0,
+     "drive_min": 88.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 103.9,
+     "road_km": 125.0,
+     "drive_min": 101.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "889": {
+   "code": "889",
+   "unit_id": "oulu",
+   "road_km": 56.8,
+   "drive_min": 56.5,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 50.5,
+     "road_km": 56.8,
+     "drive_min": 56.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 215.9,
+     "road_km": 258.4,
+     "drive_min": 224.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 283.8,
+     "road_km": 359.6,
+     "drive_min": 304.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "890": {
+   "code": "890",
+   "unit_id": "oulu",
+   "road_km": 675.8,
+   "drive_min": 562.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 548.6,
+     "road_km": 675.8,
+     "drive_min": 562.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 780.0,
+     "road_km": 960.5,
+     "drive_min": 785.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 795.0,
+     "road_km": 994.7,
+     "drive_min": 827.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "892": {
+   "code": "892",
+   "unit_id": "jyvaskyla",
+   "road_km": 38.6,
+   "drive_min": 42.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 33.0,
+     "road_km": 38.6,
+     "drive_min": 42.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 121.0,
+     "road_km": 157.1,
+     "drive_min": 145.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 139.4,
+     "road_km": 169.4,
+     "drive_min": 150.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "893": {
+   "code": "893",
+   "unit_id": "vaasa",
+   "road_km": 78.0,
+   "drive_min": 70.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 66.4,
+     "road_km": 78.0,
+     "drive_min": 70.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 215.2,
+     "road_km": 272.8,
+     "drive_min": 234.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 219.6,
+     "road_km": 249.6,
+     "drive_min": 213.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "895": {
+   "code": "895",
+   "unit_id": "turku",
+   "road_km": 72.2,
+   "drive_min": 74.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 61.6,
+     "road_km": 72.2,
+     "drive_min": 74.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 77.6,
+     "road_km": 98.5,
+     "drive_min": 89.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 150.9,
+     "road_km": 170.2,
+     "drive_min": 151.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "905": {
+   "code": "905",
+   "unit_id": "vaasa",
+   "road_km": 1.7,
+   "drive_min": 4.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 1.2,
+     "road_km": 1.7,
+     "drive_min": 4.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 180.5,
+     "road_km": 194.7,
+     "drive_min": 151.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 210.3,
+     "road_km": 242.9,
+     "drive_min": 204.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "908": {
+   "code": "908",
+   "unit_id": "tampere",
+   "road_km": 36.5,
+   "drive_min": 37.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 28.9,
+     "road_km": 36.5,
+     "drive_min": 37.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 88.0,
+     "road_km": 100.7,
+     "drive_min": 93.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 121.9,
+     "road_km": 144.3,
+     "drive_min": 119.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "915": {
+   "code": "915",
+   "unit_id": "kuopio",
+   "road_km": 75.7,
+   "drive_min": 65.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 66.1,
+     "road_km": 75.7,
+     "drive_min": 65.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 101.8,
+     "road_km": 121.1,
+     "drive_min": 107.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 113.6,
+     "road_km": 133.1,
+     "drive_min": 116.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "918": {
+   "code": "918",
+   "unit_id": "turku",
+   "road_km": 45.7,
+   "drive_min": 48.0,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 40.8,
+     "road_km": 45.7,
+     "drive_min": 48.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 87.7,
+     "road_km": 107.1,
+     "drive_min": 97.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 144.9,
+     "road_km": 178.3,
+     "drive_min": 159.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "921": {
+   "code": "921",
+   "unit_id": "kuopio",
+   "road_km": 80.1,
+   "drive_min": 87.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 62.5,
+     "road_km": 80.1,
+     "drive_min": 87.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 86.1,
+     "road_km": 117.4,
+     "drive_min": 119.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "joensuu",
+     "straight_km": 175.3,
+     "road_km": 218.0,
+     "drive_min": 211.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "922": {
+   "code": "922",
+   "unit_id": "tampere",
+   "road_km": 36.0,
+   "drive_min": 37.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 23.3,
+     "road_km": 36.0,
+     "drive_min": 37.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 99.2,
+     "road_km": 127.4,
+     "drive_min": 118.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 110.7,
+     "road_km": 137.0,
+     "drive_min": 120.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "924": {
+   "code": "924",
+   "unit_id": "vaasa",
+   "road_km": 162.3,
+   "drive_min": 139.6,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 117.0,
+     "road_km": 162.3,
+     "drive_min": 139.6,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 169.2,
+     "road_km": 189.3,
+     "drive_min": 168.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 189.8,
+     "road_km": 223.8,
+     "drive_min": 190.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "925": {
+   "code": "925",
+   "unit_id": "kuopio",
+   "road_km": 110.5,
+   "drive_min": 94.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 99.4,
+     "road_km": 110.5,
+     "drive_min": 94.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "oulu",
+     "straight_km": 157.6,
+     "road_km": 177.9,
+     "drive_min": 146.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 180.5,
+     "road_km": 243.9,
+     "drive_min": 203.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "927": {
+   "code": "927",
+   "unit_id": "hus",
+   "road_km": 50.2,
+   "drive_min": 41.9,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "hus",
+     "straight_km": 41.2,
+     "road_km": 50.2,
+     "drive_min": 41.9,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 93.4,
+     "road_km": 114.3,
+     "drive_min": 98.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "turku",
+     "straight_km": 111.4,
+     "road_km": 135.1,
+     "drive_min": 96.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "931": {
+   "code": "931",
+   "unit_id": "jyvaskyla",
+   "road_km": 100.7,
+   "drive_min": 86.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kuopio",
+     "straight_km": 92.4,
+     "road_km": 142.2,
+     "drive_min": 126.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 94.3,
+     "road_km": 100.7,
+     "drive_min": 86.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 204.2,
+     "road_km": 245.5,
+     "drive_min": 203.9,
+     "method": "osrm"
+    }
+   ]
+  },
+  "934": {
+   "code": "934",
+   "unit_id": "vaasa",
+   "road_km": 135.9,
+   "drive_min": 117.4,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 111.3,
+     "road_km": 135.9,
+     "drive_min": 117.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 141.2,
+     "road_km": 172.4,
+     "drive_min": 152.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 184.2,
+     "road_km": 258.3,
+     "drive_min": 220.3,
+     "method": "osrm"
+    }
+   ]
+  },
+  "935": {
+   "code": "935",
+   "unit_id": "kotka",
+   "road_km": 59.1,
+   "drive_min": 44.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "kotka",
+     "straight_km": 44.7,
+     "road_km": 59.1,
+     "drive_min": 44.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lappeenranta",
+     "straight_km": 60.2,
+     "road_km": 71.3,
+     "drive_min": 65.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 124.3,
+     "road_km": 156.9,
+     "drive_min": 130.7,
+     "method": "osrm"
+    }
+   ]
+  },
+  "936": {
+   "code": "936",
+   "unit_id": "tampere",
+   "road_km": 113.5,
+   "drive_min": 99.7,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 81.9,
+     "road_km": 113.5,
+     "drive_min": 99.7,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 100.2,
+     "road_km": 111.4,
+     "drive_min": 100.5,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 134.6,
+     "road_km": 156.6,
+     "drive_min": 126.0,
+     "method": "osrm"
+    }
+   ]
+  },
+  "946": {
+   "code": "946",
+   "unit_id": "vaasa",
+   "road_km": 37.0,
+   "drive_min": 35.8,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "vaasa",
+     "straight_km": 32.3,
+     "road_km": 37.0,
+     "drive_min": 35.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 185.8,
+     "road_km": 228.8,
+     "drive_min": 181.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 198.0,
+     "road_km": 243.6,
+     "drive_min": 212.6,
+     "method": "osrm"
+    }
+   ]
+  },
+  "976": {
+   "code": "976",
+   "unit_id": "oulu",
+   "road_km": 195.7,
+   "drive_min": 165.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 168.9,
+     "road_km": 195.7,
+     "drive_min": 165.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 373.1,
+     "road_km": 514.6,
+     "drive_min": 430.4,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 425.2,
+     "road_km": 481.2,
+     "drive_min": 398.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "977": {
+   "code": "977",
+   "unit_id": "oulu",
+   "road_km": 129.5,
+   "drive_min": 109.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "oulu",
+     "straight_km": 114.1,
+     "road_km": 129.5,
+     "drive_min": 109.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 181.5,
+     "road_km": 202.8,
+     "drive_min": 170.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 202.2,
+     "road_km": 245.3,
+     "drive_min": 203.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "980": {
+   "code": "980",
+   "unit_id": "tampere",
+   "road_km": 15.4,
+   "drive_min": 19.2,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "tampere",
+     "straight_km": 13.2,
+     "road_km": 15.4,
+     "drive_min": 19.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 95.9,
+     "road_km": 104.4,
+     "drive_min": 85.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "lahti",
+     "straight_km": 122.8,
+     "road_km": 136.3,
+     "drive_min": 126.5,
+     "method": "osrm"
+    }
+   ]
+  },
+  "981": {
+   "code": "981",
+   "unit_id": "turku",
+   "road_km": 76.6,
+   "drive_min": 71.3,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "turku",
+     "straight_km": 67.0,
+     "road_km": 76.6,
+     "drive_min": 71.3,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 82.5,
+     "road_km": 104.3,
+     "drive_min": 92.0,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "pori",
+     "straight_km": 109.4,
+     "road_km": 122.6,
+     "drive_min": 107.1,
+     "method": "osrm"
+    }
+   ]
+  },
+  "989": {
+   "code": "989",
+   "unit_id": "jyvaskyla",
+   "road_km": 111.4,
+   "drive_min": 102.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 91.6,
+     "road_km": 111.4,
+     "drive_min": 102.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 117.0,
+     "road_km": 158.0,
+     "drive_min": 141.2,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "vaasa",
+     "straight_km": 138.0,
+     "road_km": 156.8,
+     "drive_min": 132.4,
+     "method": "osrm"
+    }
+   ]
+  },
+  "992": {
+   "code": "992",
+   "unit_id": "jyvaskyla",
+   "road_km": 47.7,
+   "drive_min": 46.1,
+   "method": "osrm",
+   "candidates": [
+    {
+     "unit_id": "jyvaskyla",
+     "straight_km": 41.2,
+     "road_km": 47.7,
+     "drive_min": 46.1,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "kuopio",
+     "straight_km": 103.3,
+     "road_km": 143.3,
+     "drive_min": 131.8,
+     "method": "osrm"
+    },
+    {
+     "unit_id": "tampere",
+     "straight_km": 157.4,
+     "road_km": 192.6,
+     "drive_min": 163.5,
+     "method": "osrm"
+    }
+   ]
+  }
+ }
+}
