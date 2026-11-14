@@ -206,7 +206,8 @@ def build_facts(county_code):
 PROMPT = """Write a short action memo for the director of cancer services of {county} ({county_en}), using ONLY the facts JSON below.
 
 Format (plain text, no markdown headings, at most 250 words):
-- Paragraph 1: a one-sentence finding about the travel burden radiotherapy schedules put on this county's patients.
+- Paragraph 1: a one-sentence finding about the travel burden radiotherapy schedules put on this county's patients. Name the hardest-hit municipality with its road km to the unit and its nights away with 15 breast sessions versus 5.
+- In the bone proposal, give that municipality's expected nights away with the multi-fraction course versus a single 8 Gy session (from the facts). In the breast proposal, give the county's yearly nights away removed and machine sessions freed (from the facts; calculated, breast only).
 - Then three proposals, each a short paragraph starting "1.", "2.", "3.". Each names an owner ROLE (no personal names), a first step within 30 days that is a review or decision by the clinical team (not a publication or a change to patient pages), and the Goal 3 indicator it serves (use the indicator wording from the facts).
   - Lead with painful bone metastases: a single 8 Gy session as the default for uncomplicated cases (equal pain relief, more retreatment).
   - Then breast: 5 sessions as the default for eligible patients (whole breast or chest wall without nodal radiotherapy), naming distance as a reason to choose it. Say "at least as good" or "non-inferior", never "better".

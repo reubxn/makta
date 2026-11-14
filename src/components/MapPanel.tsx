@@ -31,13 +31,14 @@ function bboxOf(features: GeoJSON.Feature[]): BBox {
 }
 
 /** Fit a bbox into the map, leaving room for the overlays (headline top-left, legend bottom-left). */
-function fitView(bbox: BBox, size: { width: number; height: number }, pitched: boolean): MapViewState {
+function fitView(bbox: BBox, size: { width: number; height: number; uiZoom?: number }, pitched: boolean): MapViewState {
   const fallback: MapViewState = pitched ? FINLAND : { ...FINLAND, pitch: 0, bearing: 0 };
   // Tiny or unmeasured map area (small windows, first layout pass): keep a safe default view.
   if (!(size.width >= 80 && size.height >= 80)) return fallback;
   // fitBounds throws if the padding leaves no room, so scale the overlay margins down to fit,
   // always leaving at least half of each dimension for the map itself.
-  const pad = { top: 64, bottom: 36, left: Math.min(290, size.width * 0.38), right: 44 };
+  const z = size.uiZoom ?? 1;
+  const pad = { top: 64 * z, bottom: 36 * z, left: Math.min(290 * z, size.width * 0.38), right: 44 * z };
   const hScale = Math.min(1, (size.width * 0.5) / (pad.left + pad.right));
   const vScale = Math.min(1, (size.height * 0.5) / (pad.top + pad.bottom));
   pad.left *= hScale; pad.right *= hScale; pad.top *= vScale; pad.bottom *= vScale;
@@ -92,16 +93,22 @@ export function MapPanel(props: Props) {
   const [viewState, setViewState] = useState<MapViewState>(FINLAND);
   const [hover, setHover] = useState<{ x: number; y: number; name: string } | null>(null);
   const wrapRef = useRef<HTMLElement>(null);
-  const [size, setSize] = useState<{ width: number; height: number } | null>(null);
+  const holderRef = useRef<HTMLDivElement>(null);
+  // Canvas size in unzoomed px, plus the UI zoom (overlay margins shrink with it).
+  const [size, setSize] = useState<{ width: number; height: number; uiZoom: number } | null>(null);
   const finlandBox = useMemo(() => bboxOf(data.geo.features), [data]);
   const currentTarget = useRef<{ target: FlyRequest['target']; code?: string }>({ target: 'finland' });
 
   useEffect(() => {
-    const el = wrapRef.current;
-    if (!el) return;
-    const ro = new ResizeObserver(() => setSize({ width: el.clientWidth, height: el.clientHeight }));
+    const el = holderRef.current;
+    const wrap = wrapRef.current;
+    if (!el || !wrap) return;
+    const measure = () =>
+      setSize({ width: el.clientWidth, height: el.clientHeight, uiZoom: wrap.clientWidth > 0 ? Math.min(1, el.clientWidth / wrap.clientWidth) : 1 });
+    const ro = new ResizeObserver(measure);
     ro.observe(el);
-    setSize({ width: el.clientWidth, height: el.clientHeight });
+    ro.observe(wrap);
+    measure();
     return () => ro.disconnect();
   }, []);
 
@@ -332,6 +339,9 @@ export function MapPanel(props: Props) {
         )}
       </div>
       {fold && <div className="fold-banner">We can't move the hospital. The schedule can.</div>}
+      {/* The UI may be scaled with CSS zoom on small screens (main.tsx); deck.gl picking needs an
+          unzoomed canvas, so this holder cancels the zoom for the map and its tooltip. */}
+      <div className="deck-holder" ref={holderRef}>
       <DeckGL
         views={new MapView({ repeat: false })}
         viewState={viewState}
@@ -346,6 +356,7 @@ export function MapPanel(props: Props) {
           {hover.name}
         </div>
       )}
+      </div>
       <div className="legend">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 6 }}>
           <span>

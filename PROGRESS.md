@@ -4,7 +4,7 @@ Legend: [x] done · [~] in progress · [ ] not started · [!] blocked / changed 
 
 ## Phase 0: setup and feedback loop
 - [x] Network check (data hosts were blocked; new "makta" environment with allowlist created)
-- [!] ANTHROPIC_API_KEY not present in this container (owner adding it to the "makta" env; AI scripts check at runtime, fall back to in-session)
+- [x] ANTHROPIC_API_KEY supplied by the owner (in gitignored .env); memos + unit statements regenerated via the API. Was: not present in this container (owner adding it to the "makta" env; AI scripts check at runtime, fall back to in-session)
 - [x] Vite + React + TS scaffold, deck.gl, lucide-react, @fontsource/inter, Vitest, Playwright
 - [x] Python venv (requests, pandas, shapely, anthropic, python-dotenv, pypdf)
 - [x] `npx playwright init-agents --loop=claude`; Playwright MCP added to `.mcp.json` (loads on next session start)
@@ -51,30 +51,36 @@ Legend: [x] done · [~] in progress · [ ] not started · [!] blocked / changed 
 - [ ] Phase 4 reviewer + fixes
 
 ## Phase 5: polish and checks (section 12)
-- [ ] Vitest passes
+- [x] Vitest passes
 - [x] Data check script
-- [ ] Playwright demo 1-7 screenshots reviewed
-- [ ] Build + preview offline, no external requests
-- [ ] Load < 2 s
-- [ ] Vercel deploy (if CLI logged in)
+- [x] Playwright demo 1-7 screenshots reviewed
+- [x] Build + preview offline, no external requests (demo spec fails on any non-localhost request)
+- [x] Load < 2 s (app ready in ~0.3 s locally)
+- [!] Vercel deploy skipped: CLI not installed or logged in
 
 ## Phase 6: stretch
 - [ ] "Finland folds inward" toggle
 
 ## Wrap-up
-- [ ] MORNING.md
+- [x] MORNING.md
 
 ## NEXT (owner instructions after the independent audit, 2026-11-15 00:16) — do in this order
 Context: audit confirmed (memos stale vs data after catchment routing; wrong citations; overclaims; MORNING.md missing).
 Session restarted so ANTHROPIC_API_KEY loads from the "makta" environment. Check with `echo ${ANTHROPIC_API_KEY:+present}` (never print it).
-1. [ ] Memos: regenerate ALL 22 through the Anthropic API (`.venv/bin/python -I scripts/generate_memos.py`, method llm-api, model recorded) against current public/data.
+1. [x] Memos: regenerate ALL 22 through the Anthropic API (`.venv/bin/python -I scripts/generate_memos.py`, method llm-api, model recorded) against current public/data.
    - Make scripts/09_check_data.py re-run the validator live (import validate/build_facts) instead of trusting stored counts.
    - Citation rules already in the prompt/facts (citation_guide): bone per-patient numbers must not cite breast case tables (S33-35); no overclaims ("only", "none of the units publishes"); first step must be a clinical-team review, never a patient-page change.
    - UI: no memo may show the traced badge unless it passes live validation (store pass flag from live run; MemoTab hides badge otherwise).
    - Note: the in-session v2 drafts are in data/raw/agent_memos_{A,B}.json (fallback only).
-2. [ ] Unit schedule extraction through the API (method llm-api, model recorded), searching harder for each of the 12 units' pages (snapshots in data/raw/pages/<unit>__<slug>.txt). Report honestly how many units publish a schedule.
-3. [ ] Story change: BREAST is the lead lever — default indication on load = breast; demo key 3 = breast (columns rise to 15, pause, lever on), key 4 = bone. Card line for bone: "Fewer nights away; trips about the same, because some patients need a second session." Must not be clipped. Update HelpOverlay, demo/design specs.
-4. [ ] What units say headline: "X of 12 units publish which schedule they use." tied to the ask to publish schedule mix.
-5. [ ] Fix stale "three nearest" limitation text (07_parameters_facts.py); flag Kainuu and Kanta-Häme routing as nearest-by-drive assumptions; breast figure 5,232 (women, 2024) with its source shown.
-6. [ ] Phase 5 (offline build/preview, no external requests, load < 2 s, Vercel skipped unless CLI logged in) + MORNING.md with a 2-minute script that leads with breast and uses the "most units don't publish" line.
+2. [x] Unit schedule extraction through the API (method llm-api, model recorded), searching harder for each of the 12 units' pages (snapshots in data/raw/pages/<unit>__<slug>.txt). Report honestly how many units publish a schedule.
+3. [x] Story change: BREAST is the lead lever — default indication on load = breast; demo key 3 = breast (columns rise to 15, pause, lever on), key 4 = bone. Card line for bone: "Fewer nights away; trips about the same, because some patients need a second session." Must not be clipped. Update HelpOverlay, demo/design specs.
+4. [x] What units say headline: "X of 12 units publish which schedule they use." tied to the ask to publish schedule mix.
+5. [x] Fix stale "three nearest" limitation text (07_parameters_facts.py); flag Kainuu and Kanta-Häme routing as nearest-by-drive assumptions; breast figure 5,232 (women, 2024) with its source shown.
+6. [x] Phase 5 (offline build/preview, no external requests, load < 2 s, Vercel skipped unless CLI logged in) + MORNING.md with a 2-minute script that leads with breast and uses the "most units don't publish" line.
 Keep the fold toggle off by default.
+
+## Done after the audit (2026-11-15)
+- Memos and unit statements via the API (claude-sonnet-5-5); validator enforces citation, overclaim and first-step rules; 09_check_data re-validates memos live; the traced badge shows only for validated memos.
+- Unit search: 12 snapshots (6 new). 1 of 12 units publishes a schedule (Jyväskylä, breast). Turku and Tampere sites were unreachable, so those units are unverified.
+- Breast leads (default, key 3); bone is key 4 with an unclipped card line; key 5 shows breast totals.
+- Small-window fix: fitBounds padding scales to fit, with a fallback; UI scales down below 1440x900 with an unzoomed map canvas; viewports.spec.ts.

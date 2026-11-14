@@ -15,20 +15,32 @@ Then open http://localhost:4173. Checks:
 - `npx playwright test tests/e2e/demo.spec.ts --trace off`: passes. It runs keys 0–7, fails on any console error or any request that leaves localhost, checks that the bone card line is not clipped, and saves screenshots to `screenshots/`. The app is ready in about 0.3 s locally.
 - Vercel: skipped. The Vercel CLI isn't installed or logged in here.
 
-**The AI steps did not run through the API.** `ANTHROPIC_API_KEY` is listed on the "makta" environment but wasn't present in this session's process, so both AI steps used the documented in-session fallback:
+**AI steps ran through the API** (`claude-sonnet-5-5`, recorded in the JSON files). The key is in the gitignored `.env`, never committed. It was pasted in chat, so rotate it after judging.
 
-- **Memos:** the 22 memos are the v2 in-session drafts (`data/raw/agent_memos.json`, `method: agent-written`). They pass the full validator against current data: every number traced, citations allowed, and the new audit rules below.
-- **Unit statements:** `method: agent-extracted`.
+- **Memos:** all 22 regenerated with `method: llm-api` against current data. Every memo passes the full validator.
+- **Unit statements:** `method: llm-api`, from 12 page snapshots. 6 of them are new, from a deeper search of every unit's site. Statements whose quotes failed the verbatim check were dropped. All of the drops were "nothing stated" with no quote.
 
-To regenerate through the API once the key is present:
+To rerun:
+
+```bash
+.venv/bin/python -I scripts/extract_schedules.py
+```
+
+```bash
+.venv/bin/python -I scripts/06_sources.py
+```
 
 ```bash
 .venv/bin/python -I scripts/generate_memos.py
 ```
 
-```bash
-.venv/bin/python -I scripts/extract_schedules.py
-```
+**Small screens:** the page used to go blank when the map area was under about 100 px tall. That happens on a 1024×768 screen at 200% scaling. Fixed:
+
+- The map's fit margins now shrink to fit, with a safe fallback view.
+- Below 1440×900 the whole UI scales down proportionally (CSS zoom on `#root`). The map canvas cancels that zoom, so clicking and hovering stay accurate.
+- `tests/e2e/viewports.spec.ts` covers 512×384 up to 1920×1080. Screenshots are in `screenshots/viewports/`.
+
+The UI is designed for 1440×900; at 1024×768 everything is about 70% size.
 
 New validator rules, which apply to the API path too:
 
@@ -39,10 +51,13 @@ New validator rules, which apply to the API path too:
 
 ## 2. Story changes
 
-- **Breast now leads.** The app opens on breast; key 3 = breast (columns rise to 15 sessions, pause, lever on); key 4 = bone; key 5 also switches back to breast, because the national totals are breast-only.
+- **Breast now leads**, per the owner's post-audit instruction, which overrides SPEC §2 ("lead with bone"). The app opens on breast; key 3 = breast (columns rise to 15 sessions, pause, lever on); key 4 = bone; key 5 also switches back to breast, because the national totals are breast-only.
 - **Bone card line** (bone lever on, when trips don't fall): "Fewer nights away; trips about the same, because some patients need a second session."
 - **Premise check:** no unit states 5 sessions as its standard breast schedule, so the breast lever is not reframed.
-- **What units say** headline: "UNITS_X of 12 units publish(es) which schedule they use", tied to the ask to publish the schedule mix every year.
+- **What units say** headline: "1 of 12 units publishes which schedule it uses" (Jyväskylä: breast, "usually 15 times"; its own leaflet also says "5 or 15"), tied to the ask to publish the schedule mix every year. No unit states a session count for bone metastases.
+  - Turku and Tampere are **not verified**, not absent: tyks.fi, the Pirkanmaa instruction sites and hoito-ohjeet.fi were unreachable from the build environment. The UI and limitations say so.
+  - DuckDuckGo blocked automated search, so the deeper search used each site's sitemap, site search and links.
+  - Some breast pathways (Lahti, Kotka) sit behind patient logins.
 - **Rovaniemi has no unit:** Lapland routes to OYS in Oulu (S52).
 - **Routing:**
   - Helsinki, Uusimaa, Pirkanmaa and Lapland follow their sourced catchments.
@@ -74,6 +89,7 @@ Sourced: 15 vs 5 sessions, single 8 Gy, retreatment 20% vs 8% (Rich 2018, S30), 
 
 - The real Finnish schedule mix (not public).
 - Kanta-Häme and Kainuu referral paths.
+- The Turku and Tampere unit pages (sites unreachable during the search).
 - Breast radiotherapy and eligibility shares for Finland.
 - The Rich 2018 corrigendum content was not checked.
 - The roadmap's 100 km fact cites Norwegian data (Åsli 2018).
@@ -85,7 +101,7 @@ Sourced: 15 vs 5 sessions, single 8 Gy, retreatment 20% vs 8% (Rich 2018, S30), 
 - **0:35 (key 3):** Breast, the lead lever. The columns stand at 15 sessions, then 5 sessions as default for eligible patients (whole breast or chest wall, no nodes). Utsjoki goes from 16 to 6 nights away and from 75 to 37 hours on the road. The columns shrink across the north and east while the south stays flat. FAST-Forward, 4,096 patients, 10-year follow-up: "at least as good, in one week."
 - **0:55 (key 4):** Painful bone metastases: a single 8 Gy session gives equal pain relief, with more retreatment, and the model includes it. Utsjoki goes from 6.2 to 2.4 expected nights away. "Fewer nights away; trips about the same, because some patients need a second session." The baseline is Turku: single fractions were 7% of courses in the last year of life.
 - **1:10 (key 5):** National totals, breast, per year, from 5,232 new cases in women (2024). The lever removes about 1,950 nights away, 15,900 round trips and 16,200 hours on the road, and frees 17,500 machine sessions. Goal 3: patients receive treatment within target times.
-- **1:25 (key 6):** What units say. "UNITS_X of 12 units publish which schedule they use." Most units don't publish theirs, so the current mix stays an assumption you can set. Read by AI, with verbatim quotes checked against the saved pages.
+- **1:25 (key 6):** What units say. "1 of 12 units publishes which schedule it uses." Most units don't publish theirs, so the current mix stays an assumption you can set. Read by AI, with verbatim quotes checked against the saved pages.
 - **1:40 (key 7):** Lapland's memo writes itself, with every number traced to a source. Its first steps are clinical-team reviews.
 - **1:55 The ask:**
   - 5 sessions as the default for eligible breast patients, with distance named as a reason to choose it.
