@@ -1,16 +1,24 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
-import { CheckCircle2, PenLine } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import { useData } from '../context';
+import type { Source } from '../data';
 
-const CHARS_PER_TICK = 3;
-const TICK_MS = 16;
+/** The whole memo streams in this long, whatever its length. */
+const STREAM_MS = 4000;
+const CITE = /\[(S\d+(?:\s*,\s*S\d+)*)\]/g;
+
+/** Citation ids in order of first use. */
+function citeOrder(text: string): string[] {
+  const order: string[] = [];
+  for (const m of text.matchAll(CITE)) for (const id of m[1].split(/\s*,\s*/)) if (!order.includes(id)) order.push(id);
+  return order;
+}
 
 export function MemoTab({ county, run, onCounty, onRun }: { county: string; run: number; onCounty: (c: string) => void; onRun: () => void }) {
   const { data } = useData();
   const memos = data.memos;
   const memo = memos?.memos.find((m) => m.county_code === county);
   const [shown, setShown] = useState(0);
-  const [openSrc, setOpenSrc] = useState<string | null>(null);
 
   useEffect(() => {
     if (!memo || run === 0) {
@@ -18,22 +26,24 @@ export function MemoTab({ county, run, onCounty, onRun }: { county: string; run:
       return;
     }
     setShown(0);
-    let i = 0;
-    const t = setInterval(() => {
-      i += CHARS_PER_TICK;
-      setShown(Math.min(i, memo.text.length));
-      if (i >= memo.text.length) clearInterval(t);
-    }, TICK_MS);
-    return () => clearInterval(t);
+    const t0 = performance.now();
+    let raf = 0;
+    const step = (t: number) => {
+      const u = Math.min(1, (t - t0) / STREAM_MS);
+      setShown(Math.round(u * memo.text.length));
+      if (u < 1) raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
   }, [memo, run]);
 
-  const counties = useMemo(
-    () => Object.entries(data.countyNames).sort((a, b) => a[1].localeCompare(b[1], 'fi')),
-    [data.countyNames],
-  );
-
-  const body = memo ? renderMemo(memo.text.slice(0, shown).replace(/\[[^\]]*$/, ''), (id) => setOpenSrc(id)) : null;
-  const srcs = openSrc ? openSrc.split(',').map((id) => data.sourceById[id]).filter(Boolean) : [];
+  const counties = useMemo(() => Object.entries(data.countyNames).sort((a, b) => a[1].localeCompare(b[1], 'fi')), [data.countyNames]);
+  const order = useMemo(() => (memo ? citeOrder(memo.text) : []), [memo]);
+  const done = !!memo && shown >= memo.text.length;
+  // Hide a half-typed citation; list sources as they are first cited.
+  const visible = memo ? memo.text.slice(0, shown).replace(/\[[^\]]*$/, '') : '';
+  const citedSoFar = citeOrder(visible);
+  const sources = citedSoFar.map((id) => ({ id, n: order.indexOf(id) + 1, s: data.sourceById[id] as Source | undefined }));
 
   return (
     <div className="page">
@@ -57,46 +67,58 @@ export function MemoTab({ county, run, onCounty, onRun }: { county: string; run:
               ))}
             </select>
             <button className="btn-primary" onClick={onRun} disabled={!memo}>
-              <PenLine size={16} /> Write memo
+              Write memo
             </button>
             {memos && (
-              <div className="small-note">
+              <div className="small-note" data-testid="memo-method">
                 Written {memos.method === 'llm-api' ? `by ${memos.model ?? 'Claude'} via the API` : 'by an AI agent in-session (no API key was available), with the same prompt and validator'} on {memos.generated}. Proposals for clinical teams to evaluate.
               </div>
             )}
-            {srcs.map((src) => (
-              <div key={src.id} className="src" style={{ borderTop: '1px solid var(--line)', paddingTop: 10, fontSize: 14 }}>
-                <b>[{src.id}]</b> {src.title}
-                <div className="small-note">
-                  {src.publisher}
-                  {src.year ? `, ${src.year}` : ''}
-                </div>
-                {src.quote && <div className="quote" style={{ margin: '4px 0' }}>“{src.quote}”</div>}
-                <a href={src.url} target="_blank" rel="noreferrer">
-                  Open source
-                </a>
-              </div>
-            ))}
           </div>
-          <article className="panel memo-paper" data-testid="memo">
+          <article className="memo-paper" data-testid="memo">
             {!memo && <p className="small-note">No memo has been generated for this county yet.</p>}
             {memo && (
               <>
                 <div className="memo-head">
-                  <div className="small-note">To: Director of cancer services, {data.countyNames[memo.county_code] ?? memo.county_name}</div>
-                  {shown >= memo.text.length && memo.validated === true && memo.numbers_passed === memo.numbers_checked && (
-                    <span className="trace-badge">
-                      <CheckCircle2 size={15} /> {memo.numbers_passed} of {memo.numbers_checked} numbers traced to the sourced facts
+                  <span>To: Director of cancer services, {data.countyNames[memo.county_code] ?? memo.county_name}</span>
+                  {done && memo.validated === true && memo.numbers_passed === memo.numbers_checked && (
+                    <span className="trace-badge" data-testid="trace-badge">
+                      <CheckCircle2 size={14} /> {memo.numbers_passed} of {memo.numbers_checked} numbers traced to the sourced facts
                     </span>
                   )}
                 </div>
-                {shown >= memo.text.length && memo.validated !== true && (
+                {done && memo.validated !== true && (
                   <div className="small-note" data-testid="memo-unvalidated">
                     This memo did not pass the number and citation check on its last run, so it is shown without the traced badge.
                   </div>
                 )}
-                {body}
-                {shown < memo.text.length && <span className="caret" />}
+                <div className="memo-body">
+                  {renderMemo(visible, order)}
+                  {!done && <span className="caret" />}
+                </div>
+                {sources.length > 0 && (
+                  <div className="memo-sources" data-testid="memo-sources">
+                    <p className="section-label">Sources</p>
+                    <ol>
+                      {sources.map(({ id, n, s }) => (
+                        <li key={id} value={n}>
+                          {s ? (
+                            <>
+                              <b>{s.title}</b>. {s.publisher}
+                              {s.year ? `, ${s.year}` : ''}.{' '}
+                              <a href={s.url} target="_blank" rel="noreferrer">
+                                Open
+                              </a>{' '}
+                              <span style={{ color: 'var(--ink-3)' }}>[{id}]</span>
+                            </>
+                          ) : (
+                            <>[{id}]</>
+                          )}
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
               </>
             )}
           </article>
@@ -106,22 +128,21 @@ export function MemoTab({ county, run, onCounty, onRun }: { county: string; run:
   );
 }
 
-function renderMemo(text: string, onSrc: (id: string) => void): ReactNode {
-  return text.split(/\n\n+/).map((para, pi) => {
+function renderMemo(text: string, order: string[]): ReactNode {
+  const paras = text.split(/\n\n+/);
+  return paras.map((para, pi) => {
     const parts: ReactNode[] = [];
-    const re = /\[(S\d+(?:\s*,\s*S\d+)*)\]/g;
     let last = 0;
-    let m: RegExpExecArray | null;
-    while ((m = re.exec(para))) {
-      parts.push(para.slice(last, m.index));
-      const ids = m[1].split(/\s*,\s*/);
+    for (const m of para.matchAll(CITE)) {
+      // Drop the space before a citation so the superscript sits on the word.
+      parts.push(para.slice(last, m.index).replace(/\s+$/, ''));
+      const nums = m[1].split(/\s*,\s*/).map((id) => order.indexOf(id) + 1);
       parts.push(
-        <button key={`${pi}-${m.index}`} className="src-group" onClick={() => onSrc(ids.join(','))} title={ids.join(', ')}>
-          {ids[0]}
-          {ids.length > 1 ? ` +${ids.length - 1}` : ''}
-        </button>,
+        <sup key={`${pi}-${m.index}`} title={m[1]}>
+          {nums.join(',')}
+        </sup>,
       );
-      last = m.index + m[0].length;
+      last = m.index! + m[0].length;
     }
     parts.push(para.slice(last));
     return <p key={pi}>{parts}</p>;

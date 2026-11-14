@@ -1,76 +1,217 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import DeckGL from '@deck.gl/react';
-import { FlyToInterpolator, MapView, WebMercatorViewport, type MapViewState, type PickingInfo } from '@deck.gl/core';
-import { ColumnLayer, GeoJsonLayer, ScatterplotLayer, TextLayer } from '@deck.gl/layers';
-import { Box, Square, Shrink } from 'lucide-react';
+import { AmbientLight, DirectionalLight, FlyToInterpolator, LightingEffect, MapView, WebMercatorViewport, type MapViewState, type PickingInfo } from '@deck.gl/core';
+import { GeoJsonLayer, PathLayer } from '@deck.gl/layers';
 import { useData } from '../context';
-import { currentBurden, equivalentDistanceFraction, perPatient, type Indication, type MetricKey, type Params } from '../model/metrics';
-import { easeInOut, fmt } from '../hooks';
+import { currentBurden, equivalentDistanceFraction, perPatient, tripDots, type Indication, type MetricKey, type Params } from '../model/metrics';
+import { easeInOut, fmt, useTween } from '../hooks';
 import { Prov } from './Prov';
-import { FactText } from './FactText';
+import { fmtDrive } from './MunicipalityCard';
 
 export interface FlyRequest {
-  target: 'finland' | 'muni';
+  /** finland: flat national view; terrain: national view tilted 45°; flight: follow the selected route. */
+  target: 'finland' | 'terrain' | 'flight';
   code?: string;
   nonce: number;
 }
 
-const FINLAND: MapViewState = { longitude: 26.3, latitude: 63.75, zoom: 4.5, pitch: 45, bearing: -8 };
-
+type LonLat = [number, number];
 type BBox = [number, number, number, number];
-function bboxOf(features: GeoJSON.Feature[]): BBox {
-  const b: BBox = [180, 90, -180, -90];
-  const visit = (c: unknown): void => {
-    if (Array.isArray(c) && typeof c[0] === 'number') {
-      const [x, y] = c as number[];
-      b[0] = Math.min(b[0], x); b[1] = Math.min(b[1], y); b[2] = Math.max(b[2], x); b[3] = Math.max(b[3], y);
-    } else if (Array.isArray(c)) c.forEach(visit);
-  };
-  for (const f of features) visit((f.geometry as GeoJSON.Polygon | GeoJSON.MultiPolygon).coordinates);
-  return b;
-}
+type Mode = 'flat' | 'tilt45' | 'tilt40';
 
-/** Fit a bbox into the map, leaving room for the overlays (headline top-left, legend bottom-left). */
-function fitView(bbox: BBox, size: { width: number; height: number; uiZoom?: number }, pitched: boolean): MapViewState {
-  const fallback: MapViewState = pitched ? FINLAND : { ...FINLAND, pitch: 0, bearing: 0 };
-  // Tiny or unmeasured map area (small windows, first layout pass): keep a safe default view.
-  if (!(size.width >= 80 && size.height >= 80)) return fallback;
-  // fitBounds throws if the padding leaves no room, so scale the overlay margins down to fit,
-  // always leaving at least half of each dimension for the map itself.
-  const z = size.uiZoom ?? 1;
-  const pad = { top: 64 * z, bottom: 36 * z, left: Math.min(290 * z, size.width * 0.38), right: 44 * z };
-  const hScale = Math.min(1, (size.width * 0.5) / (pad.left + pad.right));
-  const vScale = Math.min(1, (size.height * 0.5) / (pad.top + pad.bottom));
-  pad.left *= hScale; pad.right *= hScale; pad.top *= vScale; pad.bottom *= vScale;
-  let fit: { longitude: number; latitude: number; zoom: number };
-  try {
-    const vp = new WebMercatorViewport({ width: size.width, height: size.height });
-    fit = vp.fitBounds([[bbox[0], bbox[1]], [bbox[2], bbox[3]]], { padding: pad });
-  } catch {
-    return fallback;
-  }
-  const { longitude, latitude, zoom } = fit;
-  if (![longitude, latitude, zoom].every(Number.isFinite)) return fallback;
-  if (!pitched) return { longitude, latitude, zoom, pitch: 0, bearing: 0 };
-  // Pitching compresses the far (north) side: move the centre south and zoom in slightly.
-  const latSpan = bbox[3] - bbox[1];
-  return { longitude, latitude: latitude - latSpan * 0.2, zoom: zoom + 0.3, pitch: 45, bearing: -8 };
-}
+const FINLAND: MapViewState = { longitude: 25.8, latitude: 65.0, zoom: 4.4, pitch: 0, bearing: 0 };
+const ELEV_PER_NIGHT = 8_500; // metres of "burden terrain" per night away per patient
+const FLIGHT_ZOOM = 7.0;
+const FLIGHT_PITCH = 55;
+const FLY_IN_MS = 1200;
+const FOLLOW_MS = 5000;
+const TRIP_PERIOD_MS = 3600;
 
-const RAMP_LO = [0xe8, 0xee, 0xf5];
-const RAMP_HI = [0x0b, 0x3d, 0x6e];
-function ramp(t: number): [number, number, number] {
+const WATER: [number, number, number] = [214, 226, 230];
+const LAND: [number, number, number] = [238, 238, 235];
+const RAMP_LO = [247, 246, 242];
+const RAMP_HI = [201, 193, 178];
+const TERRAIN_HI = [170, 160, 142];
+function ramp(t: number, hi = RAMP_HI): [number, number, number] {
   const x = Math.max(0, Math.min(1, t));
-  const g = x;
-  return [0, 1, 2].map((i) => Math.round(RAMP_LO[i] + (RAMP_HI[i] - RAMP_LO[i]) * g)) as [number, number, number];
+  return [0, 1, 2].map((i) => Math.round(RAMP_LO[i] + (hi[i] - RAMP_LO[i]) * x)) as [number, number, number];
 }
+
+// Stable layer props: new objects on every render would make deck.gl redraw on every React render.
+const MAP_VIEW = new MapView({ repeat: false });
+const CONTROLLER = { dragRotate: true, touchRotate: true };
+const DECK_STYLE = { position: 'absolute', inset: '0' } as const;
+const DEPTH_ALWAYS = { depthCompare: 'always' } as never;
+const LAKES_TERRAIN = { depthCompare: 'less-equal', depthBias: -1, depthBiasSlopeScale: -4 } as never;
+const MATERIAL = { ambient: 0.72, diffuse: 0.4, shininess: 4, specularColor: [0, 0, 0] as [number, number, number] };
+// Soft, neutral light: tops stay close to the legend colour, walls a little darker.
+const LIGHTING = [
+  new LightingEffect({
+    ambient: new AmbientLight({ color: [255, 255, 255], intensity: 1.0 }),
+    key: new DirectionalLight({ color: [255, 255, 255], intensity: 0.75, direction: [-1, -2, -3] }),
+  }),
+];
+const MUNI_LINE: [number, number, number, number] = [255, 255, 255, 210];
+const BORDER: [number, number, number] = [178, 184, 184];
+const COUNTY_LINE: [number, number, number, number] = [60, 66, 66, 70];
+const ROUTE_LINE: [number, number, number, number] = [60, 66, 66, 140];
+const TEAL_A: [number, number, number, number] = [0, 98, 106, 255];
+const CASING: [number, number, number, number] = [255, 255, 255, 230];
+const HIGHLIGHT: [number, number, number, number] = [0, 98, 106, 55];
 
 const METRICS: [MetricKey, string][] = [
   ['nights', 'Nights away'],
   ['hours', 'Hours on the road'],
   ['roundTrips', 'Round trips'],
 ];
-const MAX_COLUMN_M = 190_000;
+
+/* ---------- route geometry ---------- */
+interface Geom {
+  path: LonLat[];
+  cum: number[];
+  total: number;
+}
+function prep(path: LonLat[]): Geom {
+  const cum = [0];
+  for (let i = 1; i < path.length; i++) {
+    const [x1, y1] = path[i - 1];
+    const [x2, y2] = path[i];
+    const k = Math.cos((((y1 + y2) / 2) * Math.PI) / 180);
+    cum.push(cum[i - 1] + Math.hypot((x2 - x1) * k, y2 - y1));
+  }
+  return { path, cum, total: cum[cum.length - 1] || 1e-9 };
+}
+function locate(g: Geom, f: number): [number, number] {
+  const d = Math.max(0, Math.min(1, f)) * g.total;
+  let lo = 0;
+  let hi = g.cum.length - 1;
+  while (hi - lo > 1) {
+    const mid = (lo + hi) >> 1;
+    if (g.cum[mid] <= d) lo = mid;
+    else hi = mid;
+  }
+  const seg = g.cum[hi] - g.cum[lo] || 1e-9;
+  return [lo, (d - g.cum[lo]) / seg];
+}
+function pointAt(g: Geom, f: number): LonLat {
+  if (g.path.length < 2) return g.path[0];
+  const [i, t] = locate(g, f);
+  const a = g.path[i];
+  const b = g.path[Math.min(i + 1, g.path.length - 1)];
+  return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t];
+}
+function subPath(g: Geom, f0: number, f1: number): LonLat[] {
+  if (f0 <= 0 && f1 >= 1) return g.path;
+  const [i0] = locate(g, f0);
+  const [i1] = locate(g, f1);
+  return [pointAt(g, f0), ...g.path.slice(i0 + 1, i1 + 1), pointAt(g, f1)];
+}
+/** Compass heading of travel at fraction f (0 = north, clockwise), looking a little ahead. */
+function headingAt(g: Geom, f: number, ahead = 0.035): number {
+  const a = pointAt(g, Math.min(f, 1 - ahead));
+  const b = pointAt(g, Math.min(1, Math.max(f, 0) + ahead));
+  const k = Math.cos((a[1] * Math.PI) / 180);
+  return (Math.atan2((b[0] - a[0]) * k, b[1] - a[1]) * 180) / Math.PI;
+}
+const wrap180 = (d: number) => ((((d + 180) % 360) + 360) % 360) - 180;
+
+function bboxOf(coords: unknown[]): BBox {
+  const b: BBox = [180, 90, -180, -90];
+  const visit = (c: unknown): void => {
+    if (Array.isArray(c) && typeof c[0] === 'number') {
+      const [x, y] = c as number[];
+      b[0] = Math.min(b[0], x);
+      b[1] = Math.min(b[1], y);
+      b[2] = Math.max(b[2], x);
+      b[3] = Math.max(b[3], y);
+    } else if (Array.isArray(c)) c.forEach(visit);
+  };
+  coords.forEach(visit);
+  return b;
+}
+
+/** Fit a bbox into the map canvas. Never throws: tiny or unmeasured canvases fall back to a safe view. */
+export function fitView(bbox: BBox, size: { width: number; height: number }, mode: Mode): MapViewState {
+  const pitch = mode === 'flat' ? 0 : mode === 'tilt45' ? 45 : 40;
+  const bearing = mode === 'tilt45' ? -12 : 0;
+  const fallback: MapViewState = { ...FINLAND, pitch, bearing };
+  if (!(size.width >= 80 && size.height >= 80)) return fallback;
+  // fitBounds throws if the padding leaves no room: keep at least half of each dimension for the map.
+  const pv = Math.min(28, size.height * 0.2);
+  const ph = Math.min(28, size.width * 0.2);
+  let fit: { longitude: number; latitude: number; zoom: number };
+  try {
+    const vp = new WebMercatorViewport({ width: size.width, height: size.height });
+    fit = vp.fitBounds(
+      [
+        [bbox[0], bbox[1]],
+        [bbox[2], bbox[3]],
+      ],
+      { padding: { top: pv, bottom: pv, left: ph, right: ph } },
+    );
+  } catch {
+    return fallback;
+  }
+  const { longitude, latitude, zoom } = fit;
+  if (![longitude, latitude, zoom].every(Number.isFinite)) return fallback;
+  if (!pitch) return { longitude, latitude, zoom, pitch: 0, bearing: 0 };
+  // Pitching compresses the far (north) side: move the centre south and zoom in slightly.
+  const latSpan = bbox[3] - bbox[1];
+  return { longitude, latitude: latitude - latSpan * (mode === 'tilt45' ? 0.14 : 0.1), zoom: zoom + (mode === "tilt45" ? 0.2 : 0.15), pitch, bearing };
+}
+
+/* ---------- label placement ---------- */
+interface Box {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+const hit = (a: Box, b: Box, m = 2) => a.x < b.x + b.w + m && b.x < a.x + a.w + m && a.y < b.y + b.h + m && b.y < a.y + a.h + m;
+let measureCtx: CanvasRenderingContext2D | null = null;
+function textWidth(s: string): number {
+  if (!measureCtx) measureCtx = document.createElement('canvas').getContext('2d');
+  if (!measureCtx) return s.length * 7.2;
+  measureCtx.font = '700 12px "Helvetica Neue", Helvetica, Arial, sans-serif';
+  return measureCtx.measureText(s).width;
+}
+
+/** Trip dots loop along the selected route (N = round trips per patient). DOM, so deck.gl does not redraw per frame. */
+function RouteDots({ geom, viewState, size, n, flightS }: { geom: Geom; viewState: MapViewState; size: { width: number; height: number }; n: number; flightS: number | null }) {
+  const [now, setNow] = useState(() => performance.now());
+  useEffect(() => {
+    if (flightS !== null) return;
+    let raf = 0;
+    let last = 0;
+    const tick = (t: number) => {
+      if (t - last > 33) {
+        last = t;
+        setNow(t);
+      }
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [flightS]);
+  const vp = useMemo(() => {
+    try {
+      return new WebMercatorViewport({ ...viewState, width: size.width, height: size.height });
+    } catch {
+      return null;
+    }
+  }, [viewState, size]);
+  if (!vp) return null;
+  const fr = flightS !== null ? [flightS] : Array.from({ length: n }, (_, i) => ((now % TRIP_PERIOD_MS) / TRIP_PERIOD_MS + i / n) % 1);
+  return (
+    <span data-testid="trip-dots" data-count={fr.length}>
+      {fr.map((f, i) => {
+        const [x, y] = vp.project(pointAt(geom, f));
+        const r = flightS !== null ? 7 : 5;
+        return <span key={i} className="tripdot" style={{ left: x - r, top: y - r, width: 2 * r, height: 2 * r }} />;
+      })}
+    </span>
+  );
+}
 
 interface Props {
   indication: Indication;
@@ -80,80 +221,127 @@ interface Props {
   onMetric: (m: MetricKey) => void;
   selected: string;
   onSelect: (code: string) => void;
-  pitched: boolean;
-  onPitch: (p: boolean) => void;
   fly: FlyRequest;
   fold: boolean;
   onFold: (f: boolean) => void;
+  terrain: boolean;
+  onTerrain: (t: boolean) => void;
 }
 
 export function MapPanel(props: Props) {
-  const { indication, lever, params, metric, selected, pitched, fly, fold } = props;
+  const { indication, lever, params, metric, selected, fly, fold, terrain } = props;
   const { data } = useData();
   const [viewState, setViewState] = useState<MapViewState>(FINLAND);
-  const [hover, setHover] = useState<{ x: number; y: number; name: string } | null>(null);
-  const wrapRef = useRef<HTMLElement>(null);
+  const [hover, setHover] = useState<{ x: number; y: number; code: string } | null>(null);
+  const [size, setSize] = useState<{ width: number; height: number } | null>(null);
+  const [flight, setFlight] = useState<{ code: string; s: number; flying: boolean } | null>(null);
   const holderRef = useRef<HTMLDivElement>(null);
-  // Canvas size in unzoomed px, plus the UI zoom (overlay margins shrink with it).
-  const [size, setSize] = useState<{ width: number; height: number; uiZoom: number } | null>(null);
-  const finlandBox = useMemo(() => bboxOf(data.geo.features), [data]);
-  const currentTarget = useRef<{ target: FlyRequest['target']; code?: string }>({ target: 'finland' });
+  const anim = useRef<{ raf: number; timers: number[] }>({ raf: 0, timers: [] });
+  const flightHeld = useRef<number | null>(null);
+  const finlandBox = useMemo(() => bboxOf(data.geo.features.map((f) => (f.geometry as GeoJSON.Polygon).coordinates)), [data]);
+  const geoms = useMemo(() => Object.fromEntries(Object.entries(data.routeLines).map(([c, r]) => [c, prep(r.path)])), [data]);
+  const terrainK = useTween(terrain ? 1 : 0, 1400);
+  const terrainOn = terrainK > 0.002;
 
   useEffect(() => {
     const el = holderRef.current;
-    const wrap = wrapRef.current;
-    if (!el || !wrap) return;
-    const measure = () =>
-      setSize({ width: el.clientWidth, height: el.clientHeight, uiZoom: wrap.clientWidth > 0 ? Math.min(1, el.clientWidth / wrap.clientWidth) : 1 });
+    if (!el) return;
+    const measure = () => setSize({ width: el.clientWidth, height: el.clientHeight });
     const ro = new ResizeObserver(measure);
     ro.observe(el);
-    ro.observe(wrap);
     measure();
     return () => ro.disconnect();
   }, []);
 
-  const targetView = (target: FlyRequest['target'], code: string | undefined, pitch: boolean): MapViewState | null => {
-    if (!size || size.width < 50) return null;
-    if (target === 'muni' && code) {
-      const m = data.muniByCode[code];
-      const county = data.counties.features.filter((f) => f.properties!.county_code === m?.county_code);
-      if (county.length) return fitView(bboxOf(county), size, pitch);
-    }
-    return fitView(finlandBox, size, pitch);
+  const cancelAnim = () => {
+    cancelAnimationFrame(anim.current.raf);
+    anim.current.timers.forEach((t) => clearTimeout(t));
+    anim.current = { raf: 0, timers: [] };
+  };
+  useEffect(() => () => cancelAnim(), []);
+
+  const flyTo = (v: MapViewState, ms: number) =>
+    setViewState({ ...v, transitionDuration: ms, transitionInterpolator: new FlyToInterpolator({ curve: 1.25 }), transitionEasing: easeInOut } as MapViewState);
+
+  const runFlight = (code: string) => {
+    const g = geoms[code];
+    if (!g || !size) return;
+    const start = g.path[0];
+    let bearing = headingAt(g, 0);
+    setFlight({ code, s: 0, flying: true });
+    flyTo({ longitude: start[0], latitude: start[1], zoom: FLIGHT_ZOOM, pitch: FLIGHT_PITCH, bearing }, FLY_IN_MS);
+    anim.current.timers.push(
+      window.setTimeout(() => {
+        const t0 = performance.now();
+        const step = (t: number) => {
+          // Tests may hold the flight at a fraction to screenshot it: window.__matkaFlightHold = 0.45.
+          const hold = (window as unknown as { __matkaFlightHold?: number }).__matkaFlightHold;
+          const raw = Math.min(1, (t - t0) / FOLLOW_MS);
+          const held = hold !== undefined && hold < 1 && raw >= hold;
+          const u = held ? hold : raw;
+          if (!(held && flightHeld.current === hold)) {
+            const s = easeInOut(u);
+            const p = pointAt(g, s);
+            bearing += wrap180(headingAt(g, s) - bearing) * (held ? 1 : 0.07);
+            setViewState({ longitude: p[0], latitude: p[1], zoom: FLIGHT_ZOOM, pitch: FLIGHT_PITCH, bearing });
+            setFlight({ code, s, flying: u < 1 });
+            flightHeld.current = held ? hold : null;
+          }
+          if (u < 1 || held) anim.current.raf = requestAnimationFrame(step);
+          else flyTo(fitView(bboxOf(g.path), size, 'tilt40'), 1600);
+        };
+        anim.current.raf = requestAnimationFrame(step);
+      }, FLY_IN_MS + 50),
+    );
   };
 
-  // Fly requests (demo keys), the flatten button and the first layout.
+  // Fly requests (demo keys) and the first layout.
   useEffect(() => {
-    currentTarget.current = { target: fly.target, code: fly.code };
-    const v = targetView(fly.target, fly.code, pitched);
-    if (v) setViewState({ ...v, transitionDuration: fly.nonce === 0 ? 0 : 1500, transitionInterpolator: new FlyToInterpolator({ curve: 1.2 }), transitionEasing: easeInOut } as MapViewState);
+    if (!size) return;
+    cancelAnim();
+    if (fly.target === 'flight' && fly.code) {
+      runFlight(fly.code);
+      return;
+    }
+    setFlight(null);
+    const v = fitView(finlandBox, size, fly.target === 'terrain' ? 'tilt45' : 'flat');
+    if (fly.nonce === 0) setViewState(v);
+    else flyTo(v, fly.target === 'terrain' ? 1800 : 1500);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fly.nonce, size === null]);
 
+  // Selecting another municipality drops the flight label.
   useEffect(() => {
-    const v = targetView(currentTarget.current.target, currentTarget.current.code, pitched);
-    if (v) setViewState({ ...v, transitionDuration: 800, transitionEasing: easeInOut } as MapViewState);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pitched]);
+    setFlight((f) => (f && f.code !== selected ? null : f));
+  }, [selected]);
 
-  const rows = useMemo(
-    () =>
-      data.municipalities
-        .filter((m) => data.routes[m.code])
-        .map((m) => {
-          const route = data.routes[m.code];
-          const b = currentBurden(route, indication, lever, params);
-          const frac = fold ? equivalentDistanceFraction(route, indication, params) : 1;
-          const unit = data.unitById[route.unit_id];
-          const lon = unit ? unit.lon + (m.lon - unit.lon) * frac : m.lon;
-          const lat = unit ? unit.lat + (m.lat - unit.lat) * frac : m.lat;
-          return { code: m.code, name: m.name_fi, lon, lat, value: b[metric] };
-        }),
-    [data, indication, lever, params, metric, fold],
-  );
-
-  // Stable scale per metric: the largest long-schedule value across both indications,
-  // so bone columns sit below breast columns and switching lever shows the drop.
+  /* ---------- per-municipality values ---------- */
+  const valueByCode = useMemo(() => {
+    const out: Record<string, number> = {};
+    for (const m of data.municipalities) {
+      const r = data.routes[m.code];
+      if (r) out[m.code] = currentBurden(r, indication, lever, params)[metric];
+    }
+    return out;
+  }, [data, indication, lever, params, metric]);
+  // Terrain height = nights away per patient. Attribute transitions force slow GPU read-backs, so the
+  // lever's "sink" is a uniform: every stayer has the same nights (sessions + planning [+ retreatment]),
+  // commuters have none, so long -> short is one exact ratio for all municipalities.
+  const longNightsByCode = useMemo(() => {
+    const out: Record<string, number> = {};
+    for (const m of data.municipalities) {
+      const r = data.routes[m.code];
+      if (r) out[m.code] = perPatient(r, indication, 'long', params).nights;
+    }
+    return out;
+  }, [data, indication, params]);
+  const sinkRatio = useMemo(() => {
+    const stayer = { road_km: params.commute_threshold_km + 1, drive_min: 60 };
+    const long = perPatient(stayer, indication, 'long', params).nights;
+    return long > 0 ? perPatient(stayer, indication, 'short', params).nights / long : 1;
+  }, [indication, params]);
+  const sinkK = useTween(lever ? sinkRatio : 1, terrain ? 1600 : 1);
+  // Stable colour scale per metric: the largest long-schedule value across both indications.
   const maxLong = useMemo(() => {
     let mx = 0;
     for (const m of data.municipalities) {
@@ -164,211 +352,320 @@ export function MapPanel(props: Props) {
     return mx || 1;
   }, [data, params, metric]);
 
-  const valueByCode = useMemo(() => Object.fromEntries(rows.map((r) => [r.code, r.value])), [rows]);
-  const transition = { duration: 800, easing: easeInOut };
+  const foldFrac = useMemo(() => {
+    const out: Record<string, number> = {};
+    for (const code of Object.keys(data.routeLines)) {
+      const r = data.routes[code];
+      out[code] = fold && r ? equivalentDistanceFraction(r, indication, params) : 1;
+    }
+    return out;
+  }, [data, fold, indication, params]);
+  const routePaths = useMemo(
+    () => Object.entries(geoms).map(([code, g]) => ({ code, path: foldFrac[code] < 1 ? subPath(g, 1 - foldFrac[code], 1) : g.path })),
+    [geoms, foldFrac],
+  );
+  const selGeom = useMemo(() => {
+    const g = geoms[selected];
+    if (!g) return null;
+    const f = foldFrac[selected] ?? 1;
+    return f < 1 ? prep(subPath(g, 1 - f, 1)) : g;
+  }, [geoms, selected, foldFrac]);
+  const selBurden = data.routes[selected] ? currentBurden(data.routes[selected], indication, lever, params) : null;
+  const nDots = selBurden ? tripDots(selBurden) : 0;
+  const selPathData = useMemo(() => (selGeom ? [selGeom.path] : []), [selGeom]);
+
+  const selFeature = useMemo(
+    () => ({ type: 'FeatureCollection', features: data.geo.features.filter((f) => f.properties!.code === selected) }) as GeoJSON.FeatureCollection,
+    [data, selected],
+  );
+
+  const onMuniClick = (info: PickingInfo) => {
+    const code = (info.object as GeoJSON.Feature)?.properties?.code;
+    if (code && data.routes[code]) props.onSelect(code);
+  };
+  const onMuniHover = (info: PickingInfo) => {
+    const f = info.object as GeoJSON.Feature | undefined;
+    setHover(f ? { x: info.x, y: info.y, code: f.properties!.code } : null);
+  };
 
   const layers = [
     new GeoJsonLayer({
+      id: 'land',
+      data: data.basemap.land,
+      filled: true,
+      stroked: false,
+      getFillColor: LAND,
+      parameters: DEPTH_ALWAYS,
+    }),
+    new GeoJsonLayer({
+      id: 'borders',
+      data: data.basemap.borders,
+      stroked: true,
+      filled: false,
+      getLineColor: BORDER,
+      lineWidthMinPixels: 1,
+      parameters: DEPTH_ALWAYS,
+    }),
+    // Flat choropleth and the extruded "burden terrain" are separate layers, so neither ever changes
+    // its vertex layout mid-transition (toggling `extruded` on one layer garbles attribute transitions).
+    new GeoJsonLayer({
       id: 'municipalities',
       data: data.geo,
+      visible: !terrainOn,
       filled: true,
       stroked: true,
       getFillColor: (f: GeoJSON.Feature) => ramp((valueByCode[f.properties!.code] ?? 0) / maxLong),
-      getLineColor: [255, 255, 255, 200],
+      getLineColor: MUNI_LINE,
       lineWidthMinPixels: 0.5,
       pickable: true,
       autoHighlight: true,
-      highlightColor: [11, 95, 165, 70],
+      highlightColor: HIGHLIGHT,
       updateTriggers: { getFillColor: [valueByCode, maxLong] },
-      transitions: { getFillColor: transition },
-      onClick: (info: PickingInfo) => {
-        const code = (info.object as GeoJSON.Feature)?.properties?.code;
-        if (code) props.onSelect(code);
-      },
-      onHover: (info: PickingInfo) => {
-        const f = info.object as GeoJSON.Feature | undefined;
-        setHover(f ? { x: info.x, y: info.y, name: f.properties!.name_fi } : null);
-      },
+      onClick: onMuniClick,
+      onHover: onMuniHover,
+    }),
+    // Only built while terrain is on, so the flat views never pay for the extruded geometry.
+    (terrain || terrainOn) &&
+    new GeoJsonLayer({
+      id: 'terrain',
+      data: data.geo,
+      visible: terrainOn,
+      filled: true,
+      stroked: false,
+      extruded: true,
+      getFillColor: (f: GeoJSON.Feature) => ramp((valueByCode[f.properties!.code] ?? 0) / maxLong, TERRAIN_HI),
+      getElevation: (f: GeoJSON.Feature) => (longNightsByCode[f.properties!.code] ?? 0) * ELEV_PER_NIGHT,
+      elevationScale: terrainOn ? terrainK * sinkK : 0,
+      material: MATERIAL,
+      pickable: true,
+      autoHighlight: true,
+      highlightColor: HIGHLIGHT,
+      updateTriggers: { getFillColor: [valueByCode, maxLong], getElevation: [longNightsByCode] },
+      onClick: onMuniClick,
+      onHover: onMuniHover,
     }),
     new GeoJsonLayer({
       id: 'counties',
       data: data.counties,
       filled: false,
       stroked: true,
-      getLineColor: [21, 25, 30, 150],
-      lineWidthMinPixels: 1.3,
+      visible: !terrainOn,
+      getLineColor: COUNTY_LINE,
+      lineWidthMinPixels: 1,
+    }),
+    // Lakes after the municipalities so flat (zero-height) terrain never z-fights with them.
+    new GeoJsonLayer({
+      id: 'lakes',
+      data: data.basemap.lakes,
+      filled: true,
+      stroked: false,
+      getFillColor: WATER,
+      parameters: terrainOn ? LAKES_TERRAIN : DEPTH_ALWAYS,
+      updateTriggers: { parameters: terrainOn },
+    }),
+    new PathLayer({
+      id: 'routes',
+      data: routePaths,
+      visible: !terrainOn,
+      getPath: (d: (typeof routePaths)[number]) => d.path,
+      getColor: ROUTE_LINE,
+      getWidth: 1,
+      widthUnits: 'pixels',
+      widthMinPixels: 1,
+      jointRounded: false,
+      parameters: DEPTH_ALWAYS,
+      updateTriggers: { getPath: [foldFrac] },
     }),
     new GeoJsonLayer({
-      id: 'selected',
-      data: { type: 'FeatureCollection', features: data.geo.features.filter((f) => f.properties!.code === selected) } as GeoJSON.FeatureCollection,
+      id: 'selected-outline',
+      data: selFeature,
+      visible: !terrainOn,
       filled: false,
       stroked: true,
-      getLineColor: [14, 124, 102, 255],
-      lineWidthMinPixels: 3,
+      getLineColor: TEAL_A,
+      lineWidthMinPixels: 2,
+      parameters: DEPTH_ALWAYS,
     }),
-    new ColumnLayer({
-      id: 'columns',
-      data: rows,
-      diskResolution: 14,
-      radius: 4800,
-      extruded: true,
-      getPosition: (d: (typeof rows)[number]) => [d.lon, d.lat],
-      getElevation: (d: (typeof rows)[number]) => (d.value / maxLong) * MAX_COLUMN_M,
-      elevationScale: Math.pow(2, 4.6 - (viewState.zoom ?? 4.6)),
-      getFillColor: (d: (typeof rows)[number]) => (d.code === selected ? [14, 124, 102, 255] : [...ramp(0.35 + 0.65 * (d.value / maxLong)), d.value > 0.01 ? 235 : 0]),
-      material: { ambient: 0.55, diffuse: 0.55, shininess: 16, specularColor: [40, 40, 40] },
-      pickable: true,
-      updateTriggers: { getElevation: [rows, maxLong], getFillColor: [rows, maxLong, selected], getPosition: [rows] },
-      transitions: { getElevation: transition, getFillColor: transition, getPosition: transition },
-      onClick: (info: PickingInfo) => {
-        const d = info.object as (typeof rows)[number] | undefined;
-        if (d) props.onSelect(d.code);
-      },
-      onHover: (info: PickingInfo) => {
-        const d = info.object as (typeof rows)[number] | undefined;
-        setHover(d ? { x: info.x, y: info.y, name: d.name } : null);
-      },
+    new PathLayer({
+      id: 'selected-route-casing',
+      visible: !terrainOn,
+      data: selPathData,
+      getPath: (d: LonLat[]) => d,
+      getColor: CASING,
+      getWidth: 6,
+      widthUnits: 'pixels',
+      jointRounded: true,
+      capRounded: true,
+      parameters: DEPTH_ALWAYS,
     }),
-    new ScatterplotLayer({
-      id: 'units',
-      data: data.units,
-      getPosition: (u: (typeof data.units)[number]) => [u.lon, u.lat],
-      getRadius: 7,
-      radiusUnits: 'pixels',
-      getFillColor: [255, 255, 255],
-      getLineColor: [11, 95, 165],
-      lineWidthUnits: 'pixels',
-      getLineWidth: 3,
-      stroked: true,
-      parameters: { depthTest: false } as never,
-    }),
-    new TextLayer({
-      id: 'unit-labels',
-      data: data.units,
-      getPosition: (u: (typeof data.units)[number]) => [u.lon, u.lat],
-      getText: (u: (typeof data.units)[number]) => u.town,
-      getSize: 13,
-      getColor: [21, 25, 30],
-      getPixelOffset: [10, 0],
-      getTextAnchor: 'start',
-      getAlignmentBaseline: 'center',
-      fontFamily: 'Inter, system-ui, sans-serif',
-      fontWeight: 600,
-      background: true,
-      getBackgroundColor: [255, 255, 255, 225],
-      backgroundPadding: [4, 2],
-      characterSet: 'auto',
-      parameters: { depthTest: false } as never,
+    new PathLayer({
+      id: 'selected-route',
+      visible: !terrainOn,
+      data: selPathData,
+      getPath: (d: LonLat[]) => d,
+      getColor: TEAL_A,
+      getWidth: 3,
+      widthUnits: 'pixels',
+      jointRounded: true,
+      capRounded: true,
+      parameters: DEPTH_ALWAYS,
     }),
   ];
 
-  const metricLabel = METRICS.find(([k]) => k === metric)![1].toLowerCase();
+  /* ---------- DOM overlay: hospital squares + collision-free labels + flight label ---------- */
+  const overlay = useMemo(() => {
+    if (!size || size.width < 40 || size.height < 40) return null;
+    let vp: WebMercatorViewport;
+    try {
+      vp = new WebMercatorViewport({ ...viewState, width: size.width, height: size.height });
+    } catch {
+      return null;
+    }
+    const inset = 4;
+    const inside = (b: Box) => b.x >= inset && b.y >= inset && b.x + b.w <= size.width - inset && b.y + b.h <= size.height - inset;
+    const selUnit = data.routes[selected]?.unit_id;
+    const served: Record<string, number> = {};
+    for (const r of Object.values(data.routes)) served[r.unit_id] = (served[r.unit_id] ?? 0) + 1;
+    const marks = data.units
+      .map((u) => {
+        const [x, y] = vp.project([u.lon, u.lat]);
+        return { u, x, y, on: u.id === selUnit };
+      })
+      .filter((m) => Number.isFinite(m.x) && m.x > -10 && m.y > -10 && m.x < size.width + 10 && m.y < size.height + 10);
+    const obstacles: Box[] = marks.map((m) => ({ x: m.x - 6, y: m.y - 6, w: 12, h: 12 }));
+    let travel: { x: number; y: number; text: string } | null = null;
+    if (flight && flight.code === selected && geoms[selected]) {
+      const r = data.routes[selected];
+      const p = pointAt(geoms[selected], flight.s);
+      const [x, y] = vp.project(p);
+      const text = `${fmt(flight.s * r.road_km)} km · ${fmtDrive(flight.s * r.drive_min)}`;
+      const w = textWidth(text) + 12;
+      const h = 20;
+      const cands: Box[] = [
+        { x: x + 12, y: y - h - 6, w, h },
+        { x: x - w - 12, y: y - h - 6, w, h },
+        { x: x + 12, y: y + 8, w, h },
+        { x: x - w - 12, y: y + 8, w, h },
+      ];
+      const b = cands.find((c) => inside(c) && !obstacles.some((o) => hit(c, o))) ?? cands.find(inside);
+      if (b) {
+        travel = { x: b.x, y: b.y, text };
+        obstacles.push(b);
+      }
+    }
+    const order = [...marks].sort((a, b) => Number(b.on) - Number(a.on) || (served[b.u.id] ?? 0) - (served[a.u.id] ?? 0));
+    const labels: { id: string; x: number; y: number; text: string; on: boolean }[] = [];
+    for (const m of order) {
+      const text = m.u.town === 'Helsinki' ? 'HUS Helsinki' : m.u.town;
+      const w = textWidth(text) + 6;
+      const h = 16;
+      const cands: Box[] = [
+        { x: m.x + 9, y: m.y - h / 2, w, h },
+        { x: m.x - 9 - w, y: m.y - h / 2, w, h },
+        { x: m.x - w / 2, y: m.y - 9 - h, w, h },
+        { x: m.x - w / 2, y: m.y + 9, w, h },
+        { x: m.x + 7, y: m.y - 7 - h, w, h },
+        { x: m.x + 7, y: m.y + 7, w, h },
+        { x: m.x - 7 - w, y: m.y - 7 - h, w, h },
+        { x: m.x - 7 - w, y: m.y + 7, w, h },
+      ];
+      const b = cands.find((c) => inside(c) && !obstacles.some((o) => hit(c, o)));
+      if (!b) continue; // skip a label rather than overlap
+      obstacles.push(b);
+      labels.push({ id: m.u.id, x: b.x, y: b.y, text, on: m.on });
+    }
+    return { marks, labels, travel };
+  }, [size, viewState, data, selected, flight, geoms]);
+
+  /* ---------- caption ---------- */
   const metricWord = metric === 'nights' ? 'nights away' : metric === 'hours' ? 'hours on the road' : 'round trips';
-  const fmtMetric = (v: number) => fmt(v, Math.abs(v - Math.round(v)) > 0.05 ? 1 : 0);
   const farStats = useMemo(() => {
     const far = data.municipalities.filter((m) => data.routes[m.code] && data.routes[m.code].road_km > params.commute_threshold_km);
     return { n: far.length, pop: far.reduce((a, m) => a + m.population, 0) };
   }, [data, params.commute_threshold_km]);
-  const headline = useMemo(() => {
-    const val = (code: string) => {
-      const r = data.routes[code];
-      return r ? currentBurden(r, indication, lever, params)[metric] : 0;
-    };
-    const longVal = (code: string) => {
-      const r = data.routes[code];
-      return r ? perPatient(r, indication, 'long', params)[metric] : 0;
-    };
-    const HELSINKI = '091';
-    const farCode = selected === HELSINKI ? '890' : selected;
-    return {
-      far: { name: data.muniByCode[farCode]?.name_fi ?? '', value: val(farCode), before: longVal(farCode) },
-      near: { name: data.muniByCode[HELSINKI]?.name_fi ?? 'Helsinki', value: val(HELSINKI) },
-    };
-  }, [data, indication, lever, params, metric, selected]);
+  const hoverM = hover ? data.muniByCode[hover.code] : null;
+  const fmtV = (v: number) => fmt(v, Math.abs(v - Math.round(v)) > 0.05 ? 1 : 0);
 
   return (
-    <section className="panel map-wrap" aria-label="Map" ref={wrapRef}>
-      <div className="map-controls">
-        <div className="metric-switch" role="group" aria-label="Metric">
+    <section className="mapcol" aria-label="Map" data-box="mapcol">
+      <div className="mapbar" data-box="mapbar">
+        <div className="texttabs" role="group" aria-label="Metric">
           {METRICS.map(([k, label]) => (
-            <button key={k} aria-pressed={metric === k} onClick={() => props.onMetric(k)}>
+            <button key={k} className="texttab" aria-pressed={metric === k} onClick={() => props.onMetric(k)}>
               {label}
             </button>
           ))}
         </div>
-        <div style={{ display: 'flex', gap: 8 }}>
-          <button className="icon-btn" onClick={() => props.onFold(!fold)} aria-pressed={fold} title="Finland folds inward">
-            <Shrink size={15} /> {fold ? 'Unfold' : 'Fold inward'}
+        <div className="toggles">
+          <button className="toggle" aria-pressed={terrain} onClick={() => props.onTerrain(!terrain)} title="Extrude each municipality by nights away per patient" data-testid="terrain-toggle">
+            Terrain
           </button>
-          <button className="icon-btn" onClick={() => props.onPitch(!pitched)} aria-pressed={!pitched}>
-            {pitched ? <Square size={15} /> : <Box size={15} />} {pitched ? 'Flatten' : '3D'}
+          <button className="toggle" aria-pressed={fold} onClick={() => props.onFold(!fold)} title="Shorten each route to the distance at which the long course would cost what the short one costs" data-testid="fold-toggle">
+            Fold inward
           </button>
         </div>
       </div>
-      <div className="map-headline">
-        <p className="map-tagline">Same cancer, same treatment. Different distance.</p>
-        <h2 data-testid="map-headline">
-          {headline.far.name}:{' '}
-          {lever && Math.abs(headline.far.before - headline.far.value) > 0.05 ? (
-            <>
-              <span className="dimtxt">{fmtMetric(headline.far.before)}</span> → <span className={headline.far.value < headline.far.before ? 'aftertxt' : ''}>{fmtMetric(headline.far.value)}</span>
-            </>
+      <div className="mapcanvas" ref={holderRef} data-box="mapcanvas" data-testid="mapcanvas">
+        <DeckGL
+          views={MAP_VIEW}
+          viewState={viewState}
+          onViewStateChange={({ viewState: v }) => setViewState(v as MapViewState)}
+          controller={CONTROLLER}
+          layers={layers}
+          effects={LIGHTING}
+          getCursor={({ isHovering }) => (isHovering ? 'pointer' : 'grab')}
+          style={DECK_STYLE}
+        />
+        {overlay && (
+          <div className="maplabels" data-layer="map-labels" aria-hidden>
+            {overlay.marks.map((m) => (
+              <span key={m.u.id} className={`hmark${m.on ? ' on' : ''}`} style={{ left: m.x - 5, top: m.y - 5 }} data-box="hmark" title={m.u.hospital} />
+            ))}
+            {overlay.labels.map((l) => (
+              <span key={l.id} className={`hlabel${l.on ? ' on' : ''}`} style={{ left: l.x, top: l.y }} data-box="hlabel" data-testid="hospital-label">
+                {l.text}
+              </span>
+            ))}
+            {selGeom && size && !terrainOn && (
+              <RouteDots geom={selGeom} viewState={viewState} size={size} n={nDots} flightS={flight?.flying && flight.code === selected ? flight.s : null} />
+            )}
+            {overlay.travel && (
+              <span className="travel num" style={{ left: overlay.travel.x, top: overlay.travel.y }} data-box="travel" data-testid="travel-label">
+                {overlay.travel.text}
+              </span>
+            )}
+          </div>
+        )}
+        {hover && hoverM && (
+          <div className="tooltip" style={{ left: hover.x, top: hover.y }} data-layer="tooltip">
+            <b>{hoverM.name_fi}</b> · {fmtV(valueByCode[hover.code] ?? 0)} {metricWord}
+          </div>
+        )}
+      </div>
+      <div className="mapcaption" data-box="mapcaption" data-testid="map-caption">
+        <div className="legend" data-box="legend">
+          <span className="legend-title">
+            {METRICS.find(([k]) => k === metric)![1]} per patient, {indication === 'bone' ? 'bone' : 'breast'}
+            <Prov kind="calculated" ids={data.routesMeta.source_ids} note={`${data.routesMeta.note} Squares: radiotherapy units. Grey lines: each municipality's road route to its unit (OSRM, OpenStreetMap). Lakes and coastline: Natural Earth 10m, bundled locally.`} />
+          </span>
+          <span className="num">0</span>
+          <span className="legend-bar" />
+          <span className="num">{fmt(maxLong, maxLong < 10 ? 1 : 0)}</span>
+        </div>
+        <div className="caption-text">
+          {fold ? (
+            <span className="fold-line">We can't move the hospital. The schedule can.</span>
+          ) : terrain ? (
+            <span>
+              Height: nights away per patient on the current schedule. {farStats.n} municipalities are more than {params.commute_threshold_km} km by road from their unit.
+              <Prov kind="calculated" ids={['osrm_table', 'statfin_population', 'wikidata_coords']} note="Road distance from each municipality's centre point. Follows the commuting-threshold slider." />
+            </span>
           ) : (
-            fmtMetric(headline.far.value)
-          )}{' '}
-        </h2>
-        <p className="map-near">
-          {metricWord} · {headline.near.name}: {fmtMetric(headline.near.value)}
-        </p>
-        <p className="map-subline">
-          Per patient, {indication === 'bone' ? 'one course for painful bone metastases' : 'one breast radiotherapy course'}{lever ? ', short schedule' : ''}{' '}
-          <Prov kind="calculated" ids={[...data.routesMeta.source_ids, ...data.parameters.filter((p) => p.id.startsWith(indication)).flatMap((p) => p.source_ids)]} note={data.routesMeta.note} />
-        </p>
-        {indication === 'bone' && lever && metric !== 'nights' && (
-          <p className="metric-note">Retreatment adds trips for patients who stay near the unit; the gain is nights away.</p>
-        )}
-      </div>
-      <div className="map-story">
-        {indication === 'bone' ? (
-          <FactText id="story_distance" />
-        ) : (
-          <span>
-            {farStats.n} municipalities, home to {farStats.pop.toLocaleString('en-GB')} people, are more than {params.commute_threshold_km} km by road from their unit.{' '}
-            <Prov kind="calculated" ids={['osrm_table', 'statfin_population', 'wikidata_coords']} note="Road distance from each municipality's centre point; population 31 Dec 2025. Follows the commuting-threshold slider." />
-          </span>
-        )}
-      </div>
-      {fold && <div className="fold-banner">We can't move the hospital. The schedule can.</div>}
-      {/* The UI may be scaled with CSS zoom on small screens (main.tsx); deck.gl picking needs an
-          unzoomed canvas, so this holder cancels the zoom for the map and its tooltip. */}
-      <div className="deck-holder" ref={holderRef}>
-      <DeckGL
-        views={new MapView({ repeat: false })}
-        viewState={viewState}
-        onViewStateChange={({ viewState: v }) => setViewState(v as MapViewState)}
-        controller={{ dragRotate: true, touchRotate: true }}
-        layers={layers}
-        getCursor={({ isHovering }) => (isHovering ? 'pointer' : 'grab')}
-        style={{ position: 'absolute', inset: '0' }}
-      />
-      {hover && (
-        <div className="tooltip" style={{ left: hover.x, top: hover.y }}>
-          {hover.name}
-        </div>
-      )}
-      </div>
-      <div className="legend">
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 6 }}>
-          <span>
-            {metricLabel[0].toUpperCase() + metricLabel.slice(1)} per patient, {indication === 'bone' ? 'bone metastases' : 'breast'}
-          </span>
-          <Prov kind="calculated" ids={data.routesMeta.source_ids} note={`${data.routesMeta.note} Ringed dots: radiotherapy units.`} />
-        </div>
-        <div className="legend-bar" />
-        <div className="legend-scale num">
-          <span>0</span>
-          <span>{fmt(maxLong / 2, maxLong < 10 ? 1 : 0)}</span>
-          <span>{fmt(maxLong, maxLong < 10 ? 1 : 0)}</span>
+            <span>
+              {farStats.n} municipalities, home to {farStats.pop.toLocaleString('en-GB')} people, are more than {params.commute_threshold_km} km by road from their unit.
+              <Prov kind="calculated" ids={['osrm_table', 'statfin_population', 'wikidata_coords']} note="Road distance from each municipality's centre point; population 31 Dec 2025. Follows the commuting-threshold slider." />
+            </span>
+          )}
         </div>
       </div>
     </section>

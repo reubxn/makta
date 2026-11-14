@@ -1,9 +1,9 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { loadData, type AppData } from './data';
 import { DataContext } from './context';
 import type { Indication, MetricKey, Params } from './model/metrics';
 import { TopBar, type Tab } from './components/TopBar';
-import { LeftPanel } from './components/LeftPanel';
+import { AssumptionsDrawer, Rail } from './components/LeftPanel';
 import { MapPanel, type FlyRequest } from './components/MapPanel';
 import { MunicipalityCard } from './components/MunicipalityCard';
 import { TotalsStrip } from './components/TotalsStrip';
@@ -22,7 +22,7 @@ export interface UiState {
   params: Params;
   metric: MetricKey;
   selected: string;
-  pitched: boolean;
+  terrain: boolean;
   highlightTotals: boolean;
   drawerOpen: boolean;
   memoCounty: string;
@@ -39,7 +39,7 @@ function initialState(data: AppData): UiState {
     params: { ...data.defaults },
     metric: 'nights',
     selected: data.muniByCode[DEFAULT_MUNI] ? DEFAULT_MUNI : data.municipalities[0].code,
-    pitched: true,
+    terrain: false,
     highlightTotals: false,
     drawerOpen: false,
     memoCounty: DEMO_MEMO_COUNTY,
@@ -95,7 +95,7 @@ function Matka({ data }: { data: AppData }) {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const k = e.key;
       if (k === 'Escape') {
-        update({ help: false });
+        update({ help: false, drawerOpen: false });
         return;
       }
       if (k === '?') {
@@ -106,15 +106,16 @@ function Matka({ data }: { data: AppData }) {
       clearTimers();
       switch (k) {
         case '1':
-          update({ tab: 'map', highlightTotals: false, help: false, pitched: true });
+          update({ tab: 'map', highlightTotals: false, help: false, terrain: false });
           flyTo('finland');
           break;
         case '2':
-          update({ tab: 'map', selected: DEFAULT_MUNI, highlightTotals: false, help: false });
-          flyTo('muni', DEFAULT_MUNI);
+          // Utsjoki, breast, 15 sessions: fly the road route to Oulu with 16 nights away in the card.
+          setS((p) => ({ ...p, tab: 'map', selected: DEFAULT_MUNI, indication: 'breast', levers: { ...p.levers, breast: false }, terrain: false, highlightTotals: false, help: false, drawerOpen: false }));
+          flyTo('flight', DEFAULT_MUNI);
           break;
         case '3':
-          // Lead lever: breast. Columns rise to the 15-session values, pause, then the lever flips.
+          // Lead lever: breast. Journeys 4 -> 2 on the route, nights 16 -> 6 in the card.
           setS((p) => ({ ...p, tab: 'map', indication: 'breast', levers: { ...p.levers, breast: false }, highlightTotals: false, help: false }));
           later(1200, () => setS((p) => ({ ...p, levers: { ...p.levers, breast: true } })));
           break;
@@ -123,10 +124,11 @@ function Matka({ data }: { data: AppData }) {
           later(1000, () => setS((p) => ({ ...p, levers: { ...p.levers, bone: true } })));
           break;
         case '5':
-          // National totals are breast-only, so show the breast map with them.
-          update({ tab: 'map', indication: 'breast', highlightTotals: true, help: false });
-          flyTo('finland');
-          later(6000, () => update({ highlightTotals: false }));
+          // Burden terrain: fly out, tilt, terrain rises on 15 sessions; then the breast lever sinks it.
+          setS((p) => ({ ...p, tab: 'map', indication: 'breast', levers: { ...p.levers, breast: false }, terrain: true, fold: false, highlightTotals: true, help: false, drawerOpen: false }));
+          flyTo('terrain');
+          later(3400, () => setS((p) => ({ ...p, levers: { ...p.levers, breast: true } })));
+          later(9000, () => update({ highlightTotals: false }));
           break;
         case '6':
           update({ tab: 'units', help: false });
@@ -150,41 +152,44 @@ function Matka({ data }: { data: AppData }) {
   useEffect(() => () => clearTimers(), []);
 
   const lever = s.levers[s.indication];
-  const view = useMemo(() => s.tab, [s.tab]);
 
   return (
     <div className="app" data-testid="app-ready">
       <TopBar tab={s.tab} onTab={(tab) => update({ tab })} />
-      {view === 'map' && (
-        <div className="mapview">
-          <div className="main">
-            <LeftPanel s={s} update={update} />
-            <MapPanel
-              indication={s.indication}
-              lever={lever}
-              params={s.params}
-              metric={s.metric}
-              onMetric={(metric) => update({ metric })}
-              selected={s.selected}
-              onSelect={select}
-              pitched={s.pitched}
-              onPitch={(pitched) => update({ pitched })}
-              fly={fly}
-              fold={s.fold}
-              onFold={(fold) => update({ fold })}
-            />
+      {s.tab === 'map' && (
+        <main className="mapview" data-layer="base">
+          <Rail s={s} update={update} />
+          <MapPanel
+            indication={s.indication}
+            lever={lever}
+            params={s.params}
+            metric={s.metric}
+            onMetric={(metric) => update({ metric })}
+            selected={s.selected}
+            onSelect={select}
+            fly={fly}
+            fold={s.fold}
+            onFold={(fold) => update({ fold })}
+            terrain={s.terrain}
+            onTerrain={(terrain) => update({ terrain })}
+          />
+          <div className="right" data-box="right">
             <MunicipalityCard code={s.selected} indication={s.indication} lever={lever} params={s.params} />
+            <TotalsStrip params={s.params} leverOn={s.levers.breast} boneLever={s.levers.bone} indication={s.indication} highlight={s.highlightTotals} />
           </div>
-          <TotalsStrip params={s.params} leverOn={s.levers.breast} boneLever={s.levers.bone} indication={s.indication} highlight={s.highlightTotals} />
-        </div>
+          {s.drawerOpen && <AssumptionsDrawer s={s} update={update} />}
+        </main>
       )}
-      {view === 'units' && <UnitsTab params={s.params} onParam={(id, v) => setS((p) => ({ ...p, params: { ...p.params, [id]: v } }))} />}
-      {view === 'memo' && (
+      {s.tab === 'units' && <UnitsTab params={s.params} onParam={(id, v) => setS((p) => ({ ...p, params: { ...p.params, [id]: v } }))} />}
+      {s.tab === 'memo' && (
         <MemoTab county={s.memoCounty} run={s.memoRun} onCounty={(memoCounty) => update({ memoCounty })} onRun={() => setS((p) => ({ ...p, memoRun: p.memoRun + 1 }))} />
       )}
-      {view === 'sources' && <SourcesTab />}
-      <footer className="footer">
-        Built at Junction 2026 for the AstraZeneca challenge. Public aggregate data only. Proposals for clinical teams to evaluate, not clinical advice.
+      {s.tab === 'sources' && <SourcesTab />}
+      <footer className="footer" data-box="footer">
+        <span className="markers" data-testid="marker-key">
+          <b>S</b> sourced · <b>C</b> calculated · <b>A</b> assumption: click a marker for its sources
+        </span>
+        <span>Built at Junction 2026 for the AstraZeneca challenge. Public aggregate data only. Proposals for clinical teams to evaluate, not clinical advice.</span>
       </footer>
       {s.help && <HelpOverlay onClose={() => update({ help: false })} />}
     </div>

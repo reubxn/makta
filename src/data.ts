@@ -137,6 +137,19 @@ export interface Memos {
   memos: Memo[];
 }
 
+export interface RouteLine {
+  unit_id: string;
+  km: number;
+  min: number;
+  path: [number, number][];
+}
+
+export interface Basemap {
+  lakes: GeoJSON.FeatureCollection;
+  land: GeoJSON.FeatureCollection;
+  borders: GeoJSON.FeatureCollection;
+}
+
 export interface AppData {
   municipalities: Municipality[];
   muniByCode: Record<string, Municipality>;
@@ -157,6 +170,9 @@ export interface AppData {
   statements: UnitStatements | null;
   memos: Memos | null;
   countyNames: Record<string, string>;
+  routeLines: Record<string, RouteLine>;
+  routeLinesMeta: { kind: Kind; source_ids: string[]; note: string };
+  basemap: Basemap;
 }
 
 async function get<T>(name: string, optional = false): Promise<T | null> {
@@ -175,7 +191,7 @@ async function get<T>(name: string, optional = false): Promise<T | null> {
 }
 
 export async function loadData(): Promise<AppData> {
-  const [m, geo, counties, routes, units, sources, params, facts, cases, statements, memos] =
+  const [m, geo, counties, routes, units, sources, params, facts, cases, statements, memos, lines, basemap] =
     await Promise.all([
       get<{ municipalities: Municipality[] }>('municipalities.json'),
       get<GeoJSON.FeatureCollection>('municipalities.geojson'),
@@ -188,6 +204,8 @@ export async function loadData(): Promise<AppData> {
       get<Cases>('cases.json'),
       get<UnitStatements>('unit_statements.json', true),
       get<Memos>('memos.json', true),
+      get<{ routes: Record<string, RouteLine>; kind: Kind; source_ids: string[]; note: string }>('route_lines.json'),
+      get<Basemap>('basemap.json'),
     ]);
   const municipalities = m!.municipalities;
   const muniByCode = Object.fromEntries(municipalities.map((x) => [x.code, x]));
@@ -221,5 +239,8 @@ export async function loadData(): Promise<AppData> {
     statements,
     memos,
     countyNames,
+    routeLines: lines!.routes,
+    routeLinesMeta: { kind: lines!.kind, source_ids: lines!.source_ids, note: lines!.note },
+    basemap: basemap!,
   };
 }

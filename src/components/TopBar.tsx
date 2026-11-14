@@ -9,16 +9,12 @@ const TABS: [Tab, string][] = [
 
 export function TopBar({ tab, onTab }: { tab: Tab; onTab: (t: Tab) => void }) {
   return (
-    <header className="topbar">
+    <header className="topbar" data-box="header">
       <div className="wordmark">
-        <span className="wordmark-mark" aria-hidden>
-          <svg width="18" height="18" viewBox="0 0 32 32">
-            <path d="M5 25V8l11 11L27 8v17" fill="none" stroke="#fff" strokeWidth="3.5" strokeLinejoin="round" strokeLinecap="round" />
-          </svg>
-        </span>
+        <span className="wordmark-mark" aria-hidden />
         Matka
       </div>
-      <div className="tagline">Same cancer, same treatment. Different distance.</div>
+      <div className="hero">Same cancer, same treatment. Different distance.</div>
       <nav className="tabs" role="tablist">
         {TABS.map(([id, label]) => (
           <button key={id} role="tab" className="tab" aria-selected={tab === id} onClick={() => onTab(id)}>

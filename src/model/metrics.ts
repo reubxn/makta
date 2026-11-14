@@ -173,6 +173,43 @@ export function breastTotals(rows: MunicipalityInput[], p: Params, leverOn: bool
   return { byMunicipality, byCounty, national };
 }
 
+/**
+ * Yearly burden carried today by the eligible breast patients still on the long schedule in one
+ * municipality: affected patients x one long course. Machine sessions are the treatment sessions
+ * those courses use (patients x long fractions). This is what the lever acts on.
+ */
+export function breastStillLong(route: Route, cases: number, p: Params): Removed {
+  const patients = affectedBreastPatients(cases, p);
+  return {
+    ...scale(perPatient(route, 'breast', 'long', p), patients),
+    patients,
+    machineSessions: patients * p.breast_fractions_long,
+  };
+}
+
+export interface BreastYear {
+  /** Lever off: yearly burden of the eligible patients still on the long schedule. */
+  current: Removed;
+  /** Lever on: what switching them to the short schedule removes. */
+  removed: Removed;
+}
+
+/** National yearly breast figures for the totals block. Never all zero while there are cases. */
+export function breastYear(rows: MunicipalityInput[], p: Params): BreastYear {
+  let current = ZERO_REMOVED;
+  let removed = ZERO_REMOVED;
+  for (const r of rows) {
+    current = addRemoved(current, breastStillLong(r.route, r.cases, p));
+    removed = addRemoved(removed, breastRemoved(r.route, r.cases, p));
+  }
+  return { current, removed };
+}
+
+/** Number of evenly spaced trip dots to draw on a route: round trips per patient, at least 1. */
+export function tripDots(b: Burden): number {
+  return Math.max(1, Math.round(b.roundTrips));
+}
+
 export type MetricKey = 'nights' | 'hours' | 'roundTrips';
 
 export function metricValue(b: Burden, m: MetricKey): number {

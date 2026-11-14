@@ -1,7 +1,10 @@
 import fs from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import {
+  breastStillLong,
   breastTotals,
+  breastYear,
+  tripDots,
   equivalentDistanceFraction,
   courseBurden,
   isCommuter,
@@ -122,6 +125,51 @@ describe('breastTotals', () => {
     for (const r of [t.national, ...Object.values(t.byCounty), ...Object.values(t.byMunicipality)]) {
       for (const v of Object.values(r)) expect(Number.isFinite(v)).toBe(true);
     }
+  });
+});
+
+describe('breastYear (totals block: never zeros)', () => {
+  const rows: MunicipalityInput[] = [
+    { code: 'a', county_code: 'X', route: far, cases: 3.2 },
+    { code: 'b', county_code: 'X', route: near, cases: 40 },
+    { code: 'c', county_code: 'Y', route: { road_km: 150, drive_min: 120 }, cases: 7 },
+  ];
+  const affected = (3.2 + 40 + 7) * 0.7 * 0.6 * 0.8;
+
+  it('lever off: yearly burden of eligible patients still on 15 sessions', () => {
+    const y = breastYear(rows, P);
+    expect(y.current.patients).toBeCloseTo(affected);
+    expect(y.current.machineSessions).toBeCloseTo(affected * 15);
+    // Only the stayers (a, c) have nights: 16 per patient on 15 sessions.
+    expect(y.current.nights).toBeCloseTo((3.2 + 7) * 0.7 * 0.6 * 0.8 * 16);
+    expect(y.current.nights).toBeGreaterThan(0);
+    expect(y.current.roundTrips).toBeGreaterThan(0);
+  });
+
+  it('lever on: removed equals breastTotals national and is smaller than the current burden', () => {
+    const y = breastYear(rows, P);
+    const t = breastTotals(rows, P, true).national;
+    for (const k of ['nights', 'roundTrips', 'hours', 'km', 'machineSessions', 'patients'] as const) {
+      expect(y.removed[k]).toBeCloseTo(t[k], 6);
+      if (k !== 'patients') expect(y.removed[k]).toBeLessThan(y.current[k]);
+    }
+    expect(y.removed.machineSessions).toBeCloseTo(affected * 10);
+  });
+
+  it('current minus removed equals the same patients on 5 sessions', () => {
+    const r = { road_km: 300, drive_min: 240 };
+    const cur = breastStillLong(r, 10, P);
+    const rem = breastTotals([{ code: 'x', county_code: 'X', route: r, cases: 10 }], P, true).national;
+    const n = 10 * 0.7 * 0.6 * 0.8;
+    expect(cur.nights - rem.nights).toBeCloseTo(n * perPatient(r, 'breast', 'short', P).nights);
+    expect(cur.machineSessions - rem.machineSessions).toBeCloseTo(n * 5);
+  });
+
+  it('trip dots: 4 round trips on 15 sessions, 2 on 5, at least 1', () => {
+    expect(tripDots(perPatient(far, 'breast', 'long', P))).toBe(4);
+    expect(tripDots(perPatient(far, 'breast', 'short', P))).toBe(2);
+    expect(tripDots(perPatient(far, 'bone', 'short', P))).toBe(2);
+    expect(tripDots({ roundTrips: 0, nights: 0, km: 0, hours: 0, kelaEur: 0 })).toBe(1);
   });
 });
 
