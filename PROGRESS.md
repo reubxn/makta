@@ -63,3 +63,18 @@ Legend: [x] done · [~] in progress · [ ] not started · [!] blocked / changed 
 
 ## Wrap-up
 - [ ] MORNING.md
+
+## NEXT (owner instructions after the independent audit, 2026-11-15 00:16) — do in this order
+Context: audit confirmed (memos stale vs data after catchment routing; wrong citations; overclaims; MORNING.md missing).
+Session restarted so ANTHROPIC_API_KEY loads from the "makta" environment. Check with `echo ${ANTHROPIC_API_KEY:+present}` (never print it).
+1. [ ] Memos: regenerate ALL 22 through the Anthropic API (`.venv/bin/python -I scripts/generate_memos.py`, method llm-api, model recorded) against current public/data.
+   - Make scripts/09_check_data.py re-run the validator live (import validate/build_facts) instead of trusting stored counts.
+   - Citation rules already in the prompt/facts (citation_guide): bone per-patient numbers must not cite breast case tables (S33-35); no overclaims ("only", "none of the units publishes"); first step must be a clinical-team review, never a patient-page change.
+   - UI: no memo may show the traced badge unless it passes live validation (store pass flag from live run; MemoTab hides badge otherwise).
+   - Note: the in-session v2 drafts are in data/raw/agent_memos_{A,B}.json (fallback only).
+2. [ ] Unit schedule extraction through the API (method llm-api, model recorded), searching harder for each of the 12 units' pages (snapshots in data/raw/pages/<unit>__<slug>.txt). Report honestly how many units publish a schedule.
+3. [ ] Story change: BREAST is the lead lever — default indication on load = breast; demo key 3 = breast (columns rise to 15, pause, lever on), key 4 = bone. Card line for bone: "Fewer nights away; trips about the same, because some patients need a second session." Must not be clipped. Update HelpOverlay, demo/design specs.
+4. [ ] What units say headline: "X of 12 units publish which schedule they use." tied to the ask to publish schedule mix.
+5. [ ] Fix stale "three nearest" limitation text (07_parameters_facts.py); flag Kainuu and Kanta-Häme routing as nearest-by-drive assumptions; breast figure 5,232 (women, 2024) with its source shown.
+6. [ ] Phase 5 (offline build/preview, no external requests, load < 2 s, Vercel skipped unless CLI logged in) + MORNING.md with a 2-minute script that leads with breast and uses the "most units don't publish" line.
+Keep the fold toggle off by default.
