@@ -1,0 +1,33 @@
+URL: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40967059%20AND%20SRC:MED&format=json&resultType=core
+ACCESSED: 2026-11-14
+CANONICAL: https://pubmed.ncbi.nlm.nih.gov/40967059/ (pubmed.ncbi.nlm.nih.gov returned a cookie wall to curl; text fetched via Europe PMC REST API)
+
+TITLE: Changes in the use of chemoradiotherapy for non-small cell lung cancer after guideline implementation in Finland between 2016 and 2020.
+JOURNAL: Cancer treatment and research communications 2025 DOI: 10.1016/j.ctarc.2025.100996
+AUTHORS: Wichmann V, Skyttä T, Mali P, Anttonen A, Lehtiö K, Tengström M, Nevantaus A, Peltonen J, Sailas L, Myllykangas M, Haalisto E, Kononen J, Löyttyniemi E, Jekunen A, CRT Working Group & the Finnish Lung Cancer Group (FLCG).
+
+ABSTRACT:
+Background
+Following treatment with chemoradiotherapy (CRT), approximately 30 % of patients with stage III unresectable non-small cell lung cancer (NSCLC) can achieve long-term remission with the possibility of a cure.[1,2,3]. CRT was deemed to be underutilized in Finland compared with the lung cancer incidence. Herein, we examined the potential increase in CRT use following the introduction of national guidelines to improve and standardize NSCLC treatment nationally.
+Materials and methods
+We compared the use of CRT before and after the implementation of updated CRT guidelines in 2016 and 2020. Data was gathered on all patients treated with CRT from every radiotherapy unit, in Finland, for a total of 13 radiotherapy units.
+Results
+Overall, 53 and 77 patients with NSCLC were treated with CRT in 2016 and 2020, respectively; thus, CRT use increased significantly by 45 %. There was only a slight overall increase in the incidence of lung cancer, with 2734 patients reported in 2016 and 2801 in 2020, according to the Finnish Cancer Registry report from 2020. Overall (OS) and progression-free survival (PFS) were analyzed over 2 years. The median PFS was 10 and 15 months in patients treated in 2016 and 2020, respectively. The median OS was not reached in either group. There were no statistically significant differences between the groups.
+Conclusion
+Implementation of the national guideline increased CRT use and altered clinical practice across the country, without compromising treatment efficacy or survival. CRT was provided more uniformly after the implementation of national guidelines.
+
+AFFILIATIONS:
+Vaasa Cancer Clinic, Vaasa Central Hospital, The Wellbeing Services County of Ostrobothnia, Turku University, Finland; Oulu University Hospital, University of Oulu, Finland. Electronic address: wichmann.viktor@gmail.com.
+Tampere University Hospital, University of Tampere, Finland.
+Turku University Hospital, University of Oulu, Finland.
+Comprehensive Cancer Center, Helsinki University Hospital, University of Helsinki, Finland.
+Oulu University Hospital, University of Oulu, Finland.
+Kuopio University Hospital, University of Kuopio, Finland.
+Hospital Nova of Central Finland, Finland.
+Kymenlaakso Central Hospital, Finland.
+North Karelia Central Hospital, Finland.
+Päijät-Häme Central Hospital, Finland.
+Satasairaala Central Hospital, Finland.
+Docrates Cancer Center, Finland.
+Department of Biostatistics, University of Turku and Turku University Hospital.
+Vaasa Cancer Clinic, Vaasa Central Hospital, The Wellbeing Services County of Ostrobothnia, Turku University, Finland.

@@ -1,0 +1,26 @@
+URL: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40406263%20AND%20SRC:MED&format=json&resultType=core
+ACCESSED: 2026-11-14
+CANONICAL: https://pubmed.ncbi.nlm.nih.gov/40406263/ (pubmed.ncbi.nlm.nih.gov returned a cookie wall to curl; text fetched via Europe PMC REST API)
+
+TITLE: Implementing treatment according to the guidelines is of paramount importance in locally advanced cervical cancer: a real-world study.
+JOURNAL: Frontiers in oncology 2025 DOI: 10.3389/fonc.2025.1562067
+AUTHORS: Jääskeläinen E, Kärkkäinen H, Palmgren JE, Haataja M, Hinkula M, Anttila M.
+
+ABSTRACT:
+Background
+External beam radiotherapy with concomitant chemotherapy and image-guided brachytherapy is the standard treatment for locally advanced cervical cancer. This retrospective study compared real-world outcomes with those reported in the literature and evaluated the impact of treatment implementation on the outcomes.
+Methods
+Medical records of consecutive patients receiving radiotherapy for cervical cancer at Kuopio University Hospital from 2009-2018 were examined. We identified 112 patients with a median age of 53 (27-88) years. The International Federation of Gynecology and Obstetrics 2009 classification stages were IB-IVB, 86% had at least stage IIB disease, and 60% had lymph node metastases. External beam radiotherapy was conducted using intensity-modulated radiotherapy or volumetric modulated arc therapy. Concomitant chemotherapy was administered in 90% of cases. All patients received brachytherapy in magnetic resonance imaging guidance. Seventeen patients received neoadjuvant chemotherapy, deviating from the guidelines, while thirteen patients received adjuvant chemotherapy. The patients were divided into two groups according to how precisely the guidelines were followed, considering the delivery of concomitant chemotherapy, the treatment of lymph node metastases, the radiation dose to the primary tumor, and the overall treatment time. The median follow-up time was 58 months (IQR 35-87), and the primary endpoint was 5-year overall survival.
+Results
+The mean delivered biological dose to the high-risk clinical target volume was 93.7 Gy. The median overall treatment time was 49 days. Overall survival, disease-free survival, and local control at five years were 60.1%, 57.0%, and 85.7%, respectively. Receiving less than three cycles of concomitant chemotherapy was a negative prognostic factor for overall and disease-free survival. The guidelines were adequately followed in 76.8% (Group 1) and substantially deviated from in 23.2% of cases (Group 2). Differences were observed between the groups in 5-year overall survival (67% vs 39%, p=0.016), disease-free survival (62% vs 42%, p=0.040), and lymph node control (84% vs 61%, p=0.007). Neither neoadjuvant chemotherapy nor adjuvant chemotherapy improved the outcome.
+Conclusions
+The outcomes in this real-world setting were inferior to those reported in the literature. Implementing chemoradiotherapy and brachytherapy according to the guidelines is essential; deviations from the guidelines could worsen the outcome.
+
+AFFILIATIONS:
+Department of Gynecology and Obstetrics, Kuopio University Hospital, Kuopio, Finland.
+Faculty of Health Sciences, University of Eastern Finland, Kuopio, Finland.
+Department of Radiotherapy, Kuopio University Hospital, Kuopio, Finland.
+Department of Brachytherapy, Maastro Clinic, Maastricht, Netherlands.
+Department of Gynecology and Obstetrics, Turku University Hospital, Turku, Finland.
+Faculty of Medicine, University of Turku, Turku, Finland.
+Department of Gynecology and Obstetrics, Medical Research Center Oulu, Research Unit of Clinical Medicine, University of Oulu and Oulu University Hospital, Oulu, Finland.

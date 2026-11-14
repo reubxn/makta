@@ -1,0 +1,235 @@
+{
+  "generated": "2026-11-14",
+  "units": [
+    {
+      "id": "hus",
+      "name": "HUS Syöpäkeskus, Sädehoitoyksikkö",
+      "hospital": "HUS Syöpäkeskus (Meilahti, Helsinki University Hospital)",
+      "town": "Helsinki",
+      "county_name_fi": "HUS-yhtymä (Uusimaa: Itä-, Keski-, Länsi- ja Vantaan-Keravan hyvinvointialueet sekä Helsingin kaupunki)",
+      "lat": 60.1883,
+      "lon": 24.9081,
+      "coord_method": "wikidata_P625:Q30690613 (Meilahden sairaala-alue; Syöpäkeskus is on this campus, Paciuksenkatu)",
+      "source_url": "https://www.hus.fi/potilaalle/sairaalat-ja-toimipisteet/syopakeskus/sadehoitoyksikko-syopakeskus",
+      "evidence_quote": "Syöpäkeskuksen sädehoitoyksikössä vastaamme kaikesta Uudenmaan alueella annettavasta ulkoisesta sädehoidosta.",
+      "accessed": "2026-11-14",
+      "source_key": "unit_hus",
+      "evidence_snapshot": "data/raw/unit_evidence/hus.txt"
+    },
+    {
+      "id": "lahti",
+      "name": "Sädehoitoyksikkö (Päijät-Hämeen keskussairaala)",
+      "hospital": "Päijät-Hämeen keskussairaala",
+      "town": "Lahti",
+      "county_name_fi": "Päijät-Hämeen hyvinvointialue",
+      "lat": 60.9928,
+      "lon": 25.568,
+      "coord_method": "wikidata_P625:Q30293531",
+      "source_url": "https://paijatha.fi/palvelut-ja-hoitoon-hakeutuminen/terveyspalvelut/poliklinikat/sadehoitoyksikko/",
+      "evidence_quote": "Sädehoito on yleisesti käytetty syövän hoitomuoto. Sädehoidon yksikössä suunnitellaan ja toteutetaan sädehoitokokonaisuus.",
+      "accessed": "2026-11-14",
+      "source_key": "unit_lahti",
+      "evidence_snapshot": "data/raw/unit_evidence/lahti.txt"
+    },
+    {
+      "id": "kotka",
+      "name": "Sädehoitoyksikkö, Kymenlaakson keskussairaala",
+      "hospital": "Kymenlaakson keskussairaala",
+      "town": "Kotka",
+      "county_name_fi": "Kymenlaakson hyvinvointialue",
+      "lat": 60.4774,
+      "lon": 26.9124,
+      "coord_method": "wikidata_P625:Q11873971",
+      "source_url": "https://kymenhva.fi/kymenlaakson-keskussairaala/sadehoitoyksikko/",
+      "evidence_quote": "Kymenlaaksossa sädehoitoa annetaan Kymenlaakson keskussairaalassa.",
+      "accessed": "2026-11-14",
+      "source_key": "unit_kotka",
+      "evidence_snapshot": "data/raw/unit_evidence/kotka.txt"
+    },
+    {
+      "id": "turku",
+      "name": "Tyksin sädehoitoyksikkö",
+      "hospital": "Turun yliopistollinen keskussairaala (Tyks)",
+      "town": "Turku",
+      "county_name_fi": "Varsinais-Suomen hyvinvointialue",
+      "lat": 60.4533,
+      "lon": 22.2906,
+      "coord_method": "wikidata_P625:Q3736764",
+      "source_url": "https://www.varha.fi/fi/ajankohtaista/tyksin-erikoissadehoidot-arvioitiin-uudestaan-teravimpaan-karkeen",
+      "evidence_quote": "Tyksin sädehoitoyksikössä hoidetaan vuosittain stereotaktisilla tekniikoilla noin 160 potilasta.",
+      "accessed": "2026-11-14",
+      "source_key": "unit_turku",
+      "evidence_snapshot": "data/raw/unit_evidence/turku_news.txt"
+    },
+    {
+      "id": "tampere",
+      "name": "Sädehoitoyksikkö, Tays",
+      "hospital": "Tampereen yliopistollinen sairaala (Tays), Radius",
+      "town": "Tampere",
+      "county_name_fi": "Pirkanmaan hyvinvointialue",
+      "lat": 61.5044,
+      "lon": 23.8131,
+      "coord_method": "wikidata_P625:Q11896324",
+      "source_url": "https://pirha.fi/documents/d/guest/syovanhoidon-omavalvontasuunnitelma",
+      "evidence_quote": "Sädehoitoyksikössä on 6 sädehoitokiihdytinlaitetta sekä 1 tykösädehoitolaite.",
+      "accessed": "2026-11-14",
+      "source_key": "unit_tampere",
+      "evidence_snapshot": "data/raw/unit_evidence/tampere.txt"
+    },
+    {
+      "id": "vaasa",
+      "name": "Sädehoito-osasto, Vaasan keskussairaala",
+      "hospital": "Vaasan keskussairaala",
+      "town": "Vaasa",
+      "county_name_fi": "Pohjanmaan hyvinvointialue",
+      "lat": 63.0847,
+      "lon": 21.6149,
+      "coord_method": "wikidata_P625:Q11899969",
+      "source_url": "https://pohjanmaanhyvinvointi.fi/palvelumme/terveys-ja-sairaanhoitopalvelut/sairaalapalvelut/kasvain-ja-syopahoito/sadehoito-osasto/",
+      "evidence_quote": "Sädehoitoa käytetään syövän parantavana hoitona joko yksin tai muihin hoitoihin yhdistettynä.",
+      "accessed": "2026-11-14",
+      "source_key": "unit_vaasa",
+      "evidence_snapshot": "data/raw/unit_evidence/vaasa.txt"
+    },
+    {
+      "id": "jyvaskyla",
+      "name": "Sädehoitoyksikkö, Sairaala Nova",
+      "hospital": "Keski-Suomen Sairaala Nova",
+      "town": "Jyväskylä",
+      "county_name_fi": "Keski-Suomen hyvinvointialue",
+      "lat": 62.23,
+      "lon": 25.7048,
+      "coord_method": "wikidata_P625:Q64549109",
+      "source_url": "https://www.hyvaks.fi/asiointi/sadehoito",
+      "evidence_quote": "Sädehoitoyksikkö sijaitsee Sairaala Novassa Jyväskylässä. Sädehoitoyksikössä annetaan ulkoista sädehoitoa erilaisiin syöpätauteihin.",
+      "accessed": "2026-11-14",
+      "source_key": "unit_jyvaskyla",
+      "evidence_snapshot": "data/raw/unit_evidence/jyvaskyla.txt"
+    },
+    {
+      "id": "kuopio",
+      "name": "Sädehoito, Kuopion yliopistollinen sairaala (KYS Syöpäkeskus)",
+      "hospital": "Kuopion yliopistollinen sairaala (KYS)",
+      "town": "Kuopio",
+      "county_name_fi": "Pohjois-Savon hyvinvointialue",
+      "lat": 62.8975,
+      "lon": 27.6469,
+      "coord_method": "wikidata_P625:Q11873596",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40406263/",
+      "evidence_quote": "Medical records of consecutive patients receiving radiotherapy for cervical cancer at Kuopio University Hospital from 2009-2018 were examined.",
+      "accessed": "2026-11-14",
+      "source_key": "unit_kuopio",
+      "evidence_snapshot": "data/raw/unit_evidence/kuopio.txt",
+      "fetched_via": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40406263%20AND%20SRC:MED&format=json&resultType=core"
+    },
+    {
+      "id": "joensuu",
+      "name": "Syöpäkeskus, sädehoitoyksikkö (Pohjois-Karjalan keskussairaala)",
+      "hospital": "Pohjois-Karjalan keskussairaala",
+      "town": "Joensuu",
+      "county_name_fi": "Pohjois-Karjalan hyvinvointialue (Siun sote)",
+      "lat": 62.5911,
+      "lon": 29.7792,
+      "coord_method": "wikidata_P625:Q15939144",
+      "source_url": "https://www.siunsote.fi/palvelu/syopatautien-ja-sadehoidon-palvelut/",
+      "evidence_quote": "Syöpäsairauttasi hoidamme lääkehoidolla ja sädehoidolla, joihin pääset hoitosuunnitelmasi mukaisesti jonottamatta.",
+      "accessed": "2026-11-14",
+      "source_key": "unit_joensuu",
+      "evidence_snapshot": "data/raw/unit_evidence/joensuu.txt"
+    },
+    {
+      "id": "oulu",
+      "name": "OYS Syöpäkeskus, sädehoitoyksikkö",
+      "hospital": "Oulun yliopistollinen sairaala (OYS)",
+      "town": "Oulu",
+      "county_name_fi": "Pohjois-Pohjanmaan hyvinvointialue (Pohde)",
+      "lat": 65.0075,
+      "lon": 25.5186,
+      "coord_method": "wikidata_P625:Q3737020",
+      "source_url": "https://lapha.fi/syopataudit",
+      "evidence_quote": "Lapin alueella syöpää sairastaville potilaille annetaan sädehoitoa Oulun yliopistollisessa sairaalassa (OYS).",
+      "accessed": "2026-11-14",
+      "source_key": "unit_oulu",
+      "evidence_snapshot": "data/raw/unit_evidence/rovaniemi.txt"
+    }
+  ],
+  "rovaniemi": {
+    "has_unit": false,
+    "evidence": "Lapland wellbeing services county's own cancer-services page states that radiotherapy for Lapland's cancer patients is given at Oulu University Hospital (OYS). Lapin keskussairaala has a cancer outpatient clinic (drug therapy) but no radiotherapy unit. Lapland municipalities should route to the Oulu unit.",
+    "source_url": "https://lapha.fi/syopataudit",
+    "quote": "Lapin alueella syöpää sairastaville potilaille annetaan sädehoitoa Oulun yliopistollisessa sairaalassa (OYS).",
+    "source_key": "rovaniemi_no_unit"
+  },
+  "pending_verification": [
+    {
+      "id": "pori",
+      "name": "Sädehoitoyksikkö, Satasairaala",
+      "hospital": "Satasairaala",
+      "town": "Pori",
+      "county_name_fi": "Satakunnan hyvinvointialue",
+      "lat": 61.474,
+      "lon": 21.783,
+      "coord_method": "wikidata_P625:Q10662008",
+      "candidate_source_url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/",
+      "reason": "Unit page exists (listed in the county's sitemap, which was fetched from www.satakunnanhyvinvointialue.fi), but www. redirects to the bare host satakunnanhyvinvointialue.fi, which is blocked by the network allowlist, so the page text could not be read. Author affiliation 'Satasairaala Central Hospital' in the national 13-unit RT study (PMID 40967059) is consistent but is not proof. Add host satakunnanhyvinvointialue.fi to verify."
+    },
+    {
+      "id": "lappeenranta",
+      "name": "Sädehoito, Etelä-Karjalan keskussairaala",
+      "hospital": "Etelä-Karjalan keskussairaala",
+      "town": "Lappeenranta",
+      "county_name_fi": "Etelä-Karjalan hyvinvointialue",
+      "lat": 61.0646,
+      "lon": 28.2101,
+      "coord_method": "wikidata_P625:Q18658750",
+      "candidate_source_url": "https://www.ekhva.fi/sadehoito",
+      "reason": "ekhva.fi redirects to www.ekhva.fi, which is blocked by the network allowlist. Search snippets (Yle 2019, https://yle.fi/a/3-11040311, also blocked) say Etelä-Karjalan keskussairaala has two radiotherapy machines, and an ekhva.fi patient leaflet on gold-seed markers for prostate radiotherapy exists. Add host www.ekhva.fi to verify."
+    }
+  ],
+  "excluded": [
+    {
+      "town": "Seinäjoki",
+      "hospital": "Seinäjoen keskussairaala",
+      "reason": "No radiotherapy unit: the county's cancer page says radiotherapy is mainly delivered in cooperation with Vaasa central hospital (and Tays treats part of South Ostrobothnia).",
+      "source_url": "https://www.hyvaep.fi/palvelu/syopataudit/",
+      "quote": "Jos sinulle suunnitellaan sädehoitoa, se toteutetaan yhteistyössä pääsääntöisesti Vaasan keskussairaalan kanssa.",
+      "source_key": "seinajoki_no_unit"
+    },
+    {
+      "town": "Rovaniemi",
+      "hospital": "Lapin keskussairaala",
+      "reason": "No radiotherapy unit; Lapland patients are treated at OYS (see rovaniemi).",
+      "source_url": "https://lapha.fi/syopataudit",
+      "source_key": "rovaniemi_no_unit"
+    },
+    {
+      "town": "Hyvinkää / Lohja / other HUS hospitals",
+      "hospital": "HUS regional hospitals",
+      "reason": "HUS states its RT unit at the Meilahti Comprehensive Cancer Center is responsible for all external beam radiotherapy in Uusimaa; no other HUS site delivers external beam RT.",
+      "source_url": "https://www.hus.fi/potilaalle/sairaalat-ja-toimipisteet/syopakeskus/sadehoitoyksikko-syopakeskus",
+      "source_key": "hus_single_site"
+    },
+    {
+      "town": "Hämeenlinna (Kanta-Häme)",
+      "hospital": "Kanta-Hämeen keskussairaala",
+      "reason": "No unit found; Tays radiotherapy unit treats most of Kanta-Häme (Pirha cancer-care self-monitoring plan).",
+      "source_url": "https://pirha.fi/documents/d/guest/syovanhoidon-omavalvontasuunnitelma",
+      "source_key": "unit_tampere"
+    }
+  ],
+  "private_excluded": [
+    {
+      "name": "Docrates Syöpäsairaala (owned by Mehiläinen since 2024)",
+      "town": "Helsinki",
+      "note": "Private cancer hospital with linear accelerators; listed among the 13 Finnish RT units' author affiliations in PMID 40967059. Not verified on a fetched Docrates page (docrates hosts not on allowlist)."
+    }
+  ],
+  "notes": [
+    "10 public units verified with fetched evidence; Pori and Lappeenranta are very likely units but could not be verified because their hosts are blocked (see pending_verification). Together with private Docrates this would make 13, matching the national RT study (PMID 40967059).",
+    "Kuopio evidence is a peer-reviewed abstract (patients treated with external beam RT at KUH 2009-2018), fetched through the Europe PMC REST API on www.ebi.ac.uk because pubmed.ncbi.nlm.nih.gov served a cookie wall and pshyvinvointialue.fi is blocked. A current KYS web page would be better.",
+    "Oulu evidence comes from Lapland county's page (RT for Lapland patients is given at OYS) plus Pohde's note on OYS's radiotherapy unit building (source unit_oulu_building); oys.fi is blocked.",
+    "Turku evidence is a Varha news item on the Tyks radiotherapy unit's stereotactic treatments (external beam).",
+    "The Lahti unit was run by HUS until 31 Dec 2024 and has been run by Päijät-Häme wellbeing services county since 1 Jan 2025 (source lahti_transfer_from_hus).",
+    "Coordinates are Wikidata P625 of the hospital item (rounded to 4 decimals); for HUS, the Meilahti hospital campus item is used."
+  ]
+}
