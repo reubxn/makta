@@ -125,18 +125,18 @@
      "stated_alternatives": null,
      "distance_mentioned": false,
      "quote_en": "Radiotherapy is usually given 15 times on consecutive weekdays.",
-     "source_id": "S66"
+     "source_id": "S65"
     },
     {
      "indication": "breast",
      "stated_default_fractions": null,
      "stated_alternatives": [
-      "5 sessions",
-      "15 sessions"
+      "5 kertaa",
+      "15 kertaa"
      ],
      "distance_mentioned": false,
-     "quote_en": "Radiotherapy is given 5 or 15 times according to an individually made plan, and its effect is local.",
-     "source_id": "S67"
+     "quote_en": "Radiotherapy is given 5 or 15 times according to an individually made plan and its effect is local.",
+     "source_id": "S66"
     }
    ],
    "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
@@ -147,17 +147,8 @@
    "municipalities_routed_here": 2,
    "routing_basis": "nearest unit by drive time (Matka's assumption, not a referral rule)",
    "unit_exists_source_id": "S46",
-   "public_schedule_pages_found": true,
-   "statements_from_public_pages": [
-    {
-     "indication": "bone",
-     "stated_default_fractions": null,
-     "stated_alternatives": null,
-     "distance_mentioned": false,
-     "quote_en": "pain caused by metastases, i.e. we give symptomatic treatment.",
-     "source_id": "S70"
-    }
-   ],
+   "public_schedule_pages_found": false,
+   "statements_from_public_pages": [],
    "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
   },
   {
@@ -819,25 +810,18 @@
    "supports": "ASCO guideline (Lutz 2011), as cited: single-fraction 8 Gy is as effective as 20 Gy in 5 fractions for painful bone metastases"
   },
   {
+   "id": "S65",
+   "title": "Keski-Suomen Sairaala Nova: public patient page (breast)",
+   "publisher": "Keski-Suomen hyvinvointialue",
+   "year": 2026,
+   "supports": "What Jyväskylä's radiotherapy unit tells patients about the breast radiotherapy schedule"
+  },
+  {
    "id": "S66",
    "title": "Keski-Suomen Sairaala Nova: public patient page (breast)",
    "publisher": "Keski-Suomen hyvinvointialue",
    "year": 2026,
    "supports": "What Jyväskylä's radiotherapy unit tells patients about the breast radiotherapy schedule"
-  },
-  {
-   "id": "S67",
-   "title": "Keski-Suomen Sairaala Nova: public patient page (breast)",
-   "publisher": "Keski-Suomen hyvinvointialue",
-   "year": 2026,
-   "supports": "What Jyväskylä's radiotherapy unit tells patients about the breast radiotherapy schedule"
-  },
-  {
-   "id": "S70",
-   "title": "Satasairaala: public patient page (bone)",
-   "publisher": "Satakunnan hyvinvointialue",
-   "year": 2026,
-   "supports": "What Pori's radiotherapy unit tells patients about the palliative / bone radiotherapy schedule"
   }
  ]
 }

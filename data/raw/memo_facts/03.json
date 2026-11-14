@@ -117,17 +117,8 @@
    "municipalities_routed_here": 10,
    "routing_basis": "the county's sourced catchment",
    "unit_exists_source_id": "S36",
-   "public_schedule_pages_found": true,
-   "statements_from_public_pages": [
-    {
-     "indication": "bone",
-     "stated_default_fractions": null,
-     "stated_alternatives": null,
-     "distance_mentioned": false,
-     "quote_en": "Radiotherapy can also be used for pain relief or to relieve symptoms caused by spread cancer.",
-     "source_id": "S65"
-    }
-   ],
+   "public_schedule_pages_found": false,
+   "statements_from_public_pages": [],
    "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
   }
  ],
@@ -745,13 +736,6 @@
    "publisher": "University of Turku",
    "year": 2022,
    "supports": "ASCO guideline (Lutz 2011), as cited: single-fraction 8 Gy is as effective as 20 Gy in 5 fractions for painful bone metastases"
-  },
-  {
-   "id": "S65",
-   "title": "HUS Syöpäkeskus (Meilahti, Helsinki University Hospital): public patient page (bone)",
-   "publisher": "HUS-yhtymä (Uusimaa: Itä-, Keski-, Länsi- ja Vantaan-Keravan hyvinvointialueet sekä Helsingin kaupunki)",
-   "year": 2026,
-   "supports": "What Helsinki's radiotherapy unit tells patients about the palliative / bone radiotherapy schedule"
   }
  ]
 }

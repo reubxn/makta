@@ -165,7 +165,8 @@ export function UnitsTab({ params, onParam }: { params: Params; onParam: (id: ke
               <tr>
                 <td colSpan={6} style={{ background: 'var(--bg)' }}>
                   <b>No page found stating a breast or bone schedule ({data.units.filter((u) => !byUnit[u.id]).length} units):</b>{' '}
-                  {data.units.filter((u) => !byUnit[u.id]).map((u) => u.town).join(', ')}.
+                  {data.units.filter((u) => !byUnit[u.id]).map((u) => u.town).join(', ')}.{' '}
+                  <span className="small-note">Turku and Tampere are not verified: their patient-instruction sites could not be reached when Matka searched (see Sources &amp; limitations).</span>
                 </td>
               </tr>
             </tbody>

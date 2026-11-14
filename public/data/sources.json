@@ -835,19 +835,6 @@
   },
   {
    "id": "S65",
-   "key": "page_hus_sadehoito",
-   "title": "HUS Syöpäkeskus (Meilahti, Helsinki University Hospital): public patient page (bone)",
-   "publisher": "HUS-yhtymä (Uusimaa: Itä-, Keski-, Länsi- ja Vantaan-Keravan hyvinvointialueet sekä Helsingin kaupunki)",
-   "year": 2026,
-   "url": "https://www.hus.fi/potilaalle/hoidot-ja-tutkimukset/sadehoito",
-   "accessed": "2026-11-14",
-   "supports": "What Helsinki's radiotherapy unit tells patients about the palliative / bone radiotherapy schedule",
-   "quote": "Sädehoitoa voidaan käyttää myös kivunhoitona tai levinneen syövän aiheuttamien oireiden lievittämiseen.",
-   "note": "Snapshot data/raw/pages/hus__sadehoito.txt",
-   "kind": "web"
-  },
-  {
-   "id": "S66",
    "key": "page_jyvaskyla_breast_pathway_sadehoito",
    "title": "Keski-Suomen Sairaala Nova: public patient page (breast)",
    "publisher": "Keski-Suomen hyvinvointialue",
@@ -860,7 +847,7 @@
    "kind": "web"
   },
   {
-   "id": "S67",
+   "id": "S66",
    "key": "page_jyvaskyla_breast_rt_leaflet",
    "title": "Keski-Suomen Sairaala Nova: public patient page (breast)",
    "publisher": "Keski-Suomen hyvinvointialue",
@@ -873,7 +860,7 @@
    "kind": "web"
   },
   {
-   "id": "S68",
+   "id": "S67",
    "key": "page_kuopio_sadehoito",
    "title": "Kuopion yliopistollinen sairaala (KYS): public patient page (bone)",
    "publisher": "Pohjois-Savon hyvinvointialue",
@@ -886,29 +873,16 @@
    "kind": "web"
   },
   {
-   "id": "S69",
+   "id": "S68",
    "key": "page_oulu_breast_pathway",
-   "title": "Oulun yliopistollinen sairaala (OYS), E-talo: public patient page (bone)",
+   "title": "Oulun yliopistollinen sairaala (OYS), E-talo: public patient page (breast)",
    "publisher": "Pohjois-Pohjanmaan hyvinvointialue (Pohde)",
    "year": 2026,
    "url": "https://oys.fi/palvelumme/syopataudit/rintasyopapotilaan-hoitopolku/",
    "accessed": "2026-11-14",
-   "supports": "What Oulu's radiotherapy unit tells patients about the palliative / bone radiotherapy schedule",
-   "quote": "Palliatiivista sädehoitoa käytetään myös esim. luustoetäpesäkkeiden, yksittäisten sisäelinetäpesäkkeiden ja aivoetäpesäkkeiden hoitoon.",
+   "supports": "What Oulu's radiotherapy unit tells patients about the breast radiotherapy schedule",
+   "quote": "Sädehoitojakson pituus vaihtelee 1–4 viikkoon. Lopullinen hoidon kesto selviää suunnitelman teon yhteydessä.",
    "note": "Snapshot data/raw/pages/oulu__breast-pathway.txt",
-   "kind": "web"
-  },
-  {
-   "id": "S70",
-   "key": "page_pori_sadehoitoyksikko",
-   "title": "Satasairaala: public patient page (bone)",
-   "publisher": "Satakunnan hyvinvointialue",
-   "year": 2026,
-   "url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/",
-   "accessed": "2026-11-14",
-   "supports": "What Pori's radiotherapy unit tells patients about the palliative / bone radiotherapy schedule",
-   "quote": "etäpesäkkeiden aiheuttamaa kipua, eli annamme oireenmukaista hoitoa.",
-   "note": "Snapshot data/raw/pages/pori__sadehoitoyksikko.txt",
    "kind": "web"
   }
  ]

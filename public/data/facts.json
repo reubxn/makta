@@ -203,6 +203,10 @@
    ]
   },
   {
+   "title": "Unit pages not all reachable",
+   "text": "Matka searched each unit's public site for pages stating a breast or bone schedule. The Tyks (Turku) and Pirkanmaa (Tampere) patient-instruction sites and the shared hoito-ohjeet.fi library (used in Satakunta, Ostrobothnia and Southwest Finland) could not be reached from the build environment, so for Turku and Tampere \"no page found\" means not verified, not that none exists. Some units keep breast pathways behind patient logins."
+  },
+  {
    "title": "Private units excluded",
    "text": "Private clinics (for example Docrates in Helsinki) are excluded; Matka covers the public units only."
   },

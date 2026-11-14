@@ -1,26 +1,11 @@
 {
- "method": "agent-extracted",
- "model": null,
+ "method": "llm-api",
+ "model": "claude-sonnet-5-5",
  "generated": "2026-11-14",
- "pages_read": 6,
- "statements_extracted": 7,
- "dropped": 0,
+ "pages_read": 12,
+ "statements_extracted": 4,
+ "dropped": 3,
  "statements": [
-  {
-   "unit_id": "hus",
-   "indication": "bone",
-   "stated_default_fractions": null,
-   "stated_alternatives": null,
-   "criteria_for_short_course": null,
-   "distance_mentioned": false,
-   "quote_fi": "Sädehoitoa voidaan käyttää myös kivunhoitona tai levinneen syövän aiheuttamien oireiden lievittämiseen.",
-   "quote_en": "Radiotherapy can also be used for pain relief or to relieve symptoms caused by spread cancer.",
-   "url": "https://www.hus.fi/potilaalle/hoidot-ja-tutkimukset/sadehoito",
-   "accessed": "2026-11-14",
-   "confidence": "low",
-   "snapshot": "data/raw/pages/hus__sadehoito.txt",
-   "source_id": "S65"
-  },
   {
    "unit_id": "jyvaskyla",
    "indication": "breast",
@@ -34,87 +19,59 @@
    "accessed": "2026-11-14",
    "confidence": "high",
    "snapshot": "data/raw/pages/jyvaskyla__breast-pathway-sadehoito.txt",
-   "source_id": "S66"
+   "source_id": "S65"
   },
   {
    "unit_id": "jyvaskyla",
    "indication": "breast",
    "stated_default_fractions": null,
    "stated_alternatives": [
-    "5 sessions",
-    "15 sessions"
+    "5 kertaa",
+    "15 kertaa"
    ],
    "criteria_for_short_course": null,
    "distance_mentioned": false,
-   "quote_fi": "Sädehoitoa annetaan 5 tai 15 kertaa yksilöllisesti tehdyn suunnitelman mukaisesti ja sen vaikutus on paikallinen.",
-   "quote_en": "Radiotherapy is given 5 or 15 times according to an individually made plan, and its effect is local.",
+   "quote_fi": "Sädehoitoa annetaan 5 tai 15 kertaa yksilöllisesti tehdyn suunnitelman mukaisesti ja sen vaikutus on \npaikallinen.",
+   "quote_en": "Radiotherapy is given 5 or 15 times according to an individually made plan and its effect is local.",
    "url": "https://www.hyvaks.fi/sites/default/files/ohjeet/Rintaleikkauksen%20jalkeinen%20sadehoito.pdf",
    "accessed": "2026-11-14",
    "confidence": "high",
    "snapshot": "data/raw/pages/jyvaskyla__breast-rt-leaflet.txt",
-   "source_id": "S67"
+   "source_id": "S66"
   },
   {
    "unit_id": "kuopio",
    "indication": "bone",
    "stated_default_fractions": null,
    "stated_alternatives": [
-    "1-10 sessions (palliative radiotherapy, usual range; not bone-specific)"
+    "yhdestä kymmeneen hoitokertaa (palliatiivinen sädehoito yleisesti)"
    ],
    "criteria_for_short_course": null,
    "distance_mentioned": false,
    "quote_fi": "Oireita lievittävä eli palliatiivinen sädehoito on kestoltaan lyhyempi ja sisältää tavallisesti yhdestä kymmeneen hoitokertaa.",
-   "quote_en": "Symptom-relieving, i.e. palliative, radiotherapy is shorter in duration and usually comprises one to ten treatment sessions.",
+   "quote_en": "Symptom-relieving, i.e. palliative, radiotherapy is shorter in duration and usually consists of one to ten treatment sessions.",
    "url": "https://pshyvinvointialue.fi/sadehoito",
    "accessed": "2026-11-14",
-   "confidence": "medium",
+   "confidence": "low",
    "snapshot": "data/raw/pages/kuopio__sadehoito.txt",
-   "source_id": "S68"
-  },
-  {
-   "unit_id": "oulu",
-   "indication": "bone",
-   "stated_default_fractions": null,
-   "stated_alternatives": null,
-   "criteria_for_short_course": null,
-   "distance_mentioned": false,
-   "quote_fi": "Palliatiivista sädehoitoa käytetään myös esim. luus­toe­tä­pe­säk­kei­den, yksittäisten si­säe­li­ne­tä­pe­säk­kei­den ja aivoetäpesäkkeiden hoitoon.",
-   "quote_en": "Palliative radiotherapy is also used, e.g., to treat bone metastases, single visceral metastases and brain metastases.",
-   "url": "https://oys.fi/palvelumme/syopataudit/rintasyopapotilaan-hoitopolku/",
-   "accessed": "2026-11-14",
-   "confidence": "medium",
-   "snapshot": "data/raw/pages/oulu__breast-pathway.txt",
-   "source_id": "S69"
+   "source_id": "S67"
   },
   {
    "unit_id": "oulu",
    "indication": "breast",
    "stated_default_fractions": null,
-   "stated_alternatives": null,
-   "criteria_for_short_course": null,
+   "stated_alternatives": [
+    "Hoitojakson pituus vaihtelee 1–4 viikkoon"
+   ],
+   "criteria_for_short_course": "The page gives no explicit criteria for a shorter course. It only says the number of sessions and the length of the treatment period depend on the treatment target, the goal of treatment and the choice of technique, and that the final duration is determined during planning.",
    "distance_mentioned": false,
    "quote_fi": "Sädehoitojakson pituus vaihtelee 1–4 viikkoon. Lopullinen hoidon kesto selviää suunnitelman teon yhteydessä.",
-   "quote_en": "The length of the radiotherapy course varies from 1 to 4 weeks. The final duration of treatment becomes clear when the plan is made.",
+   "quote_en": "The length of the radiotherapy course varies from 1 to 4 weeks. The final duration of treatment is determined when the plan is made.",
    "url": "https://oys.fi/palvelumme/syopataudit/rintasyopapotilaan-hoitopolku/",
    "accessed": "2026-11-14",
    "confidence": "high",
    "snapshot": "data/raw/pages/oulu__breast-pathway.txt",
-   "source_id": "S69"
-  },
-  {
-   "unit_id": "pori",
-   "indication": "bone",
-   "stated_default_fractions": null,
-   "stated_alternatives": null,
-   "criteria_for_short_course": null,
-   "distance_mentioned": false,
-   "quote_fi": "etäpesäkkeiden aiheuttamaa kipua, eli annamme oireenmukaista hoitoa.",
-   "quote_en": "pain caused by metastases, i.e. we give symptomatic treatment.",
-   "url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/",
-   "accessed": "2026-11-14",
-   "confidence": "low",
-   "snapshot": "data/raw/pages/pori__sadehoitoyksikko.txt",
-   "source_id": "S70"
+   "source_id": "S68"
   }
  ],
  "note": "Each quote_fi was checked to be an exact (whitespace-normalised) substring of the saved page text; statements failing the check were dropped."

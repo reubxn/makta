@@ -117,17 +117,8 @@
    "municipalities_routed_here": 1,
    "routing_basis": "nearest unit by drive time (Matka's assumption, not a referral rule)",
    "unit_exists_source_id": "S46",
-   "public_schedule_pages_found": true,
-   "statements_from_public_pages": [
-    {
-     "indication": "bone",
-     "stated_default_fractions": null,
-     "stated_alternatives": null,
-     "distance_mentioned": false,
-     "quote_en": "pain caused by metastases, i.e. we give symptomatic treatment.",
-     "source_id": "S70"
-    }
-   ],
+   "public_schedule_pages_found": false,
+   "statements_from_public_pages": [],
    "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
   },
   {
@@ -757,13 +748,6 @@
    "publisher": "University of Turku",
    "year": 2022,
    "supports": "ASCO guideline (Lutz 2011), as cited: single-fraction 8 Gy is as effective as 20 Gy in 5 fractions for painful bone metastases"
-  },
-  {
-   "id": "S70",
-   "title": "Satasairaala: public patient page (bone)",
-   "publisher": "Satakunnan hyvinvointialue",
-   "year": 2026,
-   "supports": "What Pori's radiotherapy unit tells patients about the palliative / bone radiotherapy schedule"
   }
  ]
 }

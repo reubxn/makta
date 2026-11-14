@@ -120,20 +120,14 @@
    "public_schedule_pages_found": true,
    "statements_from_public_pages": [
     {
-     "indication": "bone",
-     "stated_default_fractions": null,
-     "stated_alternatives": null,
-     "distance_mentioned": false,
-     "quote_en": "Palliative radiotherapy is also used, e.g., to treat bone metastases, single visceral metastases and brain metastases.",
-     "source_id": "S69"
-    },
-    {
      "indication": "breast",
      "stated_default_fractions": null,
-     "stated_alternatives": null,
+     "stated_alternatives": [
+      "Hoitojakson pituus vaihtelee 1–4 viikkoon"
+     ],
      "distance_mentioned": false,
-     "quote_en": "The length of the radiotherapy course varies from 1 to 4 weeks. The final duration of treatment becomes clear when the plan is made.",
-     "source_id": "S69"
+     "quote_en": "The length of the radiotherapy course varies from 1 to 4 weeks. The final duration of treatment is determined when the plan is made.",
+     "source_id": "S68"
     }
    ],
    "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
@@ -748,11 +742,11 @@
    "supports": "ASCO guideline (Lutz 2011), as cited: single-fraction 8 Gy is as effective as 20 Gy in 5 fractions for painful bone metastases"
   },
   {
-   "id": "S69",
-   "title": "Oulun yliopistollinen sairaala (OYS), E-talo: public patient page (bone)",
+   "id": "S68",
+   "title": "Oulun yliopistollinen sairaala (OYS), E-talo: public patient page (breast)",
    "publisher": "Pohjois-Pohjanmaan hyvinvointialue (Pohde)",
    "year": 2026,
-   "supports": "What Oulu's radiotherapy unit tells patients about the palliative / bone radiotherapy schedule"
+   "supports": "What Oulu's radiotherapy unit tells patients about the breast radiotherapy schedule"
   }
  ]
 }

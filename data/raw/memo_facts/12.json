@@ -135,18 +135,18 @@
      "stated_alternatives": null,
      "distance_mentioned": false,
      "quote_en": "Radiotherapy is usually given 15 times on consecutive weekdays.",
-     "source_id": "S66"
+     "source_id": "S65"
     },
     {
      "indication": "breast",
      "stated_default_fractions": null,
      "stated_alternatives": [
-      "5 sessions",
-      "15 sessions"
+      "5 kertaa",
+      "15 kertaa"
      ],
      "distance_mentioned": false,
-     "quote_en": "Radiotherapy is given 5 or 15 times according to an individually made plan, and its effect is local.",
-     "source_id": "S67"
+     "quote_en": "Radiotherapy is given 5 or 15 times according to an individually made plan and its effect is local.",
+     "source_id": "S66"
     }
    ],
    "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
@@ -163,11 +163,11 @@
      "indication": "bone",
      "stated_default_fractions": null,
      "stated_alternatives": [
-      "1-10 sessions (palliative radiotherapy, usual range; not bone-specific)"
+      "yhdestä kymmeneen hoitokertaa (palliatiivinen sädehoito yleisesti)"
      ],
      "distance_mentioned": false,
-     "quote_en": "Symptom-relieving, i.e. palliative, radiotherapy is shorter in duration and usually comprises one to ten treatment sessions.",
-     "source_id": "S68"
+     "quote_en": "Symptom-relieving, i.e. palliative, radiotherapy is shorter in duration and usually consists of one to ten treatment sessions.",
+     "source_id": "S67"
     }
    ],
    "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
@@ -855,6 +855,13 @@
    "supports": "Sairaala Nova radiotherapy in Jyväskylä treats patients from the Central Finland and South Savo wellbeing services counties"
   },
   {
+   "id": "S65",
+   "title": "Keski-Suomen Sairaala Nova: public patient page (breast)",
+   "publisher": "Keski-Suomen hyvinvointialue",
+   "year": 2026,
+   "supports": "What Jyväskylä's radiotherapy unit tells patients about the breast radiotherapy schedule"
+  },
+  {
    "id": "S66",
    "title": "Keski-Suomen Sairaala Nova: public patient page (breast)",
    "publisher": "Keski-Suomen hyvinvointialue",
@@ -863,13 +870,6 @@
   },
   {
    "id": "S67",
-   "title": "Keski-Suomen Sairaala Nova: public patient page (breast)",
-   "publisher": "Keski-Suomen hyvinvointialue",
-   "year": 2026,
-   "supports": "What Jyväskylä's radiotherapy unit tells patients about the breast radiotherapy schedule"
-  },
-  {
-   "id": "S68",
    "title": "Kuopion yliopistollinen sairaala (KYS): public patient page (bone)",
    "publisher": "Pohjois-Savon hyvinvointialue",
    "year": 2026,

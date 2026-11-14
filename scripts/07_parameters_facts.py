@@ -135,6 +135,7 @@ LIMITS = [
     dict(title="Population allocation", text="Breast cases per municipality are allocated from county counts by female population weighted by age-specific incidence. They are calculated, not registry counts.", source_ids=["fcr_breast_2024_counties", "fcr_breast_age5"]),
     dict(title="Bone counts not public", text="No citable yearly count of palliative bone radiotherapy courses was found, so the bone lever is shown per patient only."),
     dict(title="Routing: sourced catchments, otherwise nearest by drive", text=ROUTING_LIMIT, source_ids=["osrm_table", "tays_catchment", "rovaniemi_no_unit"]),
+    dict(title="Unit pages not all reachable", text="Matka searched each unit's public site for pages stating a breast or bone schedule. The Tyks (Turku) and Pirkanmaa (Tampere) patient-instruction sites and the shared hoito-ohjeet.fi library (used in Satakunta, Ostrobothnia and Southwest Finland) could not be reached from the build environment, so for Turku and Tampere \"no page found\" means not verified, not that none exists. Some units keep breast pathways behind patient logins."),
     dict(title="Private units excluded", text="Private clinics (for example Docrates in Helsinki) are excluded; Matka covers the public units only."),
     dict(title="Åland excluded", text="Åland has a separate health system and is left out of the map and totals."),
     dict(title="OSRM road data", text="Drive times come from the public OSRM server on OpenStreetMap data: free-flow driving with no traffic, weather or ferry waits.", source_ids=["osrm_table"]),
