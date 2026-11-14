@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import {
   breastTotals,
+  equivalentDistanceFraction,
   courseBurden,
   isCommuter,
   perPatient,
@@ -153,5 +154,23 @@ describe('real routes (public/data/routes.json)', () => {
         for (const sch of ['long', 'short'] as const)
           for (const v of Object.values(perPatient(r, ind, sch, params))) expect(Number.isFinite(v)).toBe(true);
     }
+  });
+});
+
+describe('equivalentDistanceFraction (fold inward)', () => {
+  it('a commuter on 15 vs 5 sessions folds to about a third of the distance', () => {
+    // short: 6 trips x 2 x 30 km = 360 km; long at x: 16 x 2 x x = 360 -> x = 11.25
+    expect(equivalentDistanceFraction({ road_km: 30, drive_min: 30 }, 'breast', P)).toBeCloseTo(11.25 / 30);
+  });
+  it('a far-north stayer folds inward but never past the unit, never outward', () => {
+    const f = equivalentDistanceFraction(far, 'breast', P);
+    expect(f).toBeGreaterThan(0);
+    expect(f).toBeLessThan(1);
+  });
+  it('long and short burdens match at the folded distance', () => {
+    const r = { road_km: 300, drive_min: 240 };
+    const f = equivalentDistanceFraction(r, 'breast', P);
+    const folded = { road_km: 300 * f, drive_min: 240 * f };
+    expect(perPatient(folded, 'breast', 'long', P).km).toBeCloseTo(perPatient(r, 'breast', 'short', P).km, 6);
   });
 });

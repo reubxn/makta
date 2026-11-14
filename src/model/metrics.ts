@@ -180,21 +180,29 @@ export function metricValue(b: Burden, m: MetricKey): number {
 }
 
 /**
- * Stretch ("Finland folds inward"): the road distance at which a long-course
- * patient carries the same nights-away burden as a short-course patient
- * living at the actual distance. Returned as a fraction of the actual
- * distance (1 = stays put). Uses km as the burden measure because it is
- * continuous in distance.
+ * Stretch ("Finland folds inward"): the road distance x at which a patient on the LONG
+ * schedule would travel the same km as a patient on the SHORT schedule travels from the
+ * real distance d. Km on the long course is linear in distance within each branch
+ * (commuter up to the threshold, stayer beyond it), so each branch is solved directly.
+ * Returns x / d (1 = stays put; smaller = folds towards the unit).
  */
-export function equivalentDistanceFraction(
-  route: Route,
-  indication: Indication,
-  p: Params,
-): number {
-  if (route.road_km <= 0) return 1;
-  const shortKm = perPatient(route, indication, 'short', p).km;
-  const longKmPerRoadKm = perPatient(route, indication, 'long', p).km / route.road_km;
-  if (longKmPerRoadKm <= 0) return 1;
-  const d = shortKm / longKmPerRoadKm;
-  return Math.max(0, Math.min(1, d / route.road_km));
+export function equivalentDistanceFraction(route: Route, indication: Indication, p: Params): number {
+  const d = route.road_km;
+  if (d <= 0) return 1;
+  const target = perPatient(route, indication, 'short', p).km;
+  const T = p.commute_threshold_km;
+  const kmPerRoadKm = (x: number) => perPatient({ road_km: x, drive_min: 0 }, indication, 'long', p).km / x;
+  const commuterRate = kmPerRoadKm(Math.min(T, 1)); // any x <= T
+  const stayerRate = kmPerRoadKm(T + 1); // any x > T
+  const candidates: number[] = [];
+  if (commuterRate > 0) {
+    const x = target / commuterRate;
+    if (x <= T) candidates.push(x);
+  }
+  if (stayerRate > 0) {
+    const x = target / stayerRate;
+    if (x > T) candidates.push(x);
+  }
+  const x = candidates.length ? Math.max(...candidates) : T;
+  return Math.max(0, Math.min(1, x / d));
 }

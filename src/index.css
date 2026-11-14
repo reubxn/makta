@@ -85,7 +85,7 @@ a { color: var(--accent); }
 .legend-scale { display: flex; justify-content: space-between; }
 .map-note { position: absolute; right: 12px; bottom: 12px; font-size: 12px; color: var(--muted); background: rgba(255,255,255,0.9); padding: 4px 8px; border-radius: 6px; z-index: 2; max-width: 300px; text-align: right; }
 .tooltip { position: absolute; pointer-events: none; background: var(--ink); color: #fff; padding: 5px 9px; border-radius: 6px; font-size: 13px; transform: translate(10px, 10px); z-index: 3; white-space: nowrap; }
-.fold-banner { position: absolute; top: 60px; left: 50%; transform: translateX(-50%); background: var(--ink); color: #fff; padding: 10px 18px; border-radius: 10px; font-size: 18px; font-weight: 600; z-index: 2; }
+.fold-banner { position: absolute; bottom: 16px; left: 64%; transform: translateX(-50%); white-space: nowrap; background: var(--ink); color: #fff; padding: 10px 18px; border-radius: 10px; font-size: 18px; font-weight: 600; z-index: 2; }
 
 /* Card */
 .card { padding: 18px 20px 24px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
@@ -180,7 +180,7 @@ table.data td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertica
 .map-headline h2 { margin: 0; font-size: 40px; line-height: 1.12; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); text-shadow: 0 0 6px #fbfbf9, 0 0 14px #fbfbf9; font-variant-numeric: tabular-nums; }
 .map-near { margin: 4px 0 0; font-size: 22px; font-weight: 600; color: var(--muted); text-shadow: 0 0 6px #fbfbf9; font-variant-numeric: tabular-nums; }
 .map-subline { margin: 8px 0 0; font-size: 15px; color: var(--muted); text-shadow: 0 0 6px #fbfbf9; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
-.map-story { position: absolute; left: 12px; bottom: 138px; width: 280px; font-size: 14px; color: var(--ink); line-height: 1.45; background: rgba(255,255,255,0.94); border-radius: 9px; padding: 10px 12px; border: 1px solid var(--line); z-index: 2; }
+.map-story { position: absolute; left: 12px; bottom: 138px; width: 250px; font-size: 14px; color: var(--ink); line-height: 1.45; background: rgba(255,255,255,0.94); border-radius: 9px; padding: 10px 12px; border: 1px solid var(--line); z-index: 2; }
 
 .strip-bone { grid-template-columns: 1fr 340px; }
 .bone-line { display: flex; align-items: baseline; gap: 14px; font-size: 44px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin: 2px 0 4px; }
