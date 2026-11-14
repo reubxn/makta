@@ -1,0 +1,1887 @@
+
+=====PDFPAGE 1=====
+ 
+ 
+Omavalvontasuunnitelma 
+ 
+Syövänhoidon vastuualue 
+  
+=====PDFPAGE 2=====
+Pirkanmaan hyvinvointialue 
+1 (60) 
+Sisällysluettelo 
+Johdanto .......................................................................................................................... 2 
+1 Palveluntuottajaa, palveluyksikköä ja toimintaa koskevat tiedot.............................. 4 
+1.1 Palveluntuottajan ja palveluyksikön perustiedot ........................................... 4 
+1.2 Palvelut, toiminta-ajatus, arvot ja toimintaperiaatteet ................................... 8 
+2 Omavalvontasuunnitelman laatiminen ja julkaiseminen .......................................... 9 
+2.1 Laatiminen ja päivittäminen .......................................................................... 9 
+2.2 Omavalvontasuunnitelman nähtävilläolo ja julkaiseminen .......................... 10 
+3 Asiakas- ja potilasturvallisuus ............................................................................... 11 
+3.1 Palvelujen laadulliset edellytykset .............................................................. 12 
+3.2 Vastuu palvelujen laadusta ......................................................................... 16 
+3.3 Asiakkaan ja potilaan asema ja oikeudet .................................................... 19 
+3.4 Muistutusten ja kanteluiden käsittely .......................................................... 22 
+3.5 Säännöllisesti kerättävän ja muun palautteen huomioiminen ..................... 24 
+3.6 Henkilöstö ................................................................................................... 25 
+3.7 Asiakas- ja potilastyöhön osallistuvan henkilöstön riittävyyden seuranta ... 28 
+3.8 Monialainen yhteistyö ja palvelun koordinointi ............................................ 30 
+3.9 Toimitilat, välineet ja lääkinnälliset laitteet .................................................. 34 
+3.10 Tietojärjestelmät ja teknologian käyttö ........................................................ 38 
+3.11 Asiakas- ja potilastietojen käsittely ja tietosuoja ......................................... 41 
+3.12 Lääkehoitosuunnitelma ............................................................................... 42 
+3.13 Infektioiden torjunta .................................................................................... 44 
+4 Omavalvonnan riskienhallinta ............................................................................... 46 
+4.1 Riskienhallinnan vastuut, riskien tunnistaminen ja arvioiminen .................. 46 
+4.2 Riskienhallinnan keinot sekä epäkohtien ja puutteiden käsittely................. 48 
+4.3 Riskienhallinnan seuranta, raportointi ja osaamisen varmistaminen .......... 52 
+4.4 Ostopalvelut ja alihankinta .......................................................................... 54 
+4.5 Valmius- ja jatkuvuudenhallinta .................................................................. 55 
+5 Omavalvonnan toimeenpano ja toteutumisen seuranta ........................................ 56 
+5.1 Toimeenpano .............................................................................................. 56 
+5.2 Toteutumisen seuranta ja raportointi .......................................................... 56 
+6 Omavalvontasuunnitelman hyväksyntä ................................................................. 58 
+=====PDFPAGE 3=====
+Pirkanmaan hyvinvointialue 
+2 (60) 
+ 
+Johdanto 
+Laki sosiaali- ja terveydenhuollon valvonnasta (741/2023) astui voimaan 1.1.2024. Lain 
+mukaan palvelutuottajan on valvottava oman ja alihankkijansa toiminnan laatua ja 
+asianmukaisuutta sekä asiakas- ja potilasturvallisuutta.  
+Kaikkien sosiaali- ja terveydenhuollon palvelunjärjestäjien sekä niiden sosiaali- ja 
+terveydenhuollon palveluntuottajien, jotka antavat palveluja useammassa kuin yhdessä 
+palveluyksikössä, pitää laatia toiminnastaan omavalvontaohjelma. Pirkanmaan 
+hyvinvointialueen omavalvontaohjelma löytyy Laatu ja omavalvonta - pirha.fi -sivuilta. 
+Sosiaali- ja terveysalan lupa- ja valvontavirasto Valvira on antanut 14.5.2024 
+määräyksen omavalvontasuunnitelman laatimisesta ja seurannasta.   
+Palveluntuottaja laatii jokaiselle palveluyksikölleen omavalvontasuunnitelman, joka 
+kattaa kaikki palvelut, jotka tuotetaan palveluyksikössä tai sen lukuun.  
+Omavalvontasuunnitelman laajuus ja sisältö määräytyvät palveluyksikössä tuotettavien 
+palvelujen ja toiminnan laajuuden mukaan.  
+Omavalvontasuunnitelma on työväline, jonka avulla varmistetaan toiminnan laatua, 
+asianmukaisuutta ja turvallisuutta sekä seurataan asiakas- ja potilastyöhön osallistuvan 
+henkilöstön riittävyyttä omavalvonnallisin menetelmin. Omavalvontasuunnitelmaan 
+sisällytetään kuvaus vaaratapahtumien ilmoitus- ja oppimismenettelystä. 
+Palveluyksikön lähiesihenkilöt vastaavat suunnitelman laatimisesta, toteuttamisesta ja 
+seurannasta yhteistyössä henkilöstön kanssa. Omavalvontasuunnitelman hyväksyy 
+palvelulinjojen määritellyt vastaavat viranhaltijat. Omavalvontasuunnitelma päivitetään 
+toiminnan oleellisesti muuttuessa, mutta vähintään kerran vuodessa. 
+Palveluntuottajan on laadittava omavalvontasuunnitelma sähköisesti. Suunnitelma on 
+julkaistava julkisesti, esimerkiksi tietoverkossa, ja pidettävä nähtävänä 
+palveluyksikössä. Suunnitelmassa kuvatun toiminnan toteutumista on seurattava 
+=====PDFPAGE 4=====
+Pirkanmaan hyvinvointialue 
+3 (60) 
+ennalta määritellyin mittarein. Havaitut puutteet on korjattava viivytyksettä. Seurannasta 
+laaditaan selvitys, ja sen perusteella tehtävät muutokset julkaistaan nähtäville.  
+Pirkanmaan hyvinvointialueen oman palvelutuotannon omavalvontasuunnitelmat ja 
+seurannasta laaditut selvitykset löytyvät verkkosivuilta:  
+Omavalvontasuunnitelmat - pirha.fi. 
+Omavalvontasuunnitelma sisältää linkkejä sekä asiakkaalle, että henkilöstölle.  
+=====PDFPAGE 5=====
+Pirkanmaan hyvinvointialue 
+4 (60) 
+1 Palveluntuottajaa, palveluyksikköä ja toimintaa koskevat 
+tiedot  
+1.1 Palveluntuottajan ja palveluyksikön perustiedot 
+Palveluntuottaja 
+Pirkanmaan hyvinvointialue 
+PL 272, 33101 Tampere 
+kirjaamo@pirha.fi  
+Kirjaamon käyntiosoite: Niveltie 5, G-rakennus (1. krs) 
+ 
+Y-tunnus 
+3221308–6 
+ 
+Palveluyksikön nimi 
+Syövänhoidon vastuualue 
+ 
+Palveluyksikköön kuuluvat palvelupisteet/etäpalvelut ja yhteystiedot  
+(osoite, puhelinnumero) 
+• Syövänhoidon vuodeosasto RS1, Sädetie 6, 33520 TAMPERE, Radius-2. kerros, 
+puh. 03 311 611 
+• Syövänhoidon vuodeosasto RS2, Sädetie 6, 33520 TAMPERE, R-rakennus, 3. 
+kerros, puh. 03 311 611 
+• Sädehoitoyksikkö, Sädetie 6, 33520 TAMPERE, R-rakennus, 1. kerros, puh. 03 
+311 611 
+• Syöpätautien poliklinikka, Sädetie 6, 33520 TAMPERE, R-rakennus, 2. kerros, 
+puh. 03 311 611 
+• Onkologinen lääketutkimusyksikkö FONK, Sädetie 6, 33520 TAMPERE, R-
+rakennus, 2. kerros puh. 03 311 611 
+ 
+ 
+  
+=====PDFPAGE 6=====
+Pirkanmaan hyvinvointialue 
+5 (60) 
+Palvelu ja asiakasryhmät, joille palvelua tuotetaan; asiakaspaikkamäärä 
+palvelupisteittäin, jos määritelty 
+ 
+Syövänhoidon vastuualueella tutkimme ja hoidamme aikuisia syöpäpotilaita 
+syöpälääkehoidolla, sädehoidolla tai seurannalla. Vastaamme vain gynekologisten 
+syöpäpotilaiden ulkoisen sädehoidon toteutuksesta, kun taas heidän 
+syöpälääkehoitojen toteutuksesta vastaavat gynekologisen onkologian erikoislääkärit 
+naistentautien vastuualueelta. Toteutamme lapsisyöpäpotilaiden ja verisyöpiä 
+sairastavien sädehoidot. Syövänhoidon vastuualueen yksiköissä hoidetaan vuosittain 
+noin 9 475 potilasta (potilaskontakteja yli 90 000 vuonna 2024). 
+ 
+Syövänhoidon vuodeosasto RS1  
+Vuodeosastolla RS1 toteutetaan vaativaa vuodeosastohoitoa edellyttävien lymfooma-, 
+rinta- ja keuhkosyöpäpotilaiden, ruuansulatuskanavan- tai pään ja kaulan alueen syöpiä 
+sairastavien, melanooma- ja virtsateidensyöpäpotilaiden syöpälääke ja oirehoitoa. 
+Osaston erityisosaamisena on ruoansulatuskasvaimien syöpälääkehoidot, maksan 
+sisäistä sädehoitoa (Selective Internal Radiation Therapy) eli SIRT-hoitoa saavien 
+potilaiden hoito, eturauhassyöpäpotilaiden korkean annosnopeuden kudoksensisäisen 
+(High Dose Rate) HDR-sädehoitotoimenpiteen jälkiseuranta, infuusiopumpuilla 
+toteutettava syöpälääkehoidot ja erityistason palliatiivinen hoito, kuten palliatiiviset 
+sedaatiot ja kipulääkehoidot. Osastolla toteutetaan geriatrista syöpäpotilaiden hoidon 
+arviota ja hoitokuntoisuusarvioita sekä siellä toimii laskimoyhteystiimi, joka käy 
+toimialueen sisällä oman työnsä ohella avustamassa kanyloinneissa sekä Midline-
+kanyylien laitoissa.  
+Osastolla on 18 potilaspaikkaa/osasto arkipäivisin, 16 potilaspaikkaa öisin ja 
+viikonloppuisin 12 potilaspaikkaa/osasto. Vuodeosastolla RS1 hoidetaan vuosittain noin 
+1 371 potilasta ja toteutetaan 1 515 osastohoitojaksoa, joista 14 % kestää yli viikon. 
+ 
+Syövänhoidon vuodeosasto RS2 
+Vuodeosastolla RS2 toteutetaan vaativaa vuodeosastohoitoa edellyttävää 
+syöpälääkehoitoa lymfoomaa, sarkoomia ja kivessyöpiä sairastaville potilaille sekä 
+=====PDFPAGE 7=====
+Pirkanmaan hyvinvointialue 
+6 (60) 
+hoidetaan niistä aiheutuvia haittoja. Osaston erityisosaamisena on CAR-T-soluhoidot, 
+korkea-annos solunsalpaaja- ja kantasoluhoidot.  
+Osastolla on 18 potilaspaikkaa/osasto arkipäivisin, 16 potilaspaikkaa öisin ja 
+viikonloppuisin 12 potilaspaikkaa/osasto. Vuodeosastolla RS2 hoidetaan vuosittain noin 
+670 potilasta ja toteutetaan 1 244 osastohoitojaksoa, joista 17 % kestää yli viikon. 
+ 
+Syöpätautien poliklinikka RSYÖ 
+Syöpätautien poliklinikalla tarjotaan erikoissairaanhoitotasoista polikliinista hoitoa 
+aikuisille syöpäpotilaille. Hoitoa annetaan muun muassa maha-suolikanavan, rinnan, 
+keuhkojen ja virtsateiden syöpiin sekä melanoomaan ja imukudossyöpiin. Vastaanotoilla 
+suunnitellaan yksilölliset syöpälääkehoidot, seurataan niiden tehoa sekä tarkkaillaan 
+mahdollisia haittavaikutuksia. Lisäksi Poliklinikalla toteutetaan myös kemosädehoitoa eli 
+syöpälääkehoidon ja sädehoidon yhdistelmähoitoa saavien potilaiden 
+syöpälääkeinfuusiot. Poliklinikan toimintaan kuuluu myös RS1-osastolla sijaitseva 
+päiväosasto, jossa annetaan syöpälääkehoitoja, joiden kesto on neljästä kuuteen tuntia. 
+Lisäksi poliklinikalla toimii tablettihoitajatoiminta: tablettihoitajat vastaavat tiettyjen 
+tablettimuotoisten syöpälääkehoitojen toteutuksesta ja ohjauksesta lääkekohtaisen 
+ohjeistuksen mukaisesti. Poliklinikan toimintaan sisältyy myös 
+asiantuntijasairaanhoitajan koordinoima seuranta rintasyöpään ja lymfoomaan 
+sairastuneille potilaille.   
+ 
+Syöpätautien poliklinikka palvelee potilaita ajanvarauksella arkipäivisin. Maanantaista 
+torstaihin ovet ovat avoinna klo 8.00–18.00 ja perjantaisin klo 8.00–15.30. Poliklinikalla 
+toteutetaan syöpälääkehoitoja, joiden kesto on alle neljä tuntia. Hoitoja varten on 
+käytössä 35 potilaspaikkaa, ja yhden päivän aikana voidaan hoitaa noin 50 
+lääkehoitopotilasta. Vuonna 2025 poliklinikalla toteutettiin 9065 syöpälääkehoitoa 1444 
+potilaalle. 
+ 
+Syöpätautien poliklinikan päiväosasto toimii RS1 osaston tiloissa ja sinne on keskitetty 
+pidemmät syöpälääkehoidot. Yhden päivän aikana voidaan toteuttaa noin 12 potilaan 
+hoidot. Vuonna 2025 päiväosastolla toteutettiin 2334 syöpälääkehoitoa 814 potilaalle. 
+ 
+=====PDFPAGE 8=====
+Pirkanmaan hyvinvointialue 
+7 (60) 
+Vuoden 2025 aikana poliklinikalla hoidetaan noin 6 844 potilasta ja potilaskontakteja 
+kertyi yli 50 000. Tämä tekee poliklinikasta keskeisen osan syöpätautien hoitoa ja 
+potilaiden arjen tukemista. 
+ 
+Lääketutkimusyksikkö FONK 
+Lääketutkimusyksikössä hoidettava potilasprofiili vaihtelee käynnissä olevien kliinisten 
+tutkimusten mukaan. Jokaisen tutkimuksen tutkimussuunnitelmassa on selkeästi 
+määritelty ne potilaat, jotka ovat soveltuvia osallistumaan kyseiseen tutkimukseen. 
+Soveltuvuuskriteerit vaihtelevat tutkimuksesta toiseen.  Potilaita rekrytoivat 
+syöpälääketutkimukset löytyvät täältä. 
+ 
+Lääketutkimusyksikkö on avoinna arkisin, virka-aikana klo 7.30 - 15.15 ja toimii 
+ajanvarauksella. Tutkimushoitajien vastaanottotilat sijaitsevat Radius-rakennuksen 2. 
+kerroksessa ja lääkehoitohuoneet ovat syöpätautien vuodeosasto RS2:lla huoneissa 15 
+ja 16. Sairaalassa annosteltavat lääkehoidot toteutetaan lääkehoitohuoneissa, joissa on 
+3 tuolipaikkaa ja 2 sänkyä. Lääkärin vastaanotot toteutetaan syöpätautien poliklinikalla 
+tai vuodeosastolla ja gynekologisten syöpäpotilaiden vastaanotot toteutetaan 
+naistentautien poliklinikalla. Tutkimushoitajat hakevat oraaliset tutkimuslääkkeet 
+sairaala-apteekista ja antavat ne potilaille tutkimushoitajien vastaanottotiloissa. 
+Lääketutkimusyksikössä hoidetaan vuosittain noin 441 potilasta (potilaskontakteja yli 
+1864 vuonna 2025). 
+ 
+Sädehoitoyksikkö 
+Sädehoitoyksikkö vastaa muutamaa poikkeusta lukuun ottamatta kaikkien Pirkanmaan 
+hyvinvointialueen sekä pääosan Kanta-Hämeen ja osan Etelä-Pohjanmaan 
+hyvinvointialueiden aikuis- ja lapsipotilaiden sädehoidon toteuttamisesta. Lisäksi 
+sädehoitoyksikössä hoidetaan vaativat onkologiset potilaat koko Sisä-Suomen 
+yhteistyöalueelta (YTA-alue) sekä vapaan hoitopaikan valinnan pohjalta myös 
+yhteistyöalueen ulkopuolelta.  
+ 
+Sädehoitoa annetaan arkipäivisin klo 7.45 - 21.00 välisenä aikana. Sädehoitoyksikössä 
+hoidetaan vuosittain noin 3 400 potilasta (potilaskontakteja noin 44 700 vuonna 2025). 
+=====PDFPAGE 9=====
+Pirkanmaan hyvinvointialue 
+8 (60) 
+1.2 Palvelut, toiminta-ajatus, arvot ja toimintaperiaatteet 
+Syövänhoidon vastuualueella hoidetaan aikuisten syöpätauteja. Poikkeuksena 
+hematologiset ja gynekologiset syöpäsairaudet hoidetaan omilla erikoisaloillaan silloin, 
+kun hoito ei edellytä sädehoitoa. Urologisista syövistä eturauhassyövän hormonaalinen 
+lääkehoito toteutetaan pääasiassa urologian erikoisalalla. 
+ 
+Syövän hoidon keskeiset menetelmät ovat kirurgia, sädehoito ja syöpälääkehoito. 
+Näistä säde- ja lääkehoidosta vastaa syövänhoidon vastuualue. Hoidot toteutetaan 
+pääsääntöisesti läsnäolopalveluina, mutta osa seurantapalveluista voidaan järjestää 
+etäyhteyksin.  
+ 
+Vastuualueen palvelut ovat vaativaa erikoissairaanhoitoa. Hoito voi olla 
+ympärivuorokautista osastohoitoa tai virka-aikana ajanvarauksella toteutettavaa 
+polikliinista hoitoa. Potilaat tulevat hoitoon päivystyksen kautta, lähetteellä kutsuttuina 
+tai osastosiirtoina. 
+ 
+Pirkanmaan hyvinvointialueen syöpäpotilaiden lisäksi vastuualue huolehtii Etelä-
+Pohjanmaan ja Kanta-Hämeen hyvinvointialueiden kivessyöpä-, sarkooma- ja 
+lymfoomapotilaiden hoidosta sekä näiden alueiden potilaiden sädehoidosta. Hoitoa 
+tarjotaan myös valinnanvapauden perusteella. 
+ 
+  
+=====PDFPAGE 10=====
+Pirkanmaan hyvinvointialue 
+9 (60) 
+2 Omavalvontasuunnitelman laatiminen ja julkaiseminen 
+2.1 Laatiminen ja päivittäminen 
+Omavalvontasuunnitelman laatimisen / päivittämisen toteuttaminen 
+Syövänhoidon vastuualueen omavalvontasuunnitelma on laadittu Pirkanmaan 
+hyvinvointialueelle yhteisesti suunnitellulle pohjalle ja se laaditaan  
+vastuualuetasoisesti huomioiden yksiköiden erityispiirteet.  
+ 
+Omavalvonnan suunnittelusta ja seurannasta vastaava henkilö ja yhteystiedot 
+Omavalvontasuunnitelman laatimiseen osallistuneiden nimet ja nimikkeet 
+ 
+Syövänhoidon vastuualue 
+Maarit Bärlund, ylilääkäri, vastuualuejohtaja, maarit.barlund@pirha.fi, puh 03 31163037 
+Annika Sárosi, ylihoitaja, annika.sarosi@pirha.fi, puh 044 472 8061  
+ 
+Syöpälääketutkimusyksikkö FONK 
+Minna Tanner osastonylilääkäri, minna.tanner@pirha.fi, puh 03 311 67640 
+Marjo Koivisto koordinoivat tutkimushoitaja, marjo.koivisto@pirha.fi, 044 472 8004 
+ 
+Syöpätautien poliklinikka 
+Tiina Lyly-Yrjänäinen, vs. apulaisylilääkäri, tiina.lyly-yrjanainen@pirha.fi, puh 03 311 
+63206 
+Merja Kaikkonen, osastonhoitaja, merja.kaikkonen@pirha.fi, puh 050 313 6804 
+ 
+Sädehoitoyksikkö 
+Tanja Skyttä, apulaisylilääkäri  tanja.skytta@pirha.fi, puh. 03 31163203                           
+Milla Lamminperä, osastonhoitaja, milla.lamminpera@pirha.fi, puh 044 472 9966 
+Eeva Boman, osastonylifyysikko, eeva.boman@pirha.fi, puh 044 47290356 
+                                                                                                                    
+Syövänhoidon vuodeosasto RS1 
+Hanna Raunio erikoislääkäri, hanna.raunio@pirha.fi, puh 03 311 65409 
+Jani Kokkonen, osastonhoitaja, jani.kokkonen@pirha.fi, 044 472 9430 
+=====PDFPAGE 11=====
+Pirkanmaan hyvinvointialue 
+10 (60) 
+Syövänhoidon vuodeosasto RS2 
+Santeri Palmi, erikoislääkäri, santeri.palmi@pirha.fi, puh 03 311 63428                                                                                                                       
+Mea Kanervio osastonhoitaja, mea.kanervio@pirha.fi, 044 472 9999 
+ 
+Omavalvontasuunnitelman päivitys 
+Omavalvontasuunnitelma päivitetään, kun toiminnassa tai ohjeistuksissa tehdään 
+muutoksia tai kehittämistoimenpiteitä esimerkiksi havaittujen epäkohtien, kehitettyjen 
+omavalvonnan toimintamallien tai palautteiden perusteella. Omavalvontasuunnitelma 
+tarkistetaan ja päivitetään palveluyksikössä vähintään kerran vuodessa. 
+ 
+Vastuualueen omavalvontasuunnitelman päivityksestä vastaa vastuualuejohtaja. 
+Omavalvontasuunnitelman päivityksen tarvetta arvioidaan säännöllisesti vastuualueen 
+johtotiimissä. Yksiköiden vastuuhenkilöt vastaavat yksikkökohtaisten erityispiirteiden 
+päivittämisestä. Syövänhoidon vastuualueen omavalvontasuunnitelman hyväksyy 
+toimialuejohtaja. Hyväksytyt omavalvontasuunnitelmat mukaan lukien aiemmat versiot 
+säilytetään Pirre -asiakirjahallintajärjestelmässä. 
+2.2 Omavalvontasuunnitelman nähtävilläolo ja julkaiseminen  
+Omavalvontasuunnitelmat ovat yksiköiden toiminnan luonteeseen soveltuvalla tavalla 
+asiakkaiden / potilaiden, omaisten ja omavalvonnasta kiinnostuneiden saatavilla ja ne 
+julkaistaan hyvinvointialueen verkkosivuilla. 
+ 
+Palveluyksiköiden omavalvontasuunnitelmat julkaistaan Pirkanmaan hyvinvointialueen 
+verkkosivuilla (Omavalvontasuunnitelmat - pirha.fi). 
+ 
+Syövänhoidon vastuualueen omavalvontasuunnitelmat julkaistaan Pirkanmaan 
+hyvinvointialueen verkkosivuilla edellä kuvatusti.  
+ 
+ 
+ 
+ 
+=====PDFPAGE 12=====
+Pirkanmaan hyvinvointialue 
+11 (60) 
+Syöpätautien poliklinikka 
+Syöpätautien poliklinikan odotusaulojen infonäytöissä kerrotaan 
+omavalvontasuunnitelman sijainti verkkosivuilla ja omavalvontasuunnitelma on 
+pyydettäessä saatavilla henkilökunnalta. Tulostetut omavalvontasuunnitelmat on 
+sijoitettu henkilökunnan taukotilaan ja osastonhoitajan huoneeseen. 
+ 
+Sädehoitoyksikkö 
+Sädehoitoyksikön odotusaulojen infonäytöissä kerrotaan omavalvontasuunnitelman 
+sijainti verkkosivuilla ja omavalvontasuunnitelma on pyydettäessä saatavilla 
+henkilökunnalta. Tulostetut omavalvontasuunnitelmat on sijoitettu henkilökunnan 
+taukotilaan ja osastonhoitajan huoneeseen. 
+ 
+Syövänhoidon vuodeosasto RS1 
+Tulostetut omavalvontasuunnitelmat on sijoitettu osastonhoitajan huoneeseen, 
+henkilökunnan taukotilaan ja vuodeosaston ilmoitustaululle. 
+ 
+Syövänhoidon vuodeosasto RS2 
+Tulostetut omavalvontasuunnitelmat on sijoitettu osastonhoitajan huoneeseen, 
+henkilökunnan taukotilaan ja vuodeosaston ilmoitustaululle. 
+ 
+Syöpälääketutkimusyksikkö FONK 
+Syöpätautien poliklinikan odotusaulojen infonäytöissä kerrotaan 
+omavalvontasuunnitelman sijainti verkkosivuilla ja omavalvontasuunnitelma on 
+pyydettäessä saatavilla henkilökunnalta. Tulostetut omavalvontasuunnitelmat on 
+sijoitettu henkilökunnan taukotilaan ja yksikön toimistohuoneeseen 
+ 
+3 Asiakas- ja potilasturvallisuus 
+Asiakas- ja potilasturvallisuuden johtaminen perustuu oikeaan ja reaaliaikaiseen 
+tilannekuvaan. Johtajien ja esihenkilöiden tulee tietää, mitä heidän vastuullaan olevassa 
+toiminnassa tapahtuu, mitkä ovat keskeiset ongelmat ja mitkä ovat toimintaa uhkaavat 
+keskeiset riskit. 
+=====PDFPAGE 13=====
+Pirkanmaan hyvinvointialue 
+12 (60) 
+ 
+Keskeisiä tiedon lähteitä ovat asiakkaiden ja potilaiden antama palaute, työntekijöiden 
+tekemät asiakas- ja potilasturvallisuusilmoitukset, muistutukset, kantelut, sekä 
+Potilasvakuutuskeskukselle tehdyt potilasvahinkoilmoitukset. Johtamisessa 
+noudatetaan vastuun ja oikeudenmukaisuuden kulttuurin periaatteita.  
+3.1 Palvelujen laadulliset edellytykset 
+Sosiaali- ja terveydenhuollon palvelujen on oltava laadukkaita, asiakas- ja 
+potilaskeskeisiä, turvallisia ja asianmukaisesti toteutettuja. Osaava ja palveluyksikön 
+omavalvontaan sitoutunut henkilöstö on keskeinen tekijä palvelujen laadun ja asiakas- 
+ja potilasturvallisuuden varmistamisessa ja palvelujen kehittämisessä. 
+ 
+Syövänhoidon vastuualue on osa Tays Syöpäkeskusta, joka uudisti Euroopan 
+syöpäinstituuttien järjestön OECI (The Organisation of European Cancer Institutes) 
+Cancer Centre -laatusertifikaatin seuraavalle viidelle vuodelle keväällä 2025. Keskus sai 
+tunnuksen ensimmäisen kerran vuonna 2019. Euroopassa on kaikkiaan 61 OECI-
+akkreditoitua sairaalaa. Tunnuksen uudistamisen taustalla on puolentoista vuoden 
+auditointityö. OECI on laatukriteereissään määritellyt 100 ydintason laatumittaria (core 
+quality standards) syövän hoidon ja tutkimuksen arviointiin. Kansainvälinen 
+auditointiryhmä vieraili Tampereella syyskuussa 2024 ja tarkkaili syövän hoidon 
+käytännön tekemistä suhteessa edellä mainittuihin mittareihin: Miten hoito ja 
+diagnosointi on toteutettu, kuinka hallinto, yhteistyö ja tiedonkulku toimivat, miten 
+potilaita kuullaan ja millaista tieteellistä tutkimusta tehdään. Tays Syöpäkeskuksen 
+pisteet nousivat edelliseen auditointiin verrattuna lähes kaikilla osa-alueilla. Auditoijat 
+antoivat kiittävää palautetta erityisesti potilaiden hoidosta ja siitä, kuinka keskuksen 
+kokonaisuutta on onnistuttu kehittämään koronapandemiasta ja isosta 
+hyvinvointialueuudistuksesta huolimatta. 
+ 
+Syövänhoidon vastuualueen yksiköissä seurataan Pirkanmaan hyvinvointialueen 
+yhteisiä laatumittareita sekä yksikön omaan erityistoimintaan liittyviä laatumittareita. 
+ 
+=====PDFPAGE 14=====
+Pirkanmaan hyvinvointialue 
+13 (60) 
+ 
+ 
+ 
+Pirkanmaan hyvinvointialueen yhteiset laatumittarit 
+Pirkanmaan hyvinvointialueen yhteiset laatumittarit perustuvat hoitoon tai palveluun 
+liittyvien vaaratapahtumien ja epäkohtien seurantaan. Tiedon lähde on sähköinen 
+raportointijärjestelmä, HaiPro-ohjelmisto.  
+1. Asiakas- ja potilasturvallisuusilmoitusten kokonaismäärä 
+2. Tapahtuman luonteen suhdeluku (ilmoitusten Tapahtui potilaalle / epäkohta 
+lukumäärä suhteessa ilmoitusten Läheltä piti / epäkohdan uhka lukumäärään) 
+3. Ilmoitusten, joihin on suunniteltu kehittämistoimia, prosenttiosuus kaikista 
+ilmoituksista 
+4. Ilmoitusten, joissa seuraus asiakkaalle tai potilaalle on vakava haitta, lukumäärä 
+5. Vakavien vaaratapahtumien johdosta tehdyt korjaavat ja ehkäisevät toimenpiteet. 
+Kuvaus laaditaan tavalla, josta ei voi tunnistaa yksikköä eikä asianosaisia. 
+ 
+ 
+Syövänhoidon vastuualueen palvelujen laadulliset mittarit: 
+1. Asiakaskokemustietoa hyödynnetään säännöllisesti palveluiden valvonnassa ja 
+kehittämisessä sekä Net Promoter Score (NPS) -tekstiviestikyselyn tuloksia 
+seurataan yksiköissä säännöllisesti (kaikki yksiköt). 
+2. Kiireellisen hoitoon pääsyn toteutuminen (kaikki yksiköt). 
+3. Lähetekäsittelyn toteutuminen tavoiteajassa (kaikki yksiköt). 
+4. Pakollisen tietosuoja- ja tietoturvakurssin suoritusprosentti yksikössä (kaikki 
+yksiköt). 
+5. Vastuualueella on nimettynä oma tietosuoja- ja tietoturvayhdyshenkilö 
+(vastuualuetaso). 
+6. Yksikössä on nimettynä turvallisuusvastaava ja hänelle on resursoitu aikaa 
+(kaikki yksiköt). 
+ 
+=====PDFPAGE 15=====
+Pirkanmaan hyvinvointialue 
+14 (60) 
+7. Asiakaskokemustietoa hyödynnetään säännöllisesti palveluiden valvonnassa ja 
+kehittämisessä sekä Net Promoter Score (NPS) -tekstiviestikyselyn tuloksia 
+seurataan yksiköissä säännöllisesti (kaikki yksiköt). 
+8. Kiireellisen hoitoon pääsyn toteutuminen (kaikki yksiköt). 
+9. Lähetekäsittelyn toteutuminen tavoiteajassa (kaikki yksiköt). 
+10. Pakollisen tietosuoja- ja tietoturvakurssin suoritusprosentti yksikössä (kaikki 
+yksiköt). 
+11. Vastuualueella on nimettynä oma tietosuoja- ja tietoturvayhdyshenkilö 
+(vastuualuetaso). 
+12. Yksikössä on nimettynä turvallisuusvastaava ja hänelle on resursoitu aikaa 
+(kaikki yksiköt). 
+13. Yksikössä on toteutettu turvarata tai osallistuttu turvarataan (kaikki yksiköt). 
+14. Henkilökunnan kausi-influenssarokotuskattavuus (vastuualuetaso). 
+15. Yksikössä on nimettynä hygieniavastaava ja hänelle on resursoitu infektioiden 
+torjuntatyöhön aikaa. (kaikki yksiköt). 
+16. Käsihuuhdekulutuksen seuranta (kaikki yksiköt). 
+17. Käsihygienian havainnointi (kaikki yksiköt). 
+18. Veriviljelypositiivisten hoitoon liittyvien infektioiden seuranta (RS-vuodeosastot). 
+19. Yksikössä on laadittu moniammatillisesti lääkehoitosuunnitelma ja sitä 
+päivitetään säännöllisesti (kaikki yksiköt). 
+20. Lääkehoitosuunnitelman perehtymisen seuranta yksikössä (kaikki yksiköt). 
+21. Lääkehoidon osaamisen varmistaminen ja lääkehoitoluvat ovat ajan tasalla 
+(kaikki yksiköt). 
+22. Lääkkeiden säilytyspaikkojen lämpötilaseuranta (kaikki yksiköt). 
+23. Lääkitysturvallisuuden auditointi (RS-osastot) 
+24. Syöpälääkehoitoon liittyvien infuusioreaktioiden esiintyvyyden seuranta (RS-
+osastot ja syöpätautien poliklinikka). 
+25. Syöpälääkehoitoon liittyvien ekstravasaatioiden esiintyvyyden seuranta. (RS-
+osastot ja syöpätautien poliklinikka) 
+26. Fiilismittari: Työntekijän suositteluindeksi eNPS ≥ 0 (kaikki yksiköt). 
+27. Potilaiden tekemät muistutusten, kantelujen ja PVK ilmoitusten määrät ja 
+yksiköissä läpikäyminen (vastuualuetaso). 
+28. Sädehoitokoulutusten toteutuminen säteilytyöntekijöillä (Sädehoitoyksikkö). 
+29. Säteilytyöntekijöiden säteilyannosseurannan toteutuminen ja raportointi 
+(Sädehoitoyksikkö). 
+30. Sädehoidon lakisääteisten auditointien toteutuminen yksikössä 
+(Sädehoitoyksikkö). 
+=====PDFPAGE 16=====
+Pirkanmaan hyvinvointialue 
+15 (60) 
+31. Säteilevien laitteiden lakisääteiset tarkastusten toteutuminen (Sädehoitoyksikkö). 
+32. STUK:n raportoitujen merkittävien poikkeamien määrä säteilynkäytössä 
+(Sädehoitoyksikkö). 
+33. Säteilynkäyttöön liittyvien dokumenttien säännöllinen päivittäminen 
+(Säteilynkäytön johtamisjärjestelmä, Säteilynkäytön turvallisuuslupa ja 
+turvallisuusarvio, Säteilylähteiden turvajärjestelysuunnitelma, Sädehoidon 
+laatujärjestelmä) (Sädehoitoyksikkö). 
+  
+=====PDFPAGE 17=====
+Pirkanmaan hyvinvointialue 
+16 (60) 
+3.2 Vastuu palvelujen laadusta 
+Syövänhoidon vastuualueen johdossa toiminnan kokonaisuuden osalta vastuu on 
+vastuualuejohtajalla. Hoitotyön kokonaisuudesta hoitohenkilöstön osalta vastuu on 
+ylihoitajalla sekä lääketieteellinen vastuu on ylilääkärillä. Käytännön toiminnan tasolla 
+palvelutoiminnasta ja sen laadusta vastaavat yksiköiden vastuuparit, osastonhoitaja ja 
+yksiköstä vastaava lääkäri.  
+ 
+Yksiköiden palvelutoiminnan laadun ja sen toimivuuden seurantaa varmistetaan 
+säännöllisin seurannoin syövänhoidon vastuualueen johtotiimissä. Lääketieteellisen 
+säteilynkäytön turvallisuuden ylin vastuu on toiminnan harjoittajana Pirkanmaan 
+hyvinvointialueella, joka on siirtänyt vastuun palvelulinjan johtoryhmälle, jonka 
+alaisuudessa säteilyturvallisuusvastaavalle on annettava riittävät resurssit 
+säteilyturvallisuuskulttuurin ylläpitämiseksi. Syövänhoidon vastuualueella 
+säteilyturvallisuusvastaavana toimii Sädehoitoyksikön osastonylifyysikko Eeva Boman. 
+ 
+Vastuualuejohtaja ja ylilääkäri Maarit Bärlund 
+Vastuualueen varahenkilö apulaisylilääkäri Tanja Skyttä  
+Tehtävät ja vastuut: 
+• Johtaa toimintaa ja vastata sen kehittämisestä yhdessä muiden vastuualueiden 
+kanssa. 
+• Vastata palveluiden toteutumisesta.  
+• Vastata laadun hallinnasta ja turvallisuudesta. 
+• Vastata osaltaan toiminnan ja talouden suunnittelusta sekä talousarvion 
+toteuttamisesta. 
+• Vastata viestinnästä ja yhteistyöstä sidosryhmien ja kumppanien kanssa. 
+• Toimia alaisensa henkilöstön esimiehenä. 
+• Suorittaa muut toimialuejohtajan tai palvelukeskuksen johtajan määräämät 
+tehtävät 
+ 
+ 
+ 
+ 
+ 
+=====PDFPAGE 18=====
+Pirkanmaan hyvinvointialue 
+17 (60) 
+Ylihoitaja Annika Sárosi 
+Ylihoitajan varahenkilö ylihoitaja Eeva Harju 
+Tehtävät ja vastuut: 
+• Johtaa ja kehittää hoitotyötä yhteistyössä vastuualuejohtajan kanssa  
+• Vastata hoitotyön laadun hallinnasta ja saatavuudesta  
+• Vastata osaltaan toiminnan ja talouden suunnittelusta sekä talousarvion 
+toteuttamisesta. 
+• Toimia alaisensa henkilöstön esimiehenä  
+• Suorittaa muut toimialuejohtajan määräämät tehtävät 
+ 
+Vastuuyksikön vastuulääkärin/lääkäreiden lähiesihenkilön tehtävät 
+• Osallistua vastuuyksikkönsä osalta toiminnan ja talouden suunnitteluun sekä 
+suunnitelman toteutumisen seurantaan 
+• Koordinoida toimintaa vastuualueen eri toimipisteiden kesken 
+• Huolehtia hoidon saumattomuudesta vastuuyksikön ja muiden yksiköiden välillä 
+• Yksikön vaaratapahtuma-ilmoitusten käsittely 
+• Huolehtia myönteisestä työilmapiiristä 
+• Toimia vastuuyksikössä oman ammattiryhmänsä lähiesihenkilönä 
+• Seurata ja edistää henkilökunnan osaamista 
+• Toimia yhteistyössä ja työparina vastuuyksikön esihenkilön varahenkilön 
+(osastonhoitaja) kanssa 
+• Huolehtia korkeatasoisen potilashoidon toteutumisesta 
+• Kehittää vastuuyksikön vastuulla olevia tutkimus- ja hoitoprosesseja 
+• Edistää yliopistosairaalan tehtäviin kuuluvaa opetustoimintaa ja tutkimustyötä 
+• Vastuuyksikön vastuulääkärin poissaollessa toimii vastuuyksikössä lääkärien 
+lähiesihenkilönä erikseen sovitusti joko vastuuyksikön toinen lääkäri tai 
+vaihtoehtoisesti toisen vastuuyksikön esihenkilö. 
+ 
+Vastuuyksikön esihenkilön poissaollessa toimii vastuuyksikössä lääkärien  
+lähiesihenkilönä erikseen sovitusti joko vastuuyksikön toinen lääkäri tai  
+vaihtoehtoisesti toisen vastuuyksikön esihenkilö. 
+ 
+ 
+ 
+ 
+=====PDFPAGE 19=====
+Pirkanmaan hyvinvointialue 
+18 (60) 
+Yksikön vastuulääkärin työparin/hoitotyön esihenkilön tehtävät 
+• Huolehtia erityisesti hoitotyöstä suunnittelemalla tarkoituksenmukaiset 
+henkilöstöresurssit sekä huolehtimalla rekrytoinnista, henkilöstön kehittämisestä, 
+työilmapiiristä ja jaksamisesta yhteistyössä vastuualueen ylihoitajan kanssa * 
+• Koordinoida hoitohenkilöstön käyttö vastuuyksikön eri toimipisteiden välillä 
+• Huolehtia hoidon saumattomuudesta vastuuyksikön ja muiden yksiköiden välillä 
+• Yksikön vaaratapahtuma-ilmoitusten käsittely 
+• Huolehtia myönteisestä työilmapiiristä 
+• Toimia vastuuyksikön vastuulääkärin työparina vastuuyksikön esihenkilölle 
+kuuluvissa tehtävissä 
+• Toimia vastuuyksikössä oman ammattiryhmänsä lähiesihenkilönä 
+• Seurata ja edistää henkilökunnan osaamista 
+• Huolehtia korkeatasoisen potilashoidon toteutumisesta 
+• Sopia vastuulääkärin kanssa yhteistyön muodoista ja työnjaosta 
+ 
+Vastuuyksikön esihenkilön varahenkilön poissa ollessa toimii vastuuyksikössä hoitotyön 
+lähiesihenkilönä ensisijaisesti apulaisosastonhoitaja. Molempien poissaollessa sovitaan 
+lähiesihenkilön sijaiseksi erikseen joko nimetty sijainen tai vaihtoehtoisesti toisen 
+vastuuyksikön esihenkilö. 
+ 
+Syöpätautien poliklinikka (RSYÖ) 
+Vastuulääkäri apulaisylilääkäri Tiina Lyly-Yrjänäinen  
+Vastuulääkärin varahenkilö: Jarkko Ahvonen 
+Osastonhoitaja Merja Kaikkonen 
+Osastonhoitajan varahenkilö: Apulaisosastonhoitaja Elina Kiviniemi 
+ 
+Sädehoitoyksikkö (RSH) 
+Vastuulääkäri apulaisylilääkäri Tanja Skyttä  
+Vastuulääkärin varahenkilö: Hanna Aula 
+Osastonhoitaja Milla Lamminperä 
+Osastonhoitajan varahenkilö: apulaisosastonhoitaja Sanna Vanhanen 
+Osastonylifyysikko Eeva Boman, säteilyturvallisuusvastaava 
+Osastonylifyysikon ja säteilyturvallisuusvastaavan varahenkilö apulaisylifyysikko Jarkko 
+Ojala 
+=====PDFPAGE 20=====
+Pirkanmaan hyvinvointialue 
+19 (60) 
+Syöpälääketutkimusyksikkö (FONK) 
+Vastuulääkäri osastonylilääkäri Minna Tanner 
+Vastuulääkärin varahenkilö: Marjukka Pollari 
+Koordinoiva tutkimushoitaja Marjo Koivisto 
+Koordinoiva tutkimushoitajan varahenkilö Annika Sárosi 
+ 
+Syövänhoidon vastuualueen vuodeosasto RS1 (RS1) 
+Vastuulääkäri erikoislääkäri Hanna Raunio  
+Vastuulääkärin varahenkilö: Maarit Bärlund 
+Osastonhoitaja Jani Kokkonen 
+Osastonhoitajan varahenkilö: Apulaisosastonhoitaja Leena Martikainen  
+ 
+Syövänhoidon vastuualueen vuodeosasto RS2 (RS2) 
+Vastuulääkäri erikoislääkäri Santeri Palmi  
+Vastuulääkärin varahenkilö: Maarit Bärlund 
+Osastonhoitaja Mea Kanervio 
+Osastonhoitajan varahenkilö: Apulaisosastonhoitaja Susanna Kauppinen 
+ 
+3.3 Asiakkaan ja potilaan asema ja oikeudet 
+Asiakkaille, potilaille ja läheisille viestitään selkeästi ja sujuvasti turvallisen hoidon, 
+hoivan ja palvelun kannalta tärkeät yhteiset asiat. Asiakkaat, potilaat sekä heidän 
+läheisensä kohdataan inhimillisesti, ammattimaisesti ja luotettavasti. 
+ 
+Asiakasta ja potilasta kuullaan ja hän saa oikeanlaisen palvelun, hoidon tai hoivan 
+oikeaan aikaan. Asiakas ja potilas saa tarvittavat ohjeet palvelun, hoidon ja hoivan 
+turvallisen jatkuvuuden varmistamiseksi. 
+ 
+Palveluihin ja hoitoon pääsy 
+Vastuualueen palveluihin saavutaan lähetteellä. Lähetteet pyritään käsittelemään 
+viiveettä kolmen arkipäivän sisällä läheteohjeiden mukaisesti ja käsittelyaikoja 
+=====PDFPAGE 21=====
+Pirkanmaan hyvinvointialue 
+20 (60) 
+seurataan. Mahdollisiin viiveisiin reagoidaan välittömästi. Resursseja tarkastellaan 
+syövänhoidon vastuualueella suhteessa kysyntään, ja kohdennetaan tarpeen mukaan 
+siten, että hoitoonpääsy toteutuu kaikilla osa-alueilla.  
+Vastuualueella hoidossa olevilla potilaille annetaan tieto, miten yksikköön saa yhteyden: 
+Puhelimitse (takaisin-soittopalvelu), verkkopoliklinikka, päivystysajan yhteystiedot). 
+ 
+Tiedonsaantioikeus ja osallisuus 
+Lääkärien vastaanotolla sekä poliklinikalla, että vuodeosastoilla potilaan kanssa 
+keskustellaan potilaalle tehdyistä tutkimuksista, löydöksistä, hoidon toteutuksesta, 
+hoidon tavoitteista ja haitoista sekä tarjotaan mahdollisuutta osallistua hoidon 
+suunnitteluun. Hoito toteutetaan yhteisymmärryksessä potilaan kanssa. 
+Hoitosuunnitelman toteutumista seurataan potilaan jokaisella käynnillä tai osastojaksolla 
+ja tarvittaessa sitä päivitetään.  
+ 
+Potilaalla on oikeus kieltäytyä hoidosta. Tällöin häntä pyritään mahdollisuuksien 
+mukaan hoitamaan yhteisymmärryksessä muulla lääketieteellisesti hyväksyttävällä 
+tavalla. Potilaalla on myös oikeus tehdä päätöksiä, jotka voivat vahingoittaa hänen 
+omaa terveyttään tai henkeään, ja hänellä on oikeus kieltäytyä hänelle suunnitellusta tai 
+jo aloitetusta hoidosta. Jos täysi-ikäinen potilas ei sairauden tai muun syyn vuoksi pysty 
+päättämään hoidostaan, pyritään kuulemaan potilaan lähiomaista, muuta läheistä tai 
+laillista edustajaa, jotta potilaan tahto pystytään selvittämään. Jos selvitystä potilaan 
+omasta tahdosta ei saada, potilasta hoidetaan hänen henkilökohtaisen etunsa 
+mukaisesti, eli tavalla, joka hyödyttää potilasta eniten.  
+ 
+Lääkärien laatimat sairaskertomusmerkinnät pyritään saattamaan Kantaan 
+mahdollisimman pienellä viiveellä. Sairaanhoitajien ja röntgenhoitajien 
+sairaskertomusmerkinnät polikliinisistä syöpälääke- ja sädehoitokäynneistä saatetaan 
+Kantaan jo saman päivän aikana. Potilaan erillisestä pyynnöstä, tai henkilökunnan 
+arvion mukaan, tekstit voidaan toimittaa potilaalle myös kirjeitse. Syöpälääke- ja 
+sädehoidoista annetaan potilaalle hoitokohtaiset ohjeet. Potilaan voimassa oleva 
+kotilääkitys annetaan potilaalle kirjallisena. 
+ 
+=====PDFPAGE 22=====
+Pirkanmaan hyvinvointialue 
+21 (60) 
+Itsemääräämisoikeuden rajoittaminen 
+Tilanteissa, joissa potilaan itsemääräämisoikeutta joudutaan rajoittamaan hyvän ja 
+turvallisen hoidon toteuttamiseksi, syövänhoidon vastuualueella noudatetaan 
+Pirkanmaan hyvinvointialueen sairaalapalvelulinjan ohjetta somaattisessa hoidossa 
+olevan aikuispotilaan fyysisestä rajoittamisesta. Henkilöstö suorittaa Somaattisen 
+aikuispotilaan rajoittamisen –verkkokurssi koulutuksen, jonka toteutumista esihenkilöt 
+seuraavat. Korkean riskin syöpälääke- ja sädehoidot edellyttävät aina potilaan 
+suostumusta ja hoitojen toteutusta yhteistyössä potilaan kanssa. Jos tämä ei ole 
+toteudu, hoidoista pidättäydytään. 
+ 
+Potilaan kohtelu 
+Vastuualueella edellytetään potilaan asiallista, empaattista ja ystävällistä kohtelua. Tätä 
+painotetaan henkilökunnan koulutuksessa ja perehdytyksessä. Potilaita ja 
+henkilökuntaa kannustetaan ilmoittamaan epäasiallisesta kohtelusta. Ilmoitusten 
+perusteella pyritään muuttamaan toimintatapoja yksiköissä ja tarvittaessa 
+keskustelemaan henkilökunnan jäsenten kanssa henkilökohtaisesti.  
+ 
+Potilas- ja sosiaaliasiavastaavan tehtävät ja yhteystiedot: 
+Potilasasiavastaava on potilaiden apuna, kun he kaipaavat neuvoja tai tietoa 
+oikeuksistaan potilaana. Vastaavasti sosiaaliasiavastaava tarjoaa sosiaalipalvelujen 
+asiakkaille neuvoja ja tietoja. Jos potilas tai asiakas tai hänen läheisensä on tyytymätön 
+hoidon tai palvelujen laatuun tai kohteluun, asiaa voi selvittää yhdessä 
+potilasasiavastaavan tai sosiaaliasiavastaavan kanssa. Molemmat tehtävät ovat 
+neuvoa-antavia. Potilas- tai sosiaaliasiavastaava ei voi muuttaa päätöksiä eikä toimi 
+oikeusavustajana. Palvelut ovat maksuttomia. 
+ 
+Potilasasiavastaava: 
+Ma–to klo 9–11, p. 040 190 9346 
+Suomi.fi-palvelussa: Valitse viestit -palvelussa vastaanottajaksi valitaan Pirkanmaan 
+hyvinvointialueen potilasasiavastaava 
+Hatanpäänkatu 3, 33900 Tampere 
+Potilasasiavastaava@pirha.fi 
+=====PDFPAGE 23=====
+Pirkanmaan hyvinvointialue 
+22 (60) 
+ 
+Sosiaaliasiavastaava: 
+Ma–to klo 9–11, p. 040 504 5249 
+Suomi.fi-palvelussa: Valitse viestit -palvelussa vastaanottajaksi valitaan Pirkanmaan 
+hyvinvointialueen sosiaaliasiavastaava 
+Hatanpäänkatu 3, 33900 Tampere 
+Sosiaaliasiavastaava@pirha.fi 
+ 
+Lisätietoja: Potilasasiavastaava - pirha.fi 
+Lisätietoja: Sosiaaliasiavastaava - pirha.fi 
+3.4 Muistutusten ja kanteluiden käsittely 
+Palveluun tai kohteluun tyytymättömällä asiakkaalla / potilaalla on oikeus tehdä 
+muistutus. Muistutusmenettelyä harkitsevan kannattaa kuitenkin ensin yrittää selvittää 
+asia keskustelemalla asianomaisessa toimintayksikössä. Muistutuksen voi tehdä 
+asiakkaan / potilaan lisäksi hänen omaisensa, muu läheinen tai laillinen edustaja. Muun 
+kuin asianomaisen tehdyn muistutuksen kohdalla on pääsääntöisesti selvitettävä, 
+antaako asiakas / potilas hyväksyntänsä muistutukseen vastaamiseen.  
+ 
+Toimintayksikön pitää tiedottaa asiakkaille oikeudesta tehdä muistutus ja järjestää 
+muistutuksen tekeminen mahdollisimman vaivattomaksi. Muistutus tulisi tehdä 
+pääsääntöisesti kirjallisesti, mutta erityisestä syystä sen voi tehdä myös suullisesti. 
+Muistutukseen tulee antaa kirjallinen ja perusteltu vastaus tiedonsaantioikeus 
+huomioiden kohtuullisessa ajassa, yleensä yhdessä kuukaudessa. Laajempaa 
+selvittelyä tai useampaa palvelulinjaa koskevissa muistutuksissa vastaus voidaan antaa 
+kahden kuukauden kuluessa. Vastaus lähetetään asiakkaalle / potilaalle, jota muistutus 
+koskee, jollei ole erityistä syytä muutoin toimia.  
+ 
+Muistutuksen tekeminen ei estä asiakasta / potilasta tekemästä kantelua valvovalle 
+viranomaiselle.   
+ 
+=====PDFPAGE 24=====
+Pirkanmaan hyvinvointialue 
+23 (60) 
+Lisätietoja: Oletko tyytymätön saamaasi palveluun? - pirha.fi 
+Lisätietoja: Sosiaali- ja terveyspalvelut - Valvonta ja kantelut - Henkilöasiakas - 
+Aluehallintovirasto 
+Lisätietoja henkilöstölle: Hallinnolliset asiakirjaprosessit  
+ 
+Muistutusten ja kanteluiden käsittelyn perehdytys vastuualueella 
+Vastuualueella esihenkilöt suorittavat Asiakas- ja potilasturvallisuusriskien hallinta 
+verkkokoulutuksen THL:n Potilasturvaportti palvelussa. Toimintayksikössä työntekijät 
+perehdytetään potilaiden oikeudesta tehdä muistutus.  Henkilökunnan perehdytykseen 
+on laadittu ohjeistus potilaspalautteen vastaanottamiseen ja ohjaamiseen. 
+Työntekijöiden tulee informoida potilaita oikeudesta tehdä muistutus ja järjestää 
+muistutuksen tekeminen mahdollisimman vaivattomaksi. Potilaille laadittu ohje Miten 
+annan palautetta terveydenhuollossa? – Opas palautteen, muistutuksen ja kantelun 
+eroihin. Potilasohje annetaan tarvittaessa potilaalle ja ohje viety vastuualueen 
+verkkopalveluihin. 
+ 
+Muistutusten ja kanteluiden käsittely vastuualueella 
+Muistutus toimitetaan Pirkanmaan hyvinvointialueen kirjaamoon, josta se lähetetään 
+asiakirjajärjestelmä Pirre:ssä oikealle toimi- / vastuualueelle. Muistutukseen annetaan 
+kirjallinen ja perusteltu vastaus tiedonsaantioikeus huomioiden kohtuullisessa ajassa, 
+yleensä yhdessä kuukaudessa, lomakaudella voi mennä pidempään. Laajempaa 
+selvittelyä tai useampaa palvelulinjaa koskevissa muistutuksissa vastaus voidaan antaa 
+enintään kahden kuukauden kuluessa. Vastaus lähetetään potilaalle, jota muistutus 
+koskee, jollei ole erityistä syytä muutoin toimia. Jos muistutuksen käsittelyn aikana 
+havaitaan, että toimintayksikön tai ammattihenkilön toiminnassa on potilasturvallisuutta 
+vaarantavia seikkoja tai toimintakäytäntöjä, vastuualuejohtaja puuttuu toimintaan 
+yhdessä yksiköiden vastuuhenkilöiden kanssa heti omavalvonnan keinoin ja toimintaa 
+korjataan tarvittavilta osin. Vastuualueelle tulleeseen muistutukseen vastuualuejohtaja 
+pyytää selvitykset pääsääntöisesti niiltä työntekijöiltä / niistä toimintayksiköistä, jotka 
+ovat osallistuneet potilaan hoitoon. Saatuaan selvitykset vastuualuejohtaja laatii 
+vastineen muistutuksen laatijalle. Vastuualuejohtaja voi halutessaan liittää 
+toimintayksiköiden antamia selvityksiä vastineensa oheen. Jos muistutus koskee 
+=====PDFPAGE 25=====
+Pirkanmaan hyvinvointialue 
+24 (60) 
+useampaa vastuualuetta toimialueella, toimialuejohtaja ottaa muistutuksen vastaan ja 
+vastuuttaa muistutuksen käsittelyyn niille vastuualueille, joita muistutus koskee. Kunkin 
+vastuualueen johtaja puolestaan vastuuttaa toimintayksiköt / niiden hoitoon 
+osallistuneiden työntekijöiden antamaan selvitykset. Selvitykset saatuaan 
+vastuualuejohtaja laatii oman vastineensa. Toimialuejohtaja laatii vastineensa 
+muistutuksen tekijälle saatuaan vastineet vastuualueilta. Halutessaan toimialuejohtaja 
+voi liittää selvitystyön aikana tuotettuja vastineita oman vastineensa oheen. Pirkanmaan 
+hyvinvointialueella on sovittu menettelytavat myös useampaa toimialuetta tai useampaa 
+palvelulinjaa koskevien muistutusten vastaamisesta. Niiltä osin viitataan Hallinnolliset 
+asiakirjaprosessit  -ohjeeseen. 
+ 
+Potilas voi myös pyytää korjausta potilastietoihin, jos niissä on virhe tai ne on kirjattu 
+epätarkasti, kts. Voit pyytää korjausta tietoihisi, jos niissä on virhe tai ne on kirjattu 
+epätarkasti? -ohje. Digitaalisten palveluiden ongelmatilanteissa potilas voi täyttää 
+Pirhan vikailmoituksen (surveypal.com). 
+ 
+3.5 Säännöllisesti kerättävän ja muun palautteen huomioiminen 
+Pirkanmaan hyvinvointialueella vahvistetaan asiakaslähtöisyyttä ja osallistumista 
+erilaisin toimenpitein. Käytössä on useita palautteen keräämisen tapoja. 
+ 
+Lisätietoja: Osallistu ja vaikuta - pirha.fi  
+ 
+Suorat palautteet käsitellään viimeistään 12 vuorokauden kuluttua niiden saapumisesta. 
+Mikäli asiakas on jättänyt yhteystietonsa, asiakkaalle vastataan. Saatua 
+asiakaskokemustietoa hyödynnetään käytännössä ja osana kaikkea päätöksentekoa 
+sekä kehittämistä. 
+ 
+Syövänhoidon vastuualueella vahvistetaan potilaslähtöisyyttä ja osallistumista eri 
+toimenpiteiden avulla. Seuraavia käytössä olevia palautteen keräämisen tapoja 
+hyödynnetään: 
+=====PDFPAGE 26=====
+Pirkanmaan hyvinvointialue 
+25 (60) 
+• Suoraa palautetta voi antaa sähköisesti, pirha.fi/palaute - sivuston kautta 
+• Kirjallisesti, palautekortilla 
+• Kokemusasiantuntijoiden haastattelu 
+• Palvelukokemusmittari  
+• NPS eli Net Promoter Score asiakaskokemuskyselyt  
+• Kohdennetut asiakaskokemuskyselyt ja haastattelut 
+• Muistutukset, kantelut ja PVK ilmoitukset 
+• Hoitotyösensitiiviset potilaspalautteet, palautetietoa kerätään potilailta neljä 
+kertaa vuodessa yhden viikon otannoilla 
+• Tays Syöpäkeskuksen potilasraati 
+ 
+Palautteen perusteella kehitetään toimintatapoja ja -prosesseja, potilasohjeita ja 
+henkilökunnan koulutusta. Palautteita käydään läpi säännöllisesti vastuualueen 
+johtotiimissä, osastotunneilla, lääkäreiden kokouksissa, syöpälääkehoidon- ja 
+sädehoidon laaturyhmissä, toimipistepalavereissa ja syöpätiimeissä. 
+3.6 Henkilöstö 
+Syövänhoidon vastuualueella työskentelee 69 vakituisessa työsuhteessa olevaa 
+sairaanhoitajaa, 44 röntgenhoitajaa, kuusi tutkimushoitajaa ja 11 sihteeriä. 
+Sairaanhoitajista 43 työskentelee osastoilla ja 26 poliklinikalla ja sädehoitoyksikössä. 
+Esihenkilöitä vastuualueella on neljä osastonhoitajaa, kolme apulaisosastonhoitajaa ja 
+yksi koordinoiva tutkimushoitaja. Lääkäreitä vastuualueella on 36, joista kahdeksan 
+määräaikaisessa erikoistuvan lääkärin virassa, 20 erikoislääkärin virassa, kaksi lääkäriä 
+kliinisen opettajan virassa, yksi osastonylilääkäri, kolme apulaisylilääkäriä, yksi ylilääkäri 
+ja yksi sivuvirkainen ylilääkäri. 
+ 
+Lääkärihenkilöstö työskentelee pääasiallisesti kaikissa syövänhoidon vastuualueen 
+yksiköissä ja hoitohenkilöstö lähtökohtaisesti nimetyssä yksikössä poliklinikoilla tai 
+osastolla. Tarvittavat fysioterapiapalvelut samoin kuin erityistyötekijöiden palvelut 
+ostetaan kuntoutuksen ja psykososiaalisen tuen vastuualueelta. Vastuualueen kaikissa 
+yksiköissä on osastonsihteerin palveluja. 
+ 
+=====PDFPAGE 27=====
+Pirkanmaan hyvinvointialue 
+26 (60) 
+Sädehoitoyksikössä työskentelee 6 sairaalafyysikkoa, apulaisylifyysikko sekä 
+osastonylifyysikko ostopalveluna Lääketieteellisen fysiikan vastuualueelta. 
+Sädehoitoyksikössä työskentelee 3 THT-asiantuntijaa Istekki Oy:ltä. 
+ 
+Ammattioikeuden tarkistaminen 
+Työ-, pätevyys- ja tutkintotodistukset toimitetaan työnantajalle, esihenkilölle, pätevyys- 
+ja tutkintotodistukset, joiden perustella hänet on valittu tehtävään tai virkaan. 
+Lähiesihenkilö varmistaa todistusten oikeellisuuden sekä työntekijän pätevyyden työhön 
+ja tarvittaessa tarkistaa työntekijän oikeudet JulkiTerhikistä / JulkiSuosikista.  
+ 
+Yksiköiden osastonhoitajat ja lääkärien osalta vastuualuejohtaja haastattelee uudet 
+työntekijät ennen työsuhteen aloitusta. Haastattelussa tarkistetaan ja varmistetaan 
+koulutuksen pätevyys, riittävä osaaminen ja kielitaito. Perehdytyssuunnitelma käydään 
+uuden työntekijän kanssa läpi työsuhteen alkaessa ja perehdytyksen etenemistä 
+seurataan säännöllisin väliajoin. Työntekijällä on aloittaessaan aina koeaika, jolloin 
+määritellään työntekijän pätevyys työtehtävään. 
+ 
+Rikostaustaote 
+Rikostaustaotteella tarkoitetaan rikosrekisteriotetta, joka on tarkoitettu esitettäväksi 
+työnantajalle, viranomaiselle, oppilaitokselle tai vapaaehtoistoiminnan järjestäjälle 
+Suomessa, kun henkilö ryhtyy toimimaan alaikäisten lasten (rikosrekisterilaki 6 §:n 2 
+mom.), ikäihmisten tai vammaisten henkilöiden (rikosrekisterilaki 6 §:n 4 mom.) kanssa.  
+ 
+Lisätietoja henkilöstölle: Rekrytoinnin suunnittelussa huomioitavaa 
+ 
+Työntekijän rikostaustan selvittelyssä käytetään Pirhan yleistä ohjeistusta. Ohjeen 
+soveltaminen ei ensisijaisesti kohdennu Syövänhoidon vastuualueelle, sillä 
+vastuualueella hoidetaan aikuisia potilaita ja hoitojaksot ovat lyhyitä. Mikäli kuitenkin 
+selvitys joudutaan tekemään, niin se toteutetaan Pirhan prosessin mukaisesti. 
+ 
+ 
+ 
+=====PDFPAGE 28=====
+Pirkanmaan hyvinvointialue 
+27 (60) 
+Perehdytys 
+Työturvallisuuslaki velvoittaa työnantajaa perehdyttämään työntekijän työhön ja 
+työolosuhteisiin sekä työvälineiden oikeaan käyttöön ja turvallisiin työtapoihin.  
+ 
+Pirkanmaan hyvinvointialueella on laadittu yhtenäinen perehdytysprosessi ja 
+perehdytyksen toimintamallit. Perehdytyksen tukena on myös sähköinen Intro- 
+perehdytysjärjestelmä.  
+ 
+Lisätietoja henkilöstölle: Perehdytys 
+ 
+Osastonhoitaja suunnittelee ja valmistelee uuden hoitajan perehdytysjakson, lääkärien 
+osalta koulutusvastuulääkäri suunnittelee perehdytysjakson. Perehdytyksen ennakko-
+suunnittelu sisältää mm. perehdyttäjien nimeämisen sekä perehdytyksen sisältöjen ja 
+suunnitelman aikataulutuksen työvuorosuunnittelun mukaisesti. Perehdytys toteutetaan 
+yksiköissä Intro-ohjelmistoon laaditun perehdytysohjelman mukaisesti. Perehtyjän 
+edistymistä seurataan ja hänen kanssaan käydään arviointikeskusteluja osaamisen ja 
+oppimisen edistymisestä.  
+ 
+Mikäli työntekijän työssä suoriutumisessa esiintyy puutteita tai työssä suoriutumisesta 
+tulee esihenkilölle palautetta, on esihenkilön otettava asia esille ko. henkilön kanssa. 
+Esimerkiksi lääkehoidon toteutukseen liittyvissä puutteissa voi esihenkilö ohjata 
+työntekijän suorittamaan lääkehoidon koulutuksen ja näytöt uudelleen sekä rajoittaa 
+työntekijän lääkehoitoon osallistumista.  
+ 
+Esihenkilö arvioi henkilökuntansa osaamista, osaamisen kehittymistä ja 
+täydennyskoulutuksen tarvetta vuosittain käymissään kehityskeskusteluissa ja tekee 
+suunnitelman kukin henkilön kohdalla ammatillisen osaamisen ylläpitämiseksi ja 
+mahdollisuudesta osallistua ammattitaitoaan vahvistavaan koulutukseen.  
+Esihenkilö seuraa oman henkilöstönsä käymiä koulutuksia ja arvioi niitä suhteessa 
+osaamiseen ja osaamisen kehittymiseen. Henkilöstön osaamisen asianmukaisuutta 
+seurataan esihenkilöiden arvioinnin lisäksi potilasturvallisuuden toteutumisen ja 
+potilasprosessien sujuvuuden kautta. Vaaratapahtumien ilmoittamisjärjestelmän 
+=====PDFPAGE 29=====
+Pirkanmaan hyvinvointialue 
+28 (60) 
+(Haipro) kautta tulleet ilmoitukset käsitellään esihenkilöiden toimesta ja ilmoituksissa 
+esiin tulleisiin osaamisvajeisiin puututaan järjestämällä asiaankuuluvaa 
+toimipaikkakoulutusta. 
+3.7 Asiakas- ja potilastyöhön osallistuvan henkilöstön riittävyyden 
+seuranta 
+Riittävä ja osaava sekä palveluyksikön omavalvontaan sitoutunut henkilöstö on 
+keskeinen tekijä palvelujen saatavuuden, laadun ja asiakas- ja potilasturvallisuuden 
+varmistamisessa sekä palvelujen kehittämisessä. 
+ 
+Henkilöstömitoitus suunnitellaan toiminnan vaativuuden, potilaiden hoitoisuuden sekä 
+potilaspaikkojen/ajanvarausten perusteella. Pitkän aikavälin henkilöstösuunnittelua 
+tehdään säännöllisesti yhteistyössä vastuualueen hoitotyön johdon sekä vastuualueen 
+esihenkilötiimin kesken sekä toimialueen johdon kanssa. 
+ 
+Hoitajien riittävyys 
+Esihenkilöt seuraavat henkilöstön riittävyyttä työvuorokohtaisesti yksiköittäin. 
+Syövänhoidon vastuualueen kummallakin vuodeosastoilla RS1 ja RS2 on arkipäivisin 
+käytössä 18 sairaansijaa, öisin 16 ja viikonloppuisin 12 sairaansijaa. Vuorokohtainen 
+henkilöstömitoitus on määritelty suhteessa potilaspaikkamäärään ja siten 
+hoitajaresurssit ja hoitajamiehitys suunnitellaan toimintaa vastaavaksi. 
+Työvuorosuunnitelmassa huomioidaan ja varmistetaan, että potilaiden hoitoon 
+tarvittavaa osaamista on joka työvuorossa. Potilaiden hoitoisuutta arvioidaan joka 
+työvuorossa. Hoitoisuuden perusteella arvioidaan henkilöstön riittävyyttä säännöllisin 
+väliajoin.  
+Vuodeosastojen yhteinen työvuorosuunnittelu tehdään kolmen viikon jaksoissa ja 
+julkaistaan henkilökunnalle viikkoa ennen työvuorolistan alkua. Hoitajia liikutellaan 
+tarpeen mukaan osastojen välillä. Työnkierrolla ja molempiin osastoihin perehtymisellä 
+varmistetaan myös riittävä päivystysajan osaaminen molempien osastojen 
+erityispiirteisiiin. Etukäteen tiedossa oleviin poissaoloihin hankitaan sijaiset jo 
+työvuorolistan suunnitteluvaiheessa. Äkillisiin hoitajavajeisiin pyritään saamaan sijaiset 
+joko neljän toimialueen yhteisestä sissipoolista, Kuntarekryn sijaispankista tai oman 
+=====PDFPAGE 30=====
+Pirkanmaan hyvinvointialue 
+29 (60) 
+henkilökunnan työvuoromuutoksilla perustuen työntekijän vapaaehtoiseentyövuoron 
+vaihtoon tai lisä- tai ylityön tekemiseen. Mahdollisuuksien mukaan tehdään 
+potilassiirtoja vastuualueen sisällä yksiköstä toiseen poissaolojen järjestelyn 
+helpottamiseksi. Viimesijaisena keinoja suljetaan sairaansijoja.  
+Sädehoitoyksikössä on määritelty henkilöstömitoitus suhteessa sädehoitotoimintaan ja 
+henkilökunnan osaamiseen. Työvuorosuunnittelu tehdään kolmen viikon jaksoissa ja 
+työvuorosuunnitelma julkaistaan viikkoa ennen työvuorolistan alkua. 
+Työvuorosuunnitelmassa huomioidaan koulutuspoissaolot ja lomat limittämällä. 
+Sädehoitoyksikössä röntgenhoitajien äkillisiin ja lyhytaikaisiin poissaoloihin ei käytetä 
+ulkopuolisia sijaisia. Sijaisten puuttuessa toimintaa järjestellään uudelleen ja äkillisten 
+poissaolojen vuoksi voidaan joutua peruttamaan tai siirtämään toimenpiteitä tai hoitoja.  
+Syöpätautien poliklinikalla hoitohenkilökunta sijoitetaan lääkärin vastaanotoille 
+lääkäreiden sijoitusten mukaan. Hoitohenkilökunta perehdytetään työskentelemään 
+poliklinikan eri toiminnoissa eli vastaanottotyössä ja syöpälääkehoitoyksikössä. Näin 
+varmistetaan osaaminen äkillisissä muutostilanteissa ja mahdollisissa 
+poissaolotilanteissa. Poliklinikoilla ei käytetä lyhytaikaisiin poissaoloihin sijaisia. 
+Syöpälääkeyksikössä on määritelty henkilöstömitoitus suhteessa hoidettavaan 
+syöpälääkehoitopotilasmäärään ja hoitoihin. Äkillisiin hoitajavajeisiin pyritään saamaan 
+sijaisia vastuualueen osastoilta. Sijaisten puuttuessa toimintaa järjestellään uudelleen ja 
+äkillisten poissaolojen vuoksi voidaan joutua peruttamaan tai siirtämään toimenpiteitä tai 
+hoitoja. 
+Lääketutkimusyksikössä työvuorosuunnittelu tehdään kolmen viikon jaksoissa ja 
+työvuorosuunnitelma julkaistaan viikkoa ennen työvuorolistan alkua. 
+Työvuorosuunnitelmassa huomioidaan koulutuspoissaolot ja lomat limittämällä. 
+Tutkimushoitajien äkillisiin ja lyhytaikaisiin poissaoloihin ei käytetä ulkopuolisia sijaisia. 
+Sijaisten puuttuessa toimintaa järjestellään uudelleen ja äkillisten poissaolojen vuoksi 
+voidaan joutua peruttamaan tai siirtämään toimenpiteitä tai hoitoja. 
+ 
+Lääkäreiden riittävyys 
+Lähetemäärää, ensikäyntien, seurantakäyntien sekä syöpälääke- ja sädehoitopotilaiden 
+määrää ja näiden jonokehitystä seurataan neljännesvuosittain. Toimintaa ja 
+lääkärihenkilöstön sijoittumista suunnitellaan tämän tiedon perusteella. Lääkäreiden 
+=====PDFPAGE 31=====
+Pirkanmaan hyvinvointialue 
+30 (60) 
+sijoittumista vastuualueen eri toimipisteisiin ja työtehtäviin suunnitellaan 2–4 kuukautta 
+etukäteen turvaten aina ensisijaisesti potilashoidon kannalta strategiset toimipisteet 
+kuten esim. kiireelliset hoitoarviot ja -syöpähoidot ja vuodeosastotoiminta.  
+Koulutukset ja muut poissaolot pyritään suunnittelemaan siten, että toiminta ei häiriinny. 
+Lääkärihenkilöstön riittävyyttä seurataan lääkärien lisä- ja ylityötuntien määrällä. 
+Äkillisissä sairauspoissaoloissa toimintaa ja työpisteitä järjestellään uudelleen ja 
+potilaiden kiireettömiä vastaanottoaikoja voidaan joutua siirtämään. 
+ 
+Vastuualueen lääkäripäivystys 
+Lääkärimitoituksessa ja ohjeistuksissa pyritään noudattamaan Suomen Lääkäriliiton 
+päivystyssuosituksen ohjeistusta päivämäärällä 29.9.2022. Arkisin syövänhoidon 
+vastuualueen sairaalapäivystystä hoitavat sekä erikoislääkärit että erikoistuvat lääkärit 
+klo 15.45-21.00 ja perjantaisin klo 15.15-21.00. Erikoistuville lääkäreille järjestetään 
+takapäivystäjäksi erikoislääkäri, joka jatkaa varallaolo-päivystystä seuraavaan aamuun 
+klo 8.00. Viikonloppuisin erikoislääkärit päivystävät sairaalapäivystystä klo 9.00-12.00 ja 
+tämän jälkeen he ovat varalla seuraavaan aamuun klo 8.00 asti (viikonloppuisin klo 9.00 
+asti). Vastuualueen johto ja vastuulääkärit arvioivat säännöllisesti päivystysrinkien 
+riittävää kokoa sen varmistamiseksi, että päivystysvuorojen määrä kuukaudessa 
+työntekijää kohden on kohtuullinen. 
+ 
+Fyysikoiden riittävyys 
+Fyysikot noudattavat liukuvaa työaikaa ja toiminta suunnitellaan niin että 
+fyysikkoresurssista on paikalla liukuvan työajan puitteissa vähintään puolet myös lomien 
+aikaan. Fyysikoilla on käytössä varallaolojärjestelmä, joten vähintään yksi fyysikko on 
+paikalla klo 8-15.30 ja muulloin (15:30-21:00) tavoitettavissa puhelimesta ja tarvittaessa 
+kutsuttavissa työpaikalle 30 minuutissa. 
+ 
+3.8 Monialainen yhteistyö ja palvelun koordinointi 
+Sosiaali- ja terveydenhuoltoa toteutetaan yhteistyössä eri toimijoiden kanssa siten, että 
+sosiaalihuollon ja tarvittaessa muiden hallinnonalojen palvelut muodostavat asiakkaan 
+=====PDFPAGE 32=====
+Pirkanmaan hyvinvointialue 
+31 (60) 
+edun mukaisen kokonaisuuden. Yhteisissä palveluissa, tai jos potilas muutoin tarvitsee 
+sekä terveydenhuollon että sosiaalihuollon palveluja, on sovellettava niitä 
+terveydenhuollon ja sosiaalihuollon säännöksiä, jotka parhaiten tarjoavat potilaan tuen 
+tarpeita vastaavat palvelut ja lääketieteellisen hoidon. 
+ 
+Lisätietoja henkilöstölle: Monialainen yhteistyö  
+ 
+Potilaan kohtaaminen ja hoito moniammatillisesti syövänhoidon vastuualueella 
+ 
+Syövänhoidon vastuualueen yksiköissä potilaan hoito toteutetaan moniammatillisesti 
+yhdessä lääkärien, sairaanhoitajien, röntgenhoitajien, fyysikoiden ja sihteerien kanssa 
+potilaan toiveita kuunnellen. Potilaalle syöpään sairastuminen tuo mukanaan 
+epävarmuutta ja syöpään sairastuminen kuormittaa mieltä ja samaan aikaan koko arki 
+muuttuu hoitojen myötä. Syöpäpotilaan kohtaaminen hoitotilanteissa, selkokielinen tieto 
+tilanteesta ja potilaiden sekä läheisten kysymyksiin vastaaminen luovat 
+psykososiaalisen tuen perusteet. Tarvittaessa potilaalle varataan aika 
+erityistyöntekijöiden eli sosiaalityöntekijän, kuntoutusohjaajan, sairaalapastorin, 
+ravitsemusterapeutin, fysioterapeutin, psykososiaalisen tuen yksikön hoitajien tai 
+seksuaalineuvojan vastaanotolle. Kiinteää yhteistyötä tehdään Pirkanmaan 
+syöpäyhdistyksen kanssa, erityisesti psykososiaalisen tuen osalta. Kts. Tukea kun 
+syöpä on osa omaa tai läheisesi elämää. Tärkeä osa syöpäpotilaiden hoitoa on oireiden 
+lievitys eli palliatiivinen hoito, jota toteutetaan yhteistyössä palliatiivisen keskuksen 
+kanssa. 
+ 
+Hoitoketjut toimintojen yhtenäistäjinä hyvinvointialueella 
+ 
+Syöpäkohtaiset hoitoketjut ovat Pirkanmaan hyvinvointialueelle sovellettuja, 
+hoitosuosituksiin perustuvia kannanottoja hoitopäätösten tueksi ja työnjaon 
+selkeyttämiseksi. Tavoitteena on turvata potilasnäkökulmasta hoidon sujuvuus yli 
+organisaatiorajojen sekä eri ammattiryhmien kesken. Päämääränä on myös yhtenäistää 
+hoitokäytäntöjä sekä selkiyttää tutkimusten ja hoidon porrastusta. Hoitoketjut toimivat 
+myös johtamisen ja kehittämisen työvälineinä. Syövänhoidon vastuualueelta 
+=====PDFPAGE 33=====
+Pirkanmaan hyvinvointialue 
+32 (60) 
+osallistutaan hoitoketjujen laatimiseen ja päivittämiseen moniammatillisesti työryhmissä. 
+Osassa työryhmistä on ollut mukana myös potilasedustus. Hoitoketjut pohjautuvat 
+näyttöön perustuvaan lääketieteeseen, sekä kansallisiin tai kansainvälisiin 
+hoitosuosituksiin.  
+ 
+Uudet ja päivitetyt hoitoketjut julkaistaan Pirhan internetsivuilla:  
+• Ei-melanoottisten ihosyöpien hoitoketju 
+• Eturauhassyöpäpotilaan hoitoketju 
+• Hoitoketju syöpäpotilaan ulkoisen sädehoidon ja syöpälääkehoidon 
+haittavaikutuksista 
+• Keuhkosyöpäpotilaan hoitoketju 
+• Lymfoomien hoitoketju 
+• Palliatiivisen hoidon hoitoketju 
+• Pään ja kaulan alueen syöpien hoitoketju 
+• Rintasyöpäpotilaan hoitoketju 
+• Ruoansulatuskanavan syövät 
+ 
+ 
+Moniammatilliset syöpäpotilaiden hoidon suunnittelukokoukset yksittäisten 
+potilaiden hoidon suunnittelussa 
+ 
+Moniammatilliset syöpäpotilaiden hoidon suunnittelukokoukset (Multidisciplinary Team 
+Meeting) eli MDT-kokoukset ovat syövänhoidon laadun kulmakivi. MDT-kokouksella 
+tarkoitetaan tietyn syövän hoitoon keskittynyttä viikoittain kokoontuvaa syövänhoidon 
+asiantuntijatyöryhmää, joka koostuu yleensä vähintään patologian, radiologian, 
+syöpätautien ja ko. syövän leikkaushoidosta vastaavasta erikoislääkäristä sekä syövän 
+hoitoon perehtyneestä sairaanhoitajasta.  
+MDT-työskentelyn tavoitteena on varmistaa, että syöpäpotilaan kohdalla taudinmääritys 
+on oikein, ja potilas saa parhaan mahdollisen hoidon ja potilaan mahdollisuudet 
+osallistua kliiniseen hoitotutkimukseen on kartoitettu. Kokouksessa laaditaan 
+hoitosuositus, josta lääkäri keskustelee potilaan kanssa vastaanotolla. Hoitopäätös 
+tehdään aina potilaan kanssa yhteistyössä. Taysissa kokoontuu säännöllisesti 16 eri 
+syöpäsairauden MDT-kokoukset, joihin kaikkiin osallistuu syövänhoidon vastuualueelta 
+=====PDFPAGE 34=====
+Pirkanmaan hyvinvointialue 
+33 (60) 
+syöpätautien erikoislääkäri, joka on kyseisen syövän erityisasiantuntija. Osassa MDT-
+kokouksissa käsitellään vain erityisen haasteellisia syöpätilanteita omaavien potilaiden 
+asioita.   
+ 
+Taysin syöpätiimit syöpäpotilaan hoitopolun kehittäjinä 
+ 
+Syöpäpotilaan hoitopolun kokonaisuus muodostuu usein eri yksiköissä toteutettavista 
+hoitojaksoista ja siirtyminen hoitoyksiköstä toiseen lisää riskiä viiveisiin ja tuo 
+tiedonkulkuun haasteita. Syöpäpotilaan hoitopolun sujuvoittamiseksi ja eri yksiköiden 
+välisen yhteistyön parantamiseksi Taysissa on otettu käyttöön syöpätiimitoimintamalli, 
+johon kuuluu MDT-kokouksien avainhenkilöiden lisäksi kaikista hoitoon osallistuvista 
+yksiköistä eri ammattiryhmien edustajat. Toiminnassa on nyt 15 syöpätiimiä. 
+Tiimitoimintamalli ei rajaudu vain yhden toimialueen sisälle, vaan se ylittää toimialue- ja 
+sairaalarajat. Tiimeissä ammattilaiset suunnittelevat ja keskustelevat ehdotetuista ja 
+sovituista kehittämistoimista sekä työstävät uusia toimintaohjeita ja käsittelevät 
+yksiköissä käsiteltyjä vaaratapahtumailmoituksia. Toimintayksiköissä arvioidaan uusien 
+toimintatapojen käyttöönottoa ja kehitetään hoitoketjuja potilaslähtöisesti. Syövänhoidon 
+vastuualueen kaikki yksiköt osallistuvat syöpätiimitoimintaan aktiivisesti. 
+ 
+Yhteistyö työterveyshuollon kanssa 
+ 
+Kaikki syöpähoidot eivät vaikuta työkykyyn ja eri potilaat sietävät hoitoja eri tavoin. 
+Useimmat syövän sairastaneet työikäiset syöpäpotilaat palaavat takaisin töihin hoitojen 
+jälkeen tai jo niiden aikana. Yksilöllisesti toteutetuilla työkyvyn tukitoimilla voidaan 
+lyhentää tuntuvasti sairauspoissaoloja. Työterveyshuollon moniammatillinen tiimi, 
+työntekijä ja työnantaja voivat pohtia yhdessä, millaista kuntoutusta tai työn muokkausta 
+on tarpeen tehdä, jotta työhön paluu sujuisi esimerkiksi leikkauksen jälkeen 
+mahdollisimman hyvin.  Työterveyshuollon ja Pirkanmaan hyvinvointialueen yhteistyön 
+tehostamiseksi vastuualueella otettiin käyttöön TYÖOTE-toimintamalli 
+rintasyöpäpotilaiden hoidossa. Pirhassa kirjoitetaan rintasyöpäpotilaille aikaisempaa 
+lyhyempi sairauspoissaolo, ja hänet ohjataan lähetteellä työterveyshuoltoon työkyvyn ja 
+sairauspoissaolon jatkotarpeen arviointia varten. 
+=====PDFPAGE 35=====
+Pirkanmaan hyvinvointialue 
+34 (60) 
+3.9 Toimitilat, välineet ja lääkinnälliset laitteet 
+Toimitilat ja välineet 
+Syövänhoidon vastuualueen yksiköt sijaitsevat vuonna 2007 rakennetuissa tiloissa R-
+rakennuksessa Tays keskussairaalan kampuksella. Tiloille on tehty tarvittavat 
+tarkistukset niiden käyttöönoton yhteydessä.  
+ 
+Kliiniselle lääketutkimusyksikölle FONK:lle on valmistunut vuonna 2023 erilliset 
+toimistotilat tutkimushoitajille Radiuksen 2. kerrokseen syöpätautien poliklinikan ovien 
+läheisyyteen. Suonensisäisesti annosteltavat tutkimuslääkehoidot toteutetaan RS2-
+osastolla sijaitsevissa tiloissa. 
+ 
+Vuodeosastoilla (RS1 ja RS2) potilashuoneet ovat 1–2 hengen huoneita. Molemmilla 
+vuodeosastoilla on myös erityisrakenteiset huoneet, ns. eristyshuoneet, osastoilla 
+toteutettavia radionukleotidihoitoja varten. Jokaisella vuodeosastolla on mahdollisuus 
+välitilalliseen eristyshuoneeseen. Potilashuoneissa on wc- ja pesutilat. Yksityisyyden 
+suojaa pyritään toteuttamaan mahdollisimman hyvin.  
+ 
+Syöpätautien poliklinikan lääkehoitoyksikön tilat remontointiin vuonna 2021 
+mahdollistamaan syöpälääkehoitojen toteuttaminen turvallisesti polikliinisesti. 
+Syöpälääkehoitojen toteuttamiseen yksikössä on 35 potilaspaikkaa. Syöpätautien 
+poliklinikan päiväosasto sijaitsee RS1-vuodeosaston tiloissa, siellä on 8 potilaspaikkaa. 
+Päivittäin poliklinikalla voidaan hoitaa n. 55 potilaan syöpälääkehoidot ja päiväosastolla 
+12 potilaan. 
+ 
+Sädehoitoyksikön tilat koostuvat vastaanotto- ja henkilöhuoneista sekä laitetiloista. 
+Sädehoitoyksikössä on 6 sädehoitokiihdytinlaitetta sekä 1 tykösädehoitolaite. Lisäksi 
+yksikössä on 2 tietokonetomografialaitetta ja yksi magneettikuvauslaite (ei säteilevä), 
+joita käytetään sädehoidon suunnittelukuvauksiin. Sädehoidon säteilevät laitetilat on 
+määritelty säteilylain mukaisesti valvonta-alueiksi, joissa noudatetaan niille määritettyjä 
+ohjeita. Lisäksi tykösädehoitolaitetilaan on rajattu pääsy. Näillä varmistetaan, ettei 
+toiminnasta aiheudu ulkopuolisten henkilöiden säteilyaltistusta. 
+Magneettikuvauslaitteella noudatetaan erillistä ohjeistusta jatkuvan magneettikentän 
+=====PDFPAGE 36=====
+Pirkanmaan hyvinvointialue 
+35 (60) 
+vuoksi. Potilaiden yksityisyys on turvattu hoitohuoneiden sähköovilla sekä 
+kuvauslaitetilojen erillisillä pukutiloilla. Päivittäin sädehoidossa hoidetaan n. 160 potilaan 
+sädehoitokäynnit. 
+ 
+Sädehoitoyksikössä noudatetaan yksikön laitehankintaohjelmaa, missä huomioidaan 
+laitteiden elinkaari ja vikaantumiset. Laitehankinnat pyritään suunnittelemaan niin että 
+laitevikaantumisen ilmetessä tai määräaikaishuoltojen aikana potilaat voidaan hoitaa 
+toisella ns. varalaitteella.  
+ 
+Lääkinnälliset laitteet 
+Syövänhoidon vastuualueen henkilöstö perehdytetään osana kokonaisperehdytystä 
+lääkintälaitteiden turvalliseen ja asianmukaiseen käyttöön. Yksiköissä on laiteajokortin 
+kaltaiset laitelistaukset kyseisessä yksikössä säännönmukaisesti käytettävistä 
+lääkintälaitteista. Laitteiden käyttöön perehtyminen ja laiteosaaminen dokumentoidaan 
+osana uuden työntekijän perehdytystä. Uusien laitteiden käyttöönoton yhteydessä ja 
+tarvittaessa muulloinkin järjestetään laitevalmistajien kanssa yhteistyössä 
+moniammatillista lääkintälaitteiden käyttökoulutusta. 
+ 
+Perusammattitaidon ylläpito on jokaisen ammattilaisen vastuulla ja sitä tuetaan yksikön 
+sisäisen koulutuksen avulla sekä mahdollisuudella osallistua ulkopuoliseen 
+koulutukseen koulutusmäärärahojen puitteissa. Uusille työntekijöille on laadittu omat 
+ammattiryhmäkohtaiset perehdytysohjelmat sekä sädehoitoyksikössä 
+laatujärjestelmäperehdytys, joihin kaikki uudet työntekijät osallistuvat. Uuden hoitajan 
+perehdyttämisestä vastaa yksikön osastonhoitaja, uuden sairaalafyysikon 
+perehdyttämisestä vastaa osastonylifyysikko ja uuden lääkärin perehdyttämisestä 
+vastaa koulutusvastuulääkäri ja yksiköissä yksiköiden vastuulääkärit. Otettaessa 
+käyttöön uusia menetelmiä tai laitteita tai henkilö siirtyy uusiin työtehtäviin, suoritetaan 
+niihin liittyvä tarpeelliseksi katsottu perehdytyskoulutus. Säteilytyöntekijöiden 
+perehdytykseen kuuluu lisäksi säteilyperehdytys, joka kirjataan HR-järjestelmään. 
+Laiteosaamisesta pidetään kirjaa.  
+ 
+=====PDFPAGE 37=====
+Pirkanmaan hyvinvointialue 
+36 (60) 
+Jokaisen laitteita käyttävän henkilön vastuulla on ilmoittaa havaituista vioista ja poistaa 
+laite potilaskäytöstä huollon järjestämistä varten. Yksiköiden apulaisosastonhoitajat 
+huolehtivat laitteet huoltoon. Lääkinnällisten laitteiden viankorjauksiin, huoltoihin ja 
+tukipalveluihin liittyvissä asioissa tehdään palvelupyyntö Paketin kautta laitteessa 
+olevan tunnusnumeron avulla. Käytettäessä laitteen tunnusnumeroa pyyntö ohjautuu 
+automaattisesti oikealle huoltoyksikölle. Mikäli laitteen vikatilanne aiheuttaa 
+vaaratilanteen, joka johtaa tai olisi voinut johtaa potilaan, käyttäjän tai muun henkilön 
+terveyden vaarantumiseen, syövänhoidon vastuualueen yksiköissä on yksikön 
+esihenkilön vastuulla huolehtia asianmukaiset ilmoitukset Fimeaan ja laitteen 
+valmistajalle, edustajalle tai maahantuojalle.  
+ 
+Lääkintätekniikan yksikkö vastaa lääkinnällisten laitteiden elinkaaren aikaisista 
+tukipalveluista sisältäen laitteiden ennakoivat huollot, kunnossapidon ja laitteiden poistot 
+sekä lääkintätekniikan asiantuntijapalvelut. Istekki Oy tuottaa lääkintätekniikan 
+päivittäiset huolto- ja ylläpitopalvelut. Vastuualueen yksiköiden apulaisosastonhoitajat 
+organisoivat säännönmukaisten laitehuoltojen toteutumisen yksiköissä yhteistyössä 
+lääkintätekniikan kanssa. Kaikki sädehoidon laitteet löytyvät EQUsta ja laitteiden ylläpito 
+on Istekin laitehuollon vastuulla.  Toimintayksiköissä käytettävät henkilövaa’at, jotka 
+eivät ole EQU:ssa, tarkistetaan 6 kk välein. 
+ 
+Lisätietoja: Laki lääkinnällisistä laitteista (719/2021) - Finlex.fi 
+Lisätietoja henkilöstölle: Lääkintätekniikka  
+ 
+Säteilyn käytön turvallisuus 
+Sädehoitoyksikön toiminnassa noudatetaan laatukäsikirjaa, joka on linjassa Pirhan 
+yleisten ohjeiden ja toimintakulttuurin kanssa. Vuosittain yksikössä pidetään 
+laatujärjestelmän katselmus vastuualuejohdolle, viimeisin katsaus pidetty 13.5.2025. 
+ 
+Sädehoitoyksikön säteilyä tuottavat laitteet kuuluvat Säteilynkäytön turvallisuuslupaan 
+nro 1670. Laitteet, tilat ja laadunvalvonnassa käytettävät mittarit tarkastetaan 
+Säteilyturvakeskuksen toimesta määrävälein. Säteilyturvallisuusvastaavana toimii 
+Sädehoitoyksikön osastonylifyysikko Eeva Boman. Radiojodihoidot luokitellaan 
+=====PDFPAGE 38=====
+Pirkanmaan hyvinvointialue 
+37 (60) 
+isotooppiyksikön turvallisuusluvan alle ja näiden hoitojen säteilyturvallisuudesta vastaa 
+Isotooppiyksikön sairaalafyysikot. 
+ 
+Säteilynkäytön turvallisuutta arvioidaan yksikössä säteilylain edellyttämässä 
+säteilynkäytön turvallisuusarviossa, missä käsitellään sädehoitoyksikön toimintaa 
+käyttöpaikassa säteilyturvallisuuden kannalta, arvioidaan käyttöpaikan säteilyaltistusta 
+sekä potentiaalista säteilyaltistusta työntekijälle, väestölle ja potilaalle. Siinä myös 
+esitetään keinot mitä yksikössä on käytössä säteilyaltistuksen minimoimiseksi.  
+ 
+Turvallisuusarvion on STUK hyväksynyt ja se tarkistetaan vähintään kahden vuoden 
+välein tai aiemmin, jos toimintaa joudutaan arvioimaan uudelleen säteilyturvallisuuden 
+kannalta. Koska turvallisuusarvio kokonaisuutena sisältää analyysin mahdollisina 
+pidettyjen säteilyturvallisuuspoikkeamien skenaarioista, muodostaa se yhdessä 
+henkilökunnalle tehtyjen turvallisuusohjeiden ja poikkeavien tilanteiden toimintaohjeiden 
+kanssa samalla varautumissuunnitelman säteilyturvallisuuspoikkeamien varalle. 
+Säteilynkäytön turvajärjestelyistä on laadittu säteilylain edellyttämä säteilynkäytön 
+turvajärjestelysuunnitelma, joka on hyväksytty Säteilyturvakeskuksessa. Yksikön tiloissa 
+liikuttaessa tulee noudattaa yksikön antamaa ohjeistusta. Lisäksi yksikössä on käytössä 
+kattava laatujärjestelmä ja henkilökunnan ohjeet säteilynkäytön turvalliselle 
+toteuttamiselle.  
+ 
+Sädehoitotoiminnasta syntyy lääketieteellistä säteilyaltistusta potilaalle sekä 
+potentiaalista säteilyaltistusta potilaalle, henkilökunnalle ja/tai väestölle. 
+Säteilytyöntekijöitä sädehoitoyksikön toiminnan alaisuudessa on yhteensä noin 100 
+(määrä vaihtelee kausittain johtuen sijaisten määrästä) B-säteilyluokan työntekijää ja 
+heillä on käytössä kuukausittain etäluettava henkilökohtainen tai ryhmä DIS-dosimetri. 
+ 
+Lisätietoja henkilöstölle: Säteilyturvallisuus  
+ 
+=====PDFPAGE 39=====
+Pirkanmaan hyvinvointialue 
+38 (60) 
+3.10  Tietojärjestelmät ja teknologian käyttö 
+Tietojärjestelmät 
+Uusille tietojärjestelmille ja sovelluksille tehdään tiettyjä poikkeuksia lukuun ottamatta 
+tietoturva-arviointi aina ennen käyttöönottoa. Tietoturva-arviointi tehdään myös 
+järjestelmän muuttuessa oleellisesti. Tietoturva-arviointi sisältää myös tietojärjestelmän 
+käyttöön liittyvän riskiarvion. Tietojärjestelmille tehdään riskiarviointi kolmen vuoden 
+välein tai kun järjestelmä oleellisesti muuttuu. 
+ 
+Vastuualueella käytetään pääasiassa Pirhassa käyttöön otettuja yhteisiä 
+tietojärjestelmiä. Istekki Oy vastaa uusien tietojärjestelmien käyttöönotosta Pirhassa, 
+jolloin tietoturva-arviointi ja tietosuojaa koskevan vaikutustenarviointi on yleensä 
+edellytyksenä käyttöönotolle. Uudet hoitajat ja lääkärit suorittavat Pirhan 
+verkkokoulutuksen: Potilashoidon kirjaaminen ja potilastietojärjestelmien käyttöön 
+järjestetään koulutus.  
+ 
+Ennen potilaan ensimäistä käyntiä syövänhoidon vastuualueella potilas kutsutaan 
+täyttämään sähköinen esitietokysely OmaTays -sovellukseen, jonne potilas kirjautuu 
+vahvalla tunnistuksella ja jossa informoidaan sovelluksen tietosuojasta ja tietojen 
+käsittelystä. Jos potilas ei ole täyttänyt sähköistä esitietolomaketta, hoitaja täyttää sen 
+ensikäynnillä yhdessä potilaan kanssa.  
+ 
+Potilaan ensikäynnillä syövänhoidon vastuualueella sairaanhoitaja informoi ja ottaa 
+vastaan potilaalta allekirjoitukset potilastietojärjestelmän suostumustenhallinta-
+sovellukseen. Tämä on tarkoitettu potilaan informoinnin, luovutusluvan, 
+luovutuskieltojen, reseptin kieltojen sekä tahdonilmaisujen hallinnointiin. 
+Potilas kutsutaan TayPolku-mobiilisovelluksen käyttäjäksi ja potilas itse ottaa 
+sovelluksen käyttöön vahvalla tunnistuksella OmaTays-verkkoportaalin kautta. 
+Sovelluksessa potilasta informoidaan sovelluksen tietosuojasta ja tietojen käsittelystä. 
+Ennen syöpälääkehoitokäyntejä potilailta, jotka eivät ole ottaneet mobiilisovellusta, 
+tarvittaessa ennen lääkehoitoa sairaanhoitaja selvittää potilaan voinnin ennen 
+syöpälääkehoidon määräystä ja toteutusta. 
+ 
+=====PDFPAGE 40=====
+Pirkanmaan hyvinvointialue 
+39 (60) 
+Potilastietojärjestelmän päivityksiin varaudutaan Istekin ilmoittamien ohjeiden mukaan. 
+Häiriötilanteiden varautumiseen tueksi on laadittu häiriötilannetoimintakortit 
+sähkökatkokseen, älylääkekaapin käyttöön sähkökatkoksen aikana tai 
+käyttövesikatkokseen tai käyttöveden saastumiseen. Tietoliikennehäiriöihin on laadittu 
+myös oma toimintakortti. 
+ 
+Sädehoidon ARIA-järjestelmä on potilastietojärjestelmä, jota käytetään 
+sädehoitopotilaan tutkimusten ja hoidon suunnitteluun, järjestämiseen, toteutukseen ja 
+seurantaan. Se noudattaa Pirkanmaan hyvinvointialueen potilasrekisterille asetettuja 
+vaatimuksia. Palvelun toiminnasta vastaa sädehoidon fyysikot (pääkäyttäjä Antti 
+Vanhanen, varahenkilöt Antti Aula, Eeva Boman) yhdessä järjestelmätoimittajan (Varian 
+Medical Systems) kanssa, jonka kanssa järjestelmästä on ARIA-ylläpitosopimus. 
+Järjestelmän tietosuojasta vastaa Istekki Oy. ARIA on määritelty ns. kriittiseksi 
+järjestelmäksi ylläpidon ja tietoturvan osalta.  
+Syöpätautien poliklinikalla on kaksi tallentavaa valvontakameraa yleisissä tiloissa 
+käytävillä, jotka valvovat käytäviä ja ulko-ovia. Toinen kamera kuvaa myös odotustila 
+6:sta. Kuva välittyy lääkehuoneeseen ja monivalvomoon. Lääkehuoneessa on myös 
+tallentava kameravalvonta. Tallentavasta kameravalvonnasta ilmoitetaan yksikön ovilla. 
+Sädehoitoyksikössä sädehoito- ja kuvaushuoneista on videoyhteys kuvaus- ja 
+hoitolaitteiden säätötilaan potilaan liikkeen seuraamiseksi kuvauksen tai hoidon aikana. 
+Videokuvaus ei ole tallentava. Sädehoitoyksikön käytävillä on tallentavia 
+valvontakameroita, jotka kuvaavat käytäviä, ulko-ovea ja odotustiloja sekä paariaulaa. 
+Kuva välittyy hoitokoneiden säätötiloihin sekä monivalvomoon. Tallentavasta 
+videovalvonnasta ilmoitetaan yksikön ulko-ovilla. 
+RS1 ja RS2 vuodeosastoilla on tallentavat kamerat lääkehoitohuoneissa. 
+ 
+Tietosuoja ja tietoturva 
+Tietosuoja ja tietoturva ovat osa hyvinvointialueen päivittäistä toimintaa ja jokainen 
+henkilöstön jäsen on vastuussa omalta osaltaan näiden toteutumisesta. 
+Hyvinvointialueen tietosuoja- ja tietoturvapolitiikan mukaan johdolla on kokonaisvastuu 
+tietosuoja- ja tietoturvatyön johtamisesta, rekisterinpidosta sekä resursoinnista. 
+Jokainen uusi työntekijä käy pakolliset tietosuoja- ja tietoturvaosiot läpi osana 
+=====PDFPAGE 41=====
+Pirkanmaan hyvinvointialue 
+40 (60) 
+perehdytystään, ja koko henkilöstön on läpäistävä pakollinen peruskoulutus kahden 
+vuoden välein. 
+ 
+Syövänhoidon vastuualueella noudatetaan Pirhan tietosuoja- ja tietoturvaohjeistusta. 
+Syövänhoidon vastuualueella on nimetty vastuualuetasoinen tietosuoja- ja 
+tietoturvayhdyshenkilö. Yhdyshenkilö arvioi yhdessä yksiköiden esihenkilöiden kanssa 
+vuosittain toteutettavalla tietosuoja- ja tietoturvakierrolla kirjallisen protokollan 
+mukaisesti yksiköiden tietoturvan ja –suojan toteutumista, toimintakäytäntöjä ja 
+ohjeistusten ajantasaisuutta. 
+ 
+Tietoturvasuunnitelma 
+Hyvinvointialue on sosiaali- ja terveyspalvelujen järjestäjänä laatinut tietosuojaa, 
+tietoturvaa ja tietojärjestelmien turvallista käyttöä koskevan tietoturvasuunnitelman. 
+Tietoturvasuunnitelma ei ole julkinen asiakirja, mutta sen voi pyytää luettavaksi 
+tietosuojavastaavalta tai tietoturvavastaavalta. Suunnitelmaa täydennetään ja 
+päivitetään tarpeen mukaan vastaamaan lainsäädäntöä ja Pirkanmaan 
+hyvinvointialueen prosesseja. Tietoturvasuunnitelma on laadittu 28.3.2023, ja sitä on 
+päivitetty viimeksi 11.10.2024. 
+ 
+Tietosuojavastaava Katja Rajala 
+Tietoturvavastaava Henry Davidsson 
+ 
+Lisätietoja henkilöstölle: Tietosuoja- ja tietoturvaohjeet  
+ 
+Syövänhoidon vastuualueella esihenkilöt vastaavat palveluyksikössä 
+tietoturvasuunnitelman toteutumisesta. Koko vastuualueen osalta 
+tietoturvasuunnitelman toteutumisesta vastaa vastuualuejohtaja. 
+ 
+=====PDFPAGE 42=====
+Pirkanmaan hyvinvointialue 
+41 (60) 
+3.11  Asiakas- ja potilastietojen käsittely ja tietosuoja 
+Tietosuoja on perusoikeus, joka turvaa rekisteröidyn (henkilön, jonka tietoja käsitellään) 
+oikeuksien ja vapauksien toteutumisen henkilötietojen käsittelyssä. Henkilötietojen 
+käsittelyn on aina perustuttava lakiin. Henkilötietojen käsittelyn on oltava asianmukaista 
+ja tapahduttava aina tiettyä tarkoitusta varten joko asianomaisen henkilön 
+suostumuksella tai muulla laissa säädetyllä perusteella. 
+ 
+Lisätietoja: Tietosuoja - pirha.fi 
+Lisätietoja henkilöstölle: Tietosuoja- ja tietoturvaohjeet 
+ 
+Tietosuoja on osa päivittäistä toimintaa ja jokainen ammattilainen on vastuussa omalta 
+osaltaan näiden toteutumisesta syövänhoidon vastuualueella. Pirhan tietosuoja- ja 
+tietoturvaohjeet koskevat koko vastuualueen henkilöstöä ja jokainen uusi työntekijä käy 
+pakolliset tietosuoja- ja tietoturvaosiot läpi osana perehdytystään. 
+ 
+Tietosuojan ja tietoturvan peruskoulutuksessa aineistona on hyvinvointialueen tietojen 
+ja tietojärjestelmien käyttö- ja salassapitositoumus, joka tulee hyväksyä koulutuksen 
+yhteydessä. Lisäksi on suoritettava hyväksytysti tietosuoja- ja tietoturvatentti. Kaikkien 
+vastuualueen työntekijöiden on läpäistävä pakollinen peruskoulutus kahden vuoden 
+välein, jonka toteutumisesta esihenkilö huolehtii. Lisäksi tarvittaessa järjestetään 
+työntekijän tai viranhaltijan roolin tai tehtävien mukaista kohdennettua koulutusta. 
+ 
+Vastuualueen johtotiimissä käydään kerran kuukaudessa läpi ajankohtaisia tietosuojaan 
+liittyviä ohjeistuksia ja muita aiheeseen liittyviä asioita, jotka on otettu esiin toimialueen 
+johtoryhmässä. Yksiköiden vastuuhenkilöt vievät tiedoksi johtotiimissä käsitellyt asiat ja 
+ohjeistukset toimintayksiköiden ammattilaisille. 
+ 
+Toimialueella ja vastuualueella on omat tietosuoja ja -turvayhdyshenkilöt, Sari-Marja 
+Hytönen ja Leena Martikainen, joiden puoleen voi tarvittaessa kääntyä mahdollisten 
+kysymysten osalta. 
+ 
+=====PDFPAGE 43=====
+Pirkanmaan hyvinvointialue 
+42 (60) 
+Potilaalla on oikeus tarkastaa mitä henkilötietoja käsitellään, pyytää itseään koskevat 
+tiedot sekä oikeus vaatia virheelliset henkilötiedot oikaistavaksi. Potilas ohjataan 
+tekemään tämä digitaalisessa asioinnissa, OmaPirhassa (Asioi hallinnon kanssa), tai 
+hänelle annetaan tarvittava lomake täytettäväksi: Potilastietojen tarkastuspyyntö, 
+Potilastietojen oikaisupyyntö tai Selvityspyyntö henkilötietojen käsittelystä 
+rekisteritutkimuksessa. Allekirjoitettu lomake kehotetaan lähettämään postitse 
+hyvinvointialueen kirjaamoon: 
+Pirkanmaan hyvinvointialue, Kirjaamo, PL 272, 33101 Tampere 
+ 
+3.12  Lääkehoitosuunnitelma 
+Pirkanmaan hyvinvointialueen lääkehoitosuunnitelmassa, joka pohjautuu sosiaali- ja 
+terveysministeriön Turvallinen lääkehoito -oppaaseen, kuvataan yhteiset linjaukset 
+lääkehoidon toteuttamisen käytäntöihin sekä palvelulinjoilla toteutettavan lääkehoidon 
+erityispiirteet. Palvelulinjojen lääkehoitosuunnitelmissa kuvataan palvelulinjan toimi- ja 
+vastuualueilla toteutettava lääkehoito ja yhtenäiset toimintakäytännöt 
+lääkitysturvallisuuden varmistamiseksi. Jokaisessa lääkehoitoa toteuttavassa yksikössä 
+tulee lisäksi olla oma tarkentava, yksikkökohtainen lääkehoitosuunnitelma. Yksikön 
+esihenkilö vastaa yksikön lääkehoitosuunnitelman laatimisesta ja päivittämisestä.  
+ 
+Pirkanmaan hyvinvointialueen lääkehoitosuunnitelma sekä jatkossa palvelulinjatasoiset 
+lääkehoitosuunnitelmat löytyvät henkilöstölle lääkitysturvallisuussivustolta. Sivustolta 
+löytyy myös muita lääkehoidon toimintaohjeita. 
+ 
+Lisätietoja henkilöstölle: Lääkitysturvallisuus  
+ 
+Syövänhoidon vastuualueelle on laadittu yhteinen lääkehoitosuunnitelma, jota 
+tarkentavat yksiköiden lääkehoitosuunnitelmat. Lääkehoitosuunnitelmat ovat laadittu 
+pohjautuen Pirkanmaan hyvinvointialueen sairaalapalvelulinjan 
+lääkehoitosuunnitelmaan, jossa kuvataan yhtenäiset toimintakäytännöt 
+lääkitysturvallisuuden varmistamiseksi.  
+=====PDFPAGE 44=====
+Pirkanmaan hyvinvointialue 
+43 (60) 
+ 
+Syövänhoidon vastuualueen yhteisen lääkehoitosuunnitelman laatimisesta ja 
+päivittämisestä vastaa vastuualuejohtaja. Yhteistä lääkehoitosuunnitelmaa täydentävät 
+jokaisen yksikön omat lääkehoitosuunnitelmat, joiden laatimisen ja päivittämisen vastuu 
+on yksiköstä vastaavan lääkärin ja osastonhoitajan vastuulla. Lääkehoitosuunnitelmat 
+tarkastetaan ja päivitetään vuosittain ja lisäksi tarvittaessa useammin.  
+ 
+Lääkehoitosuunnitelmat toimivat lääkehoidon toteuttamisen toimintakäsikirjana ja apuna 
+perehdytyksessä. Syövänhoidon vastuualueen lääkehoitosuunnitelmat päivitettiin 
+keväällä 2025. Lääkehoitosuunnitelmien laatimiseen ja päivittämiseen osallistuvat 
+yksiköiden vastuulääkärien lisäksi yksikön lääkevastaavat, osastonhoitajat, 
+osastofarmaseutti, vastuualueen syöpälääkehoidon vastuulääkäri ja vastuualuejohtaja. 
+Yksiköiden lääkehoitosuunnitelmissa on kuvattu potilaan kotilääkitysten tarkastamisen 
+vastuut ja kotilääkityksen tarkastamisen toteutumisen seurantatavat. Osastofarmaseutti 
+työskentelee kaikissa yksiköissä ja toimii lääkkeisiin liittyvien ongelmien selvittelyn 
+tukena ja ohjeistojen laatimisessa sekä tiedon välittäjinä sairaala-apteekin ja 
+hoitoyksiköiden välillä.  
+ 
+Vastuualueella on nimetty lääkehoidon vastuulääkäri, jonka työajasta 20% on osoitettu 
+lääkehoidon kehittämiseen. Lääkehoidon vastuulääkäri toimii puheenjohtajana 
+syövänhoidon vastuualueen syöpälääkehoidon laaturyhmässä, joka kokoontuu kerran 
+kuukaudessa. Laaturyhmässä käsitellään kaikki vastuualueen ajankohtaiset 
+lääkehoidon asiat, myös lääkehoitosuunnitelman päivityksiin liittyvät asiat.  
+ 
+Syöpälääkehoidon suunnitteluun ja toteutukseen vaikuttaa potilaan paino ja ECOG-
+toimintakykyluokitus, jotka määritetään potilaan tulessa syöpähoitoon. Yksiköissä on 
+sovitut toimintatavat näiden toteutumisen seurantaan. Syöpälääkehoitoon liittyy 
+tunnettuja juuri syöpälääkehoidolle spesifisiä vaaratapahtumia: syöpälääkkeiden 
+infuusioreaktiot ja ekstravasaatiot, joita ei voida täysin välttää. Henkilöstö on koulutettu 
+näiden hoitoon ja näiden esiintymistä seurataan yksiköissä vaaratapahtumailmoitusten 
+avulla. Korkean riskin syöpälääkehoidon potilasturvallisen toteuttamisen 
+varmistamiseksi vastuualueella on käytössä useita toimintatapoja haittavaikutusten 
+=====PDFPAGE 45=====
+Pirkanmaan hyvinvointialue 
+44 (60) 
+riskien minimoimiseksi ja potilasturvallisuuden varmistamiseksi. Nämä on kuvattu 
+yksityiskohtaisesti lääkehoitosuunnitelmassa. 
+ 
+3.13  Infektioiden torjunta 
+Tartuntatautilaki velvoittaa sosiaali- ja terveydenhuollon toimintayksiköitä torjumaan 
+hoitoon liittyviä infektioita sekä lääkkeille erittäin vastustuskykyisiä mikrobeja. 
+Tartuntatautilain mukaan jokaisen toimintayksikön ja sen johtajan on huolehdittava 
+tartunnan torjunnasta, potilaiden, asiakkaiden ja henkilökunnan tarkoituksenmukaisesta 
+suojauksesta ja sijoittamisesta sekä mikrobilääkkeiden asianmukaisesta käytöstä. 
+ 
+Lisätietoja: Infektioiden torjunta ja hoito - pirha.fi  
+Lisätietoja henkilöstölle: Infektioiden torjunnan omavalvonta sote-yksiköissä  
+ 
+Syövänhoidon vastuualueen henkilöstölle on tehty hygieniayksikön toimesta infektio-
+ohjeet ja tiedotteet, jotka löytyvät Intrasta. Yksiköistä löytyy nimetyt 
+hygieniayhdyshenkilöt, joille on suunniteltua työaikaa kouluttautumiseen ja infektioiden 
+torjuntatyöhön ja on laadittu kirjallinen tehtävänkuva. Hygieniayhdyshenkilöille pyritään 
+järjestämään työaikaa 1- 2 päivää kolmen viikon työvuorolistalla. Vastuualueelle nimetty 
+hygieniahoitaja infektioyksiköstä toimii heidän tukenaan.  
+ 
+Esihenkilö huolehtii henkilöstön perusosaamisesta. Työntekijöiden tulee työskennellä 
+infektioiden torjuntaohjeiden mukaisesti ja tietää mistä Pirkanmaan hyvinvointialueen 
+infektioiden torjuntaohjeet löytyvät. Esihenkilö valvoo, että tartuntatautilain mukaiset 
+rokotukset ja terveystarkastukset on hoidettu asianmukaisesti. Työntekijät osallistuvat 
+säännöllisesti infektioiden torjunnan koulutuksiin, joita voi järjestää esimerkiksi 
+hygieniayhdyshenkilö. Hygieniayhdyshenkilöt perehdyttävät uudet työntekijät 
+infektioiden torjuntaohjeisiin. 
+ 
+Kaikkien työntekijöiden on tunnettava käsihygieniaohjeet ja toimittava niiden mukaisesti. 
+Yksiköissä huolehditaan, että saatavilla on riittävästi käsihuuhteita ja ne on sijoitettu 
+=====PDFPAGE 46=====
+Pirkanmaan hyvinvointialue 
+45 (60) 
+paikkoihin, joista niitä on helppo ottaa. Käsihuuhteen kulutusta seurataan säännöllisesti. 
+Mikäli kulutus on liian vähäistä, selvitetään vähäisen kulutuksen syyt ja suunnitellaan ja 
+toteutetaan toimia kulutuksen lisäämiseksi. Yksikössä tehdään käsien katsastuksia 
+käsihygieniaohjeen mukaisesti. Hoitohenkilöstö on velvoitettu suorittamaan kahden 
+vuoden välein Pirhan Moodlessa Infektioiden torjunta terveydenhuollon 
+hoitohenkilöstölle verkkokurssin ja lääkärit on velvoitettu suorittamaan Oppiportin 
+Infektioiden torjunta verkkokurssin. 
+ 
+Esihenkilö varmistaa, että henkilökunta osaa tunnistaa epidemian ja aloittaa 
+torjuntatoimet mahdollisimman varhain. Tarvittaessa konsultoidaan infektioyksikköä tai 
+alueen hygieniahoitajaa. Epidemioista täytetään epidemiaseurantalomake epidemian 
+päätyttyä. 
+ 
+Syövänhoidon vastuualueella seurataan hoitoon liittyviä infektioita säännöllisesti ja 
+tarvittaessa suunnitellaan ja toteutetaan toimia. Hoitoon liittyvät infektiot ilmoitetaan 
+Sairaalan Antibiootti- ja Infektiojärjestelmään (SAI). Vastuualueen lääkäreille on laadittu 
+hoitoon liittyvien infektioiden tunnistamiseen ohjeistus, joka perehdytetään uusiille 
+lääkäreille. Infektiolääkärin koulutukset vastuualueen hoitajille ja lääkäreille järjestetään 
+puolen vuoden välein tiistaimeetingissä. 
+ 
+Sairaalahuollon palvelusopimus jäte- ja pyykkihuollon osalta päivitetään vuosittain ja 
+tarvittaessa yksiköissä. Yksiköt vastaavat jätteiden ja pyykkien keräykseen tarvittavien 
+astioiden, telineiden ja jätepussien hankinnasta ja kustannuksista. Terveydenhuollon 
+erityisjätteiden ja lääkejätteiden huolellinen säilytys ja pakkaaminen Pirhan 
+jäteprosessin ohjeiden mukaisesti on hoitohenkilökunnan vastuulla. Sairaalahuoltajat 
+vaihtavat täyttyneet jätepussit ja huolehtivat jätteiden ja pyykkien toimittamisesta pois 
+yksiköistä. Sairaalahuoltajat huolehtivat myös varotoimihuoneiden jäte- ja pyykkipussien 
+toimittamisesta pois osastoilta varotoimiohjeistuksen mukaisesti. Sytostaattijätteet 
+hävitetään asianmukaisesti käyttämällä ilmatiivisti sulkeutuvaa Pactosafe®-jätteiden 
+säilytysjärjestelmää. Tämä mahdollistaa hoitajille terveydelle vaarallisten 
+sytostaattijätteiden turvallisen käsittelyn. Ilmatiiviit sytostaattijätepussit siirretään 
+Pactosafe®-järjestelmästä erillisiin tynnyreihin, jotka Tuomilogistiikka noutaa ja hävittää 
+=====PDFPAGE 47=====
+Pirkanmaan hyvinvointialue 
+46 (60) 
+heidän säädösten mukaisesti. Tuomilogistiikan vastuulla on myös tartuntavaarallisten ja 
+särmäis- ja lasijätteiden kuljetus, joille on erilliset astiat yksiköissä. Jokainen työntekijä 
+on vastuussa omien tietosuojattavien paperien hävittämisestä mahdollisimman pian 
+niiden jäätyä tarpeettomaksi viemällä ne lukittuun tietosuojajätteen astiaan. 
+ 
+4 Omavalvonnan riskienhallinta  
+Turvallisuuskulttuuri luo perustan organisaation riskienhallinnalle. 
+Jokaisen työntekijän tulee ottaa vastuu, arvioida tilanteita ja työtään asiakkaaseen ja 
+potilaaseen kohdistuvien riskien kannalta ja kehittää toimintaa jatkuvasti 
+turvallisemmaksi. 
+ 
+4.1 Riskienhallinnan vastuut, riskien tunnistaminen ja arvioiminen 
+Riskienhallinnan vastuut 
+Palveluyksiköiden vastuuhenkilöt, osastonhoitaja ja vastuulääkäri, vastaavat yksikön 
+riskienhallinnasta, riskien tunnistamisesta sekä riskien arvioimisesta jatkuvana 
+toimintana. Vastuualuejohtaja vastaa koko vastuualueen riskienhallinnan 
+kokonaisuudesta lääketieteelliseltä osalta ja ylihoitaja hoitotieteen osalta. 
+ 
+Riskien tunnistaminen ja arvioiminen 
+Riskien tunnistaminen perustuu järjestelmälliseen vaaratapahtumien ja poikkeamien 
+raportointiin, toimintaympäristön, tietosuojan ja tietoturvan sekä työtapaturmien että 
+teknisten toimintahäiriöiden seurantaan (HaiPro-raportointijärjestelmä). 
+Sähköisen Haipro-raportointijärjestelmän vuoden 2025 ilmoitusten analysoinnin 
+perusteella vastuualueen keskeisiä riskejä ovat: 
+=====PDFPAGE 48=====
+Pirkanmaan hyvinvointialue 
+47 (60) 
+• Lääkehoidon virheet (39 % kaikista ilmoituksista): väärä annos, antotapa tai 
+ajankohta; antovirheet ja jakovirheet. 
+• Tiedonkulun ja dokumentoinnin puutteet (23,8 %): virheellinen tai puuttuva 
+potilastieto, ajanvarausvirheet, lähetteiden käsittelyvirheet. 
+• Hoidon järjestelyihin liittyvät viiveet ja virheet (10 %): hoidon saatavuuden 
+puutteet, siirtovirheet. 
+• Työympäristöön liittyvät riskit: kaatumiset ja putoamiset (5 %), tekniset 
+toimintahäiriöt (hissit, turvajärjestelmät).¨ 
+• Työturvallisuusriskit: liiallinen työkuormitus, henkilöstön riittämättömyys ja 
+väkivallan uhka (4,5 %). 
+• Laitteiden ja tarvikkeiden toimintahäiriöt: huono toimintakunto, virheellinen käyttö. 
+• Säteily- ja hoitotekniset virheet: sädehoidon annossuunnittelussa ja 
+toteutuksessa. 
+ 
+Riskit arvioidaan HaiPro-järjestelmässä riskiluokituksella: 
+• I Merkityksetön riski 
+• II Vähäinen riski 
+• III Kohtalainen riski 
+• IV Merkittävä riski 
+• V Vakava riski 
+Arviointi perustuu: 
+• Todennäköisyyteen (kuinka usein riski voi toteutua) 
+• Vaikutukseen (haitan vakavuus asiakkaalle/potilaalle ja yksikölle) 
+• Seurauksiin (esim. hoidon viivästyminen, vakava haitta, imagohaitta) 
+ 
+Suurin osa vastuualueen riskeistä sijoittuu luokkiin II–III (vähäinen–kohtalainen riski), 
+mutta yksittäiset IV-luokan riskit liittyvät lääkehoidon virheisiin ja hoidon viivästymisiin. 
+ 
+ 
+Lisätietoja henkilöstölle: Riskienhallinta  
+ 
+=====PDFPAGE 49=====
+Pirkanmaan hyvinvointialue 
+48 (60) 
+4.2 Riskienhallinnan keinot sekä epäkohtien ja puutteiden käsittely 
+Toiminnan suunnittelulla ehkäistään ennalta tunnistettujen riskien toteutumista. 
+Hyvinvointialueella on käytössä järjestelmä (HaiPro), johon työntekijä ilmoittaa asiakas- 
+ja potilasturvallisuuteen liittyvät vaaratapahtumat, epäkohdat tai epäkohdan uhat sekä 
+työturvallisuuteen, toimintaympäristöön, tietosuojaan ja tietoturvaan liittyvät havainnot ja 
+tapahtumat. 
+ 
+Sote-valvontalain 29 § velvoittaa hyvinvointialueen henkilöstöön kuuluvan tai 
+vastaavissa tehtävissä toimeksiantosuhteessa tai alihankkijana toimivan henkilön 
+ilmoittamaan viipymättä palveluyksikön vastuuhenkilölle tai muulle toiminnan 
+valvonnasta vastaavalle henkilölle, jos hän tehtävissään huomaa tai saa tietoonsa 
+epäkohdan tai ilmeisen epäkohdan uhan asiakkaan tai potilaan sosiaali- tai 
+terveydenhuollon toteuttamisessa taikka muun lainvastaisuuden. 
+ 
+Palveluyksikön esihenkilöt vastaavat ilmoitusten käsittelystä, tarvittavien korjaavien ja 
+ehkäisevien toimien suunnittelusta ja toteutuksesta tapahtumien toistumisen 
+estämiseksi. Esihenkilö voi käyttää tapahtumien selvittämisessä palveluyksikön 
+turvallisuusasiantuntijoita (esimerkiksi lääkevastaavat), mutta esihenkilö päättää 
+toimenpiteistä. Esihenkilöiden tulee käsitellä tapahtumia säännöllisesti yhdessä 
+henkilöstön kanssa. Esihenkilö vastaa suunnitelmien ja toteutettujen toimien 
+kirjaamisesta ja seuraa toteutettujen toimien vaikutuksia. 
+ 
+Asiakkaan tai potilaan palveluun, hoivaan tai hoitoon liittyvästä vakavasta 
+vaaratapahtumasta käynnistetään vakavan vaaratapahtuman tutkinta tai 
+vaaratapahtuman perusteellinen tarkastelu. 
+ 
+Lisätietoja henkilöstölle: Vakavan vaaratapahtuman tutkinta 
+Lisätietoja henkilöstölle: Vaaratapahtumat ja epäkohtailmoitukset  
+ 
+ 
+ 
+ 
+=====PDFPAGE 50=====
+Pirkanmaan hyvinvointialue 
+49 (60) 
+Prosessien kuvaus potilasturvallisuuden parantamisessa 
+Syövänhoidon vastuualueella toteutetaan korkean riskin hoitoja, kuten syöpälääke- ja 
+sädehoitoja. Näiden hoitojen luonteen takia toimintaan liittyviä riskejä sekä 
+potilasturvallisuutta hallitaan ja ennaltaehkäistään kuvaamalla yksiköiden keskeiset 
+prosessit. 
+Hyvin laaditut prosessikuvaukset muodostavat perustan riskien tunnistamiselle ja 
+hallinnalle, sillä ne dokumentoivat prosessin olennaiset vaiheet. Kun hoitoprosessit 
+kuvataan vaiheittain – esimerkiksi potilaan vastaanotto, hoidon suunnittelu, 
+syöpälääkehoito, sädehoito ja potilassiirrot – saadaan näkyviin monimutkaiset 
+vuorovaikutukset ja mahdolliset pullonkaulat. Näiden karttojen avulla organisaatio voi 
+tunnistaa riskipisteet ja ottaa käyttöön ennakoivia, turvallisuutta parantavia 
+toimenpiteitä. 
+Prosessikuvausten avulla varmistetaan yhtenäiset toimintatavat, kuten tarkistuslistojen 
+käyttö syöpälääke- ja sädehoidossa. Tämä vähentää työntekijöiden välisiä vaihteluita ja 
+takaa, että potilaan hoito toteutuu yhdenmukaisesti korkeiden laatuvaatimusten 
+mukaisesti. Prosessikartat edistävät myös poikkihallinnollista ymmärrystä: lääkärit, 
+hoitajat, tekninen henkilökunta ja hallinto näkevät selkeästi, miten heidän tehtävänsä 
+liittyvät kokonaisuuteen. Tämä parantaa yhteistä tilannekuvaa, vähentää 
+väärinkäsityksiä ja tukee tiimityöskentelyä sekä perehdytystä. 
+Prosessikuvausten avulla voidaan tunnistaa kuormittuneet vaiheet, turhat odotus- ja 
+siirtymävaiheet, riskikohdat sekä päällekkäisyydet. Tehokkuuden paraneminen näkyy 
+potilaan sujuvampana hoitokokemuksena ja virheiden mahdollisuuden vähenemisenä. 
+Yksiköiden vastuuhenkilöt vastaavat prosessien ajantasaisuudesta ja henkilökunnan 
+perehdytyksestä.  
+ 
+Varautuminen syöpähoitojen riskeihin 
+Syöpähoitoihin liittyy vakaviakin riskejä, joita ei voida täysin poistaa, mutta joihin 
+voidaan varautua. Näitä riskejä ovat esimerkiksi syöpälääkeinfuusioiden komplikaatiot, 
+infuusioreaktiot sekä ekstravasaatiot. Suurin osa infuusioreaktioista on lieviä, mutta 
+harvinaisissa tapauksissa ne voivat olla vakavia ja jopa hengenvaarallisia. 
+=====PDFPAGE 51=====
+Pirkanmaan hyvinvointialue 
+50 (60) 
+Ekstravasaatiossa lääke vuotaa laskimosta ympäröiviin kudoksiin annostelun aikana, 
+mikä voi aiheuttaa merkittäviä kudosvaurioita. Vastuualueella raportoiduista 
+lääkehoidon vaaratapahtumista 17,6 % johtui odottamattomista potilasreaktioista. 
+Näistä 52 % oli syöpälääkkeiden aiheuttamia infuusioreaktioita (26 tapausta) ja 32 % 
+ekstravasaatiotapauksia (16 tapausta). Näiden riskien hallintaan on laadittu 
+ohjeistukset, syöpätautien poliklinikan lääkehoitoyksikössä on aina lääkäri paikalla, ja 
+elvytystilanteita harjoitellaan säännöllisesti.  
+ 
+Työturvallisuusriskit 
+Työturvallisuusriskit kartoitetaan moniammatillisesti yksiköissä ja tunnistetut vaara- ja 
+haittatekijät on poistettava mahdollisuuksien mukaan. Riskien arvioinnissa  
+käytetään Granite - riskienarviointiohjelmaa. Granite- riskiarviointiohjelmaa päivitetään 
+yksiköittäin kaksi kertaa vuodessa ja aina tilanteiden muuttuessa. Työturvallisuusriskien 
+vähentämisen vastuussa ovat esihenkilöt ja johto, mutta toimenpiteitä vastuutetaan 
+myös muille työntekijöille heidän osaamisensa huomioiden. 
+ 
+Turvallisuuspoikkeamailmoitukset 
+Syövänhoidon vastuualueella kannustetaan henkilökuntaa tekemään 
+turvallisuuspoikkeamailmoituksia HaiPro-järjestelmään potilas-, työ- ja 
+toimintaympäristöturvallisuuteen sekä tietosuojaa ja tietoturvaan liittyvistä tapahtumista 
+sekä erityisesti mahdollisista riskeistä jo ennakoivasti. Henkilöstön osaaminen 
+varmistetaan Vaaratapahtuman ja epäkohdan ilmoittaminen -verkkokurssilla, jonka 
+suorittamista esihenkilö valvoo. Esihenkilöiden osaaminen varmistetaan Pirhan 
+verkkokoulutuksella Vaaratapahtuman ja epäkohdan käsittely.  
+ 
+Toimintayksiköissä pyritään käsittelemään turvallisuuspoikkeamailmoitukset viipymättä, 
+mutta kuitenkin vähintään kahden viikon sisällä. Toimintayksiköissä on toimintamalli, 
+jossa turvallisuuspoikkeamailmoituksia käydään läpi moniammatillisesti kerran 
+kuukaudessa. Lisäksi turvallisuuspoikkeamailmoituksia käsitellään henkilökunnan 
+kanssa. Näissä molemmissa tilaisuuksissa pohditaan yhdessä mahdollisia  
+kehittämistoimia tapahtumien ja läheltä piti tilanteiden ehkäisemiseksi tulevaisuudessa 
+tai ainakin niihin liittyvien riskien pienentämiseksi. Näitä kehittämistoimia jaetaan 
+=====PDFPAGE 52=====
+Pirkanmaan hyvinvointialue 
+51 (60) 
+muiden toimialueen toimintayksiköiden tietoon ja käyttöönotettavaksi omissa 
+toimintayksiköissään toimialueen turvallisuuspoikkeamakäsittelijöiden kokouksessa 
+kolme kertaa vuodessa. 
+ 
+Tietoturvaloukkaukset 
+Jokaisella vastuualueen ammattilaisella on velvollisuus ilmoittaa henkilötietojen 
+tietoturvaloukkauksesta toimintayksikön esihenkilölle ja tietosuojatiimille heti, kun on 
+sen havainnut tai saanut tietoonsa. Henkilötietojen tietoturvaloukkauksiin liittyvät 
+tietosuojavastaavien jatkotoimia vaativat ilmoitukset käsitellään viipymättä, koska on 
+lakisääteinen velvollisuus ilmoittaa tapahtuneesta tietoturvaloukkauksesta 72 tunnin 
+kuluessa tietosuojavaltuutetun toimistoon. 
+ 
+Hoitoon liittyvät vakavat vaaratapahtumat 
+Vastuualueilla toteutetaan potilaan hoitoon liittyvän vaaratapahtuman tutkinta Pirhan 
+ohjeiden mukaan.  Välittömänä toimenpiteenä vakavan vaaratapahtuman jälkeen on 
+varmistaa potilaan turvallisuus ja informoida lääkäriä ja/tai esihenkilöä sekä kirjata 
+tapahtuma asiakirjoihin. Toiminnasta vastaava esihenkilö ilmoittaa tapahtumasta 
+vastuualuejohtajalle, joka tiedottaa tapahtumasta hallinnolliselle ylilääkärille.  
+Hallinnollinen ylilääkäri päättää tutkinnan käynnistämisestä ohjeistuksen mukaisesti.  
+Potilaalle ja/tai läheisille kerrotaan tapahtuneesta salassapitosäännökset huomioiden 
+mahdollisimman pian, viimeistään 24 tunnin sisällä. Tapahtumahetkellä potilaan 
+hoidosta vastaavan lääkäri kertoo potilaalle ja/tai hänen läheisilleen tapahtuneesta 
+avoimesti sekä järjestää tarvittaessa kriisiapua. Tutkinnan tavoitteena on löytää 
+tapahtuman taustalla olevat, järjestelmän toimintaan liittyvät tekijät, puuttuvat  
+suojausmekanismit sekä muut kehittämiskohteet. Tarkoitus on parantaa 
+potilasturvallisuutta ja estää vastaavanlaisten tilanteiden toistuminen. Tutkinnasta 
+tehtävät raportit eivät liity potilaan hoitoon, eikä niitä liitetä potilasasiakirjoihin. 
+Tutkinnasta laaditut asiakirjat luovutetaan pyynnöstä vain Valviralle tai/ja 
+Aluehallintovirastolle. Vakavan vaaratapahtuman jälkeen yksikön esimies varmistaa, 
+että tapahtumassa mukana olleen henkilöstön tukitoimenpiteet aloitetaan 
+mahdollisimman pian tapahtuman jälkeen. Esimies vastaa siitä, että yksikön muun 
+henkilökunnan kanssa keskustellaan tapahtuneesta. 
+=====PDFPAGE 53=====
+Pirkanmaan hyvinvointialue 
+52 (60) 
+ 
+Sädehoidon vaaratapahtumat 
+Kaikista sädehoidossa toteutuneista potilasvahinkotapauksista ja myös virheistä, jotka 
+eivät ole johtaneet vahinkoon potilaalle samoin kuin tapahtumista, jotka olisivat voineet 
+aiheuttaa vahinkoa potilaalle tai säteilyaltistusta henkilökunnalle tehdään selvitys ja 
+kirjataan tapahtuma HaiPro-järjestelmään sekä yksikön omaan poikkeavien 
+tapahtumien tietokantaan. Mikäli poikkeama säteilynkäytössä ylittää Säteilylain 
+2018/859 §130 sekä STUK määräyksen STUK S/8/2024 mukaiset kriteerit, se 
+raportoidaan myös STUK:een ja jos tapahtuma on laitteeseen liittyvä, raportti lähetetään 
+myös Fimeaan (Lääkinnälliset laitteet, Ilmoitus vaaratilanteesta), jonne lähetetään myös 
+laitteita koskevat säteilyn käyttöön liittymättömät tapahtumat. Poikkeavien tapahtumien 
+kirjaamisesta ja raportoinnista STUK:een ja Fimeaan vastaa säteilyturvallisuusvastaava 
+ja ne käsitellään yksikön laaturyhmässä. 
+ 
+4.3 Riskienhallinnan seuranta, raportointi ja osaamisen 
+varmistaminen 
+Riskienhallinnan seuranta 
+Vaara- ja haittatapahtumien raportointijärjestelmän (HaiPro) ilmoitukset käsitellään 
+jokaisessa toimintayksikössä säännöllisesti moniammatillisesti esihenkilöiden johdolla.  
+Toimintayksiköissä on toimintamalli, jossa turvallisuuspoikkeamailmoituksia käydään 
+läpi moniammatillisesti kerran kuukaudessa. 
+ 
+Vastuualueella tehdään vuosittain Tietosuoja- ja tietoturvakierto jokaisessa 
+toimintayksikössä. Kierrolla on käytössä sähköisessä muodossa oleva  
+tarkastelulomake, johon merkitään mahdolliset kehittämiskohteet, aikataulu ja 
+vastuuhenkilö. Väkivallan vähentämisen itsearviointi tehdään kerran vuodessa ja siihen 
+on myös käytössä sähköinen lomake. 
+ 
+Syöpälääkehoidon vaaratapahtumia ja ohjeistuksia tarkastellaan vastuualuetasoisesti 
+kuukausittain kokoontuvassa syöpälääkehoidon laaturyhmässä.  
+=====PDFPAGE 54=====
+Pirkanmaan hyvinvointialue 
+53 (60) 
+Sädehoidon vaaratapahtumia käsitellään kuukausittain laaturyhmässä ja kerran 
+vuodessa sädehoidon laatujärjestelmän johdon katsauksessa.   
+ 
+ 
+Riskienhallinnan raportointi 
+Turvallisuuspoikkeamailmoituksia käsitellään henkilökunnan kanssa. Näissä 
+molemmissa tilaisuuksissa pohditaan yhdessä mahdollisia kehittämistoimia tapahtumien 
+ja läheltä piti tilanteiden ehkäisemiseksi tulevaisuudessa tai ainakin niihin liittyvien 
+riskien pienentämiseksi. Näitä kehittämistoimia jaetaan muiden toimialueen 
+toimintayksiköiden tietoon ja implementoitavaksi omissa toimintayksiköissään 
+toimialueen turvallisuuspoikkeamakäsittelijöiden kokouksessa kolme kertaa vuodessa ja 
+vastuualueen omissa kokouksissa kaksi kertaa vuodessa.  
+ 
+Vastuualueen turvallisuuspoikkeamailmoituksista HaiPro-järjestelmästä laaditaan 
+Pirkanmaan hyvinvointialueen yhteiset laatumittarit raporttiyhteenveto 3 kuukauden 
+välein. Raportissa tehdään vertailua edellisen vuoden vastaavan ajan tapahtumiin, 
+jolloin havaitaan mahdollinen muutos. Lisäksi raportista käy ilmi, millaisia  
+turvallisuuspoikkeamatapahtumia on kyseisenä aikajaksona tapahtunut. Raportti 
+käydään läpi toimialueen johtoryhmässä ja syövähoidon vastuualueen johtotiimissä 
+kolmen kuukauden välein, jossa tarvittaessa sovitaan kehittämistoimet ja vastuuhenkilöt 
+sekä seuranta vastuu. Syövänhoidon vastuualueen omat seurantaindikaattorit 
+raportoidaan 6 kk välein johtotiimissä. 
+ 
+Tietosuoja- ja tietoturvakierrosta ja väkivallan vähentämisen itsearvioinnista tehdään 
+vastuualuekohtainen yhteenveto, jonka tuloksia ja tehtyjä kehittämistoimia tarkastellaan 
+vastuualuetasolla.  
+ 
+Pirkanmaan hyvinvointialueen yhteiset laatumittarit perustuvat hoitoon tai palveluun 
+liittyvien vaaratapahtumien ja epäkohtien seurantaindikaattoreihin, jotka on kuvattu 
+kohdassa 3.1 (sivu 13). Syövänhoidon vastuualueen julkaistava raportti kirjataan 
+yhdenmukaiseen raporttipohjaan ja julkaistaan kolmen kuukauden välein Pirha.fi 
+sivustolla seuraavan aikataulun mukaisesti:  
+=====PDFPAGE 55=====
+Pirkanmaan hyvinvointialue 
+54 (60) 
+ 
+Raportoitava ajanjakso Raportin julkaisu 
+10-12/2025 13.2.2026 
+1-3/2026 6.5.2026 
+4-6/2026 19.8.2026 
+7-9/2026 4.11.2026 
+ 
+ 
+Osaamisen varmistaminen 
+Riskienhallinnan osaaminen varmistetaan perehdyttämisen ja koulutuksen avulla. 
+Esihenkilöiden osaaminen varmistetaan THL:n Potilasturvaportin verkkokoulutuksella: 
+Asiakas- ja potilasturvallisuusriskien hallinta sekä Pirhan verkkokoulutuksella 
+Vaaratapahtuman ja epäkohdan käsittely. Henkilöstön osaaminen varmistetaan 
+Vaaratapahtuman ja epäkohdan ilmoittaminen -verkkokurssilla, jonka suorittamista 
+esihenkilö valvoo. 
+Vastuualueella vahvistetaan henkilöstön asiakas- ja potilasturvallisuustaitoja 
+osallistumalla erilaisiin turvallisuuskoulutuksiin ja vastuualueen turvaradoille.  
+Vastuualueen eri toimintayksiköiden turvallisuusyhdyshenkilöt ovat suorittaneet 
+turvakorttikoulutuksen. Turvallisuusyhdyshenkilöillä yhdessä esimiesten kanssa on 
+ensiarvoisen tärkeä rooli toimintayksikön turvallisuusasioiden koulutusvastuussa ja 
+toteutuksessa henkilökunnalle. 
+ 
+4.4 Ostopalvelut ja alihankinta 
+Palvelunjärjestäjä varmistaa palveluyksikön omavalvonnan ja palvelun laadun 
+toteutuminen ostopalvelu- ja alihankintatilanteissa. Sopimuksen kautta hankittavan 
+palvelun laadun tulee vastata omana toimintana tuotetun palvelun laatua. Mikäli 
+puutteita havaitaan, varmistetaan potilas- / asiakasturvallisuus ja puutteet 
+dokumentoidaan. Viipymättä otetaan yhteyttä yksikön esihenkilöön ja käynnistetään 
+vuoropuhelu sopimuskumppanin kanssa laatupoikkeaman korjaamiseksi. 
+ 
+=====PDFPAGE 56=====
+Pirkanmaan hyvinvointialue 
+55 (60) 
+Ostopalvelutilanteissa toimintaa määrittää erillinen erikoissairaanhoidon sääntökirja. 
+Syövänhoidon vastuualueella ei toteuteta hoitoja ostopalveluna. 
+ 
+4.5 Valmius- ja jatkuvuudenhallinta 
+Valmiuden- ja jatkuvuudenhallinnalla varmistetaan, että organisaatiolla on kyky hoitaa 
+sille kuuluvat tehtävät mahdollisimman häiriöttömästi ja huolehtia mahdollisista uusista, 
+tavanomaisista poikkeavista tehtävistä kaikissa tilanteissa. Pirkanmaan 
+hyvinvointialueen ydintehtävä on sosiaali-, terveys- ja pelastuspalveluiden järjestäminen 
+kaikissa olosuhteissa. 
+Kokonaisvarautuminen häiriötilanteisiin ja poikkeusoloihin muodostuu Pirkanmaan 
+hyvinvointialuetta koskevasta valmiussuunnitelmasta sekä tehtäväalueiden ja 
+palvelutuotannon valmiussuunnitelmista.  
+ 
+Lisätietoja: Pirkanmaan hyvinvointialue, valmiussuunnitelman yleinen osa - pirha.fi 
+ 
+Vastuualueen toimintayksiköissä on varauduttu kriittisen infrastruktuurin (sähkö, vesi, 
+lämpö ja tietoliikenne) häiriöiden varalle. Tietojärjestelmien ollessa pois käytöstä 
+siirrytään potilas- ja asiakastietojärjestelmiä koskevan häiriötilannesuunnitelman 
+mukaisiin menettelyihin. 
+ 
+Häiriötilanteiden (sähkökatkos, älylääkekaappien käyttö sähkökatkotilanteessa,  
+käyttövesikatkos tai käyttöveden saastuminen, tietoliikennehäiriöt, laajamittainen 
+henkilöstöpoistuma, toiminta uhka- ja vaaratilanteissa) toimintakortit ja varautumisen 
+ohjeet löytyvät henkilökunnalle täältä. 
+ 
+ 
+ 
+ 
+ 
+=====PDFPAGE 57=====
+Pirkanmaan hyvinvointialue 
+56 (60) 
+5 Omavalvonnan toimeenpano ja toteutumisen seuranta 
+5.1 Toimeenpano 
+Keväällä 2026 käynnistetään jokaisessa toimintayksikössä päivitetyn 
+omavalvontasuunnitelman läpikäynti vuoden aikana osastotunneilla ja lääkärien 
+toiminnallisissa asioissa. 
+ 
+Omavalvontasuunnitelma viedään Intro-perehdytysohjelmaan osaksi perehdytystä 
+uusille työntekijöille.  
+ 
+5.2 Toteutumisen seuranta ja raportointi 
+Omavalvonnan toteutumisen seuranta 
+Palvelualueen / yksikön vastuuhenkilöt ja henkilökunta seuraavat 
+omavalvontasuunnitelmassa kuvatun toiminnan toteutumista jatkuvasti. Jos toiminnassa 
+havaitaan puutteellisuuksia, yksikkö tekee korjaavat toimenpiteet asian kuntoon 
+saattamiseksi.  
+ 
+Omavalvonnan toteutumista seurataan säännöllisesti toimialueen johtoryhmässä, 
+vastuualueen johtotiimissä ja yksiköissä. 
+ 
+Omavalvontasuunnitelma viedään kevään 2026 aikana Toimi-järjestelmään, joka 
+mahdollistaa esihenkilöille lukukuittauksien henkilöstön omavalvontasuunnitelmaan 
+perehtymisen seuraamisen. 
+ 
+ 
+Omavalvonnan raportointi 
+Toiminnassa havaittujen epäkohtien korjaustoimenpiteet raportoidaan kolmen 
+kuukauden välein ennalta määritellyillä mittareilla. Raportit julkaistaan 
+vastuualuetasoisesti Pirkanmaan hyvinvointialueen verkkosivuilla 
+(Omavalvontasuunnitelmat - pirha.fi). 
+=====PDFPAGE 58=====
+Pirkanmaan hyvinvointialue 
+57 (60) 
+ 
+Syövänhoidon vastuualueen raportti sisältää Pirhan seurantaindikaattorien perusteella 
+tehdyt keskeiset havainnot ja niistä johdetut toimenpiteet. Raportti laaditaan 
+yhdenmukaiseen raporttipohjaan. 
+  
+=====PDFPAGE 59=====
+Pirkanmaan hyvinvointialue 
+58 (60) 
+6 Omavalvontasuunnitelman hyväksyntä 
+Omavalvontasuunnitelma päivitetty (paikka ja päiväys) 
+Tampere, 13.2.2025 
+ 
+Palveluyksikön vastuuhenkilö 
+Vastuualuejohtaja Maarit Bärlund 
+ 
+Omavalvontasuunnitelman hyväksyjä 
+Toimialuejohtaja Leena Tiainen 
+ 
+ 
+=====PDFPAGE 60=====
+ 
+ 
+Seuraa meitä somessa.
+ ir a  i
+ 

@@ -1,0 +1,610 @@
+
+=====PDFPAGE 1=====
+The Royal College of Radiologists
+Clinical Oncology
+Radiotherapy dose fractionation: fourth edition
+15
+Background
+Breast cancer is the most common cancer worldwide, and most patients in the UK are 
+diagnosed at an early stage. Radiotherapy has long been established as an important 
+treatment modality in the adjuvant and palliative setting in breast cancer. The delivery of 
+breast radiotherapy must be adapted based on the individual patients’ risk of recurrence, and 
+the risk–benefit ratio of treatment must be discussed with patients, enabling a shared care 
+decision. Technological advances and results of pivotal trials have led to significant changes 
+in practice in the UK in the past few years.
+Adjuvant radiotherapy to the breast or chest wall
+Radiotherapy can increase both local control and overall survival in the conservative 
+management of invasive primary breast cancer and in selected patients after mastectomy 
+(Level 1a).1–4 It can also reduce ipsilateral breast tumour recurrence following breast 
+conservation in patients with a diagnosis of ductal carcinoma in situ (DCIS).5,6
+Evolution of hypofractionation from 50 Gray (Gy) in 25 fractions over 5 weeks 
+to 26 Gy in 5 fractions over 1 week
+Historically the 2 Gy per fraction regimen of 50 Gy in 25 fractions over 5 weeks was the 
+standard of care as reported in the National Surgical Adjuvant Breast and Bowel Project 
+(NSABP) breast cancer trials.7 There was a practice change following publication of the START 
+trials, and the most widely used UK regimen was the hypofractionated regimen of 40 Gy in 
+15 fractions over 3 weeks as used in the UK START-B trial.8–9 Mature data from the START-A, B 
+and P trials and the Canadian OCOG study demonstrate the equivalence of hypofractionated 
+regimens for efficacy with evidence of some reduced normal tissue effects compared with 
+the previous standard of 2 Gy daily fractionation (Level 1b).3,8–13
+Following the publication of the UK FAST-Forward trial in 2020,14 there has been a rapid 
+change in practice to delivering 26 Gy in 5 fractions over 1 week as the standard of care. The 
+FAST-Forward trial was carried out in patients with early invasive breast carcinoma (pT1–3, 
+pN0–1, M0) after breast-conserving surgery (BCS) or mastectomy.14 Patients were randomised 
+on a 1:1:1 ratio to 40 Gy in 15 fractions over 3 weeks (UK standard of care), 26 Gy in 5 fractions 
+over 1 week or 27 Gy in 5 fractions over 1 week.
+4,096 patients were recruited from November 2011 to June 2014 with a median follow-up of 
+71.5 months. The primary endpoint of 5-year ipsilateral breast tumour relapse was estimated 
+as 2.1% (95% confidence interval [CI] 1.4–3.1), 1.7% (1.2–2.6) and 1.4% (0.9–2.2) after 40 Gy, 
+27 Gy and 26 Gy respectively.
+03 
+Breast cancer
+=====PDFPAGE 2=====
+The Royal College of Radiologists
+Clinical Oncology
+Radiotherapy dose fractionation: fourth edition
+16
+At 5 years, moderate or marked clinician-assessed normal tissue effects were observed in 
+98/986 (9.9%), 155/1,005 (15.4%) and 122/1,020 (11.9%) of the 40 Gy, 27 Gy and 26 Gy groups 
+respectively, all less than observed in the START trials. The odds ratio versus 40 Gy across all 
+clinician assessments in the 5-year period were 1.55 (CI 1.32–1.83, p<0.0001) and 1.12 (0.94–
+1.34, p=0.20) for 27 Gy and 26 Gy respectively. Assessments by patients and via photographs 
+showed the risk of normal tissue effects was higher for 27 Gy, but not for 26 Gy, compared 
+with the control group. Statistically the only significant difference between 26 Gy and 40 Gy 
+was for moderate/marked breast induration outside the tumour bed, but this is highly unlikely 
+to be clinically significant with small absolute numbers (2.1% for 26 Gy; 20 cases).
+Following the publication of FAST-Forward14 NICE guidance is to offer 26 Gy in 5 fractions over 
+1 week to the whole breast as the standard of care (Level 1b).3,4
+Ductal carcinoma in situ
+The FAST-Forward trial was not offered to patients with DCIS only;14 however, this patient 
+group can still be offered 26 Gy in 5 fractions over 1 week for whole-breast radiotherapy. This 
+follows the similar pragmatic implementation of 40 Gy in 15 fractions over 3 weeks for DCIS 
+following the UK START-B trial,8–9 given breast radiotherapy for DCIS does not appear to have 
+a survival advantage.15 It would be challenging to carry out a trial of 26 Gy in 5 fractions over 
+1 week as the low anticipated local recurrence rate would require a very large number of 
+participants and it is questionable whether there would be equipoise for randomisation in the 
+UK. Furthermore, the BIG-TROG DCIS trial16 demonstrated there was no difference in efficacy 
+or side-effects with moderate hypofractionation versus 50 Gy in 25 fractions over 5 weeks. 
+NICE guidance is to offer 26 Gy in 5 fractions over 1 week to the whole breast in patients with 
+DCIS.4
+Chest wall ± reconstruction
+The RCR consensus (2020)17 states that 26 Gy in 5 fractions over 1 week should be offered 
+for chest wall radiotherapy. Within FAST-Forward, participants who had mastectomies at 
+baseline included 91 patients (6.7%) in the 40 Gy group, 89 patients (6.5%) in the 27 Gy group 
+and 84 patients (6.1%) in 26 Gy group, with a solitary reported recurrence in a 40 Gy-treated 
+patient.14 Regarding reconstruction, the RCR consensus (2020)17 is that 26 Gy in 5 fractions 
+over 1 week should be considered for chest wall radiotherapy with reconstruction. Of note, 
+the trial had immediate reconstruction rates of <1% across all groups; however, there is no 
+biological reason why patients with immediate reconstruction should have a higher risk 
+of normal tissue toxicity or capsular contracture with 26 Gy in 5 fractions (versus 40 Gy in 
+15 fractions). The consensus statement for chest wall irradiation with reconstruction is to 
+consider the 5-fraction schedule and, if used, centres may wish to audit their practice. This 
+is also reflected in the NICE guidance for early and locally advanced breast cancer: diagnosis 
+and management (updated June 2023).4
+Co-morbidity and frailty
+For patients with co-morbidity and/or frailty, making daily radiotherapy difficult, the RCR 
+consensus (2020)17 is to consider 28.5 Gy in 5 fractions over 5 weeks as well as 26 Gy in 5 
+fractions over 1 week following on from the FAST results.18 In the FAST study, 915 women aged 
+≥50 years with node-negative early breast cancer were randomly assigned after microscopic 
+complete tumour resection to 50 Gy in 25 fractions versus 28.5 or 30 Gy in 5, once-weekly 
+fractions of 5.7 Gy or 6.0 Gy respectively to the whole breast. The primary endpoint was a 
+2-year change in photographic breast appearance. The 10-year FAST trial results found no 
+statistically significant difference in normal tissue event rates in the 28.5 Gy group versus the 
+50 Gy group,18 although normal tissue event rates were higher in the 30 Gy group.
+03
+Breast cancer
+=====PDFPAGE 3=====
+The Royal College of Radiologists
+Clinical Oncology
+Radiotherapy dose fractionation: fourth edition
+17
+Recommendation
+For adjuvant radiotherapy of non-nodal breast or chest wall without immediate 
+reconstruction:
+ • 26 Gy in 5 fractions over 1 week (Grade A)
+The types of evidence and the grading of recommendations used within this review are 
+based on those proposed by the Oxford Centre for Evidence-Based Medicine.3
+Partial breast irradiation (PBI)
+PBI may be an option for patients with a low risk of local relapse. Risk of local relapse is 
+highest in the region of the tumour bed,19 therefore radiotherapy can be delivered to this 
+region only, sparing the whole breast and potentially reducing side-effects.20 A meta-analysis 
+showed that PBI is associated with a higher local recurrence rate, albeit still low, compared 
+with WBI (Level 1a).3,21 However, this meta-analysis included studies covering a broad range 
+of PBI techniques and selection criteria. Some of the trials have included older surgical and 
+radiation techniques. Techniques used to deliver PBI include external beam radiotherapy 
+(EBRT), brachytherapy and intraoperative radiotherapy (IORT).
+PBI can be considered for patients ≥50 years, with low-risk tumour features as follows: Grades 
+1–2, ≤3 cm, oestrogen receptor positive (ER+), progesterone receptor positive (PR+) or human 
+epidermal growth factor receptor negative (HER2-ve) node-negative tumours, as per the 
+RCR consensus (2016).22 The consensus is to deliver PBI using EBRT, as per the IMPORT LOW 
+trial,23 or multicatheter brachytherapy using fractionation, as per the GEC-ESTRO trial.24 NICE 
+guidance recommends using EBRT when delivering PBI.4
+There are a number of international PBI trials using EBRT that have reported, but this 
+discussion is focused on the UK-led IMPORT LOW trial, as this is the PBI technique most 
+commonly used in the UK.23 Within IMPORT LOW, 2,018 women were randomised to receive 
+40 Gy to the whole breast (control), 36 Gy to the whole breast and 40 Gy to the partial breast 
+(reduced-dose group), or 40 Gy to the partial breast only (partial breast group) in 15 daily 
+treatment fractions using simple field-in-field technique. Local relapse rates were 1.1% (95% 
+CI 0.5–2.3), 0.2% (0.02–1.2) and 0.5% (0.2–1.4) in the WBI, reduced-dose and PBI groups 
+respectively at 72 months (median follow-up). The dose/fractionation in all groups were 
+identical meaning the irradiated volume was the only variable within the trial and significantly 
+less toxicity was found in the two test groups versus the control group. 
+PBI can be delivered in 1 week using the techniques in IMPORT LOW.23 Both the FAST-Forward 
+14 and IMPORT LOW 23 trials were designed in parallel with the same dose/fractionation used 
+in the control groups and with a pre-plan to consider the data together for 5 fractions of 
+PBI.  FAST-Forward showed non-inferiority with 40 Gy in 15 fractions for efficacy and similar 
+toxicity. In addition, IMPORT LOW showed non-inferiority with 40 Gy in 15 fractions for 
+efficacy and reduced toxicity. These results have enabled the FAST-Forward fractionation to 
+be seamlessly adopted for PBI, and NICE guidance is to offer 26 Gy in 5 fractions over 1 week 
+for partial breast radiotherapy.4
+Regarding multicatheter interstitial brachytherapy, GEC-ESTRO randomly assigned women 
+to PBI with interstitial brachytherapy, either high dose rate or pulsed dose rate versus WBI 
+50 Gy with a 10 Gy tumour bed boost.24 At 10 years (median follow-up), the local recurrence 
+rates were 1.58% (95% CI 0.37–2.8) in the WBI group and 3.51% (1.99–5.03) in the PBI group.25 
+03
+Breast cancer
+=====PDFPAGE 4=====
+The Royal College of Radiologists
+Clinical Oncology
+Radiotherapy dose fractionation: fourth edition
+18
+Difference in 10-year rates between the groups was 1.93% (95% CI −0.018–3.87; p=0.074). 
+There was a significantly lower incidence of treatment-related Grade 3 late side-effects in 
+patients in the PBI group compared with those in the WBI group. Fibrosis was the commonest 
+Grade 3 adverse event in both treatment groups although overall numbers were very low.
+With respect to IORT, the ELIOT26 and TARGIT trials27–28 used this technique with ELIOT 
+delivering electrons (IOeRT) and TARGIT using photons. ELIOT randomised women to 50 Gy 
+in 25 fractions over 5 weeks plus boost versus IOeRT 21 Gy to tumour bed.26 The 5-year local 
+relapse was 4.5% (95% CI 2.7–6.1) and 0.4% (95% CI 0.0–1.0) for the IOeRT and WBI groups 
+respectively (hazard ratio [HR] 9.3; 95% CI 3.3–26.3). Local relapse rates in the IOeRT group 
+were significantly greater than in patients receiving WBI but no difference in overall survival 
+was seen. Of note, several patients in the trial had high-risk features and ELIOT (and other 
+trials) began recruitment prior to the establishment of GEC-ESTRO/ASTRO guidelines.29–30 
+Toxicity was not systematically recorded but a difference in skin toxicity favouring IOeRT was 
+reported, although IOeRT patients were found to have increased fat necrosis.26
+Participants within the TARGIT trial were randomised to IORT using 50 kV photons or WBI. 
+The two strata within the trial consisted of pre-pathology where IORT was delivered at 
+time of BCS, and post-pathology where IORT was delivered after BCS where the wound 
+was reopened.27–28 Patients receiving IORT in the pre-pathology strata required additional 
+WBI (20% of patients) due to unfavourable histology results after final surgery.27 There was 
+no systematic collection of toxicity data. TARGIT-IORT is not recommended for routine 
+commissioning for adjuvant treatment of early invasive breast cancer during breast-
+conserving surgical removal of the tumour. NICE guidance recommends that if TARGIT-
+IORT is delivered it should only be done on machines that are already available and in 
+conjunction with NHS England specified clinical governance, data collection and submission 
+arrangements. Patients should be offered the NICE patient information and decision aid if 
+being offered TARGIT-IORT.31
+Recommendation
+For partial breast radiotherapy using external beam radiotherapy:
+ • 26 Gy in 5 fractions over 1 week (Grade A)
+The types of evidence and the grading of recommendations used within this review are 
+based on those proposed by the Oxford Centre for Evidence-Based Medicine.3
+Safe omission of radiotherapy following BCS
+Given the substantial reduction in local recurrences over the previous 3 decades in mostly 
+high-income countries,32 the risks of breast radiotherapy may outweigh the benefits for some 
+patients at very low risk of local recurrence. These risks include normal tissue toxicities,9 
+cardiac morbidity33 and second malignancies.34 In omission of radiotherapy RCTs conducted 
+so far, an increase in local recurrence without radiotherapy has been demonstrated but 
+without any increase in breast cancer death.35–37 In addition, it has not been possible to 
+identify which patients are at very low risk of recurrence, but an unplanned subgroup analysis 
+from PRIME II suggested that such a group may be identified.37 The 10-year update of PRIME II 
+has now been reported.38 At a median follow-up of 9.1 years, the cumulative incidence of local 
+breast cancer recurrence was 9.5% (95% CI 6.8–12.3) in the no-radiotherapy group and 0.9% 
+(0.1–1.7) in the radiotherapy group (HR 10.4; 95% CI 4.1–26.1; p<0.001). There was no statistical 
+difference in overall or breast cancer-specific survival between groups. 
+03
+Breast cancer
+=====PDFPAGE 5=====
+The Royal College of Radiologists
+Clinical Oncology
+Radiotherapy dose fractionation: fourth edition
+19
+The biomarker-directed PRIMETIME study (using IHC4+C incorporating Ki-67) investigating 
+whether radiotherapy can be safely avoided in women with very low-risk breast cancer has 
+now completed recruitment and we await the results.39 The British Association of Surgical 
+Oncology (BASO) II trial found avoidance of both radiotherapy and endocrine therapy to be 
+detrimental; therefore; compliance with endocrine therapy should be encouraged, especially 
+if radiotherapy is omitted.36
+The RCR consensus (2016) is that avoidance of radiotherapy should be considered in patients 
+≥70 years out of a research study and ≥60 years in study with T1N0 oestrogen receptor 
+positive (ER+), progesterone receptor positive (PR+), human epidermal growth factor 
+receptor negative (HER2-ve) or Grades 1–2 tumours and who are willing to take adjuvant 
+endocrine therapy for a minimum of 5 years and have regular mammograms for 10 years.22 
+NICE guidance is similarly to consider omitting radiotherapy in women who have a very low 
+absolute risk of local recurrence (defined as women aged 65 and over with tumours T1N0, 
+ER-positive, HER2-negative and Grades 1–2) willing to take adjuvant endocrine therapy for 
+a minimum of 5 years.4 The predicted absolute risks and benefits of radiotherapy should be 
+discussed with individual patients in order to reach a shared decision.
+Breast boost
+Delivery of a boost to the tumour bed following whole-breast radiotherapy reduces the risk 
+of ipsilateral breast cancer recurrence (Level 1b).3,40 However, there is no impact on overall 
+survival, and it approximately doubles the risk of moderate or severe fibrosis.
+The proportional benefit is similar across all age groups, but the absolute benefit falls with 
+increasing age and hence the biggest absolute benefit is in women under 50 years of age. 
+There is also a greater absolute benefit of boost in high-grade (G3) cancer.
+Positive resection margins, where further surgery is not possible, are an indication for breast 
+boost regardless of age.
+The breast boost volume should be defined by localising the tumour bed. Surgical clips 
+should be routinely placed during a wide local excision to aid localisation of the tumour bed.22
+Breast boost may be delivered as a sequential normofractionated or hypofractionated boost, 
+or a 15-fraction simultaneous integrated boost (SIB); for example, 48 Gy to the boost volume 
+and 40 Gy to the rest of the breast all over 3 weeks (as per IMPORT HIGH discussed below).41
+Regarding dose and fractionation for the sequential boost, 13.35 Gy in 5 fractions of 2.67 Gy 
+or 12 Gy in 4 fractions of 3 Gy assuming an α/β value for breast carcinoma of 3 Gy is similar to 
+a dose of 16 Gy in 8 fractions.22
+The UK IMPORT HIGH trial of simultaneous integrated boost (SIB) was carried out in women 
+with early high-risk invasive breast carcinoma (pT1–3pN0–pN3aM0) after BCS.41 Patients 
+were randomised on a 1:1:1 basis between 40 Gy/15 fractions to whole breast (WB) + 16 Gy/8 
+fractions sequential photon boost to tumour bed (40+16 Gy; control), 36 Gy/15 fractions to 
+WB, 40 Gy to partial breast + 48 Gy (48 Gy) or 53 Gy (53 Gy) in 15 fractions SIB to tumour 
+bed. The primary endpoint was ipsilateral breast tumour relapse (IBTR) and 2,617 women 
+consented to the trial. Smaller, more targeted boost volumes were used for all treatment 
+groups with a median boost clinical target volume (CTV) of 13 cc. After a median follow-up of 
+74.0 months, the 5-year IBTR incidence was 1.9% (95% CI 1.2–3.1) for 40+16 Gy, 2.0% (1.2–3.2) 
+for 48 Gy, 3.2% (2.2–4.7) for 53 Gy with 76 IBTR events (40+16 Gy: n=20, 48 Gy: n=21, 53 Gy: 
+n=35). The estimated absolute differences versus 40+16 Gy were 0.1% (−0.8–1.7) for 48 Gy, 
+1.4% (0.03–3.8) for 53 Gy and the upper confidence limit for 48 Gy versus 40+16 Gy indicated 
+non-inferiority for 48 Gy.
+03
+Breast cancer
+=====PDFPAGE 6=====
+The Royal College of Radiologists
+Clinical Oncology
+Radiotherapy dose fractionation: fourth edition
+20
+For clinician-reported assessments, 5-year prevalence of moderate/marked breast induration 
+was 6% (36/600) for 40+16 Gy, 5.2% (34/653) for 48 Gy and 8.9% (56/627) for 53 Gy. 
+Comparisons were similar between groups for 5-year cross-sectional, time to event and 
+longitudinal analyses, with similar levels of moderate/marked adverse events for 48 Gy versus 
+40+16 Gy and increased risk of adverse events for 53 Gy versus 48 Gy. Patient-reported 
+moderate/marked breast hardness/firmness at 5 years was significantly lower for 48 Gy 
+versus 40+16 Gy (RR 0.54, 95% CI 0.38–0.78, p=0.001) and higher after 53 Gy versus 48 Gy 
+(RR 1.61, 95% CI 1.1.0–2.35, p=0.008).
+The trial found that the local relapse event incidence is low in this higher-risk breast cancer 
+group treated with small boost volumes and image-guided radiotherapy, whether the boost 
+is delivered sequentially or simultaneously. Rates of 5-year moderate/marked adverse events 
+were low.41 SIB is a safe treatment with reduced patient visits, and further escalation of boost 
+dose does not appear advantageous.
+Radiotherapy technique
+Two-dimensional (2-D) computed tomography-based planning is no longer recommended 
+for adjuvant radiotherapy to the breast or chest wall. The ESTRO guidelines for volume-based 
+breast radiotherapy planning are recommended for contouring breast, chest wall, nodal 
+groups and organs at risk.42
+Simple, forward-planned, field-in-field intensity-modulated radiation therapy (IMRT) reduces 
+late toxicity and improves cosmetic outcome compared with a non-IMRT technique, following 
+adjuvant whole-breast radiotherapy (Level 1b).3,43
+Breast radiotherapy may slightly increase the lifetime risk of heart disease for some 
+people.33,44–45 For most women irradiated in the UK, the absolute risk of developing radiation-
+induced heart disease is less than 1% risk to age 80 years, but the risk varies according to 
+pre-existing risk of heart disease and mean heart radiation dose. Techniques to limit heart 
+dose without reducing target dose coverage should be considered for patients with left-sided 
+breast cancer and those requiring internal mammary nodal irradiation. These include multileaf 
+collimation (MLC) cardiac shielding and voluntary deep inspiration breath hold (DIBH) 
+techniques (Level 2b).3,45 Wide tangents technique or intensity-modulated arc techniques 
+(IMAT), both using DIBH, are recommended.
+Recommendations
+For patients requiring a boost:
+ • 15 fractions SIB, 48 Gy to boost volume and 40 Gy to rest of breast (Grade A)
+ • 26 Gy in 5 fractions whole-breast radiotherapy plus either a sequential normo-
+fractionated boost or a hypofractionated boost (delivered in no more than 5 
+fractions); for example, 13.35 Gy in 5 fractions of 2.67 Gy or 12 Gy in 4 fractions of 3 Gy 
+(Grade C)
+The types of evidence and the grading of recommendations used within this review are 
+based on those proposed by the Oxford Centre for Evidence-Based Medicine.3
+03
+Breast cancer
+=====PDFPAGE 7=====
+The Royal College of Radiologists
+Clinical Oncology
+Radiotherapy dose fractionation: fourth edition
+21
+Regional nodal irradiation
+Axilla and supraclavicular fossa
+Axillary sentinel lymph node biopsy (SLNB) is the recommended standard procedure for 
+axillary staging in early breast cancer with clinically negative lymph nodes.46 Most patients 
+with clinically positive nodes will require axillary treatment.
+Nodal irradiation is not recommended following a negative SLNB.4
+Following a positive SLNB, the AMAROS trial demonstrated an axillary recurrence rate of 
+0.93% for ALND versus 1.82% for axillary radiotherapy after a median follow-up of 10 years.47 
+The trial was underpowered for the planned non-inferiority test due to the low number of 
+events. Axillary radiotherapy produced lower long-term toxicity compared with ALND (Level 
+2b).3
+The American College of Surgeons Oncology Group (ACOS-OG) Z0011 trial demonstrated 
+low axillary recurrence rates with no significant differences for SLNB plus standard breast 
+radiotherapy compared with SLNB followed by ALND plus standard breast radiotherapy in an 
+RCT comparing ALND versus no axillary treatment in women with T1/T2 clinically N0 but with 
+1–2 positive sentinel lymph nodes involved undergoing breast-conserving treatment at 10 
+years.48 Most patients were over 50 years of age and had Grade 1 or 2, T1, oestrogen receptor 
+positive, ductal cancer with no lymphovascular invasion (LVI) (Level 2b).3,48 However, there are 
+significant methodological concerns about the Z0011 trial.49
+The UK randomised, multicentre, non-inferiority POSNOC trial has completed recruitment in 
+patients with 1–2 positive sentinel lymph nodes, randomised to standard adjuvant therapy and 
+axillary treatment (ALND or axillary radiotherapy) versus standard adjuvant therapy alone.50 
+The primary endpoint is axillary recurrence at 5 years. When available, it is anticipated that the 
+results may provide a definitive answer to the question of managing a positive SLNB axilla.
+Radiotherapy to the ipsilateral supraclavicular fossa (SCF), now referred to as nodal levels 3 
+and 4, is recommended for N2 or N3 disease following ALND. Axillary radiotherapy following 
+ALND produces significant toxicity if it specifically targets the operated nodal levels and 
+should only be considered in patients with very high risk of recurrence (high proportion of 
+involved nodes, extensive extranodal disease or biologically aggressive cancer) and high 
+suspicion of residual cancer within the surgically operated nodal region. There is no evidence 
+that radiotherapy to the operated axilla following ALND improves overall survival from breast 
+cancer, but it increases the risk of lymphoedema.
+The UK FAST-Forward nodal substudy is testing whether a 1-week schedule of adjuvant 
+radiotherapy to Levels 1–3 axilla ± Level 4 (SCF) is non-inferior to a standard 3-week schedule 
+in terms of patient-reported arm swelling and function in patients with early breast cancer.51 
+The 1-week schedules were as per the main FAST-Forward trial, but the 27 Gy treatment 
+schedule was closed early due to an increase in normal tissue effects from the main trial, 
+which were statistically but not necessarily clinically significant. The definitive assessment 
+of normal tissue non-inferiority will be at 5 years; however, preliminary descriptive 3-year 
+data have shown that moderate/marked changes are low overall as assessed by patients and 
+clinicians.52 It should also be noted that this study did not include internal mammary chain 
+(IMC) irradiation as this had not been widely adopted in the UK at the time of recruitment.
+The North American MA20 trial randomised node-positive or high-risk node-negative patients 
+to WBI versus WBI plus regional nodal irradiation (RNI) including the ipsilateral axilla, SCF 
+and IMC, dose 50 Gy in 25 fractions.53 It demonstrated improved disease-free survival (DFS) 
+in the RNI group (82% versus 77%, HR 0.76, p=0.01) after a median follow-up of 9.5 years. 
+03
+Breast cancer
+=====PDFPAGE 8=====
+The Royal College of Radiologists
+Clinical Oncology
+Radiotherapy dose fractionation: fourth edition
+22
+The primary endpoint of improved overall survival was not met. There was a small absolute 
+increase in the risk of acute pneumonitis and late lymphoedema in the RNI group (Level 1b).3,53
+The EORTC 22922/10925 trial randomised patients with medial or centrally located breast 
+cancers irrespective of nodal status or node-positive lateral tumours to WBI/chest wall 
+irradiation versus WBI/chest wall irradiation plus RNI, defined as ipsilateral medial SCF and 
+internal mammary nodes, dose 50 Gy in 25 fractions.54 After a median follow-up of 10 years, it 
+demonstrated an improvement in DFS in the RNI group (72.1% versus 69.1%, HR 0.89, p=0.04). 
+The primary endpoint of improved overall survival was not met (Level 1b).3,54
+Both the MA2053 and EORTC 22922/1092554 trials demonstrated improved distant DFS, 
+but this did not translate to improved overall survival and the long-term effects of RNI on 
+cardiovascular morbidity and mortality and second cancer rates in these trials are not known. 
+A Danish population-based non-randomised cohort study has shown improved survival with 
+internal mammary nodal (IMN) irradiation, especially in women with larger (>50 millimetres 
+[mm]) tumours or with more than 4 involved nodes (Level 2b).3,55
+The EBCTCG carried out a regional nodal individual patient data meta-analysis consisting 
+of 14,324 women participating in 16 trials.56 Trials initiated between 1961 and 1978 were 
+categorised as ‘older’ trials where participants were treated with historical radiation 
+techniques using direct anterior radiation beams. Of note, radiation within this group did 
+not usually involve radiotherapy to the chest wall in node-positive disease and was only 
+given to the regional nodes in the interventional groups. In contrast, trials started between 
+1989 and 2008 were categorised as ‘newer’ trials and patients treated with more advanced 
+radiotherapy techniques. It was found that in the 2,157 patients who participated in the 8 
+‘older’ trials, radiotherapy did not reduce breast cancer mortality (RR 1.04, 95% CI 0.91–1·20; 
+p=0.55) but significantly increased non-breast cancer mortality. However, in the 12,167 
+patients who participated in the 8 ‘newer’ trials, regional node radiotherapy significantly 
+reduced recurrence (RR 0.88, 95% CI 0.81–0.95; p=0.0008). The main effect was on distant 
+recurrence as few regional node recurrences were reported. In addition, radiotherapy 
+significantly reduced breast cancer mortality (RR 0.87, 95% CI 0.80–0.94; p=0.0010) 
+but there was no significant increase in non-breast cancer mortality. It is likely that the 
+differences in findings between the ‘older’ and ‘newer’ trials are related to advancements 
+in radiotherapy techniques over the decades, in addition to the inclusion of breast and 
+chest wall radiotherapy, as well as regional nodal radiotherapy in the newer trials. Although 
+rate ratio (proportional benefit) of regional radiotherapy is similar across all subgroups, the 
+absolute benefit varies according to the individual patient’s risk of recurrence. For example, 
+for those patients with node-negative disease, 1–3 lymph nodes positive or 4 or more lymph 
+nodes positive, the reduction in 15-year breast cancer mortality was 1–2%, 2–3% and 4–5% 
+respectively.
+Regarding data for hypofractionated nodal irradiation, the DBCG Skagen-1 trial is a phase 
+3 randomised trial of 40 Gy in 15 fractions over 3 weeks versus 50 Gy in 25 fractions over 
+5 weeks in 2,946 node-positive patients.57 Tumour bed boosts were delivered as SIB using 
+similar techniques to IMPORT HIGH. RNI included the IMC. The primary endpoint was the 
+risk of ipsilateral arm lymphoedema ≥10% at 3 years after radiotherapy compared with the 
+contralateral arm. The results presented in abstract form demonstrated low event rates and 
+no differences between the patients receiving 40 Gy and 50 Gy. There was also no difference 
+in locoregional recurrence, distant recurrence or overall mortality.57 The Skagen-1 trial was 
+the first RCT to report 40 Gy/15 fractions versus 50 Gy/25 fractions for RNI including IMC 
+irradiation, and no increase in toxicity with 40 Gy in 15 fractions was observed.
+03
+Breast cancer
+=====PDFPAGE 9=====
+The Royal College of Radiologists
+Clinical Oncology
+Radiotherapy dose fractionation: fourth edition
+23
+In addition, the HypoG-01 trial reported results in abstract form.58 The HypoG-01 trial 
+is a phase 3 randomised trial of 40 Gy in 15 fractions over 3 weeks versus 50 Gy in 25 
+fractions over 5 weeks in 1,265 patients. All patients received nodal and chest wall or breast 
+radiotherapy. The primary endpoint was time to occurrence of arm lymphoedema after 
+radiotherapy defined as ≥10% increase in arm circumference compared with the contralateral 
+arm. At 3 years, ipsilateral arm lymphoedema rates were similar in both groups and it was 
+found that 40 Gy/15 fractions is non-inferior to 50 Gy/25 fractions in terms of lymphoedema 
+risk. Both HypoG-01 and DBCG Skagen-1 provide evidence supporting the use of 40 Gy in 15 
+fractions over 3 weeks with regard to lymphoedema risk.
+Recommendation
+For regional nodal irradiation:
+ • 40 Gy in 15 fractions over 3 weeks (Grade B)
+The types of evidence and the grading of recommendations used within this review are 
+based on those proposed by the Oxford Centre for Evidence-Based Medicine.3
+Palliative treatment
+There is limited trial evidence evaluating the optimum schedules for palliative radiotherapy 
+to the breast, chest wall or regional nodes. The most common doses range from 20 Gy to 
+40 Gy over 5–15 fractions. Weekly treatments over 5–6 weeks to a total of 30–36 Gy are also 
+commonly used (Grade D).3
+References
+1. Early Breast Cancer Trialists’ Collaborative Group (EBCTCG), Darby S, McGale P et al. Effect of radiotherapy 
+after breast-conserving surgery on 10-year recurrence and 15-year breast cancer death: meta-analysis of 
+individual patient data for 10,801 women in 17 randomised trials. Lancet 2011; 378(9804): 1707–1716.
+2. Early Breast Cancer Trialists’ Collaborative Group (EBCTCG), McGale P, Taylor C et al. Effect of radiotherapy 
+after mastectomy and axillary surgery on 10-year recurrence and 20-year breast cancer mortality: meta-
+analysis of individual patient data for 8135 women in 22 randomised trials. Lancet 2014; 383(9935): 2127–
+2135.
+3. www.cebm.ox.ac.uk/resources/levels-of-evidence/oxford-centre-for-evidence-based-medicine-levels-of-
+evidence-march-2009 (last accessed 28/11/2023).
+4. NICE. Early and locally advanced breast cancer: diagnosis and management. NICE guideline [NG101]. 18 July 
+2018. Last updated: 14 June 2023. www.nice.org.uk/guidance/ng101.
+5. Early Breast Cancer Trialists’ Collaborative Group (EBCTCG), Correa C, McGale P et al. Overview of the 
+randomized trials of radiotherapy in ductal carcinoma-in-situ of the breast. J Natl Cancer Inst Monogr 2010; 
+2010(41): 162–177.
+6. Nilsson C, Valachis A. The role of boost and hypofractionation as adjuvant radiotherapy in patients with DCIS: 
+a meta-analysis of observational studies. Radiother Oncol 2015; 114(1): 50–55.
+7. Fisher B, Anderson S, Bryant J et al. Twenty-year follow-up of a randomized trial comparing total mastectomy, 
+lumpectomy, and lumpectomy plus irradiation for the treatment of invasive breast cancer. N Engl J Med 2002; 
+347(16): 1233–1241.
+03
+Breast cancer
+=====PDFPAGE 10=====
+The Royal College of Radiologists
+Clinical Oncology
+Radiotherapy dose fractionation: fourth edition
+24
+8. Bentzen SM, Agarwal RK, Aird EGA et al. The UK standardisation of breast radiotherapy (START) trial B of 
+radiotherapy hypofractionation for treatment of early breast cancer: a randomised trial. Lancet 2008; 371: 
+1098–1107.
+9. Haviland JS, Owen JR, Dewar JA et al. The UK standardisation of breast radiotherapy (START) trials of 
+radiotherapy hypofractionation for treatment of early breast cancer: 10-year follow-up results of two 
+randomised controlled trials. Lancet Oncol 2013; 14(11): 1086–1094.
+10. Owen JR, Ashton A, Bliss JM et al. Effect of radiotherapy fraction size on tumour control in patients with early-
+stage breast cancer after local tumour excision: long-term results of a randomised trial. Lancet Oncol 2006; 
+7: 467–71. doi:10.1016/S1470-2045(06)70699-4.
+11. Bentzen SM, Agrawal RK, Aird EG et al. The UK standardisation of breast radiotherapy (START) Trial A of 
+radiotherapy hypofractionation for treatment of early breast cancer: a randomised trial. Lancet Oncol 2008; 
+9: 331–41. doi:10.1016/S1470-2045(08)70077-9.
+12. Whelan TJ, Pignol JP, Levine MN et al. Long-term results of hypofractionated radiation therapy for breast 
+cancer. N Engl J Med 2010; 362(6): 513–520.
+13. Brunt AM, Haviland JS. Hypofractionation: the standard for external beam breast irradiation. Breast 2023 Jun; 
+69: 410–416. doi: 10.1016/j.breast.2023.04.006. Epub 2023 Apr 24. PMID: 37120889; PMCID: PMC10172745.
+14. Brunt AM, Haviland JS, Wheatley DA et al. Hypofractionated breast radiotherapy for 1 week versus 3 weeks 
+(FAST-Forward): 5-year efficacy and late normal tissue effects results from a multicentre, non-inferiority, 
+randomised, phase 3 trial. Lancet 2020; 395(10237): 1613–1626.
+15. Early Breast Cancer Trialists’ Collaborative Group (EBCTCG), Correa C, McGale P et al. Overview of the 
+randomized trials of radiotherapy in ductal carcinoma in situ of the breast. J Natl Cancer Inst Monogr 2010; 
+2010(41): 162–177.
+16. Chua BH, Link EK, Kunkler IH et al. Radiation doses and fractionation schedules in non-low-risk ductal 
+carcinoma in situ in the breast (BIG 3-07/TROG 07.01): a randomised, factorial, multicentre, open-label, phase 
+3 study. Lancet 2022; 400(10350): 431–440. doi:10.1016/S0140–6736(22)01246-6.
+17. The Royal College of Radiologists. Postoperative radiotherapy for breast cancer: hypofractionation. RCR 
+consensus statements. London: The Royal College of Radiologists, 2020.  
+www.rcr.ac.uk/publication/postoperative-radiotherapy-breast-cancer-hypofractionation-rcr-consensus-
+statements (accessed Nov 2022).
+18. Brunt AM, Haviland JS, Sydenham M et al. Ten-year results of FAST: a randomized controlled of 5-fraction 
+whole-breast radiotherapy for early breast cancer. J Clin Oncol 2020; 38: 3261–3272.
+19. Salvadori B, Marubini E, Miceli R et al. Reoperation for locally recurrent breast cancer in patients previously 
+treated with conservative surgery. Br J Surg 1999; 86: 84–87.
+20. Borger JH, Kemperman H, Smitt HS et al. Dose and volume effects on fibrosis after breast conservation 
+therapy. Int J Radiat Oncol Biol Phys 1994; 30: 1073–81.
+21. Marta GN, Macedo CR, Carvalho H de A, Hanna SA, da Silva JLF, Riera R. Accelerated partial irradiation for 
+breast cancer: systematic review and meta-analysis of 8653 women in eight randomized trials. Radiother 
+Oncol 2015; 114(1): 42–29.
+22. The Royal College of Radiologists. Postoperative radiotherapy for breast cancer: UK consensus statements. 
+London: The Royal College of Radiologists, 2016. www.rcr.ac.uk/clinical-oncology/service-delivery/
+postoperative-radiotherapy-breast-cancer-uk-consensus-statements (accessed Nov 2022).
+23. Coles CE, Griffin CL, Kirby AM et al. Partial-breast radiotherapy after breast conservation surgery for patients 
+with early breast cancer (UK IMPORT LOW trial): 5-year results from a multicentre, randomised, controlled, 
+phase 3, non-inferiority trial. Lancet 2017; 390(10099): 1048–1060. doi:10.1016/S0140-6736(17)31145-5.
+24. Strnad V, Ott OJ, Hildebrandt G et al. 5-year results of accelerated partial breast irradiation using sole 
+interstitial multicatheter brachytherapy versus whole-breast irradiation with boost after breast-conserving 
+surgery for low-risk invasive and in-situ carcinoma of the female breast: a randomised, phase 3, non-
+inferiority trial. Lancet 2016; 387(10015): 229–238. doi:10.1016/S0140-6736(15)00471-7.
+03
+Breast cancer
+=====PDFPAGE 11=====
+The Royal College of Radiologists
+Clinical Oncology
+Radiotherapy dose fractionation: fourth edition
+25
+25. Strnad V, Polgár C, Ott OJ et al for Groupe Européen de Curiethérapie and European Society for Radiotherapy 
+and Oncology. Accelerated partial breast irradiation using sole interstitial multicatheter brachytherapy 
+compared with whole-breast irradiation with boost for early breast cancer: 10-year results of a GEC-ESTRO 
+randomised, phase 3, non-inferiority trial. Lancet Oncol 2023 Mar; 24(3): 262–272. doi:10.1016/S1470-
+2045(23)00018-9. Epub 2023 Feb 1. PMID: 36738756.
+26. Veronesi U, Orecchia R, Maisonneuve P et al. Intraoperative radiotherapy versus external radiotherapy for 
+early breast cancer (ELIOT): a randomised controlled equivalence trial. Lancet Oncol 2013; 14: 1269–7 7.
+27. Vaidya JS, Bulsara M, Baum M et al. Long term survival and local control outcomes from single dose targeted 
+intraoperative radiotherapy during lumpectomy (TARGIT-IORT) for early breast cancer: TARGIT-A randomised 
+clinical trial. BMJ 2020; 370: m2836.
+28. Vaidya JS, Bulsara M, Saunders C et al. Effect of delayed targeted intraoperative radiotherapy vs whole-breast 
+radiotherapy on local recurrence and survival: long-term results from the TARGIT-A randomized clinical trial in 
+early breast cancer. JAMA Oncol 2020; 6: e200249–e200249.
+29. Polgár C, Van Limbergen E, Pötter R et al. Patient selection for accelerated partial-breast irradiation (APBI) 
+after breast-conserving surgery: recommendations of the Groupe Européen de Curiethérapie-European 
+Society for Therapeutic Radiology and Oncology (GEC-ESTRO) breast cancer working group based on clinical 
+evidence (2009). Radiother Oncol 2010; 94: 264–73.
+30. Correa C, Harris EE, Leonardi MC et al. Accelerated partial breast irradiation: executive summary for the 
+update of an ASTRO evidence-based consensus statement. Pract Radiat Oncol 2017; 7: 73–79.
+31. www.nice.org.uk/guidance/ta501/chapter/1-Recommendations
+32. Mannino M, Yarnold JR. Local relapse rates are falling after breast conserving surgery and systemic therapy 
+for early breast cancer: can radiotherapy ever be safely withheld? Radiother Oncol 2009; 90: 14–22.
+33. Darby SC, Ewertz M, McGale P et al. Risk of ischemic heart disease in women after radiotherapy for breast 
+cancer. N Engl J Med 2013; 368: 987–98.
+34. Grantzau T, Overgaard J. Risk of second non-breast cancer after radiotherapy for breast cancer: a systematic 
+review and meta-analysis of 762,468 patients. Radiother Oncol 2015; 114: 56–65.
+35. Hughes KS, Schnaper LA, Berry D et al. Lumpectomy plus tamoxifen with or without irradiation in women 70 
+years of age or older with early breast cancer. New Engl J Med 2004; 351(10): 971–977.
+36. Blamey RW, Bates T, Chetty U et al. Radiotherapy or tamoxifen after conserving surgery for breast cancers 
+of excellent prognosis: British Association of Surgical Oncology (BASO) II trial. Eur J Cancer 2013; 49(10): 
+2294–2302.
+37. Kunkler IH, Williams LJ, Jack WJ et al. Breast-conserving surgery with or without irradiation in women aged 
+65 years or older with early breast cancer (PRIME II): a randomised controlled trial. Lancet Oncol 2015; 16(3): 
+266–273.
+38. Kunkler IH, Williams LJ, Jack WJL, Cameron DA, Dixon JM. Breast-conserving surgery with or without 
+irradiation in early breast cancer. N Engl J Med 2023 Feb 16; 388(7): 585–594. doi:10.1056/NEJMoa2207586. 
+PMID: 36791159.
+39. Kirwan CC, Coles CE, Bliss J, PRIMETIME Protocol Working Group. It’s PRIMETIME. Postoperative avoidance 
+of radiotherapy: biomarker selection of women at very low risk of local recurrence. Clin Oncol (R Coll Radiol) 
+2016; 28(9): 594–596. doi:10.1016/j.clon.2016.06.007.
+40. Bartelink H, Maingon P, Poortmans P et al. Whole-breast irradiation with or without a boost for patients 
+treated with breast-conserving surgery for early breast cancer: 20-year follow-up of a randomised phase 3 
+trial. Lancet Oncol 2015; 16(1): 47–56.
+41. Coles C, Haviland JS, Kirby A et al. Dose-escalated simultaneous integrated boost radiotherapy in early 
+breast cancer (IMPORT HIGH): a multicentre, phase 3, non-inferiority, open-label, randomised controlled trial. 
+Lancet 2023; 401(10394): 2124–2137. doi:10.1016/S0140-6736(23)00619-0.
+42. Offersen BV, Boersma LJ, Kirkove C et al. ESTRO consensus guideline on target volume delineation for 
+elective radiation therapy of early stage breast cancer. Radiother Oncol 2015; 114(1): 3–10.
+03
+Breast cancer
+=====PDFPAGE 12=====
+The Royal College of Radiologists
+Clinical Oncology
+Radiotherapy dose fractionation: fourth edition
+26
+43. Mukesh MB, Barnett GC, Wilkinson JS et al. Randomized controlled trial of intensity-modulated radiotherapy 
+for early breast cancer: 5-year results confirm superior overall cosmesis. J Clin Oncol 2013; 31(36): 4488–
+4495.
+44. Chan EK, Woods R, Virani S et al. Long-term mortality from cardiac causes after adjuvant hypofractionated 
+vs. conventional radiotherapy for localized left-sided breast cancer. Radiother Oncol 2015; 114(1): 73–78.
+45. Donovan E, Coles C, Westbury C, Yarnold J. Breast. In: PJ Hoskin (ed). External beam therapy, 2nd edn. Oxford: 
+Oxford University Press, 2012: 49–100.
+46. Association of Breast Surgery at Baso 2009. Surgical guidelines for the management of breast cancer. Eur J 
+Surg Oncol 2009; 35 Suppl 1: 1–22. doi: 10.1016/j.ejso.2009.01.008. Epub 2009 Mar 18. PMID: 19299100.
+47. EJ Rutgers, M Donker, C Poncet et al. Abstract GS4-01: radiotherapy or surgery of the axilla after a positive 
+sentinel node in breast cancer patients: 10 year follow up results of the EORTC AMAROS trial (EORTC 
+10981/22023). Cancer Res 15 February 2019; 79 (4_Supplement): GS4–01. https://aacrjournals.org/
+cancerres/article/79/4_Supplement/GS4-01/638606/Abstract-GS4-01-Radiotherapy-or-surgery-of-the
+48. Giuliano AE, Ballman KV, McCall L et al. Effect of axillary dissection vs no axillary dissection on 10-year 
+overall survival among women with invasive breast cancer and sentinel node metastasis: the ACOSOG Z0011 
+(Alliance) randomized clinical trial. JAMA 2017; 318(10): 918–926. doi:10.1001/jama.2017.1147.
+49. Goyal A, Dodwell D. POSNOC: a randomised trial looking at axillary treatment in women with one or two 
+sentinel nodes with macrometastases. Clin Oncol (R Coll Radiol) 2015 Dec; 27(12): 692–5. doi: 10.1016/j.
+clon.2015.07.005. Epub 2015 Aug 5. PMID: 26254841.
+50. POSNOC trial. www.posnoc.co.uk (accessed Nov 2022).
+51. Wheatley D, Haviland J, Patel J et al. OC-0101 first results of FAST-Forward phase 3 RCT nodal substudy: 
+3-year normal tissue effects. Radiother Oncol 2022; 170. S75–S76. doi:10.1016/S0167-8140(22)02477-X.
+52. Brunt AM, Haviland JS, Wheatley DA et al. One versus three weeks hypofractionated whole breast 
+radiotherapy for early breast cancer treatment: the FAST-Forward phase III RCT. Health Technol Assess 2023; 
+27(25). doi:10.3310/WWBF1044.
+53. Whelan TJ, Olivotto IA, Parulekar WR et al. Regional nodal irradiation in early-stage breast cancer: results of 
+the MA20 prospective randomised controlled trial. N Eng J Med 2015; 373(4): 307–316.
+54. Poortmans P, Collette S, Kirkove C et al. Internal mammary and medial supraclavicular irradiation in breast 
+cancer. N Eng J Med 2015; 373(4): 317–327.
+55. Thorsen LB, Offersen BV, Danø H et al. DBCG-IMN: a population-based cohort study on the effect of internal 
+mammary node irradiation in early node-positive breast cancer. J Clin Oncol 2016; 34(4): 314–320.
+56. Early Breast Cancer Trialists’ Collaborative Group (EBCTCG). Radiotherapy to regional nodes in early breast 
+cancer: an individual patient data meta-analysis of 14,324 women in 16 trials. Lancet 2023 Nov 3: S0140–
+6736(23)01082-6. doi:10.1016/S0140-6736(23)01082-6. Epub ahead of print. PMID: 37931633.
+57. Offerson BV, Alsner J, Nielsen HM et al (2022). OC-0102 DBCG phase III randomized trial of hypo- vs 
+standard fractionated RT in 2879 pN+ breast cancer pts. Radiother Oncol 170: S76–77. doi:10.1016/S0167-
+8140(22)02478-1.
+58. Rivera S, Karamouza E, Kirova Y et al (2023). OC-0758. HypoG01:UNICANCER phase 3 trial of locoregional 
+hypo vs normo fractionated RT in early breast cancer. Radiother Oncol 182: S625–S626. doi:10.1016/S0167-
+8140(23)08699-1.
+Acknowledgements
+With thanks to lead authors Dr Indrani Bhattacharya (Cambridge University Hospitals NHS 
+Foundation Trust), Prof Charlotte Coles (University of Cambridge) and Prof Murray Brunt 
+(School of Medicine, Keele University) for reviewing and updating this chapter of the 
+guidance.
+03
+Breast cancer

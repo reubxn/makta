@@ -1,0 +1,1009 @@
+URL: https://paijatha.fi/palvelut-ja-hoitoon-hakeutuminen/terveyspalvelut/poliklinikat/sadehoitoyksikko/
+ACCESSED: 2026-11-14
+
+Sädehoitoyksikkö - Päijät-Hämeen hyvinvointialue
+ Hyppää sisältöön 
+Anna palautetta
+Päijät-Sote-sovellus
+Suomi
+English
+searchHaku
+ search
+eastEtusivueast
+chevron_rightPalvelut ja hoitoon hakeutuminenchevron_right
+eastDigitaaliset palveluteast
+chevron_rightIkääntyneiden palvelutchevron_right
+eastAteriapalvelueast
+eastGeriatrian poliklinikkaeast
+eastIkääntyneiden asiakasohjauseast
+chevron_rightKotihoitochevron_right
+eastKotihoitoeast
+eastEtähoivaeast
+eastLiikkumista tukeva palvelu (kuljetuspalvelu)east
+eastOmaishoito ikääntyneilleeast
+eastPalliatiivinen kotisairaalaeast
+eastPerhehoito ikääntyneilleeast
+eastPeseytymispalvelueast
+eastSeniorineuvolaeast
+eastSiivous, asiointi ja vaatehuoltoeast
+eastSosiaalinen kuntoutus ikääntyneilleeast
+eastSosiaalityö ja sosiaaliohjaus ikääntyneilleeast
+chevron_rightSotainvalidien ja rintamaveteraanien palvelutchevron_right
+eastRintamaveteraanien kuntoutuseast
+eastSotainvalidien ja rintamaveteraanien kotona asumista tukevat palveluteast
+eastTurvapalvelueast
+eastYhteisöllinen asumineneast
+eastYmpärivuorokautinen palveluasumineneast
+chevron_rightKuntoutus ja apuvälinepalvelutchevron_right
+eastAikuisten fysioterapiaeast
+eastAikuisten puheterapiaeast
+eastAikuisten toimintaterapiaeast
+eastApuvälinepalveluteast
+eastFysiatrian poliklinikkaeast
+chevron_rightKotikuntoutuschevron_right
+eastKotikuntoutuseast
+eastKotikuntoutuksen terapiapalveluteast
+eastTehostettu kotikuntoutuseast
+eastKuntoutusohjauseast
+eastKuntoutusosastoteast
+chevron_rightKuntoutustutkimuspoliklinikkachevron_right
+eastKuntoutustutkimuspoliklinikkaeast
+eastKuntoutustutkimuspoliklinikan psykologipalveluteast
+chevron_rightLasten ja nuorten kuntoutus ja apuvälinepalvelutchevron_right
+eastLasten ja nuorten kuntoutus ja apuvälinepalveluteast
+eastLasten ja nuorten fysioterapiaeast
+eastLasten ja nuorten kuntoutus keskussairaalassaeast
+eastLasten ja nuorten neuropsykologinen kuntoutuseast
+eastLasten ja nuorten puheterapiaeast
+eastLasten ja nuorten toimintaterapiaeast
+eastNeuropsykologinen kuntoutuseast
+eastRintamaveteraanien kuntoutuseast
+chevron_rightLasten, nuorten ja perheiden palvelutchevron_right
+eastAlaikäisten mielenterveys- ja perheneuvolapalveluteast
+eastAlaikäisen nepsy-oireisen polkueast
+eastAlaikäisten psykiatriset palveluteast
+eastKutsuntatarkastukseteast
+eastLapsiperheiden arjen tuen palveluteast
+eastLasten ja nuorten hammashoitoeast
+chevron_rightLasten ja nuorten kuntoutus ja apuvälinepalvelutchevron_right
+eastLasten ja nuorten kuntoutus ja apuvälinepalveluteast
+eastLasten ja nuorten fysioterapiaeast
+eastLasten ja nuorten kuntoutus keskussairaalassaeast
+eastLasten ja nuorten neuropsykologinen kuntoutuseast
+eastLasten ja nuorten puheterapiaeast
+eastLasten ja nuorten toimintaterapiaeast
+chevron_rightLasten ja nuorten sairaalapalvelutchevron_right
+eastLasten ja nuorten neurologian poliklinikkaeast
+eastLasten kotisairaalaeast
+eastLastenneurologian osasto 14east
+eastLastentautien osasto 12east
+eastLastentautien poliklinikkaeast
+eastVastasyntyneiden teho- ja tarkkailuosastoeast
+chevron_rightLastensuojelu ja perhesosiaalityöchevron_right
+eastLastensuojelu ja perhesosiaalityöeast
+eastLastensuojelun avohuoltoeast
+eastNuorten jälkihuoltoeast
+chevron_rightLastensuojelun perhehoitochevron_right
+eastLastensuojelun perhehoitoeast
+eastPerhehoitajaksi hakeutumineneast
+eastPerhehoitajana toimimineneast
+eastToimiville perhehoitajilleeast
+eastLastensuojelun sijaishuoltoeast
+eastPerhesosiaalityöeast
+chevron_rightTukihenkilö- ja tukiperhetoimintachevron_right
+eastTukihenkilö- ja tukiperhetoimintaeast
+eastTukiperheenä ja tukihenkilönä toimimineneast
+chevron_rightNeuvolapalvelutchevron_right
+eastNeuvolapalveluteast
+eastLastenneuvolaeast
+chevron_rightPerhevalmennuschevron_right
+eastPerhevalmennuseast
+eastVerkkovalmennuseast
+eastÄitiysneuvolaeast
+eastAvoneuvolaeast
+chevron_rightOpiskeluhuoltopalvelutchevron_right
+eastKouluterveydenhuoltoeast
+eastKuraattoripalveluteast
+eastOpiskeluhuollon psykologipalveluteast
+eastOpiskeluterveydenhuoltoeast
+eastTietoa opiskeluhuoltopalveluistaeast
+eastPerheoikeudelliset palveluteast
+eastPäijät-Hämeen perhekeskuseast
+eastSynnyttämään Lahteeneast
+chevron_rightMielenterveys- ja päihdepalvelutchevron_right
+eastAlaikäisten mielenterveys- ja perheneuvolapalveluteast
+eastAlaikäisten psykiatriset palveluteast
+eastMielenterveyspalveluteast
+eastPsykiatrian osastoteast
+eastPsykiatrian poliklinikateast
+eastPäihde- ja riippuvuuspalveluteast
+eastPelastustoimen palveluteast
+eastPäivystys ja kiireellinen hoitoeast
+chevron_rightSosiaalipalvelut aikuisillechevron_right
+eastAsiakasohjauseast
+eastAsunnottomien asumispalveluteast
+eastKuntouttava työtoimintaeast
+eastMaahanmuuttajapalveluteast
+eastPäiväkeskuseast
+eastSosiaalinen kuntoutuseast
+eastTaloudellinen tukieast
+eastTyöllistymistä edistävä monialaisen tuen yhteistoimintamalli (TYM)east
+chevron_rightTerveyspalvelutchevron_right
+eastDiabeteshoitajan vastaanottoeast
+chevron_rightHammashoito ja suun terveyschevron_right
+eastAikuisten hammashoitoeast
+eastLasten ja nuorten hammashoitoeast
+eastOpiskelijoiden hammashoitoeast
+eastHoitajan tai lääkärin vastaanotto sote-keskuksessaeast
+eastHoitotarvikejakelueast
+eastJalkojen hoitoeast
+chevron_rightKliininen fysiologia ja neurofysiologiachevron_right
+eastKliininen fysiologiaeast
+eastKliininen neurofysiologiaeast
+eastLaboratoriopalveluteast
+eastLakisääteinen työterveyshuolto työnantajilleeast
+chevron_rightMuistivastaanotto ja muistisairauksien hoitochevron_right
+eastGeriatrian poliklinikkaeast
+eastMuistihoitajan vastaanottoeast
+chevron_rightOsastotchevron_right
+eastKeuhkosairauksien osastoeast
+eastKirurgian osastot R3-R5east
+chevron_rightKotisairaalachevron_right
+eastAkuutti24 kotisairaalaeast
+eastLasten kotisairaalaeast
+eastPalliatiivinen kotisairaalaeast
+eastKuntoutusosastoteast
+eastLastenneurologian osasto 14east
+eastLastentautien osasto 12east
+eastNaistentautien osastoeast
+eastNeurologian osastoeast
+eastPerusterveydenhuollon osastoteast
+eastPsykiatrian osastoteast
+eastPäivystysosastoeast
+eastSelviämishoitoyksikköeast
+eastSisätautiosastot 1 ja 2east
+eastSydänvalvontaeast
+chevron_rightSynnyttäjien ja naistentautien päivystyschevron_right
+eastSynnyttäjien ja naistentautien päivystyseast
+eastSeksuaaliväkivaltaa kohdanneiden tukiyksikköeast
+eastSynnyttäjien osasto R2east
+eastSynnytysosastoeast
+eastTeho- ja valvontaosastoeast
+eastVastasyntyneiden teho- ja tarkkailuosastoeast
+chevron_rightPerhesuunnittelu- ja ehkäisyneuvontachevron_right
+eastLapsettomuustutkimukset ja hedelmällisyyseast
+eastRaskauden ehkäisyeast
+eastRaskauden keskeytyseast
+chevron_rightPoliklinikatchevron_right
+eastEndokrinologia ja diabetespoliklinikkaeast
+eastFysiatrian poliklinikkaeast
+eastGeriatrian poliklinikkaeast
+eastIhotautien ja allergologian poliklinikkaeast
+eastInfektiosairauksien poliklinikkaeast
+eastKeuhkosairauksien poliklinikkaeast
+eastKipukonsultaatiopoliklinikkaeast
+eastKirurgian poliklinikkaeast
+chevron_rightKorva-, nenä- ja kurkkutautien poliklinikkachevron_right
+eastKorva-, nenä- ja kurkkutautien poliklinikkaeast
+eastKuulokeskuseast
+eastKuntoutustutkimuspoliklinikkaeast
+eastLasten ja nuorten kuntoutus keskussairaalassaeast
+eastLasten ja nuorten neurologian poliklinikkaeast
+eastLastentautien poliklinikkaeast
+eastLeikkausyksikköeast
+eastMunuaiskeskuseast
+eastNaistentautien poliklinikkaeast
+eastNeurologian poliklinikkaeast
+eastPalliatiivinen poliklinikkaeast
+eastPsykiatrian poliklinikateast
+eastReumapoliklinikkaeast
+chevron_rightSilmäklinikan yksikötchevron_right
+eastSilmäklinikkaeast
+eastSilmätautien leikkausosastoeast
+eastSilmätautien poliklinikkaeast
+eastSuu- ja leukakirurgian poliklinikkaeast
+eastSydänkeskuseast
+eastSyöpätautien poliklinikkaeast
+eastSädehoitoyksikköeast
+eastUrologian poliklinikkaeast
+eastVatsakeskuseast
+eastVerisairauksien poliklinikkaeast
+eastÄitiyspoliklinikkaeast
+eastRavitsemusterapiaeast
+eastReseptien uusintaeast
+eastRokotukseteast
+chevron_rightRöntgen ja kuvantaminenchevron_right
+eastErikoissairaanhoidon kuvantamispalveluteast
+eastIsotooppilääketiedeeast
+eastSote-keskusten kuvantamispalveluteast
+eastSeksitauditeast
+eastSeulonnateast
+eastTyöttömien terveystarkastukseteast
+chevron_rightTerveyttä ja hyvinvointia edistävät palvelutchevron_right
+eastAsiantuntijayksikköeast
+eastArjen avuksi -näyttelyeast
+eastAlkoholinkäytön vähentämineneast
+eastKaatumisen ehkäisyeast
+eastLiikuntaneuvontaeast
+eastLuontohyvinvointi ja terveysmetsäeast
+eastLuustoterveyseast
+eastLähisuhdeturvallisuuseast
+eastRaha- ja digipelaamineneast
+eastRavitsemuseast
+eastTukea tupakoinnin lopettamiseeneast
+eastTyypin 2 diabeteksen ehkäisyeast
+eastTyöote-toimintamallieast
+eastUniterveyseast
+chevron_rightVammaispalvelutchevron_right
+eastVammaispalveluteast
+eastAsumisen tuki vammaisilleeast
+eastErityinen osallisuuden tuki vammaisilleeast
+eastEsteettömän asumisen tuki vammaisilleeast
+eastHenkilökohtainen apu vammaisilleeast
+eastLiikkumisen tuki vammaisilleeast
+eastLyhytaikainen huolenpito vammaisilleeast
+eastOmaishoito vammaisilleeast
+eastPerhehoito vammaisilleeast
+eastTaloudellinen tuki vammaisilleeast
+eastTuettu päätöksenteko vammaisilleeast
+eastTukihenkilötoiminta vammaisilleeast
+eastTyöhönvalmennus vammaisilleeast
+eastTyöllistymistä tukeva toiminta, työtoiminta ja päivätoiminta vammaisilleeast
+eastVaativa moniammatillinen tuki vammaisilleeast
+eastValmennus vammaisilleeast
+eastHyvinvointiopaseast
+chevron_rightAsiointiopaschevron_right
+eastAjanvaraus ja perumineneast
+eastArkistoeast
+eastAsiakas- ja potilasturvallisuuseast
+eastAsiakasmaksuteast
+eastDigihoitopoluteast
+eastDigitaalinen postieast
+eastDrooniohjeeast
+eastHoitoon ja palveluihin pääsyeast
+eastHoitopaikan valintaeast
+eastKeskussairaalan palveluteast
+eastKirjaamoeast
+eastLäheisensä menettäneelleeast
+eastMatkakorvaukseteast
+eastOdotatko puhelua hyvinvointialueelta? east
+eastPalveluseteliteast
+eastPuolesta asiointieast
+eastReseptien uusintaeast
+eastSairaalan sosiaalityöeast
+eastSairaalasielunhoitoeast
+eastSosiaali- ja potilasasiavastaavaeast
+eastTulkkaus- ja käännöspalveluteast
+eastTulossa hoitoon tai leikkaukseeneast
+eastValokuvaus ja videoimineneast
+eastVierailuohjeet ja potilastiedusteluteast
+chevron_rightTietoa meistächevron_right
+chevron_rightTietoa hyvinvointialueestachevron_right
+eastHyvinvointialueeast
+eastAsiakirjajulkisuuskuvauseast
+chevron_rightKestävä kehityschevron_right
+eastKestävä kehitys hyvinvointialueellaeast
+eastLuontoaskel terveyteen -ohjelmaeast
+eastLaskutusosoiteeast
+eastLomakkeet työntekijälleeast
+eastMedialleeast
+chevron_rightOmavalvontachevron_right
+eastOmavalvontaeast
+eastOmavalvontasuunnitelmateast
+eastValvontaeast
+eastPalkkaharmonisointieast
+eastStrategia ja ohjelmateast
+eastTalouseast
+eastTietosuojaeast
+eastYhteystiedoteast
+chevron_rightKumppanit ja hankinnatchevron_right
+chevron_rightAmmattilaisten yhteistyöchevron_right
+eastEnsihoito ammattilaisilleeast
+eastHyte-työpöytäeast
+eastHyvinvointialueen ilmoitus sijoitettavasta lapsestaeast
+eastInfektioiden torjuntaohjeeteast
+eastKaatumisen ehkäisyn materiaaliteast
+eastLäheteohjeeteast
+eastRavitsemuksen tukea ammattilaiselleeast
+eastVarhaiskasvatuksen lääkehoitoeast
+eastHankinnateast
+eastHyvinvointialueen ateriapalvelutuottajateast
+eastJärjestöilleeast
+chevron_rightPalveluntuottajillechevron_right
+eastHoitotarvikejakelun ohjeeteast
+eastSähköinen palveluseteli- ja ostopalvelujärjestelmäeast
+eastYksityiset palveluntuottajateast
+eastYksityisten palveluntuottajien lääkehoitosuunnitelmaeast
+eastVarmennekorttieast
+eastYhdyspintayhteistyöeast
+chevron_rightOsallistu ja vaikutachevron_right
+eastAlue- ja kuntavaaliteast
+eastOsallistu ja vaikutaeast
+chevron_rightPäätöksentekochevron_right
+eastPäätöksentekoeast
+eastAluehallituseast
+eastAluevaalilautakuntaeast
+eastAluevaltuustoeast
+eastHyvinvoinnin ja terveyden edistämisen lautakuntaeast
+eastIlmoitukseteast
+eastLuottamushenkilöilleeast
+eastJärjestöneuvottelukuntaeast
+eastKokonaisturvallisuuden lautakuntaeast
+eastTarkastuslautakuntaeast
+eastTulevaisuuslautakuntaeast
+eastVaikuttamistoimielimeteast
+eastYhdyspintaneuvottelukuntaeast
+eastTietoa sivustostaeast
+chevron_rightTutkimus, kehittäminen ja innovaatiotchevron_right
+eastTutkimus, kehittäminen ja innovaatioteast
+chevron_rightHankkeetchevron_right
+eastELMA 2.0east
+eastKiinni elämääneast
+eastKuntoutus neurokirjon lasten ja nuorten arjessaeast
+eastNEAR-NEw SociAl SeRviceseast
+eastNäyttöön perustuvien suositusten implementointi sosiaalihuollon päihdetyössä (LÄSNÄ)east
+eastOmaSilta-hankeeast
+eastOsallisuuden voima (STM 2025-2027)east
+eastOngelmapelaamisen haittojen ehkäisy ja ennakointi (OHJE)east
+eastPitkäaikaisasunnottomuuden vähentäminen Lahdessa 2025–2027 –hankeeast
+eastVertaisverkko – Nivelvaiheen tukipalvelu lastensuojelun jälkihuollon palveluvalikoimaaneast
+eastOpinnäytetyöeast
+eastPäättyneet hankkeeteast
+eastSosiaalihuollon kehittämineneast
+eastTutkimusluvateast
+chevron_rightUudistuvat toimitilatchevron_right
+eastKeskussairaala uudistuueast
+eastTutustu uudistuviin toimitiloihineast
+chevron_rightMeille töihinchevron_right
+eastMeille töihineast
+eastKeikkailemaan tai sijaiseksieast
+eastLääkärin urapolku Päijät-Hämeessäeast
+eastOpi ja kehityeast
+eastOpiskelijalleeast
+chevron_rightTyöpaikat ammattiryhmittäinchevron_right
+eastHoitajien työpaikateast
+eastLääkärin urapolku Päijät-Hämeessäeast
+eastSosiaalialan työpaikateast
+eastKuntoutuksen työpaikateast
+eastTietohallinnon työpaikateast
+eastSuun terveydenhuollon työpaikateast
+eastPsykologien työpaikateast
+eastPelastustoimen työpaikateast
+eastFarmaseuttien työpaikateast
+eastMuut ammattilaiseteast
+eastTyösuhde-eduteast
+chevron_rightTyö erikoissairaanhoidossachevron_right
+eastAkuutti 24 työpaikateast
+eastErikoissairaanhoidon työpaikateast
+eastPsykososiaalisten palveluiden ja psykiatrian erikoisalojen työpaikateast
+eastTyö pelastustoimessaeast
+chevron_rightTyö perusterveydenhuollossachevron_right
+eastSote-keskukset ja suun terveydenhuollon työpaikateast
+eastPerusterveydenhuollon sairaalapalveluiden työpaikateast
+eastIkääntyneiden palveluasumisen ja kotiin vietävien palveluiden työpaikateast
+chevron_rightTyö sosiaalipalveluissachevron_right
+eastLapsiperhepalveluiden työpaikateast
+eastTyöikäisten palveluiden työpaikateast
+eastVammaispalveluiden työpaikateast
+eastGerontologinen sosiaalityöeast
+chevron_rightTekijät ja tarinatchevron_right
+eastTyöntekijälähettilääteast
+eastTyöntekijätarinateast
+chevron_rightAjankohtaistachevron_right
+eastTiedotteet ja tapahtumakalenterieast
+eastUutiskirjeeast
+ close
+ Mitä etsit? Hae tästä! 
+ Hae hakusanalla: 
+ Rajaa hakua 
+ Sisältötyyppi 
+ Kaikki sisältötyypit 
+ Sivu 
+ Blogit 
+ Tiedotteet 
+ Uratarinat 
+ Tapahtumat 
+ Liitteet 
+ search
+ Hae 
+ close
+ menu
+ Sulje 
+ close
+Etusivu
+Palvelut ja hoitoon hakeutuminenchevron_right
+arrow_backPäävalikko
+Palvelut ja hoitoon hakeutuminen 
+Digitaaliset palvelut
+Ikääntyneiden palvelutchevron_right
+arrow_backPalvelut ja hoitoon hakeutuminen
+Ikääntyneiden palvelut 
+Ateriapalvelu
+Geriatrian poliklinikka
+Ikääntyneiden asiakasohjaus
+Kotihoitochevron_right
+arrow_backIkääntyneiden palvelut
+Kotihoito 
+Kotihoito
+Etähoiva
+Liikkumista tukeva palvelu (kuljetuspalvelu)
+Omaishoito ikääntyneille
+Palliatiivinen kotisairaala
+Perhehoito ikääntyneille
+Peseytymispalvelu
+Seniorineuvola
+Siivous, asiointi ja vaatehuolto
+Sosiaalinen kuntoutus ikääntyneille
+Sosiaalityö ja sosiaaliohjaus ikääntyneille
+Sotainvalidien ja rintamaveteraanien palvelutchevron_right
+arrow_backIkääntyneiden palvelut
+Sotainvalidien ja rintamaveteraanien palvelut 
+Rintamaveteraanien kuntoutus
+Sotainvalidien ja rintamaveteraanien kotona asumista tukevat palvelut
+Turvapalvelu
+Yhteisöllinen asuminen
+Ympärivuorokautinen palveluasuminen
+Kuntoutus ja apuvälinepalvelutchevron_right
+arrow_backPalvelut ja hoitoon hakeutuminen
+Kuntoutus ja apuvälinepalvelut 
+Aikuisten fysioterapia
+Aikuisten puheterapia
+Aikuisten toimintaterapia
+Apuvälinepalvelut
+Fysiatrian poliklinikka
+Kotikuntoutuschevron_right
+arrow_backKuntoutus ja apuvälinepalvelut
+Kotikuntoutus 
+Kotikuntoutus
+Kotikuntoutuksen terapiapalvelut
+Tehostettu kotikuntoutus
+Kuntoutusohjaus
+Kuntoutusosastot
+Kuntoutustutkimuspoliklinikkachevron_right
+arrow_backKuntoutus ja apuvälinepalvelut
+Kuntoutustutkimuspoliklinikka 
+Kuntoutustutkimuspoliklinikka
+Kuntoutustutkimuspoliklinikan psykologipalvelut
+Lasten ja nuorten kuntoutus ja apuvälinepalvelutchevron_right
+arrow_backKuntoutus ja apuvälinepalvelut
+Lasten ja nuorten kuntoutus ja apuvälinepalvelut 
+Lasten ja nuorten kuntoutus ja apuvälinepalvelut
+Lasten ja nuorten fysioterapia
+Lasten ja nuorten kuntoutus keskussairaalassa
+Lasten ja nuorten neuropsykologinen kuntoutus
+Lasten ja nuorten puheterapia
+Lasten ja nuorten toimintaterapia
+Neuropsykologinen kuntoutus
+Rintamaveteraanien kuntoutus
+Lasten, nuorten ja perheiden palvelutchevron_right
+arrow_backPalvelut ja hoitoon hakeutuminen
+Lasten, nuorten ja perheiden palvelut 
+Alaikäisten mielenterveys- ja perheneuvolapalvelut
+Alaikäisen nepsy-oireisen polku
+Alaikäisten psykiatriset palvelut
+Kutsuntatarkastukset
+Lapsiperheiden arjen tuen palvelut
+Lasten ja nuorten hammashoito
+Lasten ja nuorten kuntoutus ja apuvälinepalvelutchevron_right
+arrow_backLasten, nuorten ja perheiden palvelut
+Lasten ja nuorten kuntoutus ja apuvälinepalvelut 
+Lasten ja nuorten kuntoutus ja apuvälinepalvelut
+Lasten ja nuorten fysioterapia
+Lasten ja nuorten kuntoutus keskussairaalassa
+Lasten ja nuorten neuropsykologinen kuntoutus
+Lasten ja nuorten puheterapia
+Lasten ja nuorten toimintaterapia
+Lasten ja nuorten sairaalapalvelutchevron_right
+arrow_backLasten, nuorten ja perheiden palvelut
+Lasten ja nuorten sairaalapalvelut 
+Lasten ja nuorten neurologian poliklinikka
+Lasten kotisairaala
+Lastenneurologian osasto 14
+Lastentautien osasto 12
+Lastentautien poliklinikka
+Vastasyntyneiden teho- ja tarkkailuosasto
+Lastensuojelu ja perhesosiaalityöchevron_right
+arrow_backLasten, nuorten ja perheiden palvelut
+Lastensuojelu ja perhesosiaalityö 
+Lastensuojelu ja perhesosiaalityö
+Lastensuojelun avohuolto
+Nuorten jälkihuolto
+Lastensuojelun perhehoitochevron_right
+arrow_backLastensuojelu ja perhesosiaalityö
+Lastensuojelun perhehoito 
+Lastensuojelun perhehoito
+Perhehoitajaksi hakeutuminen
+Perhehoitajana toimiminen
+Toimiville perhehoitajille
+Lastensuojelun sijaishuolto
+Perhesosiaalityö
+Tukihenkilö- ja tukiperhetoimintachevron_right
+arrow_backLastensuojelu ja perhesosiaalityö
+Tukihenkilö- ja tukiperhetoiminta 
+Tukihenkilö- ja tukiperhetoiminta
+Tukiperheenä ja tukihenkilönä toimiminen
+Neuvolapalvelutchevron_right
+arrow_backLasten, nuorten ja perheiden palvelut
+Neuvolapalvelut 
+Neuvolapalvelut
+Lastenneuvola
+Perhevalmennuschevron_right
+arrow_backNeuvolapalvelut
+Perhevalmennus
+Verkkovalmennus
+Äitiysneuvola
+Avoneuvola
+Opiskeluhuoltopalvelutchevron_right
+arrow_backLasten, nuorten ja perheiden palvelut
+Opiskeluhuoltopalvelut 
+Kouluterveydenhuolto
+Kuraattoripalvelut
+Opiskeluhuollon psykologipalvelut
+Opiskeluterveydenhuolto
+Tietoa opiskeluhuoltopalveluista
+Perheoikeudelliset palvelut
+Päijät-Hämeen perhekeskus
+Synnyttämään Lahteen
+Mielenterveys- ja päihdepalvelutchevron_right
+arrow_backPalvelut ja hoitoon hakeutuminen
+Mielenterveys- ja päihdepalvelut 
+Alaikäisten mielenterveys- ja perheneuvolapalvelut
+Alaikäisten psykiatriset palvelut
+Mielenterveyspalvelut
+Psykiatrian osastot
+Psykiatrian poliklinikat
+Päihde- ja riippuvuuspalvelut
+Pelastustoimen palvelut
+Päivystys ja kiireellinen hoito
+Sosiaalipalvelut aikuisillechevron_right
+arrow_backPalvelut ja hoitoon hakeutuminen
+Sosiaalipalvelut aikuisille 
+Asiakasohjaus
+Asunnottomien asumispalvelut
+Kuntouttava työtoiminta
+Maahanmuuttajapalvelut
+Päiväkeskus
+Sosiaalinen kuntoutus
+Taloudellinen tuki
+Työllistymistä edistävä monialaisen tuen yhteistoimintamalli (TYM)
+Terveyspalvelutchevron_right
+arrow_backPalvelut ja hoitoon hakeutuminen
+Terveyspalvelut 
+Diabeteshoitajan vastaanotto
+Hammashoito ja suun terveyschevron_right
+arrow_backTerveyspalvelut
+Aikuisten hammashoito
+Lasten ja nuorten hammashoito
+Opiskelijoiden hammashoito
+Hoitajan tai lääkärin vastaanotto sote-keskuksessa
+Hoitotarvikejakelu
+Jalkojen hoito
+Kliininen fysiologia ja neurofysiologiachevron_right
+arrow_backTerveyspalvelut
+Kliininen fysiologia ja neurofysiologia 
+Kliininen fysiologia
+Kliininen neurofysiologia
+Laboratoriopalvelut
+Lakisääteinen työterveyshuolto työnantajille
+Muistivastaanotto ja muistisairauksien hoitochevron_right
+arrow_backTerveyspalvelut
+Muistivastaanotto ja muistisairauksien hoito 
+Geriatrian poliklinikka
+Muistihoitajan vastaanotto
+Osastotchevron_right
+arrow_backTerveyspalvelut
+Osastot 
+Keuhkosairauksien osasto
+Kirurgian osastot R3-R5
+Kotisairaalachevron_right
+arrow_backOsastot
+Kotisairaala 
+Akuutti24 kotisairaala
+Lasten kotisairaala
+Palliatiivinen kotisairaala
+Kuntoutusosastot
+Lastenneurologian osasto 14
+Lastentautien osasto 12
+Naistentautien osasto
+Neurologian osasto
+Perusterveydenhuollon osastot
+Psykiatrian osastot
+Päivystysosasto
+Selviämishoitoyksikkö
+Sisätautiosastot 1 ja 2
+Sydänvalvonta
+Synnyttäjien ja naistentautien päivystyschevron_right
+arrow_backOsastot
+Synnyttäjien ja naistentautien päivystys 
+Synnyttäjien ja naistentautien päivystys
+Seksuaaliväkivaltaa kohdanneiden tukiyksikkö
+Synnyttäjien osasto R2
+Synnytysosasto
+Teho- ja valvontaosasto
+Vastasyntyneiden teho- ja tarkkailuosasto
+Perhesuunnittelu- ja ehkäisyneuvontachevron_right
+arrow_backTerveyspalvelut
+Perhesuunnittelu- ja ehkäisyneuvonta 
+Lapsettomuustutkimukset ja hedelmällisyys
+Raskauden ehkäisy
+Raskauden keskeytys
+Poliklinikatchevron_right
+arrow_backTerveyspalvelut
+Poliklinikat 
+Endokrinologia ja diabetespoliklinikka
+Fysiatrian poliklinikka
+Geriatrian poliklinikka
+Ihotautien ja allergologian poliklinikka
+Infektiosairauksien poliklinikka
+Keuhkosairauksien poliklinikka
+Kipukonsultaatiopoliklinikka
+Kirurgian poliklinikka
+Korva-, nenä- ja kurkkutautien poliklinikkachevron_right
+arrow_backPoliklinikat
+Korva-, nenä- ja kurkkutautien poliklinikka 
+Korva-, nenä- ja kurkkutautien poliklinikka
+Kuulokeskus
+Kuntoutustutkimuspoliklinikka
+Lasten ja nuorten kuntoutus keskussairaalassa
+Lasten ja nuorten neurologian poliklinikka
+Lastentautien poliklinikka
+Leikkausyksikkö
+Munuaiskeskus
+Naistentautien poliklinikka
+Neurologian poliklinikka
+Palliatiivinen poliklinikka
+Psykiatrian poliklinikat
+Reumapoliklinikka
+Silmäklinikan yksikötchevron_right
+arrow_backPoliklinikat
+Silmäklinikan yksiköt 
+Silmäklinikka
+Silmätautien leikkausosasto
+Silmätautien poliklinikka
+Suu- ja leukakirurgian poliklinikka
+Sydänkeskus
+Syöpätautien poliklinikka
+Sädehoitoyksikkö
+Urologian poliklinikka
+Vatsakeskus
+Verisairauksien poliklinikka
+Äitiyspoliklinikka
+Ravitsemusterapia
+Reseptien uusinta
+Rokotukset
+Röntgen ja kuvantaminenchevron_right
+arrow_backTerveyspalvelut
+Röntgen ja kuvantaminen 
+Erikoissairaanhoidon kuvantamispalvelut
+Isotooppilääketiede
+Sote-keskusten kuvantamispalvelut
+Seksitaudit
+Seulonnat
+Työttömien terveystarkastukset
+Terveyttä ja hyvinvointia edistävät palvelutchevron_right
+arrow_backPalvelut ja hoitoon hakeutuminen
+Terveyttä ja hyvinvointia edistävät palvelut 
+Asiantuntijayksikkö
+Arjen avuksi -näyttely
+Alkoholinkäytön vähentäminen
+Kaatumisen ehkäisy
+Liikuntaneuvonta
+Luontohyvinvointi ja terveysmetsä
+Luustoterveys
+Lähisuhdeturvallisuus
+Raha- ja digipelaaminen
+Ravitsemus
+Tukea tupakoinnin lopettamiseen
+Tyypin 2 diabeteksen ehkäisy
+Työote-toimintamalli
+Uniterveys
+Vammaispalvelutchevron_right
+arrow_backPalvelut ja hoitoon hakeutuminen
+Vammaispalvelut 
+Vammaispalvelut
+Asumisen tuki vammaisille
+Erityinen osallisuuden tuki vammaisille
+Esteettömän asumisen tuki vammaisille
+Henkilökohtainen apu vammaisille
+Liikkumisen tuki vammaisille
+Lyhytaikainen huolenpito vammaisille
+Omaishoito vammaisille
+Perhehoito vammaisille
+Taloudellinen tuki vammaisille
+Tuettu päätöksenteko vammaisille
+Tukihenkilötoiminta vammaisille
+Työhönvalmennus vammaisille
+Työllistymistä tukeva toiminta, työtoiminta ja päivätoiminta vammaisille
+Vaativa moniammatillinen tuki vammaisille
+Valmennus vammaisille
+Hyvinvointiopas
+Asiointiopaschevron_right
+arrow_backPäävalikko
+Asiointiopas 
+Ajanvaraus ja peruminen
+Arkisto
+Asiakas- ja potilasturvallisuus
+Asiakasmaksut
+Digihoitopolut
+Digitaalinen posti
+Drooniohje
+Hoitoon ja palveluihin pääsy
+Hoitopaikan valinta
+Keskussairaalan palvelut
+Kirjaamo
+Läheisensä menettäneelle
+Matkakorvaukset
+Odotatko puhelua hyvinvointialueelta? 
+Palvelusetelit
+Puolesta asiointi
+Reseptien uusinta
+Sairaalan sosiaalityö
+Sairaalasielunhoito
+Sosiaali- ja potilasasiavastaava
+Tulkkaus- ja käännöspalvelut
+Tulossa hoitoon tai leikkaukseen
+Valokuvaus ja videoiminen
+Vierailuohjeet ja potilastiedustelut
+Tietoa meistächevron_right
+arrow_backPäävalikko
+Tietoa meistä 
+Tietoa hyvinvointialueestachevron_right
+arrow_backTietoa meistä
+Tietoa hyvinvointialueesta 
+Hyvinvointialue
+Asiakirjajulkisuuskuvaus
+Kestävä kehityschevron_right
+arrow_backTietoa hyvinvointialueesta
+Kestävä kehitys hyvinvointialueella
+Luontoaskel terveyteen -ohjelma
+Laskutusosoite
+Lomakkeet työntekijälle
+Medialle
+Omavalvontachevron_right
+arrow_backTietoa hyvinvointialueesta
+Omavalvonta 
+Omavalvonta
+Omavalvontasuunnitelmat
+Valvonta
+Palkkaharmonisointi
+Strategia ja ohjelmat
+Talous
+Tietosuoja
+Yhteystiedot
+Kumppanit ja hankinnatchevron_right
+arrow_backTietoa meistä
+Ammattilaisten yhteistyöchevron_right
+arrow_back
+Ammattilaisten yhteistyö 
+Ensihoito ammattilaisille
+Hyte-työpöytä
+Hyvinvointialueen ilmoitus sijoitettavasta lapsesta
+Infektioiden torjuntaohjeet
+Kaatumisen ehkäisyn materiaalit
+Läheteohjeet
+Ravitsemuksen tukea ammattilaiselle
+Varhaiskasvatuksen lääkehoito
+Hankinnat
+Hyvinvointialueen ateriapalvelutuottajat
+Järjestöille
+Palveluntuottajillechevron_right
+arrow_back
+Palveluntuottajille 
+Hoitotarvikejakelun ohjeet
+Sähköinen palveluseteli- ja ostopalvelujärjestelmä
+Yksityiset palveluntuottajat
+Yksityisten palveluntuottajien lääkehoitosuunnitelma
+Varmennekortti
+Yhdyspintayhteistyö
+Osallistu ja vaikutachevron_right
+arrow_backTietoa meistä
+Osallistu ja vaikuta 
+Alue- ja kuntavaalit
+Osallistu ja vaikuta
+Päätöksentekochevron_right
+arrow_backTietoa meistä
+Päätöksenteko 
+Päätöksenteko
+Aluehallitus
+Aluevaalilautakunta
+Aluevaltuusto
+Hyvinvoinnin ja terveyden edistämisen lautakunta
+Ilmoitukset
+Luottamushenkilöille
+Järjestöneuvottelukunta
+Kokonaisturvallisuuden lautakunta
+Tarkastuslautakunta
+Tulevaisuuslautakunta
+Vaikuttamistoimielimet
+Yhdyspintaneuvottelukunta
+Tietoa sivustosta
+Tutkimus, kehittäminen ja innovaatiotchevron_right
+arrow_backTietoa meistä
+Tutkimus, kehittäminen ja innovaatiot 
+Tutkimus, kehittäminen ja innovaatiot
+Hankkeetchevron_right
+arrow_backTutkimus, kehittäminen ja innovaatiot
+ELMA 2.0
+Kiinni elämään
+Kuntoutus neurokirjon lasten ja nuorten arjessa
+NEAR-NEw SociAl SeRvices
+Näyttöön perustuvien suositusten implementointi sosiaalihuollon päihdetyössä (LÄSNÄ)
+OmaSilta-hanke
+Osallisuuden voima (STM 2025-2027)
+Ongelmapelaamisen haittojen ehkäisy ja ennakointi (OHJE)
+Pitkäaikaisasunnottomuuden vähentäminen Lahdessa 2025–2027 –hanke
+Vertaisverkko – Nivelvaiheen tukipalvelu lastensuojelun jälkihuollon palveluvalikoimaan
+Opinnäytetyö
+Päättyneet hankkeet
+Sosiaalihuollon kehittäminen
+Tutkimusluvat
+Uudistuvat toimitilatchevron_right
+arrow_backTietoa meistä
+Keskussairaala uudistuu
+Tutustu uudistuviin toimitiloihin
+Meille töihinchevron_right
+arrow_backPäävalikko
+Meille töihin 
+Meille töihin
+Keikkailemaan tai sijaiseksi
+Lääkärin urapolku Päijät-Hämeessä
+Opi ja kehity
+Opiskelijalle
+Työpaikat ammattiryhmittäinchevron_right
+arrow_backMeille töihin
+Työpaikat ammattiryhmittäin 
+Hoitajien työpaikat
+Lääkärin urapolku Päijät-Hämeessä
+Sosiaalialan työpaikat
+Kuntoutuksen työpaikat
+Tietohallinnon työpaikat
+Suun terveydenhuollon työpaikat
+Psykologien työpaikat
+Pelastustoimen työpaikat
+Farmaseuttien työpaikat
+Muut ammattilaiset
+Työsuhde-edut
+Työ erikoissairaanhoidossachevron_right
+arrow_backMeille töihin
+Työ erikoissairaanhoidossa 
+Akuutti 24 työpaikat
+Erikoissairaanhoidon työpaikat
+Psykososiaalisten palveluiden ja psykiatrian erikoisalojen työpaikat
+Työ pelastustoimessa
+Työ perusterveydenhuollossachevron_right
+arrow_backMeille töihin
+Työ perusterveydenhuollossa 
+Sote-keskukset ja suun terveydenhuollon työpaikat
+Perusterveydenhuollon sairaalapalveluiden työpaikat
+Ikääntyneiden palveluasumisen ja kotiin vietävien palveluiden työpaikat
+Työ sosiaalipalveluissachevron_right
+arrow_backMeille töihin
+Työ sosiaalipalveluissa 
+Lapsiperhepalveluiden työpaikat
+Työikäisten palveluiden työpaikat
+Vammaispalveluiden työpaikat
+Gerontologinen sosiaalityö
+Tekijät ja tarinatchevron_right
+arrow_backMeille töihin
+Tekijät ja tarinat 
+Työntekijälähettiläät
+Työntekijätarinat
+Ajankohtaistachevron_right
+arrow_backPäävalikko
+Ajankohtaista 
+Tiedotteet ja tapahtumakalenteri
+Uutiskirje
+Anna palautetta
+Päijät-Sote-sovellus
+Suomi
+English
+Haku
+homeEtusivu
+keyboard_arrow_right
+Palvelut ja hoitoon hakeutuminen
+keyboard_arrow_right
+Terveyspalvelut
+keyboard_arrow_right
+Poliklinikat
+keyboard_arrow_right
+Sädehoitoyksikkö 
+Sädehoitoyksikkö
+ Suunnittelemme ja toteutamme sädehoitokokonaisuuksia. Hoito edellyttää lääkärin lähetteen. 
+Ota yhteyttä arrow_downward 
+Tietoa sädehoitoyksiköstä 
+Tietoa sädehoitoyksiköstä 
+Palvelukuvaus
+Sädehoito on yleisesti käytetty syövän hoitomuoto. Sädehoidon yksikössä suunnitellaan ja toteutetaan sädehoitokokonaisuus.
+Sädehoitoyksikössä voimme antaa: 
+kohteenmukaista kuvantaohjattua sädehoitoa moderneilla tekniikoilla
+hengityspidätysessä (DIBH) annettavaa sädehoitoa
+stereotaktista hoito (SRT/ SBRT)
+Saamasi sädehoidon tehoa voidaan parantaa joissakin syöpäsairauksissa antamalla samanaikaisesti solunsalpaajahoitoa. 
+Toimi näin
+Sädehoitoon tarvitset lääkärin lähetteen. Hoitoon pääsy arvioidaan kiireellisyyden perusteella, jonka jälkeen lähetetään kutsu vastaanotolle. 
+Digiasiointi 
+Jos olet sädehoitoyksikön asiakas, voit olla kiireettömissä asioissa yhteydessä yksikköön myös Päijät-Sote-sovelluksen kautta kohdasta Kiireetön yhteydenotto. Vastaamme viesteihin kolmen arkipäivän kuluessa. 
+ Siirry Päijät-Sote-sovellukseenlaunch 
+Ota yhteyttä sädehoitoyksikköön 
+Ota yhteyttä sädehoitoyksikköön 
+ Puhelinasiointi 
+Ajanvarauksiin liittyvät tiedustelutphone+358 38194011Ajanvarauksiin liittyvät tiedustelut
+Hoitajan numero (takaisinsoitto)phone+358 444406032Hoitajan numero (takaisinsoitto)
+Ajanvaraustiedustelut
+maanantai–perjantai 8.00–15.00 
+ Sijainti 
+ Sijainti 
+Päijät-Hämeen keskussairaala
+Keskussairaalankatu 7, 15850 Lahti
+location_onGoogle Maps(ulkoinen palvelu, avautuu uuteen välilehteen)directionsLSL:n reittiopas(ulkoinen palvelu, avautuu uuteen välilehteen)
+K1-kerros, V-siipi
+Aukioloajat
+maanantai–perjantai 7.30–15.30 
+Tietoa ja tukea 
+ west
+ east
+ Kaikki syövästä -sivusto 
+Kaikki syövästä -sivu tarjoaa luotettavaa tietoa, neuvontaa ja vertaistukea syöpään liittyvissä asioissa.
+ Lue lisää syöpähoidoistalaunch 
+ Terveyskylän Syöpätalo 
+Syöpätalo tarjoaa ajankohtaista tietoa eri syöpäsairauksista, niiden uusimmista hoitokeinoista ja tutkimuksesta.
+ Siirry Syöpätalon sivullelaunch 
+Etsitkö näitä?
+ eastSyöpätautien poliklinikkaeastAsiakasmaksuteastKeskussairaalan palveluteastPalliatiivinen poliklinikka 
+ erikoissairaanhoito, Lineaarikiihdytin, Sädehoito, Sädehoitokone, Syöpä, Syöpähoito, Syöpätaudit, Terveyspalvelut
+ Päijät-Hämeen Hyvinvointialue 
+Keskussairaalankatu 7
+15850 Lahti
+Vaihde 03 819 11
+arkisin 8-18
+Kirjaamo
+kirjaamo@paijatha.fi
+arkisin 9-15
+Y-tunnus 3221309-4
+ Tietoa meistä 
+ Tietoa Päijät-Hämeen hyvinvointialueesta 
+ Asiakasmaksut 
+ Laskutusosoite 
+ Päijät-Sote-sovellus 
+ Lataa Päijät-Sote-sovellus 
+ Seuraa meitä somessa 
+ Facebook 
+ Instagram 
+ LinkedIn 
+ YouTube 
+ Medialle 
+ Anna palautetta 
+ Evästeet 
+ Tietosuoja 
+ Saavutettavuusseloste 
+ Siirry ylös 
+ arrow_circle_up
+Hallinnoi evästeiden suostumusta
+Parhaan kokemuksen tarjoamiseksi käytämme teknologioita, kuten evästeitä, tallentaaksemme ja/tai käyttääksemme laitetietoja. Näiden tekniikoiden hyväksyminen antaa meille mahdollisuuden käsitellä tietoja, kuten selauskäyttäytymistä tai yksilöllisiä tunnuksia tällä sivustolla. Suostumuksen jättäminen tai peruuttaminen voi vaikuttaa haitallisesti tiettyihin ominaisuuksiin ja toimintoihin.
+ Toiminnalliset
+ Toiminnalliset
+ Aina aktiivinen 
+ Tekninen tallennus tai pääsy on ehdottoman välttämätön oikeutettua tarkoitusta varten, joka mahdollistaa tietyn tilaajan tai käyttäjän nimenomaisesti pyytämän palvelun käytön, tai yksinomaan viestinnän välittämiseksi sähköisen viestintäverkon kautta.
+ Asetukset
+ Asetukset
+ Tekninen tallennus tai pääsy on tarpeen laillisessa tarkoituksessa sellaisten asetusten tallentamiseen, joita tilaaja tai käyttäjä ei ole pyytänyt.
+ Tilastot
+ Tilastot
+ Tekninen tallennus tai pääsy, jota käytetään yksinomaan tilastollisiin tarkoituksiin.
+ Tekninen tallennus tai pääsy, jota käytetään yksinomaan anonyymeihin tilastollisiin tarkoituksiin. Ilman haastetta, Internet-palveluntarjoajasi vapaaehtoista suostumusta tai kolmannen osapuolen lisätietueita pelkästään tähän tarkoitukseen tallennettuja tai haettuja tietoja ei yleensä voida käyttää tunnistamaan sinua.
+ Markkinointi
+ Markkinointi
+ Teknistä tallennustilaa tai pääsyä tarvitaan käyttäjäprofiilien luomiseen mainosten lähettämistä varten tai käyttäjän seuraamiseksi verkkosivustolla tai useilla verkkosivustoilla vastaavia markkinointitarkoituksia varten.
+Hallitse vaihtoehtoja
+Hallinnoi palveluita
+Hallitse {vendor_count} toimittajia
+Lue lisää näistä tarkoituksista
+ Hyväksy
+ Kiellä
+ Näytä asetukset
+ Tallenna asetukset
+ Näytä asetukset
+{title}
+{title}
+{title}
+Hallinnoi suostumusta

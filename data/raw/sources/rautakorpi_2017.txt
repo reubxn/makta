@@ -1,0 +1,140 @@
+
+ Assessing the utilization of radiotherapy near end of life at a Finnish University Hospital: a retrospective cohort study
+ | Acta Oncologica
+ Skip to main content
+ Skip to main navigation menu
+ Skip to site footer
+ Open Menu
+ About
+ About the Journal
+ Journal Information
+ Indexing and abstracting
+ Editorial Team
+ Symposia
+ Society Affiliations
+ Privacy Statement
+ Content
+ Current Volume
+ Symposia Collections
+ Archive
+ Submission Information
+ Author guidelines
+ Submission Template
+ Make a submission
+ Direct to Acta Oncologica
+ Publication Fees
+ Policies & guidelines
+ Privacy Policy
+ Authorship policy
+ Conflict of interest policy
+ AI Policy
+ ORCiD policy
+ Open data policy
+ Open Access policy
+ Editorial policy and review process
+ Peer review policy
+ Peer review appeals and author complaints
+ Ethical oversight policy
+ Changes and corrections
+ Advertising and Sponsorship Policy
+ Archiving
+ Newsletter
+ Contact
+ Search
+ Register
+ Login
+ Home
+ /
+ Archives
+ /
+ Vol. 56 No. 10 (2017): Acta Oncologica
+ /
+ Articles
+ Assessing the utilization of radiotherapy near end of life at a Finnish University Hospital: a retrospective cohort study
+Authors
+ Liisa K. Rautakorpi
+ Department of Oncology and Radiotherapy, Turku University Hospital, Turku, Finland; ;Department of Clinical Oncology, University of Turku, Turku, Finland
+ Johanna M. Mäkelä
+ Turku Centre for Biotechnology, University of Turku and Åbo Akademi, Turku, Finland
+ Fatemeh Seyednasrollah
+ Turku Centre for Biotechnology, University of Turku and Åbo Akademi, Turku, Finland; ;Department of Mathematics and Statistics, University of Turku, Turku, Finland
+ Anna M. Hammais
+ Center for Clinical Informatics, Turku University Hospital, Turku, Finland
+ Tarja Laitinen
+ Center for Clinical Informatics, Turku University Hospital, Turku, Finland; ;Department of Pulmonary Diseases and Clinical Allergology, University of Turku, Turku, Finland
+ Outi M. Hirvonen
+ Department of Oncology and Radiotherapy, Turku University Hospital, Turku, Finland; ;Department of Clinical Oncology, University of Turku, Turku, Finland
+ Heikki Minn
+ Department of Oncology and Radiotherapy, Turku University Hospital, Turku, Finland; ;Department of Clinical Oncology, University of Turku, Turku, Finland
+ Laura L. Elo
+ Turku Centre for Biotechnology, University of Turku and Åbo Akademi, Turku, Finland
+ Sirkku M. Jyrkkiö
+ Department of Oncology and Radiotherapy, Turku University Hospital, Turku, Finland
+ DOI:
+ https://doi.org/10.1080/0284186X.2017.1324638
+Abstract
+Background: Palliative radiotherapy can improve quality of life for cancer patients during the last months of life. However, very short life expectancy may devastate the benefit of the treatment. This single center study assesses the utilization of radiotherapy during the last weeks of life.
+Material and methods: All cancer patients (N = 38,982) treated with radiotherapy (N = 11,395) in Turku University Central Hospital during 2005–2013 were identified in the database consisting of electronic patient records. One fourth (N = 2904, 25.5%) of the radiotherapy treatments were given during the last year of life. The last radiotherapy treatments and the time from the last radiotherapy treatment to death were assessed in regards to patients’ age, cancer diagnosis, domicile, place of death and the treatment year. Treatments given during the last two weeks of life were also assessed regarding the goal of treatment and the reason for possible discontinuation.
+Results: The median time from the last fraction of radiotherapy to death was 84 d. During the last two weeks before death (N = 340), pain (29.4%) was the most common indication for radiotherapy. Treatment was discontinued in 40.6% of the patients during the last two weeks of life, and worsening of general condition was the most common reason for discontinuity (70.3%). The patients receiving radiotherapy during the last weeks of life were more likely to die in tertiary care unit. During the last year of life single-fraction treatment was used only in 7% of all therapy courses. There was a statistically significant (p < .05) decrease in the median number of fractions in the last radiotherapy treatment between 2005–2007 (8 fractions) and 2011–2013 (6 fractions).
+Conclusions: Up to 70% of the treatments during the last two weeks of life were not delivered to alleviate pain and utilization of single fraction radiotherapy during the last year of life was infrequent. These observations suggest that practice of radiotherapy during the last weeks of life should be revisited.
+ Downloads
+ Download data is not yet available.
+ Downloads
+ PDF
+ Published
+ 2017-10-03
+ How to Cite
+Rautakorpi, L. K. ., Mäkelä, J. M. ., Seyednasrollah, F. ., Hammais, A. M. ., Laitinen, T. ., Hirvonen, O. M. ., … Jyrkkiö, S. M. . (2017). Assessing the utilization of radiotherapy near end of life at a Finnish University Hospital: a retrospective cohort study. Acta Oncologica, 56(10), 1265–1271. https://doi.org/10.1080/0284186X.2017.1324638
+ More Citation Formats
+ ACM
+ ACS
+ APA
+ ABNT
+ Chicago
+ Harvard
+ IEEE
+ MLA
+ Turabian
+ Vancouver
+ Download Citation
+ Endnote/Zotero/Mendeley (RIS)
+ BibTeX
+ Issue
+ Vol. 56 No. 10 (2017): Acta Oncologica
+ Section
+ Articles
+Acta Oncologica
+Acta Oncologica publishes cancer research across the broad field of modern oncology. We welcome research contributions from all parts of the world, target an international audience and offer global reach with all content published open access. Our Nordic signatures commits us to high quality, interest in innovation and a focus on clinical impact. Join us as we continue to investigate, define, share and discuss new knowledge that advances our understanding of cancer and influences tomorrow’s oncology.
+ Make a Submission
+ Make a Submission
+BROCHURE
+Download PDF
+Newsletter
+Keep up to date with the latest research in Acta Oncologica.
+Sign up for our monthly newsletter and get quality content right in your inbox.
+Email 
+Social Media
+Follow us on LinkedIn
+ Browse
+ Categories
+ Cancer Epidemiology
+ Prevention and Early Detection
+ Translational Oncology and Cancer Immunology
+ Medical oncology and Precision Medicine
+ Radiotherapy and Radiophysics
+ Psychosocial oncology, Rehabilitation and Palliative Care
+Completed Symposia
+Download articles from Nordic Association of Clinical Physics, NACP Symposium 2026
+SYMPOSIA COLLECTION
+Download articles from Nordic Precision Cancer Medicine, NPCM, 2025
+SYMPOSIA COLLECTION
+Download articles from Biology-Guided Adaptive Radiotherapy, BiGART, 2025
+SYMPOSIA COLLECTION
+Download articles from European Cancer Rehabilitation and Survivorship, ECRS, 2024
+SYMPOSIA COLLECTION
+Download articles from Nordic Precision Cancer Medicine, NPCM, 2023
+SYMPOSIA COLLECTION
+Acta Oncologica, Online ISSN: 1651-226X
+Published by Medical Journals Sweden AB (559296-5023) under the terms of the Creative Commons CC-BY 4.0 license.
+Kungsängsvägen 27, 753 23 Uppsala, Sweden
+Contact us 

@@ -1,0 +1,262 @@
+Matkakorvaukset | Henkilöasiakkaat | Kela
+Kela.fin kävijätilastot
+Keräämme sivuston käyttäjistä kävijätilastoja. Kerätyistä tiedoista ei voi tunnistaa sinua.
+Kävijätilastoja käytetään palvelun kehittämiseen ja raportointiin.
+Hyväksytkö kävijätilastojen keräämisen?
+HyväksynEn hyväksy
+Lue lisää kävijätilastoinnista
+Matkakorvaukset | Henkilöasiakkaat | KelaSiirry sisältöön
+Suomi
+Hae
+Haku
+Kirjaudu
+Valikko
+HenkilöasiakkaatHenkilötTyönantajatTyönantajatKumppanitKumppanitTietoa KelastaTietoa Kelasta
+Sähköisessä allekirjoituspalvelussa käyttökatko 16.11. klo 13-18 Lue lisää
+Henkilöasiakkaat
+Sairastaminen
+Päivärahat
+Kuntoutustuki ja työkyvyttömyyseläke
+Lääkekorvaukset
+Matkakorvaukset
+Taksimatkat
+Korvaukset yksityisestä sairaanhoidosta
+Korvaukset yksityisestä hammashoidosta
+Valinnanvapauskokeilu 65 vuotta täyttäneille
+Sairaanhoito kansainvälisissä tilanteissa
+Työterveyshuolto
+Jos lapsi sairastuu
+Kela-kortti
+Oikopolut
+Asiakaspalvelu
+Hakemuksesta päätökseen
+Laskurit
+Lomakkeet
+ Henkilöasiakkaat/
+ Sairastaminen/
+ Matkakorvaukset
+Matkakorvaukset
+Tällä sivulla
+Voitko saada matkakorvausta?
+Matkan kohde eli hoitopaikka
+Matkustustapa eli kulkuneuvo
+Tarvitsetko saattajaa?
+Kuinka paljon voit saada matkakorvausta?
+Yöpymisraha
+Näin haet matkakorvausta ja yöpymisrahaa
+Voitko saada matkakorvausta?
+Voit saada Kelasta matkakorvausta, kun matkustat julkiseen tai yksityiseen terveydenhuoltoon ja matkan syy on
+sairaus
+Kelan kuntoutus tai julkisen terveydenhuollon järjestämä kuntoutus
+raskaus ja synnytys.
+Kela korvaa matkasi edullisimman kulkuneuvon mukaan yleensä lähimpään hoitopaikkaan. Jos tarvitset terveydentilasi vuoksi taksia, tilaa Kela-taksi. Jos joudut yöpymään hoito- tai kuntoutuspaikkakunnalla, voit saada myös yöpymisrahaa.
+Mitä matkoja Kela ei korvaa?
+Kela ei korvaa seuraavia matkoja:
+ennaltaehkäisevään hoitoon tehdyt matkat (esimerkiksi rokotukseen, seulontaan tai terveystarkastukseen)
+pelkkä hoitotarvikkeen hakeminen
+erikseen apteekkiin tehdyt matkat
+pelkän apuvälineen tai näytteen kuljettaminen
+julkisessa laitoshoidossa olevien potilaiden matkat
+vammaispalvelu- ja sosiaalihuoltolain mukaiset matkat
+kouluterveydenhuoltoon ja -tapaturmaan liittyvät matkat
+kehitysvammaisten erityishuoltolain mukaiset matkat
+Kelan ammatillisen kuntoutuksen koulutuspäätöksen mukaiset päivittäiset matkat
+matkoja, jotka liittyvät tieteelliseen tutkimukseen osallistumiseen.
+Matkan kohde eli hoitopaikka
+Kela korvaa matkakustannukset lähimmän hoitopaikan periaatteella eli yleensä hoitopaikkaan, joka sijaitsee lähimpänä vakinaista kotiosoitettasi. Oman hyvinvointialueesi sisällä (stm.fi) tehty matka korvataan sinne, mistä olet hoidon saanut.
+Matka julkiseen terveydenhuoltoon
+Perusterveydenhuolto (esimerkiksi sosiaali- ja terveyskeskus, terveysasema)
+Jos menet omalla hyvinvointialueellasi sijaitsevaan hoitopaikkaan, matka korvataan sinne, mistä olet hoidon saanut.
+Terveydenhuollon valinnanvapauden perusteella voit valita perusterveydenhuollon hoitopaikan myös oman hyvinvointialueesi (stm.fi) ulkopuolelta. Tällöin matka korvataan enintään sen mukaan, mitä se maksaisi vakinaisesta kotiosoitteestasi oman hyvinvointialueesi sosiaali- ja terveyskeskukseen, jossa on saatavilla kattavat terveyspalvelut.
+Erikoissairaanhoito (esimerkiksi keskussairaala, yliopistollinen sairaala)
+Matkat erikoissairaanhoitoon korvataan omalla (vakinaisen asuinpaikan mukaisella) yhteistyöalueellasi (stm.fi) siihen erikoissairaanhoidon yksikköön, josta olet saanut hoidon.
+Terveydenhuollon valinnanvapauden perusteella voit valita erikoissairaanhoidon hoitopaikan yhdessä lääkärisi kanssa myös toiselta yhteistyöalueelta. Tällöin matka korvataan enintään sen mukaan, mitä se maksaisi vakinaisesta kotiosoitteestasi oman hyvinvointialueesi mukaan määräytyvään yhteistyöalueen yliopistosairaalaan.
+Apuvälineet
+Jos olet saanut osana sairaanhoitoa apuvälineen, Kela korvaa matkan apuvälineen valmistus-, huolto- tai välityspaikkaan. Ehtona on, että olet saanut apuvälineen julkisesta terveydenhuollosta tai siihen on julkisen terveydenhuollon maksusitoumus, palveluseteli tai lähete. Pelkkiä apuvälineen kuljetus- tai lähetyskuluja ei korvata. 
+Maksusitoumus tai palveluseteli
+Jos sinulla on hoitoon hyvinvointialueen maksusitoumus tai palveluseteli, matka korvataan sinne, mistä olet saanut hoidon.
+Matka yksityiseen terveydenhuoltoon
+Saat korvauksen matkasta yksityiseen terveydenhuoltoon pääsääntöisesti silloin, jos siellä saamasi hoito on Kela-korvattavaa. Saat korvauksen matkasta myös silloin, kun lääkäri tekee vastaanotolla toimenpiteen, jota Kela ei korvaa mutta joka on sairauden hoitoa. Tällainen toimenpide voi olla esimerkiksi lonkkaleikkaus, luomen poisto tai pienten lasten korvien putkitus.
+Esimerkki erikoislääkärin tekemästä toimenpiteestä
+Liisan äiti menee lonkkaleikkaukseen yksityiselle palveluntuottajalle ja maksaa hoidon itse. Kyseessä on lääkärin tekemä toimenpide, joka on sairauden hoitoa. Matka toimenpiteeseen voidaan poikkeuksellisesti korvata, vaikka toimenpiteestä ei makseta Kela-korvausta. Matka korvataan lähimmän hoitopaikan periaatteen mukaisesti eli enintään sen mukaan, kuinka paljon maksaisi matka kotoa oman hyvinvointialueesi mukaiseen yhteistyöalueen yliopistosairaalaan.
+Maksusitoumus, palveluseteli tai Kelan kuntoutuspäätös
+Jos sinulla on hoitoon hyvinvointialueen maksusitoumus, palveluseteli tai Kelan kuntoutuspäätös, matka korvataan sinne, mistä olet saanut hoidon.
+Yleislääkäri, hammaslääkäri, suuhygienisti, fysioterapeutti
+Jos menet omalla hyvinvointialueellasi sijaitsevaan yksityiseen perusterveydenhuollon hoitopaikkaan (esimerkiksi yleislääkärin, hammaslääkärin, suuhygienistin tai fysioterapeutin vastaanotolle), matka korvataan sinne, mistä olet saanut hoidon.
+Jos menet yksityiselle yleislääkärille, fysioterapeutille tai hammaslääkärin tai suuhygienistin vastaanotolle oman hyvinvointialueesi ulkopuolelle, matka korvataan enintään sen mukaan, mitä se maksaisi vakinaisesta kotiosoitteestasi oman hyvinvointialueesi (stm.fi) sosiaali- ja terveyskeskukseen, jossa on saatavilla kattavat terveyspalvelut.
+Erikoislääkäri, erikoishammaslääkäri
+Jos menet yksityisen erikoislääkärin tai erikoishammaslääkärin vastaanotolle, matka korvataan enintään sen mukaan, mitä se maksaisi vakinaisesta kotiosoitteestasi oman hyvinvointialueesi mukaiseen yhteistyöalueen yliopistosairaalaan (stm.fi).
+Valinnanvapauskokeilu 65 vuotta täyttäneille
+Kela korvaa myös 65 vuotta täyttäneiden valinnanvapauskokeiluun liittyviä matkoja. 
+Matka Kelan kuntoutukseen
+Jos menet Kelan järjestämään kuntoutukseen, Kela korvaa matkakulut yleensä sinne, missä kuntoutus järjestetään. Jos kuntoutuksen matkakulujen korvaamiseen liittyy rajoitteita, se kerrotaan sinulle kuntoutuspäätöksessä.
+Jos sinulla on Kelan kuntoutuspäätös, jossa on maininta perheenjäsenen tai omaisen osallistumisesta kuntoutukseen, voit saada korvausta myös hänen matkoistaan.
+Kelan ammatillisena kuntoutuksena myönnetty koulutus
+Jos menet Kelan ammatillisena kuntoutuksena myönnettyyn koulutukseen, Kela ei korvaa sinulle päivittäisiä koulumatkoja tai matkoja koulutukseen liittyvään työpaikalla oppimiseen. Voit selvittää, onko näihin matkoihin mahdollista saada koulumatkatukea (ei koske korkeakouluopintoja).
+Jos asut opiskelun takia muualla kuin kotipaikkakunnallasi, Kela voi korvata sinulle koti- ja opiskelupaikkakunnan välisiä matkakustannuksia seuraavasti:
+matkat lukukauden alussa (menomatka) ja lopussa (paluumatka)
+yhden edestakaisen matkan kuukaudessa
+yhden edestakaisen matkan viikossa, jos matkustat tapaamaan alaikäistä lastasi
+viikonloppumatkat, jos oppilasasuntola on suljettu viikonloppuisin.
+Matka opiskeluterveydenhuoltoon
+Kela korvaa korkeakouluopiskelijoiden matkoja opiskeluterveydenhuoltoon. Korkeakouluopiskelijana voit käyttää Ylioppilaiden terveydenhoitosäätiön (YTHS) palveluja ja saada näistä perusterveydenhuollon matkoista korvausta.
+Matkat korvataan enintään niiden kustannusten mukaan, jotka aiheutuisivat kotiosoitteestasi tehdystä matkasta lähimpään YTHS:n toimipisteeseen, josta tarvitsemasi hoito on saatavilla. Matka voidaan korvata myös muuhun YTHS:n toimipisteeseen, jos terveydenhuollon ammattihenkilö arvioi, että sieltä saatava hoito on sinulle tarpeen.
+Matkustustapa eli kulkuneuvo
+Saat korvausta edullisimman käytettävissä olevan matkustustavan mukaan. Yleensä julkinen liikenne, kuten juna tai linja-auto, on edullisin.
+Voit kuitenkin saada korvausta muulla kuin julkisella kulkuneuvolla tehdystä matkasta, jos terveydentilasi sitä edellyttää tai jos julkisia liikenneyhteyksiä ei ole käytettävissä.
+Matka julkisella liikennevälineellä
+Jos matkustat julkisella liikenteellä julkiseen terveydenhuoltoon (esimerkiksi sosiaali- ja terveyskeskus tai sairaala) tai Kelan järjestämään kuntoutukseen, et tarvitse matkakorvaushakemuksen liitteeksi erillistä todistusta terveydenhuollosta (Todistus matkakorvausta varten, SV 67).
+Jos matkustat julkisella liikenteellä yksityiseen terveydenhuoltoon, tarvitset terveydenhuollosta todistuksen (Todistus matkakorvausta varten, SV 67). Matkat yksityiseen terveydenhuoltoon korvataan pääsääntöisesti vain silloin, kun saamasi hoito on Kela-korvattavaa. Saat korvauksen matkasta myös silloin, kun lääkäri tekee vastaanotolla toimenpiteen, jota Kela ei korvaa mutta joka on sairauden hoitoa. Jos sinulla on hoitoon hyvinvointialueen maksusitoumus, palveluseteli tai Kelan kuntoutuspäätös, saat aina matkastasi korvauksen.
+Kela korvaa matkan enintään julkisen liikenteen kertalipun hinnan mukaisesti. Säilytä kuitti. Kela voi pyytää sinulta kuittia myöhemmin. Jos olet käyttänyt sarjalippua, jaa sarjalipun hinta terveydenhuoltoon tekemiesi matkojen lukumäärällä. Näin saat yksikköhinnan. Jos yksikköhinta tulee kertalippua kalliimmaksi, Kela korvaa vain kertalipun hinnan. Omavastuu yhdensuuntaiselta matkalta on enintään 25 euroa.
+Voit käyttää matkasi suunnitteluun reittiopasta (kelareitit.digitransit.fi). Reittioppaasta näet matkan pituuden, matka-ajan ja sen, onko matkallasi käytettävissä julkista liikennettä. 
+Matka omalla autolla
+Jos käytät omaa tai toisen omistamaa autoa, korvaus on 0,33 e/km. Omavastuu yhdensuuntaiselta matkalta on enintään 25 euroa.
+Jos samassa autossa matkustaa useita perheenjäseniä, korvaus haetaan yhtenä kustannuksena asiakkaan henkilötiedoilla.
+Kun matka yhteen suuntaan on alle 200 kilometriä, et tarvitse terveydenhuollon todistusta (Todistus matkakorvausta varten, SV 67) oman auton käytöstä.
+Kun matkustat omalla autolla terveydentilasi vuoksi ja matka yhteen suuntaan on yli 200 kilometriä, tarvitset terveydenhuollosta todistuksen (Todistus matkakorvausta varten, SV 67) siitä, että sinulla on oikeus oman auton käyttöön. Jos matkustat omalla autolla yli 200 kilometriä, koska julkista liikennettä ei ole käytettävissä, kerro se korvaushakemuksessasi.
+Kelan korvaaman matkan pituus perustuu reittioppaan (kelareitit.digitransit.fi) tietoihin reitille, jonka olet ilmoittanut hakemuksessa. Tätä pidemmästä matkasta aiheutuvia kuluja ei korvata.
+Matka taksilla
+Voit saada korvauksen taksimatkasta, jos joudut käyttämään taksia terveydentilasi vuoksi tai siksi, että julkista liikennettä ei ole käytettävissä.
+Jos osa matkasta on mahdollista matkustaa julkisella kulkuneuvolla, voit käyttää taksia sen osan matkasta, jolla julkisia kulkuneuvoja ei ole käytettävissä.
+Maksat matkastasi taksissa vain omavastuun, joka on enintään 25 euroa yhdensuuntaiselta matkalta. Taksimatkoista maksamasi omavastuut kertyvät vuosiomavastuuseen automaattisesti, kun matkat on käsitelty Kelassa. Niistä ei tarvitse hakea korvausta erikseen.
+Jotta Kela voi korvata taksimatkan, matka pitää tilata alueellisesta tilausnumerosta. Jokaisessa maakunnassa on kaksi palveluntuottajaa, joilta Kelan korvaamat taksimatkat tilataan. Voit itse valita, kummalta tilaat matkasi. Muualta tilattua taksimatkaa Kela ei korvaa.
+Jos joudut käyttämään taksia siksi, että julkista liikennettä ei ole käytettävissä, kerro tästä, kun tilaat Kela-taksia.
+Näin tilaat Kela-taksin
+Matka apteekkiin taksilla
+Kela ei korvaa apteekkiin erikseen tehtyä matkaa.
+Kela voi korvata matkasta aiheutuneet lisäkilometrit lähimpään apteekkiin silloin, kun käyt apteekissa lääkärikäynnin yhteydessä.
+Yleensä apteekkikäynti korvataan paluumatkalla lääkäristä. Poikkeuksena voi olla tilanne, jossa lääkäri on pyytänyt sinua hankkimaan vastaanotolla annettavan lääkkeen. Tällaisessa tilanteessa apteekkikäynti voidaan korvata myös menomatkalla.
+Apteekkikäyntiin liittyvää odotusaikaa korvataan enintään 15 minuuttia.
+Kaksi kulkuneuvoa eli matkaketju
+Matkaketju on matka, joka on tehty vähintään kahdella kulkuneuvolla: esimerkiksi osa matkasta on tehty linja-autolla ja osa Kela-taksilla, joka on tilattu alueellisesta tilausnumerosta. Tällöin kaikki matkasta aiheutuneet kustannukset lasketaan yhteen ja niistä vähennetään yksi omavastuu (25 euroa) yhdensuuntaiselta matkalta.
+Muut kulkuneuvot
+Kela korvaa ambulanssilla tehtyjä matkoja. Matkan korvaaminen edellyttää, että terveydenhuolto on arvioinut ambulanssin käytön tarpeelliseksi (Todistus matkakorvausta varten, SV 67 tai muu vastaava).
+Kela voi korvata myös muilla kulkuneuvoilla tehtyjä matkoja ilman terveydenhuollon erillistä arviota. Jos esimerkiksi asut saaristossa ja matkalla on tarpeen käyttää vesireittiä, Kela voi korvata vesitse tehdyn matkan.
+Tarvitsetko saattajaa?
+Kela voi myöntää matkakorvausta matkasta, jonka
+teet saattajan tai perheenjäsenen kanssa
+saattaja tai perheenjäsen tekee yksin.
+Saattajan ja perheenjäsenen matkat korvataan eri perustein. Sinulla voi olla saattaja, jos terveydentilasi edellyttää sitä. Perheenjäsenen matkat taas korvataan, jos lääkäri arvioi, että perheenjäsenen osallistuminen hoitoosi on välttämätöntä.
+Kela korvaa saattajan ja perheenjäsenen matkakuluja sen mukaan, mitä matka olisi tullut maksamaan edullisimmalla käytettävissä olevalla matkustustavalla.
+Myös saattajan ja perheenjäsenen matkakustannuksista täytyy hakea korvausta sinun henkilötiedoillasi.
+Milloin saattajan matka korvataan?
+Saattajan matka voidaan korvata, jos terveydentilasi edellyttää saattajaa. Tällöin saattajan tarpeellisuudesta on maininta terveydenhuollon antamassa todistuksessa (Todistus matkakorvausta varten, SV 67) tai siitä on muu selvitys. Yleensä mukana voi olla yksi saattaja.
+Jos saattajan tarve on ilmeinen, erillistä selvitystä ei tarvita. Saattajan tarve on ilmeinen esimerkiksi silloin, jos saatettavana on lapsi tai huonokuntoinen vanhus.
+Saattajan matkasta saa korvauksen siltä osalta matkaa, jonka matkustitte saattajan kanssa yhdessä. Saattajan yksin tekemästä matkasta Kela korvaa vain ne kustannukset, jotka aiheutuisivat matkasta sinun kotiosoitteestasi hoitopaikkaan. Tällainen on esimerkiksi tilanne, jossa jäät hoitoon ja saattaja matkustaa takaisin yksin. Matkaa saattajan kotoa luoksesi ei korvata. Saattajan yksin tekemä matka korvataan yleensä halvimman matkustustavan mukaan saattajan terveydentila ja liikenneolosuhteet huomioiden. Saattajan yksin tekemästä matkasta ei peritä omavastuuosuutta.
+Milloin perheenjäsenen matka korvataan?
+Perheenjäsenen tai tähän verrattavan henkilön matka voidaan korvata, jos hoitava lääkäri toteaa, että perheenjäsenen hoitoon osallistuminen on hoitosi toteutumisen kannalta välttämätöntä. Perheenjäsenen osallistumisen täytyy aina perustua lääkärin arvioon, ja se täytyy kirjata todistukseen (Todistus matkakorvausta varten, SV 67). Pelkkiä vierailukäyntejä Kela ei korvaa.
+Kun matkustat yhdessä hoitoosi osallistuvan perheenjäsenen kanssa, vähennetään yksi omavastuu yhdensuuntaiselta matkalta.
+Perheenjäsenen yksin tekemästä matkasta aiheutuneet kustannukset korvataan sinun kustannuksinasi. Matka korvataan halvimman tarpeelliseksi katsotun matkustustavan mukaan perheenjäsenen oma terveydentila ja liikenneolosuhteet huomioiden. Yhdensuuntaiselta matkalta vähennetään yksi omavastuu.
+Kuinka paljon voit saada matkakorvausta?
+Omavastuu yhdensuuntaiselta matkalta on enintään
+25 euroa.
+Edestakaisen matkan omavastuu on enintään
+50 euroa.
+Kela korvaa omavastuun ylittävät kustannukset. Jos matkasi maksaa vähemmän kuin 25 euroa, maksat matkan koko hinnan. Jos matkasi maksaa esimerkiksi 10 euroa, omavastuu on 10 euroa, ja summa kerryttää vuosiomavastuutasi.
+Säilytä kuitti tai muu luotettava selvitys, josta näkyvät matkastasi aiheutuneet kustannukset. Kela voi pyytää sinulta kuittia myöhemmin.
+Jos matkustat omalla autolla, Kela korvaa 0,33 e/km siitä kustannusten osasta, joka ylittää omavastuun (25 e).
+Paljonko vuosiomavastuu eli matkakatto on?
+Kaikki Kelan korvaamien matkojesi omavastuut kerryttävät vuosiomavastuuta eli matkakattoa.
+Vuosiomavastuu on
+300 euroa.
+Tähän 300 euron vuosiomavastuuseen lasketaan mukaan kaikki yksittäisten matkojen 25 euroa ja tätä pienemmät omavastuut. Jos omavastuut ylittävät kalenterivuoden aikana 300 euroa, et maksa loppuvuoden matkoistasi mitään.
+Voit tarkistaa omavastuukertymän OmaKelasta.
+Valitse kohta Omat etuudet - Lääkekatto ja matkakatto sekä muut sairaanhoitokorvausasiat. Matkan omavastuu kerryttää vuosiomavastuuta siinä vaiheessa, kun kyseinen matka on Kelassa käsitelty.
+Tärkeää tietoa matkakorvausten hakemisesta
+Jos matkustat omalla autolla tai julkisilla kulkuvälineillä, korvausta kannattaa hakea myös 25 euroa pienemmistä matkakustannuksista. Myös ne kerryttävät vuosiomavastuuta, vaikka yksittäisestä matkasta ei tulisi korvausta maksettavaksi. Korvaus täytyy hakea 6 kuukauden kuluessa matkasta.
+Taksilla ja ambulanssilla tehtyjen matkojen kustannukset kerryttävät vuosiomavastuuta automattisesti, kun ne on käsitelty Kelassa. Niistä ei tarvitse hakea korvausta erikseen.
+Mitä sitten, kun vuosiomavastuu on täyttynyt?
+Kela ei lähetä asiakkaalle erillistä tietoa vuosiomavastuun täyttymisestä.
+Kela seuraa vuosiomavastuun täyttymistä eikä matkoistasi peritä enää omavastuuta sen jälkeen, kun vuosiomavastuusi on täyttynyt.
+Kela välittää tiedon vuosiomavastuun täyttymisestä myös Kela-taksien tilausvälityskeskukselle. Taksinkuljettaja ei tällöin peri omavastuuta matkastasi. Tarvitset silti edelleen todistuksen, että sinulla on oikeus taksin käyttöön.
+Jos matkastasi on peritty omavastuu, vaikka vuosiomavastuusi on täyttynyt, Kela palauttaa liikaa perityt omavastuut sinulle ilman erillistä hakemusta.
+Muusta Suomesta poiketen Ahvenanmaalla taksi tilataan suoraan taksiyrittäjältä. Kun vuosiomavastuu on täyttynyt, asiakas saa matkakorvauspäätöksen, jossa asia kerrotaan. Asiakas voi myös tulostaa OmaKelasta tiedon omavastuukertymästä ja näyttää sitä taksin kuljettajalle.
+Yöpymisraha
+Voit saada yöpymisrahaa, jos joudut yöpymään hoito- tai kuntoutuspaikkakunnalla esimerkiksi ehtiäksesi hoitoon tai välttääksesi edestakaiset matkat kodin ja hoitopaikkakunnan välillä.
+Voit saada yöpymisrahaa myös, jos joudut synnytykseen liittyvien riskien pienentämiseksi yöpymään synnytystä odottaessasi sairaalan läheisyydessä. Jotta voit saada yöpymisrahaa tässä tilanteessa, tarvitset lääkärin tekemän arvion raskautesi tilasta.
+Yöpymisrahaa maksetaan vuorokaudessa enintään
+20,18 euroa.
+Yöpymisrahaa maksetaan jokaiselle korvaukseen oikeutetulle henkilölle.
+Sitä voidaan maksaa esimerkiksi molemmille vanhemmille, jos molempien vanhempien osallistuminen lapsen sairaalahoitoon on lääkärin arvion mukaan välttämätöntä.
+Kun haet korvausta yöpymiskustannuksista, säilytä kuitti itselläsi 6 kuukauden ajan. Jos tarvitsemme kuittia hakemuksen käsittelemistä varten, pyydämme sitä sinulta.
+Näin haet matkakorvausta ja yöpymisrahaa
+Hae korvausta sairautesi hoitoon tai kuntoutukseen liittyvistä matka- ja yöpymiskuluista OmaKelassa.
+Voit hakea korvausta kerrallaan 20 matkasta tai 20 yöpymisestä.
+Jos sinulla on ollut saattaja tai perheenjäsen matkallasi, myös hänen matkakuluistaan täytyy hakea korvaukset sinun henkilötiedoillasi. Tee erilliset hakemukset saattajan tai perheenjäsenen kanssa yhdessä tehdyistä matkoista ja saattajan tai perheenjäsenen yksin tekemistä matkoista.
+Lähetä liitteet OmaKelassa. Jos liitteet eivät ole sähköisessä muodossa, ota niistä kuvat.
+Tarvitset hakemukseesi nämä liitteet
+Tarvitset liitteeksi terveydenhuollon antaman todistuksen (Todistus matkakorvausta varten, SV 67), kun haet
+korvausta matkasta yksityiseen terveydenhuoltoon
+korvausta omalla autolla tehdystä yli 200 kilometrin pituisesta matkasta julkiseen terveydenhuoltoon.
+Jos tarvitset todistuksen (SV 67), voit pyytää sen terveydenhuollosta. Terveydenhuollon ammattihenkilö arvioi, millaista kulkuneuvoa terveydentilasi edellyttää, ja täyttää todistuksen.
+Säilytä matkaasi liittyvä maksukuitti ja yksittäistä taksimatkaa koskeva todistus (SV 67) itselläsi 6 kuukauden ajan. Jos saat pitkäaikaisen todistuksen (SV 67), toimita se Kelaan.
+Jos tarvitsemme kuitteja ja todistuksia hakemuksesi ratkaisemista varten, pyydämme niitä sinulta. Esimerkiksi julkisen liikenteen käytöstä ei tarvita kuittia hakemuksen liitteeksi, mutta kuitti pitää kuitenkin säilyttää.
+OmaKelassa näet, onko hakemuksesi käsitelty. Näet myös, kuinka paljon saat tukea ja milloin se maksetaan. Jos hakemuksestasi puuttuu liitteitä, saat niistä muistutuksen OmaKelaan.
+OmaKelassa voit myös antaa luvan siihen, että Kela saa lähettää sinulle viestejä. Näin nopeutat asioidesi hoitoa.
+Hae matkakorvausta tai yöpymisrahaa
+Lähetä hakemus ja liitteet verkossa.
+Kirjaudu OmaKelaan
+Jos et voi käyttää OmaKelaa, postita hakemus Kelaan
+Jos et voi käyttää OmaKelaa, toimi näin:
+Hae korvausta lomakkeella Matkakorvaus SV4 (pdf).
+Tallenna tyhjä lomake laitteellesi. Älä täytä lomaketta suoraan selaimessa, koska silloin osa tiedoista voi jäädä tallentumatta.
+Täytä lomake ja tulosta se. Allekirjoita lomake.
+Lähetä lomake ja liitteet osoitteeseen Kela, PL 10, 00056 KELA.
+Muista nämä, kun haet tukea
+Näin haet korvausta toisen puolesta
+Voit hakea korvausta matka- ja yöpymiskulusta OmaKelassa myös lapsen tai toisen aikuisen puolesta. Kirjaudu OmaKelaan omilla pankkitunnuksillasi tai mobiilivarmenteella ja valitse Asioi toisen henkilön puolesta. OmaKelassa voit myös katsoa korvauksen määrän ja maksupäivän sekä lähettää liitteitä ja viestejä toisen puolesta. Palvelussa näet myös, kuinka paljon vuosiomavastuuta on kertynyt.
+Täysi-ikäisen puolesta asiointiin tarvitaan aina valtuutus. Lapsen puolesta asiointiin ei yleensä tarvitse erillistä valtuutusta, vaan Kela saa tarvittavat tiedot suoraan väestötietojärjestelmästä.
+Lue lisää toisen puolesta asioinnista.
+Hakuaika
+Hae korvausta 6 kuukauden kuluessa matkasta tai yöpymisestä.
+Taksimatkasta ei voi hakea korvausta jälkikäteen Kelasta
+Saat taksimatkasta korvauksen taksissa, kun tilaat matkan alueellisesta tilausnumerosta. Maksat tällöin 25 euron omavastuun yhdensuuntaisesta matkasta. Taksimatkasta ei voi hakea korvausta jälkikäteen Kelasta.
+Aiheesta selkokielellä ja viittomakielellä
+Selkokielellä
+Viittomakielellä
+Jäikö jotain epäselväksi?
+Soita Kelan asiakaspalveluun.
+020 692 204020 692 204
+Mitä mieltä olet sivusta?
+Löysin etsimäni tiedonLöysin tiedon osittainEn ymmärtänyt asiaaEn löytänyt etsimääni
+Sairastaminen-sivuilla
+Päivärahat
+Kuntoutustuki ja työkyvyttömyyseläke
+Lääkekorvaukset
+Matkakorvaukset
+Korvaukset yksityisestä sairaanhoidosta
+Korvaukset yksityisestä hammashoidosta
+Valinnanvapauskokeilu 65 vuotta täyttäneille
+Sairaanhoito kansainvälisissä tilanteissa
+Työterveyshuolto
+Jos lapsi sairastuu
+Kela-kortti
+Sivu päivitetty 26.9.2026
+Siirry Sairastaminen-sivulle
+Tässä palvelussa
+Henkilöasiakkaat
+Työnantajat
+Kumppanit
+Tietoa Kelasta
+Tietoa palvelusta
+Yhteystiedot
+Tapahtumat
+Kela muualla verkossa
+Elämässä
+EU-terveydenhoito
+Kanta
+Tietotarjotin
+Tutkimusblogi
+InfoFinland
+Kela sosiaalisessa mediassa
+Kela-FPA | Facebook
+Kelakanava | Youtube
+Kela | Linkedin
+kela_fpa | Instagram
+Sivuston ulkoasu
+Tumma teema
+Tumma teema
+Vinkkejä, faktoja ja tukea elämän käänteisiin
+Tilaa Kelan uutiskirje
+© Kansaneläkelaitos
+Anna palautettaTietosuoja ja evästeetSaavutettavuusseloste

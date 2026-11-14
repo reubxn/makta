@@ -1,0 +1,9 @@
+SOURCE: Europe PMC REST API (resultType=core), accessed 2026-11-14
+PMID: 26522059
+DOI: 10.1016/j.radonc.2015.10.023
+Title: Palliative radiotherapy fractionation schedules prescribed are dependent on the distance a patient travels to receive treatment.
+Authors: Barnes M, Tiwana MS, Miller S, Kiraly A, Olivotto IA, Emmons S, Olson RA.
+Journal: Radiotherapy and oncology : journal of the European Society for Therapeutic Radiology and Oncology 2015;117(2):390-392
+
+ABSTRACT:
+This study assessed the impact of the distance a patient travelled to the treatment centre on the use of single fraction RT for bone metastases. There was significant variability in the prescription of SFRT by distance at which the patient lives from a cancer centre (p<0.001).

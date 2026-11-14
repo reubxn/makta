@@ -1,0 +1,35 @@
+[
+  {
+    "key": "statfin_population",
+    "title": "Väestö iän (1-v.) ja sukupuolen mukaan alueittain, 1972-2025 (StatFin table 11re)",
+    "publisher": "Statistics Finland (Tilastokeskus)",
+    "year": 2026,
+    "url": "https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__vaerak/statfin_vaerak_pxt_11re.px/",
+    "accessed": "2026-11-14",
+    "supports": "Municipal population on 31 Dec 2025 by sex and 1-year age (aggregated to 5-year bands), 2026-01-01 municipal division.",
+    "quote": "11re -- Väestö iän (1-v.) ja sukupuolen mukaan alueittain, 1972-2025",
+    "kind": "data"
+  },
+  {
+    "key": "statfi_wfs",
+    "title": "Kunnat 2026 (1:1 000 000) and Hyvinvointialueet 2026 (1:1 000 000), WFS layers tilastointialueet:kunta1000k_2026 and tilastointialueet:hyvinvointialue1000k_2026",
+    "publisher": "Statistics Finland (Tilastokeskus)",
+    "year": 2026,
+    "url": "https://geo.stat.fi/geoserver/wfs",
+    "accessed": "2026-11-14",
+    "supports": "Municipality and wellbeing services county boundaries, codes and Finnish/Swedish/English names; municipality-to-county assignment by spatial overlap.",
+    "quote": "Hyvinvointialueet 2026 (1:1 000 000)",
+    "kind": "data"
+  },
+  {
+    "key": "wikidata_coords",
+    "title": "Wikidata: coordinate location (P625) of Finnish municipalities, matched on Finnish municipality number (P1203)",
+    "publisher": "Wikimedia Foundation (Wikidata)",
+    "year": 2026,
+    "url": "https://query.wikidata.org/sparql",
+    "accessed": "2026-11-14",
+    "supports": "Centre point of each municipality, used as the origin for distance calculations.",
+    "quote": null,
+    "kind": "data"
+  }
+]

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script type="application/shiny-singletons">c43e97d24bbfe816ff586588b948aad02137388d</script>
+  <script type="application/html-dependencies">json2[2014.02.04];jquery[3.5.1];shiny[1.5.0];font-awesome[5.13.0];selectize[0.11.2];htmlwidgets[1.5.3];datatables-css[0.0.0];datatables-binding[0.16];crosstalk[1.1.0.1];bootstrap[3.4.1]</script>
+<script src="shared/json2-min.js"></script>
+<script src="shared/jquery.min.js"></script>
+<link href="shared/shiny.css" rel="stylesheet" />
+<script src="shared/shiny.min.js"></script>
+<link href="font-awesome-5.13.0/css/all.min.css" rel="stylesheet" />
+<link href="font-awesome-5.13.0/css/v4-shims.min.css" rel="stylesheet" />
+<link href="shared/selectize/css/selectize.bootstrap3.css" rel="stylesheet" />
+<!--[if lt IE 9]>
+<script src="shared/selectize/js/es5-shim.min.js"></script>
+<![endif]-->
+<script src="shared/selectize/js/selectize.min.js"></script>
+<script src="htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="datatables-binding-0.16/datatables.js"></script>
+<link href="crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="shared/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<script src="shared/bootstrap/js/bootstrap.min.js"></script>
+<script src="shared/bootstrap/shim/html5shiv.min.js"></script>
+<script src="shared/bootstrap/shim/respond.min.js"></script>  <style>.shinyjs-hide { display: none !important; }</style>
+  <script>Shiny.addCustomMessageHandler('shinyjs-show', function(params) { shinyjs.debugMessage('shinyjs: calling function "show" with parameters:'); shinyjs.debugMessage(params); shinyjs.show(params);});
+Shiny.addCustomMessageHandler('shinyjs-hide', function(params) { shinyjs.debugMessage('shinyjs: calling function "hide" with parameters:'); shinyjs.debugMessage(params); shinyjs.hide(params);});
+Shiny.addCustomMessageHandler('shinyjs-toggle', function(params) { shinyjs.debugMessage('shinyjs: calling function "toggle" with parameters:'); shinyjs.debugMessage(params); shinyjs.toggle(params);});
+Shiny.addCustomMessageHandler('shinyjs-enable', function(params) { shinyjs.debugMessage('shinyjs: calling function "enable" with parameters:'); shinyjs.debugMessage(params); shinyjs.enable(params);});
+Shiny.addCustomMessageHandler('shinyjs-disable', function(params) { shinyjs.debugMessage('shinyjs: calling function "disable" with parameters:'); shinyjs.debugMessage(params); shinyjs.disable(params);});
+Shiny.addCustomMessageHandler('shinyjs-toggleState', function(params) { shinyjs.debugMessage('shinyjs: calling function "toggleState" with parameters:'); shinyjs.debugMessage(params); shinyjs.toggleState(params);});
+Shiny.addCustomMessageHandler('shinyjs-addClass', function(params) { shinyjs.debugMessage('shinyjs: calling function "addClass" with parameters:'); shinyjs.debugMessage(params); shinyjs.addClass(params);});
+Shiny.addCustomMessageHandler('shinyjs-removeClass', function(params) { shinyjs.debugMessage('shinyjs: calling function "removeClass" with parameters:'); shinyjs.debugMessage(params); shinyjs.removeClass(params);});
+Shiny.addCustomMessageHandler('shinyjs-toggleClass', function(params) { shinyjs.debugMessage('shinyjs: calling function "toggleClass" with parameters:'); shinyjs.debugMessage(params); shinyjs.toggleClass(params);});
+Shiny.addCustomMessageHandler('shinyjs-html', function(params) { shinyjs.debugMessage('shinyjs: calling function "html" with parameters:'); shinyjs.debugMessage(params); shinyjs.html(params);});
+Shiny.addCustomMessageHandler('shinyjs-onevent', function(params) { shinyjs.debugMessage('shinyjs: calling function "onevent" with parameters:'); shinyjs.debugMessage(params); shinyjs.onevent(params);});
+Shiny.addCustomMessageHandler('shinyjs-alert', function(params) { shinyjs.debugMessage('shinyjs: calling function "alert" with parameters:'); shinyjs.debugMessage(params); shinyjs.alert(params);});
+Shiny.addCustomMessageHandler('shinyjs-logjs', function(params) { shinyjs.debugMessage('shinyjs: calling function "logjs" with parameters:'); shinyjs.debugMessage(params); shinyjs.logjs(params);});
+Shiny.addCustomMessageHandler('shinyjs-runjs', function(params) { shinyjs.debugMessage('shinyjs: calling function "runjs" with parameters:'); shinyjs.debugMessage(params); shinyjs.runjs(params);});
+Shiny.addCustomMessageHandler('shinyjs-reset', function(params) { shinyjs.debugMessage('shinyjs: calling function "reset" with parameters:'); shinyjs.debugMessage(params); shinyjs.reset(params);});
+Shiny.addCustomMessageHandler('shinyjs-delay', function(params) { shinyjs.debugMessage('shinyjs: calling function "delay" with parameters:'); shinyjs.debugMessage(params); shinyjs.delay(params);});
+Shiny.addCustomMessageHandler('shinyjs-click', function(params) { shinyjs.debugMessage('shinyjs: calling function "click" with parameters:'); shinyjs.debugMessage(params); shinyjs.click(params);});
+Shiny.addCustomMessageHandler('shinyjs-refresh', function(params) { shinyjs.debugMessage('shinyjs: calling function "refresh" with parameters:'); shinyjs.debugMessage(params); shinyjs.refresh(params);});</script>
+  <script src="shinyjs/shinyjs-default-funcs.js"></script>
+  <script>shinyjs.debug = false;</script>
+  <script src="https://syoparekisteri.fi/assets/themes/ssy3/dist/js/iframeResizer.contentWindow.min.js"></script>
+  <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.7.1/dist/clipboard.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://xn--syprekisteri-icb4w.fi/assets/themes/ssy3/dist/css/external.css"/>
+  <script src="dt_magic.js"></script>
+  <link rel="stylesheet" type="text/css" href="custom_styling.css"/>
+  <link rel="stylesheet" type="text/css" href="overlay.css"/>
+  <title></title>
+<script src="__assets__/sockjs-0.3.4.min.js"></script>
+<script src="__assets__/shiny-server-client.min.js"></script>
+<script>preShinyInit({reconnect:true,disableProtocols:["xdr-streaming","xhr-streaming","iframe-eventsource","iframe-htmlfile"]});</script>
+<link rel="stylesheet" type="text/css" href="__assets__/shiny-server.css"/>
+
+</head>
+<body>
+  <div class="container-fluid" id="syovat">
+    <div id="overlay-container">
+      <div id="overlay">
+        <a id="overlay-icon">
+          <i class="fa fa-spinner fa-pulse fa-3x"></i>
+        </a>
+      </div>
+      <div id="interface">
+        <div class="row">
+          <div class="col-sm-4">
+            <form class="well">
+              <div class="inline-controls">
+                <div>
+                  <div id="help_link" class="shiny-html-output"></div>
+                </div>
+                <div>
+                  <div id="feedback_link" class="shiny-html-output"></div>
+                </div>
+                <div id="language" class="form-group shiny-input-radiogroup shiny-input-container shiny-input-container-inline">
+                  <div class="shiny-options-group">
+                    <label class="radio-inline">
+                      <input type="radio" name="language" value="fi" checked="checked"/>
+                      <span>
+                        <h6>FI</h6>
+                      </span>
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="language" value="sv"/>
+                      <span>
+                        <h6>SV</h6>
+                      </span>
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="language" value="en"/>
+                      <span>
+                        <h6>EN</h6>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group shiny-input-container">
+                <label class="control-label" for="value_theme">
+                  <div id="value_theme_title" class="shiny-html-output"></div>
+                </label>
+                <div>
+                  <select id="value_theme" class="form-control"><option value="theme_cif"> </option>
+<option value="theme_cmf"> </option>
+<option value="theme_inc" selected> </option>
+<option value="theme_mort"> </option>
+<option value="theme_preliminary_inc"> </option>
+<option value="theme_prev"> </option>
+<option value="theme_surv"> </option></select>
+                  <script type="application/json" data-for="value_theme" data-eval="[&quot;hideSelected&quot;]">{"placeholder":" ","hideSelected":"false","plugins":["remove_button"]}</script>
+                </div>
+              </div>
+              <div class="form-group shiny-input-container">
+                <label class="control-label" for="in.subset.sex">
+                  <div id="in.subset.sex_title" class="shiny-html-output"></div>
+                </label>
+                <div>
+                  <select id="in.subset.sex" class="form-control" multiple="multiple"><option value="NA_integer_"> </option>
+<option value="-1L"> </option>
+<option value="0L" selected> </option>
+<option value="1L" selected> </option></select>
+                  <script type="application/json" data-for="in.subset.sex" data-eval="[&quot;hideSelected&quot;]">{"placeholder":" ","hideSelected":"false","plugins":["remove_button"]}</script>
+                </div>
+              </div>
+              <div class="form-group shiny-input-container">
+                <label class="control-label" for="in.subset.area">
+                  <div id="in.subset.area_title" class="shiny-html-output"></div>
+                </label>
+                <div>
+                  <select id="in.subset.area" class="form-control" multiple="multiple"><option value="NA_integer_"> </option>
+<option value="-1L" selected> </option>
+<option value="10100L"> </option>
+<option value="10101L"> </option>
+<option value="10102L"> </option>
+<option value="10103L"> </option>
+<option value="10104L"> </option>
+<option value="10109L"> </option>
+<option value="10110L"> </option>
+<option value="10111L"> </option>
+<option value="10190L"> </option>
+<option value="10200L"> </option>
+<option value="10212L"> </option>
+<option value="10213L"> </option>
+<option value="10214L"> </option>
+<option value="10215L"> </option>
+<option value="10300L"> </option>
+<option value="10307L"> </option>
+<option value="10308L"> </option>
+<option value="10316L"> </option>
+<option value="10400L"> </option>
+<option value="10405L"> </option>
+<option value="10406L"> </option>
+<option value="10417L"> </option>
+<option value="10500L"> </option>
+<option value="10518L"> </option>
+<option value="10519L"> </option>
+<option value="10520L"> </option>
+<option value="10521L"> </option>
+<option value="10600L"> </option></select>
+                  <script type="application/json" data-for="in.subset.area" data-eval="[&quot;hideSelected&quot;,&quot;render&quot;]">{"placeholder":" ","hideSelected":"false","plugins":["remove_button"],"render":"{\n  option: function(data, escape) {\n   var item_set_list = [\n      ['-1L', '10100L', '10200L', '10300L', '10400L', '10500L', '10600L'],\n      ['10101L', '10102L', '10103L', '10104L', '10109L', '10110L', '10111L', '10190L', '10212L', '10213L', '10214L', '10215L', '10307L', '10308L', '10316L', '10405L', '10406L', '10417L', '10518L', '10519L', '10520L', '10521L', '10691L']\n   ];\n   var function_list = [\n      function(x) {return '<div class = \"selectize-item-level-1\">' + x + '<\/div>';},\n      function(x) {return '<div class = \"selectize-item-level-2\">' + x + '<\/div>';}\n   ];\n   var k = function_list.length\n   \n   var item_label = escape(data.label);\n   \n   for (i = 0; i < k; i++) { \n      if (item_set_list[i].indexOf(data.value) != -1) {\n          return function_list[i](item_label);\n      }\n   }\n   \n   return item_label;\n  }\n}\n"}</script>
+                </div>
+              </div>
+              <div class="form-group shiny-input-container">
+                <label class="control-label" for="in.subset.sites">
+                  <div id="in.subset.sites_title" class="shiny-html-output"></div>
+                </label>
+                <div>
+                  <select id="in.subset.sites" class="form-control" multiple="multiple"><option value="NA_integer_"> </option>
+<option value="0L" selected> </option>
+<option value="2L"> </option>
+<option value="3L"> </option>
+<option value="4L"> </option>
+<option value="5L"> </option>
+<option value="6L"> </option>
+<option value="7L"> </option>
+<option value="8L"> </option>
+<option value="9L"> </option>
+<option value="10L"> </option>
+<option value="11L"> </option>
+<option value="58L"> </option>
+<option value="12L"> </option>
+<option value="13L"> </option>
+<option value="121L"> </option>
+<option value="14L"> </option>
+<option value="15L"> </option>
+<option value="16L"> </option>
+<option value="17L"> </option>
+<option value="18L"> </option>
+<option value="19L"> </option>
+<option value="20L"> </option>
+<option value="21L"> </option>
+<option value="22L"> </option>
+<option value="24L"> </option>
+<option value="25L"> </option>
+<option value="26L"> </option>
+<option value="27L"> </option>
+<option value="29L"> </option>
+<option value="59L"> </option>
+<option value="60L"> </option>
+<option value="110L"> </option>
+<option value="30L"> </option>
+<option value="31L"> </option>
+<option value="145L"> </option>
+<option value="32L"> </option>
+<option value="33L"> </option>
+<option value="34L"> </option>
+<option value="35L"> </option>
+<option value="36L"> </option>
+<option value="37L"> </option>
+<option value="140L"> </option>
+<option value="38L"> </option>
+<option value="146L"> </option>
+<option value="147L"> </option>
+<option value="40L"> </option>
+<option value="41L"> </option>
+<option value="135L"> </option>
+<option value="149L"> </option>
+<option value="150L"> </option>
+<option value="152L"> </option>
+<option value="141L"> </option>
+<option value="42L"> </option>
+<option value="153L"> </option>
+<option value="43L"> </option>
+<option value="94L"> </option>
+<option value="44L"> </option>
+<option value="45L"> </option>
+<option value="107L"> </option>
+<option value="46L"> </option>
+<option value="111L"> </option>
+<option value="48L"> </option>
+<option value="154L"> </option>
+<option value="96L"> </option>
+<option value="125L"> </option>
+<option value="124L"> </option>
+<option value="49L"> </option>
+<option value="126L"> </option>
+<option value="127L"> </option>
+<option value="123L"> </option>
+<option value="122L"> </option>
+<option value="132L"> </option>
+<option value="131L"> </option>
+<option value="128L"> </option>
+<option value="177L"> </option>
+<option value="95L"> </option>
+<option value="99L"> </option>
+<option value="129L"> </option>
+<option value="98L"> </option>
+<option value="133L"> </option>
+<option value="97L"> </option>
+<option value="54L"> </option>
+<option value="55L"> </option>
+<option value="130L"> </option>
+<option value="117L"> </option>
+<option value="155L"> </option>
+<option value="119L"> </option>
+<option value="52L"> </option>
+<option value="134L"> </option>
+<option value="178L"> </option>
+<option value="56L"> </option>
+<option value="179L"> </option>
+<option value="53L"> </option>
+<option value="142L"> </option>
+<option value="114L"> </option>
+<option value="102L"> </option>
+<option value="103L"> </option>
+<option value="181L"> </option>
+<option value="182L"> </option>
+<option value="183L"> </option>
+<option value="100L"> </option>
+<option value="10001:10019"> </option>
+<option value="c(48L, 96L, 125L, 124L, 49L, 126L, 127L, 123L, 122L, 132L, 131L, 128L, 95L, 99L, 133L, 119L, 52L, 134L, 56L)"> </option></select>
+                  <script type="application/json" data-for="in.subset.sites" data-eval="[&quot;hideSelected&quot;]">{"placeholder":" ","hideSelected":"false","plugins":["remove_button"]}</script>
+                </div>
+              </div>
+              <div class="form-group shiny-input-container">
+                <label class="control-label" for="tabu">
+                  <div id="tabu_title" class="shiny-html-output"></div>
+                </label>
+                <div>
+                  <select id="tabu" class="form-control"><option value="cif_curve"> </option>
+<option value="cmf_curve"> </option>
+<option value="inc_ag10_ts1"> </option>
+<option value="inc_ag10_ts5"> </option>
+<option value="inc_ag5"> </option>
+<option value="inc_ag5_preliminary_2025"> </option>
+<option value="inc_basis"> </option>
+<option value="inc_basis_preliminary_2025"> </option>
+<option value="inc_education_ag5"> </option>
+<option value="inc_education_latest5"> </option>
+<option value="inc_education_ts1"> </option>
+<option value="inc_education_ts5"> </option>
+<option value="inc_latest1"> </option>
+<option value="inc_latest1_preliminary_2025"> </option>
+<option value="inc_latest5"> </option>
+<option value="inc_latest5_preliminary_2025"> </option>
+<option value="inc_stage"> </option>
+<option value="inc_stage_preliminary_2025"> </option>
+<option value="inc_ts1" selected> </option>
+<option value="inc_ts5"> </option>
+<option value="mort_ag10_ts1"> </option>
+<option value="mort_ag10_ts5"> </option>
+<option value="mort_ag5"> </option>
+<option value="mort_education_ag5"> </option>
+<option value="mort_education_latest5"> </option>
+<option value="mort_education_ts1"> </option>
+<option value="mort_education_ts5"> </option>
+<option value="mort_latest1"> </option>
+<option value="mort_latest5"> </option>
+<option value="mort_ts1"> </option>
+<option value="mort_ts5"> </option>
+<option value="prev"> </option>
+<option value="prev_ts"> </option>
+<option value="surv"> </option>
+<option value="surv_ag"> </option>
+<option value="surv_education"> </option>
+<option value="surv_ts"> </option>
+<option value="1"> </option>
+<option value="2"> </option>
+<option value="3"> </option>
+<option value="4"> </option>
+<option value="5"> </option>
+<option value="6"> </option>
+<option value="7"> </option>
+<option value="8"> </option>
+<option value="9"> </option>
+<option value="10"> </option>
+<option value="11"> </option>
+<option value="12"> </option>
+<option value="13"> </option>
+<option value="14"> </option>
+<option value="15"> </option>
+<option value="16"> </option>
+<option value="17"> </option></select>
+                  <script type="application/json" data-for="tabu" data-eval="[&quot;hideSelected&quot;]">{"placeholder":" ","hideSelected":"false","plugins":["remove_button"]}</script>
+                </div>
+              </div>
+              <div class="form-group shiny-input-container">
+                <label class="control-label" for="value_type">
+                  <div id="value_type_title" class="shiny-html-output"></div>
+                </label>
+                <div>
+                  <select id="value_type" class="form-control"><option value="inc.obs"> </option>
+<option value="inc.rate"> </option>
+<option value="inc.rate_world_1966"> </option>
+<option value="inc.rate_finland_2014" selected> </option>
+<option value="preliminary_inc.obs"> </option>
+<option value="preliminary_inc.rate"> </option>
+<option value="preliminary_inc.rate_world_1966"> </option>
+<option value="preliminary_inc.rate_finland_2014"> </option>
+<option value="mort.obs"> </option>
+<option value="mort.rate"> </option>
+<option value="mort.rate_world_1966"> </option>
+<option value="mort.rate_finland_2014"> </option>
+<option value="prev.obs"> </option>
+<option value="prev.rate"> </option>
+<option value="prev.rate_world_1966"> </option>
+<option value="prev.rate_finland_2014"> </option>
+<option value="r.e2"> </option>
+<option value="r.e2.as"> </option>
+<option value="r.e2.as.5"> </option>
+<option value="cif.prob"> </option>
+<option value="cmf.prob"> </option></select>
+                  <script type="application/json" data-for="value_type" data-eval="[&quot;hideSelected&quot;]">{"placeholder":" ","hideSelected":"false","plugins":["remove_button"]}</script>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-8">
+            <nav class="navbar navbar-default navbar-static-top" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <span class="navbar-brand"></span>
+                  <button id="submit" type="button" class="btn btn-default action-button btn-presuccess navbar-btn"></button>
+                  <div id="download_plot_button" class="shinyjs-hide">
+                    <a id="download_png" class="btn btn-default shiny-download-link btn-primary navbar-btn" href="" target download>
+                      <i class="fa fa-download"></i>
+                      .png
+                    </a>
+                  </div>
+                  <div id="download_table_buttons" class="shinyjs-hide">
+                    <div style="display:inline-block">
+                      <div id="table_view" class="form-group shiny-input-radiogroup shiny-input-container shiny-input-container-inline">
+                        <label class="control-label shiny-label-null" for="table_view"></label>
+                        <div class="shiny-options-group">
+                          <label class="radio-inline">
+                            <input type="radio" name="table_view" value="v2" checked="checked"/>
+                            <span></span>
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="table_view" value="v1"/>
+                            <span></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <a id="download_csv" class="btn btn-default shiny-download-link btn-primary navbar-btn" href="" target download style="display:inline-block">
+                      <i class="fa fa-download"></i>
+                      .csv
+                    </a>
+                    <a id="download_xlsx" class="btn btn-default shiny-download-link btn-primary navbar-btn" href="" target download style="display:inline-block">
+                      <i class="fa fa-download"></i>
+                      .xlsx
+                    </a>
+                  </div>
+                </div>
+                <ul class="nav navbar-nav shiny-tab-input" id="tabset_panel" data-tabsetid="5347">
+                  <li class="active">
+                    <a href="#tab-5347-1" data-toggle="tab" data-value="1">
+                      <div id="plot_tab_title" class="shiny-html-output"></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab-5347-2" data-toggle="tab" data-value="2">
+                      <div id="table_tab_title" class="shiny-html-output"></div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="container-fluid">
+              <div class="tab-content" data-tabsetid="5347">
+                <div class="tab-pane active" data-value="1" id="tab-5347-1">
+                  <div id="submit_tooltip" class="shiny-html-output"></div>
+                  <div id="plot" class="shiny-plot-output" style="width: 100% ; height: 550px"></div>
+                </div>
+                <div class="tab-pane" data-value="2" id="tab-5347-2">
+                  <div id="table" style="width:100%; height:auto; " class="datatables html-widget html-widget-output"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="share-buttons">
+          <p id="share-buttons-text"></p>
+          <div style="display:inline-block">
+            <a target="_blank" title="Twitter" id="twitter-button" href="www.twitter.com">
+              <i class="fab fa-twitter-square fa-2x"></i>
+            </a>
+          </div>
+          <div style="display:inline-block">
+            <a target="_blank" title="Facebook" id="facebook-button" href="www.facebook.com">
+              <i class="fab fa-facebook-square fa-2x"></i>
+            </a>
+          </div>
+          <button id="bookmark-button" label="" data-clipboard-text="" class="bookmark-copy-btn btn btn-default" data-toggle="popover" data-trigger="manual" data-placement="top" data-html="true" href="#" data-content=""></button>
+        </div>
+        <script>
+var btn = document.getElementById('bookmark-button');
+var clipboard = new Clipboard(btn);
+</script>
+        <script>
+$('#bookmark-button').on('shown.bs.popover', function () {
+  setTimeout(function() {
+    $('#bookmark-button').popover('hide');
+  },2000);
+});
+$('#bookmark-button').click(function () {
+  $('#bookmark-button').popover('show');
+});
+</script>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

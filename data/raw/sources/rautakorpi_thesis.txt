@@ -1,0 +1,3553 @@
+
+=====PDFPAGE 1=====
+Liisa Rautakorpi D 1636 ANNALES UNIVERSITATIS TURKUENSIS
+ISBN 978-951-29-8879-2 (PRINT)
+ISBN 978-951-29-8880-8 (PDF)
+ISSN 0355-9483 (Print)
+ISSN 2343-3213 (Online)
+Painosalama, Turku, Finland 2022
+TURUN YLIOPISTON JULKAISUJA – ANNALES UNIVERSITATIS TURKUENSIS
+SARJA – SER. D OSA – TOM. 1636 | MEDICA – ODONTOLOGICA | TURKU 2022
+REAL-LIFE PERSPECTIVES 
+ON THE END-OF-LIFE CARE 
+OF CANCER PATIENTS
+Liisa Rautakorpi
+=====PDFPAGE 2=====
+
+=====PDFPAGE 3=====
+ 1 
+ 
+ 
+ 
+ 
+Liisa Rautakorpi 
+REAL-LIFE PERSPECTIVES 
+ON THE END-OF-LIFE CARE 
+OF CANCER PATIENTS 
+TURUN YLIOPISTON JULKAISUJA – ANNALES UNIVERSITATIS TURKUENSIS 
+SARJA – SER. D OSA – TOM. 1636 | MEDICA – ODONTOLOGICA | TURKU 2022 
+=====PDFPAGE 4=====
+University of Turku 
+Faculty of Medicine 
+Department of Clinical Medicine 
+Clinical Oncology 
+Doctoral Programme in Clinical Research 
+Supervised by 
+Docent Sirkku Jyrkkiö 
+Department of Clinical Oncology 
+Turku University Hospital, Finland 
+ 
+ 
+Docent Outi Hirvonen 
+Palliative Center 
+Turku University Hospital and 
+Department of Clinical Oncology 
+University of Turku, Finland 
+Reviewed by 
+Docent Staffan Lundström 
+Department of Oncology-Pathology 
+Karolinska Institute, Stockholm and  
+the Stockholm Sjukhem Foundation, 
+Sweden 
+ 
+Docent Siru Mäkelä 
+Comprehensive Cancer Center 
+Helsinki University Hospital, Finland 
+ 
+ 
+Opponent 
+Professor Taina Turpeenniemi-Hujanen 
+Cancer Research and Translational 
+Medicine Research Unit,  
+University of Oulu, Finland  
+ 
+The originality of this publication has been checked in accordance with the University 
+of Turku quality assurance system using the Turnitin OriginalityCheck service. 
+ISBN 978-951-29-8879-2 (PRINT) 
+ISBN 978-951-29-8880-8 (PDF) 
+ISSN 0355-9483 (Print) 
+ISSN 2343-3213 (Online) 
+Painosalama, Turku, Finland 2022 
+=====PDFPAGE 5=====
+ 
+ 
+ 
+To my family 
+=====PDFPAGE 6=====
+ 4 
+UNIVERSITY OF TURKU 
+Faculty of Medicine 
+Clinical Oncology 
+LIISA RAUTAKORPI: Real-life perspectives on the end-of-life care of 
+cancer patients 
+Doctoral Dissertation, 112 pp. 
+Doctoral Program in Clinical Research 
+April 2022 
+ABSTRACT 
+Background and Aims: The practices of the end -of-life (EOL) care of cancer 
+patients remain unknown in Finland. The aim of this retrospective study was to study 
+the effects of palliative intervention on cancer patients’ EOL , the use of anticancer 
+treatments during the last year of life and the use pain medication in a hospice setting. 
+Methods: To evaluate the effect of palliative intervention, we performed a single -
+center study including pancreatic cancer patients treated at Turku University 
+Hospital (TUH) during their last month of life. Of 378 patients , 76 (20%) had a 
+contact to the palliative ca re unit in addition to the ir standard care. The use of 
+anticancer treatments during the last year of life was assessed in a cohort study of 
+11,250 deceased cancer patients, of whom 3 ,285 received intravenous (IV) 
+chemotherapy (CT) and 2,904 radiotherapy (RT) during the last year of life. Finally, 
+pain medication given to 138 cancer patients was studied after transfer to hospice.  
+Results: Fewer treatment procedures and lower tertiary care costs during the last 
+month of life were observed for cancer patients  who were in contact with  the 
+palliative care unit. The use of IV CT remained stable across the 9 -year period. 
+Patient’s age and diagnosis affected the time from last treatment to death. The time 
+between the last fraction of RT and death varied by diagnosi s and was longer for 
+patients living >100km from TUH.  The use of single -fraction RT treatments was 
+infrequent, even if the median number of RT fractions decreased during the 
+observation time. In hospice, upon transfer 63% of patients, and 1 day before death 
+90% of patients, received regularly dosed strong opioids. The use of subcutaneous 
+administration increased significantly during the stay in hospice. 
+Conclusions: Palliative care intervention should be warranted for patients with 
+aggressive malignancies and a short life expectancy. Significant variations in EOL 
+CT between different diagnoses and age groups were identified. Single-fraction RT 
+should be considered more often, and palliative RT should also be made available to 
+patients living far away from the RT unit. Strong opioids remain the foundation of 
+pain medication in hospice. 
+KEYWORDS: EOL care, palliative intervention, EOL chemotherapy, EOL 
+radiotherapy, pain medication, opioids  
+=====PDFPAGE 7=====
+ 5 
+TURUN YLIOPISTO 
+Lääketieteellinen tiedekunta 
+Kliininen syöpätautioppi 
+LIISA RAUTAKORPI: Näkökulmia syöpäpotilaan elämän loppuvaiheen 
+hoitoon 
+Väitöskirja, 112 s. 
+Turun kliininen tohtoriohjelma 
+Huhtikuu 2022 
+TIIVISTELMÄ 
+Tausta ja tutkimuksen tarkoitus:  Syöpäpotilaiden elämän loppuvaiheen hoito -
+käytäntöjä ei ole kuvattu Suomessa kattavasti. Tämän retrospektiivisen väitöskirja -
+tutkimuksen tarkoituksena oli tutkia palliatiivisen intervention vaikutusta syöpä -
+potilaiden elämän loppuvaiheessa, syöpähoi toja potilaan viimeisen elinvuoden 
+aikana ja kipulääkityksen toteutumista saattohoitokodissa. 
+Menetelmät: Palliatiivisen intervention vaikutusten arvioimiseksi tutkimme Turun 
+yliopistollisessa keskussairaalassa hoidettuja haimasyöpäpotilaita viimeisen kuukauden 
+aikana ennen kuolemaa. 378 potilaasta, 76:lla (20 %)  oli hoitokontakti palliatiiviseen 
+poliklinikkaan muun hoidon lisäksi. Viimeisen vuoden aikana annettuja syöpähoitoja 
+kartoitettiin 11 250 menehtyneen syöpäpotilaan kohortissa. Näistä potilaista 3285 sai 
+suonensisäistä sytostaattihoitoa ja 2904 sädehoitoa. Neljännessä  tutkimuksessa 
+tutkittiin 138 syöpäpotilaan kipulääkityksen toteutumista saattohoitokodissa.  
+Tulokset: Potilaille, joilla oli kontakti palliatiiviseen poliklinikkaan, tehtiin 
+viimeisen kuukauden aikana vähemmän hoitotoimenpiteitä ja  tutkimuksia. Lisäksi 
+heidän erikoissairaanhoidon kustannuksensa olivat merkittävästi pienemmät. 
+Yhdeksän vuoden tarkastelujaksona aika suonensisäisen sytostaattihoidon 
+päättymisestä potilaan kuolemaan pysyi vakaana. Potilaan ikä ja syöpädiagnoosi 
+vaikuttivat viimeisen sytostaattihoidon ajankohtaan. Viimeisen sädehoidon ja 
+kuoleman väliseen aikaan vaikutti syöpädiagnoosi ja > 100 km etäisyys potilaan 
+asuinpaikan ja sädehoitoyksikön välillä. Viimeisessä sädehoitosuunnitelmassa 
+fraktioiden määrä väheni tarkas telujaksona, vaikkakin yhden fraktion hoitoja 
+käytettiin vähän.  Saattohoitokotiin siirryttäessä 63 % ja päivä ennen kuolemaa 90 
+% potilaista sai säännöllisenä kipulääkkeenä vahvaa opiaattia. Ihonalainen annostelu 
+muuttui yleisemmäksi kuoleman lähestyessä.  
+Johtopäätökset: Palliatiivinen interventio tulisi taata kaikille nopeasti etenevää syöpää 
+sairastaville potilaille, joiden elinajanodote on lyhyt. Ikä ja potilaan syöpädiagnoosi 
+vaikuttavat suonensisäisen sytostaattihoidon käyttöön viimeisten elinkuukaus ien 
+aikana. Yhden fraktion hoitoja tulisi harkita useammin ja niille potilaille, jotka asuvat 
+kaukana sädehoitoyksiköstä, tulisi taata mahdollisuus palliatiiviseen sädehoitoon. 
+Vahvat opiaatit ovat elämän loppuvaiheen syöpäkivunhoidon perusta. 
+AVAINSANAT: elämän loppuvaiheen hoito, saattohoito, palliatiivinen interventio, elä -
+män loppuvaiheen sytostaattihoito, elämän loppuvaiheen sädehoito, kipulääkitys, opiaatit 
+=====PDFPAGE 8=====
+ 6 
+Table of Contents 
+Abbreviations .................................................................................. 8 
+List of Original Publications ........................................................... 9 
+1 Introduction ........................................................................... 10 
+2 Review of the Literature ....................................................... 12 
+2.1 Definition of key terms ............................................................ 12 
+2.2 Palliative intervention ............................................................. 13 
+2.2.1 Effects of palliative intervention ................................... 15 
+2.2.2 Palliative care and the use of hospital resources ......... 15 
+2.2.3 Timing of palliative intervention ................................... 16 
+2.2.4 Integration of oncology and palliative care ................... 16 
+2.2.5 Palliative care in Finland ............................................. 18 
+2.3 Intravenous chemotherapy near the end of life ....................... 20 
+2.3.1 Advantages and disadvantages .................................. 20 
+2.3.2 End-of-life chemotherapy as a quality indicator ........... 21 
+2.3.3 Current practice ........................................................... 21 
+2.4 Radiotherapy near the end of life ........................................... 23 
+2.4.1 Palliative radiotherapy ................................................. 23 
+2.4.2 Targets of palliative radiotherapy ................................ 24 
+2.4.3 Current practice ........................................................... 26 
+2.5 The use of opioids near the end of life .................................... 27 
+2.5.1 Prevalence of pain in cancer patients .......................... 27 
+2.5.2 Management of cancer pain ........................................ 27 
+2.5.3 Consumption of opioids ............................................... 28 
+2.5.4 Factors influencing the use of pain medication ............ 29 
+3 Aims ....................................................................................... 30 
+4 Materials and Methods ......................................................... 31 
+4.1 Study design and methods ..................................................... 31 
+4.2 Statistical analyses ................................................................. 34 
+4.3 Ethical considerations ............................................................ 35 
+5 Results ................................................................................... 36 
+5.1 End-of-life care with or without palliative intervention 
+(Study I) ................................................................................. 36 
+=====PDFPAGE 9=====
+ 7 
+5.2 Use of intravenous chemotherapy and radiotherapy during 
+the last months of life (Studies II-III) ....................................... 40 
+5.2.1 Use of intravenous chemotherapy ............................... 40 
+5.2.2 Utilization of radiotherapy ............................................ 44 
+5.3 Treating end-of-life pain (Study IV) ......................................... 49 
+6 Discussion ............................................................................. 52 
+6.1 Effect of palliative care intervention (Study I) .......................... 52 
+6.2 Use of Intravenous chemotherapy near the end of life 
+(Study II) ................................................................................ 54 
+6.3 Use of radiotherapy near the end of life (Study III).................. 56 
+6.4 Management of pain with strong opioids (Study IV) ................ 58 
+6.5 Study limitations ..................................................................... 61 
+6.6 Future considerations ............................................................. 62 
+7 Summary and conclusions ................................................... 64 
+Acknowledgements ....................................................................... 66 
+References ..................................................................................... 68 
+Original Publications ..................................................................... 81 
+  
+=====PDFPAGE 10=====
+ 8 
+Abbreviations 
+ASCO American Society for Clinical Oncology 
+ASTRO American Society for Radiation Oncology 
+CT Chemotherapy 
+CoT Computer tomography 
+EAPC European Association for Palliative Care 
+ED Emergency department 
+EOL  End-of-life 
+ESMO European Society for Medical Oncology 
+Gy  Gray 
+ICU  Intensive care unit 
+IV  Intravenous 
+MEDD Morphine equivalent daily dose 
+MRI Magnetic resonance imaging 
+PC group  Palliative care group 
+RT Radiotherapy 
+SC  Subcutaneous 
+SC group  Standard care group 
+TUH  Turku University Hospital 
+WHO World Health Organization 
+WPCA  World Palliative Care Association 
+ 
+  
+=====PDFPAGE 11=====
+ 9 
+List of Original Publications 
+This dissertation is based on the following original publications, which are referred 
+to in the text by their Roman numerals: 
+ 
+I Liisa Rautakorpi, Sirkku Jyrkkiö, Eliisa Löyttyniemi & Outi Hirvonen. End-
+of-life care among patients with pancreatic cancer with or without palliative 
+intervention: a retrospective single-centre study, Acta Oncologica, 2021 60:1, 
+106–111. 
+ 
+II  Liisa Rautakorpi#, Fatemeh Seyednasrollah#, Johanna M äkelä, Outi 
+Hirvonen, Tarja Laitinen, Laura L. Elo & Sirkku Jyrkki ö. End-of-life 
+chemotherapy use at a Finnish university hospital: a retrospective cohort 
+study, Acta Oncologica, 2017, 56:10, 1272–1276. 
+ # The first and the second authors contributed equally to this manuscript 
+  
+III Liisa Rautakorpi, Johanna Mäkelä, Fatemeh Seyednasrollah, Anna Hammais, 
+Tarja Laitinen, Outi Hirvonen, Heikki Minn, Laura L. Elo & Sirkku Jyrkki ö. 
+Assessing the utilizati on of radiotherapy near end of life at a Finnish 
+University Hospital: a retrospective cohort study, Acta Oncologica , 2017 
+56:10, 1265–1271 
+ 
+IV  Liisa Koivu, Tuukka Pölönen, Teija Stormi & Eeva Salminen. End-of-Life 
+Pain Medication among Cancer Patients in Hospice Settings, Anticancer 
+Research, 2014 34: 6581–6584. 
+The original publications have been reproduced with the permission of the copyright 
+holders. 
+ 
+Rautakorpi (nèe Koivu) 
+ 
+=====PDFPAGE 12=====
+ 10 
+1 Introduction 
+Palliative care offers a holistic approach to managing patients’ symptoms near the 
+end of life (EOL), with focus on the patient’s comprehensive well-being. Palliative 
+care is essential to patients with various diagnoses, but in this thesis the focus is on 
+patients with cancer . Palliative care has been found to improve  cancer patients’ 
+quality of life and alleviate symptom burden (Bajwah et al., 2020; Kavalieratos et 
+al., 2016). Thus, it should be part of th eir care concurrent with active anticancer 
+treatments (Ferrell et al., 2017). 
+When faced with serious illness, most people would choose to improve their 
+quality of life for the time they have left, rather than merely extending it (Higginson 
+et al., 2014) . Many cancer patients would prefer being cared for at home and , if 
+possible, would also want to die there (Khanm et al., 2014). The importance of death 
+and dying is recognized  also by the public , and the re is a concern about the 
+prioritization of quantity over quality of life (Daveson et al., 2014). 
+In the future, the number of cancer patients will increase as the population in 
+Finland ages (Pitkäniemi et al., 2021) . Despite improvements in cancer care, 
+malignant neoplasms are one of the leading causes of death in developed countries 
+(Connor et al., 2020) . The need for symptom-alleviating procedures and hospital 
+resources will inevitably increase when the patient’s cancer becomes advanced 
+(Crawford et al., 2021). Thus, the demand for EOL care will grow simultaneously.  
+A major part of the costs of health care arises from treatment during the last year 
+of life (Riley & Lubitz, 2010). Indeed, also in Finland, the costs of care rise tenfold 
+as death approaches (Halminen et al., 2019) . Advances in palliative and terminal 
+care may lo wer the costs of care (Finne-Soveri et al., 20 21) and give us an 
+opportunity to target the limited resources of health care more effectively (Hirvonen 
+et al., 2018).  
+In Finland, active anticancer treatments have been at the center of the oncological 
+approach, whereas EOL care has been provided alongside primary healthcare. 
+Cancer care has traditionally focused on improving the prognosis and overall 
+survival of the patient, and treatment patterns during the last month of life or 
+advanced care planning have only come into focus in recent years. Oncologists have 
+more commonly been involved with treating symptoms such as pain, nausea, and 
+=====PDFPAGE 13=====
+Introduction 
+ 11 
+fatigue, rather than managing psychological symptoms and EOL issues (Cherny & 
+Catane, 2003).  
+According to a report by the World Palliative Care Association (WPCA) (Connor 
+et al., 2020), in Finland the quality of palliative care does not reach the level of other 
+high-income developed countries, and the processes of palliative care need to be 
+developed and harmonized, as stated in a report by the Ministry of Social Affairs and 
+Health (Saarto et al., 2 019). To further develop and optimize treatment patterns in 
+the future, a crucial step is to assess current treatment practices. 
+The aims of this thesis were to evaluate from real-life data the effects of palliative 
+intervention on patients’ EOL car e and the use of anticancer treatments during the 
+last months of a patient’s life, and  to assess the aggressiveness of oncological 
+interventions close to death. Finally, the aim was to study the use of opioids in the 
+terminal phase of a cancer patient’s disease.  
+=====PDFPAGE 14=====
+ 12 
+2 Review of the Literature 
+2.1 Definition of key terms 
+The definitions of key terms, end of life, palliative care , and advance care planning 
+are given in Table 1. 
+Table 1.  Definition of key terms. 
+End of life European Society 
+for Medical 
+Oncology (ESMO) 
+Care for people with advanced disease once they have 
+reached the point of rapid physical decline, typically the 
+last few weeks or months before inevitable death as a 
+natural result of a disease (Crawford et al., 2021). 
+Systematic Review Life-limiting disease with irreversible decline and expected 
+survival in terms of months or less (Hui et al., 2014). 
+Palliative care World Health 
+Organization 
+(WHO) 
+An approach that improves the quality of life of patients and 
+their families facing the problem associated with life-
+threatening illness, through the prevention and relief of 
+suffering by means of early identification and impeccable 
+assessment and treatment of pain and other problems, 
+physical, psychosocial, and spiritual. Palliative care should 
+provide relief, affirm life, and regards dying as a normal 
+process. It should be applicable early in the course of illness, in 
+conjunction with other therapies that are intended to prolong 
+life, such as chemotherapy or radiation therapy, and includes 
+those investigations needed to better understand and manage 
+distressing clinical complications (Sepúlveda et al., 2002). 
+Association for 
+Hospice and 
+Palliative care 
+An active holistic care of individuals across all ages with 
+serious health-related suffering due to severe illness and 
+especially of those near the end of life. It aims to improve 
+the quality of life of patients, their families, and their 
+caregivers (Radbruch et al., 2020). 
+Advance care 
+planning  
+Consensus 
+Definition from a 
+Multidisciplinary 
+Delphi Panel 
+A process that supports adults at any stage of health in 
+understanding and sharing their personal values, life 
+goals, and preferences regarding future medical care. The 
+goal of advance care planning is to help ensure that 
+people receive medical care that is consistent with their 
+values, goals, and preferences during serious and chronic 
+illness (Sudore et al., 2017). 
+European 
+Association for 
+Palliative Care 
+(EAPC) 
+The ability to enable individuals to define goals and 
+preferences for future medical treatment and care, to 
+discuss these goals and preferences with family and 
+health-care providers, and to record and review these 
+preferences if appropriate (Rietjens et al., 2017). 
+=====PDFPAGE 15=====
+Review of the Literature 
+ 13 
+2.2 Palliative intervention 
+Palliative care offers a patient-centered and holistic approach to the care of advanced 
+and lethal diseases. In addition to standard oncological care, it should be routinely 
+included in the care of cancer patients already receiving active anticancer treatment 
+(Kaasa et al., 2018), with a focus on those who have a limited life expectancy. The 
+role of palliative care has been unequivocally acknowledged in the guidelines of 
+ESMO (European Society for Medical Oncology) and ASCO (American Society for 
+Clinical Oncology) (Ferrell et al., 2017; Jordan et al., 2018), and the favorable effects 
+on the patient’s quality of life, satisfaction , and symptom control ha ve been 
+established in various systematic review s (Bajwah et al., 2020; Haun et al., 2017; 
+Kavalieratos et al., 2016).  
+Palliative intervention is a way to integrate  palliative care with the standard 
+oncological care and in this thesis it is referred as the intervention when palliative 
+care specialists meet the cancer patient . It may be executed by interdisciplinary 
+palliative care team in palliative care outpatient clinic, inpatient unit or at patient’s 
+home. The essential components of  clinical process may include routine symptom  
+and functional status  screening, discussion on the disease history and prognosis in 
+addition to clarification of treatment goals . Palliative treatment options including  
+symptom control, medical therapies and radiotherapy  needs also to be considered . 
+Advance care planning and discussion on patient’s and caregivers wishes should also 
+be included (Ferrell et al., 2017; Hui & Bruera, 2015). The definition and execution 
+of palliative intervention varies in clinical studies as presented in the Table 2. 
+=====PDFPAGE 16=====
+Liisa Rautakorpi 
+ 14 
+Table 2.  Examples on palliative interventions. 
+ Intervention Study design Outcome 
+measurements 
+Results 
+Eychmyller et 
+al, 2021 
+Switzerland 
+A single intervention 
+performed by a physician 
+and a nurse – a structured 
+conversation 
+A randomized 
+controlled trial 
+Patients distress and a 
+health-related quality 
+of life 
+Intervention did not 
+decrease distress or 
+improve quality of life 
+Vanbutsele et 
+al, 2018 
+Belgium 
+Consultation with a 
+palliative care nurse within 
+3 weeks of enrolment and 
+monthly until death. 
+Physician visit on demand 
+– routine assessments. 
+Palliative care nurse 
+participating in weekly 
+multidisciplinary oncology 
+meetings 
+A randomized 
+controlled trial 
+Quality of life Quality of life was 
+increased for the 
+patients in the 
+intervention group 
+Groenvold et 
+al, 2017 
+Denmark 
+Referral to multidisciplinary 
+specialist palliative care 
+team – number and 
+frequency of contacts 
+determined by patients 
+needs during 8-week trial 
+period 
+A randomized 
+clinical trial 
+Change in each 
+patient’s primary need 
+(problems with 
+physical, emotional or 
+role function, or 
+nausea, pain, dyspnea 
+or lack of appetite) and 
+survival 
+No difference between 
+the groups were 
+observed 
+Maltoni et al, 
+2016 
+Italy 
+Appointment with palliative 
+care specialist within 2 
+weeks of enrolment and 
+every 2–4 weeks until 
+death – discussion on pre-
+determined checklist 
+A randomized 
+clinical trial 
+Frequency, type and 
+timing of 
+chemotherapy 
+administration, use of 
+resources, place of 
+death and overall 
+survival  
+In the experimental 
+arm chemotherapy 
+was used less 
+frequently near EOL, 
+and higher use of 
+hospice services was 
+observed 
+Zimmermann 
+et al, 2014 
+Canada 
+A meeting with a palliative 
+care physician and nurse 
+once monthly and more 
+often if necessary – routine 
+assessments 
+A cluster-
+randomized 
+controlled trial 
+Quality of life, 
+symptom severity, 
+satisfaction with care 
+and problems with 
+medical interactions 
+At 4 months a 
+significant difference in 
+all other 
+measurements but 
+medical interactions 
+Temel et al, 
+2010 
+US 
+A meeting with a palliative 
+care physician and a nurse 
+– 8 weeks after diagnosis 
+and at least monthly until 
+death 
+A randomized 
+controlled trial 
+Quality of life and 
+mood 
+Improvements in 
+quality of life and 
+mood, longer OS 
+Penrod et al, 
+2010 
+UA 
+Palliative care consultation 
+for inpatient patients  
+An 
+observational 
+study 
+The costs of care and 
+intensive care unit use 
+Lower costs of care 
+and less utilization in 
+intensive care unit in 
+the palliative care 
+group 
+Bakitas et al, 
+2009 
+US 
+Advanced practice nurse – 
+4 weekly educational 
+sessions and monthly 
+follow-up until death or 
+study completion 
+A randomized 
+controlled trial 
+Quality of life, 
+symptom intensity, 
+depressed mood 
+Higher QOL and mood, 
+other measurements 
+were not significant 
+between the groups 
+=====PDFPAGE 17=====
+Review of the Literature 
+ 15 
+2.2.1 Effects of palliative intervention 
+Studies evaluating the effect s of palliative intervention show wide variations in the 
+study design. Settings vary with the population studied, the outcomes chosen, the 
+duration of the study, the type of intervention, and the clinical setting. Nonetheless, in 
+addition to improvements in  quality of life and mood, and a trend toward  a lower 
+symptom intensity (Bakitas et al., 2009), some studies have suggested a longer overall 
+survival for patients who receive early palliative care (Bakitas et al., 2015; Temel et 
+al., 2010). Lower activity of treatment procedures and fewer hospitalizations near the 
+EOL have also been detected as an impact of palliative care (Jang et al., 2015).  
+Favorable outcomes extend, however, beyond patient outcomes , as early 
+palliative care improves the psychological wellbeing of caregivers (El-Jawahri et al., 
+2017) and is associated with lower costs of care, as reported in a systematic review 
+by Yadav et al. (Yadav et al., 2020). 
+However, it should be noted  that despite the many advances brought about  by 
+palliative intervention, there are also studies with mixed outcomes. In a Danish 
+randomized trial, specialized palliative care showed no beneficial or harmful effects 
+(Groenvold et al., 2017) , even if in the exploratory analyses the intervention group 
+seemed more satisfied with the health care received (Johnsen et al., 2020). In a Canadian 
+cluster-randomized controlled trial of patients with advanced cancer, early referral to a 
+palliative care team significantly improved quality of life on one of the measured scales. 
+Furthermore, patient satisfaction increased. However, changes in symptom severity or 
+problems with medical interactions did not decrease (Zimmermann et al., 2014) . 
+Additionally, in the ENABLE II randomized, controlled trial, there were no differences 
+in the use of hospital resources near the EOL (Bakitas et al., 2009). 
+Indeed, evaluating the effects of palliative intervention may be challenging due 
+to the difficulties of conducting prospective trials of palliative care interventions in 
+a population of patients with advanced cancer (Temel et al., 2020). 
+2.2.2 Palliative care and the use of hospital resources 
+The need  for palliative care evolve s as the disease progresses, and m any cancer 
+patients require active non-oncological treatment procedures during the last weeks 
+of life. When health care utilization by patients dying of cancer in seven developed 
+countries was assessed, during the last month of life 43 –63% of patients were 
+hospitalized in acute care hospitals . One third of patients in the United States (US) 
+and fewer than 11% in other countries were admitted to the intensive care unit (ICU) 
+(Bekelman et al., 2016).  
+Emergency department (ED) visits are also common, as 26–75% of patients visit 
+an ED during their last month of life (Bekelman et al., 2016; Urvay et al., 2021) . 
+Patients with advanced cancer will have symptoms and a need for specialized 
+=====PDFPAGE 18=====
+Liisa Rautakorpi 
+ 16 
+medical care, but some of the ED visits could be avoided with advance care planning 
+(Hirvonen et al., 2018; Surakka et al., 2021). Indeed, palliative intervention has been 
+found to decrease the need for hospital services and the use of aggressive EOL care 
+(Bevins et al., 2021; Hirvonen et al., 2020; Jang et al., 2015; Temel et al., 2010; 
+Triplett et al., 2017).  
+2.2.3 Timing of palliative intervention 
+Traditionally, palliative care has been associated with EOL care and a poor 
+prognosis. It should, however, be given already at an early stage of the disease. In a 
+systematic review and meta -analysis including over 10 million patients, prior to 
+death the median duration from initiation of palliative care to death was 18.9 days 
+(R. Jordan et al., 2020). Early palliative care might have the most pronounced effect 
+on the patient’s quality of life (Haun et al., 2017; Nottelmann et al., 2021) even if it 
+does not necessarily influence the use of hospital resources during EOL (Bakitas et 
+al., 2015). However, also this finding varies with the setting: When the timing of 
+palliative intervention was assessed in an Australian study, early (>90 days) and late 
+(<90 days) specialist palliative care was assessed regarding the aggressiveness of 
+cancer care during the last 30 days of life. Late palliative referral was associated with 
+more ED visits and acute hospital admissions, with no differences in ICU admissions 
+(Michael et al., 2019). 
+The condition for early palliative referral is recognizing that the  patient is 
+approaching the EOL and formulating a moderately accurate survival prediction. 
+When predicting the survival of terminally ill patients, physicians’ estimates are 
+often overly optimistic, also for patients with impaired performance status 
+(Christakis & Lamont, 2000) . Physicians should be aware of this tendency, even 
+though the importance of clinical prediction should not be  underestimated, as 
+prediction and actual survival have been found to be strongly correlated (Glare et al., 
+2003). Discussing these evaluations with empathy and realism in a way  that the 
+patient understands is of utmost importance.  Furthermore, the difficulties of 
+prognostic evaluation and the stigma associated with EOL- and palliative care may 
+complicate the discussion and hence referral to a palliative care unit.  
+2.2.4 Integration of oncology and palliative care 
+To conclude, the question should not be whether palliative intervention is an essential 
+part of a patient’s care, but how it should be arranged (Kaasa et al., 2018) . Palliative 
+care interventions should be integrated, dynamic, personalized, and based on best 
+evidence (K. Jordan et al., 2018) . Regardless, the coordination of palliative care is 
+demanding and involves a vast number of professionals and multiple transitions from 
+=====PDFPAGE 19=====
+Review of the Literature 
+ 17 
+one care level to another throughout the disease trajectory, which makes collaboration 
+and integration of services important (Kaasa et al., 2018) . Early and systematic 
+integration may be more beneficial for the cancer patient than consultations offered on 
+demand (Maltoni et al., 2016; Vanbutsele et al., 2018) . There are many m odels of 
+integration of oncology with palliative care (Hui & Bruera, 2015 ). Of the multiple 
+conceptual models, four essential ones are presented in Table 3.  
+Even if the need for palliative care already in an early stage of disease trajectory 
+has been recognized in many guidelines there has been a lack of consensus of referral 
+criteria for outpatient palliative cancer care (Hui, Meng, et al., 2016). Thus, to achieve 
+this consensus, an international expert panel was formed. Based on its work consensus 
+on 11 major criteria for outpatie nt palliative-care referral for patients with advanced 
+cancer being treated at secondary or tertiary care hospital was achieved. The nine need-
+based criteria and the two time-based criteria are presented in a Table 4.  
+Table 3.  Conceptual models for integrating oncological and palliative care (Modified from Hui & 
+Bruera, 2015. 
+Name of the 
+model 
+In short Division Highlights 
+Time-based 
+model 
+Chronological 
+criterion 
+Time of intervention:  
+i. when no more treatments are 
+available 
+ii. from time of diagnosis  
+ii. level of integration fluctuates 
+over time 
+Timing and extent of 
+palliative intervention 
+Provider-
+based 
+model 
+Primary, 
+secondary, and 
+tertiary palliative 
+care 
+i. primary care by an oncologist 
+and primary care providers 
+ii. secondary care by specialist 
+palliative care teams and 
+consultants in inpatient or 
+outpatient settings 
+iii. tertiary care by a palliative care 
+team in an acute palliative care unit 
+Patient complexity and 
+setting 
+Issue-based 
+model 
+Solo practice, 
+congress, and 
+integrated care 
+approaches 
+i. solo practice model – oncologist 
+is responsible for anticancer and 
+supportive care 
+ii. congress model – oncologist 
+refers patient to various specialists 
+(generally not recommended) 
+iii. integrated care model – patient 
+is referred to specialist palliative 
+care teams early in the disease 
+trajectory (recommended model) 
+Supportive care issues 
+System-
+based 
+model 
+Clinical events i. contemporary model – timing 
+and eligibility for palliative care 
+referral is not standardized 
+ii. integrated system-based model 
+– a patient who meets pre-defined 
+criteria is referred to palliative care 
+Comprehensive 
+supportive care 
+assessments and 
+treatments provided by 
+the palliative care team 
+=====PDFPAGE 20=====
+Liisa Rautakorpi 
+ 18 
+Table 4.  Referral criteria for outpatient palliative cancer care by an international expert panel  
+(Modified from Hui et al., 2016). 
+Needs-based criteria Severe physical symptoms (scored 7–10 on a ten-point scale) 
+ Severe emotional symptoms (scored 7–10 on a ten-point scale) 
+ Request for hastened death 
+ Spiritual or existential crisis 
+ Assistance with decision making or care planning 
+ Patients request 
+ Delirium 
+ Brain or leptomeningeal metastases 
+ Spinal cord compression or cauda equina 
+Time-based criteria Within 3 months of diagnosis of advanced or incurable cancer for 
+patients with median survival of 1 year or less 
+ Diagnosis of advanced cancer with progressive disease despite 
+second-line systematic therapy 
+ 
+Accordingly, patients with aggressive malignancies such as pancreatic cancer should 
+receive palliative consultation . Pancreatic cancer is often associated with poor 
+prognosis with an overall survival rate of only 5–12 % in 5 years after diagnosis and 
+is one of the most lethal diseases and fourth leading cause of cancer deaths for both 
+sexes in Europe (Danckert et al., 2019; Ducreux et al., 2015; Dyba et al., 2021). In a 
+clinical practice guideline for metastatic pancreatic cancer by ASCO, patients with 
+pancreatic cancer should have a full assessment of symptom burden, psychological 
+status, and social support as early as possible, preferably at the first visit (Sohal et 
+al., 2016) . Indeed, when discussing integration of palliative care and oncology 
+special attention should be paid to these patients.  
+Integration of palliative care  already occurs , but further developments is 
+needed. In a Nordic survey of the management of palliative care in  21 university 
+hospitals, for  patients with head and neck cancer,  specialized palliative care 
+services were indeed available but collaboration between surgeons, oncologists 
+and palliative care specialists was not well structured. Early integrated palliative 
+care was suggested to be included as an addition to the existing  care pathways 
+(Boëthius et al., 2021). 
+2.2.5 Palliative care in Finland 
+When the World Palliative Care Association (WPCA) , in collaboration with the 
+WHO, categorized countries into four categories based on the level of palliative care, 
+Finland was placed in category three, with 29 European countries ranking better. In 
+category three, a country is characterized to have palliative care activism in several 
+=====PDFPAGE 21=====
+Review of the Literature 
+ 19 
+locations with growing local support in those areas, multiple sources of funding, the 
+availability of morphine , several hospice palliative care services from a range of 
+providers, and the provision of some training and education initiatives by hospice 
+and palliative care organizations. (Connor et al., 2020). This ranking underlines the 
+need for improvements in palliative and EOL care. 
+For decades in Finland, EOL care  was implemented as part of primary 
+healthcare, and most cancer patients died on a primary care ward or in a secondary 
+or tertiary care hospital without specific palliative care consultation.  Clinical and 
+organizational problems were present in patient’s transition to primary care after 
+the discontinuation of active oncological care. In more detail, in a Finnish study, 
+after the responsibility of palliative care was transferred to primary care after 
+termination of oncological treatment, one third of the outpatients were unaware 
+who was responsible for the care and one third reported poor quality of pa lliative 
+care in primary care. In addition, most patients were symptomatic while leaving 
+the university hospital and no improvement was seen later (Tasmuth et al., 2006). 
+There were four hospices focused in the EOL care maintained by independent 
+foundations. In 2010, the Ministry of Social Affair s and Health determined the 
+minimum criteria for EOL care and assigned the responsibility to the 
+municipalities (Pihlainen, 2010). Since then, EOL care has improved substantially, 
+and palliative consultation services in addition to several specialized units offering 
+EOL care have been established.  Education for professionals has also been more 
+dynamic. Based on the recommendations of the task force appointed by the 
+Ministry of Social Affairs and Health to examine EOL care, this trend is expected 
+to continue (Saarto et al., 2019).  
+In Finland the attitudes towards EOL care have also changed alongside with 
+the legislation. The transition to a stronger emphasis on patient-centered care and 
+a stronger tendency to avoid futile therapies was observed in a postal survey 
+including the responses of 1372 physicians in 1999 and 2015 .  In more detail 
+physicians chose palliative approaches more often and were more willing to give 
+a hospice voucher in 2015 (Piili et al., 2019) . Finnish physicians with  special 
+education in palliative medicine are more likely to make less aggressive decisions 
+in the EOL care  (Piili et al., 2018)  and the number of physicians with palliative 
+training increases as both Nordic and Finnish training programs are ongoing. In 
+addition to special training aiming for palliative specialization , systematic 
+education in palliative medicine is still needed especiall y for undergraduate 
+medical students (Alminoja et al., 2019).  
+In Southwest Finland, where data for the present studies were mainly collected, 
+the outpatient palliative care unit was earlier located in a department of oncology , 
+and it had a physician resource 6 days a month from 2003 to 2015, when a fulltime 
+=====PDFPAGE 22=====
+Liisa Rautakorpi 
+ 20 
+vacancy was created. In 2020, an independent palliative care unit was established at 
+Turku University Hospital. The unit provides patient care and consultation services. 
+2.3 Intravenous chemotherapy near the end of life 
+Intravenous chemotherapy is an essential part of cancer treatment, but due to its 
+potential adverse effects and toxicity, its use should always be critically evaluated 
+near the EOL. Chemotherapy affects both cancer and non -cancer cells, and after 
+traditional intravenous administration it can induce both severe acute and late side 
+effects. In most patients with advanced disease, the aim of the chemotherapy is to 
+improve quality of life or, sometimes, overall survival. However, patient selection is 
+of utmost importance (Cherny et al., 2015).  
+2.3.1 Advantages and disadvantages 
+A s mall proportion of patients may gain clinical benefit from active anticancer 
+treatment also when treated close to death. In a cohort of patients with solid tumors 
+who received systemic anticancer therapy 1 month before death , symptoms were 
+alleviated for 16% of them, and for 12% the disease either remained stable or showed 
+a partial or complete response (Baena-Cañada et al., 2019). 
+Tumor type should always be considered when p lanning active anticancer 
+treatment for patients at an advanced stage of their disease. Acute myeloid leukemia, 
+choriocarcinoma, aggressive non-Hodgkin’s lymphoma, Hodgkin’s disease , and 
+acute lymphoblastic leukemias in children are examples of malignant neoplasms that 
+can be treated with curative intent even in the advanced stages (Cherny et al., 2015). 
+The p atient’s own wish es and concerns  regarding treatment should also be 
+considered. 
+Despite the potential advantages of chemotherapy, the vast majority of patients 
+do not benefit from treatment  when life expectancy is severely limited ; therefore 
+chemotherapy should not be used in the last weeks of life (Crawford et al., 2021).  
+The m ost common cause of mortality within 30 days of chemotherapy is 
+progression of the underlying malignancy , but also severe side effects may occur  
+(O’Brien et al., 2006) . Cancer-directed therapies should not be used at least in 
+patients with the following characteristics: low performance status, no benefit from 
+prior evidence -based interventions, not eligible for a clinical trial, and no strong 
+evidence supporting the clinic al value of further anticancer treatments (L. E. 
+Schnipper et al., 2012) . Chemotherapy use during the last weeks of life should be 
+critically evaluated, as it increases the need for hospitalization (Keam et al., 2008; 
+Näppä et al., 2011) and is associated with more aggressive EOL care including more 
+ED visits, ICU admissions , and endotracheal intubation  (Wu et al., 2016) . Indeed, 
+=====PDFPAGE 23=====
+Review of the Literature 
+ 21 
+the use of chemotherapy near EOL may increase the costs of care and consume the 
+limited health care resources (Bao et al., 2018) without any obvious benefit for the 
+patient. 
+2.3.2  End-of-life chemotherapy as a quality indicator 
+Earle et al . evaluated various measures that could use existing data to assess the 
+intensity of EOL cancer care. In their analysis of over 48,000 patients, they suggested 
+that the use of chemotherapy in the final weeks of a patient’s life could be used as a 
+quality indicator of not-overly active cancer care. They concluded that less than 10% 
+of patients should receive chemotherapy during the last 2 weeks of life and that less 
+than 2% should receive a new chemotherapy regimen within the last 30 days of life 
+(Earle et al., 2005) . These benchmarking standards have since been commonly 
+acknowledged as a quality indicator of EOL cancer care. 
+2.3.3  Current practice 
+Concerns have been raised over a detected increase in the use of chemotherapy 
+during the final weeks of life (Earle et al., 2004; Ho et al., 2011). Prior studies have 
+reported rates of chemotherapy use in the last 30 days of life to vary from 10 % to 
+46%, and, for studies not reporting 30-day numbers, to vary in the last 2 weeks from 
+5.7% to 3.7%. Numbers of patients receiving chemotherapy during the last month of 
+life are shown in Table 5. These percentages must, however, be critically evaluated 
+as the study designs vary. For example, in the Por tuguese study by Braga et al . 
+(2007), the percentages are evaluated as a proportion of patients receiving 
+chemotherapy during the last 3 months of life, and in the Finnish study by Asola et 
+al. (2006) as a proportion of patients who died of breast cancer. 
+=====PDFPAGE 24=====
+Liisa Rautakorpi 
+ 22 
+Table 5.  Use of chemotherapy during the last weeks of life. 
+Country Treatment Inclusion 
+criteria 
+CT 1 
+month 
+before 
+death 
+CT 2 
+weeks 
+before 
+death 
+Median time 
+from last 
+chemotherapy 
+to death 
+Greece 
+(Edman Kessler et al. 
+2020) 
+Chemotherapy Breast 
+cancer 
+46.5% - - 
+Sweden  
+(Näppä et al. 2011) 
+Palliative 
+chemotherapy  
+Epithelial 
+cancer 
+23% - 15–84 days 
+Portugal  
+(Braga et al. 2007) 
+Chemotherapy Solid tumors 37% 21% 27 days 
+Spain 2019 
+(Baena-Cañada et al. 
+2019) 
+Systemic anti-
+cancer therapy 
+Metastatic 
+solid tumor 
+32.6% - 52 days 
+Italy 
+(Numico et al. 2014) 
+Chemotherapy, 
+biological or 
+endocrine therapy 
+Cancer 26.2% 14.2% 75 days  
+Turkey  
+(Goksu et al. 2014) 
+Chemotherapy Stage IV 
+solid tumor 
+23.9% 10.5% - 
+Sweden  
+(Edman Kessler et al. 
+2020) 
+Chemotherapy Breast 
+cancer 
+23.2% - - 
+Switzerland (Matter-
+Walstra et al. 2014) 
+Anticancer drug 
+therapy 
+Cancer 22.2% - - 
+Finland 
+(Asola et al. 2006) 
+Chemotherapy Breast 
+cancer 
+19.7% - - 
+France 
+(Rochigneux et al. 
+2017) 
+Chemotherapy Metastatic 
+solid tumor 
+19.5% 11.3% - 
+China  
+(Zhang et al. 2018) 
+Palliative 
+chemotherapy 
+Advanced 
+cancer 
+15.7% 5.2% - 
+Norway 
+(Anshushaug et al. 
+2014) 
+Chemotherapy Cancer 10% 5% 2.2 months 
+ 
+Korea 
+(Keam et al. 2008) 
+Palliative 
+chemotherapy 
+Metastatic 
+cancer 
+- 5.7% 2.02 months 
+Canada  
+(Hu et al. 2014) 
+Chemotherapy Colorectal 
+cancer 
+- 3.7% - 
+ 
+Age has had the most frequent correlation with the use of chemotherapy near the 
+EOL, but other factors have also been presented. In addition, certain diagnostic 
+groups (breast, lung, ovarian , and pancreatic cancer and hematological 
+malignancies), a Glasgow Prognostic Score of two, performance status, previous 
+cancer treatments, geographic location, laboratory values (albumin levels), patients 
+having no contact with a palliative care unit, higher level of comorbidities, short time 
+=====PDFPAGE 25=====
+Review of the Literature 
+ 23 
+from diagnosis, hospital type, and in one study also male sex have been found to be 
+associated with chemotherapy use during the last weeks of life (Braga et al., 2007; 
+Edman Kessler et al., 2020; Ho et al., 2011; Hu et al., 2014; Matter -Walstra et al., 
+2015; Numico et al., 2014; Rochigneux et al., 2017; Sezgin Goksu et al., 2014; 
+Zhang et al., 2018). 
+In the Nordic countries, where cultural and social frameworks may be close r to 
+those in Finnish society, EOL chemotherapy has been studied among patients with 
+solid tumors. In Sweden, the use of chemotherapy during the last 30 days of life was 
+evaluated in a cohort of patients with metastatic breast cancer and patients with 
+epithelial cancer. Of these, 23% patients in each study received chemotherapy during 
+the last month of li fe (Edman Kessler et al., 2020; Nappa et al., 2011) . In a study 
+evaluating the use of palliative chemotherapy amongst patients with disseminated 
+cancer, the corresponding percentage was higher 32 % (Randén et al., 2013). For 8% 
+of the patients with breast cancer , a new regimen of chemotherapy was initiated 
+during the last month of life (Edman Kessler et al., 2020). 
+In Norway, the proportion of cancer patients who received chemotherapy during 
+the last 30 days of life  was 10% . For breast cancer patients, the proportion was  
+slightly higher at 12% (Anshushaug et al., 2015). 
+In a Finnish cohort of breast cancer p atients, roughly the same percentage as in 
+the Swedish cohort, 19.7%, received chemotherapy during the last month of life 
+(Asola et al., 2006). To our knowledge, apart from this cohort there are no earlier 
+studies from Finland that describe the use of anticancer treatments  in other solid 
+tumors and hematological malignancies  during the last months of life.  However, 
+since 2017, studies have been published assessing the use of EOL treatments in 
+Helsinki and Turku (Hirvonen et al., 2018, 2019, 2020). 
+2.4 Radiotherapy near the end of life 
+2.4.1 Palliative radiotherapy 
+Most cancer patients, especially those with solid tumors, may require ra diotherapy 
+once or several times during the course of their disease. Radiotherapy uses ionizing 
+radiation to cause direct and indirect damage to the DNA. The most common type is 
+external beam irradiation. In brachytherapy, the radioactive source is placed directly 
+onto or within the area to be treated. Systemic radioisotopes  can target a specific 
+tissue or pathophysiology (Cherny et al., 2015). 
+The aim of palliative radiotherapy is to control symptoms with minimum 
+associated acute radiation reaction. A consultation with a radiation oncologist should 
+be considered for any patients with pain, bleeding, local complications, or other 
+tumor-related symptoms (G. Williams et al., 2021) . In contrast  to palliative 
+=====PDFPAGE 26=====
+Liisa Rautakorpi 
+ 24 
+radiotherapy, the aim of radical ra diotherapy is complete eradication of the tumor 
+cells with minimized long-term normal tissue damage (Spencer et al., 2018). Around 
+40–50% of radiotherapy treatments are given with palliative intent (Janjan, 1998; M. 
+Williams & Drinkwater, 2009). 
+To minimize normal tissue damage during radiotherapy, the radiation dose is 
+fractionated and delivered over several weeks. Conventionally, one fraction is given 
+daily, but hyperfractionation delivers the total dose in increased numbers of fractions 
+over the same period.  Palliative treatments require lower total doses, with the focus 
+on symptom control, and can be delivered in shorter courses of larger fraction size 
+(hypofractionation) (Spencer et al., 2018).  
+Use of multiple fractions is less common in p atients closer to death (Tiwana et 
+al., 2016),  which is justifiable as shorter treatments require fewer visits to the 
+hospital and thus require fewer resources from the radiotherapy unit and may be less 
+burdensome for the patient and caregivers. Risk of discontinuation of radiotherapy 
+may also decrease with shorter treatments as seen in a Norwegian study:  Shorter 
+regimens of palliative radiotherapy (<2 weeks) led to decrease in the non-completion 
+of the palliative radiotherapy when compared to those receiving longer treatments 
+(Nieder et al., 2022). 
+Radiotherapy may be an effective treatment option for advanced and metastatic 
+cancer, even during the last months of life. However, a short life expectancy may 
+erase any potential benefit, as time from treatment to response may take several 
+weeks (van der Linden et al., 2006) . Additionally, the potential side effects, which 
+are dictated by which tissues receive a substantial dose, must be considered. Acute 
+side effects usually resolve in 4–6 weeks, and long-term side effects are uncommon 
+in palliative radiotherapy , as stated in a clinical practice update by Spencer et al . 
+(Spencer et al., 2018) . Many patients experience fatigue during radiotherapy 
+treatment. Other acute effects may include erythema, nausea, vomiting, diarrhea, 
+cystitis, mucositis, and pneumonitis, whereas late effects may include atrophy, 
+fibrosis, telangiectasia, necrosis, strictures, perforation, bleeding, bowel 
+inflammation, and edema (Cherny et al., 2015).  
+Some patients may receive up to five or more courses of radiotherapy during 
+their disease history, and the numbers of these patients are reported to  be growing. 
+(Christ et al., 2021). 
+2.4.2 Targets of palliative radiotherapy 
+Palliative radiotherapy may be considered for all patients for whom a local tumor, 
+whether primary, bone or soft tissue metastasis or lymphadenopathy, is causing 
+symptoms (G. Williams et al., 2021). Examples of these symptoms are listed in Table 
+6. 
+=====PDFPAGE 27=====
+Review of the Literature 
+ 25 
+Table 6.  Indications for radiotherapy in symptom palliation (Modified from Cherny et al., 2015). 
+Symptom Cause 
+Pain  
+Bone pain Bone metastases 
+Visceral pain Visceral metastases 
+Neuropathic pain Bone metastases 
+Soft tissue primary or metastases 
+Intrinsic tumor in nerve tissue 
+Local pressure  
+Spinal canal compression Epidural metastases 
+Bone metastases 
+Cranial nerve palsies Skull base bone metastases 
+Meningeal metastases 
+Intrinsic brain tumor 
+Obstruction  
+Bronchus Intrinsic bronchial tumor 
+Extrinsic lymphadenopathy 
+Esophagus Intrinsic bronchial tumor 
+Extrinsic lymphadenopathy 
+Superior vena cava Primary mediastinal tumor 
+Primary lung or esophageal tumors 
+Metastatic mediastinal lymphadenopathy 
+Hydrocephalus Malignant meningitis 
+Primary or metastatic brain tumor 
+Limb swelling Metastatic lymphadenopathy 
+Bleeding  
+Hemoptysis Primary bronchial tumor 
+Metastatic bronchial or lung tumor 
+Hematuria Primary tumor in kidney 
+Ureter, bladder, prostate 
+Vaginal bleeding Primary tumors of vagina, cervix, or uterus 
+Metastases in vagina 
+Rectal bleeding Primary anal or colorectal tumors 
+Bleeding from cutaneus wounds Cutaneus primary tumors or metastases 
+ 
+Bone metastases can cause a w ide range of symptoms including pain, spinal cord 
+compression, hypercalcemia, and pathologic fracture. External beam radiotherapy is 
+the mainstay of treatment for pain and/or prevention of morbidity caused by bone 
+metastases, as stated in the evidence -based guidelines of the American Society for 
+Radiation Oncology (ASTRO) (Lutz et al., 2011).  
+Single fraction radiotherapy and multifractionated radiotherapy are equally 
+effective at relieving metastatic bone pain and alleviate pain for some 60% of 
+patients. However, patients treated with single fraction have been reported to have a 
+=====PDFPAGE 28=====
+Liisa Rautakorpi 
+ 26 
+higher re-treatment rate of radiotherapy (Chow et al., 2012) and a higher pathological 
+fracture rate (Sze et al., 2002). Indeed, one-fourth of patients have been reported to 
+receive a second radiotherapy treatment (van der Linden et al., 2006)  
+In repeat radiation, t he overall pain response rate for both single -fraction 8 Gy 
+radiotherapy and 20 Gy radiotherapy in multiple fractions was 45% and 51% for 
+patients with painful bone metastases, respectively (Chow et al., 2014). Commonly 
+targeted regions among patients with bone metastases are the spine, pelvis, and 
+extremities (Tiwana et al., 2016). 
+The b rain and thorax regions are also commonly treated in palliative 
+radiotherapy, and in these radiotherapy targets both primary and secondary tumors 
+are included. In the thoracic region, for example , incurable non -small cell lung 
+cancer is recommended to be treated with palliative thoracic radiotherapy (Moeller 
+et al., 2018). In addition , symptoms including pain, cough, hemoptysis, post -
+obstructive pneumonia, and superior vena cava syndrome may be successfully 
+addressed with palliative radiotherapy (Jones et al., 2014).  
+In the treatment of brain metastases , different approaches are possible.  Whole 
+brain radiotherapy, stereotactic radiotherapy, and radiation boost to the resection 
+cavity, are all among possible treatment options which the number of metastases, 
+prognosis, and aim of the treatment affect. Side effects vary with the treatment used, 
+and for example whole brain radiotherapy may affect the patient’s neurocognition.  
+(Tsao et al., 2012). Patients with primary brain tumors or metastases may suffer from 
+headaches, seizures, and neurological dysfunction (Jones et al., 2014) . 
+Approximately two -thirds of patients who received whole -brain irradiation 
+experienced a relief of symptoms and the dose of corticosteroids could be reduced 
+(Sundströmm et al., 1998). Thus, palliative radiotherapy of the brain may also be a 
+potential treatment option for patients with a somewhat poor prognosis.  
+2.4.3 Current practice 
+Palliative radiotherapy is a widely used, well-tolerated, and cost-effective standard 
+of care. Of deceased cancer patients, 22–41% are reported to have received palliative 
+radiotherapy (Huang et al., 2014; Lavergne et al., 2011; Murphy et al., 2013) . Both 
+clinical factors such as diagnosis, age, sex, comorbidities, survival time , and 
+patient’s ethnic background, and non -clinical such as residency, geographic region 
+and municipality population , and treatment year in addition to income have 
+influenced treatment patterns (Danielson et al., 2008; Guadagnolo et al., 2013; 
+Huang et al., 2014; Kress et al., 2015; Lavergne et al., 2011; Murphy et al., 2013).  
+In a US study by Guadagnolo et al. of 202,299 patients who died of cancer, 7.6% 
+received palliative radiotherapy during the last month of life. Non -clinical factors 
+such as race, no n-referral to hospice care , and treatment in a freestanding versus 
+=====PDFPAGE 29=====
+Review of the Literature 
+ 27 
+hospital-associated facility were associated with a greater probability of receiving 
+more than 10 days of radiotherapy in the last 30 days of life (Guadagnolo et al., 
+2013). In contrast, Huang et al. reported that of 12,300 deceased Canadian cancer 
+patients, 5.0% had received palliative radiotherapy during the last 30 days of life. 
+Radiotherapy utilization varied with age, survival time, and travel time to the nearest 
+radiotherapy center (Huang et al., 2014).  
+2.5 The use of opioids near the end of life 
+2.5.1 Prevalence of pain in cancer patients 
+Many cancer patients suffer from pain and its effects on their quality of life (Breivik 
+et al., 2009) . As the cancer progresses , so does the prevalence of pain. Pain 
+prevalence has been reported to rise from 39.3% after curative treatment to 55.0% 
+during anticancer treatment and further to 66.4% for patients with advanced, 
+metastatic, or terminal disease (van den Beuken-van Everdingen et al., 2016).  
+2.5.2 Management of cancer pain 
+Opioids are the foundation of pain management in patients with advanced cancer   
+(Fallon et al., 2018) . They are divided in to three groups weak, intermediate and 
+strong opioids based on their potency . Weak opioids are referred as codeine and 
+tramadol, intermediate opioid is buprenorphine and strong opioids include fentanyl, 
+methadone, morphine, hydromorphone and oxycodone. Their indisputable role was 
+established by the World Health Organization (WHO) back in 1986 with the 
+publication of the three-step pain ladder. The ladder guides the management of pain 
+from non -opioid analgesic s to weak opioids and further to strong opioids when 
+needed. The first step is a non-opioid. If this does not relieve the pain, a weak opioid 
+should be added. When this combination fails to bring relief, an opioid for moderate 
+to severe pain should be substituted. Only one drug from each group should be used 
+simultaneously (World health Organization, 1996). (Figure 1)  
+In the WHO pain ladder below, ‘adjuvant’ refers to medications that can be used 
+either to treat the adverse effects of analgesics (e.g., laxatives), boost pain relief (e.g., 
+corticosteroid), or treat concomitant psychological symptoms (e.g., insomnia). 
+=====PDFPAGE 30=====
+Liisa Rautakorpi 
+ 28 
+ 
+Figure 1.  The WHO pain ladder (Modified from World health organization, 1996). 
+The role of opioids is especially crucial in the care of EOL patients. Strong step-III 
+opioids have been listed by palliative care experts as one of the most essential drugs 
+in the care of the dying (de Lima, 2006; Lindqvist et al., 2013) . The use of strong 
+opioids increases in the last months of life (Ziegler et al., 2016) and has been used 
+as one of the quality indicators of good EOL care (Morishima et al., 2013). 
+The basis for management of moderate to severe pain should be strong opioids 
+administered orally by long-acting formulations. Medication for breakthrough pain 
+and medications for the most common side effects of opioids should be prescribed 
+simultaneously. (Fallon et al., 2018; World health organization, 1996)  Transdermal 
+fentanyl and buprenorphine are alternatives to orally administered long-acting strong 
+opioids, especially for patients unable to swallow and for those with nausea and 
+vomiting. Parenteral opioid administration (e.g., subcutaneous, buccal, or intranasal) 
+can also be necessary if the opioid dose needs to be quickly titrated for severe pain. 
+It is also needed for EOL patients who are unable to receive opioids by the oral or 
+transdermal route. Compared with  intravenous administration, the subcutaneous 
+route is simple and effective and should be the first -choice alternative route for 
+parenteral opioid administration. (Caraceni et al., 2012; Crawford et al., 2021) 
+2.5.3 Consumption of opioids 
+Although the availability of  strong opioids is steady in many countries , and 
+guidelines and treatment practice  have for decades underlined their importance in 
+the treatment of cancer pain , there are still major differences in their consumption. 
+Globally this is affected by availability and access , which is a huge  problem 
+worldwide, but also, for instance, by overly strict regulation and distribution systems 
+(Connor et al., 2020).  
+When the use of opioids was evaluated in 22 European countries and the US in 
+the mid-2010s, there was a more than tenfold difference between the highest and 
+
+=====PDFPAGE 31=====
+Review of the Literature 
+ 29 
+lowest consumption of opioid analgesics in the se countries. In Finland, total opioid 
+consumption dropped between 2004–2006 and 2014–2016 and was the lowest of all 
+the Nordic countries but average for all the analyzed countries (Bosetti et al., 2019). 
+In addition, in Finland the total opioid consumptio n was also the lowest of all the 
+Nordic countries, and on a global level of 188 countries it was considered adequate, 
+in an earlier comparison (Seya et al., 2011). 
+There was also variation in the use of different strong opioids. Fentanyl was the 
+most frequently used opioid analgesic in Europe , and in Western and Northern 
+Europe oxycodone was frequently used  in addition. The consumption of morphine 
+varied between countries and in Finland increased between 2004 –2006 and 2014–
+2016 (Bosetti et al., 2019).  
+2.5.4 Factors influencing the use of pain medication 
+Many factors, including cultural and practical, influence the treatment of EOL cancer 
+pain. For example, in Italy the use of opioids may be more restrained, whereas 
+palliative sedation is used relatively often for cancer patients (Mercadante et al., 
+2013). The setting also affects the prefe rred pain medication , as available drugs, 
+equipment, and professional ability vary. The use of morphine and other opioids has 
+been found to be more frequent in the last days of life for patients who were treated 
+in a hospice compared to the those treated in hospital (Raijmakers et al., 2013). Also, 
+hospital case volume influenced the use of opioids during the last months of life 
+(Morishima et al., 2013) . Inadequate pain assessment, concerns about high opioid 
+doses and side effects, prescription of inefficient doses of opioids and poor 
+prescription for the treatment of opioid side effects are, on the other hand, examples 
+of physicia n-related barriers to cancer pain management (Jacobsen et al., 2007) . 
+Patient’s diagnose may also influence the use of pain medication and in addition to 
+patients with advanced cancer, sufficient pain management needs to be warranted 
+for patients with other end-stage chronic illnesses (Romem et al., 2015). 
+ 
+=====PDFPAGE 32=====
+ 30 
+3 Aims 
+The aim of this study was to shed light on the end-of-life treatment of cancer patients 
+in Southwest Finland and to study current treatment policies by evaluating 
+retrospectively the use of active oncological treatments and pain medication, and the 
+effect of palliative care intervention as death approaches. 
+ 
+The specific aims were: 
+ 
+1. To evaluate the effect of palliative care intervention on the treatment of 
+pancreatic cancer patients during the last month of life. (Study I) 
+2. To study the use of chemotherapy and radiotherapy during the last year of 
+life in a cohort consisting of all deceased cancer patient s. (Studies II and 
+III) 
+3. To assess the use of strong opioids in a hospice setting. (Study IV) 
+ 
+ 
+ 
+ 
+ 
+ 
+=====PDFPAGE 33=====
+ 31 
+4 Materials and Methods 
+4.1 Study design and methods 
+This thesis was executed as four in dependent retrospective studies. A retrospective 
+design enables us to learn from real-life treatment p ractices and analyze large 
+amounts of information. Executing retrospective studies requires access to 
+comprehensive and reliable patient records, whereby data can be obtained from large 
+databases or extracted manually from patient records. In this study we used both . 
+This registry-based study consisted of three independent patient cohorts and included 
+only deceased patients. All the data analyzed were originally collected as part of 
+routine clinical care. 
+In Studies I, II , and III  the data was collected in collaboration with Auria 
+Clinical Informatics. In the hospital district of Southwest Finland, Turku University 
+Hospital (TUH) has a catchment area  of some  480,000 residents and is the only 
+facility providing cancer care in the area. At TUH, all essential patient records are 
+electronic and have been combined, for secondary use across multiple IT systems in 
+everyday practice, into the Auria Clinical Informatics  database. The database 
+provides researchers with patient data and expert services.  
+In Study I the cohort consisted of all pancreatic cancer patients who had died 
+during 2011–2016 and had been treated at TUH during their last month of life. Using 
+the database, all pancreatic cancer patients ( n=534) treated at TUH and deceased 
+between 2011 and 2016 were identified using ICD -10 code C25. Patients with 
+neuroendocrine tumors (ICD-10 code C25.4 or E34) were not included. Data were 
+validated manually by checking the medical records of all 534 patients to verify the 
+pancreatic cancer diagnos is. Secondary malignant tumors in the pancreas, such as 
+lymphoma metastases, were excluded (n=72). Histological diagnoses were verified 
+from pathologic reports. 
+Patients were divided into a palliative care group (PC group, n=76) and standard 
+care group (SC group, n=302) based on their possible visit to a palliative care unit. 
+There were no specific referral criteria for palliative  care unit. All patients in both 
+groups received standard surgical and oncological treatment. For most patients in the 
+PC group the intervention was  an appointment with a physician and a nurse  at a 
+palliative outpatient clinic (n=73, 96%). Some patients preferred a call from the 
+=====PDFPAGE 34=====
+Liisa Rautakorpi 
+ 32 
+clinic due to poor physical performance and persistent symptoms caused by 
+progression of their pancreatic cancer (n=3, 4%). Patients who received only 
+palliative consultat ion were not included in the PC group. The type of palliative 
+intervention was manually checked from the patient records.   
+Medical costs at the university hospital have been available in the Auria database 
+since 2012 for all patients (n=244). The information was available for 189 patients 
+(63%) in the SC group and 55 patients (72%) in the PC group. Data on costs of care 
+were based on hospital invoicing. All the costs of hospital treatment are charged to 
+the patient´s local municipality.  
+In Studies II and III the cohort comprised all patients with a cancer diagnosis 
+(ICD-10 C00 -C97) who were treated at TUH and died between 2005 and 2013 
+(n=11,250). The patients were identified, and their clinical information retrieved , 
+from the Auria database. The data was manually validated and supplemental 
+information also collected manually from the patients’ electronic health records.  
+Study II included all cancer patients who received intra venous (IV) 
+chemotherapy during the last year of life (n=3285). Data on cause of death (ICD-10 
+code C00-C97 on the death certificate) was confirmed from the database of Statistics 
+Finland. The data validation was performed by manually revising the patient records 
+of 100 randomly assigned patients to ensure advanced cancer as an indication for IV 
+chemotherapy treatment.  
+The use of IV chemotherapy was evaluated in terms of  the patient´s age, sex, 
+cancer diagnosis, treatment year, and place of death. The patients were divided into 
+five age groups: <50 years (n=308, 9%), 50 –59 years (n=584, 1 8%), 60–69 years 
+(n=1237, 38%), 70–79 years (n=923, 28%) , and >80 years (n=233, 7%).  Patients 
+were divided into 15 diagnostic groups to evaluate the effect of cancer on the use of 
+IV chemotherapy. The groups were cancer of the head and neck, esophageal and 
+gastric cancer, pancreatic cancer, colorectal cancer, other gastrointestinal cancer, 
+lung cancer, skin cancer, sarcoma, breast cancer, gynecological cancer, prostate 
+cancer, cancer of the urinary tract, hematological malignancies, lymphoma, and 
+other cancer type. If the patient had more than one cancer diagnosis, the patient was 
+classified based on the most recent diagnosis before death. Finally, the patients were 
+divided into three 3 -year cohorts: 2005 –2007 (n=975, 30%), 2008–2010 (n=1129, 
+34%), and 2011–2013 (n=1181, 36%). The use of IV chemotherapy was assessed at 
+five time points during the last year of life: 1 year, 6 months, 3 months, 2 months, 1 
+month, and 2 weeks before death. The number of patients who died in the University 
+Hospital was evaluated using the five time points described above. 
+In Study I II the study sample consisted of 2 ,904 patients who had received 
+radiotherapy at TUH during their last year of life . The last radiotherapy treatment 
+and time from last radiotherapy fraction to death were assessed in terms of patient´s 
+age, cancer diagnosis, residency, place of death , and treatment year. Treatments 
+=====PDFPAGE 35=====
+Materials and Methods 
+ 33 
+given during the last 14 days of life were further studied to evaluate indication s for 
+treatment (palliative or curative) and possible discontinuation. 
+To assess the use of radiotherapy by age, patients were divided into four groups: 
+age <60 years (n=629, 22%), 60–69 years (n=907, 31%), 70–79 years (n=891, 31%) 
+and >80 years (n=477, 16%). To assess the use of radiotherapy by cancer typ e, the 
+patients were divided into 14 diagnostic groups: cancer of the head and neck, 
+esophageal and gastric cancer, colorectal cancer, pancreatic cancer, lung cancer, skin 
+cancer, breast cancer, gynecological cancer, prostate cancer, other urological cancer, 
+primary central nervous system (CNS)  cancer, lymphoma, hematological 
+malignancies (including leukemia), and ‘other cancers’ including, for example, 
+sarcomas, neoplasm of the mediastinum and pleura, and cancer of unspecified origin. 
+To assess the use of radiotherapy by domicile, the patients were divided into four 
+cohorts by distance from domicile to hospital: <20 km, 20–50 km, 50–100 km, and 
+>100 km. The place of death was assessed as university hospital or other location. 
+To assess the use of radiotherapy by treatment year, the patients were divided into 
+three cohorts by year of radiotherapy administration: 2005 –2007 (n=941, 32%), 
+2008–2010 (n=975, 34%), and 2011–2013 (n=988, 34%). Anatomical radiotherapy 
+targets were divided manually into the following regions: brain, spine, abdomen, 
+thorax, pelvis, extremities, head and neck, prostate, breast, and other. These locations 
+may have included bone, soft tissue, or visceral targets.  
+In Study IV the data were collected manually from the paper patient records of 
+two hospices, Koivikko-koti in Hämeenlinna and Karinakoti in Turku. At the time, 
+they were two of four hospices in Finland providing EOL care mainly to cancer 
+patients. In 2010, altogether 405 patients were treated in these two units. 
+One hundred and fifty  patients treated in 2010 were randomly assigned to the 
+study, 100 from Karinakoti and 50 from Koivikko -koti. The data were mainly 
+collected from the paper archives of the hospices, which included all patient records 
+from arrival at the hospice until death. For patients whose date of cancer diagnosis 
+could not be identified from paper records, this was retrieved from the electronic 
+patient records of the Central Hospital of Kanta -Häme and TUH. The data were 
+collected on a paper form and later transferred to  electronic form at (excel) for 
+statistical analysis. Twelve patients who died less than 2 days after transfer to the 
+hospice were excluded from the analysis. 
+For 138 eligible patients, patient characteristics (date of inclusion, date of birth, 
+gender, ethnic group), cancer diagnos is, time of cancer diagnos is, location of 
+metastases, comorbidities , and data on given medications were recorded.  The 
+diagnostic groups were i. breast cancer, ii. prostate cancer, iii. lung cancer , iv. 
+gastrointestinal cancer , v. cancer of the female reproductive organs, vi. 
+hematological malignancies, vii. other urological cancer, viii. cancer of unknown 
+origin, and ix. other. Location of metastases was coded as: i. liver, ii. bone, iii. CNS, 
+=====PDFPAGE 36=====
+Liisa Rautakorpi 
+ 34 
+iv. lung, v. other and vi. no metastases. Comorbid conditions were divided in to 
+eleven categories: i. heart, ii. vascular, iii. lung, iv. gastrointestinal/hepatic, v. 
+kidney, vi. hematological, vii. neurological, viii. psychiatric, ix. musculoskeletal, x. 
+endocrinological, and xi. other.  
+The medications were studied at five time points: time of transfer to hospice and 
++2, +14 (2 weeks), +56 (2 months) , and 1 day before death. Pain medications were 
+coded as i. regularly dosed strong opioids, ii. opioids given to alleviate breakthrough 
+pain, and iii. other pain medications (including e.g., paracetamol and nonsteroidal 
+anti-inflammatory drugs (NSAID s)). The tota l daily dose of pain medications and 
+route of administration was studied, and the daily doses were also reported as 
+morphine equivalent daily doses  (MEDD). Other medications were recorded and 
+categorized according to  the Finnish pharmacopedia (Pharmaca Fen nica): i. 
+cardiovascular drugs and anticoagulants, ii. gastrointestinal and urological drugs, iii. 
+antibiotics, iv. oncological and hematological drugs, v. vitamins and dietary 
+supplements, and iv. sedative, psychonarcotic, and narcotic drugs.  
+4.2 Statistical analyses 
+In Studies I-IV, descriptive statistics were used to investigate patient characteristics. 
+Continuous variables were reported as median with range and/or mean together with 
+standard error  or standard deviation . Categorical variables were reported as 
+percentages and frequency.  
+In Study I, patient characteristics between the studied groups was analyzed using 
+Fisher´s exact test (categorical variables like sex) or one -way analysis of variance 
+(ANOVA) when continuous variables were tested to follow normal distributions and 
+Wilcoxon rank sum test otherwise. Interventions and number of interventions 
+between the groups were comp ared using the same methods. In studies II –III, the 
+Wilcoxon rank sum test or Kruskal -Wallis test was used to compare the medians 
+between two or more comparison groups. Normal distribution assumption was based 
+on original data as well as studentized residuals and checked visually (e.g. using q -
+q- plots) together with Shapiro-Wilks test. 
+In Studies II–III, a univariate log-rank test was used to analyze differences in 
+anticancer treatments by year of admission, age, diagnostic groups and, for 
+radiotherapy patients, also target site and domicile. The time from last treatment to 
+death was illustrated using Kaplan-Meier curve. In addition, Cox regression analysis 
+was used to further investigate the association between EOL chemotherapy treatment 
+and age, year of death, or diagnosis in the same model. In Study IV, a chi-square test 
+was used to investigat e change s in administration route and use of breakthrough 
+medications before death (transfer, 2 nd day, day before death) . In all these analyses 
+patients with missing data are automatically removed from the analyses. No 
+=====PDFPAGE 37=====
+Materials and Methods 
+ 35 
+imputation was performed to missing v alues. In all studies statistical significance 
+was set at p <0.05 (two-tailed). 
+In Stud ies I and IV , the analyses were performed using SAS software for 
+Windows, version 9.3 for study IV and 9.4 for study I (SAS Institute Inc., Cary, NC, 
+USA). In Studies II –III, analyses were performed using R version 3.1.3. (R Core 
+Team (2015). R: A language and environment for statistical computing. R foundation 
+for Statistical Computing, Vienna, Austria). 
+All statistical analysis methods used in the publications were standard methods 
+for survival analyses, starting with Kaplan -Meier curve with log -rank test and 
+continued with Cox’s proportional hazard model. Cox’s proportional hazard model 
+enables to include several explanatory variables in the same model  and outline the 
+bigger picture in the collected data. Also, when values of continuous response are 
+compared between some categories of explanatory variable it is crucial to first study 
+whether response follow normal distribution or not. In datasets where patients are 
+having the final stage cancer, distributions are quite commonly skewed or having 
+outliers and therefore nonparametric methods (only order in data are used in data 
+analysis) are commonly used. 
+4.3 Ethical considerations 
+These registry-based studies included only deceased patients and all the data used in 
+the analyses we re obtained as part of routine clinical assessments. No patient 
+interventions were performed.  The data was handled anonymously and the data 
+privacy was carefully considered. All the patients had died before the data collection 
+started and informed consents  were not collected. However, the approval of 
+institutional review boards was requested. In more detail t he studies were executed 
+with the permission of TUH  and the Koivikko Foundation.  Permission for data 
+collection was requested from Turku Clinical Resea rch Centre, Turku CRC. 
+According to Finnish law, the legislation does not mandate any Ethics Committee 
+approval for retrospective registry -based studies.  However, a ll the studies in this 
+thesis were conducted in accordance with the institutional guidelines and regulations 
+and the principles outlined in the declaration of Helsinki were followed.
+=====PDFPAGE 38=====
+ 36 
+5 Results 
+5.1 End-of-life care with or without palliative 
+intervention (Study I) 
+The study included 462 pancreatic cancer patients treated at TUH who died during 
+the 6-year period between 2011 and 2016. Of these patients, 378 had contact with 
+tertiary care during the last 30 days of life and were thus eligible for the study. Of 
+these patients, 53% (n=199) were female and 47% (n=179) male. The median age 
+was 72 years (range 32 –100 years). The patient characteristics of the study 
+population are presented in Table 7. All these patients received standard care with 
+the option of having surgical and/or oncological treatment. In addition, one fifth 
+(n=76, 20%) of the patients received palliative intervention in a palliative 
+outpatient clinic (PC group). Consequently, 302  patients (80%) received only 
+standard care.  
+=====PDFPAGE 39=====
+Results 
+ 37 
+Table 7.  Characteristics of pancreatic cancer patients who were in  contact with tertiary care 
+during the last 30 days of life (Modified from Study I). 
+ All Palliative 
+intervention 
+No palliative 
+intervention 
+P 
+Number of 
+patients (n) 
+ 
+378 
+ 
+76 
+ 
+302 
+ 
+Gender 
+M (n) 
+F (n) 
+ 
+179 (47%) 
+199 (53%) 
+ 
+41 (54%) 
+35 (46%) 
+ 
+138 (46%) 
+164 (54%) 
+ 
+0.202* 
+Age (years) 
+Min-max 
+Mean 
+Med 
+ 
+32–100 
+71 
+72 
+ 
+47–90 
+71 
+72 
+ 
+32–100 
+71 
+72 
+ 
+0.558** 
+PAD verification 
+No (n) 
+Yes (n) 
+ 
+268 (71%) 
+110 (29%) 
+ 
+57 (75%) 
+19 (25%) 
+ 
+211 (70%) 
+91 (30%) 
+ 
+0.401* 
+Chemotherapy 
+Yes (n) 
+1 line (n) 
+2 lines (n) 
+>2 lines (n) 
+ 
+151 (40%) 
+93 (25%) 
+31 (8%) 
+27 (7%) 
+ 
+33 (43%) 
+22 (29%) 
+7 (9%) 
+4 (5%) 
+ 
+118 (39%) 
+71 (24%) 
+24 (8%) 
+23 (8%) 
+ 
+0.514* 
+0.686* 
+Radiotherapy    
+Yes (n) 
+ 
+Total dose (Gy) 
+Min-max 
+Mean 
+Med 
+ 
+21 (6%) 
+ 
+ 
+8–76 
+37 
+45 
+ 
+2 (3%) 
+ 
+ 
+29–50 
+40 
+40 
+ 
+19 (6%) 
+ 
+ 
+8–76 
+37 
+45 
+ 
+0.273* 
+ 
+ 
+0.859*** 
+OS (months)1 
+Min-max 
+Mean 
+Median 
+ 
+0.1–51.8 
+6.2 
+2.6 
+ 
+0.3–37.8 
+9.0 
+5.4 
+ 
+0.1–51.8 
+5.5 
+1.9 
+ 
+<0.0001*** 
+1 OS = overall survival from the pancreatic cancer diagnosis to death 
+* Fisher´s Exact test (Two-sided Pr) 
+** One way anova 
+*** Wilcoxon Two-Sample Test (Two-sided Pr) 
+The patient characteristics and distribution of PAD verifications (25% vs 30%) did 
+not differ between the PC and SC groups. In addition, there were no significant 
+differences between oncological treatments, including the number of patients 
+receiving chemotherapy and radiotherapy, number of chemotherapy lines, and total 
+dose of radiotherapy. However, overall survival from pancreatic cancer diagnosis to 
+death differed in the study groups: patients in the PC group had longer overall 
+survival than those in the SC group (me an 9.0 months vs 5.5 months, median 5.4 
+months vs 1.9 months, p<0.0001).  
+=====PDFPAGE 40=====
+Liisa Rautakorpi 
+ 38 
+When evaluating the treatment procedures in tertiary care during the last 30 days 
+of life, patients in the PC group had fewer interventions in all studied categories, and 
+the differe nce was statistically significant in all other categories except surgical 
+interventions (Figure 2) . Patients in the PC group had fewer radiological 
+examinations (50% vs 75%, p<0.0001), hospitalizations (47% vs 78%, p<0.0001), 
+and ED visits (36% vs 51%, p=0.021) and were less likely to die in the university 
+hospital (8% vs 21%, p<0.011). ( Table 8). For radiological examinations the 
+difference was statistically significant in the use of CoT imaging between the PC and 
+SC groups (14% vs 43%, p<0.0001), ultrasound (17% vs 32%, p=0.024) , and x-ray 
+(33% vs 48%, p=0.021). However, stenting and other procedures were available and 
+were needed as frequently in both groups (22% vs 32%, p=0.124).  
+ 
+Figure 2.  Use of hospital resources during the last 30 days of life (Modified from Study I). 
+
+=====PDFPAGE 41=====
+Results 
+ 39 
+Table 8.  Number of interventions for patients with pancreatic cancer in the university hospital 
+during the last 30 days of life (Modified from Study I) 
+ 
+All Palliative 
+intervention 
+No palliative 
+Intervention 
+P 
+Number of patients (n) 378 (100%) 76 (100%) 302 (100%)  
+Chemotherapy (n) 12 (3%) 1 (1%) 11 (4%) 0.473* 
+Radiotherapy (n) 5 (1%) 0 (0%) 5 (2%) 0.588* 
+Radiological examination or 
+procedure (n) 
+ 
+Number of interventions (n) 
+Min – max 
+Median 
+Mean 
+ 
+Ultrasound 
+X-ray 
+CT 
+MRI 
+Other (f.e. stenting and other 
+procedures) 
+ 265 (70%) 
+ 
+ 
+ 
+0–16 
+2 
+2 
+ 
+110 (29%) 
+169 (45%) 
+141 (37%) 
+5 (1%) 
+114 (30%) 
+38 (50%) 
+ 
+ 
+ 
+0–8 
+1 
+1 
+ 
+14 (17%) 
+25 (33%) 
+11 (14%) 
+0 (0%) 
+17 (22%) 
+227 (75%) 
+ 
+ 
+ 
+0–16 
+3 
+2 
+ 
+96 (32%) 
+144 (48%) 
+130 (43%) 
+5 (2%) 
+97 (32%) 
+<0.0001* 
+ 
+ 
+ 
+<0.0001** 
+ 
+ 
+ 
+0.024* 
+0.021* 
+<0.0001* 
+0.588* 
+0.124* 
+Hospitalization (n) 
+ 
+Number of days spent in hospital 
+(n) 
+Min – max 
+Median 
+Mean 
+272 (72%) 
+ 
+ 
+ 
+0–30 
+7 
+9 
+36 (47%) 
+ 
+ 
+ 
+0–30 
+6 
+7 
+236 (78%) 
+ 
+ 
+ 
+0–30 
+7 
+9 
+<0.0001* 
+ 
+ 
+ 
+0.257** 
+ 
+Emergency department (ED) 
+visits (n) 
+ 
+Number of ED visits (n) 
+Min – max 
+Median 
+Mean 
+180 (48%) 
+ 
+ 
+ 
+1–7 
+1 
+1.7 
+27 (36%) 
+ 
+ 
+ 
+1–4 
+1 
+1.5 
+153 (51%) 
+ 
+ 
+ 
+1–7 
+1 
+1.7 
+0.021* 
+ 
+ 
+ 
+0.349** 
+Death in the University Hospital 
+(n patients) 
+68 (18%) 6 (8%) 62 (21%) 0.011* 
+Surgical intervention (n) 
+ 
+Number of interventions per 
+patient (n) 
+Min - Max 
+Median 
+Mean 
+40 (11%) 
+ 
+ 
+ 
+1–6 
+2 
+3 
+5 (6%) 
+ 
+ 
+ 
+1–4 
+2 
+2 
+35 (12%) 
+ 
+ 
+ 
+1–6 
+2 
+3 
+0.203* 
+ 
+ 
+* Fisher´s Exact test (Two-sided Pr) 
+** Wilcoxon Two-Sample Test 
+=====PDFPAGE 42=====
+Liisa Rautakorpi 
+ 40 
+In the PC group , 48% of the patients (n=39) were in touch more than twice , 20% 
+(n=16) twice, and 32% once with the palliative care unit. There was a wide range of 
+time, from 0 to 1070 days , between the first contact with the palliative care clinic 
+and the patient´s death. The median time was 2 months (62 days), but 25 patients 
+first made contact with the unit during the ir final month and six during their last 
+week of life. For patients receiving late palliative consultation during the last 30 days 
+of life (n=25), the median overall survival was significantly shorter (2.9 months, 
+range 0.4–17.8 months) than for patients visiting the palliative care unit sooner (6.98 
+months, range 0.33–39.53 months, p<0.0001). 
+The costs of care at the university hospital varied between the groups and were 
+significantly lower for patients who received palliative intervention (p<0.0001). The 
+mean cost varied from €2,049 in the PC group to €4,574 in the SC group and the 
+median cost from €591 in the PC group to €3,268 in the SC group (range €1–21,484 
+vs €1.5–43,603).  
+5.2 Use of intravenous chemotherapy and 
+radiotherapy during the last months of life 
+(Studies II–III) 
+From the cancer patients who were treated in  TUH, 11,250 patients died during the 
+9-year period from 2005 to 2013. Of these patients 3 ,285 (29%) received IV 
+chemotherapy, 2,904 (26%) radiotherapy, and 1,210 (11%) both chemotherapy and 
+radiotherapy during their last year of life. 
+5.2.1 Use of intravenous chemotherapy 
+Of the 3,285 patients who received chemotherapy during the last year of life,  47% 
+(n=1547) were female and 53% (n=1738) male and the median age at death was 66 
+years for both sexes, respectively.  The patient characteristics of those  receiving 
+chemotherapy are shown in Table 9. The largest diagnostic groups were lung cancer 
+(n=812, 22%) and hematological malignancies and lymphoma (n=479, 15%) . The 
+proportion of patients receiving IV chemotherapy during the last months of life was 
+22% from 1 year to 6 months, 60% from 6 months to 1 month, 11% from 1 month 
+to 2 weeks, and 7% during the last  2 weeks of life. The average time from the last 
+dose of IV chemotherapy until death was 111 days (SE 1.6). 
+=====PDFPAGE 43=====
+Results 
+ 41 
+Table 9.  Characteristics of patients receiving intravenous chemotherapy during the last year of 
+life (Modified from Study II). 
+Age at death 
+Female 
+Male 
+Median 
+66 years 
+66 years 
+ 
+ 
+ 
+n = 3285 
+ 
+%  
+Sex 
+Female 
+Male 
+ 
+1547 
+1738 
+ 
+47% 
+53% 
+Diagnostic groups 
+Lung cancer 
+Hematological and lymphoma 
+Gynecological cancer 
+Breast cancer 
+Colorectal cancer 
+Pancreatic cancer 
+Gastric cancer and esophageal cancer  
+Prostate cancer 
+Other 
+ 
+812 
+479 
+303 
+295 
+295 
+235 
+169 
+167 
+530 
+ 
+25% 
+15% 
+9% 
+9% 
+9% 
+7% 
+5% 
+5% 
+16% 
+Age groups (years) 
+<50  
+50–59  
+60–69 
+70–79 
+>80  
+ 
+308 
+584 
+1237 
+923 
+233 
+ 
+9% 
+18% 
+38% 
+28% 
+7% 
+Treatment year 
+2005–2007 
+2008–2010 
+2011–2013 
+ 
+975 
+1129 
+1181 
+ 
+30% 
+34% 
+36% 
+ 
+Time between the last dose of chemotherapy and death varied significantly according 
+to the patient´s age , as younger patients received chemotherapy closer to death 
+(p<0.0001) (Figure 3 ). The differences between the age groups were statistically 
+significant in pairwise comparison , except for the groups aged 50–59 and 60 –69 
+(p=0.22), and 60–69 and 70 –79 (p=0.13). Younger patients were treated closer to 
+death. 
+=====PDFPAGE 44=====
+Liisa Rautakorpi 
+ 42 
+ 
+Figure 3.  Probability of time between the last IV chemotherapy treatment and death for (A) 
+different age groups, (B) different diagnos tic groups and (C) different years  (From the 
+original Study II, Published with the permission of the copyright holder). 
+
+=====PDFPAGE 45=====
+Results 
+ 43 
+The use of chemotherapy differed between the diagnostic groups during the last year 
+of life. For prostate cancer patients, IV chemotherapy was emphasized more in  
+earlier months, with 42% of patients having received it earlier than 6 months before 
+death and only 5.4% during the last month of life. For the most actively treated group 
+of hematological malignancies and lymphomas, the corresponding percentages were 
+13% and 38%  (Table 10). In addition, the time between the last dose of 
+chemotherapy and death varied significantly between the diagnostic groups (Figure 
+3, p<0.0001). Patients with prostate cancer and cancer of the urinary tract were the 
+least frequently treated groups among patients receiving treatment during the last 
+year of life (p<0.05). For patients with lymphoma or hematological malignancies, 
+the time between the last treatment and death was on average the shortest (p<0.05). 
+Table 10.  Number of patients receiving IV chemotherapy during the last year of life in different 
+diagnostic groups. 
+Diagnostic 
+group 
+Number of 
+deceased 
+cancer patients 
+Number of deceased patients receiving iv chemothepapy 
+One year 6 months 3 months 1 month 2 weeks 
+Prostate 1011 167(100%) 97(58%) 42(25%) 9(5%) 5(3%) 
+Breast 872 295(100%) 236(80%) 162(55%) 55(19%) 14(5%) 
+Colorectal 1043 295(100%) 218(74%) 127(44%) 34(12%) 16(5%) 
+Gynecological 658 303(100%) 236(78%) 169(56%) 49(16%) 13(4%) 
+Lung  1934 812(100%) 632(78%) 429(53%) 132(16%) 62(8%) 
+Esophagus 
+and gastric 
+709 169(100%) 135(80%) 96(57%) 23(14%) 8(5%) 
+Pancreatic 772 235(100%) 193(82%) 126(54%) 36(15%) 15(6%) 
+Other 3010 530 (100%) 421(79%) 288(54%) 87(16%) 29 (6%) 
+Hematological 
+and lymphoma  
+1241 479(100%) 412(86%) 307(64%) 161(34%) 76(16%
+) 
+Total 11 250 3285 (100%) 2580 (79%) 1746 (53%) 587 (18%) 238(7%) 
+ 
+The time from the last regimen of chemotherapy to death remained stable during the 
+9-year period , and no significant differences between the years were observed 
+(Figure 3, p=0.20).  
+To study the combined effect of age, diagnosis, and year of death on the time 
+between last treatment and death, Cox regression analysis was performed. The 
+analysis revealed similar results to those  described above , showing that the 
+significant factors in EOL IV chemotherapy treatment were age (p<0.001) and 
+certain cancer types: hematological malignancies (p<0.001), lymphoma (p<0.001), 
+prostate cancer (p<0.001), and cancer of the urinary tract (p=0.020). For the year of 
+death, the effect was not statistically significant (p=0.55).  
+Of the patients receiving chemotherapy during the  last year of life, one third 
+(n=1019, 31%) died at TUH.  
+=====PDFPAGE 46=====
+Liisa Rautakorpi 
+ 44 
+5.2.2 Utilization of radiotherapy  
+There were 2,904 patients who received radiotherapy during the last year of life, of 
+whom 1,251 were female (43%) and 1 ,653 male (56.9%). The median age at death 
+was 69 years (female 68 years and male 69 years, p=0.11, Wilcoxon test). The largest 
+diagnostic groups were lung cancer (n=596, 21%) and breast cancer (n=335, 12%). 
+The total dose of radiotherapy varied between 1.5  Gy and 70.5 Gy (mean 22.78, 
+median 20.0) during the final radiotherapy course. The characteristics of these 
+patients are presented in Table 11. 
+Table 11.  Characteristics of patients receiving radiotherapy during the last year of life  (Modified 
+from Study III). 
+ Median Range 
+Age at death 
+Female 
+Male 
+ 
+68 years  
+69 years 
+ 
+Radiotherapy dose 20.0 Gy 1–70.5 Gy 
+ n = 2904 %  
+Sex 
+Female 
+Male 
+ 
+1251 
+1653 
+ 
+43% 
+57% 
+Diagnostic groups 
+Lung cancer 
+Breast cancer 
+Prostate cancer 
+Primary cns  
+Gastric cancer and esophageal cancer 
+Lymphoma 
+Colorectal cancer 
+Cancer of head and neck 
+Skin cancer 
+Other 
+ 
+596 
+335 
+319 
+234 
+189 
+174 
+173 
+121 
+120 
+643 
+ 
+21% 
+12% 
+11% 
+8% 
+7% 
+6% 
+6% 
+4% 
+4% 
+11% 
+Age groups (years) 
+<60 
+60–69 
+70–79 
+>80 
+ 
+629 
+907 
+891 
+477 
+ 
+22% 
+31% 
+31% 
+16% 
+Distance between domicile and hospital (km) 
+<20  
+20–50  
+50–100  
+>100  
+ 
+1346 
+348 
+869 
+341 
+ 
+46% 
+12% 
+30% 
+12% 
+Treatment year 
+2005–2007 
+2008–2010 
+2011–2013 
+ 
+941 
+975 
+988 
+ 
+32% 
+34% 
+34% 
+ 
+=====PDFPAGE 47=====
+Results 
+ 45 
+Median time between the last fraction of radiotherapy and death was 84 days (range 
+0–365 days). The proportion of patients receiving radiotherapy during the last 
+months of life was 24% from 1 year to 6 months, 53% from 6 months to 1 month, 
+11% from 1 month to 2 weeks, and 12% during the last 2 weeks of life. There was a 
+tendency towards receiving radiotherapy closer to death in the age group 60–69 years 
+compared to groups 70 –79 (p=0.062) and >80 (p=0.061)  years, but no significant 
+differences between age groups or between the studied years (p>0.05 for all ) were 
+detected. 
+Cancer diagnosis and distance from the patient’s domicile to TUH were 
+associated with changes in the time from the last fraction of radiotherapy until death 
+(Figure 4). Of all the diagnostic groups, lung cancer (p<0.001), skin cancer (p=0.01), 
+lymphoma (p=0.007), and ‘other cancers’ (p<0.001) were treated closer to death , 
+whereas gynecological malignancies were treated least frequently near death 
+(p=0.02). Patients living >100 km from the hospital were treated least frequently 
+near death and had a median of 110 days to death from the last treatment. For other 
+groups it was 80 –83 d ays. The difference was statistically significant in each 
+pairwise comparison (p<0.001). 
+For patients receiving EOL radiotherapy, the median number of fractions was 7 
+(mean 9.1) in t heir last administered radiotherapy course. The distribution of 
+radiotherapy fractions at different time points is presented in  Figure 5. Most of the 
+last radiotherapy treatments consisted of ≤10 fractions (77%) and 7% of a single 
+fraction. The median numb er of fractions dropped over the years from 8 in 2005 –
+2007 to 6 in 2011–2013 (p=0.032). 
+=====PDFPAGE 48=====
+Liisa Rautakorpi 
+ 46 
+ 
+Figure 4.  Probability of time between the last radiotherapy treatment and death for (A) different 
+diagnostic groups and (B) patients by distance from domicile to radiotherapy unit (From 
+the original Study III, Published with the  permission of the copyright holder). 
+
+=====PDFPAGE 49=====
+Results 
+ 47 
+ 
+Figure 5.  Distribution of radiotherapy fractions given as part of the last treatment plan (From the 
+original Study III, Published with the permission of the copyright holder). 
+The two most targeted anatomical locations during the last year of life were the brain 
+and thorax. The proportion of primary and secondary tumors was assessed for these 
+two locations. One-third (28%, n=185) of patients receiving radiotherapy to the brain 
+had a primary CNS  tumor (C70–C72), the rest (72%) had brain metastases. Of the 
+patients who received radiotherapy to the thoracic region, 4 5% (N=240) were 
+diagnosed with lung cancer (C34). The spine and pelvis were the third and fourth 
+most treated locations, respectively. The targeted locations at different time points 
+are presented in more detail in Figure 6. 
+
+=====PDFPAGE 50=====
+Liisa Rautakorpi 
+ 48 
+ 
+Figure 6. Radiotherapy locations in patients receiving radiotherapy during the last year of life  
+(Modified from Study III) 
+Of the 340 patients who were treated during the last 2 weeks of life, 97% (n=330) 
+received radiotherapy with palliative intent. Nearly half of these treatments were 
+discontinued ( n=138, 4 1%) due to general worsening of the patient’s condition 
+(70%, n=97), death of the patient (21%, n=29), and other reasons such as the 
+patient’s own wishes (9%, n=12). The indications for palliative radioth erapy were 
+pain (29%), followed by brain  symptoms caused by primary tumor or metastases 
+(20%), local symptoms caused by the tumor, such as hematuria, dysphagia, edema 
+(17%), paraparesis or other radicular or local symptom caused by changes in the 
+spine (12%), dyspnea and other respiratory symptoms (10%), primary or secondary 
+tumor growing through the skin or mucosa (5%), vena cava superior syndrome (2%), 
+and other (1%). 
+Of the patients receiving radiotherapy during their last year of life, 20% died at 
+TUH, whereas the corresponding percentage of patients treated during the last 2 
+weeks of life was 46%. Thus, half of the patients who received radiotherapy during 
+the last 2 weeks of life died in hospital. Patients treated closer to death with 
+radiotherapy were more likely to die at TUH. 
+
+=====PDFPAGE 51=====
+Results 
+ 49 
+5.3 Treating end-of-life pain (Study IV) 
+There were 138 eligible patients who were treated in the two hospices in 2010 . Of 
+these, 64% (n=88) were female and 36% (n=50) male. The median age at transfer to 
+hospice was 75 years (range 38 –103). The most common cancer diagnoses were 
+gastrointestinal cancer (33%, n=45) and lung cancer (16%, n=22). Mean time from 
+cancer diagnosis to referral to hospice was 2.6 years for Karinakoti and 2.0 years for 
+Koivikko-koti. Comorbid conditions were diagnosed in 83% of the patients, 69% of 
+them from one to three and 14% from four or more categories. The p atient 
+characteristics are given in Table 12. 
+The mean time in hospice was 32 days (range 2 –376 days). One-third (28%, 
+n=39) of the patients were in hospice for less than 7 days, 60% (n=82) from 7 days 
+to 2 months, and 12% (n=16) for more than 2 months. 
+Table 12.  Patient characteristics for hospice patients (Modified from Study IV). 
+Age at death 
+Median 
+Range 
+ 
+75 years 
+38–103 years 
+ 
+ 
+Sex 
+Female 
+Male 
+ 
+88 
+50 
+ 
+64% 
+36% 
+Diagnostic groups 
+Breast cancer 
+Lung cancer 
+Gastrointestinal cancer 
+Other 
+ 
+15 
+22 
+45 
+56 
+ 
+11% 
+16% 
+33% 
+41% 
+The number of comorbidities 
+Mean 
+Range 
+ 
+2.2 
+0–9 
+ 
+Time at the hospice 
+Mean 
+Range 
+<7 days 
+1 week-2 months 
+>2 months 
+ 
+32 days 
+2–376 days 
+39 
+82 
+16 
+ 
+ 
+ 
+28% 
+60% 
+12% 
+Mean time from cancer diagnosis to hospice 
+Karinakoti 
+Koivikko-koti 
+ 
+2.6 years 
+2.0 years 
+ 
+ 
+All but five patients received strong opioids during their stay in hospice. At transfer 
+to hospice, 63% of patients received regularly dosed  strong opioids. The 
+corresponding percentages on the second day in hospice and 1 day before death were 
+=====PDFPAGE 52=====
+Liisa Rautakorpi 
+ 50 
+77% and 90%, respectively. The opioids used were oral morphine, oral oxycodone, 
+transdermal fentanyl, and subcutaneous morphine and oxycodone. A wide range was 
+observed in the individual dose need for opioids, regardless of the mode o f 
+administration. At transfer, the median dose of oral morphine was 60 mg/day (24 –
+120 mg). For oral oxycodone the median dose was 40 mg/day (8 –280 mg), for 
+transdermal fentanyl 25 μg/day (12–350 μg), for subcutaneous morphine 192 mg 
+(180–336 mg) and for subcutaneous oxycodone 100 mg (30–170 mg), respectively.  
+In morphine equivalent daily doses (MEDD) the corresponding median for oral 
+morphine and oral oxycodone w as 60 mg,  for transdermal fentanyl 75 mg,  for 
+subcutaneous morphine  576 mg  and for subcutaneous  oxycodone 300 mg , 
+respectively. MEDD varied from 12 mg to 1050 mg. 
+In hospice, the routes of opioid administration changed with approaching death 
+as shown in Figure 7. A significant change was seen in more frequent subcutaneous 
+administration (p<0.0001).  
+ 
+Figure 7.  Use of strong opioids in hospice. 
+Half of the patients (52%) received medication for breakthrough pain on the second 
+day in hospice. The corresponding percentage of patient s at 2 weeks and 2 months 
+was 48% and 42%, respectively.  On the day prior to death the corresponding 
+percentage was higher 76% (p<0.0001).  
+
+=====PDFPAGE 53=====
+Results 
+ 51 
+In addition to strong opioids, other pain medications were also used in hospice. 
+However, less than 10% of the patients received them at each observation point.  
+The use of other  than pain  medication showed a decreasing trend as death 
+approached. However, the use of sedative and psychoactive drugs increased during 
+the stay in hospice. At the time of transfer 51% of patients, on the second day 60%, 
+and 1 day before death 70% received medications from this group. The most used 
+were benzodiazepines, with 96 patients (70%) receiving them at least at one point, 
+haloperidol in 44 patients (32%), and SSRIs (selective serotonin reuptake inhibitors) 
+in 14 (10%). 
+ 
+=====PDFPAGE 54=====
+ 52 
+6 Discussion 
+6.1 Effect of palliative care intervention (Study I) 
+Our study evaluating the use of hospital resources during the last month of life in 
+patients with pancreatic cancer showed a significant decrease in the use of these 
+resources when the decision was made to change to a symptom-centered goal of care 
+and the patient’s care was transferred to the palliative outpatient clinic.  This was 
+expected, as the role of palliative intervention has been unanimously recognized in 
+international guidelines (Ferrell et al., 2017; K. Jordan et al., 2018)  and 
+improvements in symptom burden and quality of life  have been  established 
+(Kavalieratos et al., 2016). Nonetheless, there are studies in which no positive effect 
+of a single palliative intervention have been observed (Eychmüller et al., 2021).  
+Despite the recommendations, only a minority of patients are referred  to 
+palliative care units in Finland (Hirvonen et al., 2020), as observed also in our study. 
+Moreover, only 20% of the patients visited a palliative outpatient clinic, while the 
+rest received standard oncological care. In a US study of 54,130 pancreatic cancer 
+patients, the number of patients receiving palliative care consultation was even lower 
+at 5.8% (Bhulani et al., 2018). 
+Palliative intervention was associated with less use of hospital resources such as 
+radiological examinations, CoT imaging, hospitalizations, and ED visits during the 
+last 30 days of life. This is consistent with the findings reported by Jang et al. (2015) 
+and Hirvonen et al. (2020). Pancreatic cancer patients often have a heavy symptom 
+burden and need tertiary care services near the EOL (Sohal et al., 2016). Indeed, 47% 
+of patients in the PC group and 78% in the SC group were hospitalized during the 
+last 30 days of life. The median time spent in hospital was 6 and 7 days in the PC 
+and SC groups, respectively. In acute hospital wards , patients may receive more 
+aggressive procedures and less frequent pain control and incur higher medical costs 
+than in inpatient palliative care units (Wang et al., 2016). 
+Nearly half of the pancreatic cancer patients in our series needed ED services 
+during the last month of life.  ED visits have been reported to be common also in 
+other countries (Barbera 2010). Many of the ED visits could, however, be avoided  
+even among patients receiving outpatient palliative care (Delgado-Guay et al., 2015). 
+In the study by Delgado -Guay et al a visit to an ED was classified as potentially 
+=====PDFPAGE 55=====
+Discussion 
+ 53 
+avoidable if the problem could have been managed at the outpatient palliative care 
+clinic or by telephone (for example cancer pain or gastrointestinal symptoms). One 
+fourth of ED visits were deemed potentially avoidable if proactive efforts to improve 
+communication and increased support between appointments  would have been 
+warranted. Additi onally in a Finnish cohort study admissions to ED tended to 
+decrease after palliative care intervention including ACP (Hirvonen et al., 2018). 
+Prior visits to a palliative care clinic have been correlated with more 
+comprehensive advance care planning information, do-not-resuscitate (DNR) order 
+issuance, and connection to primary care amongst patients who visited an ED 
+(Hirvonen et al., 2018) . To conclude, wider use of palliative intervention mi ght 
+reduce the pressure on ED clinics and reduce hospitalizations. It should be noted that 
+in our series of patients, reduced use of resources did not affect the availability of 
+stenting and surgical interventions , which indicates that necessary symptom -
+alleviating procedures were available equally for patients in both groups.  
+At TUH, patients have traditionally been referred to a palliative care clinic only 
+after discontinuation of active anticancer treatments. In clinical work, evaluating the 
+prognosis remains a challenge and doctors are often overly optimistic (Christakis & 
+Lamont, 2000; Glare et al., 2003) . However, even if clinical estimation of survival 
+is challenging, prognostic tools are not superior to c linical prediction (Stone et al ., 
+2021). In our analysis there were no significant differences in patient characteristics, 
+chemotherapy treatments, or radiotherapies received by patients in the PC and SC 
+groups, except for overall survival which varied significantly between the groups  
+(5.4 vs. 1.9 months, respectively) . Palliative care consultation should be required 
+also for patients with aggressive disease and short overall survival already concurrent 
+with active anticancer treatments. This could be achieved by active referral to 
+palliative care unit preferably at the visit in the oncology clinic as recommended in 
+the ASCO clinical practice guideline  (Sohal et al., 2018) . Based on  this finding, 
+treatment strategies at TUH have been revised and systematic palliative care 
+intervention is offered for all newly diagnosed pancreatic cancer patients. 
+Patients receiving hospital -based palliative care are reported  to die in their 
+preferred place more often than those receiving regular care (Bajwah et al., 2020) . 
+Also in our study, the place of death varied significantly between patients who 
+visited a palliative care unit and those who received only standard care. Moreover,  
+the pr obability of dying in a tertiary care hospital was nearly threefold among 
+patients who did not visit a palliative care unit.  
+Palliative care has been associated with lower costs of care for cancer patients 
+(May, Normand, et al., 2018; Penrod et al., 2010; Sheridan et al., 2021; Yadav et al., 
+2020) and Study I was in line with this finding. The effect may be more pronounced 
+with care in palliative care unit when compared to palliative care consultation (May, 
+Garrido, et al., 2018). Palliative care might lower the health care costs especially in 
+=====PDFPAGE 56=====
+Liisa Rautakorpi 
+ 54 
+tertiary care (Greer et al., 2016) . Indeed, in the present study, where unfortunately 
+primary healthcare costs were not included,  the costs of care during the last month 
+of life  in tertiary care  were signif icantly lower for patients who had visited a 
+palliative outpatient clinic. Indirect costs including for example productivity costs 
+and informal care  explain approximately half of the total costs of cancer patients 
+palliative care period (Haltia et al., 2018) and were not included in the present study.  
+There is constant pressure against optimizing the use of limited resources in our 
+publicly funded healthcare system. A q uarter of all healthcare costs arise from 
+treatment during the last year of life (Riley & Lubitz, 2010);  in cancer, metastatic 
+and palliative state s incur remarkable costs (Färkkilä et al., 2015; Torvinen et al., 
+2016). Indeed, the median cost in our study population varied from €591 in the PC 
+group to €3,268 in the SC group with a range of €1–43,603, respectively. Advances 
+in EOL care could be a way to optimize these costs.  In Finland, savings could also 
+be achieved by investing in the development of palliative care (Finne-Soveri et al., 
+2021).  
+6.2 Use of Intravenous chemotherapy near the end 
+of life (Study II) 
+IV chemotherapy is an essential part of cancer patients’ treatment, occasionally also 
+near the EOL. However, as life expectancy decreases, the potential side effects and 
+effects of consumptive treatment on their general condition and quality of life should 
+be carefully considered , especially if the potential benefit s of the treatment are 
+limited. 
+At TUH, the use of IV chemotherapy near the EOL was in line with previous 
+studies, as 17.9% of the deceased cancer patients who had received IV chemotherapy 
+during the last year of life were treated during the last month of life. The percentage 
+of patients receiving chemotherapy during the last 30 days of life has been reported 
+to be lower in Norw egian (10%) and Chinese (15.7%) cohorts (Anshushaug et al., 
+2015; Zhang et al., 2018), whereas higher percentages (19.5–46.5%) were previously 
+often reported  (Asola et al., 2006; Baena -Cañada et al., 2019; Braga et al., 2007; 
+Earle et al., 2004; Edman Kessler et al., 2020; Hirvonen et al., 2019; Matter-Walstra 
+et al., 2015; Näppä et al., 2011; Numico et al., 2014; Randén et al., 2013; Rochigneux 
+et al., 2017; Sezgin Goksu et al., 2014) . The number of patients receiving IV 
+chemotherapy during the last 2 weeks of life (7.2%) met the indicators set by Earle 
+et al., as less than 10% of them did so (Earle et al., 2005).  
+It has been suggested that there is a trend towards more active cancer care near 
+the EOL (Earle et al., 2004; Ho et al., 2011), while in our series of patients the time 
+between the last IV chemotherapy treatment and death remained stable across the 
+follow-up time of 9 years. Treatment patterns must, however, be critically evaluated, 
+=====PDFPAGE 57=====
+Discussion 
+ 55 
+as ASCO has specified EOL chemotherapy as one of the opportunities to improve 
+care and reduce costs in oncology (Schnipper et al., 2012). 
+Variations in the study design, however, limit the generalization of these results. 
+For example, in a study by Kessler et al . reporting the use of chemotherapy in 
+patients with metastatic breast cancer, peroral cytotoxic agents were also included, 
+and capecitabine and vinorelbine were both used during the last month of life 
+(Edman Kessler et al., 2020) . Moreover, in a Norwegian study, one fifth of the 
+patients recei ved hormonal therapy as a last line of anticancer treatment 
+(Anshushaug et al., 2015), and it can be assumed that also in our study the number 
+of patients would have been higher if other than IV chemotherapy treatments had 
+been included. Patients’ inclus ion criteria may also affect the results, and for 
+example Braga et al . and Baena-Cañada et al. included only solid tumors in their 
+analyses (Baena-Cañada et al., 2019; Braga et al., 2007).   
+At TUH, the time from the last treatment to death was influenced by both the age 
+and diagnosis of the patient. Regarding the use of chemotherapy in different 
+diagnostic groups, patients with hematological malignancies and lymphoma were 
+treated closer to death than were other groups, which is line with the findings by Hui 
+et al. (Hui et al., 2014). However, as reported in a study by Rochigneux et al., there 
+were no significant differences between the groups of solid tumors  (Rochigneux et 
+al., 2017) . It should be noted that  patients with chemosensitive neoplasms may 
+receive a survival benefit even with second-, third- or fourth-line treatment, and there 
+are also many patients receiving first-line treatment during the last year of life. 
+Younger patients were treated more actively close to death, which may have been 
+influenced by the patients’ and caregivers’ wishes or the chemosensitivity of the 
+tumors in this group.  Younger age has been associated with more active use of 
+chemotherapy during the last months of life , also in earlier studies (Anshushaug et 
+al., 2015; Braga et al., 2007; Edman Kessler et al., 2020; Sezgin Goksu et al., 2014; 
+Zhang et al., 2018) . In our cohort of patients, the treatment of elderly patients did 
+not, however, differ significantly compared to younger patients. This study included 
+only patients who receive d IV chemotherapy during the last year of life ; therefore 
+patients whose general condition was significantly reduced or who had significant 
+comorbidities and were thus  not eligible for anticancer treatments after diagnosis 
+were excluded. Despite this, based on clinical experience there might be a need to 
+evaluate the treatment of elderly patients , especially among those with limited 
+performance status. For example, in a study by Rochigneux et al. (Rochigneux et al., 
+2017), older age was associated with lower rates of chemotherapy , which may be 
+justifiable given poorer levels of tolerance to the treatment.  
+In addition to evaluating the number of patients receiving treatment close to 
+death, we should also evaluate the wider entirety around EOL chemotherapy, as it 
+may affect the EOL in various ways . In a study by Wu et al . (Wu et al., 2016) , 
+=====PDFPAGE 58=====
+Liisa Rautakorpi 
+ 56 
+patients who did not receive palliative chemotherapy received more hospice care in 
+the last months of life . Additionally, in a study by Baena -Cañada et al ., systemic 
+anticancer therapy was associated with more visits to the ED and less care from  a 
+palliative care unit (Baena-Cañada et al., 2019) . This should also be considered in 
+our clinic, as patients have traditionally been transferred to a palliative outpatient 
+clinic or to hospice services only after finishing anticancer treatments , leaving 
+insufficient time to organize EOL care before the patient’s general condition 
+deteriorates, especially for those receiving chemotherapy near the EOL. In addition, 
+the place of treatment also affects the place of death. In our study population, one -
+third of the patients who were treated during the last year of life died at TUH. Many 
+patients would prefer to die at home (Khanm et al., 2014), which clearly cannot be 
+fulfilled. Indeed, compared to patients not treated with chemotherapy near the EOL, 
+those receiving EOL chemotherapy have been found to be admitted more frequently 
+to hospital, have a significantly shorter survival, more often lack a documented 
+decision to cease treatment, and die less frequently at home (Näppä et al., 2011). 
+The present study focuses in IV chemotherapy near EOL but  the rapid 
+development of other anticancer treatments  during the past years  cannot be 
+disregarded. Immune checkpoint inhibitors and targeted therapies have  
+revolutionised the management of many cancer s, especially advanced melanoma 
+(Carlino et al., 2021; Robert et al., 2019) . In addition, combination treatments such 
+as a ntiangiogenic receptor tyrosine kinase inhibitors and immune checkpoint 
+inhibitors for advanced renal cell carcinoma  have improved treatment outcomes  
+(Hofmann et al., 2020). As the treatment options increase and medications with more 
+tolerable adverse effects are available, the possible benefits and disadvantages 
+should still be carefully considered before starting a new anticancer treatment with 
+a special attention paid to elderly patients. 
+6.3 Use of radiotherapy near the end of life 
+(Study III) 
+The entirety around EOL radiotherapy differs from chemotherapy, as palliative 
+radiotherapy may be an important way to relieve symptoms (Dennis et al., 2011; 
+Jones et al., 2014; Spencer et al., 2018),  even near the EOL. However, time to 
+symptom control limits the use of radiotherapy during the last weeks of life (van der 
+Linden et al., 2006), and in clinical practice it is often recommended to refrain from 
+radiotherapy if the life expectancy is less than 3 months. Nonetheless, radiotherapy 
+is used for patients with a shorter life expectancy; in our patient population, among 
+patients treated during the last 2 weeks of life 97% of the courses were given with 
+palliative intent and for half the patients the indications for radiotherapy were pain 
+(29%) or brain symptoms (20%).  
+=====PDFPAGE 59=====
+Discussion 
+ 57 
+At TUH, 26% of all radiotherapy treatments were given during the last year of 
+life. One-fourth (23%) of the patients treated during the last year and 6% of all treated 
+patients received radiotherapy d uring the last month of life. These treatments 
+included both curative and palliative treatment plans, although it should be noted  
+that curative and palliative goals may be merged in cancer patients (Jones et al., 
+2014). The study design varies in previous studies, but 5–29% of patients have been 
+reported to receive radiotherapy during the last 30 days of life (Guadagnolo et al., 
+2013; Hirvonen et al., 2020; Huang et al., 2014; Tiwana et al., 2016; S. Wu et al., 
+2019), which is in line with our findings.  
+Nearly half of the radiotherapy courses given during the last 2 weeks of life were 
+discontinued; the most common reason was worsening of the patient’s general 
+condition. In a study by Wu et al ., 42% of the patients receiving radiotherapy for 
+metastatic cancer during the last 30 days of life did not complete their final course 
+(Wu et al., 2019) . Gripp et al . have also reported high rates of discontinuation of 
+palliative radiotherapy near the EOL (Gripp et al., 2010) . Increased age and 
+comorbidities may be significant predictors of death within 2 weeks of receiving 
+radiotherapy (Murphy et al., 2013),  and at least for those patients, evaluation of 
+prognosis should be warranted before starting palliative radiotherapy, even if the 
+prognostic models  may be inaccurate in predicting the survival of palliative 
+radiotherapy patients (Rodríguez-López et al., 2020).   
+In previous studies, increased travel time to the radiotherapy unit reduced the use 
+of radiotherapy near the EOL (Danielson et al., 2008; Huang et al., 2014; Lavergne 
+et al., 2011). This was also seen in our seri es of patients, as those living more than 
+100 km from the hospital were treated less frequently close to death. In Southwest 
+Finland the only radiotherapy unit is at TUH, and the availability of radiotherapy, 
+especially short courses of palliative radiotherapy, must be guaranteed also for 
+patients living further away. Finland is, however, sparsely populated, and logistic al 
+challenges in both the archipelago and rural areas may explain this variation.  
+Patients’ cancer diagnosis affected the time from the last fraction of radiotherapy 
+to death. Specifically, patients with lung cancer, skin cancer (including melanoma), 
+lymphoma, or “other cancers” were more likely to receive radi otherapy closer to 
+death. Tumor site has been recognized as an important factor when evaluating the 
+use of palliative radiotherapy , and especially lung cancer patients have been 
+frequently treated near the EOL (Huang et al., 2014; Lavergne et al., 2011; Murphy 
+et al., 2013; Tiwana et al., 2016; Wu et al., 2019).  
+Age has been found to have an influence on the use of palliative radiotherapy in 
+multiple studies (Danielson et al., 2008; Huang et al., 2014; Kress et al., 2015; 
+Lavergne et al., 2011; Murphy et  al., 2013; Wu et al., 2019),  but in our study 
+population no such trend was observed. This raises the question of whether treatment 
+patterns for elderly patients should be further evaluated. 
+=====PDFPAGE 60=====
+Liisa Rautakorpi 
+ 58 
+Radiotherapy fractionation should  be adjusted to fit the patient’s prognosis 
+(Jones et al., 2014; Mojica -Márquez et al., 2020) . This was observed in our study,  
+where the number of short -fraction radiotherapy treatments increased as death 
+approached. The median duration of palliative radiotherapy has been reported to vary 
+between 12 and 16 days (Berger et al., 2014; Murphy et al., 2013),  but in our study 
+the median number of fractions in the last treatment plan was 8 in 2005 –2007 and 
+down to 6 in 2011–2013. Indeed, 59% of the treatments during the last month of life 
+had <10 fractions. Even if short courses were common, single -fraction treatments 
+were used rather infrequently in our study. ASCO states in a guideline for treating 
+bone metastases that single-fraction 8 Gy is as effective as 20 Gy in 5 fractions, 24 
+Gy in 6 fractions , and 30 Gy in 10 fractions (Lutz et al., 2011) . Shorter courses of 
+radiotherapy have been found to be as effective in treating bone metastases causing 
+pain, even if higher retreatment rates have been detected among  patients who have 
+received single-fraction radiotherapy (Chow et al., 2012; Sze et al., 2002) . Thus, 
+single-fraction treatments should be preferred for patients with painful bone 
+metastases, also when there is a need for repeat radiation (Chow et al., 2014).  
+The most targeted radiotherapy locations were the brain, thorax, spine, and 
+pelvis. Especially in the spine and pelvic regions, bone metastases are those 
+generally targeted. However, in the brain, radiotherapy is used to alleviate symptoms 
+caused by both primary tumors and metastases. In whole-brain irradiation, 20 Gy in 
+5 fractions is preferable for most patients (Rades et al., 2007). Indeed, whole brain 
+external beam radiotherapy is the standard care for patient s ineligible for resection 
+or stereotactic radiosurgery , and for patients with a short prognosis shorter 
+treatments are recommended (Jones et al., 2014) . Our finding that the fractions 
+received by patients with primary brain tumors and brain metastases  were 8 and 5 
+respectively are in line with these recommendations.  
+Palliative radiotherapy should be available for patients even when the treatment 
+has been referred to primary care after discontinuation of active anticancer 
+treatments. This must be ensured by providing consultation services at an oncology 
+clinic also in the future. In the US, in a study by Lutz et al. (Lutz et al., 2004) ,hospice 
+professionals recognized the importance of palliative radiotherapy as a treatment 
+option, yet less than 3% of hospice patients needed it.  Patients referred to hospice 
+are less likely to receive long courses (>10) of radiotherapy regardless of whether 
+they are enrolled in hospice care before or after radiotherapy (Lavergne et al., 2011).  
+6.4 Management of pain with strong opioids 
+(Study IV) 
+Pain alleviation of cancer patients has relied on strong opioids for decades (Fallon et 
+al., 2018; Makhlouf et al., 2020; World Health Organization, 1996)  and lacks any 
+=====PDFPAGE 61=====
+Discussion 
+ 59 
+significant developments, upgrades, or novel approaches to effective alleviation. As 
+expected, in this series of cancer patients treated in hospice, pain management relied 
+on strong opioids. Indeed, nearly all patients (96%) received strong opioids during 
+their stay in hospice. This is also seen in previous studies, where 79–95% of patients 
+with advanced cancer were reported to have received opioids (Raijmakers et al., 
+2013; Zerzan et al., 2010). The number of patients receiving opioids increased during 
+the hospice stay, as at transfer 63%  and on the day prior to death 89.9% received  
+them regularly dosed. In an Italian multicenter study , 61% of patients received 
+opioids at transfer and only 70% 1 day before death. Thus, in the Italian cohort 
+opioids were prescribed to patients less frequent ly and the doses were smaller than 
+in our findings (Mercadante et al., 2013).  
+Wide range in MEDD (12-1050 mg) was observed in the present study outlining 
+the need for individual pain assessment near EOL. The pain medication of 
+imminently dying have been studied in Swedish cohort where  corresponding daily 
+doses were reported (Fürst, Lundström, Klepstad, et al., 2020b). 
+Pain is one of the most common symptoms at the EOL (Breivik et al., 2009; van 
+den Beuken-van Everdingen et al., 2016),  and patients should be guaranteed high-
+quality symptom management to ensure a “good death” (Khanm et al., 2014) . In 
+hospice there might be fewer barriers to prescribing and using opioids (Jacobsen et 
+al., 2007) than in a hospital or outpatient setting. Indeed, hospice patients have been 
+more likely to receive opioids than hospital patients (Raijmakers et al., 2013). Fewer 
+barriers might also be associated with more easily recognizing pain. In hospice, pain-
+related behaviors and discomfort are often well recognized, even when the patient’s 
+ability to communicate declines. However, barriers may remain in patients’ and 
+caregivers’ attitudes and understanding of effective cancer pain management 
+(Makhlouf et al., 2020). 
+Even if morphine has remained the first treatment of choice for moderate to 
+severe cancer pain (Makhlouf et al., 2020) , this is more for reasons of familiarity, 
+availability, and cost than its proven superiority (Caraceni et al., 2012) . Novel 
+formulations, especially oxycodone and fentanyl, were frequently used in our patient 
+cohort, which is consistent the general opioid prescribing practice in Finland (Bosetti 
+et al., 2019). Furthermore, compared to morphine, oxycodone may cause less nausea 
+and hall ucinations (Kalso & Vainio, 1990) . Methadone, as a  low-dose add-on to 
+other opioids, has been delineated as an important tool for treating advanced pain in 
+specialized palliative care, but this was not observed in our study (Fürst, Lundström, 
+& Strang, 2020; Fürst, Lundström, Klepstad, et al., 2020a). 
+Breakthrough cancer pain remains a challenge also for patients with stable and 
+controlled background pain (Margarit et al., 2012) . A correlation has been found 
+between the intensity of background pain and breakthrough pain (Mercadante, 
+Caraceni, et al., 2021) . The incidence of breakthrough pain alternates in different 
+=====PDFPAGE 62=====
+Liisa Rautakorpi 
+ 60 
+stages of cancer but is reported by 70–93% of patients (Mercadante, Maltoni, et al., 
+2021; Swanwick et al., 2001). In our series of patients the need for strong opioids for 
+alleviating breakthrough pain was common, as half of the patients received them on 
+the second day in hospice and 76% on the day before death. It should be remembered 
+that rath er than just treating episodic pain with short -onset opioids, careful and 
+continuous assessment could limit the burden induced by breakthrough cancer pain 
+(Mercadante, Caraceni, et al., 2021). 
+The route of administration of opioids changed significantly , with orally 
+administered medications decreasing while subcutaneous administration became 
+more common. Transdermal fentanyl was used steadily through out the stay in 
+hospice. The SC administration route is simple and effective for delivering opioids 
+and sho uld be the first  choice for patients unable to receive opioids orally or  
+transdermally (Fallon et al., 2018). As death approaches, the need for other than oral 
+administration of opioids increases. Especially in a hospice setting , SC 
+administration of medications is common (Raijmakers et al., 2013) . Changing the 
+administration route is justifiable given that severe and/or overwhelming pain has 
+been reported to decrease after starting continuous SC infusion during the final days 
+(Fürst, Lundström, Klepstad, et al., 2020b).  
+Symptom burden near the EOL is obviously more complex than just treating 
+pain. Opioids ca n be used to alleviate cancer -related dyspnea (Ben-Aharon et al., 
+2012) in addition to pain, but other essential medications are also needed. 
+Midazolam, haloperidol , and an antimuscarinic were listed among  four essential 
+drugs needed in caring for dying patients (Lindqvist et al., 2013). The list of essential 
+medicines for palliative care by the International Association for Hospice and 
+Palliative care also includes these medications (de Lima, 2006). The use of sedative 
+and psychoactive  drugs is common in the EOL care of advance d cancer patients 
+(Raijmakers et al., 2013; Zerzan et al., 2010), and in our study population it increased 
+during the stay in hospice from 51% at transfer to 70% 1 day before death. The most 
+frequently used were the above medications listed as essential, as benzodiazepines 
+were received by 70% and haloperidol by 32% of patients, respectively. Opioid use 
+may increase the symptom burden and its side effects should  be treated  actively 
+(World health organization, 1996).  
+Concerns have been raised over the undertreatment of cancer pain. In a Pan -
+European survey of prevalence, treatment, and patient attitudes towards cancer 
+related pain, 64% of Finnish respondents reported pain. A third of the cancer patients 
+felt that pain was a problem, 42% that their health care provider did not have enough 
+time to discuss it, and 42% that their health care provider did not know how to control 
+pain (Breivik et al., 2009). Underestimation of pain severity and lack of knowledge 
+of adequate pain treatment were named as prior reasons for inadequate treatment of 
+pain by Fin nish physicians (Silvoniemi et al., 2012) . Even if our analysis did not 
+=====PDFPAGE 63=====
+Discussion 
+ 61 
+include the patients’ perspective it can be assumed that undertreatment of pain was 
+uncommon, since strong opioids were frequently used.  
+In 2010, Finland had only four hospices, and patients who received hospice care 
+thus represent a minority of all deceased cancer patients. Nevertheless, these units 
+have been pioneers in treating pain and other symptoms of dying patients. Palliative 
+care processes are evolving and new facilities  to offer EOL care are being 
+established. While the need for more training in the treatment of cancer pain has been 
+recognized (Bossi et al., 2021; Silvoniemi et al., 2012) , it would be beneficial to 
+include these practical observations as part of the tr aining in future. Specifically, 
+these findings support previous recommendations for units treating EOL cancer 
+patients to assess pain, prescribe both regularly dosed strong opioids and strong 
+opioids for breakthrough pain, and execute administration of pain medication via the 
+SC route when needed. 
+6.5 Study limitations 
+The most distinctive limitation of this thesis concerns the retrospective approach of 
+all the studies I-IV. However, there have not been comprehensive population-based 
+studies concerning the EOL cancer care in Finland earlier and therefore the first step 
+in evaluating the current practice was the retrospective, descriptive approach seen in 
+the studies II and III. This was enabled by the high-quality data provided by the Auria 
+Informatics. After the descriptive approach demonstrating the established cancer 
+care practices were studied, more precise research question demonstrating the effect 
+of palliative intervention was assigned. EOL pain medication in two hospices, which 
+are few in Finland, was studied to describe EOL pain medication during last weeks 
+and days of life in highly specialized units.  
+There are restrictions in retrospective studies, as only data collected 
+systematically as part of routine care could be utilized. Therefore, data on symptom 
+burden, quality of life, performance status, and experiences of the patient and 
+caregiver could not be reliably assessed. Regardless of these limitations, descriptive 
+analysis providing valuable knowledge of current practices w ere possible. To our 
+believe, the most important variables were included in the studies  I-IV and the use 
+of anti-cancer treatments, pain medications and the effect of palliative intervention 
+could be evaluated. 
+In the study I , diagnose of pancreatic cancer was manually identified from 
+patients’ records but the definite cause of death was not verified. Some of the patients 
+may have therefore died for other reason than cancer. The SC and PC groups differed 
+in terms of OS. This difference between the groups should be further investigated on 
+a prospective study design. Indeed, there are no specific referral criteria for palliative 
+outpatient clinic and thus there might be some unidentified bias in the patient 
+=====PDFPAGE 64=====
+Liisa Rautakorpi 
+ 62 
+selection of these studied groups. The data included only the use of tertiary care 
+resources and therefore hospitalizations and the costs of EOL care in primary care 
+were not included in the present study.  
+In Studies II–III, the population-based data was to our believe representative as 
+all deceased cancer patients who had a cancer diagnose code were included in the 
+study. However, the first appearance of metastatic cancer could not  be identified 
+from patient records. To improve the accuracy of our data  only patients receiving 
+anticancer treatments during the last year of life were included . The cause of death 
+was affirmed from death certificates in addition to data validation. In St udy II, the 
+data included only IV chemotherapies, with no orally administered cytotoxic agents 
+or hormonal medications. This might have led towards an impression of less active 
+use of chemotherapy near the EOL than occurred in real life. During 2005 –2013, 
+checkpoint inhibitors , CDK 4/6 inhibitors, and second -line antiandrogens 
+(enzalutamide or abiraterone) were not used, but for example capecitabine, 
+vinorelbine, tyrosine kinase inhibitors, and temozolomide in addition to hormonal 
+agents were available.  
+In Study III, the intent of radiotherapy could not be verified from radiotherapy 
+plans, even though the total dose of radiotherapy and fractionation may indicate the 
+intent of the treatment course. Performance status and patient’s symptoms would 
+have provided beneficial information when evaluating the advantage of treatments 
+during the last weeks of life.  
+In Study IV, the patients were randomly assigned to the study and no selection 
+was made. The cohort was rather small which may decrease the generalization of the 
+results. The most important limitation  to the study  was the lack of  written pain 
+estimates. However, even if this aspect would have been considered in a prospective 
+study design, patients’ severe symptoms, either physical or psychical, are common 
+during the last days of life and could affect the data collection.  In addition, only 
+three physicians were working at these two facilities during the time the data were 
+collected. 
+6.6 Future considerations 
+Additional studies addressing the optimal timing and execution of palliative 
+intervention also for other than pancreatic cancer patients are recommended. Referral 
+criteria for palliative care should be assessed and harmonized. A prospective trial 
+evaluating the effect of palliative intervention in different settings, could help target 
+the resources in the future. The results of this study could be reinforced by evaluating 
+the hospitalizations and costs of EOL care in primary care. Quality of life and other 
+patient-centered outcomes in Finnish population remain unknown and could be 
+=====PDFPAGE 65=====
+Discussion 
+ 63 
+evaluated either by prospective study design or by implementing more precise and 
+structured symptom assessment as a part of routine clinical work.  
+In the future, the use of all anticancer treatments including  orally administered 
+agents with a special focus on elderly patients should be assessed in collaboration 
+with geriatric approach. Development of anticancer treatments including well 
+tolerated orally administered agents has revolutionized cancer care for so me 
+diagnose groups and currently there are more treatment options for patients when 
+compared to time when the data was collected for Study II.  Lastly, if cancer patients 
+pain medication in terminal phase would be evaluated in a wider range of facilities, 
+education could be targeted to ensure that there are no barriers in the use of strong 
+opioids near EOL. 
+This thesis aimed not only to describe the cancer patients’ treatment patterns near 
+EOL but to raise awareness of the importance of palliative and EOL care.  Palliative 
+care is commonly associated with the terminal phase of a disease rather than a 
+patient-centered holistic approach and may be associated with negative stigma (N. 
+Cherny, 2009). The term was once unfamiliar (Koffman et al., 2007),  but in recent 
+decades the importance of death and dying has been increasingly recognized by the 
+public (Daveson et al., 2014) . However, awareness of palliative care  and the 
+importance of communication in addition to  emotion management skills , attitudes 
+and beliefs towards palliative care  among healthcare professionals  should be 
+enhanced (Bennardi et al., 2020) . In Finland , attitudes towards EOL care have 
+changed. Patients suffering from cancer or other terminal ill nesses require quality 
+palliative care. Patients may still have concerns that palliative intervention hastens 
+death, even if most people would choose to improve the quality of life for the time 
+they have left (Higginson et al., 2014).  
+An accurate prognosis for an individual patient may be challenging to assess , 
+and further information is needed on the timing of palliative intervention during the 
+cancer pathway. Quality care at the EOL is highly individual and should be achieved 
+through a process of  shared decision making and clear communication that 
+acknowledges the values and preferences of patients and their families (Steinhauser 
+et al., 2000). Attention should also be paid to strengthening patient’s coping skills 
+(Greer et al., 2018) . Indeed, EOL decisions should always be made mutually with 
+the patient and with respect for the patient’s own wishes (Rietjens et al., 2017).  
+ 
+=====PDFPAGE 66=====
+ 64 
+7 Summary and conclusions 
+I Palliative intervention was associated with a decrease in the use of hospital 
+resources during the last month of life of pancreatic cancer patients. The 
+difference was statistically significant in terms of the number of radiological 
+examinations, emergency department visits, hospitalizations, and costs of 
+tertiary care between patients who visited an outpatient palliative care unit in 
+addition to standard oncological care and those receiving only standard 
+oncological care. Systematic palliative intervention  should be warranted for 
+all patients with a short prognosis or heavy symptom burden. The limited 
+resources of health care could be better optimized if early palliative 
+intervention were offered to a larger number of patients. 
+II Over a 9-year period the use of IV chemotherapy remained stable in terms of 
+time from the last treatment to time of death, reflecting established oncological 
+treatment at TUH. The number of patients receiving IV chemotherapy during 
+the last weeks of life was in line with international studies and met the quality 
+recommendations. Young patients and patients with hematological 
+malignancies and lymphoma were treated more frequently close to death than 
+were other diagnostic groups. A t hird of patients who received I V 
+chemotherapy died in tertiary care. Use of IV chemotherapy should, however, 
+be critically evaluated when the life expectancy is short, as it is unlikely in 
+most cases to extend life and may be associated with aggressive care near the 
+EOL. 
+III Cancer diag nosis and the distance between the patient’s domicile and the 
+radiotherapy unit affected the time from the last radiotherapy fraction to death. 
+Single-fraction treatments were used infrequently in the last radiotherapy plan, 
+even if the median number of fr actions decreased significantly during the 9-
+year period. During the last 2 weeks of life 97% of patients received 
+radiotherapy with palliative intent, one-third of them to alleviate pain. Nearly 
+half of these treatments  given during the last 2 weeks of life  were 
+discontinued, and patients treated close to death were more likely to die in  a 
+tertiary care hospital. Thus, widespread adoption of prognostic tools to 
+=====PDFPAGE 67=====
+Summary and conclusions 
+ 65 
+identify EOL patients is warranted. Single-fraction treatmen ts should be 
+considered more often and the opportunity for palliative radiotherapy should 
+be offered also to patients living far from the radiotherapy unit.  
+IV Pain medication during the last weeks and days of life in hospice relies on 
+strong opioids. The dose range of opioids varies between individuals. While a 
+trend towards more frequent use of subcutaneous administration was 
+significant, the use of transdermal administration was frequent throughout the 
+hospice care. In addition to regularly dosed strong opioids, drugs to alleviate 
+breakthrough pain and mental distress were commonly used. The availability 
+of, and professionals’ knowledge of, the use of subcutaneous pain medication 
+should be ensured in units providing EOL care. 
+ 
+ 
+ 
+=====PDFPAGE 68=====
+ 66 
+Acknowledgements 
+This study was carried out in 2010–2021 at the Department of Clinical Oncology in 
+University of Turku, and at the Department of Oncology and Radiotherapy in Turku 
+University Hospital, Turku, Finland.  
+Much of this research was enabled by t he financial support provided by the 
+research grants from Cancer Foundation Finland, Cancer Foundation of Southwest 
+Finland, Finnish Cultural Foundations, Regional Fund of Southwest Finland, 
+Tuulikki Edessalo Foundation, Turku University Foundation, Univer sity of Turku 
+and the Finnish Society for Oncology.  
+I want to express my deepest appreciation and gratitude for my thesis supervisors 
+docent Sirkku Jyrkkiö and docent Outi Hirvonen, for their endless drive and 
+determination throughout this project. I am grateful for your encouraging support 
+and advises. Thank you Sirkku for always finding the time to answer any questions. 
+Your extensive knowledge and exceptional ability to perceive broad entireties is 
+truly inspiring. I want to thank you Outi for your time and encouraging words 
+whenever they were needed in addition to your invaluable contribution to the 
+scientific work. I greatly admire and appreciate the work you have done in improving 
+the palliative care practices in Southwest Finland. 
+I owe my gratitude for professor Eeva Salminen for supervising the first study 
+of this thesis and for familiarizing me with the intriguing world of research. I also 
+want to thank the esteemed researchers Research Director, professor Laura Elo from 
+Turku Bioscience Centre and Director of Research  Tarja Laitinen from Tampere 
+University Hospital  for collaboration and possibility to work together with such 
+inspiring professionals.  
+I have had the opportunity to work with skilled collaborators and I want to thank 
+Mikhail Stepanov, Anna Hammais a nd Juha Varjonen from Auria Informatics and 
+Fatemehsadat Seyednasrollah and Johanna Mäkelä from University of Turku for 
+your valuable contributions and help. I owe my gratitude also to Eliisa Löyttyniemi 
+from department of Biostatistics, University of Turk u, for sharing your substantial 
+knowledge in statistics and for  patiently answering any questions . I also want to 
+thank Teija Stormi  and Tuukka Pölönen  from the department of Biostatistics, 
+University of Turku. I also acknowledge professor Heikki Minn from  the Clinical 
+=====PDFPAGE 69=====
+Acknowledgements 
+ 67 
+Oncology, University of Turku for your help and support in many steps of this 
+project.  
+I am grateful to the reviewers professor Staffan Lundström and docent Siru 
+Mäkelä for their valuable comments and constructive remarks greatly improving this 
+thesis. 
+I wish to thank the personnel of Koivikko -koti hospice. Your work was one of 
+the key sources of enthusiasm as I decided to pursue my professional goals in 
+medicine. I especially owe my gratitude for Leea, Johanna, Milja, Marjaana, Suvi, 
+Tuula, Kati, Satu, Sini, Päivi, Pia, Tiina, Kristiina, Outi, Eija, Riikka and Taina. 
+Alongside this r esearch work I have found my way into the Department of 
+Oncology and Radiotherapy at the Turku University Hospital and I am thankful to 
+all the colleagues for your help, support and friendship. 
+I am more than grateful to all my great friends for sharing these years. You are 
+invaluable and I wish to acknowledge you all. 
+I owe my deepest gratitude to my parents for your endless love and 
+encouragement to pursuit the dreams I have. Mother, your ability to face all the 
+obstacles with undisputed optimism and drive has been a priceless example in life. 
+Father, your peacefulness, and presence when facing the challenging aspects of life 
+has given me the cou rage to face the finiteness of life at work and to follow my 
+dreams. My sister Suvi, thank you for your wise thoughts, time and unwavering 
+support during this project and my brothers Jussi and Matti – I consider your endless 
+understanding and support unparallel. I wish also to thank my close friends Nea and 
+Aino and the rest of my  extended family Miia, Tuomas,  Eero and Maria for being 
+loving friends. In addition, my mother-in-law and father-in-law, Titti and Pirkka  I 
+am truly grateful for your friendship and support. 
+My wonderful children Toivo and Alisa, thank you for filling my life with 
+purpose and joy. Lastly, above all, my beloved husband Jaakko, I am forever 
+thankful for your support, love and patience during this project.  
+26.3.2022  
+Liisa Rautakorpi 
+=====PDFPAGE 70=====
+ 68 
+References 
+Alminoja, A., Piili, R. P., Hinkka, H., Metsänoja, R., Hirvonen, O., Tyynelä -Korhonen, K., Kaleva -
+Kerola, J., Saarto, T., Kellokumpu-Lehtinen, P. L. I., & Lehto, J. T. (2019). Does Decision-making 
+in End-of-life Care Differ between Graduating Medical Students and Experienced Physicians? In 
+Vivo, 33(3). https://doi.org/10.21873/invivo.11557 
+Anshushaug, M., Gynnild, M. A., Kaasa, S., Kvikstad, A., & Gronberg, B. H. (2015). Characterization 
+of patients receiving  palliative chemo- and radiotherapy during end of life at a regional cancer 
+center in Norway. Acta Oncologica (Stockholm, Sweden) , 54(3), 395 –402. 
+https://doi.org/10.3109/0284186X.2014.948061 [doi] 
+Asola, R., Huhtala, H., & Holli, K. (2006). Intensity of diagnostic and treatment activities during the 
+end of life of patients with advanced breast cancer. Breast Cancer Research and Treatment, 100(1), 
+77–82. https://doi.org/10.1007/s10549-006-9224-x [doi] 
+Baena-Cañada, J. M., Campini Bermejo, A., Gámez Casado, S., Rodríguez Pérez, L., Quílez Cutillas, 
+A., Calvete Candenas, J., Martínez Bautista, M. J., & Benítez Rodríguez, E. (2019). Experiences 
+with Prescribing Large Quantities of Systemic Anticancer The rapy near Death. Journal of 
+Palliative Medicine, 22(12), 1515–1521. https://doi.org/10.1089/jpm.2019.0017 
+Bajwah, S., Oluyase, A., Yi, D., Gao, W., Evans, C., Grande, G., Todd, C., Costantini, M., Murtagh, 
+F., & Higginson, I. (2020). The effectiveness and cost-effectiveness of hospital -based specialist 
+palliative care for adults with advanced illness and their caregivers. The Cochrane Database of 
+Systematic Reviews, 9(9). https://doi.org/10.1002/14651858.CD012780.PUB2 
+Bakitas, M., Lyons, K. D., Hegel, M. T., Balan, S., Brokaw, F. C., Seville, J., Hull, J. G., Li, Z., 
+Tosteson, T. D., Byock, I. R., & Ahles, T. A. (2009). Effects of a palliative care intervention on 
+clinical outcomes in patients with advanced cancer: the Project ENABLE II randomized controlled 
+trial. Jama, 302(7), 741–749. https://doi.org/10.1001/jama.2009.1198 [doi] 
+Bakitas, M., Tosteson, T., Li, Z., Lyons, K., Hull, J., Li, Z., Dionne -Odom, J., Frost, J., Dragnev, K., 
+Hegel, M., Azuero, A., & Ahles, T. (2015). Early Versus Delayed Initiation of Concurrent 
+Palliative Oncology Care: Patient Outcomes in the ENABLE III Randomized Controlled Trial. 
+Journal of Clinical Oncology : Official Journal of the American Society of Clinical Oncology, 
+33(13), 1438–1445. https://doi.org/10.1200/JCO.2014.58.6362 [doi] 
+Bao, Y., Maciejewski, R. C., Garrido, M. M., Shah, M. A., Maciejewski, P. K., & Prigerson, H. G. 
+(2018). Chemotherapy Use, End-of-Life Care, and Costs of Care Among Patients Diagnosed With 
+Stage IV Pancreatic Cancer. Journal of Pain and Symptom Man agement, 55(4), 1113 -1121.e3. 
+https://doi.org/10.1016/j.jpainsymman.2017.12.335 
+Bekelman, J. E., Halpern, S. D., Blankart, C. R., Bynum, J. P., Cohen, J., Fowler, R., Kaasa, S., 
+Kwietniewski, L., Melberg, H. O., Onwuteaka -Philipsen, B., Oosterveld -Vlug, M. , Pring, A., 
+Schreyögg, J., Ulrich, C. M., Verne, J., Wunsch, H., & Emanuel, E. J. (2016). Comparison of site 
+of death, health care utilization, and hospital expenditures for patients dying With cancer in 7 
+developed countries. JAMA - Journal of the Americ an Medical Association , 315(3), 272 –283. 
+https://doi.org/10.1001/jama.2015.18603 
+=====PDFPAGE 71=====
+References 
+ 69 
+Ben-Aharon, I., Gafter-Gvili, A., Leibovici, L., & Stemmer, S. M. (2012). Interventions for alleviating 
+cancer-related dyspnea: A systematic review and meta -analysis. Acta Oncologica, 51(8), 996–
+1008. https://doi.org/10.3109/0284186x.2012.709638 
+Bennardi, M., Diviani, N., Gamondi, C., Stüssi, G., Saletti, P., Cinesi, I., & Rubinelli, S. (2020). 
+Palliative care utilization in oncology and hemato -oncology: a systematic review of cognitive 
+barriers and facilitators from the perspective of healthcare professionals, adult patients, and their 
+families. BMC Palliative Care, 19(1). https://doi.org/10.1186/S12904-020-00556-7 
+Berger, B., Ankele, H., Bamberg, M., & Zips, D. (2014). Patients who die during palliative 
+radiotherapy. Status survey. Strahlentherapie Und Onkologie : Organ Der Deutschen 
+Rontgengesellschaft ...[et Al], 190(2), 217–220. https://doi.org/10.1007/s00066-013-0471-6 [doi] 
+Bevins, J., Bhulani, N., Goksu, S. Y., Sanford, N. N., Gao, A., Ahn, C., Paulk, M. E., Terauchi, S., 
+Pruitt, S. L., Tavakkoli, A., Rhodes, R. L., Kazmi, S. M. A., & Beg, M. S. (2021). Early Palliative 
+Care Is Associated with Reduced Emergency Department Utilization in Pancreatic Cancer. 
+American Journal of Clinical Oncology: Cancer Clinical Trials, 44(5). 
+https://doi.org/10.1097/COC.0000000000000802 
+Bhulani, N., Gupta, A., Gao, A., Li, J., Guenther, C., Ahn, C., Paulk, E., Houck, S., & Beg, M. S. 
+(2018). Palliative care and end -of-life health care utilization in elderly patients with pancreatic 
+cancer. Journal of Gastrointes tinal Oncology , 9(3), 495 –502. 
+https://doi.org/10.21037/jgo.2018.03.08 
+Boëthius, H., Saarto, T., Laurell, G., Farnebo, L., & Mäkitie, A. A. (2021). A Nordic survey of the 
+management of palliative care in patients with head and neck cancer. European Archives of Oto-
+Rhino-Laryngology, 278(6). https://doi.org/10.1007/s00405-020-06310-2 
+Bosetti, C., Santucci, C., Radrezza, S., Erthal, J., Berterame, S., & Corli, O. (2019). Trends in the 
+consumption of opioids for the treatment of severe pain in Europe, 1990–2016. European Journal 
+of Pain, 23(4), 697–707. https://doi.org/10.1002/ejp.1337 
+Bossi, P., Antonuzzo, A., Armento, G., Consoli, F., Giuliani, J., Giusti, R., Lucchesi, M., Mirabile, A., 
+Palermo, L., & Scagliarini, S. (2021). What to Do and What Not to Do in the Management of 
+Cancer Pain: A Physician Survey and Expert Recommendations. Cancer Management and 
+Research, 13, 5203–5210. https://doi.org/10.2147/CMAR.S310651 
+Braga, S., Miranda, A., Fonseca, R., Passos -Coelho, J. L., Fernandes, A., Costa, J. D., & More ira, A. 
+(2007). The aggressiveness of cancer care in the last three months of life: a retrospective single 
+centre analysis. Psycho-Oncology, 16(9), 863–868. https://doi.org/10.1002/pon.1140 [doi] 
+Breivik, H., Cherny, N., Collett, B., de Conno, F., Filbet, M., Foubert, A. J., Cohen, R., & Dow, L. 
+(2009). Cancer-related pain: a pan-European survey of prevalence, treatment, and patient attitudes. 
+Annals of Oncology, 20(8), 1420–1433. https://doi.org/10.1093/annonc/mdp001 
+Caraceni, A., Hanks, G., Kaasa, S., Bennett, M., Brunelli, C., Cherny, N., Dale, O., de Conno, F., Fallon, 
+M., Hanna, M., Haugen, D., Juhl, G., King, S., Klepstad, P., Laugsand, E., Maltoni, M., 
+Mercadante, S., Nabal, M., Pigni, A., … Zeppetella, G. (2012). Use of opioid analgesics in the 
+treatment of cancer pain: evidence-based recommendations from the EAPC. The Lancet Oncology, 
+13(2), e58–e68. https://doi.org/10.1016/S1470-2045(12)70040-2 
+Carlino, M. S., Larkin, J., & Long, G. v. (2021). Immune checkpoint inhibitors in melanoma. In The 
+Lancet (Vol. 398, Issue 10304). https://doi.org/10.1016/S0140-6736(21)01206-X 
+Cherny, N. (2009). Stigma associated with “palliative care”: getting around it or getting over it. Cancer, 
+115(9), 1808–1812. https://doi.org/10.1002/CNCR.24212 
+Cherny, N., Fallon, M., Kaasa, S., Portenoy, R., & Currow, D. (2015). Oxford Textbook of Palliative 
+Medicine (N. Cherny, M. Fallon, S. Kaasa, R. Portenoy, & D. Currow, Eds.). Oxford University 
+Press. 
+Cherny, N. I., & Catane, R. (2003). Attitudes of Medical Oncologists Toward Palliative Care for 
+Patients with Advanced and Incurable Cancer: Report on a Survey by t he European Society of 
+Medical Oncology Taskforce on Palliative and Supportive Care. Cancer, 98(11), 2502 –2510. 
+https://doi.org/10.1002/CNCR.11815 
+=====PDFPAGE 72=====
+Liisa Rautakorpi 
+ 70 
+Chow, E., van der Linden, Y. M., Roos, D., Hartsell, W. F., Hoskin, P., Wu, J. S., Brundage, M. D., 
+Nabid, A., Tissing-Tan, C. J., Oei, B., Babington, S., Demas, W. F., Wilson, C. F., Meyer, R. M., 
+Chen, B. E., & Wong, R. K. (2014). Single versus multiple fractions of repeat radiation for painful 
+bone metastases: a randomised, controlled, non-inferiority trial. The Lancet.Oncology, 15(2), 164–
+171. https://doi.org/10.1016/S1470-2045(13)70556-4 [doi] 
+Chow, E., Zeng, L., Salvo, N., Dennis, K., Tsao, M., & Lutz, S. (2012). Update on the Systematic 
+Review of Palliative Radiotherapy Trials for Bone Metastases. Clinical Oncology, 24(2), 112–124. 
+https://doi.org/10.1016/J.CLON.2011.11.004 
+Christ, S., Ahmadsei, M., Wilke, L., Kühnis, A., Pavic, M., Tanadini -Lang, S., & Guckenberger, M. 
+(2021). Long -term cancer survivors treated with multiple courses of repeat radiation ther apy. 
+Radiation Oncology (London, England) , 16(1), 208. https://doi.org/10.1186/S13014 -021-01934-
+Y 
+Christakis, N. A., & Lamont, E. B. (2000). Extent and determinants of error in doctors’ prognoses in 
+terminally ill patients: prospective cohort study. BMJ (Clinical Research Ed.) , 320(7233), 469–
+472. 
+Connor, S. R., Connor, S., Morris, C., & Jaramillo, E. (2020). Global Atlas of Palliative Care at the 
+End of Life 2nd Edition. www.thewhpca.orgwww.thewhpca.org 
+Crawford, G. B., Dzierżanowski, T., Hauser, K., Larkin, P., Luque-Blanco, A. I., Murphy, I., Puchalski, 
+C. M., & Ripamonti, C. I. (2021). Care of the adult cancer patient at the end of life: ESMO Clinical 
+Practice Guidelines. ESMO Open, 6(4), 100225. https://doi.org/10.1016/j.esmoop.2021.100225 
+Danckert, B.,  Ferlay, J., Engholm, G., Hansen, H. L., Johannesen, T. B., Khan, S., Køtlum, J. E., 
+Ólafsdóttir, E., Schmidt, L. K. H., Virtanen, A., & Storm, H. H. (2019). NORDCAN: Cancer 
+Incidence, Mortality, Prevalence and Survival in the Nordic Countries, Version 8.2 (26.03.2019). 
+Association of the Nordic Cancer Registries. Danish Cancer Society.  Available from 
+http://www.ancr.nu 
+Danielson, B., Winget, M., Gao, Z., Murray, B., & Pearcey, R. (2008). Palliative radiotherapy for 
+women with breast cancer. Clinical Oncology (Royal College of Radiologists (Great Britain)) , 
+20(7), 506–512. https://doi.org/10.1016/J.CLON.2008.04.013 
+Daveson, B. A., Alonso, J. P., Calanzani, N., Ramsenthaler, C., Gysels, M., Antunes, B., Moens, K., 
+Groeneveld, E. I., Albers, G., Finetti, S., Pettenati, F., Bausewein, C., Higginson, I. J., Harding, 
+R., Deliens, L., Toscani, F., Ferreira, P. L., Ceulemans, L.,  & Gomes, B. (2014). Learning from 
+the public: Citizens describe the need to improve end-of-life care access, provision and recognition 
+across Europe. European Journal of Public Health , 24(3), 521 –527. 
+https://doi.org/10.1093/EURPUB/CKT029 
+de Lima, L. (200 6). The International Association for Hospice and Palliative Care List of Essential 
+Medicines for Palliative Care. Palliative Medicine , 20(7), 647 –651. 
+https://doi.org/10.1177/0269216306072058 
+Delgado-Guay, M. O., Kim, Y. J., Shin, S. H., Chisholm, G., Williams, J., Allo, J., & Bruera, E. (2015). 
+Avoidable and unavoidable visits to the emergency department among patients with advanced 
+cancer receiving outpatient palliative care. Journal of Pain and Symptom Management, 49(3), 497–
+504. https://doi.org/S0885-3924(14)00404-7 [pii] 
+Dennis, K., Wong, K., Zhang, L., Culleton, S., Nguyen, J., Holden, L., Jon, F., Tsao, M., Danjoux, C., 
+Barnes, E., Sahgal, A., Zeng, L., Koo, K., & Chow, E. (2011). Palliative radiotherapy for bone 
+metastases in the last 3 months of li fe: worthwhile or futile? Clinical Oncology (Royal College of 
+Radiologists (Great Britain)), 23(10), 709–715. https://doi.org/10.1016/j.clon.2011.05.004 [doi] 
+Ducreux, M., Cuhna, A. S., Caramella, C., Hollebecque, A., Burtin, P., Goere, D., Seufferlein, T. , 
+Haustermans, K., van Laethem, J. L., Conroy, T., Arnold, D., & Committee, E. G. (2015). Cancer 
+of the pancreas: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up. Annals 
+of Oncology : Official Journal of the European Society for Medical Oncology, 26 Suppl 5 , 56. 
+https://doi.org/10.1093/annonc/mdv295 [doi] 
+=====PDFPAGE 73=====
+References 
+ 71 
+Dyba, T., Randi, G., Bray, F., Martos, C., Giusti, F., Nicholson, N., Gavin, A., Flego, M., Neamtiu, L., 
+Dimitrova, N., Negrão Carvalho, R., Ferlay, J., & Bettio, M. (2021). The European cancer burden 
+in 2020: Incidence and mortality estimates for 40 countries and 25 major cancers. European 
+Journal of Cancer, 157. https://doi.org/10.1016/j.ejca.2021.07.039 
+Earle, C. C., Neville, B. A., Landrum, M. B., Ayanian, J. Z., Block, S. D., &  Weeks, J. C. (2004). 
+Trends in the aggressiveness of cancer care near the end of life. Journal of Clinical Oncology : 
+Official Journal of the American Society of Clinical Oncology , 22(2), 315 –321. 
+https://doi.org/10.1200/JCO.2004.08.136 [doi] 
+Earle, C. C., Neville, B. A., Landrum, M. B., Souza, J. M., Weeks, J. C., Block, S. D., Grunfeld, E., & 
+Ayanian, J. Z. (2005). Evaluating claims -based indicators of the intensity of end -of-life cancer 
+care. International Journal for Quality in Health Care : Journal of the International Society for 
+Quality in Health Care / ISQua, 17(6), 505–509. https://doi.org/mzi061 [pii] 
+Edman Kessler, L., Sigfridsson, J., Hatzidaki, D., Bergh, J., Foukakis, T., Georgoulias, V., & Matikas, 
+A. (2020). Chemotherapy use near the end-of-life in patients with metastatic breast cancer. Breast 
+Cancer Research and Treatment, 181(3), 645–651. https://doi.org/10.1007/s10549-020-05663-w 
+El-Jawahri, A., Greer, J. A., Pirl, W. F., Park, E. R., Jackson, V. A., Back, A. L., Kamdar, M., Jacobsen, 
+J., Chittenden, E. H., Rinaldi, S. P., Gallagher, E. R., Eusebio, J. R., Fishman, S., VanDusen, H., 
+Li, Z., Muzikansky, A., & Temel, J. S. (2017). Effects of Early Integrated Palliative Care on 
+Caregivers of Patients with Lung and Gastrointestinal Cancer: A R andomized Clinical Trial. The 
+Oncologist. https://doi.org/theoncologist.2017-0227 [pii] 
+Eychmüller, S., Zwahlen, S., Fliedner, M. C., Jüni, P., Aebersold, D. M., Aujesky, D., Fey, M. F., 
+Maessen, M., & Trelle, S. (2021). Single early palliative care intervention added to usual oncology 
+care for patients with advanced cancer: A randomized controlled trial (SENS Trial). Palliative 
+Medicine, 35(6), 1108–1117. https://doi.org/10.1177/02692163211005340 
+Fallon, M., Giusti, R., Aielli, F., Hoskin, P., Rolke, R., Sharma, M., Ripamonti, C. I., & Committee, E. 
+G. (2018). Management of cancer pain in adult patients: ESMO Clinical Practice Guidelines. 
+Annals of Oncology : Official Journal of the European Society for Medical Oncology, 29(Suppl 
+4), iv166–iv191. https://doi.org/10.1093/annonc/mdy152 [doi] 
+Färkkilä, N., Torvinen, S., Sintonen, H., Saarto, T., Järvinen, H., Hänninen, J., Taari, K., & Roine, R. 
+(2015). Costs of colorectal cancer in different states of the disease. Acta Oncologica (Stockholm, 
+Sweden), 54(4), 454–462. https://doi.org/10.3109/0284186X.2014.985797 
+Ferrell, B. R., Temel, J. S., Temin, S., Alesi, E. R., Balboni, T. A., Basch, E. M., Firn, J. I., Paice, J. A., 
+Peppercorn, J. M., Phillips, T., Stovall, E. L., Zimmermann, C., & Smith, T. J. (2017). Integration 
+of Palliative Care Into Standard Oncology Care: American Society of Clinical Oncology Clinical 
+Practice Guideline Update. Journal of Clinical Oncology : Official Journal of the American Society 
+of Clinical Oncology, 35(1), 96–112. https://doi.org/10.1200/JCO.2016.70.1474 [pii] 
+Finne-Soveri, H., Malmila, M., Kehusmaa, S., Jyrkkiö, S., & Forsius, P. (2021). Assessment of the cost 
+effects of the legislative amendments concerning palliative and terminal care, Report of the 
+working group. 
+Fürst, P., Lundström, S., Klepstad, P., & Strang, P. (2020a). The Use of Low-Dose Methadone as Add-
+On to Regular Opioid Therapy in Cancer-Related Pain at End of Life: A National Swedish Survey 
+in Specialized Palliative Care. Journal of Palliative M edicine, 23(2), 226 –232. 
+https://doi.org/10.1089/JPM.2019.0253 
+Fürst, P., Lundström, S., Klepstad, P., & Strang, P. (2020b). Continuous subcutaneous infusion for pain 
+control in dying patients: experiences from a tertiary palliative care center. BMC Palliative Care, 
+19(1). https://doi.org/10.1186/S12904-020-00681-3 
+Fürst, P., Lundström, S., & Strang, P. (2020). Methadone in Swedish specialized palliative care-is it the 
+magic bullet in complex cancer -related pain? PLoS ONE , 15(4). 
+https://doi.org/10.1371/JOURNAL.PONE.0230845 
+=====PDFPAGE 74=====
+Liisa Rautakorpi 
+ 72 
+Glare, P., Virik, K., Jones, M., Hudson, M., Eychmuller, S., Simes, J., & Christakis, N. (2003). A 
+systematic review of physicians’ survival predictions in terminally ill cancer patients. BMJ 
+(Clinical Research Ed.), 327(7408), 195–198. https://doi.org/10.1136/bmj.327.7408.195 [doi] 
+Greer, J. A., Jacobs, J. M., El -Jawahri, A., Nipp, R. D., Gallagher, E. R., Pirl, W. F., Park, E. R., 
+Muzikansky, A., Jacobsen, J. C., Jackson, V. A., & Temel, J. S. (2018). Role of patient coping 
+strategies in understanding the effects of early palliative care on quality of life and mood. Journal 
+of Clinical Oncology, 36(1), 53–60. https://doi.org/10.1200/JCO.2017.73.7221 
+Greer, J. A., Tramontano, A. C., McMahon, P. M., Pirl, W. F., Jackson, V. A., El -Jawahri, A., Parikh, 
+R. B., Muzikansky, A., Gallagher, E. R., & Temel, J. S. (2016). Cost Analysis of a Randomized 
+Trial of Early Palliative Care in Patients with Metastatic Nonsmall -Cell Lung Cancer. Journal of 
+Palliative Medicine, 19(8). https://doi.org/10.1089/jpm.2015.0476 
+Gripp, S., Mjartan, S., Boelke, E., & Willers, R. (2010). Palliative radiotherapy tailored to life 
+expectancy in end -stage cancer patients: reality or myth? Cancer, 116(13), 3251 –3256. 
+https://doi.org/10.1002/CNCR.25112 
+Groenvold, M., Petersen, M. A., Damkier, A., Neergaard, M. A., Nielsen, J. B., Pedersen, L., Sjøgren, 
+P., Strömgren, A. S., Vejlgaard, T. B., Gluud, C., Lindschou, J., Fayers, P., Higginson, I. J., & 
+Johnsen, A. T. (2017). Randomised clinical trial of early specialist palliative  care plus standard 
+care versus standard care alone in patients with advanced cancer: The Danish Palliative Care Trial. 
+Palliative Medicine, 31(9), 814–824. https://doi.org/10.1177/0269216317705100 
+Guadagnolo, B. A., Liao, K. P., Elting, L., Giordano, S., Buchholz, T. A., & Shih, Y. C. (2013). Use of 
+radiation therapy in the last 30 days of life among a large population -based cohort of elderly 
+patients in the United States. Journal of Clinical Oncology : Official Journal of the American 
+Society of Clinical Oncology, 31(1), 80–87. https://doi.org/10.1200/JCO.2012.45.0585 [doi] 
+Halminen, O., Koivuranta, P., & Mikkola, T. (2019). The use and costs of social and health care 
+services before death - Big cities as an example. Eldderly people’s services: use, costs, 
+effectiveness and financing (ELSE). Project publication number 10. 
+Haltia, O., Färkkilä, N., Roine, R. P., Sintonen, H., Taari, K., Hänninen, J., Lehto, J. T., & Saarto, T. 
+(2018). The indirect costs of palliative care in end -stage cancer: A real -life longitudinal register- 
+and questionnaire -based study. Palliative Medicine , 32(2). 
+https://doi.org/10.1177/0269216317729789 
+Haun, M., Estel, S., Rücker, G., Friederich, H., Villalobos, M., Thomas, M., & Hartmann, M. (2017). 
+Early palliative care for adults wit h advanced cancer. The Cochrane Database of Systematic 
+Reviews, 6(6). https://doi.org/10.1002/14651858.CD011129.PUB2 
+Higginson, I. J., Gomes, B., Calanzani, N., Gao, W., Bausewein, C., Daveson, B. A., Deliens, L., 
+Ferreira, P. L., Toscani, F., Gysels, M., Ceulemans, L., Simon, S. T., Cohen, J., & Harding, R. 
+(2014). Priorities for treatment, care and information if faced  with serious illness: A comparative 
+population-based survey in seven European countries. Palliative Medicine , 28(2), 101 –110. 
+https://doi.org/10.1177/0269216313488989 
+Hirvonen, O. M., Alalahti, J. E., Syrjanen, K. J., & Jyrkkio, S. M. (2018). End-of-life decisions guiding 
+the palliative care of cancer patients visiting emergency department in South Western Finland: a 
+retrospective cohort study. BMC Palliative Care, 17(1), 124–128. https://doi.org/10.1186/s12904-
+018-0383-4 [doi] 
+Hirvonen, O. M., Leskelä, R. L., Grönholm, L., Haltia, O., Rissanen, A., Tyynelä-Korhonen, K., Rahko, 
+E. K., Lehto, J. T., & Saarto, T. (2019). Assessing the utilization of the decision to impleme nt a 
+palliative goal for the treatment of cancer patients during the last year of life at Helsinki University 
+Hospital: a historic cohort study. Acta Oncologica , 58(12), 1699 –1705. 
+https://doi.org/10.1080/0284186X.2019.1659512 
+Hirvonen, O. M., Leskelä, R. L., Grönholm, L., Haltia, O., Voltti, S., Tyynelä -Korhonen, K., Rahko, 
+E. K., Lehto, J. T., & Saarto, T. (2020). The impact of the duration of the palliative care period on 
+cancer patients with regard to the use of hospital services and the place of death:  A retrospective 
+cohort study. BMC Palliative Care, 19(1). https://doi.org/10.1186/S12904-020-00547-8 
+=====PDFPAGE 75=====
+References 
+ 73 
+Ho, T. H., Barbera, L., Saskin, R., Lu, H., Neville, B. A., & Earle, C. C. (2011). Trends in the 
+aggressiveness of end-of-life cancer care in the universal health care system of Ontario, Canada. 
+Journal of Clinical Oncology : Official Journal of the American Society of Clinical Oncology, 
+29(12), 1587–1591. https://doi.org/10.1200/JCO.2010.31.9897 [doi] 
+Hofmann, F., Hwang, E. C., Lam, T. B. L., Bex, A., Yuan , Y., Marconi, L. S. O., & Ljungberg, B. 
+(2020). Targeted therapy for metastatic renal cell carcinoma. In Cochrane Database of Systematic 
+Reviews (Vol. 2020, Issue 10). https://doi.org/10.1002/14651858.CD012796.pub2 
+Hu, W., Yasui, Y., White, J., & Winget, M. (2014). Aggressiveness of end-of-life care for patients with 
+colorectal cancer in Alberta, Canada: 2006 -2009. Journal of Pain and Symptom Management , 
+47(2), 231–244. https://doi.org/10.1016/j.jpainsymman.2013.03.021 [doi] 
+Huang, J., Wai, E. S., Lau, F.,  & Blood, P. A. (2014). Palliative radiotherapy utilization for cancer 
+patients at end of life in British Columbia: retrospective cohort study. BMC Palliative Care, 13(1), 
+49-49. eCollection 2014. https://doi.org/10.1186/1472-684X-13-49 [doi] 
+Hui, D., & Bruera, E. (2015). Models of integration of oncology and palliative care. Annals of Palliative 
+Medicine, 4(3), 89–98. https://doi.org/10.3978/J.ISSN.2224-5820.2015.04.01 
+Hui, D., Didwaniya, N., Vidal, M., Shin, S. H., Chisholm, G., Roquemore, J., & Bruera, E . (2014). 
+Quality of end-of-life care in patients with hematologic malignancies: a retrospective cohort study. 
+Cancer, 120(10), 1572–1578. https://doi.org/10.1002/cncr.28614 [doi] 
+Hui, D., Meng, Y. -C., Bruera, S., Geng, Y., Hutchins, R., Mori, M., Strasser , F., & Bruera, E. (2016). 
+Referral Criteria for Outpatient Palliative Cancer Care: A Systematic Review. The Oncologist, 
+21(7). https://doi.org/10.1634/theoncologist.2016-0006 
+Hui, D., Mori, M., Watanabe, S. M., Caraceni, A., Strasser, F., Saarto, T., Cherny, N., Glare, P., Kaasa, 
+S., & Bruera, E. (2016). Referral criteria for outpatient specialty palliative cancer care: an 
+international consensus. The Lancet Oncology, 17(12), e552–e559. https://doi.org/10.1016/S1470-
+2045(16)30577-0 
+Jacobsen, R., Sjøgren, P., Møldrup, C., & Christrup, L. (2007). Physician-related barriers to cancer pain 
+management with opioid analgesics: A systematic review. Journal of Opioid Management , 3(4), 
+207–214. https://doi.org/10.5055/jom.2007.0006 
+Jang, R. W., Krzyzanowska, M. K., Zimmermann, C., Taback, N., & Alibhai, S. M. (2015). Palliative 
+care and the aggressiveness of end-of-life care in patients with advanced pancreatic cancer. Journal 
+of the National Can cer Institute , 107(3), 10.1093/jnci/dju424. Print 2015 Mar. 
+https://doi.org/10.1093/jnci/dju424 [doi] 
+Janjan, N. A. (1998). An emerging respect for palliative care in radiation oncology. Journal of Palliative 
+Medicine, 1(1), 83–88. https://doi.org/10.1089/jpm.1998.1.83 [doi] 
+Johnsen, A. T., Petersen, M. A., Sjøgren, P., Pedersen, L., Neergaard, M. A., Damkier, A., Gluud, C., 
+Fayers, P., Lindschou, J., Strömgren, A. S., Nielsen, J. B., Higginson, I. J., & Groenvold, M. 
+(2020). Exploratory analyses of the Danish Palliative Care Trial (DanPaCT): a randomized trial of 
+early specialized palliative care plus standard care versus standard care in advanced cancer 
+patients. Supportive Care in Cancer , 28(5), 2145 –2155. https://doi.org/10.1007/S00520 -019-
+05021-7 
+Jones, J. A., Lutz, S. T., Chow, E., & Johnstone, P. A. (2014). Palliative radiotherapy at the end of life: 
+a critical review. CA: A Cancer Journal for Clinicians, 64(5), 296 –310. 
+https://doi.org/10.3322/caac.21242 [doi] 
+Jordan, K., Aapro, M., Kaasa, S., Ripamon ti, C., Scotté, F., Strasser, F., Young, A., Bruera, E., 
+Herrstedt, J., Keefe, D., Laird, B., Walsh, D., Douillard, J., & Cervantes, A. (2018). European 
+Society for Medical Oncology (ESMO) position paper on supportive and palliative care. Annals of 
+Oncology, 29(1), 36–43. https://doi.org/10.1093/ANNONC/MDX757 
+Jordan, R., Allsop, M., ElMokhallalati, Y., Jackson, C., Edwards, H., Chapman, E., Deliens, L., & 
+Bennett, M. (2020). Duration of palliative care before death in international routine practice: a 
+systematic review and meta-analysis. BMC Medicine, 18(1). https://doi.org/10.1186/s12916-020-
+01829-x 
+=====PDFPAGE 76=====
+Liisa Rautakorpi 
+ 74 
+Kaasa, S., Loge, J. H., Aapro, M., Albreht, T., Anderson, R., Bruera, E., Brunelli, C., Caraceni, A., 
+Cervantes, A., Currow, D. C., Deliens, L., Fallon, M., Gómez-Batiste, X., Grotmol, K. S., Hannon, 
+B., Haugen, D. F., Higginson, I. J., Hjermstad, M. J., Hui, D., … Lundeby, T. (2018). Integration 
+of oncology and palliative care: a Lancet Oncology Commission. In The Lancet Oncology (Vol. 
+19, Issue 11, pp. e588 –e653). Lancet Publishing Group. https://doi.org/10.1016/S1470 -
+2045(18)30415-7 
+Kalso, E., & Vainio, A. (1990). Morphine and oxycodone hydrochloride in the management of cancer 
+pain. Clinical Pharmacology and Therapeutics , 47(5), 639 –646. 
+https://doi.org/10.1038/clpt.1990.85 
+Kavalieratos, D., Corbelli, J., Zhang, D., Dionne -Odom, J. N., Ernecoff, N. C., Hanmer, J., Hoydich, 
+Z. P., Ikejiani, D. Z., Klein-Fedyshin, M., Zimmermann, C., Morton, S. C., Arnold, R. M., Heller, 
+L., & Schenker, Y. (2016). Association Bet ween Palliative Care and Patient and Caregiver 
+Outcomes: A Systematic Review and Meta -analysis. Jama, 316(20), 2104 –2114. 
+https://doi.org/10.1001/jama.2016.16840 [doi] 
+Keam, B., Oh, D. Y., Lee, S. H., Kim, D. W., Kim, M. R., Im, S. A., Kim, T. Y., Bang, Y.  J., & Heo, 
+D. S. (2008). Aggressiveness of cancer -care near the end -of-life in Korea. Japanese Journal of 
+Clinical Oncology, 38(5), 381–386. https://doi.org/10.1093/jjco/hyn031 [doi] 
+Khanm, S., Gomes, B., & Higginson, I. (2014). End-of-life care--what do cancer patients want? Nature 
+Reviews. Clinical Oncology, 11(2), 100–108. https://doi.org/10.1038/NRCLINONC.2013.217 
+Koffman, J., Burke, G., Dias, A., Raval, B., Byrne, J., Gonzales, J., & Daniels, C. (2007). Demographic 
+factors and awareness of palliative care and related services. Palliative Medicine, 21(2), 145–153. 
+https://doi.org/10.1177/0269216306074639 
+Kress, M., Jensen, R., Tsai, H., Lobo, T., Satinsky, A., & Potosky, A. (2015). Radiation therapy at the 
+end of life: a population-based study examining palliative treatment intensity. Radiation Oncology 
+(London, England), 10(1). https://doi.org/10.1186/S13014-014-0305-4 
+Lavergne, M. R., Johnston, G. M., Gao, J., Dummer, T. J., & Rheaume, D. E. (2011). Variation in the 
+use of palliative radiotherapy at en d of life: examining demographic, clinical, health service, and 
+geographic factors in a population -based study. Palliative Medicine , 25(2), 101 –110. 
+https://doi.org/10.1177/0269216310384900 [doi] 
+Lindqvist, O., Lundquist, G., Dickman, A., Bukki, J., Lunder , U., Hagelin, C. L., Rasmussen, B. H., 
+Sauter, S., Tishelman, C., & Furst, C. J. (2013). Four essential drugs needed for quality care of the 
+dying: a Delphi -study based international expert consensus opinion. Journal of Palliative 
+Medicine, 16(1), 38. http://kipublications.ki.se/Default.aspx?queryparsed=id:125989929 
+Lutz, S., Berk, L., Chang, E., Chow, E., Hahn, C., Hoskin, P., Howell, D., Konski, A., Kachnic, L., Lo, 
+S., Sahgal, A., Silverman, L., von Gunten, C., Mendel, E., Vassil, A., Bruner, D. W., Hartsell, W., 
+& American Society for Radiation Oncology, (ASTRO). (2011). Palliative radiotherapy for bone 
+metastases: an ASTRO evidence -based guideline. International Journal of Radiation Oncology, 
+Biology, Physics, 79(4), 965–976. https://doi.org/10.1016/j.ijrobp.2010.11.026 [doi] 
+Lutz, S., Spence, C., Chow, E., Janjan, N., & Connor, S. (2004). Survey on use of palliative radiotherapy 
+in hospice care. Journal of Clinical Oncology : Official Journal of the American Society of Clinical 
+Oncology, 22(17), 3581–3586. https://doi.org/10.1200/JCO.2004.11.151 
+Makhlouf, S., Pini, S., Ahmed, S., & Bennett, M. (2020). Managing Pain in People with Cancer -a 
+Systematic Review of the Attitudes and Knowledge of Professionals, Patients, Caregivers and 
+Public. Journal of Cancer Education : The Official Journal of the American Association for Cancer 
+Education, 35(2), 214–240. https://doi.org/10.1007/S13187-019-01548-9 
+Maltoni, M., Scarpi, E., Dall’Agata, M., Zagonel, V., Berte, R., Ferrari, D., Broglia, C. M., Bortolussi, 
+R., Trentin, L., Valgiusti, M., Pini, S., Farolfi, A., Casadei Gardini, A., Nanni, O., Amadori, D., & 
+Early Palliative Care Italian Study Group, (EPCISG). (2016). Systematic versus on-demand early 
+palliative care: results from a multicentre, randomised clinical trial. European Journal of Cancer 
+(Oxford, England : 1990), 65, 61–68. https://doi.org/10.1016/j.ejca.2016.06.007 [doi] 
+=====PDFPAGE 77=====
+References 
+ 75 
+Margarit, C., Juliá, J., López, R., Anton, A., Escobar, Y., Casas, A., Cruz, J. J., Galvez, R., Mañas, A., 
+& Zaragozá, F. (2012). Breakthrough cancer pain - still a challenge. Journal of Pain Research, 5, 
+559–566. https://doi.org/10.2147/JPR.S36428 
+Matter-Walstra, K. W., Achermann, R., Rapold, R., Klingbiel, D., Bordoni, A., Dehler, S., Jundt, G., 
+Konzelmann, I., Clough -Gorr, K., Szucs, T., Pestalozzi, B. C., & Schwenkglenks, M. (2015). 
+Cancer-related therapies at the end of life in hospitalized cancer patients from four Swiss cantons: 
+SAKK 89/09. Oncology, 88(1), 18–27. https://doi.org/10.1159/000367629 [doi] 
+May, P., Garrido, M. M., del Fabbro, E., Noreika, D., Normand, C., Skoro, N., & Cassel, J. B. (2018). 
+Does Modality Matter? Palliative Care Unit Associated With More Cost -Avoidance Than 
+Consultations. Journal of Pain and Symptom Management , 55(3). 
+https://doi.org/10.1016/j.jpainsymman.2017.08.011 
+May, P., Normand, C., Cassel, J. B., del Fabbro, E., Fine, R. L., Menz, R., Morrison, C. A., Penrod, J. 
+D., Robinson, C., & Morrison, R. S. (2018). Economics of palliative care for hospitalized adults 
+with serious illness: A meta -analysis. JAMA Internal Medicine , 178(6). 
+https://doi.org/10.1001/jamainternmed.2018.0750 
+Mercadante, S., Caraceni, A., Cuomo, A., Mammucari, M., Marchetti, P., Mediati, R. D., Natoli, S., & 
+Tonini, G. (2021). A longitudinal study of breakt hrough cancer pain: An extension of iops -ms 
+study. Journal of Clinical Medicine, 10(11). https://doi.org/10.3390/JCM10112273 
+Mercadante, S., Maltoni, Russo, D., Adile, C., Ferrera, P., Rossi, R., Rosati, M., & Casuccio, A. (2021). 
+The Prevalence and Characteristics of Breakthrough Cancer Pain in Patients Receiving Low Doses 
+of Opioids for Background Pain. Cancers, 13(5), 1 –9. 
+https://doi.org/10.3390/CANCERS13051058 
+Mercadante, S., Valle, A., Sabba, S., Orlando, A., Guolo, F., Gulmini, L., Ori, S., Bellingar do, R., & 
+Casuccio, A. (2013). Pattern and characteristics of advanced cancer patients admitted to hospices 
+in Italy. Supportive Care in Cancer : Official Journal of the Multinational Association of 
+Supportive Care in Cancer, 21(4), 935–939. https://doi.org/10.1007/s00520-012-1608-3 [doi] 
+Michael, N., Beale, G., O’Callaghan, C., Melia, A., DeSilva, W., Costa, D., Kissane, D., Shapiro, J., & 
+Hiscock, R. (2019). Timing of palliative care referral and aggressive cancer care toward the end -
+of-life in pancreatic  cancer: a retrospective, single -center observational study. BMC Palliative 
+Care, 18(1). https://doi.org/10.1186/S12904-019-0399-4 
+Moeller, B., Balagamwala, E., Chen, A., Creach, K., Giaccone, G., Koshy, M., Zaky, S., & Rodrigues, 
+G. (2018). Palliative thoracic radiation therapy for non-small cell lung cancer: 2018 Update of an 
+American Society for Radiation Oncology (ASTRO) Evidence -Based Guideline. Practical 
+Radiation Oncology, 8(4), 245–250. https://doi.org/10.1016/J.PRRO.2018.02.009 
+Mojica-Márquez, A. E ., Rodríguez -López, J. L., Patel, A. K., Ling, D. C., Rajagopalan, M. S., & 
+Beriwal, S. (2020). Physician -Predicted Prognosis and Palliative Radiotherapy Treatment 
+Utilization at the End of Life: An Audit of a Large Cancer Center Network. Journal of Pain and 
+Symptom Management, 60(5). https://doi.org/10.1016/j.jpainsymman.2020.06.022 
+Morishima, T., Lee, J., Otsubo, T., Ikai, H., & Imanaka, Y. (2013). Impact of hospital case volume on 
+quality of end-of-life care in terminal cancer patients. Journal of Palliative Medicine, 16(2), 173–
+178. https://doi.org/10.1089/jpm.2012.0361 [doi] 
+Murphy, J. D., Nelson, L. M., Chang, D. T., Mell, L. K., & Le, Q. T. (2013). Patterns of care in palliative 
+radiotherapy: a population -based study. Journal of Oncology Practice / Am erican Society of 
+Clinical Oncology, 9(5), 220. https://doi.org/10.1200/JOP.2012.000835 [doi] 
+Näppä, U., Lindqvist, O., Rasmussen, B. H., & Axelsson, B. (2011). Palliative chemotherapy during 
+the last month of life. Annals of Oncology : Official Journal of the European Society for Medical 
+Oncology / ESMO, 22(11), 2375–2380. https://doi.org/10.1093/annonc/mdq778 [doi] 
+Nieder, C., Haukland, E. C., & Mannsåker, B. (2022). Shortened Palliative Radiotherapy Results in a 
+Lower Rate of Treatment During the Last Mo nth of Life. Cureus. 
+https://doi.org/10.7759/cureus.21617 
+=====PDFPAGE 78=====
+Liisa Rautakorpi 
+ 76 
+Nottelmann, L., Groenvold, M., Vejlgaard, T. B., Petersen, M. A., & Jensen, L. H. (2021). Early, 
+integrated palliative rehabilitation improves quality of life of patients with newly diagnosed 
+advanced cancer: The Pal -Rehab randomized controlled trial. Palliative Medicine, 35(7), 1344–
+1355. https://doi.org/10.1177/02692163211015574 
+Numico, G., Trogu, A., Cristofano, A., Mozzicafreddo, A., Courthod, G., Franco, P., & Silvestris, N. 
+(2014). Active treatment given in the last weeks of life: poor quality cancer care or justifiable 
+behavior? Supportive Care in Cancer : Official Journal of the Multinational Association of 
+Supportive Care in Cancer, 22(10), 2813–2819. https://doi.org/10.1007/s00520-014-2268-2 [doi] 
+O’Brien, M., Borthwick, A., Rigg, A., Leary, A., Assersohn, L., Last, K., Tan, S., Milan, S., Tait, D., 
+& Smith, I. E. (2006). M ortality within 30 days of chemotherapy: a clinical governance 
+benchmarking issue for oncology patients. British Journal of Cancer , 95, 1632 –1636. 
+https://doi.org/10.1038/sj.bjc.6603498 
+Penrod, J. D., Deb, P., Dellenbaugh, C., Burgess, J. F., Zhu, C. W., C hristiansen, C. L., Luhrs, C. A., 
+Cortez, T., Livote, E., Allen, V., & Morrison, R. S. (2010). Hospital -based palliative care 
+consultation: effects on hospital cost. Journal of Palliative Medicine , 13(8), 973 –979. 
+https://doi.org/10.1089/jpm.2010.0038 
+Pihlainen, A. (2010). Terminal care recommendations based on expert consulting - The Ministry of 
+Social Affairs and Health. http://urn.fi/uRN:isBN:978-952-00-3033-9 
+Piili, R. P., Lehto, J. T., Luukkaala, T., Hinkka, H., & Kellokumpu -Lehtinen, P. L. I. (2018). Does 
+special education in palliative medicine make a difference in end -of-life decision-making? BMC 
+Palliative Care, 17(1). https://doi.org/10.1186/s12904-018-0349-6 
+Piili, R. P., Lehto, J. T., Metsänoja, R., Hinkka, H., & Kellokumpu-Lehtinen, P. L. I. (2019). Has there 
+been a change in the end -of-life decision-making over the past 16 years? BMJ Supportive and 
+Palliative Care. https://doi.org/10.1136/bmjspcare-2019-001802 
+Pitkäniemi J, Malila N, Tanskanen T, Degerlund H, Heikkinen S, & Seppä K. (2021). Cancer in Finland 
+2019. Cancer Society of Finland Publication No. 98. 
+Rades, D., Bohlen, G., Lohynska, R., Veninga, T., Stalpers, L. J., Schild, S. E., & Dunst, J. (2007). 
+Whole-brain radiotherapy with 20 Gy in 5 fractions for brain metastases in patients with cancer of 
+unknown primary (CUP). Strahlentherapie Und Onkologie : Organ Der Deutschen 
+Rontgengesellschaft ...[et Al], 183(11), 631–636. https://doi.org/10.1007/s00066-007-1763-5 [doi] 
+Raijmakers, N., van Zuylen, L., Furst, C., Beccaro, M., Maiorana, L., Pilastri, P., Rossi, C., Flego, G., 
+van der Heide, A., & Costantini, M. (2013). Variation in medication use in cancer patients at the 
+end of life: a cross -sectional analysis. In Supportive Care in Cancer (Vol. 21, Issue 4, pp. 1003 –
+1011). Springer Science and Business Media LLC. https://doi.org/10.1007/s00520-012-1619-0 
+Randén, M., Helde -Frankling, M., Runesdotter, S., & Strang, P. (2013). Treatment decisions and 
+discontinuation of palliative chemotherapy near the end -of-life, in relation to socioeconomic 
+variables. Acta Oncologica, 52(6). https://doi.org/10.3109/0284186X.2012.758872 
+Rietjens, J., Sudore, R., Connolly, M., van Delden, J., Drickamer, M., Droger, M., van der Heide, A., 
+Heyland, D., Houttekier, D., Janssen, D., Orsi, L., Payne, S., Seymour, J.,  Jox, R., & Korfage, I. 
+(2017). Definition and recommendations for advance care planning: an international consensus 
+supported by the European Association for Palliative Care. The Lancet. Oncology, 18(9), e543–
+e551. https://doi.org/10.1016/S1470-2045(17)30582-X 
+Riley, G. F., & Lubitz, J. D. (2010). Long-term trends in Medicare payments in the last year of life. 
+Health Services Research , 45(2), 565 –576. https://doi.org/10.1111/j.1475 -6773.2010.01082.x 
+[doi] 
+Robert, C., Grob, J. J., Stroyakovskiy, D., Karaszewska, B., Hauschild, A., Levchenko, E., Chiarion 
+Sileni, V., Schachter, J., Garbe, C., Bondarenko, I., Gogas, H., Mandalá, M., Haanen, J. B. A. G., 
+Lebbé, C., Mackiewicz, A., Rutkowski, P., Nathan, P. D., Ribas, A., Davies, M. A., … Long, G. 
+v. (2019). Five -Year Outcomes with Dabrafenib plus Trametinib in Metastatic Melanoma. New 
+England Journal of Medicine, 381(7). https://doi.org/10.1056/nejmoa1904059 
+=====PDFPAGE 79=====
+References 
+ 77 
+Rochigneux, P., Raoul, J. L., Beaussant, Y., Aubry, R., Goldwasser, F., Tournigand, C., & Morin, L. 
+(2017). Use of chemotherapy near the end of life: What factors matter? Annals of Oncology, 28(4), 
+809–817. https://doi.org/10.1093/annonc/mdw654 
+Rodríguez-López, J., Mojica-Márquez, A., Patel, A. K., Ling, D. C., Rajagopalan, M. S., & Beriwal, S. 
+(2020). External Validation of Life Expectancy Prognostic Models in Patients Evaluated for 
+Palliative Radiotherapy at the End of Life. International Journal of Radia tion 
+Oncology*Biology*Physics, 108(2). https://doi.org/10.1016/j.ijrobp.2020.02.512 
+Romem, A., Romem, A., Tom, S. E., Beauchene, M., Babington, L., & Scharf, S. M. (2015). Pain 
+management at the end of life: A comparative study of cancer, dementia, and chr onic obstructive 
+pulmonary disease patients. Palliative Medicine , 29(5). 
+https://doi.org/10.1177/0269216315570411 
+Saarto, T., Finne-Soveri, H., & Expert working group. (2019). Recommendation on the provision and 
+improvement of palliative care services in Finland Final report of the expert. 
+Schnipper, L. E., Smith, T. J., Raghavan, D., Blayney, D. W., Ganz, P. A., Mulvey, T. M., & Wollins, 
+D. S. (2012). American Society of Clinical Oncology identifies five key opportunities to improve 
+care and reduce costs: the top five list for oncology. Journal of Clinical Oncology : Official Journal 
+of the American Society of Clinical Oncology , 30(14), 1715 –1724. 
+https://doi.org/10.1200/JCO.2012.42.8375 [doi] 
+Schnipper, L., Smith, T., Raghavan, D., Blayney, D., Ganz, P., M ulvey, T., & Wollins, D. (2012). 
+American Society of Clinical Oncology identifies five key opportunities to improve care and 
+reduce costs: the top five list for oncology. Journal of Clinical Oncology : Official Journal of the 
+American Society of Clinical O ncology, 30(14), 1715 –1724. 
+https://doi.org/10.1200/JCO.2012.42.8375 
+Seya, M., Gelders, S., Achara, O., Milani, B., & Scholten, W. (2011). A first comparison between the 
+consumption of and the need for opioid analgesics at country, regional, and global levels. Journal 
+of Pain & Palliative Care Pharmacotherapy , 25(1), 6 –18. 
+https://doi.org/10.3109/15360288.2010.536307 
+Sezgin Goksu, S., Gunduz, S., Unal, D., Uysal, M., Arslan, D., Tatli, A. M., Bozcuk, H., Ozdogan, M., 
+& Coskun, H. S. (2014). Use of chemotherapy at the end of life in Turkey. BMC Palliative Care, 
+13(1), 51. https://doi.org/10.1186/1472-684X-13-51 [doi] 
+Sheridan, P. E., LeBrett, W. G., Triplett, D. P., Roeland, E. J., Bruggeman, A. R., Yeung, H. N., & 
+Murphy, J. D. (2021). Cost Savings Associate d With Palliative Care Among Older Adults With 
+Advanced Cancer. American Journal of Hospice and Palliative Medicine , 38(10). 
+https://doi.org/10.1177/1049909120986800 
+Silvoniemi, M., Vasankari, T., Vahlberg, T., Vuorinen, E., Clemens, K. E., & Salminen, E. (2012). 
+Physicians’ self -assessment of cancer pain treatment skills --more training required. Supportive 
+Care in Cancer : Official Journal of the Multinational Association of Supportive Care in Cancer, 
+20(11), 2747–2753. https://doi.org/10.1007/s00520-012-1396-9 [doi] 
+Sohal, D., Kennedy, E., Khorana, A., Copur, M., Crane, C., Garrido -Laguna, I., Krishnamurthi, S., 
+Moravek, C., O’Reilly, E., Philip, P., Ramanathan, R., Ruggiero, J., Shah, M., Urba, S., Uronis, 
+H., Lau, M., & Laheru, D. (2018). Metastatic Pancreatic Cancer: ASCO Clinical Practice Guideline 
+Update. Journal of Clinical Oncology: Official Journal of the American Society of Clinical 
+Oncology, 36(24), 2545–2556. https://doi.org/10.1200/JCO.2018.78.9636 
+Sohal, D., Mangu, P., Khorana, A., Shah, M., Ph ilip, P., O’Reilly, E., Uronis, H., Ramanathan, R., 
+Crane, C., Engebretson, A., Ruggiero, J., Copur, M., Lau, M., Urba, S., & Laheru, D. (2016). 
+Metastatic Pancreatic Cancer: American Society of Clinical Oncology Clinical Practice Guideline. 
+Journal of Cli nical Oncology : Official Journal of the American Society of Clinical Oncology, 
+34(23), 2784–2796. https://doi.org/10.1200/JCO.2016.67.1412 [doi] 
+Spencer, K., Parrish, R., Barton, R., & Henry, A. (2018). Palliative radiotherapy. BMJ (Online), 360. 
+https://doi.org/10.1136/BMJ.K821 
+=====PDFPAGE 80=====
+Liisa Rautakorpi 
+ 78 
+Steinhauser, K. E., Christakis, N. A., Clipp, E. C., McNeilly, M., McIntyre, L., & Tulsky, J. A. (2000). 
+Factors considered important at the end of life by patients, family, physicians, and other care 
+providers. Journal of the Amer ican Medical Association , 284(19). 
+https://doi.org/10.1001/jama.284.19.2476 
+Stone, P., Vickerstaff, V., Kalpakidou, A., Todd, C., Griffiths, J., Keeley, V., Spencer, K., Buckle, P., 
+Finlay, D., & Omar, R. Z. (2021). Prognostic tools or clinical predictions : Which are better in 
+palliative care? PLoS ONE, 16(4 April 2021). https://doi.org/10.1371/journal.pone.0249763 
+Sundströmm, J., Minn, H., Lertola, K., & Nordman, E. (1998). Prognosis of patients treated for 
+intracranial metastases with whole -brain irradiat ion. Annals of Medicine , 30(3), 296 –299. 
+https://doi.org/10.3109/07853899809005858 
+Surakka, L. K., Peake, M. M., Kiljunen, M. M., Mäntyselkä, P., & Lehto, J. T. (2021). Preplanned 
+participation of paramedics in end -of-life care at home: A retrospective cohort study. Palliative 
+Medicine, 35(3). https://doi.org/10.1177/0269216320981713 
+Swanwick, M., Haworth, M., & Lennard, R. (2001). The prevalence of episodic pain in cancer: a survey 
+of hospice patients on admission. Palliative Medicine , 15(1), 9 –18. 
+https://doi.org/10.1191/026921601668030190 
+Sze, W. M., Shelley, M., Held, I., & Mason, M. (2002). Palliation of metastatic bone pain: single 
+fraction versus multifraction radio therapy. Cochrane Database of Systematic Reviews . 
+https://doi.org/10.1002/14651858.CD004721 
+Tasmuth, T., Saarto, T., & Kalso, E. (2006). How palliative care of cancer patients is organised between 
+a University Hospital and primary care in Finland. Acta Onc ologica, 45(3). 
+https://doi.org/10.1080/02841860500423898 
+Temel, J. S., Greer, J. A., Muzikansky, A., Gallagher, E. R., Admane, S., Jackson, V. A., Dahlin, C. 
+M., Blinderman, C. D., Jacobsen, J., Pirl, W. F., Billings, J. A., & Lynch, T. J. (2010). Early 
+palliative care for patients with metastatic non -small-cell lung cancer. The New England Journal 
+of Medicine, 363(8), 733–742. https://doi.org/10.1056/NEJMoa1000678 [doi] 
+Temel, J. S., Sloan, J., Zemla, T., Greer, J. A., Jackson, V. A., El-Jawahri, A., Kamdar, M., Kamal, A., 
+Blinderman, C. D., Strand, J., Zylla, D., Daugherty, C., Furqan, M., Obel, J., Razaq, M., Roeland, 
+E. J., & Loprinzi, C. (2020). Multisite, Randomized Trial of Early Integrated Palliative and 
+Oncology Care in Patients with Advanced Lung and Gastrointestinal Cancer: Alliance A221303. 
+Journal of Palliative Medicine, 23(7), 922–929. https://doi.org/10.1089/jpm.2019.0377 
+Tiwana, M. S., Barnes, M., Kiraly, A., & Olson, R. A. (2016). Utilization of palliative radiotherapy for 
+bone metastases ne ar end of life in a population -based cohort Cancer palliative care. BMC 
+Palliative Care, 15(1). 
+Torvinen, S., Färkkilä, N., Roine, R. P., Sintonen, H., Saarto, T., & Taari, K. (2016). Costs in different 
+states of prostate cancer. Acta Oncologica , 55(1), 30 –37. 
+https://doi.org/10.3109/0284186X.2015.1030037 
+Triplett, D. P., LeBrett, W. G., Bryant, A. K., Bruggeman, A. R., Matsuno, R. K., Hwang, L., Boero, I. 
+J., Roeland, E. J., Yeung, H. N., & Murphy, J. D. (2017). Effect of palliative care on aggressiveness 
+of end -of-life care among patients with advanced cancer. Journal of Oncology Practice , 13(9). 
+https://doi.org/10.1200/JOP.2017.020883 
+Tsao, M. N., Rades, D., Wirth, A., Lo, S. S., Danielson, B. L., Gaspar, L. E., Sperduto, P. W., 
+Vogelbaum, M. A., Radawski , J. D., Wang, J. Z., Gillin, M. T., Mohideen, N., Hahn, C. A., & 
+Chang, E. L. (2012). Radiotherapeutic and surgical management for newly diagnosed brain 
+metastasis(es): An American Society for Radiation Oncology evidence-based guideline. Practical 
+Radiation Oncology, 2(3), 210–225. https://doi.org/10.1016/j.prro.2011.12.004 [doi] 
+Urvay, S., Civelek, B., Özaslan, E., & Sürel, A. A. (2021). Chemotherapy at the End of Life. Journal 
+of Palliative Care, 36(2), 73–77. https://doi.org/10.1177/0825859720946505 
+van den Beuken-van Everdingen, M., Hochstenbach, L., Joosten, B., Tjan -Heijnen, V., & Janssen, D. 
+(2016). Update on Prevalence of Pain in Patients with Cancer: Systematic Review and Meta -
+=====PDFPAGE 81=====
+References 
+ 79 
+Analysis. Journal of Pain and Symptom Management , 51(6), 1070 -1090.e9. 
+https://doi.org/10.1016/j.jpainsymman.2015.12.340 
+van der Linden, Y. M., Steenland, E., van Houwelingen, H. C., Post, W. J., Oei, B., Marijnen, C. A., 
+Leer, J. W., & Group, D. B. M. S. (2006). Patients with a favourable prognosis are equally palliated 
+with single and multiple fraction radiotherapy: result s on survival in the Dutch Bone Metastasis 
+Study. Radiotherapy and Oncology : Journal of the European Society for Therapeutic Radiology 
+and Oncology, 78(3), 245–253. https://doi.org/S0167-8140(06)00070-3 [pii] 
+Vanbutsele, G., Pardon, K., van Belle, S., Surmont, V., de Laat, M., Colman, R., Eecloo, K., Cocquyt, 
+V., Geboes, K., & Deliens, L. (2018). Effect of early and systematic integration of palliative care 
+in patients with advanced cancer: a randomised controlled trial. The Lancet Oncology, 19(3), 394–
+404. https://doi.org/10.1016/S1470-2045(18)30060-3 
+Wang, J. P., Wu, C. Y., Hwang, I. H., Kao, C. H., Hung, Y. P., Hwang, S. J., & Li, C. P. (2016). How 
+different is the care of terminal pancreatic cancer patients in inpatient palliative care units and 
+acute h ospital wards? A nationwide population -based study. BMC Palliative Care , 15, 1 –x. 
+https://doi.org/10.1186/s12904-016-0075-x [doi] 
+Williams, G., Manjunath, S., Butala, A., & Jones, J. (2021). Palliative Radiotherapy for Advanced 
+Cancers: Indications and Outcomes. In Surgical Oncology Clinics of North America (Vol. 30, Issue 
+3). https://doi.org/10.1016/j.soc.2021.02.007 
+Williams, M., & Drinkwater, K. (2009). Geographical Variation in Radiotherapy Services Across the 
+UK in 2007 and the Effect of Deprivation. Clinical Oncology , 21(6), 431 –440. 
+https://doi.org/10.1016/J.CLON.2009.05.006 
+World health organization. (1996). Cancer pain relief, Second Edition With a guide to opioid 
+availability. 
+Wu, C., Hsu, T., Chang, C., Lee, C., Huang, C., & Lee, C. (2016). Palliative Chemotherapy Affects 
+Aggressiveness of End‐of‐Life Care. The Oncologist , 21(6), 771 –777. 
+https://doi.org/10.1634/theoncologist.2015-0445 
+Wu, S., Singer, L., Boreta, L., Garcia, M., Fogh, S., & Braunstein, S. (2019). Palliative radiotherapy 
+near the end of life. BMC Palliative Care, 18(1). https://doi.org/10.1186/S12904-019-0415-8 
+Yadav, S., Heller, I., Schaefer, N., Salloum, R., Kittelson, S., Wilkie, D., & Huo, J. (2020). The health 
+care cost of palliative care for cancer patients: a systematic review. Supportive Care in Cancer : 
+Official Journal of the Multinational Association of Supportive Care in Cancer , 28(10), 4561 –
+4573. https://doi.org/10.1007/S00520-020-05512-Y 
+Zerzan, J., Benton, K., Linnebur, S., O’Bryant, C., & Kutner, J. (2010). Variation in Pain Medication 
+Use in End -of-Life Care. Journal of Palliative Medicine , 13(5), 501 –504. 
+https://doi.org/10.1089/jpm.2009.0406 
+Zhang, Z., Chen, M. L., Gu, X. L., Liu, M. H., Zhao, W. W., & Cheng, W. W. (2018). Palliative 
+Chemotherapy Near the End of Life in Oncology Patients. American Journal of Hospice and 
+Palliative Medicine, 35(9), 1215–1220. https://doi.org/10.1177/1049909118763338 
+Ziegler, L., Mulvey, M., Blenkinsopp, A., Petty, D., & Bennett, M. I. (2016). Opioid prescribing for 
+patients with cancer in the last year of life: a longitudinal population cohort study. Pain 
+(Amsterdam), 157(11), 2445–2451. https://doi.org/10.1097/j.pain.0000000000000656 
+Zimmermann, C., Swami, N., Krzyzanowska, M., Hannon, B., Leighl, N., Oza, A., Moore, M., Rydall, 
+A., Rodin, G., Tannock, I., Donner, A., & Lo, C. (2014). Early palliative care for patients with 
+advanced cancer: a cluster -randomised controlled trial. Lancet (London, England) , 383(9930), 
+1721–1730. https://doi.org/10.1016/S0140-6736(13)62416-2 
+ 
+ 
+=====PDFPAGE 82=====
+Liisa Rautakorpi D 1636 ANNALES UNIVERSITATIS TURKUENSIS
+ISBN 978-951-29-8879-2 (PRINT)
+ISBN 978-951-29-8880-8 (PDF)
+ISSN 0355-9483 (Print)
+ISSN 2343-3213 (Online)
+Painosalama, Turku, Finland 2022
+TURUN YLIOPISTON JULKAISUJA – ANNALES UNIVERSITATIS TURKUENSIS
+SARJA – SER. D OSA – TOM. 1636 | MEDICA – ODONTOLOGICA | TURKU 2022
+REAL-LIFE PERSPECTIVES 
+ON THE END-OF-LIFE CARE 
+OF CANCER PATIENTS
+Liisa Rautakorpi

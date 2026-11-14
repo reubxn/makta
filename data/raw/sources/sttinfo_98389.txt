@@ -1,0 +1,1116 @@
+
+=====PDFPAGE 1=====
+Janne Pitkäniemi, Nea Malila, Sanna Heikkinen, Karri Seppä
+ 
+SYÖPÄ 2022 
+Tilastoraportti Suomen syöpätilanteesta
+
+=====PDFPAGE 2=====
+Janne Pitkäniemi, Nea Malila, Sanna Heikkinen, Karri Seppä
+ 
+Syöpä 2022
+Tilastoraportti Suomen syöpätilanteesta
+=====PDFPAGE 3=====
+Toimituskunta:
+Janne Pitkäniemi, Nea Malila, Sanna Heikkinen, Karri Seppä
+Syöpäkoodaus:
+Elina Hermiö, Paula Kujala, Nea Malila, Minna Merikivi, Anne-Mari Nyholm, Tea Piipponen,  
+Tomas Tanskanen
+Tiedonhallinta:
+Sebastian Johansson, Mika Lappalainen, Niko Lavonen, Katja Lehtinen, Jussi Orpana
+Tilastollinen data-analytiikka ja tietosuoja:
+Elli Hirvonen, Tapio Luostarinen, Joonas Miettinen, Heidi Ryynänen, Karri Seppä, Salla Toikkanen
+Viestintä: Nina Airisto
+Taitto: AT-Julkaisutoimisto Oy
+ISSN 2814-4333 (pdf)
+Tähän raporttiin viitataan seuraavasti:
+Pitkäniemi J, Malila N, Heikkinen S, Seppä K. Syöpä 2022. Tilastoraportti Suomen syöpätilanteesta. 
+Suomen Syöpäyhdistys, Helsinki 2024.
+=====PDFPAGE 4=====
+Sisällys
+1 Esipuhe ..................................................................................................................................................... 5
+2 Syöpätilanne 2022 .................................................................................................................................. 6
+3 Koronaviruspandemia ja syöpätaakka ..................................................................................................10
+4 Tilastolliset menetelmät ........................................................................................................................12
+ 4.1  Määritelmät .................................................................................................................................... 12
+ 4.2  Uudet syöpätapaukset – ilmaantuvuus  ........................................................................................12
+ 4.3  Syöpien aiheuttamat kuolemat – syöpäkuolleisuus  .....................................................................13
+ 4.4  Elossaolevat, joilla todettu syöpä – vallitsevuus ........................................................................... 14
+ 4.5  Riski sairastua syöpään ja kuolla syöpään  ....................................................................................14
+ 4.6 Syöpäpotilaiden ennusteet – eloonjääminen ............................................................................... 14
+ 4.7  Syövän takia menetetyt elinvuodet ...............................................................................................14
+ 4.8  Aikasarjat ja muutoksen arviointi.................................................................................................. 15 
+ 4.9 Ilmaantuvuuden ja kuolleisuuden ennusteet ............................................................................... 15
+ 4.10 Koronaviruspandemian vaikutus syöpäilmaantuvuuteen ja -kuolleisuuteen ............................ 15
+ 4.11 Alue-erot syöpäilmaantuvuudessa ja -kuolleisuudessa  ................................................................15 
+ 4.12 Koulutusasteiden väliset ilmaantuvuuden ja kuolleisuuden riskisuhteet .................................16
+5 Aineisto ja laatu ......................................................................................................................................17
+ 5.1  Syöpärekisterin tavoitteet .............................................................................................................. 17
+ 5.2  Tilastoitavat ja ilmoitettavat taudit ................................................................................................ 17
+ 5.3  Aikasarjojen kattavuus  .................................................................................................................. 17
+ 5.4  Tietolähteet ..................................................................................................................................... 19
+ 5.5  Syöpätietojen koostaminen ........................................................................................................... 19 
+ 5.6  Laatumittarit .................................................................................................................................. 20
+6 Ilmaantuvuus ja uudet syövät ...............................................................................................................21
+ 6.1  Ilmaantuvuus ikäryhmittäin .........................................................................................................22
+ 6.2  Riski sairastua ja kuolla syöpään ................................................................................................. 24
+7  Kuolleisuus .............................................................................................................................................25
+ 7.1   Kuolleisuus ikäryhmittäin ............................................................................................................26
+8  Vallitsevuus............................................................................................................................................ 28
+9 Potilaiden eloonjääminen .....................................................................................................................29
+10 Syövän takia menetetyt elinvuodet ........................................................................................................32
+11 Aikasarjat ................................................................................................................................................ 36
+12  Ennusteet ...............................................................................................................................................48
+=====PDFPAGE 5=====
+13 Alue-erot syöpätaakassa .........................................................................................................................50
+14  Koulutusaste ja syöpätaakka ..................................................................................................................55
+ 14.1  Syöpäilmaantuvuus koulutusasteittain ........................................................................................55
+ 14.2 Syöpäkuolleisuus koulutusasteittain ............................................................................................57
+15 Taulukot .................................................................................................................................................. 59
+ 15.1 Ilmaantuvuus, kuolleisuus ja vallitsevuus ...................................................................................59
+ 15.2 Potilaiden eloonjäämisluvut..........................................................................................................63
+ 15.3 Pitkän aikavälin muutokset, ilmaantuvuus ..................................................................................65
+ 15.4 Pitkän aikavälin muutokset, kuolleisuus .................................................................................... 67
+Kuvat  ...........................................................................................................................................................69
+Taulukot ........................................................................................................................................................71
+=====PDFPAGE 6=====
+1 Esipuhe
+Suomen Syöpärekisteri on saanut valmiiksi vuoden 2022 varsinaisen syöpätilaston ( syoparekisteri.fi/tilastot/
+tautitilastot). Ennakkotiedot vuodelle 2023 julkaistiin ensimmäistä kertaa samaan aikaan varsinaisen syö -
+pätilaston kanssa. Syksyllä julkaistuun vuoden 2022 ennakkotilastoon verrattuna haima- (458 lisätapausta), 
+keuhko- (520 lisätapausta) ja hematologisten syöpien (412 lisätapausta) määrä on odotetusti kasvanut, muilta 
+osin luvut ovat muuttuneet vähemmän.
+Syöpäraportti kokoaa tiedot mm. uusista syövistä, syöpäkuolemista ja potilaiden ennusteesta. Näiden lisäksi 
+esitetään elossa olevien aiemmin syöpään sairastuneiden määrä, syövän takia menetetyt elinvuodet ja tule -
+van syöpätaakan ennusteet vuoteen 2040 asti. Kaikkiaan vuonna 2022 todettiin 37 268 uutta syöpää ja  
+13 287 syöpäkuolemaa. Uusien tapausten määrässä yleisimpiä olivat naisilla rintasyöpä ja miehillä eturau -
+hasen syöpä, toisena oli molemmilla sukupuolilla paksu- ja peräsuolisyöpä. Eniten syöpäkuolemia aiheutui 
+naisten keuhko- ja rintasyövästä ja miesten keuhko- ja eturauhassyövästä.
+Edellisissä syöpäraporteissa arvioitiin koronaviruspandemian aiheuttamaa vajetta vuosina 2020 (1 600 uutta 
+syöpää) ja 2021 (900 syöpää). Nyt arvioitiin, että vuonna 2022 toteamatta jäi 1 000 uutta syöpää. Syöpäkuol-
+leisuudessa ei havaittu vuosina 2020–2022 huomattavia muutoksia.
+Syöpätaakkaa tarkastellaan tässä raportissa toista kertaa menetettyjen elinvuosien näkökulmasta. Suomen 
+väestön arvioitiin menettävän yli 190 000 elinvuotta yhden vuoden aikana todettujen syöpien takia. Naiset 
+menettävät eniten elinvuosia rintasyövän ja miehet keuhkosyövän takia. Rintasyövän takia potilas menettää 
+keskimäärin 3,3 elinvuotta, keuhkosyövän takia 11,6 elinvuotta ja eturauhassyövän takia 1,2 elinvuotta.
+Syöpätilasto on laadittu kliinistä syöpäjaottelua (ICD-10) mukaillen koko rekisterin toiminta-ajalta vuodesta 
+1953 lähtien. Syöpärekisterin tietolähteitä ovat terveydenhuollon toimijat ja patologian laboratoriot. Erityisesti 
+tapaukset, joista ei ole saatu kudos- tai solunäytettä, voivat jäädä ilmoittamatta rekisteriin. Näiden ns. kliinis-
+ten ilmoitusten kattavuutta pyritään parantamaan yhteistyöllä terveydenhuollon yksiköiden ja potilastietojär-
+jestelmien kehittäjien kanssa. Päivitetty kliinisten ilmoitusten tilasto löytyy verkkosivuiltamme (syoparekis-
+teri.fi/tilastot/kliinisten-ilmoitusten-tilasto).
+Vuoden 2022 syöpätietojen luovutus tutkimuksiin käynnistyi huhtikuussa 2024. Suomen Syöpärekisteri on 
+Suomen Syöpäyhdistyksen tutkimuslaitos, joka ylläpitää kansallista rekisteriä syöpätapauksista sekä rekiste-
+riä kohdunkaulan, rintasyövän ja paksu- ja peräsuolisyövän väestöseulonnoista. Terveyden ja hyvinvoinnin 
+laitos on syöpärekisterin rekisterinpitäjänä antanut Suomen Syöpäyhdistykselle vastuun huolehtia rekiste -
+rien toiminnasta.
+Lämmin kiitos kaikille yhteistyökumppaneille hyvästä yhteistyöstä. Kattavat ja pitkät aikasarjat syöpätaakasta 
+ovat arvokas kansallinen pääoma.
+Helsinki 28.5.2024
+Janne Pitkäniemi, professori Nea Malila, dosentti Karri Seppä, dosentti
+johtaja vastaava lääkäri tutkimuspäällikkö
+050 372 3335 050 305 5730 050 441 8556
+=====PDFPAGE 7=====
+2 S yöpätilanne 2022
+Vuonna 2022 Suomessa todettiin 37 268 uutta syöpää, joista naisilla 17 622 ja miehillä 19 646, ja syöpään 
+kuoli 13 287 henkeä (Taulukko 1). Jo yli 320 000 syöpään sairastunutta suomalaista oli elossa vuoden 2022 
+lopussa. Heistä 56 % oli naisia ja 44 % miehiä. Vuosina 2020–2022 seurattujen syöpäpotilaiden viiden vuo-
+den suhteellinen elossaololuku oli 70 %.
+Taulukko 1:  Vuonna 2022 todetut uudet syövät ja syöpäkuolemat, syövän vallitsevuus ja potilaiden viiden vuoden suhteelli-
+set elossaololuvut Suomen koko väestössä erikseen naisilla ja miehillä.
+ 
+Kuva 1: Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 
+2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) sukupuolittain vuosina 1953–2022.
+Kuvassa (Kuva 1) on esitetty ikävakioitu syöpäilmaantuvuus ja -kuolleisuus ja potilaiden suhteellinen elos -
+saololuku vuodesta 1953 vuoteen 2022. Syöpäilmaantuvuus on noussut naisilla vuosina 1992–2019 kes -
+kimäärin 0,8 % vuodessa (Taulukko 12). Miehillä aikaisempi nousu (1,0 % vuodessa vuosina 1990–2003 
+Taulukko 13) on tasoittunut -0,2 % vuodessa 2004–2019). Koronaviruspandemian vaikutusta syöpäilmaan -
+tuvuuteen on arvioitu kappaleessa 3. Syöpäkuolleisuus on laskenut naisilla ja miehillä: naisilla keskimäärin 
+=====PDFPAGE 8=====
+0,5 % vuodessa (2006–2022) ja miehillä 1,2 % vuodessa (2008–2022, Taulukko 14 ja Taulukko 15). Suhteel-
+linen elossaololuku on parantunut naisilla tasaisesti, ja miehillä aikaisempi nopea parantuminen elossaolo -
+luvussa on hidastunut 2000-luvun alun jälkeen.
+Kuva 2: Uusien syöpätapausten määrä ja ilmaantuvuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 2014 väes-
+töön) ositettuna syöpätaudeittain miehillä (kuvat A ja B) ja naisilla (C ja D) vuosina 1953–2022. Muut ruoansulatuselimet 
+sisältävät ruokatorven, ohutsuolen, peräaukon, maksan, sappirakon ja -teiden, haiman sekä muiden tai määrittelemättö -
+mien ruoansulatuselinten syövät.
+Kuvassa (Kuva 2) on esitetty vuosittainen uusien syöpätapausten lukumäärä ja ikävakioitu ilmaantuvuus ylei-
+simmille syöpätaudeille sukupuolittain. Suomessa todettiin 1950-luvulla vuosittain noin 2 000 uutta maha -
+syöpää, ja se oli yleisin syöpä sekä miehillä että naisilla. Nykyisin todetaan vuosittain noin 650 uutta maha -
+syöpää. Miehillä myös keuhkosyövän ilmaantuvuus on pienentynyt 1970-luvulta lähtien. Eturauhassyövän 
+ilmaantuvuus alkoi kasvaa huomattavasti 1990-luvulla. Naisilla rintasyövän ilmaantuvuus on kasvanut koko 
+tarkastelujakson ajan.
+
+=====PDFPAGE 9=====
+Kuva 3: Uusien syöpäkuolemien määrä ja kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 2014 väes -
+töön) ositettuna syöpätaudeittain miehillä (kuvat A ja B) ja naisilla (C ja D) vuosina 1953–2022. Muut ruoansulatuselimet 
+sisältävät ruokatorven, ohutsuolen, peräaukon, maksan, sappirakon ja -teiden, haiman sekä muiden tai määrittelemättö -
+mien ruoansulatuselinten syövät.
+Kuvassa (Kuva 3) on esitetty syöpäkuolemien lukumäärä ja ikävakioitu kuolleisuus miehillä ja naisilla vuo -
+desta 1953. Syöpäkuolemien lukumäärä on kasvanut naisilla suhteellisen tasaisesti koko tarkastelujakson 
+ajan, kun taas miehillä voimakas kasvu loiveni 1980- ja 1990-luvuilla mutta kiihtyi sen jälkeen. Miesten 
+eturauhassyöpäkuolleisuuden ja naisten rintasyöpäkuolleisuuden muutoksilla on ollut suhteellisen pieni 
+vaikutus kokonaissyöpäkuolleisuuden muutokseen. Eniten siihen on vaikuttanut mahasyöpäkuolleisuuden 
+huomattava pienentyminen sekä miehillä että naisilla ja keuhkosyöpäkuolleisuuden pienentyminen mie -
+hillä. Naisilla keuhkosyöpäkuolleisuus on kasvanut ja keuhkosyöpä on nykyisin merkittävä syöpäkuolemien 
+aiheuttaja.
+Ikävakioidun syöpäilmaantuvuuden ennustetaan kasvavan maltillisesti (Kuva 4). Vuodesta 2022 vuoteen 
+2040 keskimääräisen vuotuisen kasvun ennustetaan olevan 0,2 % naisilla ja 0,1 % miehillä. Kuolleisuuden 
+pienenemisen ennustetaan jatkuvan. Naisilla kuolleisuus pienenee keskimäärin 0,7 % vuodessa ja miehillä 
+0,6 % vuodessa.
+
+=====PDFPAGE 10=====
+Kuva 4: Syöpäilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 
+2014 väestöön) vuosina 1953–2022 ja ennustettu kehitys vuoteen 2040 saakka sukupuolittain. Ilmaantuvuuden ennuste on 
+esitetty myös vuodelle 2022 ja perustuu vuoteen 2019 asti havaittuun kehitykseen.
+ 
+Kuva 5: Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 
+2014 väestöön) yli 25-vuotiaassa väestössä sukupuolittain ja koulutusasteittain vuosina 1986–2022.
+Syövän ilmaantuvuus ja syöpäkuolleisuus olivat kokonaisuutena tarkastellen korkeimpia perusasteen koulu-
+tustasolla ja matalimpia korkeakoulutetuilla (Kuva 5). Suurimpia erot olivat keuhkosyövässä. Naisten ja mies-
+ten tavallisimmat syövät, rintasyöpä ja eturauhassyöpä, olivat kuitenkin yleisimpiä korkeasti koulutetuilla. 
+Kokonaisuudessaan suurimmat koulutustasokohtaiset erot todettiin miesten syöpäkuolleisuudessa, jossa 
+perusasteen koulutettujen kuolleisuus oli suurempaa korkeakoulutettuihin verrattuna kaikissa tarkastelussa 
+mukana olleissa syövissä. Myös korkeakoulutettujen naisten syöpäkuolleisuus oli yleisesti hieman alhaisem-
+paa kuin perusasteen koulutustasolla.
+
+=====PDFPAGE 11=====
+3 K oronaviruspandemia ja syöpätaakka
+Koronapandemia alkoi Suomessa vuoden 2020 alussa ja tartunnat levisivät maaliskuussa laajemmin.  
+Vuonna 2020 arvioitiin todetun 1 600 (4,3 %) uutta syöpää vähemmän kuin olisi odotettu ilman pandemiaa 
+(Syöpä 2020 -raportti).
+Tässä raportissa verrataan vuonna 2022 todettujen syöpien määrää ennusteeseen. Havaitun tapausmäärän 
+vaje ennusteeseen verrattuna on jaettu tyypillisen rekisteröintiviipeen ja muiden syiden (ml. pandemian vai-
+kutukset) aiheuttamaan vajeeseen. Vuoden 2022 tapausmäärän odotetaan täydentyvän seuraavan kolmen 
+vuoden aikana noin 1000 tapauksella, ts. rekisteröintiviipeen aiheuttama vaje oli 2,9 % ( Taulukko 2). Muu-
+hun kuin rekisteröintiin liittyvä vaje vuoden 2022 uusien syöpien määrässä oli noin 1000 tapausta (2,8 %) 
+edeltävän syöpäilmaantuvuuden perusteella. Muihin syihin kuin syöpärekisteröinnin viipeeseen liittyvä vaje 
+pieneni siten selvästi vuoden 2020 vajeeseen verrattuna ja oli lähellä vuoden 2021 vajetta (Syöpä 2021 -raport-
+tissa vaje 2,6 %).
+Rekisteröintiviipeen aiheuttama vaje oli erityisen suuri haimasyövässä (16,9 %) ja imukudoksen ja verta 
+muodostavan kudoksen syövissä (8,5 %). Tämä selittyy sillä, että syöpärekisteri täydentyy myös kuolintodis -
+tustietojen perusteella ja kuolinsyy on usein ensimmäinen tietolähde näiden syöpien rekisteröinnissä. Osalle 
+henkilöistä, joiden kuolintodistuksessa on merkintä syövästä, on kuitenkin mahdollista jäljittää syövän totea-
+misvuodeksi jo kuolinvuotta edeltävä kalenterivuosi.
+Muista syistä kuin rekisteröinnin viipeestä aiheutuneet vajeet olivat suurimmat rintasyövässä, ihomelanoo -
+massa ja eturauhassyövässä. Uusien rintasyöpien vaje oli 528 syöpää (9,8 %), ihomelanoomien 277 (13,1 %) ja 
+eturauhassyöpien 212 syöpää (3,7 %). Syöpäilmaantuvuuden ennustaminen on kuitenkin huomattavan epä-
+varmaa sekä ihosyövissä että eturauhassyövässä, koska varhaisten toteamismenetelmien käytössä tapahtuvat 
+muutokset vaikuttavat merkittävästi syöpäilmaantuvuuteen ja ovat vaikeasti ennakoitavia. Ihomelanooman 
+ennusteessa pidemmän aikavälin kasvun oletettiin jatkuvan. Jos ilmaantuvuuden kasvun oletettaisiin pysäh-
+tyvän ja jäävän vuosien 2015–2019 keskimääräiselle tasolle, vajetta ei olisi lainkaan (-0,2 %). Eturauhassyövän 
+ennusteessa oletettiin, että ilmaantuvuus pysyy vuosien 2015–2019 keskimääräisellä tasolla.
+Taulukko 2: Havaittu tapausmäärä vuonna 2022 ja sen ennuste edeltävien vuosien syöpäilmaantuvuuteen perustuen  
+kaikissa syövissä yhteenlaskettuna ja erikseen yleisimmissä syövissä. Havaitun tapausmäärän vaje ennusteeseen verrat -
+tuna on jaettu tyypillisen rekisteröintiviipeen ja muiden syiden aiheuttamaan vajeeseen.
+ 
+=====PDFPAGE 12=====
+Paksu- ja peräsuolisyöpää todettiin noin 190 tapausta (4,9 %) enemmän kuin ennusteen perusteella odo -
+tettiin. Odotettua suurempi tapausmäärä liittyy vuonna 2022 aloitettuun suolistosyövän seulontaan, jonka 
+avulla paksu- ja peräsuolen syöpiä voidaan todeta varhaisemmassa vaiheessa.
+Syöpäkuolemien määrää vuosina 2020–2022 tarkasteltiin vastaavalla tavalla vertaamalla havaittua määrää 
+aiemman kuolleisuuskehityksen perusteella laadittuun ennusteeseen. Kaikkien syöpäkuolemien määrät oli-
+vat lähellä ennustetta (Taulukko 3). Vuosina 2020 ja 2021 oli hieman enemmän (0,5 % ja 0,6 %) ja vuonna 
+2022 hieman vähemmän (-0,7 %) syöpäkuolemia kuin odotettiin ennusteen perusteella. Kuolleisuustren -
+dien tarkempi arviointi yksittäisten syöpätautien osalta vaatii lisäselvitystä.
+Taulukko 3: Havaittu syöpäkuolemien määrä vuosina 2020–2022, ennuste edeltävien vuosien syöpäkuolleisuuteen perus -
+tuen ja niiden erotus kaikissa syövissä yhteenlaskettuna ja erikseen eniten kuolleisuutta aiheuttaville syöville.
+=====PDFPAGE 13=====
+4 Tilastolliset menetelmät
+4.1 Määritelmät
+Ilmaantuvuus  Uusien syöpätapausten määrä tietyllä aikavälillä (esimerkiksi yhden kalenterivuoden aikana) 
+väestössä tai sen osassa. Ilmaantuvuuden suhdeluku on tapausmäärä 100 000 henkilövuotta kohden.
+Kuolleisuus  Syövästä johtuvien kuolemien määrä tietyllä aikavälillä väestössä tai sen osassa. Kuolleisuuden 
+suhdeluku on kuolemien määrä 100 000 henkilövuotta kohden.
+Vallitsevuus  Syöpään sairastuneiden ja tietyllä ajanhetkellä elossa olevien lukumäärä väestössä tai sen osassa. 
+Vallitsevuusosuus on vastaava lukumäärä suhteessa väkilukuun.
+Ikävakioitu ilmaantuvuus, kuolleisuus ja vallitsevuus  Tässä raportissa Suomen 2014 väestöön vakioitu ilmaan-
+tuvuus, kuolleisuus ja vallitsevuus, joiden tarkoituksena on esimerkiksi kalenterivuosittaisten lukujen vertail-
+tavuuden parantaminen siten, että väestön ikärakenteen muuttuminen on huomioitu.
+Riski sairastua syöpään  Arvio syöpään sairastuvien osuudesta väestössä.
+Riski sairastua ja kuolla syöpään  Arvio syöpään sairastuvien ja siihen kuolevien osuudesta väestössä.
+Suhteellinen elossaololuku  Arvio elossa olevien potilaiden osuudesta tietyn ajan jälkeen syövän toteamisesta, 
+mikäli syöpä olisi ainoa potilaiden kuolleisuuteen vaikuttava tekijä. Sitä käytetään syöpäpotilaiden ennusteen 
+mittarina.
+Ikävakioitu suhteellinen elossaololuku  Tässä raportissa suhteellinen elossaololuku, joka on vakioitu Suo-
+messa viimeisimpänä kolmivuotisjaksona todettujen potilaiden ikäjakaumaan. Sen tarkoituksena on esimer-
+kiksi kalenterivuosittaisten lukujen vertailtavuuden parantaminen siten, että potilaiden ikärakenteen muutos 
+on huomioitu.
+Syöpätaakka  Väestöön kohdistuva haitta, joka on seurausta syövästä. Tavallisimmat haitan mittarit ovat 
+ilmaantuvuus, syöpäkuolleisuus ja suhteellinen elossaololuku.
+Alueelliset tilastot perustuvat henkilöiden kotikuntaan syövän toteamisvuonna, paitsi kuolleisuustilastoissa 
+kuolinvuoden kotikuntaan. Koulutusasteittaisissa tilastoissa väestö jaettiin kolmeen ryhmään korkeimman 
+saavutetun tutkinnon perusteella. Koulutustiedot perustuvat Tilastokeskuksen tutkintorekisteriin ja kou-
+lutusasteluokitteluun. Perusasteen koulutusasteessa henkilöillä ei ollut peruskoulun, kansakoulun, kansa -
+laiskoulun tai keskikoulun jälkeistä tutkintoa. Keskiasteen koulutustasolle kuuluivat ylioppilastutkinnon tai 
+ammatillisen koulutuksen (esimerkiksi 1–3-vuotiset ammatilliset tutkinnot ja ammatilliset perustutkinnot 
+sekä erikoisammattitutkinnot) suorittaneet. Korkea-asteen koulutustasolle kuuluivat alimman korkea-asteen 
+(esimerkiksi teknikon, merkonomin ja sairaanhoitajan tutkinnot, jotka eivät ole ammattikorkeakoulututkin -
+toja), alemman korkeakouluasteen tai ylemmän korkeakouluasteen tutkinnon suorittaneet.
+4.2 Uudet syöpätapaukset – ilmaantuvuus
+Syöpien tilastoinnissa raportoidaan uusien todettujen syöpätapausten lukumäärä tiettynä ajanjaksona. Usein 
+aikajaksoksi valitaan yksi vuosi. Ilmaantuvuus on uusien todettujen syöpätapausten määrä 100 000 henkilö-
+vuotta kohden. Henkilövuodet suomalaisilla eli syöpävaarassa olevan väestön kerryttämä aika tilastovuoden, 
+=====PDFPAGE 14=====
+sukupuolen ja iän suhteen jaoteltuna saadaan Tilastokeskuksen ylläpitämistä väkilukutiedoista. Näillä tiedoilla 
+on keskeinen merkitys arvioitaessa syöpätaakkaa kuvaavia tunnuslukuja, koska Suomen väestön ikärakenne 
+on voimakkaasti muuttunut viime vuosikymmeninä ( Kuva 6). Väestön ikääntyessä syöpätapausten määrä 
+kasvaa, mutta tämä ei välttämättä tarkoita, että syövän ilmaantuvuus kasvaisi ikäryhmittäin tarkasteltuna.
+Kuva 6: Suomen väestön ikärakenne sukupuolittain vuonna 1953 ja vuonna 2022.
+Ikävakioitu ilmaantuvuus kuvaa uusien syöpätapausten määrää 100 000 henkilövuotta kohden, mikäli Suo-
+men väestön ikärakenne aineistossa vastaisi standardiväestöä. Standardiväestöksi on valittavissa ’maailman 
+vakioväestö’ ja ’Suomi 2014’. Maailman vakioväestö perustuu koko maailman ikärakenteeseen 1950-luvulla. 
+Suomi 2014 -valinta vakioi luvut vastaamaan Suomen väestön ikärakennetta vuodelta 2014. Ikävakioinnin 
+tarkoitus on lukujen vertailtavuus ikärakenteeltaan erilaisten väestöjen ja eri ajanjaksojen välillä. Suomi 
+2014 -vakioväestö soveltuu hyvin esimerkiksi kalenterivuosien ja sairaanhoitopiirien vertailuun, ja maailman 
+vakioväestö mahdollistaa vertailun muihin maihin.
+4.3 Syöpien aiheuttamat kuolemat – syöpäkuolleisuus
+Syövästä johtuvien kuolemien lukumäärä raportoidaan usein yhden vuoden aikana tai muuna valittuna ajan -
+jaksona. Syöpäkuolleisuus tarkoittaa syövästä johtuvien kuolemien määrä 100 000 henkilövuotta kohden.
+Ikävakioitu syöpäkuolleisuus kuvaa syövästä johtuvien kuolemien määrää 100 000 henkilövuotta kohden, 
+mikäli Suomen väestön ikärakenne vastaisi ‘standardiväestöä’. Standardiväestöksi on valittavissa ’maailman 
+vakioväestö’ ja ’Suomi 2014’. Maailman vakioväestö perustuu koko maailman ikärakenteeseen 1950-luvulla. 
+Suomi 2014 -valinta vakioi luvut vastaamaan Suomen väestön ikärakennetta vuodelta 2014. Ikävakiointi mah-
+dollistaa syöpäkuolleisuuden vertailun ikärakenteeltaan erilaisten väestöjen ja eri ajanjaksojen välillä. Suomi 
+2014 -vakioväestö soveltuu hyvin esimerkiksi kalenterivuosien ja sairaanhoitopiirien vertailuun, ja maailman 
+vakioväestö mahdollistaa vertailun muihin maihin.
+
+=====PDFPAGE 15=====
+4.4 Elossaolevat, joilla to dettu syöpä – vallitsevuus
+Vallitsevuus on väestössä tiettynä ajanhetkenä elossa olevien henkilöiden lukumäärä, joilla on aiemmin 
+todettu syöpä. Se on jaoteltu syövän toteamisesta kuluneen ajan suhteen. Esimerkiksi viisivuotisluku sisäl -
+lyttää vain ne potilaat, joiden syöpä on todettu enintään viisi vuotta ennen kyseistä ajanhetkeä (esimerkiksi 
+aikaisintaan 31.12.2005, jos tarkastellaan ajanhetkeä 31.12.2010). Alueelliset tilastot perustuvat henkilöiden 
+kotikuntaan syövän toteamisvuonna.
+Vallitsevuusosuus on syöpään sairastuneiden ja elossa olevien lukumäärä väestössä suhteessa väkilukuun. 
+Esimerkiksi vallitsevuusosuus 5000 per 100 000 tarkoittaa, että 5000 henkilöllä 100 000 henkilöstä (5 pro -
+sentilla väestössä) on aiemmin todettu syöpä.
+4.5 Riski sairastua syöpään ja kuolla syöpään
+Riski sairastua syöpään  on keskimääräinen elinikäinen todennäköisyys väestössä sairastua syöpään. Riski -
+arvio perustuu tässä raportissa viimeisimmän viisivuotisjakson ikäryhmittäisiin syövän ilmaantuvuus- sekä 
+väestön kokonaiskuolleisuuslukuihin. Riskiarviossa on huomioitu, että osa väestöstä välttää syövän, koska 
+kuolee sitä ennen muista syistä.
+Riski sairastua ja kuolla syöpään on keskimääräinen elinikäinen todennäköisyys väestössä sairastua ja kuolla 
+syöpään. Riskiarvio perustuu viimeisimmän viisivuotisjakson ikäryhmittäisiin syöpäkuolleisuus- sekä  
+väestön kokonaiskuolleisuuslukuihin. Riskiarviossa on huomioitu, että osa väestöstä välttää syöpäkuoleman, 
+koska kuolee sitä ennen muista syistä.
+4.6 Syöpäpotilaiden ennusteet – eloonjääminen
+Suhteellinen elossaololuku (potilaan ennuste) lasketaan vertaamalla potilaiden kuolleisuutta samaa suku-
+puolta olevan, samanikäisen ja samana kalenteriaikana eläneen Suomen väestön kuolleisuuteen. Tämä tun -
+nusluku kuvaa syövän vaarallisuutta. Luku voidaan tulkita todennäköisyytenä sille, että potilas olisi elossa 
+tietyn ajan jälkeen syövän toteamisesta, mikäli kyseinen syöpä olisi potilaan ainoa mahdollinen kuolinsyy. 
+Usein käytetään viiden vuoden suhteellista elossaololukua.
+Ikävakioitu suhteellinen elossaololuku vakioi potilaiden ikärakenteen koko maassa tuoreimpana 3-vuotisjak-
+sona todettujen potilaiden ikärakenteeseen (syöpätaudeittain ja sukupuolittain). Ikävakioinnin tarkoitus on 
+lukujen vertailtavuus ikärakenteeltaan erilaisten alueiden ja eri ajanjaksojen välillä. Ikävakioinnissa käytet-
+tiin perinteistä menetelmää, joka perustuu ikäryhmittäisiin elossaololukuihin. Ikävakioitu elossaololuku 
+puuttuu, jos jossakin ikäryhmässä ei ole yhtään potilasta elossa viiden vuoden jälkeen syövän toteamisesta.
+4.7 Syövän takia menetetyt elinvuodet
+Syövän takia menetetyt elinvuodet on laskettu arvioimalla potilaiden keskimääräinen elinaika ja vertaamalla 
+sitä samanikäisen ja samaa sukupuolta olevan väestöjoukon keskimääräiseen elinaikaan. Kymmenen vuoden 
+jälkeen syövän toteamisesta elossa olevien potilaiden kuolleisuuden oletettiin vastaavan samanikäisen väes-
+tön kokonaiskuolleisuutta. Poikkeuksena tästä ovat eturauhas- ja rintasyöpä, joissa oletettiin, että 10 vuoden 
+jälkeen potilailla jatkuu noin yhden prosentin vuosittainen ylikuolleisuus väestökuolleisuuteen verrattuna. 
+Koko väestön menettämien elinvuosien määrä saatiin kertomalla potilaan keskimäärin menettämä elinaika 
+yhden vuoden aikana todettujen potilaiden lukumäärällä (vuotuinen keskiarvo 2013–2022).
+=====PDFPAGE 16=====
+4.8 Aikasarjat ja muutoksen arviointi
+Pitkän aikavälin kehityskulku  Syövän ilmaantuvuuden ja syöpäkuolleisuuden kehitystä mitataan suhteellisella 
+vuosittaisella muutoksella (muutosprosentti). Menetelmä arvioi, onko ikävakioitu kehitys ollut tasaista vai 
+onko kehityksessä tapahtunut muutos tarkastelujakson aikana. Mikäli kehitys on muuttunut tilastollisesti 
+merkitsevästi, kuvataan muutospistettä edeltävä ja sen jälkeinen kehitys kahden muutosprosentin avulla.
+Elossaololukujen aikasarja perustuu potilaiden seuruuseen 13 viisivuotisjaksolla 1958–1962, …, 2018–2022. 
+Aikasarja on ikävakioitu 2018–2022 todettujen potilaiden ikärakenteeseen syöpätaudeittain. Naisten ja mies-
+ten luvut vakioitiin yhteiseen ikärakenteeseen. Ikävakioinnissa käytettiin tilastollista menetelmää, jolla saa -
+tiin elossaololuvun arvio mahdollisimman monelle vuosijaksolle myös pienimmissä potilasaineistoissa.
+Veri- ja imukudossyöpien aikasarjojen kattavuus on esitetty tarkemmin kappaleessa 5.3 Aikasarjojen 
+kattavuus.
+4.9 Ilmaantuvuuden ja kuolleisuuden ennusteet
+Syöpäilmaantuvuuden ennusteet vuosille 2022–2040 ja syöpäkuolleisuuden ennusteet vuosille 2023–2040 
+tehtiin Norjan Syöpärekisterissä kehitetyllä Nordpred-tilasto-ohjelmalla. Syöpäilmaantuvuuden ennusteen 
+pohjana ei käytetty vuosia 2020–2022 koronaviruspandemian aiheuttamasta toteamisvajeesta johtuen. 
+Menetelmä arvioi iän, kalenteri- ja syntymävuoden vaikutukset havaitusta syöpäilmaantuvuudesta käyttäen 
+tilastollista mallia. Nämä vaikutukset arvioitiin sukupuolittain ja syöpätaudeittain viimeisten 10–35 vuoden 
+historian perusteella. Ilmaantuvuuden ennusteessa oletetaan, että havaittu kalenteriaikatrendi tasoittuu ajan 
+myötä. Havaittua lineaarista trendiä leikattiin ennusteessa neljänneksellä vuosina 2025–2029 ja puolella 
+vuodesta 2030 alkaen. Ilmaantuvuusennusteiden pohjalta johdettiin ennusteet uusien syöpätapausten vuo -
+sittaisille tapausmäärille käyttämällä Tilastokeskuksen vuoden 2021 ennustetta Suomen väkiluvusta vuosille 
+2023–2040.
+4.10  Koronaviruspandemian vaikutus syöpäilmaantuvuuteen ja -kuolleisuuteen
+Vuonna 2022 todettujen uusien syöpien määrää verrattiin kappaleessa 4.9 kuvatulla menetelmällä lasket -
+tuun ennusteeseen. Vuoden 2022 tapausmäärän kokonaisvaje ennusteeseen nähden jaettiin 1) tyypillisestä 
+rekisteröintiviipeestä ja 2) muista syistä aiheutuneeseen vajeeseen. Rekisteröintiviipeen aiheuttama vaje 
+arvioitiin sen perusteella, paljonko tilastovuosien 2017–2019 tapausmäärät täydentyivät. Syöpäkuolleisuuden 
+kehitystä arvioitiin vertaamalla vuosina 2020–2022 syöpään kuolleiden lukumääriä ennusteeseen. Kuollei -
+suusennuste laskettiin kappaleessa 4.9 kuvatulla menetelmällä mutta ennusteen pohjana käytettiin vain vuo-
+teen 2019 ulottuvaa aikasarjaa.
+4.11  Alue-erot syöpäilmaantuvuudessa ja -kuolleisuudessa
+Syöpäilmaantuvuuden ja -kuolleisuuden arviointi pienillä alueilla on tilastollisen satunnaisvirheen vuoksi 
+epävarmaa. Yleisimpien syöpien ilmaantuvuutta ja kuolleisuutta arvioitiin kunnittain vuosina 2018–2022 
+käyttäen bayesiläistä hierarkkista mallia, jossa naapurikuntien ilmaantuvuus- ja kuolleisuuslukujen oletetaan 
+muistuttavan toisiaan. Tällä tilastollisella tasoitusmenetelmällä alueittaisten arvioiden satunnaisvirhettä kye-
+tään pienentämään. Menetelmällä arvioitiin kunnan ikävakioitu riskisuhde, joka kuvaa kunnan väestömää -
+rään suhteutettujen ikäryhmittäisten ilmaantuvuuksien ja kuolleisuuksien keskimääräistä suhteellista eroa 
+koko maahan verrattuna. Riskisuhteille ja alueen kuntien keskimääräiselle riskisuhteelle esitetään 95 %:n 
+posterioritodennäköisyysvälit.
+=====PDFPAGE 17=====
+4.12  Koulutusasteiden väliset ilmaantuvuuden ja kuolleisuuden riskisuhteet
+Syövän ilmaantuvuuden ja syöpäkuolleisuuden eroja koulutusasteiden välillä arvioitiin vertaamalla ikäryh -
+mäkohtaisia keskimääräisiä ilmaantuvuus- ja kuolleisuuslukuja viimeisimmän viisivuotisjakson aikana. Ikä-
+vakioitu riskisuhde (RR, risk ratio) kuvaa väestömäärään suhteutettujen ikäryhmittäisten ilmaantuvuuksien 
+ja kuolleisuuksien keskimääräistä suhteellista eroa perus- ja keskiasteen koulutuksen saaneilla verrattuna 
+korkea-asteen koulutuksen saaneisiin. Riskisuhteille esitetään 95 %:n luottamusvälit tilastollisen satunnais -
+virheen arvioimiseksi.
+=====PDFPAGE 18=====
+5 Aineisto ja laatu
+5.1 Syöpärekisterin tavoitteet
+Suomen Syöpärekisteri seuraa syöpätaakkaa Suomen koko väestössä. Tämä tarkoittaa uusien syöpätapaus -
+ten ja -kuolemien määrää, potilaiden eloonjäämistä, syövän vaaratekijöitä, ehkäisyä ja varhaista toteamista. 
+Lisäksi rekisteri laatii ennusteita tulevaisuuden syöpätaakasta.
+Yhä useampi paranee syövästä. Siksi yhtenä tulevaisuuden haasteena on varmistaa syövästä selvinneiden 
+elämänlaatu. On tärkeää selvittää, millaisia haittoja syöpähoidot aiheuttavat ja miten niitä voidaan ehkäistä 
+ja hoitaa.
+Epidemiologinen tutkimus pyrkii löytämään suuret linjat tutkimuksen suuntaamiselle. Syöpärekisteri toi -
+mittaa tietoja lukuisiin epidemiologisiin, kliinisiin ja syövän biologiaa selvittäviin tutkimuksiin. Rekisterin 
+työntekijät auttavat syöpätutkimuksen suunnittelussa ja ohjaavat oikean tutkimusasetelman valinnassa.
+5.2 Tilastoitavat ja ilmoitettavat taudit
+Syöpärekisteriin kerätään tiedot kaikista Suomessa todetuista syöpätapauksista. Terveydenhuollon toimijoilla 
+on lakisääteinen velvollisuus näiden tietojen toimittamiseen. Syöpäilmoitus tulee tehdä myös vahvasta syö -
+päepäilystä erityisesti silloin, kun histologinen tai sytologinen vahvistus puuttuu.
+Koska tilastojen tulee olla vertailukelpoisia yli ajan ja muiden maiden vastaaviin lukuihin nähden, niissä nou-
+datetaan kansainvälistä monisyöpäsääntöä, poislukien veri- ja imukudossyövät (ks. kappale 5.3 Aikasarjojen 
+kattavuus). Aivojen ja keskushermoston osalta rekisteriin kerätään ja syöpätilastoihin sisällytetään kaikki 
+kasvaimet, myös hyvänlaatuiset, ja virtsateiden osalta pahanlaatuisten lisäksi myös kasvutaipumukseltaan 
+epäselvät ja in situ- eli pintasyövät. Lisäksi rekisteriin kerätään tiettyjä muita ei-pahanlaatuisia syöpätauteja, 
+jotka tilastoidaan erillään varsinaisista syöpätaudeista, eivätkä ne sisälly kokonaissyöpälukuihin. Tällaisia ovat 
+esimerkiksi ihon basalioomat, munasarjojen kasvutaipumukseltaan epäselvät (ns. borderline) kasvaimet, rin-
+nan in situ -syövät ja kohdunkaulan syövän esiasteet.
+Syöpärekisteri päivittää vuosittain Tilastokeskuksesta kuolinsyytiedot kaikille rekisterissä oleville potilaille. 
+Lisäksi syöpärekisteriin tulee tieto niistä syöpäkuolemista, joista ei ole tehty ilmoituksia syöpärekisteriin. 
+Tällöin tieto syövästä perustuu ainoastaan kuolintodistukseen (DCO- eli death certificate only -tapaus).
+5.3 Aikasarjojen kattavuus
+Suomen syöpätiedot on rekisteröity kattavasti vuodesta 1953 lähtien. Luokittelun tarkentumisesta ja määritel-
+mien muutoksista johtuen tiettyjen tautien rekisteröinti on alkanut myöhemmin.
+Taulukossa (Taulukko 4) on annettu veri- ja imukudossyöpien aikasarjojen aloitusajankohdat, joista useim -
+mat poikkeavat rekisterin alusta, eli uusien tapausten ja syöpäkuolemien osalta vuodesta 1953 ja elossaoloti -
+lastoissa vuodesta 1958.
+=====PDFPAGE 19=====
+Taulukko 4: Tilaston aikasarjan alkamisvuosi ilmaantuvuudessa, kuolleisuudessa, eloonjäämisessä ja vallitsevuudessa imu-
+kudoksen ja verta muodostavan kudoksen pahanlaatuisten tautiryhmien osalta.
+Veri- ja imukudossyöpien toteaminen ja luokittelu on muuttunut merkittävästi rekisterin toiminta-aikana. 
+Luotettavat menetelmät eri tautimuotojen toteamiseksi ovat tulleet käyttöön vasta 1990-luvulla. Suomen Syö-
+pärekisterin käyttämä luokittelukoodisto uusittiin vuonna 2008, jolloin myös tilastovuosi 2007 luokiteltiin 
+uudelleen. Uusia tarkennuksia rekisteröintiä ohjaavaan kooditukseen on myös tullut tämän jälkeen. Näiden 
+tarkennusten myötä rekisteritiedot ovat yhä yksityiskohtaisempina tutkijoiden käytettävissä.
+Em. syistä johtuen veri- ja imukudossyöpien lukuja voi pitää luotettavina vasta 2000-luvulta lähtien, tiettyjen 
+alatyyppien osalta vasta 2007 alkaen. Muissa kiinteissä kasvaimissa aikasarjat ovat luotettavia jo 1950-luvulta 
+alkaen, tietty raportointivajaus huomioiden.
+Syöpärekisteri tilastoi myös ihon tyvisolusyövät, eli basalioomat (vuodesta 1964) ja kohdunkaulan vaikea-as -
+teiset esiasteet (dysplasia gravis vuodesta 1988 ja CINIII vuodesta 1991).
+=====PDFPAGE 20=====
+5.4 Tietolähteet
+Syöpärekisterillä on useita toisistaan riippumattomia tietolähteitä. Keskeisimpiä tietolähteitä ovat patologian 
+ilmoitukset (diagnoosit), joita saadaan vuosittain yli 330000. Kaikki Suomen patologian laboratoriot toimit -
+tavat tiedot samaan koodistoon perustuen rakenteisena (lähtöelin eli topografia ja solutyyppi eli morfologia) 
+ja lisäksi sanallisen lausuntotekstin pahanlaatuisia diagnooseja sisältävistä näytteistä. Sähköinen toimitus 
+käynnistyi 1980-luvun lopulla ja on toiminut jo runsaat 30 vuotta.
+Myös terveydenhuollon toimijat ovat velvollisia tekemään uusista syövistä ns. kliinisen syöpäilmoituksen, 
+joka on kooste sairauden toteamisvaiheesta. Kliiniset syöpäilmoitukset ovat keskeisiä sellaisissa syövissä, 
+joissa histologista varmistusta ei saada. Lisäksi kliiniset tiedot ovat perusteena syövän toteamisajankohdan 
+levinneisyyden rekisteröinnille. Syöpätapauksista kerätään tietoa myös hoitavan tahon tekemillä hoitoilmoi -
+tuksilla, joita tyypillisesti voi toimittaa useita eri hoitojaksoihin ja -tapoihin liittyen.
+Kaikki ilmoitukset toimitetaan syöpärekisteriin sähköisessä muodossa. Syöpärekisteri ylläpitää tietomalleja ja 
+koodistoja THL:n koodistopalvelimella, josta mallit voidaan ottaa käyttöön rakenteisen tiedon keräämiseksi.
+Syöpään sairastuneen henkilön kotikunta, muuttohistoria ja kuolinpäivä päivittyvät Väestötietojärjestelmästä. 
+Tilastokeskuksesta rekisteriin saadaan tiedot henkilöiden kuolinsyistä sekä sosioekonomisesta asemasta ja 
+koulutuksesta.
+Kliininen syöpätieto perustuu ilmoittajien aktiivisuuteen ja niiden vähäinen määrä on tällä hetkellä huo -
+lestuttava. Kliinisiä ilmoituksia on saatu viime vuosina vain noin 40 %:ssa uusia syöpätapauksia. Koska 
+kliinisellä syöpäilmoituksella kerätään tietoja, joita ei saada muista lähteistä, kuten tieto syövistä joista ei 
+ole histologista vahvistusta, on erityisesti pahanlaatuisten veritautien kattavuus puutteellista. Tilastovuoden 
+2022 osalta olemme päivittäneet verkkosivuillamme ( syoparekisteri.fi/tilastot/kliinisten-ilmoitusten-tilasto) 
+tilaston ilmoitusaktiivisuudesta. Määrää voi tarkastella sairaanhoitopiireittäin tai yliopistosairaaloittain ylei -
+simpien tilastoitavien syöpien osalta.
+5.5 Syöpätietojen koostaminen
+Syöpätapaukset koostetaan kansalliseksi rekisteriksi yksittäisten ilmoitusten avulla (kts. edellä). Kustakin 
+syövästä kooditetaan tilasto- ja tutkimuskäyttöön soveltuva tapausyhteenveto, jossa on valmiina syövän totea-
+misaika ja -tapa, taudin lähtöelin eli primaaripaikka, histologinen tyyppi ja levinneisyys toteamishetkellä. 
+Työtä ohjaavat kansainväliset rekisteröintiohjeet ja -koodistot (ICD-O-3). Työtä tekevät rekisterissä koulutetut 
+henkilöt, joiden tehtävänä on koostaa syöpätiedot saatujen tietojen perusteella joko uusiksi syöviksi tai osaksi 
+jo aiemmin todettuja syöpiä.
+Tilastovuodesta 2018 alkaen tapauskoosteiden luominen on osittain automatisoitu. Automaattinen käsit -
+tely perustuu rakenteiseen tietoon, ja on siksi riippuvainen tietomäärittelyjen mukaisesta ilmoitussisällöstä. 
+Automaattinen käsittely on käytössä 13 yleiselle syövälle ml. meningeoomat. Vuoden 2022 automaattisesti 
+koostetut tapaustiedot on tarkastettu systemaattisesti satunnaisotantaan perustuen ja tapauskoosteet todet -
+tiin laadultaan hyväksi.
+Syöpätietojen koostamiseen liittyen on keskeistä, että syöpärekisteröintiä tekevien osaaminen on riittävä. 
+Rekisterin vastaava lääkäri ja asiantuntijapatologi konsultoivat haasteellisten tapausten rekisteröinnissä. Pel-
+kästään kuolintietoihin pohjautuvien uusien syöpien toteamisaikaa tarkennetaan käyttämällä THL:n Hoitoil-
+moitusrekisterin diagnoosi- ja käyntiaikatietoja, jos ne varhentavat syövän toteamisaikaa.
+Kokonaan uutena tietona on käytettävissä eturauhassyövän levinneisyyttä kuvaava Gleasonin pistearvo  
+(Gleason score). Yli 90 %:lle tapauksia on saatavissa ainakin yksi Gleasonin pistearvo neljän kuukauden 
+sisällä syövän toteamisesta vuosina 2015–2022. Aikaisempien vuosien osalta Gleasonin pisteiden kattavuus 
+on matalampi.
+=====PDFPAGE 21=====
+5.6 Laatumittarit
+Syöpärekisterin laatua kuvataan tyypillisesti sellaisilla mittareilla kuten mikroskooppisesti, eli solu- tai kudos-
+näytteestä varmennettujen syöpätapausten osuus (MV-osuus), ainoastaan kuolintodistukseen perustuvien 
+tapausten osuus (DCO-osuus) ja lähtöelimeltään tuntemattomien tapausten osuus (%) kaikista syöpätapauk-
+sista. Tuorein tilastovuosi on aina osittain alustava näiden mittareiden suhteen, koska erityisesti kuolintodis-
+tusten kautta saatavia uusia syöpiä ilmenee rekisteriin vielä useita vuosia jälkikäteen. Tuoreimman tilaston 
+mukaan vuonna 2022 todetuissa syövissä MV-osuus oli 92,4 % (vuonna 2021 92,0 %), DCO-osuus 1,6 % 
+(vuonna 2021 1,7 %) ja lähtökohdaltaan tuntemattomia syöpiä oli 1,5 % vuonna 2022 (vuonna 2021 1,3 %), 
+valtaosa näistä 70-vuotiailla ja sitä vanhemmilla.
+=====PDFPAGE 22=====
+6 Ilmaantuvuus ja uudet syövät
+Yleisimpien syöpien ikävakioidut ilmaantuvuusluvut on esitetty kuvassa (Kuva 7) ja uusien syöpien lukumää-
+rät kuvassa (Kuva 8).
+Naisten tavallisin uusi syöpä vuonna 2022 oli rintasyöpä. Sen ikävakioitu ilmaantuvuus oli 158.2 per 100 000 
+henkilövuotta ja uusia tapauksia todettiin 4 867. Seuraavaksi yleisin oli paksu- ja peräsuolisyöpä (ilmaantu -
+vuus 54.5, 1 832 uutta tapausta), ja kolmanneksi yleisin oli keuhko- ja henkitorvisyöpä (ilmaantuvuus 35.2,  
+1 207 uutta tapausta).
+Eturauhassyöpä oli miesten tavallisin uusi syöpä vuonna 2022. Eturauhassyövän ikävakioitu ilmaantuvuus 
+oli 193.7 per 100 000 henkilövuotta (5 514 uutta tapausta). Seuraavaksi yleisimpiä miehillä olivat paksu- ja 
+peräsuolisyöpä (ilmaantuvuus 80.8, 2 241 uutta tapausta) sekä keuhko- ja henkitorvisyöpä (ilmaantuvuus 
+60.5, 1 740 uutta tapausta).
+Kuva 7: Naisten ja miesten syöpäilmaantuvuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 2014 väestöön) 
+yleisimmissä syöpätaudeissa vuonna 2022.
+=====PDFPAGE 23=====
+Kuva 8: Uusien syöpätapausten lukumäärä naisilla ja miehillä yleisimmissä syöpätaudeissa vuonna 2022.
+6.1 Ilmaantuvuus ikäryhmittäin
+Lasten ja nuorten aikuisten syövät poikkeavat vanhempien syövistä. Lasten ja nuorten uudet syövät ovat 
+tavallisimmin hematologisia (veri- ja imukudoksen) syöpiä tai aivojen ja keskushermoston kasvaimia, kuten 
+glioomia. Kuvassa (Kuva 9) esitetään syövän ilmaantuvuus alle 20-vuotiaassa väestössä. Vuonna 2022 alle 
+20-vuotiaiden syöpäilmaantuvuus oli noin 20 tapausta 100 000 henkilöä kohden ja uusia syöpätapauksia 
+todettiin 230. Akuutti lymfoblastinen leukemia ja Hodgkinin lymfooma olivat lasten ja nuorten aikuisten 
+yleisimpiä syöpätauteja.
+Kuvissa (Kuva 10) ja ( Kuva 11) esitetään syöpäilmaantuvuus 20-69-vuotiaassa ja 70 vuotta täyttäneessä  
+väestössä vuonna 2022. 20–69-vuotiaassa naisväestössä todettiin eniten rintasyöpiä (ilmaantuvuus  
+168.2/100 000, 2 878 uutta tapausta), paksu- ja peräsuolisyöpiä (42.4, 725 tapausta) sekä ihomelanoomia 
+(27.3, 467 tapausta). Vastaavan ikäisessä miesväestössä todettiin eniten eturauhassyöpiä (125.8, 2 212 uutta 
+tapausta), paksu- ja peräsuolisyöpiä (58, 1 020 tapausta) sekä keuhko- ja henkitorvisyöpiä (32.8, 575 tapausta).
+70 vuotta täyttäneessä naisväestössä yleisimmät syövät olivat rintasyöpä (372.6/100 000, 1 989 uutta  
+tapausta), paksu- ja peräsuolisyöpä (206.4, 1 102 tapausta) sekä ihon okasolusyöpä (150.6, 804 tapausta). 
+Vastaavan ikäisillä miehillä todettiin eniten eturauhassyöpiä (823.7, 3 302 tapausta), paksu- ja peräsuolisyöpiä 
+(303.6, 1 217 tapausta) sekä keuhko- ja henkitorvisyöpiä (290.4, 1 164 tapausta).
+=====PDFPAGE 24=====
+Kuva 9: Alle 20-vuotiaiden naisten ja miesten syöpäilmaantuvuus (100 000 henkilövuotta kohden) yleisimmissä syöpätau-
+deissa vuonna 2022.
+Kuva 10: 20–69-vuotiaiden naisten ja miesten syöpäilmaantuvuus (100 000 henkilövuotta kohden) yleisimmissä syöpä-
+taudeissa vuonna 2022.
+=====PDFPAGE 25=====
+Kuva 11: 70 vuotta täyttäneiden naisten ja miesten syöpäilmaantuvuus (100 000 henkilövuotta kohden) yleisimmissä syö -
+pätaudeissa vuonna 2022.
+6.2  Riski sairastua ja kuolla syöpään
+Taulukossa (Taulukko 5) on esitetty arviot siitä, kuinka suuri osuus naisista ja miehistä sairastuu syöpään 
+ja kuinka suuri osuus kuolee syöpään elämänsä aikana. Syöpään sairastuu keskimäärin 36 % naisista ja 38 
+% miehistä. Syöpään kuolee 17 % naisista ja 20 % miehistä. Arviot voidaan tulkita vastasyntyneen lapsen 
+elinikäisenä syöpäriskinä ja syöpäkuoleman riskinä. Laskelmissa oletetaan, että henkilön syöpävaara, syöpä-
+kuoleman vaara ja kokonaiskuoleman vaara eri elämänvaiheissa olisi sama kuin vastaavan ikäisessä väestössä 
+vuosina 2018–2022.
+Syöpätaudeittain tarkasteltuna rintasyöpään sairastuu 13,4 % naisista ja eturauhassyöpään 13,9 % miehistä. 
+Naisista rintasyöpään kuolee 3,1 % ja miehistä eturauhassyöpään 3,9 %. Laskelman mukaan keuhkosyöpään 
+sairastuu 3,3 % naisista ja 5,3 % miehistä. Keuhkosyöpään kuolee 2,7 % naisista ja 4,8 % miehistä. Koska 
+tupakointitavat ovat sekä naisilla että miehillä muuttuneet paljon, nämä arviot tuskin kuvaavat minkään syn-
+tymävuosikohortin henkilöiden todellista keuhkosyöpäriskiä. Vastasyntyneistä yhä harvempi aloittaa tupa -
+koinnin, jolloin keuhkosyöpäriski jää arviota pienemmäksi.
+Taulukko 5:  Riski (%) sairastua ja kuolla syöpätautiin elämän aikana. Laskelma perustuu syövän ilmaantuvuuteen,syövän 
+aiheuttamaan kuolleisuuteen ja väestön kokonaiskuolleisuuteen vuosina 2018–2022.
+Naiset Miehet
+Syöpätauti ICD-10 Sairastuu syöpään Kuolee syöpään Sairastuu syöpään Kuolee syöpään
+Kaikki syövät yhdessä C00-96,D09.0-1,D32-33, D41-43,D45-47,D76 36.2 17.3 37.9 20.1
+Eturauhanen C61 – – 13.9 3.9
+Rinta C50 13.4 3.1 0.1 <0.1
+Paksu- ja peräsuoli C18-20 5.0 2.1 5.8 2.6
+Keuhkot, henkitorvi C33-34 3.3 2.7 5.3 4.8
+Ihomelanooma C43 2.3 0.3 2.7 0.4
+=====PDFPAGE 26=====
+7  Kuolleisuus
+Eniten kuolleisuutta aiheuttaneiden syöpätautien ikävakioidut kuolleisuusluvut on esitetty kuvassa (Kuva 12) 
+ja syöpäkuolemien lukumäärät kuvassa (Kuva 13). Syöpäkuolemia aiheutti eniten keuhko- ja henkitorvisyöpä 
+(2 410 kuolemaa), paksu- ja peräsuolisyöpä (1 406 kuolemaa) ja haimasyöpä (1 266 kuolemaa).
+Eniten naisten syöpäkuolemia aiheutti keuhko- ja henkitorvisyöpä (kuolleisuus 25.4 per 100 000 henkilö -
+vuotta, 915 kuolemaa). Seuraavaksi eniten naisia kuoli rintasyöpään (25.2, 871 kuolemaa) ja haimasyöpään 
+(18, 654 kuolemaa).
+Miehiä kuoli eniten keuhko- ja henkitorvisyöpään (kuolleisuus 52.2 per 100 000 henkilövuotta, 1 495 kuole-
+maa). Seuraavaksi eniten oli eturauhassyövästä aiheutuneita kuolemia (34.8, 920 kuolemaa) sekä paksu- ja 
+peräsuolisyöpäkuolemia (27.4, 754 kuolemaa).
+ 
+Kuva 12: Syöpäkuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 2014 väestöön) naisilla ja miehillä 
+eniten kuolleisuutta aiheuttaneissa syöpätaudeissa vuonna 2022.
+=====PDFPAGE 27=====
+Kuva 13: Syöpäkuolemien lukumäärä naisilla ja miehillä eniten kuolemia aiheuttaneissa syöpätaudeissa vuonna 2022.
+7.1  Kuolleisuus ikäryhmittäin
+Syöpään kuoli vuonna 2022 yhteensä 18 alle 20-vuotiasta, joilla eniten syöpäkuolemia aiheuttivat aivojen ja 
+keskushermoston kasvaimet.
+Kuvissa (Kuva 14 ) ja ( Kuva 15) esitetään syöpäkuolleisuus (100 000 henkilöä kohden vuonna 2022)  
+20–69-vuotiaassa ja 70 vuotta täyttäneessä väestössä. 20–69 vuotiailla naisilla eniten kuolemia aiheutti rinta-
+syöpä (kuolleisuus 17.6, 301 kuolemaa), keuhko- ja henkitorvisyöpä (14.6, 247 kuolemaa) sekä paksu- ja perä-
+suolisyöpä (10.4, 175 kuolemaa). Vastaavan ikäisten miesten osalta eniten syöpäkuolemia aiheutti keuhko- ja 
+henkitorvisyöpä (25.6, 448 kuolemaa), paksu- ja peräsuolisyöpä (13.0, 225 kuolemaa) sekä haimasyöpä (11, 
+193 kuolemaa).
+70 vuotta täyttäneiden naisten yleisimpiä syöpäkuoleman syitä olivat keuhko- ja henkitorvisyöpä (124.8, 666 
+kuolemaa), rintasyöpä (106.8, 570 kuolemaa), sekä haimasyöpä (92.9, 496 kuolemaa). 70 vuotta täyttäneessä 
+miesväestössä eniten syöpäkuolemia vuonna 2022 aiheuttivat keuhko- ja henkitorvisyöpä (260.4, 1 044 kuo-
+lemaa), eturauhassyöpä (205.1, 822 kuolemaa) sekä paksu- ja peräsuolisyöpä (131, 525 kuolemaa).
+=====PDFPAGE 28=====
+ 
+Kuva 14: 20–69-vuotiaiden naisten ja miesten syöpäkuolleisuus (100 000 henkilövuotta kohden) eniten kuolleisuutta 
+aiheuttaneissa syöpätaudeissa vuonna 2022.
+ 
+Kuva 15: 70 vuotta täyttäneiden naisten ja miesten syöpäkuolleisuus (100 000 henkilövuotta kohden) eniten kuolleisuutta 
+aiheuttaneissa syöpätaudeissa vuonna 2022.
+=====PDFPAGE 29=====
+8  V allitsevuus
+Syövän vallitsevuus on tilastollinen tunnusluku, jota käytetään arvioitaessa terveydenhuollon kuormaa ja 
+resursseja. Vallitsevuuteen vaikuttaa syöpäilmaantuvuuden lisäksi tyypillinen sairastumisikä ja potilaiden 
+ennuste. Vaikka uusia keuhkosyöpätapauksia todetaan paljon, on keuhkosyövän vallitsevuus matala korkean 
+kuolleisuuden takia. 
+Vuoden 2022 lopussa Suomessa oli elossa 323 097 henkilöä (vallitsevuus), joilla oli aiemmin todettu syöpä. 
+Tämä oli 5,8 % Suomen väestöstä (vallitsevuusosuus). Vallitsevuudeltaan yleisimmät syövät on esitetty suku-
+puolittain kuvassa (Kuva 16).
+Rintasyövän vallitsevuus naisilla oli vuoden 2022 lopussa 82 068, paksu- ja peräsuolisyövän 15 751 ja  
+kohdunrungon syövän 13 240. Eturauhassyövän vallitsevuus oli vuoden 2022 lopussa 61 514. Paksu- ja perä-
+suolen syöpään sairastuneita miehiä oli elossa 15 591 ja ihomelanoomaan sairastuneita 11 027.
+Jos rajaudutaan niihin henkilöihin, joilla syövän toteamisesta on kulunut enintään 5 vuotta (todettu vuosina 
+2018–2022), vuoden 2022 lopussa elossa oli 53 254 naista ja 53 188 miestä.
+Kuva 16: Syöpään sairastuneiden ja elossa olevien lukumäärä vuoden 2022 lopussa.
+=====PDFPAGE 30=====
+9 P otilaiden eloonjääminen
+Viiden vuoden suhteellinen elossaololuku oli vuosina 2020-2022 seuratuilla miespotilailla 69 % ja nais-
+potilailla 71 %. Verrattaessa aiempaan vuosijaksoon 2017–2019 elossaololuku oli kasvanut sekä naisilla että 
+miehillä 0,6 prosenttiyksikköä.
+Naisten rintasyövässä elossaololuku oli 92 % ja eturauhassyövässä 94 % vuosina 2020–2022 seuratuilla 
+potilailla (Kuva 17). Paksu- ja peräsuolisyövässä elossaololuku oli keskimäärin 69 % ja keuhkosyövässä 18 %. 
+Haimasyövässä elossaololuku oli vain 7 %. Näiden viiden syöpätaudin osalta elossaololuvut kasvoivat naisilla 
+eniten keuhkosyövässä (1,4 prosenttiyksikköä kasvua vuosijaksolta 2017–2019 jaksolle 2020–2022) ja mie-
+hillä paksu- ja peräsuolisyövässä (3,6 prosenttiyksikköä).
+Kuvissa (Kuva 18 ja Kuva 19) sekä taulukoissa (Taulukko 10 ja Taulukko 11) on esitetty elossaololuvut kolmelle 
+ikäryhmälle: 0–54, 55–74 ja yli 75-vuotiaina todetuille potilaille. Nuorimman ikäryhmän potilaiden elossaolo-
+luvut olivat suuremmat kuin iäkkäämpien luvut useimmissa syöpätaudeissa. Naisilla rintasyövässä ja iho -
+melanoomassa elossaololuvut olivat suunnilleen samalla tasolla alle 55-vuotiailla ja 55–74-vuotiailla mutta 
+yli 75-vuotiaiden elossaololuvut olivat muita pienemmät. Keuhkosyövässä elossaololuvut poikkesivat selvästi 
+toisistaan myös alle 55- ja 55–74-vuotiaina todettujen välillä. Alle 55-vuotiaana keuhkosyöpään sairastuneiden 
+naisten 5 vuoden elossaololuku oli 48 %, 55–74-vuotiaina todettujen 25 % ja yli 75-vuotiaina todettujen 17 %.
+=====PDFPAGE 31=====
+Kuva 17: Viiden vuoden suhteelliset elossaololuvut (%) vuosina 2020–2022 seuratuilla potilailla sukupuolittain ja syöpätau-
+deittain. Naisilla kurkunpään syövän ja miehillä rintasyövän elossaololukua ei esitetä pienen tapausmäärän takia.
+=====PDFPAGE 32=====
+Kuva 18: Viiden vuoden suhteelliset elossaololuvut (%) vuosina 2020–2022 seuratuilla naispotilailla ikäryhmittäin (alle 
+55-vuotiaana, 55–74-vuotiaana ja yli 75-vuotiaana todetuilla) naisten seitsemän yleisimmän syöpätaudin (pl. kypsät B-solu -
+kasvaimet ja ihon okasolusyöpä) osalta.
+Kuva 19: Viiden vuoden suhteelliset elossaololuvut (%) vuosina 2020–2022 seuratuilla miespotilailla ikäryhmittäin (alle 
+55-vuotiaana, 55–74-vuotiaana ja yli 75-vuotiaana todetuilla) miesten seitsemän yleisimmän syöpätaudin (pl. kypsät B-solu-
+kasvaimet ja ihon okasolusyöpä) osalta.
+=====PDFPAGE 33=====
+10  S yövän takia menetetyt elinvuodet
+Yhteensä väestössä arvioitiin menetettävän noin 192 000 elinvuotta yhden vuoden aikana todettujen syöpien 
+takia (Taulukko 6). Naiset menettävät 95 300 vuotta ja miehet 96 500 vuotta.
+Koko väestössä eniten elinvuosia menetettiin keuhkosyövän takia (34 600 vuotta). Seuraavaksi eniten mene-
+tettiin imukudoksen ja verta muodostavan kudoksen syöpien (18 200), paksu- ja peräsuolisyövän (17 400), 
+haimasyövän (17 000) ja rintasyövän (16 300) takia. Muissa syöpätaudeissa miesten ja naisten yhteenlasketut 
+menetetyt elinvuodet olivat selvästi pienempiä. Naiset menettävät eniten elinvuosia rintasyövän takia. Mie-
+hillä eturauhassyövän takia menetettyjen elinvuosien määrä (6 190) oli pienempi kuin haimasyövän takia 
+menetetyt elinvuodet (8 260).
+Kuvissa (Kuva 20 ja Kuva 21) on esitetty syövän keskimääräinen toteamisikä ja arviot potilaiden keskimää -
+räisestä elinajasta ja syövän takia menetetystä elinajasta vuosina 2013–2022 todetuissa syövissä. Syöpään 
+sairastuneen potilaan menetettyihin elinvuosiin vaikuttaa syövän jälkeisen elinajan lisäksi sairastumisikä. 
+Keskimääräinen sairastumisikä vaihteli kivessyöpään sairastuneiden 36 vuodesta ihon okasolusyöpään sai -
+rastuneiden naisten 80 vuoteen. Syöpä voi lyhentää elinaikaa erityisen paljon nuorena sairastuneilla.
+Rintasyöpään sairastuneiden naisten keskimääräinen sairastumisikä oli 65 vuotta. Heidän arvioitiin elävän 
+keskimäärin 19,6 vuotta syövän toteamisen jälkeen ja menettävän 3,3 vuotta elinaikaa, koska väestökuollei -
+suuden perusteella heidän olisi odotettu elävän 22,9 vuotta. Koko väestössä menetettyjen elinvuosien mää -
+rään vaikuttaa myös syövän ilmaantuvuus. Keskimäärin 4 925 naista sairastui vuosittain rintasyöpään vuo-
+sina 2013–2022. Naisväestössä arvioitiin menetettävän 16 300 elinvuotta yhden vuoden aikana todettavien 
+rintasyöpien takia (Taulukko 6, väritetty pinta-ala Kuva 20).
+Eturauhassyöpäpotilaat olivat todettaessa keskimäärin 72-vuotiaita. Heidän arvioitiin elävän keskimäärin 13,2 
+vuotta syövän toteamisen jälkeen ja menettävän syövän takia 1,2 vuotta elinaikaa. Vuosina 2013–2022 todet-
+tiin keskimäärin 5 162 eturauhassyöpää vuosittain. Väestössä menetetään yhden vuoden aikana todettujen 
+eturauhassyöpien takia keskimäärin 6 190 elinvuotta (Taulukko 6, väritetty pinta-ala Kuva 21).
+=====PDFPAGE 34=====
+ 
+Taulukko 6: Menetettyjen elinvuosien määrä yhden vuoden aikana todettavien syöpien takia sukupuolittain ja syöpätaudeit-
+tain. Mukana laskelmassa ovat vuosina 2013–2022 todetut syövät.
+=====PDFPAGE 35=====
+Kuva 20: Naisten keskimääräinen sairastumisikä, elinaika syövän toteamisen jälkeen ja syövän takia menetettyjen elinvuo-
+sien määrä syöpätaudeittain vuosina 2013–2022 todetuilla potilailla.
+=====PDFPAGE 36=====
+Kuva 21: Miesten keskimääräinen sairastumisikä, elinaika syövän toteamisen jälkeen ja syövän takia menetettyjen elinvuo-
+sien määrä syöpätaudeittain vuosina 2013–2022 todetuilla potilailla.
+=====PDFPAGE 37=====
+11  Aikasarjat
+Kuvissa Kuva 22 – Kuva 30 on esitetty syöpäilmaantuvuuden ja -kuolleisuuden sekä potilaiden viiden vuo -
+den suhteellisten elossaololukujen aikasarjat ICD-10-luokitusta mukaillen. Ilmaantuvuuden ja kuolleisuu -
+den muutokset 1990-luvun alusta on esitetty taulukoissa Taulukko 12 – Taulukko 15. Muutos on kuvattu 
+keskimääräisenä vuosittaisena muutosprosenttina. Jos kehityksessä on tapahtunut tilastollisesti merkitsevä 
+muutos, esitetään erilliset muutosprosentit kahdelle peräkkäiselle kalenterivuosijaksolle. Ilmaantuvuuden 
+muutosprosentin arviossa aikasarjaa tarkasteltiin vain vuoteen 2019 asti, jotta koronaviruspandemian aiheut-
+tama vaje vuoden 2020 tapausmäärään ei vaikuta pitkän aikavälin muutosprosentin arvioon.
+1.  Huuli: Miehillä ilmaantuvuus ja kuolleisuus ovat pienentyneet. Naisilla sekä ilmaantuvuus että  
+kuolleisuus ovat pysyneet pieninä. Elossaololuku on ollut viime vuosina noin 90 %  (Kuva 22).
+2.  Nielu: Ilmaantuvuus on kasvanut 2000-luvulla. Miehillä ilmaantuvuus on noin kolminkertainen naisiin 
+verrattuna. Kuolleisuus on pysynyt samalla tasolla. Elossaololuku on kasvanut tasaisesti 1990-luvulta 
+lähtien ja on nykyisin noin 70 % naisilla ja 60 % miehillä (Kuva 22).
+3.  Ruokatorvi: Ilmaantuvuus ja kuolleisuus ovat pienentyneet 2000-luvun alkuun saakka. Miehillä ilmaan-
+tuvuus on hieman suurentunut 2000-luvulla. Elossaololuku on kasvanut hitaasti ja on nykyisin noin 
+20 % naisilla ja 15 % miehillä (Kuva 22).
+4.   Maha: Ilmaantuvuus ja kuolleisuus ovat pienentyneet koko havaintojakson ajan. Elossaololuku on pysy -
+nyt 2000-luvulla naisilla noin 30 %:n ja miehillä noin 25 %:n tasolla (Kuva 23).
+5.   Paksu- ja peräsuoli: IIlmaantuvuus on kasvanut naisilla ja erityisesti miehillä. Kuolleisuus on pienenty-
+nyt 1990-luvulta lähtien. Elossaololuku on kasvanut ja on nykyisin noin 70 % sekä naisilla että miehillä  
+(Kuva 23).
+6.  Maksa: Ilmaantuvuus ja kuolleisuus ovat kasvaneet, miehillä voimakkaammin kuin naisilla. Elossaolo -
+luku on kasvanut hitaasti ja on nykyisin noin 10 % (Kuva 23).
+7.  Sappirakko, sappitiet: Ilmaantuvuus kasvoi 1980-luvulle asti ja on sen jälkeen pienentynyt etenkin nai -
+silla. Elossaololuku on kasvanut hitaasti ja on nykyisin noin 15 % naisilla ja 10 % miehillä (Kuva 24).
+8.  Haima: Ilmaantuvuus ja kuolleisuus ovat pysyneet samalla tasolla 1980-luvulta lähtien molemmilla 
+sukupuolilla. Elossaololuku on nykyisin yli 5 %  (Kuva 24).
+9.  Kurkunpää: Miehillä ilmaantuvuus ja kuolleisuus ovat pienentyneet 1970-luvulta lähtien. Naisilla ilmaan-
+tuvuus ja kuolleisuus ovat pysyneet pieninä. Elossaololuku on pysynyt pitkään noin 60 %:ssa (Kuva 24).
+10. Keuhkot, henkitorvi: Naisilla ilmaantuvuus ja kuolleisuus ovat kasvaneet koko havaintojakson ajan.  
+Miehillä kasvu on kääntynyt 1970-luvun lopussa laskuun. Ilmaantuvuus on miehillä yhä lähes kaksin-
+kertainen naisiin verrattuna. Elossaololuku on kasvanut naisilla yli 20 %:iin ja miehillä lähes 15 %:iin 
+(Kuva 25).
+11.  Rinta, naiset: Ilmaantuvuus on kasvanut koko havaintojakson ajan. Kuolleisuus on kääntynyt laskuun 
+1990-luvulla. Elossaololuku on nykyisin noin 90 % (Kuva 25).
+12.  Eturauhanen:  Ilmaantuvuus on kasvanut. Kasvu kiihtyi 1990-luvulla, ja ilmaantuvuus oli korkeimmil -
+laan vuonna 2004. Nykyisin ilmaantuvuus on samalla tasolla kuin 1990-luvun puolivälissä. Kuolleisuus 
+kääntyi laskuun 1990-luvulla. Elossaololuku on kasvanut ja on nykyisin yli 90 % (Kuva 25).
+=====PDFPAGE 38=====
+13.  Kohdunkaula: Ilmaantuvuus pieneni 1960-luvulta 1990-luvulle asti ja on pysynyt samalla tasolla 
+siitä lähtien. Kuolleisuuden lasku on jatkunut vielä 2000-luvulla. Elossaololuku on nykyisin yli 70 %  
+(Kuva 25).
+14. Kohdunrunko: Ilmaantuvuus kasvoi 2000-luvun vaihteeseen asti ja kääntyi sen jälkeen hienoiseen las -
+kuun. Kuolleisuus on pysynyt samalla tasolla. Elossaololuku on kasvanut 2000-luvun alkuun asti ja on 
+nykyisin yli 80 % (Kuva 25).
+15.  Munasarjat ym.: Ilmaantuvuus ja kuolleisuus kasvoivat 1990-luvulle asti ja kääntyivät sen jälkeen las -
+kuun. Elossaololuku on pysynyt 2000-luvulla noin 45 %:n tasolla (Kuva 26).
+16. Kives: Ilmaantuvuus on kasvanut voimakkaasti 1980-luvulta lähtien, mutta kasvu taittui 2010-luvulla. 
+Kuolleisuus ja elossaololuku ovat pysyneet 1990-luvulta lähtien samalla tasolla. Elossaololuku on nykyi -
+sin noin 95 % (Kuva 26).
+17.  Munuainen: Ilmaantuvuus ja kuolleisuus ovat kasvaneet 1990-luvulle asti. 2000-luvulla miesten ilmaan-
+tuvuus on ensin laskenut ja kääntynyt myöhemmin uudestaan nousuun. Naisilla ilmaantuvuus on pysy-
+nyt samalla tasolla 1990-luvulta lähtien. Kuolleisuus on vähentynyt 2000-luvulla. Elossaololuku on kas -
+vanut yhä 2000-luvulla ja on nykyisin yli 70 % (Kuva 26).
+18. Rakko ja virtsatiet: Naisilla ilmaantuvuus on kasvanut 1990-luvulle asti ja pysynyt sen jälkeen samalla 
+tasolla. Miehillä ilmaantuvuus oli suurimmillaan 1990-luvun puolivälissä. Sen jälkeen miesten ilmaan-
+tuvuus on ensin laskenut ja myöhemmin tasoittunut. Ilmaantuvuus on miehillä noin nelinkertainen nai-
+siin verrattuna. Kuolleisuus on pienentynyt 1970-luvun jälkeen. Elossaololuku on kasvanut ja on nykyisin 
+noin 70 % naisilla ja 75 % miehillä (Kuva 26).
+19. Ihomelanooma: Ilmaantuvuus on kasvanut 2010-luvun puoliväliin asti. Naisilla kuolleisuus on pysynyt 
+samalla tasolla 1970-luvulta lähtien. Miehillä kuolleisuus on kasvanut 2010-luvun puoliväliin asti, mutta 
+huomattavasti ilmaantuvuutta maltillisemmin. Elossaololuku on nykyisin yli 90 % (Kuva 27).
+20. Ihon okasolusyöpä: Ilmaantuvuus on kasvanut koko havaintojakson ajan. Miehillä ilmaantuvuuden 
+kasvu on kiihtynyt 2000-luvulla. Kuolleisuus on pysynyt erittäin pienenä ja elossaololuku yli 90 %:n 
+tasolla (Kuva 27).
+21. Glioomat: Ilmaantuvuus on kasvanut koko havaintojakson ajan. Kuolleisuus on kasvanut 1990-luvulle 
+asti, minkä jälkeen se on naisilla pysynyt samalla tasolla ja miehillä edelleen kasvanut. Elossaololuku on 
+kasvanut hitaasti ja on nykyisin naisilla noin 30 % ja miehillä 25 % (Kuva 27).
+22. Meningeoomat: Ilmaantuvuus on kasvanut 2000-luvulle asti ja pysynyt sen jälkeen tasaisena. Naisilla 
+ilmaantuvuus on yli kaksinkertainen miehiin verrattuna. Kuolleisuus on ollut vähäistä ja edelleen pie -
+nentynyt 1990-luvulta. Elossaololuku on kasvanut ja on nykyisin noin 95 % (Kuva 28).
+23. Kilpirauhanen: Ilmaantuvuus on kasvanut molemmilla sukupuolilla. Naisilla ilmaantuvuus on yli kaksin-
+kertainen miehiin verrattuna. Naisilla kuolleisuus on laskenut 1990-luvun alusta. Miehillä kuolleisuus 
+on pysynyt 1990-luvun alusta samalla tasolla. Elossaololuku on nykyisin naisilla noin 95 % ja miehillä 
+noin 85 % (Kuva 28).
+24. Sidekudos, pehmytkudos: Ilmaantuvuus on kasvanut naisilla 1990-luvulle asti. Miehillä ilmaantuvuu-
+den kasvu on jatkunut koko havaintojakson ajan. Kuolleisuudessa ei ole ollut muutoksia kummallakaan 
+sukupuolella. Elossaololuku on nykyisin noin 60 % (Kuva 28).
+25. Hodgkinin lymfooma: Ilmaantuvuus on pysynyt 1990-luvun alusta lähtien samalla tasolla, mutta kuollei-
+suus on yhä pienentynyt 1990-luvulla. Elossaololuku on kasvanut ja on nykyisin noin 90 % (Kuva 29).
+26. Myelooma ja muut plasmasolutaudit:  Ilmaantuvuus ja kuolleisuus kasvoivat 1980-luvun loppuun asti 
+molemmilla sukupuolilla. Sen jälkeen ilmaantuvuus on pysynyt samalla tasolla, mutta kuolleisuus on 
+pienentynyt. Elossaololuku on kasvanut 2000-luvulla ja on nykyisin noin 45 % sekä naisilla että miehillä 
+(Kuva 29).
+=====PDFPAGE 39=====
+27. Akuutti lymfoblastileukemia/lymfooma: Ilmaantuvuus on pysynyt 1980-luvulta lähtien samalla tasolla, 
+mutta kuolleisuus on pienentynyt. Elossaololuku on kasvanut paljon ja on nykyisin yli 75 % (Kuva 29).
+28. Krooninen lymfaattinen leukemia: Ilmaantuvuus ja kuolleisuus ovat pienentyneet 1980-luvulta lähtien 
+molemmilla sukupuolilla. Elossaololuku on kasvanut tasaisesti ja on nykyisin yli 80 % naisilla ja noin 
+75 % miehillä (Kuva 30).
+29. Akuutti myelooinen leukemia: Ilmaantuvuus on pysynyt samalla tasolla 1980-luvulta lähtien, mutta kuol-
+leisuus on pienentynyt. Elossaololuku on kasvanut selvästi 1980-luvulta ja on nykyisin noin 25 % naisilla 
+ja 20 % miehillä (Kuva 30).
+30. Krooninen myelooinen leukemia: Ilmaantuvuus ja kuolleisuus ovat pienentyneet koko havaintojakson 
+ajan molemmilla sukupuolilla. Elossaololuku on kasvanut erityisen paljon 2000-luvulla ja on nykyisin yli 
+70 % (Kuva 30).
+=====PDFPAGE 40=====
+Kuva 22: Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 
+2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) sukupuolittain vuosina 1953–2022.
+=====PDFPAGE 41=====
+Kuva 23: Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 
+2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) sukupuolittain vuosina 1953–2022.
+=====PDFPAGE 42=====
+Kuva 24: Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 
+2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) sukupuolittain vuosina 1953–2022.
+=====PDFPAGE 43=====
+Kuva 25: Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 
+2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) sukupuolittain vuosina 1953–2022.
+=====PDFPAGE 44=====
+Kuva 26: Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 
+2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) sukupuolittain vuosina 1953–2022.
+=====PDFPAGE 45=====
+Kuva 27: Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 
+2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) sukupuolittain vuosina 1953–2022.
+=====PDFPAGE 46=====
+Kuva 28: Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 
+2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) sukupuolittain vuosina 1953–2022.
+=====PDFPAGE 47=====
+Kuva 29: Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 
+2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) sukupuolittain vuosina 1953–2022.
+=====PDFPAGE 48=====
+Kuva 30: Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 
+2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) sukupuolittain vuosina 1953–2022.
+=====PDFPAGE 49=====
+12  Ennusteet
+Vuonna 2040 uusia syöpätapauksia todetaan ennusteen mukaan noin 48 500 (Taulukko 7). Vuotuisen tapaus-
+määrän ennustetaan kasvavan 24 % vuoden 2022 ennusteeseen verrattuna. Tapausmäärän kasvu johtuu 
+pääasiassa väestön ikääntymisestä. Yli 75-vuotiailla todettujen syöpätapausten määrä kasvaa 63 prosentilla 
+15 810 tapauksesta 25 800 tapaukseen (Kuva 31). Alle 75-vuotiailla tapausmäärä pysyy lähes ennallaan tulevina 
+vuosina. Syövän ikävakioidun ilmaantuvuuden ennustetaan kasvavan 3 %, 4 % naisilla ja 2 % miehillä.
+Eturauhassyövän ennuste ei perustu havaittua kehitystä hyödyntävään ennustemalliin, koska yleistyneen   
+psatestauksen aiheuttama epäsäännöllinen ilmaantuvuuskehitys ei sovellu mallin pohjaksi. Eturauhassyövän 
+ennusteessa oletettiin, että kussakin ikäryhmässä ilmaantuvuus pysyy samalla tasolla kuin vuosina 2015–2019. 
+Eturauhassyövässä tapausmäärä kasvaa 5 747 tapauksesta 6 830 tapaukseen (kasvua 19 %, Taulukko 7). Rinta-
+syövässä kasvu 5 410 tapauksesta 6 070 tapaukseen (kasvua 12 %, Taulukko 7) on maltillisempaa kuin eturau-
+hassyövässä, koska rintasyövän ilmaantuvuus ei jatka kasvua 65 ikävuoden jälkeen. Eturauhassyövän ilmaan -
+tuvuus kasvaa iän myötä ja on korkeimmillaan 80 vuoden iässä.
+Yleisimpien syöpien osalta ihomelanooman tapausmäärä kasvaa suhteellisesti eniten (39 %, Taulukko 7). 
+Poikkeuksellisen suuri kasvu johtuu siitä, että ihomelanooman ikävakioitu ilmaantuvuus on kasvanut voi-
+makkaasti ja kasvun ennustetaan jatkuvan (20 % vuodesta 2022 vuoteen 2040, Taulukko 7).
+Keuhkosyövän ilmaantuvuuden ennusteessa on selvä ero miesten ja naisten välillä (Taulukko 7). Naisilla ikä-
+vakioidun ilmaantuvuuden ennustetaan kasvavan vuoteen 2032 asti ja vuonna 2040 keuhkosyöpiä todetaan 
+21 % enemmän vuoteen 2022 verrattuna. Vaikka miehillä keuhkosyöpä muuttuu harvinaisemmaksi ja ikäva-
+kioidun ilmaantuvuuden ennustetaan pienenevän 14 %, tapausmäärä kasvaa silti noin 5 %.
+Syövän aiheuttama ikävakioitu kuolleisuus pienenee ennusteen mukaan edelleen (Taulukko 7). Kaikkien syö-
+pien aiheuttama kuolleisuus pienenee keskimäärin 11 % vuodesta 2022 vuoteen 2040, 12 % naisilla ja 10 % 
+miehillä. Vuonna 2040 syöpään kuolee 16 000 ihmistä, joka on 20 % enemmän kuin vuonna 2022. Kuollei-
+suus pienenee eniten ihomelanoomassa (39 %) ja miesten keuhkosyövässä (28 %). Keuhkosyöpäkuolleisuus 
+pienenee myös naisilla (keskimäärin 11%), mutta kuolleisuuden ennuste poikkeaa ikäryhmittäin. Kuolleisuus 
+pienenee 65–74-vuotiailla 39 %. Sitä vanhemmilla naisilla keuhkosyöpäkuolleisuus kasvaa 7 %.
+=====PDFPAGE 50=====
+Taulukko 7: Ennuste uusien syöpätapausten lukumäärälle ja ikävakioidulle ilmaantuvuudelle sekä syöpäkuolemien luku -
+määrälle ja ikävakioidulle kuolleisuudelle vuonna 2040 ja suhteellinen muutos (%) vuodesta 2022 kaikkien syöpien ja 
+seitsemän yleisimmän syöpätautiryhmän osalta. Tapausmäärässä ja ilmaantuvuudessa muutos on laskettu vuoden 2022 
+ennusteeseen nähden. Keuhkosyövässä ennuste on esitetty sukupuolittain.
+Kuva 31: Uusien syöpätapausten vuosittain todettu määrä vuosina 1953–2022 ja ennustettu kehitys vuoteen 2040 asti eri 
+ikäryhmissä. Ennuste perustuu vuoteen 2019 asti havaittuun kehitykseen ja on esitetty myös vuodelle 2022.
+Tapausmäärä Ilmaantuvuus Syöpäkuolemat Kuolleisuus
+Syöpätauti ICD-10 Lkm Muutos Suhde1 Muutos Lkm Muutos Suhde1 Muutos
+Kaikki syövät yhdessä C00-96,D09.0-1,D32-33, D41-43,D45-47,D76 48 500 24 % 671.2 3 % 16 000 20 % 191.0 -11 %
+Eturauhanen C61 6 830 19 % 201.7 0 % 1 330 45 % 30.8 -11 %
+Rinta (naiset) C50 6 070 12 % 179.8 2 % 909 4 % 20.9 -17 %
+Paksu- ja peräsuoli C18-20 5 170 31 % 69.3 8 % 1 840 31 % 22.0 -3 %
+Imukudos, verta muodostava kudos C81-96,D45-47,D76 5 000 26 % 67.3 3 % 1 530 13 % 17.4 -19 %
+Ihomelanooma C43 2 940 39 % 43.5 20 % 174 -14 % 2.0 -39 %
+Rakko ja virtsatiet C65-68,D09.0-1,D41.1-9 2 100 33 % 27.5 4 % 650 78 % 6.9 9 %
+Keuhkot, henkitorvi (miehet) C33-34 2 000 5 % 56.9 -14 % 1 360 -9 % 37.5 -28 %
+Keuhkot, henkitorvi (naiset) C33-34 1 580 21 % 37.0 -1 % 1 040 14 % 22.5 -11 %
+1 per 100 000 henkilövuotta ja ikävakioitu Suomen 2014 väestöön
+=====PDFPAGE 51=====
+13  Alue-erot syöpätaakassa
+Syövän ilmaantuvuuden ja syövän aiheuttaman kuolleisuuden alueellista vaihtelua arvioitiin vuosina  
+2018–2022. Tarkastelussa oli kaikkien syöpien yhdistelmän lisäksi neljä yleisintä syöpätautia.
+Kaikki syövät yhdessä (Kuva 32): Syövän ilmaantuvuuden aluevaihtelu oli miehillä hieman suurempaa kuin 
+naisilla. Naisilla ilmaantuvuuden riskisuhde vaihteli välillä 0.89–1.15, ts. syöpäilmaantuvuus oli kunnassa 
+parhaimmillaan 11 % pienempi ja pahimmillaan 15 % suurempi kuin keskimäärin koko maassa. Miehillä 
+ilmaantuvuuden suhteellisten alue-erojen vaihteluväli oli hieman suurempi: 0.90–1.22. Naisilla syöpäkuol -
+leisuuden riskisuhde oli Manner-Suomessa välillä 0.91-1.16, mutta Ahvenanmaan kunnissa välillä 1.05–1.16 
+(keskimäärin 1.11, 95 %:n todennäköisyysväli [1.00, 1.24]). Miehillä kuolleisuuden riskisuhteet vaihtelivat 
+välillä 0.91–1.11 ja Ahvenanmaan kunnat poikkesivat muusta Suomesta vähemmän kuin naisilla.
+Rinta, naiset (Kuva 33): Rintasyövän ilmaantuvuus oli pienintä Kainuussa (riskisuhde keskimäärin 0.84 [0.77, 
+0.91]) ja suurinta pääkaupunkiseudulla (keskimäärin 1.19 [1.12, 1.28]). Suuren syöpäilmaantuvuuden kun -
+nissa myös syöpäkuolleisuus oli usein koholla. Rintasyövän ilmaantuvuudessa riskisuhteen vaihteluväli oli 
+0.80–1.34 ja kuolleisuudessa 0.79–1.26. Helsingissä rintasyöpäkuolleisuus oli suurta (1.26 [1.14, 1.39]).
+Eturauhanen (Kuva 33): Miehillä syöpäilmaantuvuuden alue-erot olivat suurimmat eturauhassyövässä. Etu -
+rauhassyövän ilmaantuvuus oli pienintä Vantaan ja Keravan hyvinvointialueella (riskisuhde keskimäärin 0.81 
+[0.74, 0.88]) ja Helsingissä (0.84 [0.80, 0.89]) ja suurinta Ahvenanmaalla (keskimäärin 1.31 [1.14, 1.49]). Suu-
+rimman ilmaantuvuuden kunnissa oli yli 80 % suurempi ilmaantuvuus kuin pienimmän ilmaantuvuuden 
+kunnissa (riskisuhteen vaihteluväli 0.79–1.46). Eturauhassyöpäkuolleisuudessa eroa oli vähemmän (vaihte -
+luväli 0.84–1.25).
+Paksu- ja peräsuoli (Kuva 34): Paksu- ja peräsuolisyövän ilmaantuvuus ja kuolleisuus oli pienintä Pohjois-Suo-
+messa, esimerkiksi Lapin kunnissa keskimääräinen riskisuhde naisilla oli 0.90 [0.80, 1.00] ja miehillä 0.87 
+[0.80, 0.95]. Suurinta ilmaantuvuus oli naisilla Ahvenanmaalla (1.16 [0.97, 1.40]) ja Kymenlaaksossa (1.14 
+[1.02, 1.29]) ja miehillä Ahvenanmaalla (1.11 [0.98, 1.28]) ja Varsinais-Suomessa (1.07 [1.02, 1.13]). Naisilla 
+kuolleisuus paksu- ja peräsuolisyöpään oli suurinta Ahvenanmaalla (riskisuhteen vaihteluväli 1.07–1.23, kes-
+kimäärin 1.13 [0.88, 1.46]). Miehillä alue-erot kuolleisuudessa olivat pienempiä kuin naisilla.
+Keuhkot, henkitorvi (Kuva 35): Syöpätaakan alue-erot olivat neljän yleisimmän syövän osalta suurimmat nais-
+ten keuhkosyövässä: riskisuhteen vaihteluväli oli ilmaantuvuudessa 0.78–1.45 ja kuolleisuudessa 0.76–1.86. 
+Naisten keuhkosyövän ilmaantuvuus oli erityisen suurta Helsingissä (1.42 [1.30, 1.54]) ja Lapissa (keskimää -
+rin 1.32 [1.14, 1.51]). Miehillä vaihtelu keuhkosyövän osalta oli huomattavasti pienempää: ilmaantuvuudessa 
+0.86–1.31 ja kuolleisuudessa 0.81-1.40. Ilmaantuvuuden ja kuolleisuuden aluevaihtelu oli hyvin samankaltai-
+sia, koska sairastuneet kuolevat usein syöpäänsä alueesta riippumatta.
+=====PDFPAGE 52=====
+Kuva 32: Kokonaissyöpäilmaantuvuuden ja -kuolleisuuden suhteelliset alue-erot sukupuolittain vuosina 2018– 2022.
+
+=====PDFPAGE 53=====
+Kuva 33: Naisten rintasyövän ja miesten eturauhassyövän lmaantuvuuden ja kuolleisuuden suhteelliset alue-erot sukupuo-
+littain vuosina 2018– 2022.
+
+=====PDFPAGE 54=====
+Kuva 34: Paksu- ja peräsuolisyövän ilmaantuvuuden ja -kuolleisuuden suhteelliset alue-erot sukupuolittain vuosina 
+2018– 2022.
+Ilmaantuvuuden
+riskisuhde
+0.9
+1.0
+1.1
+1.2
+Naiset
+Kuolleisuuden
+riskisuhde
+0.8
+0.9
+1.0
+1.1
+1.2
+Ilmaantuvuuden
+riskisuhde
+0.90
+0.95
+1.00
+1.05
+1.10
+Miehet
+Kuolleisuuden
+riskisuhde
+0.94
+0.96
+0.98
+1.00
+1.02
+1.04
+Paksu- ja peräsuoli (C18−20)
+=====PDFPAGE 55=====
+Kuva 35: Keuhkosyövän ilmaantuvuuden ja -kuolleisuuden suhteelliset alue-erot sukupuolittain vuosina 2018– 2022.
+
+=====PDFPAGE 56=====
+14  K oulutusaste ja syöpätaakka
+Koulutusasteittaisissa tilastoissa väestö jaettiin kolmeen ryhmään korkeimman saavutetun tutkinnon   
+perusteella (ks. tilastolliset menetelmät, määritelmät). Kuvissa 36–39 oon esitetty yli 25-vuotiaiden nais -
+ten ja miesten ikävakioidut syöpäilmaantuvuus- ja syöpäkuolleisuusluvut 100 000 henkilövuotta kohden 
+koulutusasteittain. Tarkasteluun otettiin ilmaantuvuuden osalta 10 yleisintä syöpätautia ja kuolleisuuden 
+osalta 10 eniten kuolleisuutta aiheuttavaa syöpätautia. Naisilla tarkasteluun otettiin lisäksi kohdunkaulan 
+syöpä ja maksasyöpä, joissa on aiemmin todettu olleen koulutusastekohtaisia eroja ilmaantuvuudessa tai 
+kuolleisuudessa.
+14.1  Syöpäilmaantuvuus koulutusasteittain
+Naisilla koulutusastekohtaiset erot syöpäilmaantuvuudessa (Kuva 36) olivat suhteellisesti suurimmat keuhko- 
+ja henkitorvisyövässä, jonka ilmaantuvuus perusasteen koulutustasolla oli yli kaksinkertaista korkea-asteen 
+ilmaantuvuuteen verrattuna (76.4 vs. 32, riskisuhde (RR) perusasteen koulutustasolla 2.24, 95 %:n luotta -
+musväli [2.08, 2.42]). Myös kohdunkaulansyövän ilmaantuvuus oli korkeinta perusasteella ja alhaisinta kor -
+keasti koulutetuilla (12.8 vs. 6.9, RR perusasteella 1.82 [1.52, 2.20]). Ihomelanooman ilmaantuvuudessakin 
+erot olivat suuria, joskin päinvastaisesti. Ilmaantuvuus oli korkeinta korkea-asteen koulutustasolla (44.4) ja 
+alhaisinta perusasteella (26.8, RR 0.62 [0.57, 0.68] korkeakoulutettuihin verrattuna).
+Myös rintasyöpä oli yleisempää korkea-asteen koulutuksen saaneilla (259.3) kuin perusasteella (198.3). Perus-
+asteen koulutustasolla rintasyövän RR oli 0.78 [0.75, 0.81] verrattuna korkeakoulutettuihin. Perusasteella 
+rintasyövän ilmaantuvuus oli siis noin viidenneksen (22 %) alhaisempi kuin korkeasti koulutetuilla. Erot 
+paksu- ja peräsuolisyövän ilmaantuvuudessa olivat hyvin pieniä, ilmaantuvuus oli perusasteella (74.4) noin 
+4 % korkeampaa kuin korkea-asteella (70.1), RR 1.04 [0.99, 1.11].
+Miehillä suurimmat koulutusasteiden väliset erot syöpäilmaantuvuudessa olivat keuhko- ja henkitorvisyö -
+vässä (Kuva 37). Keuhko- ja henkitorvisyövän ilmaantuvuus oli perusasteen koulutustasolla noin 2,5-kertaista 
+korkeasti koulutettujen ilmaantuvuuteen verrattuna (128.7 vs. 48.5, peruskoulutettujen RR oli 2.64 [2.48, 
+2.81] korkeakoulutettuihin verrattuna). Myös maksa- ja mahasyöpien ilmaantuvuudet olivat korkeimpia 
+perusasteen koulutuksen saaneilla (24.9 ja 23.8) ja matalimpia korkea-asteella (15.2 ja 15.4). Maksa- ja maha-
+syövän ilmaantuvuus oli siis perusasteella yli 1,5 -kertaista korkea-asteen koulutettuihin verrattuna (RR 1.62 
+[1.44, 1.82] maksasyövässä ja RR 1.57 [1.39, 1.77] mahasyövässä). Eturauhassyöpä sitä vastoin oli perusasteen 
+koulutustasolla harvinaisempi kuin korkea-asteella (251.4 vs. 285.8, RR 0.88 [0.86, 0.91]). Erot paksu- ja 
+peräsuolisyövän ilmaantuvuudessa perusasteen ja korkea-asteen koulutustasojen välillä olivat pieniä eivätkä 
+tilastollisesti merkitseviä (105.1 vs. 104.7, RR 1.02 [0.97, 1.07] perusasteella korkea-asteen koulutettuihin 
+verrattuna).
+=====PDFPAGE 57=====
+Kuva 36: Naisten syöpäilmaantuvuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 2014 väestöön) yli  
+25-vuo tiaassa väestössä koulutusasteittain vuosina 2018–2022.
+Kuva 37: Miesten syöpäilmaantuvuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 2014 väestöön) yli  
+25-vuotiaassa väestössä koulutusasteittain vuosina 2018–2022.
+
+=====PDFPAGE 58=====
+14.2  Syöpäkuolleisuus koulutusasteittain
+Myös syöpäkuolleisuudessa oli koulutusasteittaisia eroja. Naisilla kuolleisuus oli yleisesti suurinta perus -
+asteen koulutustasolla (Kuva 38). Suurin, tilastollisesti merkitsevä ero todettiin kohdunkaulan syövässä, 
+jossa kuolleisuus oli perusasteen koulutuksen saaneilla lähes 3 kertaa suurempaa kuin korkeakoulutetuilla  
+(4.1 vs. 1.2, RR 2.93 [2.01, 4.27]). Keuhko- ja henkitorvisyövässä ero oli lähes 2,5-kertainen (55.5 vs. 20.4,  
+RR 2.62 [2.39, 2.87]) ja myös maksasyöpäkuolleisuudessa oli yli 1,5-kertainen ero perusasteen ja korkea-as -
+teen koulutettujen välillä (7.7 perusasteella vs. 4.4 korkea-asteella, RR 1.65 [1.34, 2.02]). Rintasyöpäkuollei -
+suudessa ei ollut eroja eri koulutusryhmien välillä (RR 1.03 [0.96, 1.12]). Haimasyöpäkuolleisuus oli perus -
+koulutetuilla 26 % suurempaa kuin korkea-asteen koulutuksen saaneilla (29.5 vs. 22.6, RR 1.26 [1.14, 1.38]).
+Miehillä kuolleisuus oli korkeinta perusasteen ja alhaisinta korkea-asteen koulutustasolla kaikissa tarkastel -
+luissa syöpätaudeissa ( Kuva 39). Erityisen suuri ero oli keuhko- ja henkitorvisyövässä, jossa kuolleisuus oli 
+perusasteen koulutuksen saaneilla miehillä yli 2,5 -kertaista korkea-asteen koulutuksen saaneisiin verrattuna 
+(108.1 vs. 39.2, RR 2.79 [2.61, 2.99]). Ero kuolleisuudessa ruokatorven syöpään oli myös suurta, perusasteen 
+koulutustasolla kuolleisuus oli kaksinkertaista korkea-asteen kuolleisuuteen verrattuna (14.3 vs. 7.4, RR 1.91 
+[1.62, 2.26]). Mahasyöpäkuolleisuus oli perusasteella 54 % suurempaa kuin korkea-asteella (15.7 vs. 10.3, RR 
+1.54 [1.33, 1.78]). Paksuja peräsuolisyövässä sekä eturauhassyövässä kuolleisuus oli perusasteen koulutusta -
+solla noin kolmanneksen suurempaa kuin korkea-asteella; 44 vs. 34.4 (RR 1.30 [1.19, 1.41]) paksu- ja peräsuo-
+lisyövässä ja 58.5 vs. 43.5 (RR 1.35 [1.25, 1.45]) eturauhassyövässä.
+Kuva 38: Naisten syöpäkuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 2014 väestöön) yli 25-vuotiaassa 
+väestössä koulutusasteittain vuosina 2018–2022.
+
+=====PDFPAGE 59=====
+Kuva 39: Miesten syöpäkuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 2014 väestöön) yli 25-vuotiaassa 
+väestössä koulutusasteittain vuosina 2018–2022.
+
+=====PDFPAGE 60=====
+15  Taulukot
+15.1  Ilmaantuvuus, kuolleisuus ja vallitsevuus
+Taulukko 8: Uusien syöpätapausten ja -kuolemien lukumäärä ja ikävakioitu suhdeluku vuonna 2022 sekä syöpään sairastu-
+neiden elossa olevien lukumäärä ja ikävakioitu osuus väestössä 31.12.2022, naiset
+=====PDFPAGE 61=====
+Taulukko 8: (jatkoa edelliseltä sivulta)
+=====PDFPAGE 62=====
+Taulukko 9: Uusien syöpätapausten ja -kuolemien lukumäärä ja ikävakioitu suhdeluku vuonna 2022 sekä syöpään sairastu-
+neiden elossa olevien lukumäärä ja ikävakioitu osuus väestössä 31.12.2022, miehet.
+=====PDFPAGE 63=====
+Taulukko 9: (jatkoa edelliseltä sivulta)
+=====PDFPAGE 64=====
+15.2  Potilaiden eloonjäämisluvut
+Taulukko 10: Viiden vuoden suhteelliset elossaololuvut vuosina 2020–2022 seuratuilla syöpäpotilailla ikäryhmittäin, naiset.
+=====PDFPAGE 65=====
+Taulukko 11: Viiden vuoden suhteelliset elossaololuvut vuosina 2020–2022 seuratuilla syöpäpotilailla ikäryhmittäin, miehet.
+=====PDFPAGE 66=====
+15.3  Pitkän aikavälin muutokset, ilmaantuvuus
+Taulukko 12: Ilmaantuvuuden vuotuinen muutosprosentti vuosina 1990–2019, naiset.
+=====PDFPAGE 67=====
+Taulukko 13: Ilmaantuvuuden vuotuinen muutosprosentti vuosina 1990–2019, miehet.
+=====PDFPAGE 68=====
+15.4  Pitkän aikavälin muutokset, kuolleisuus
+Taulukko 14: Syöpäkuolleisuuden vuotuinen muutosprosentti vuosina 1990–2022, naiset.
+=====PDFPAGE 69=====
+Taulukko 15: Syöpäkuolleisuuden vuotuinen muutosprosentti vuosina 1990–2022, miehet
+=====PDFPAGE 70=====
+Kuvat
+1  Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja  
+ikävakioituna Suomen 2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen  
+elossaololuku (%) sukupuolittain vuosina 1953–2022 ..................................................................................6
+2  Uusien syöpätapausten määrä ja ilmaantuvuus (100 000 henkilövuotta kohden ja ikävakioituna  
+Suomen 2014 väestöön) ositettuna syöpätaudeittain miehillä (kuvat A ja B) ja naisilla (C ja D)  
+vuosina 1953–2022. Muut ruoansulatuselimet sisältävät ruokatorven, ohutsuolen, peräaukon,  
+maksan, sappirakon ja -teiden, haiman sekä muiden tai määrittelemättömien ruoansulatuselinten 
+syövät ..................................................................................................................................................................7
+3  Uusien syöpäkuolemien määrä ja kuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna  
+Suomen 2014 väestöön) ositettuna syöpätaudeittain miehillä (kuvat A ja B) ja naisilla (C ja D)  
+vuosina 1953–2022. Muut ruoansulatuselimet sisältävät ruokatorven, ohutsuolen, peräaukon,  
+maksan, sappirakon ja -teiden, haiman sekä muiden tai määrittelemättömien ruoansulatuselinten 
+syövät .................................................................................................................................................................8
+4  Syöpäilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja  
+ikävakioituna Suomen 2014 väestöön) vuosina 1953–2022 ja ennustettu kehitys vuoteen 2040 saakka 
+sukupuolittain. Ilmaantuvuuden ennuste on esitetty myös vuodelle 2022 ja perustuu vuoteen 2019 
+asti havaittuun kehitykseen. ............................................................................................................................9
+5  Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja  
+ikävakioituna Suomen 2014 väestöön) yli 25-vuotiaassa väestössä sukupuolittain ja koulutusasteittain 
+vuosina 1986–2022 .........................................................................................................................................9
+6  Suomen väestön ikärakenne sukupuolittain vuonna 1953 ja vuonna 2022................................................ 13
+7  Naisten ja miesten syöpäilmaantuvuus (100 000 henkilövuotta kohden ja ikävakioituna  
+Suomen 2014 väestöön) yleisimmissä syöpätaudeissa vuonna 2022 .........................................................21
+8  Uusien syöpätapausten lukumäärä naisilla ja miehillä yleisimmissä syöpätaudeissa vuonna 2022 ...... 22
+9  Alle 20-vuotiaiden naisten ja miesten syöpäilmaantuvuus (100 000 henkilövuotta kohden)  
+yleisimmissä syöpätaudeissa vuonna 2022...................................................................................................23
+10  20–69-vuotiaiden naisten ja miesten syöpäilmaantuvuus (100 000 henkilövuotta kohden)  
+yleisimmissä syöpätaudeissa vuonna 2022...................................................................................................23
+11  70 vuotta täyttäneiden naisten ja miesten syöpäilmaantuvuus (100 000 henkilövuotta kohden)  
+yleisimmissä syöpätaudeissa vuonna 2022.................................................................................................. 24
+12  Syöpäkuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna Suomen 2014 väestöön)  
+naisilla ja miehillä eniten kuolleisuutta aiheuttaneissa syöpätaudeissa vuonna 2022 ..............................25
+13  Syöpäkuolemien lukumäärä naisilla ja miehillä eniten kuolemia aiheuttaneissa  
+syöpätaudeissa vuonna 2022.........................................................................................................................26
+14  20–69-vuotiaiden naisten ja miesten syöpäkuolleisuus (100 000 henkilövuotta kohden)  
+eniten kuolleisuutta aiheuttaneissa syöpätaudeissa vuonna 2022 .............................................................27
+=====PDFPAGE 71=====
+15  70 vuotta täyttäneiden naisten ja miesten syöpäkuolleisuus (100 000 henkilövuotta kohden)  
+eniten kuolleisuutta aiheuttaneissa syöpätaudeissa vuonna 2022 .............................................................27
+16  Syöpään sairastuneiden ja elossa olevien lukumäärä vuoden 2022 lopussa. ............................................28
+17  Viiden vuoden suhteelliset elossaololuvut (%) vuosina 2020–2022 seuratuilla potilailla  
+sukupuolittain ja syöpätaudeittain. Naisilla kurkunpään syövän ja miehillä rintasyövän  
+elossaololukua ei esitetä pienen tapausmäärän takia. .................................................................................30
+18  Viiden vuoden suhteelliset elossaololuvut (%) vuosina 2020–2022 seuratuilla naispotilailla  
+ikäryhmittäin (alle 55-vuotiaana, 55–74-vuotiaana ja yli 75-vuotiaana todetuilla) naisten  
+seitsemän yleisimmän syöpätaudin (pl. kypsät B-solukasvaimet ja ihon okasolusyöpä) osalta. ...............31
+19 Viiden vuoden suhteelliset elossaololuvut (%) vuosina 2020–2022 seuratuilla miespotilailla  
+ikäryhmittäin (alle 55-vuotiaana, 55–74-vuotiaana ja yli 75-vuotiaana todetuilla) miesten  
+seitsemän yleisimmän syöpätaudin (pl. kypsät B-solukasvaimet ja ihon okasolusyöpä) osalta. ...............31
+20  Naisten keskimääräinen sairastumisikä, elinaika syövän toteamisen jälkeen ja syövän takia  
+menetettyjen elinvuosien määrä syöpätaudeittain vuosina 2013–2022 todetuilla potilailla. .....................34
+21  Miesten keskimääräinen sairastumisikä, elinaika syövän toteamisen jälkeen ja syövän takia  
+menetettyjen elinvuosien määrä syöpätaudeittain vuosina 2013–2022 todetuilla potilailla. .....................35
+22  Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja  
+ikävakioituna Suomen 2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) 
+sukupuolittain vuosina 1953–2022 ................................................................................................................39
+23  Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja  
+ikävakioituna Suomen 2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) 
+sukupuolittain vuosina 1953–2022 ...............................................................................................................40
+24  Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja  
+ikävakioituna Suomen 2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) 
+sukupuolittain vuosina 1953–2022 ................................................................................................................41
+25  Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja  
+ikävakioituna Suomen 2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) 
+sukupuolittain vuosina 1953–2022 ...............................................................................................................42
+26  Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja  
+ikävakioituna Suomen 2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) 
+sukupuolittain vuosina 1953–2022 ................................................................................................................43
+27  Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja  
+ikävakioituna Suomen 2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%)
+sukupuolittain vuosina 1953–2022 ...............................................................................................................44
+28  Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja  
+ikävakioituna Suomen 2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) 
+sukupuolittain vuosina 1953–2022 ................................................................................................................45
+29  Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja  
+ikävakioituna Suomen 2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) 
+sukupuolittain vuosina 1953–2022 ...............................................................................................................46
+30  Syövän ilmaantuvuus ja syövän aiheuttama kuolleisuus (100 000 henkilövuotta kohden ja  
+ikävakioituna Suomen 2014 väestöön) sekä ikävakioitu viiden vuoden suhteellinen elossaololuku (%) 
+sukupuolittain vuosina 1953–2022 ...............................................................................................................47
+=====PDFPAGE 72=====
+31  Uusien syöpätapausten vuosittain todettu määrä vuosina 1953–2022 ja ennustettu kehitys  
+vuoteen 2040 asti eri ikäryhmissä. Ennuste perustuu vuoteen 2019 asti havaittuun kehitykseen  
+ja on esitetty myös vuodelle 2022. ................................................................................................................49
+32  Kokonaissyöpäilmaantuvuuden ja -kuolleisuuden suhteelliset alue-erot sukupuolittain  
+vuosina 2018–2022 .........................................................................................................................................51
+33  Naisten rintasyövän ja miesten eturauhassyövän lmaantuvuuden ja kuolleisuuden suhteelliset  
+alue-erot sukupuolittain vuosina 2018–2022 ...............................................................................................52
+34  Paksu- ja peräsuolisyövän ilmaantuvuuden ja -kuolleisuuden suhteelliset alue-erot  
+sukupuolittain vuosina 2018–2022 ...............................................................................................................53
+35  Keuhkosyövän ilmaantuvuuden ja -kuolleisuuden suhteelliset alue-erot sukupuolittain  
+vuosina 2018–2022 .........................................................................................................................................54
+36  Naisten syöpäilmaantuvuus (100 000 henkilövuotta kohden ja ikävakioituna  
+Suomen 2014 väestöön) yli 25-vuotiaassa väestössä koulutusasteittain vuosina 2018–2022 .................. 56
+37  Miesten syöpäilmaantuvuus (100 000 henkilövuotta kohden ja ikävakioituna  
+Suomen 2014 väestöön) yli 25-vuotiaassa väestössä koulutusasteittain vuosina 2018–2022 .................. 56
+38  Naisten syöpäkuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna  
+Suomen 2014 väestöön) yli 25-vuotiaassa väestössä koulutusasteittain vuosina 2018–2022 .....................57
+39  Miesten syöpäkuolleisuus (100 000 henkilövuotta kohden ja ikävakioituna  
+Suomen 2014 väestöön) yli 25-vuotiaassa väestössä koulutusasteittain vuosina 2018–2022 .....................58
+ 
+Taulukot
+1  Vuonna 2022 todetut uudet syövät ja syöpäkuolemat, syövän vallitsevuus ja potilaiden viiden vuoden 
+suhteelliset elossaololuvut Suomen koko väestössä erikseen naisilla ja miehillä. ......................................6
+2 Havaittu tapausmäärä vuonna 2022 ja sen ennuste edeltävien vuosien syöpäilmaanteen perustuen  
+kaikissa syövissä yhteenlaskettuna ja erikseen yleisimmissä syövissä. Havaitun tapausmäärän vaje 
+ennusteeseen verrattuna on jaettu tyypillisen rekisteröintiviipeen ja muiden syiden  
+aiheuttamaan vajeeseen. .................................................................................................................................10
+3 Havaittu syöpäkuolemien määrä vuosina 2020–2022, ennuste edeltävien vuosien  
+syöpäkuolleisuuteen perustuen ja niiden erotus kaikissa syövissä yhteenlaskettuna ja  
+erikseen eniten kuolleisuutta aiheuttaville syöville. ..................................................................................... 11
+4  Tilaston aikasarjan alkamisvuosi ilmaantuvuudessa, kuolleisuudessa, eloonjäämisessä ja  
+vallitsevuudessa imukudoksen ja verta muodostavan kudoksen pahanlaatuisten tautiryhmien osalta ...18
+5  Riski (%) sairastua ja kuolla syöpätautiin elämän aikana. Laskelma perustuu syövän ilmaantuvuuteen, 
+syövän aiheuttamaan kuolleisuuteen ja väestön kokonaiskuolleisuuteen vuosina 2018–2022. ............... 24
+6  Menetettyjen elinvuosien määrä yhden vuoden aikana todettavien syöpien takia sukupuolittain ja  
+syöpätaudeittain. Mukana laskelmassa ovat vuosina 2013–2022 todetut syövät ........................................33
+7  Ennuste uusien syöpätapausten lukumäärälle ja ikävakioidulle ilmaantuvuudelle sekä syöpä- 
+kuolemien lukumäärälle ja ikävakioidulle kuolleisuudelle vuonna 2040 ja suhteellinen muutos (%)  
+vuodesta 2022 kaikkien syöpien ja seitsemän yleisimmän syöpätautiryhmän osalta.  
+Tapausmäärässä ja ilmaantuvuudessa muutos on laskettu vuoden 2022 ennusteeseen nähden.  
+Keuhkosyövässä ennuste on esitetty sukupuolittain. ...................................................................................49
+=====PDFPAGE 73=====
+8  Uusien syöpätapausten ja -kuolemien lukumäärä ja ikävakioitu suhdeluku vuonna 2022 sekä  
+syöpään sairastuneiden elossa olevien lukumäärä ja ikävakioitu osuus väestössä 31.12.2022, naiset .......59
+9  Uusien syöpätapausten ja -kuolemien lukumäärä ja ikävakioitu suhdeluku vuonna 2022 sekä  
+syöpään sairastuneiden elossa olevien lukumäärä ja ikävakioitu osuus väestössä 31.12.2022, miehet ....61
+10  Viiden vuoden suhteelliset elossaololuvut vuosina 2020-2022 seuratuilla syöpäpotilailla  
+ikäryhmittäin, naiset .......................................................................................................................................63
+11  Viiden vuoden suhteelliset elossaololuvut vuosina 2020-2022 seuratuilla syöpäpotilailla  
+ikäryhmittäin, miehet  ...................................................................................................................................64
+12  Ilmaantuvuuden vuotuinen muutosprosentti vuosina 1990-2022, naiset ................................................65
+13  Ilmaantuvuuden vuotuinen muutosprosentti vuosina 1990-2022, miehet ..............................................66
+14  Syöpäkuolleisuuden vuotuinen muutosprosentti vuosina 1990-2022, naiset ..........................................67
+15 Syöpäkuolleisuuden vuotuinen muutosprosentti vuosina 1990-2022, miehet ........................................68
+=====PDFPAGE 74=====
