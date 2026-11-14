@@ -125,12 +125,15 @@ export interface Memo {
   numbers_passed: number;
   source_ids: string[];
   attempts?: number;
+  /** True only if the memo passed the full validator (numbers, citations, wording) on its last run. */
+  validated?: boolean;
+  problems?: string[];
 }
 
 export interface Memos {
   method: string;
   generated: string;
-  model?: string;
+  model?: string | null;
   memos: Memo[];
 }
 

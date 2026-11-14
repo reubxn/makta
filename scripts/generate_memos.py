@@ -225,6 +225,7 @@ Facts JSON:
 {facts}"""
 
 
+CASE_TABLE_IDS = {s["id"] for s in sources if s["key"].startswith("fcr_")}
 NUM_RE = re.compile(r"(?<![\w.])(\d{1,3}(?:,\d{3})+|\d+)(?:\.(\d+))?")
 
 
@@ -325,6 +326,25 @@ def validate(text, facts):
             break
     if words > 250:
         problems.append(f"{words} words (max 250)")
+    # Audit rules (2026-11-15): citations, overclaims, first steps.
+    case_ids = {s["id"] for s in facts["sources"] if s["id"] in CASE_TABLE_IDS}
+    paras = [p.strip() for p in text.split("\n") if p.strip()]
+    for para in paras:
+        for s in re.split(r"(?<=[.!?])\s+", para):
+            cited = set(re.findall(r"S\d+", s))
+            body_s = strip_ids(s)
+            if cited & case_ids and re.search(r"bone|8 Gy|single|retreat", body_s, re.I):
+                problems.append(f"bone sentence cites breast case tables {sorted(cited & case_ids)}: {body_s[:60]}")
+            if re.match(r"^1\. ", para) and cited & case_ids:
+                problems.append(f"bone proposal cites breast case tables {sorted(cited & case_ids)}: {body_s[:60]}")
+            if re.search(r"within 30 days", body_s, re.I):
+                if not re.search(r"\b(team|lead|head|clinic)", body_s, re.I) or not re.search(r"review|decide|evaluat|assess|agree", body_s, re.I):
+                    problems.append(f"first step must be a clinical-team review or decision: {body_s[:60]}")
+                if re.search(r"\b(updat|chang|edit|rewrit|revis|add)\w*\b.{0,40}\b(page|leaflet|website|instructions)|\bpublish", body_s, re.I):
+                    problems.append(f"first step must not be a patient-page or publication change: {body_s[:60]}")
+    for pat in (r"\bonly\b", r"\bnone of the units\b", r"\bno unit publishes\b", r"\bpublish(es)? (nothing|no schedule)\b", r"\bdoes not publish\b"):
+        if re.search(pat, strip_ids(text), re.I):
+            problems.append(f"overclaim wording /{pat}/")
     if re.search(r"\bbetter\b", text, re.I):
         problems.append('uses "better"')
     if re.search(r"surviv", text, re.I):
@@ -370,7 +390,7 @@ def main():
             if problems:
                 failed.append(c)
             memos.append(
-                {"county_code": c, "county_name": all_facts[c]["county_name_fi"], "text": text, "numbers_checked": checked, "numbers_passed": passed, "source_ids": sorted(set(re.findall(r"S\d+", text)), key=lambda x: int(x[1:])), "problems": problems}
+                {"county_code": c, "county_name": all_facts[c]["county_name_fi"], "text": text, "numbers_checked": checked, "numbers_passed": passed, "source_ids": sorted(set(re.findall(r"S\d+", text)), key=lambda x: int(x[1:])), "problems": problems, "validated": not problems}
             )
         if not args.check_only:
             write_out(memos, "agent-written")
@@ -399,7 +419,7 @@ def main():
         if problems:
             failed.append(c)
         memos.append(
-            {"county_code": c, "county_name": facts["county_name_fi"], "text": text, "numbers_checked": checked, "numbers_passed": passed, "attempts": attempt, "source_ids": sorted(set(re.findall(r"S\d+", text)), key=lambda x: int(x[1:])), "problems": problems}
+            {"county_code": c, "county_name": facts["county_name_fi"], "text": text, "numbers_checked": checked, "numbers_passed": passed, "attempts": attempt, "source_ids": sorted(set(re.findall(r"S\d+", text)), key=lambda x: int(x[1:])), "problems": problems, "validated": not problems}
         )
     write_out(memos, "llm-api")
     if failed:

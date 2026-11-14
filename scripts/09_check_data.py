@@ -136,10 +136,20 @@ for name in ("unit_statements.json", "memos.json"):
     if not j.get("method"):
         errors.append(f"{name} has no method")
     if name == "memos.json":
+        # Re-run the memo validator live against current data; never trust the stored counts.
+        import re
+
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from generate_memos import build_facts, validate  # noqa: E402
+
         for mm in j["memos"]:
-            if mm["numbers_passed"] != mm["numbers_checked"]:
-                errors.append(f"memo {mm['county_code']}: {mm['numbers_passed']}/{mm['numbers_checked']} numbers traced")
-            import re
+            checked, passed, problems = validate(mm["text"], build_facts(mm["county_code"]))
+            if problems or passed != checked:
+                errors.append(f"memo {mm['county_code']} fails live validation ({passed}/{checked} numbers): {problems[:3]}")
+            if (checked, passed) != (mm["numbers_checked"], mm["numbers_passed"]):
+                errors.append(f"memo {mm['county_code']}: stored counts {mm['numbers_passed']}/{mm['numbers_checked']} differ from live {passed}/{checked}")
+            if mm.get("validated") is not (not problems):
+                errors.append(f"memo {mm['county_code']}: stored validated flag {mm.get('validated')} differs from live result")
 
             for sid in re.findall(r"S\d+", mm["text"]):
                 if sid not in ids:

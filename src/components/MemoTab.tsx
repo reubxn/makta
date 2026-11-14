@@ -84,12 +84,17 @@ export function MemoTab({ county, run, onCounty, onRun }: { county: string; run:
               <>
                 <div className="memo-head">
                   <div className="small-note">To: Director of cancer services, {data.countyNames[memo.county_code] ?? memo.county_name}</div>
-                  {shown >= memo.text.length && (
+                  {shown >= memo.text.length && memo.validated === true && memo.numbers_passed === memo.numbers_checked && (
                     <span className="trace-badge">
                       <CheckCircle2 size={15} /> {memo.numbers_passed} of {memo.numbers_checked} numbers traced to the sourced facts
                     </span>
                   )}
                 </div>
+                {shown >= memo.text.length && memo.validated !== true && (
+                  <div className="small-note" data-testid="memo-unvalidated">
+                    This memo did not pass the number and citation check on its last run, so it is shown without the traced badge.
+                  </div>
+                )}
                 {body}
                 {shown < memo.text.length && <span className="caret" />}
               </>
