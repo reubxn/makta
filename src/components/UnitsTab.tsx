@@ -98,7 +98,7 @@ export function UnitsTab({ params, onParam }: { params: Params; onParam: (id: ke
         </div>
         <div className="units-headline" data-testid="units-headline">
           <h3>
-            {publishing} of {nUnits} units publish which schedule they use.
+            {publishing} of {nUnits} units {publishing === 1 ? "publishes" : "publish"} which schedule they use.
           </h3>
           <p>
             The ask: every unit publishes its schedule mix, and radiotherapy use by distance band, every year.{' '}
