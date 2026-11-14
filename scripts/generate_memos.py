@@ -214,6 +214,11 @@ Format (plain text, no markdown headings, at most 250 words):
 - Final paragraph: one sentence on limitations.
 
 Rules:
+- Format of every sentence: text, then a space, then the ids in brackets, then the full stop, e.g. "Pain relief is equal [S31, S30]." Never put the full stop before the brackets, and never start a sentence with brackets.
+- No label-only sentences or fragments ("Owner: X.", "Breast.", "Limitations: ..."): write the owner role inside a full sentence that ends with ids, e.g. "1. The head of radiotherapy at OYS could evaluate ... [S31, S30]."
+- Each proposal's first step is one sentence starting "Within 30 days, the clinical team reviews ..." or "Within 30 days, the <role> and the clinical team decide ...".
+- Do not use the words "only", "better" or spelled-out numbers ("five"); use digits.
+- Stay under 230 words.
 - Every sentence ends with the source ids that support it in square brackets, e.g. [S4] or [S4, S7]. Cite only sources that support that sentence; follow citation_guide. A statement about what a unit's page says cites that statement's own source_id. Proposal sentences cite the evidence for the proposal. Use only ids that appear in the facts.
 - Which unit serves which municipality: use routing_basis. Only say a unit "treats" or "serves" the county when the basis is the county's sourced catchment or sourced_catchments_for_this_county says so; otherwise say "the nearest unit by drive time".
 - If public_schedule_pages_found is false for a unit, you may say Matka found no public page stating its schedule; never say the unit publishes nothing.

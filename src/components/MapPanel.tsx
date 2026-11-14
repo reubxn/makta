@@ -32,9 +32,24 @@ function bboxOf(features: GeoJSON.Feature[]): BBox {
 
 /** Fit a bbox into the map, leaving room for the overlays (headline top-left, legend bottom-left). */
 function fitView(bbox: BBox, size: { width: number; height: number }, pitched: boolean): MapViewState {
-  const vp = new WebMercatorViewport({ width: size.width, height: size.height });
+  const fallback: MapViewState = pitched ? FINLAND : { ...FINLAND, pitch: 0, bearing: 0 };
+  // Tiny or unmeasured map area (small windows, first layout pass): keep a safe default view.
+  if (!(size.width >= 80 && size.height >= 80)) return fallback;
+  // fitBounds throws if the padding leaves no room, so scale the overlay margins down to fit,
+  // always leaving at least half of each dimension for the map itself.
   const pad = { top: 64, bottom: 36, left: Math.min(290, size.width * 0.38), right: 44 };
-  const { longitude, latitude, zoom } = vp.fitBounds([[bbox[0], bbox[1]], [bbox[2], bbox[3]]], { padding: pad });
+  const hScale = Math.min(1, (size.width * 0.5) / (pad.left + pad.right));
+  const vScale = Math.min(1, (size.height * 0.5) / (pad.top + pad.bottom));
+  pad.left *= hScale; pad.right *= hScale; pad.top *= vScale; pad.bottom *= vScale;
+  let fit: { longitude: number; latitude: number; zoom: number };
+  try {
+    const vp = new WebMercatorViewport({ width: size.width, height: size.height });
+    fit = vp.fitBounds([[bbox[0], bbox[1]], [bbox[2], bbox[3]]], { padding: pad });
+  } catch {
+    return fallback;
+  }
+  const { longitude, latitude, zoom } = fit;
+  if (![longitude, latitude, zoom].every(Number.isFinite)) return fallback;
   if (!pitched) return { longitude, latitude, zoom, pitch: 0, bearing: 0 };
   // Pitching compresses the far (north) side: move the centre south and zoom in slightly.
   const latSpan = bbox[3] - bbox[1];
