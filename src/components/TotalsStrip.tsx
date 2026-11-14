@@ -74,10 +74,10 @@ export function TotalsStrip({ params, leverOn, boneLever, indication, highlight 
         </div>
       ))}
       <div className="strip-side">
-        <div className="strip-caption">
-          {leverOn
-            ? `Breast, all of Finland, per year · about ${fmtRounded(totals.national.patients)} eligible patients (cases allocated by population)`
-            : 'Breast, all of Finland, per year · switch the lever on to see what 5 sessions would remove'}
+        <div className="strip-caption" data-testid="breast-cases">
+          Breast, per year: <b className="num">{data.cases.national_cases.toLocaleString('en-GB')}</b> new cases in women ({data.cases.year}){' '}
+          <Prov kind="sourced" ids={['fcr_breast_2024', 'fcr_breast_2024_counties']} note={`Finnish Cancer Registry: ${data.cases.national_cases.toLocaleString('en-GB')} new breast cancer cases in women in Finland in ${data.cases.year}; ${data.cases.mainland_cases.toLocaleString('en-GB')} on the mainland (Åland excluded), which the totals use, allocated to municipalities by age-weighted female population.`} />
+          {leverOn ? ` · about ${fmtRounded(totals.national.patients)} eligible` : ' · lever off'}
         </div>
         {chips}
       </div>

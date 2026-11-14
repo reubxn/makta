@@ -34,7 +34,7 @@ export interface UiState {
 function initialState(data: AppData): UiState {
   return {
     tab: 'map',
-    indication: 'bone',
+    indication: 'breast',
     levers: { bone: false, breast: false },
     params: { ...data.defaults },
     metric: 'nights',
@@ -114,15 +114,17 @@ function Matka({ data }: { data: AppData }) {
           flyTo('muni', DEFAULT_MUNI);
           break;
         case '3':
-          setS((p) => ({ ...p, tab: 'map', indication: 'bone', levers: { ...p.levers, bone: false }, highlightTotals: false, help: false }));
-          later(1000, () => setS((p) => ({ ...p, levers: { ...p.levers, bone: true } })));
-          break;
-        case '4':
+          // Lead lever: breast. Columns rise to the 15-session values, pause, then the lever flips.
           setS((p) => ({ ...p, tab: 'map', indication: 'breast', levers: { ...p.levers, breast: false }, highlightTotals: false, help: false }));
           later(1200, () => setS((p) => ({ ...p, levers: { ...p.levers, breast: true } })));
           break;
+        case '4':
+          setS((p) => ({ ...p, tab: 'map', indication: 'bone', levers: { ...p.levers, bone: false }, highlightTotals: false, help: false }));
+          later(1000, () => setS((p) => ({ ...p, levers: { ...p.levers, bone: true } })));
+          break;
         case '5':
-          update({ tab: 'map', highlightTotals: true, help: false });
+          // National totals are breast-only, so show the breast map with them.
+          update({ tab: 'map', indication: 'breast', highlightTotals: true, help: false });
           flyTo('finland');
           later(6000, () => update({ highlightTotals: false }));
           break;

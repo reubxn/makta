@@ -194,8 +194,13 @@
    "text": "No citable yearly count of palliative bone radiotherapy courses was found, so the bone lever is shown per patient only."
   },
   {
-   "title": "Nearest unit, not referral unit",
-   "text": "Each municipality is routed to the unit with the shortest drive among its three nearest. Real referral paths can differ (for example, some Satakunta patients are treated in Turku)."
+   "title": "Routing: sourced catchments, otherwise nearest by drive",
+   "text": "Helsinki and Uusimaa are routed to HUS, Pirkanmaa to Tays and Lapland to OYS in Oulu, as their sources state. The other 222 municipalities are routed to the nearest unit by drive time, which is Matka's assumption, not a referral rule. It matters most in Kanta-Häme (municipalities split Turku 4, Lahti 4, Tampere 3, although Tays says it treats most of Kanta-Häme) and Kainuu (split Oulu 5, Kuopio 2, Joensuu 1; no catchment source found). Real referral paths can differ elsewhere too, for example some Satakunta patients are treated in Turku.",
+   "source_ids": [
+    "osrm_table",
+    "tays_catchment",
+    "rovaniemi_no_unit"
+   ]
   },
   {
    "title": "Private units excluded",

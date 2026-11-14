@@ -1,8 +1,8 @@
 const KEYS: [string, string][] = [
   ['1', 'Reset to all of Finland'],
   ['2', 'Select Utsjoki and zoom in'],
-  ['3', 'Bone metastases: switch on a single 8 Gy session'],
-  ['4', 'Breast: switch on 5 sessions for eligible patients'],
+  ['3', 'Breast: columns rise to 15 sessions, then switch on 5 sessions for eligible patients'],
+  ['4', 'Bone metastases: switch on a single 8 Gy session'],
   ['5', 'Fly out to Finland and highlight the national totals'],
   ['6', 'Open What units say'],
   ['7', 'Open the Lapland county memo and write it'],

@@ -16,7 +16,7 @@ test('design views', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByTestId('app-ready')).toBeAttached({ timeout: 15_000 });
   await page.waitForTimeout(1800);
-  await shot(page, '01-map-finland-bone-off');
+  await shot(page, '01-map-finland-breast-off');
 
   await page.keyboard.press('2');
   await page.waitForTimeout(2200);
@@ -24,11 +24,11 @@ test('design views', async ({ page }) => {
 
   await page.keyboard.press('3');
   await page.waitForTimeout(2600);
-  await shot(page, '03-map-bone-lever-on');
+  await shot(page, '03-map-breast-lever-on');
 
   await page.keyboard.press('4');
   await page.waitForTimeout(3000);
-  await shot(page, '04-map-breast-lever-on');
+  await shot(page, '04-map-bone-lever-on');
 
   await page.keyboard.press('5');
   await page.waitForTimeout(2500);

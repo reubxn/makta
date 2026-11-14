@@ -112,12 +112,29 @@ GOAL3 = [
          en="Regional differences in treatment are available and used to steer services (cross-cutting indicator)", source_ids=check(["strategy_equity"])),
 ]
 
+def _split(county_code):
+    from collections import Counter
+
+    u = {x["id"]: x["town"] for x in units["units"]}
+    c = Counter(u[routes["routes"][m["code"]]["unit_id"]] for m in munis if m["county_code"] == county_code)
+    return ", ".join(f"{t} {n}" for t, n in c.most_common())
+
+
+_catch = sorted({m["county_code"] for m in munis if routes["routes"][m["code"]]["basis"] == "county_catchment"})
+_nearest_only = [m for m in munis if routes["routes"][m["code"]]["basis"] != "county_catchment"]
+ROUTING_LIMIT = (
+    "Helsinki and Uusimaa are routed to HUS, Pirkanmaa to Tays and Lapland to OYS in Oulu, as their sources state. "
+    f"The other {len(_nearest_only)} municipalities are routed to the nearest unit by drive time, which is Matka's assumption, not a referral rule. "
+    f"It matters most in Kanta-Häme (municipalities split {_split('07')}, although Tays says it treats most of Kanta-Häme) "
+    f"and Kainuu (split {_split('20')}; no catchment source found). Real referral paths can differ elsewhere too, for example some Satakunta patients are treated in Turku."
+)
+
 LIMITS = [
     dict(title="Current schedule mix unknown", text="How many patients already get the short schedules in Finland is not public. Matka shows it as an adjustable assumption next to what units say on their own pages."),
     dict(title="Centre-point distances", text="Distances run from each municipality's centre point (Wikidata coordinate), not from where patients live. In large municipalities real trips can be much longer or shorter."),
     dict(title="Population allocation", text="Breast cases per municipality are allocated from county counts by female population weighted by age-specific incidence. They are calculated, not registry counts.", source_ids=["fcr_breast_2024_counties", "fcr_breast_age5"]),
     dict(title="Bone counts not public", text="No citable yearly count of palliative bone radiotherapy courses was found, so the bone lever is shown per patient only."),
-    dict(title="Nearest unit, not referral unit", text="Each municipality is routed to the unit with the shortest drive among its three nearest. Real referral paths can differ (for example, some Satakunta patients are treated in Turku)."),
+    dict(title="Routing: sourced catchments, otherwise nearest by drive", text=ROUTING_LIMIT, source_ids=["osrm_table", "tays_catchment", "rovaniemi_no_unit"]),
     dict(title="Private units excluded", text="Private clinics (for example Docrates in Helsinki) are excluded; Matka covers the public units only."),
     dict(title="Åland excluded", text="Åland has a separate health system and is left out of the map and totals."),
     dict(title="OSRM road data", text="Drive times come from the public OSRM server on OpenStreetMap data: free-flow driving with no traffic, weather or ferry waits.", source_ids=["osrm_table"]),

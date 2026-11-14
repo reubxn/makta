@@ -33,8 +33,8 @@ test('demo keys 0-7', async ({ page, baseURL }) => {
   const steps: [string, string, number][] = [
     ['1', '01-finland', 1500],
     ['2', '02-utsjoki', 2000],
-    ['3', '03-bone-lever', 3000],
-    ['4', '04-breast-lever', 3200],
+    ['3', '03-breast-lever', 3200],
+    ['4', '04-bone-lever', 3000],
     ['5', '05-totals', 2500],
     ['6', '06-units', 1200],
     ['7', '07-memo-lapland', 6000],
@@ -43,6 +43,31 @@ test('demo keys 0-7', async ({ page, baseURL }) => {
     await page.keyboard.press(key);
     await page.waitForTimeout(wait);
     await shot(page, name);
+    if (key === '3') {
+      // Breast is the lead lever and on by now.
+      await expect(page.getByTestId('lever')).toContainText('5 sessions as default');
+      await expect(page.getByTestId('lever')).toHaveAttribute('aria-checked', 'true');
+    }
+    if (key === '4') {
+      // The bone line must be fully visible: inside the viewport and not clipped by its card.
+      const note = page.getByTestId('bone-note');
+      await expect(note).toBeVisible();
+      await expect(note).toHaveText('Fewer nights away; trips about the same, because some patients need a second session.');
+      const clipped = await note.evaluate((el) => {
+        const r = el.getBoundingClientRect();
+        let p: HTMLElement | null = el.parentElement;
+        while (p) {
+          const st = getComputedStyle(p);
+          if (st.overflow !== 'visible' || st.overflowY !== 'visible') {
+            const pr = p.getBoundingClientRect();
+            if (r.bottom > pr.bottom + 0.5 || r.top < pr.top - 0.5) return true;
+          }
+          p = p.parentElement;
+        }
+        return r.bottom > window.innerHeight || el.scrollWidth > el.clientWidth + 1;
+      });
+      expect(clipped, 'bone note is clipped').toBe(false);
+    }
   }
 
   // Key 2 must select Utsjoki.

@@ -79,6 +79,8 @@ export function UnitsTab({ params, onParam }: { params: Params; onParam: (id: ke
   const breast5 = unitsWith('breast', 5);
   const boneAny = new Set(st.statements.filter((s) => s.indication === 'bone' && s.stated_default_fractions != null).map((s) => s.unit_id)).size;
   const unitsWithPages = Object.keys(byUnit).length;
+  // A unit "publishes which schedule it uses" if a public page states a usual session count for breast or bone.
+  const publishing = new Set(st.statements.filter((s) => s.stated_default_fractions != null).map((s) => s.unit_id)).size;
   const breastConflict = st.statements.some(
     (s) => s.indication === 'breast' && s.stated_default_fractions == null && (Array.isArray(s.stated_alternatives) ? s.stated_alternatives.length > 1 : !!s.stated_alternatives),
   );
@@ -92,6 +94,15 @@ export function UnitsTab({ params, onParam }: { params: Params; onParam: (id: ke
           <h2>What units say</h2>
           <p className="lede">
             Read {methodLabel} from {st.pages_read} public pages on {st.generated}. Quotes are verbatim and checked against the page text. Hover a row for the Finnish original.
+          </p>
+        </div>
+        <div className="units-headline" data-testid="units-headline">
+          <h3>
+            {publishing} of {nUnits} units publish which schedule they use.
+          </h3>
+          <p>
+            The ask: every unit publishes its schedule mix, and radiotherapy use by distance band, every year.{' '}
+            <Prov kind="calculated" ids={Array.from(new Set(st.statements.map((x) => x.source_id ?? '').filter(Boolean)))} note="Counted from the verified statements below: a unit counts if one of its public pages states a usual number of sessions for breast or bone radiotherapy. Units = the 12 public radiotherapy units." />
           </p>
         </div>
         <p className="summary-line" data-testid="units-summary">

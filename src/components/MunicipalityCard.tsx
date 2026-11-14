@@ -105,8 +105,8 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
           </div>
         );
       })}
-      {lever && indication === 'bone' && (before.roundTrips < after.roundTrips) && (
-        <div className="bone-up-note">Fewer nights away; some patients need a second session, so trips can rise slightly.</div>
+      {lever && indication === 'bone' && before.roundTrips - after.roundTrips < 0.5 && (
+        <div className="bone-up-note" data-testid="bone-note">Fewer nights away; trips about the same, because some patients need a second session.</div>
       )}
     </aside>
   );

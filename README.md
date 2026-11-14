@@ -2,8 +2,8 @@
 
 Matka ("journey") shows how many trips and nights away from home radiotherapy costs cancer patients in each Finnish municipality, and how much of that two evidence-based shorter schedules would remove:
 
-- a single 8 Gy session for uncomplicated painful bone metastases (retreatment included), and
-- 5 sessions instead of 15 for eligible breast cancer patients (whole breast or chest wall without nodal radiotherapy).
+- 5 sessions instead of 15 for eligible breast cancer patients (whole breast or chest wall without nodal radiotherapy), the lead lever, and
+- a single 8 Gy session for uncomplicated painful bone metastases (retreatment included).
 
 It also shows what each radiotherapy unit says publicly about its schedules, and gives every wellbeing services county a short action memo in which every number is traced to a source.
 
