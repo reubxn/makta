@@ -292,6 +292,8 @@ def number_ok(val, raw, context, nums):
 
 def validate(text, facts):
     problems = []
+    if len(strip_ids(text).split()) < 80:
+        problems.append("memo is empty or too short (under 80 words)")
     nums = fact_numbers(facts)
     allowed_ids = {s["id"] for s in facts["sources"]}
     body = strip_ids(text)
@@ -412,11 +414,13 @@ def main():
         for attempt in range(1, 4):
             msg = c_api.messages.create(
                 model=MODEL,
-                max_tokens=8000,
+                max_tokens=16000,
                 messages=[{"role": "user", "content": PROMPT.format(county=facts["county_name_fi"], county_en=facts["county_name_en"], facts=json.dumps(facts, ensure_ascii=False), feedback=feedback)}],
             )
             text = "".join(b.text for b in msg.content if b.type == "text").strip()
             checked, passed, problems = validate(text, facts)
+            if msg.stop_reason != "end_turn":
+                problems.append(f"stop_reason {msg.stop_reason}")
             print(f"{c} attempt {attempt}: {passed}/{checked} numbers ok; problems: {problems}")
             if not problems:
                 break
@@ -427,10 +431,13 @@ def main():
         memos.append(
             {"county_code": c, "county_name": facts["county_name_fi"], "text": text, "numbers_checked": checked, "numbers_passed": passed, "attempts": attempt, "source_ids": sorted(set(re.findall(r"S\d+", text)), key=lambda x: int(x[1:])), "problems": problems, "validated": not problems}
         )
-    write_out(memos, "llm-api")
     if failed:
-        print("FAILED validation:", failed)
+        # Never replace the shipped memos with a run that has failures.
+        bad = ROOT / "data" / "raw" / "memos_failed_run.json"
+        bad.write_text(json.dumps({"method": "llm-api", "model": MODEL, "memos": memos}, ensure_ascii=False, indent=1))
+        print("FAILED validation:", failed, f"-> kept public/data/memos.json; this run saved to {bad}")
         sys.exit(1)
+    write_out(memos, "llm-api")
 
 
 if __name__ == "__main__":
