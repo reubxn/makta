@@ -50,7 +50,14 @@ else:
 total_w = sum(weights.values())
 alloc = {c: national * w / total_w for c, w in weights.items()}
 
-county_counts = raw.get("county_counts")
+county_counts_by_name = raw.get("county_counts")
+county_counts = None
+if county_counts_by_name:
+    name_to_code = {m["county_name_en"]: m["county_code"] for m in munis}
+    county_counts = {name_to_code[n]: v for n, v in county_counts_by_name.items() if n in name_to_code}
+    unmatched = [n for n in county_counts_by_name if n not in name_to_code]
+    print("county names not on the mainland list (excluded):", unmatched)
+    assert len(county_counts) == len({m["county_code"] for m in munis}), "every mainland county needs a count"
 if county_counts:
     by_county = {}
     for m in munis:
@@ -69,22 +76,22 @@ out = {
     "kind": "calculated",
     "method": method,
     "source_ids": [raw["source_key"], "statfin_population"],
-    "note": f"National new breast cancer cases ({raw['year']}, Finnish Cancer Registry) allocated to municipalities by "
-    f"female population weighted by {method}. Åland's share is removed. Calculated, not registry counts per municipality.",
+    "note": f"New breast cancer cases in women ({raw['year']}, Finnish Cancer Registry) allocated to municipalities by "
+    f"female population weighted by {method}. Calculated, not registry counts per municipality.",
     "municipalities": {c: round(v, 3) for c, v in alloc.items()},
 }
 
-# Åland is excluded from the municipality list; remove its share so totals reflect mainland only.
-if raw.get("aland_cases"):
-    scale = (national - raw["aland_cases"]) / national
-    out["municipalities"] = {c: round(v * scale, 3) for c, v in alloc.items()}
-    out["mainland_cases"] = national - raw["aland_cases"]
-else:
-    # No Åland count: approximate by excluding Åland women from the weights (already the case, since
-    # munis has no Åland). Mainland share of national cases = mainland weight share.
-    out["note"] += " Åland women are not in the weights, so the national total is allocated to the mainland (overstates mainland by Åland's share, about 0.5%)."
+if county_counts:
+    out["mainland_cases"] = sum(county_counts.values())
+    out["note"] += (
+        f" Scaled to the Registry's {raw['county_counts_year']} counts per wellbeing services county "
+        f"(mainland total {out['mainland_cases']}; Åland excluded)."
+    )
+    out["source_ids"].append("fcr_breast_2024_counties")
+if age:
+    out["source_ids"].append("fcr_breast_age5")
 
 (ROOT / "public/data/cases.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
 total = sum(out["municipalities"].values())
 top = sorted(out["municipalities"].items(), key=lambda x: -x[1])[:3]
-print(f"method={method} total={total:.1f} national={national} top={top}")
+print(f"method={method} total={total:.1f} national={national} mainland={out.get('mainland_cases')} top={top}")

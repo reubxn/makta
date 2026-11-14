@@ -1,0 +1,69 @@
+[
+  {
+    "fi": "Huonoennusteisten syöpien 5 vuoden elossaololuvut saavuttavat pohjoismaisen tason",
+    "en": "5-year survival for poor-prognosis cancers reaches the Nordic level (footnote: lung +14, pancreas +6, liver +14 percentage points vs Nordcan 2023; Nordic = mean of Sweden and Norway)",
+    "page": 5,
+    "page_printed": 5,
+    "document": "strategy",
+    "context": "strategy Figure 1 (Kuva 1), Goal 3 headline indicator",
+    "verified_substring": true,
+    "url": "https://files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035_FINAL.pdf",
+    "fi_display": "Huonoennusteisten syöpien 5 vuoden elossaololuvut saavuttavat pohjoismaisen tason"
+  },
+  {
+    "fi": "Syöpäkuolleisuus pienenee 10 % (nykyisin 13 300 henkilöä vuodessa)",
+    "en": "Cancer mortality falls by 10% (currently 13,300 people a year)",
+    "page": 5,
+    "page_printed": 5,
+    "document": "strategy",
+    "context": "strategy Figure 1 (Kuva 1), Goal 3 headline indicator",
+    "verified_substring": true,
+    "url": "https://files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035_FINAL.pdf",
+    "fi_display": "Syöpäkuolleisuus pienenee 10 % (nykyisin 13 300 henkilöä vuodessa)"
+  },
+  {
+    "fi": "Potilaat pääsevät hoitoon tavoiteaikojen puitteissa",
+    "en": "Patients receive treatment within target times (footnote: THL Ohjaus 21/2016, monitoring access to cancer care)",
+    "page": 5,
+    "page_printed": 5,
+    "document": "strategy",
+    "context": "strategy Figure 1 (Kuva 1), Goal 3 headline indicator",
+    "verified_substring": true,
+    "url": "https://files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035_FINAL.pdf",
+    "fi_display": "Potilaat pääsevät hoitoon tavoiteaikojen puitteissa",
+    "note": "Also repeated verbatim on strategy page 33 (sub-goal 3.1) with a full stop."
+  },
+  {
+    "fi": "Ajantasaisten kansallisten hoitosuositusten ja hoitoketjujen saatavuudessa ollaan pohjois­ maisella tasolla",
+    "en": "Availability of up-to-date national treatment guidelines and care pathways is at the Nordic level (share of guidelines relative to Nordic peers, %)",
+    "page": 33,
+    "page_printed": 33,
+    "document": "strategy",
+    "context": "strategy sub-goal 3.1 'Tavoitteen toteutumista mitataan seuraavasti'",
+    "verified_substring": true,
+    "url": "https://files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035_FINAL.pdf",
+    "fi_display": "Ajantasaisten kansallisten hoitosuositusten ja hoitoketjujen saatavuudessa ollaan pohjoismaisella tasolla"
+  },
+  {
+    "fi": "Kansalliset ja yhtenäiset tavoitteet ja keskeisimmät vaikuttavuuden seurantamittarit määri­ tetty sovittuihin syöpiin.",
+    "en": "National, uniform targets and key effectiveness monitoring indicators defined for agreed cancers",
+    "page": 33,
+    "page_printed": 33,
+    "document": "strategy",
+    "context": "strategy sub-goal 3.1",
+    "verified_substring": true,
+    "url": "https://files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035_FINAL.pdf",
+    "fi_display": "Kansalliset ja yhtenäiset tavoitteet ja keskeisimmät vaikuttavuuden seurantamittarit määritetty sovittuihin syöpiin."
+  },
+  {
+    "fi": "Mittari: Potilaat pääsevät hoitoon tavoiteaikojen puitteissa.",
+    "en": "Indicator: patients receive treatment within target times",
+    "page": 57,
+    "page_printed": 57,
+    "document": "roadmap",
+    "context": "roadmap measure 3.1.2 (national care pathway descriptions)",
+    "verified_substring": true,
+    "url": "https://files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpanon_tiekartta_2026_2031.pdf",
+    "fi_display": "Mittari: Potilaat pääsevät hoitoon tavoiteaikojen puitteissa."
+  }
+]

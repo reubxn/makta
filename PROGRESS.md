@@ -8,21 +8,21 @@ Legend: [x] done · [~] in progress · [ ] not started · [!] blocked / changed 
 - [x] Vite + React + TS scaffold, deck.gl, lucide-react, @fontsource/inter, Vitest, Playwright
 - [x] Python venv (requests, pandas, shapely, anthropic, python-dotenv, pypdf)
 - [x] `npx playwright init-agents --loop=claude`; Playwright MCP added to `.mcp.json` (loads on next session start)
-- [ ] tests/e2e/demo.spec.ts (keys 0-7, fail on console errors, screenshots)
+- [x] tests/e2e/demo.spec.ts (keys 0-7, fail on console errors and external requests, screenshots)
 
 ## Phase 1: data (section 7)
-- [ ] 01 municipalities.json (code, fi/sv names, county, centre point + method, population by sex/age; Åland excluded)
-- [ ] 02 municipalities.geojson + counties.geojson (WFS, EPSG:4326, < 2 MB each)
-- [ ] 03 rt_units.json (incl. Rovaniemi decision, source URLs)
-- [ ] 04 routes.json (OSRM table, 3 nearest, fallback flagged; Helsinki < 20 km, Utsjoki > 400 km)
-- [ ] 05 cases.json (national breast cases allocated by age-weighted female population)
-- [ ] 06 sources.json (all section 4 facts + verified section 5 facts, quotes, roadmap page numbers)
-- [ ] 07 parameters.json (all section 8 parameters)
-- [ ] Phase 1 reviewer sub-agent + fixes
+- [x] 01 municipalities.json (code, fi/sv names, county, centre point + method, population by sex/age; Åland excluded)
+- [x] 02 municipalities.geojson + counties.geojson (WFS, EPSG:4326, < 2 MB each)
+- [x] 03 rt_units.json (12 units; Rovaniemi has no unit → Lapland routes to Oulu)
+- [x] 04 routes.json (OSRM table, 3 nearest, fallback flagged; Helsinki < 20 km, Utsjoki > 400 km)
+- [x] 05 cases.json (5,232 women 2024; 5,204 mainland; age-specific incidence, scaled to county counts) (national breast cases allocated by age-weighted female population)
+- [x] 06 sources.json (61 sources; 1 unverifiable dropped) (all section 4 facts + verified section 5 facts, quotes, roadmap page numbers)
+- [x] 07 parameters.json + facts.json (all section 8 parameters)
+- [~] Phase 1 reviewer sub-agent + fixes
 
 ## Phase 1b: model (section 8)
-- [ ] src/model pure functions (commuter/stayer, retreatment, Kela lower bound, aggregates)
-- [ ] Vitest: Utsjoki stayer, Helsinki-area commuter, threshold boundary, no NaN, national = sum of counties
+- [x] src/model pure functions (commuter/stayer, retreatment, Kela lower bound, aggregates)
+- [x] Vitest: Utsjoki stayer, Helsinki-area commuter, threshold boundary, no NaN, national = sum of counties
 
 ## Phase 2: app (section 9)
 - [ ] Top bar, tabs, footer

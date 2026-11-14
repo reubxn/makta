@@ -19,7 +19,7 @@ export function TotalsStrip({ params, leverOn, indication, highlight }: { params
     return breastTotals(rows, params, leverOn);
   }, [data, params, leverOn]);
   const ids = Array.from(new Set([...data.cases.source_ids, ...data.routesMeta.source_ids, ...data.parameters.filter((p) => p.id.startsWith('breast') || p.id.startsWith('kela')).flatMap((p) => p.source_ids)]));
-  const note = `Breast, per year: ${data.cases.national_cases} new cases (${data.cases.year}) × share treated with radiotherapy × share eligible × (1 − share already on 5 sessions), allocated to municipalities by age-weighted female population. Rounded to 3 significant figures.`;
+  const note = `Breast, per year: ${data.cases.mainland_cases.toLocaleString('en-GB')} new cases in women on the mainland (${data.cases.year}) × share treated with radiotherapy × share eligible × (1 − share already on 5 sessions), allocated to municipalities by age-weighted female population. Rounded to 3 significant figures.`;
   const stats: [string, number][] = [
     ['Nights away removed', totals.national.nights],
     ['Round trips removed', totals.national.roundTrips],
@@ -37,10 +37,13 @@ export function TotalsStrip({ params, leverOn, indication, highlight }: { params
         </div>
       ))}
       <div className="strip-side">
-        <div className="strip-caption">
-          Finland, per year, breast lever {leverOn ? 'on' : 'off'}
-          {leverOn ? ` · about ${fmtRounded(totals.national.patients)} patients` : ''}
-        </div>
+        {indication === 'bone' ? (
+          <div className="strip-note">Bone: per-patient view only; national yearly count not public. Totals are breast.</div>
+        ) : (
+          <div className="strip-caption">
+            Breast, Finland, per year · lever {leverOn ? `on · about ${fmtRounded(totals.national.patients)} patients` : 'off'}
+          </div>
+        )}
         <div className="chips">
           {data.goal3.map((g) => (
             <span className="chip" key={g.id} title={`${g.fi} — ${g.en}`}>
@@ -48,7 +51,6 @@ export function TotalsStrip({ params, leverOn, indication, highlight }: { params
             </span>
           ))}
         </div>
-        {indication === 'bone' && <div className="strip-note">Bone: per-patient view only; national yearly count not public</div>}
       </div>
     </section>
   );

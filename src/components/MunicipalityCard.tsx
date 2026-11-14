@@ -15,7 +15,7 @@ const ROWS: RowDef[] = [
   { key: 'nights', label: 'Nights away', format: (v) => fmt(v, Number.isInteger(Math.round(v * 10) / 10) ? 0 : 1) },
   { key: 'roundTrips', label: 'Round trips', format: (v) => fmt(v, Number.isInteger(Math.round(v * 10) / 10) ? 0 : 1) },
   { key: 'hours', label: 'Hours on the road', format: fmtHours },
-  { key: 'kelaEur', label: 'Kela travel cost, lower bound', format: (v) => fmt(v), suffix: '€' },
+  { key: 'kelaEur', label: 'Kela cost, lower bound (own-car rate; taxis cost more)', format: (v) => fmt(v), suffix: '€' },
 ];
 
 function Tweened({ v, format, className }: { v: number; format: (v: number) => string; className: string }) {
@@ -86,8 +86,6 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
         Today, with the assumed {Math.round(shareNow * 100)}% already on the short schedule: about{' '}
         <b className="num">{fmt(today.nights, 1)}</b> nights away per patient.{' '}
         <Prov kind="assumption" ids={data.parameters.find((p) => p.id === (indication === 'bone' ? 'bone_share_single_now' : 'breast_share_already_short'))?.source_ids ?? []} note="The real current schedule mix in Finland is not public." />
-        <br />
-        Kela cost is a lower bound (own-car rate; taxis cost more).
       </div>
     </aside>
   );

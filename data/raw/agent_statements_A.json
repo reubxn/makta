@@ -1,0 +1,35 @@
+[
+  {
+    "snapshot": "hus__sadehoito.txt",
+    "indication": "bone",
+    "stated_default_fractions": null,
+    "stated_alternatives": null,
+    "criteria_for_short_course": null,
+    "distance_mentioned": false,
+    "quote_fi": "Sädehoitoa voidaan käyttää myös kivunhoitona tai levinneen syövän aiheuttamien oireiden lievittämiseen.",
+    "quote_en": "Radiotherapy can also be used for pain relief or to relieve symptoms caused by spread cancer.",
+    "confidence": "low"
+  },
+  {
+    "snapshot": "pori__sadehoitoyksikko.txt",
+    "indication": "breast",
+    "stated_default_fractions": null,
+    "stated_alternatives": null,
+    "criteria_for_short_course": null,
+    "distance_mentioned": false,
+    "quote_fi": "Meillä hoidetaan pääasiassa seuraavia syöpätauteja: - rintasyöpä",
+    "quote_en": "We mainly treat the following cancers: - breast cancer",
+    "confidence": "low"
+  },
+  {
+    "snapshot": "pori__sadehoitoyksikko.txt",
+    "indication": "bone",
+    "stated_default_fractions": null,
+    "stated_alternatives": null,
+    "criteria_for_short_course": null,
+    "distance_mentioned": false,
+    "quote_fi": "etäpesäkkeiden aiheuttamaa kipua, eli annamme oireenmukaista hoitoa.",
+    "quote_en": "pain caused by metastases, i.e. we give symptomatic treatment.",
+    "confidence": "low"
+  }
+]

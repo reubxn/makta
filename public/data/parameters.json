@@ -1,0 +1,199 @@
+{
+ "generated": "2026-11-14",
+ "parameters": [
+  {
+   "id": "commute_threshold_km",
+   "label": "Commuting threshold",
+   "default": 100,
+   "min": 30,
+   "max": 300,
+   "step": 10,
+   "unit": "km",
+   "kind": "assumption",
+   "source_ids": [
+    "roadmap_100km"
+   ],
+   "rationale": "Within this road distance the patient travels daily; beyond it they stay near the unit on treatment weeknights and go home at weekends. Framed by the roadmap's 100 km fact."
+  },
+  {
+   "id": "planning_visit",
+   "label": "Planning visits before treatment",
+   "default": 1,
+   "min": 0,
+   "max": 3,
+   "step": 1,
+   "unit": "trips",
+   "kind": "assumption",
+   "source_ids": [],
+   "rationale": "One round trip for planning (CT simulation) before treatment starts, the same for every schedule."
+  },
+  {
+   "id": "breast_fractions_long",
+   "label": "Breast: long schedule",
+   "default": 15,
+   "min": 15,
+   "max": 25,
+   "step": 1,
+   "unit": "sessions",
+   "kind": "sourced",
+   "source_ids": [
+    "fastforward_2020",
+    "rcr_nodal"
+   ],
+   "rationale": "40 Gy in 15 fractions over 3 weeks, the FAST-Forward control arm and the schedule that stays standard with nodal radiotherapy."
+  },
+  {
+   "id": "breast_fractions_short",
+   "label": "Breast: short schedule",
+   "default": 5,
+   "min": 5,
+   "max": 10,
+   "step": 1,
+   "unit": "sessions",
+   "kind": "sourced",
+   "source_ids": [
+    "fastforward_2020",
+    "rcr_whole_breast"
+   ],
+   "rationale": "26 Gy in 5 fractions over 1 week, non-inferior in FAST-Forward."
+  },
+  {
+   "id": "breast_share_rt",
+   "label": "Breast: share treated with radiotherapy",
+   "default": 0.7,
+   "min": 0.4,
+   "max": 0.9,
+   "step": 0.05,
+   "unit": "share",
+   "kind": "assumption",
+   "source_ids": [],
+   "rationale": "No citable Finnish or Nordic population figure was found for the share of new breast cancers that get adjuvant radiotherapy, so this is an assumption."
+  },
+  {
+   "id": "breast_share_eligible_short",
+   "label": "Breast: share eligible for 5 sessions",
+   "default": 0.6,
+   "min": 0.3,
+   "max": 0.9,
+   "step": 0.05,
+   "unit": "share",
+   "kind": "assumption",
+   "source_ids": [
+    "rcr_whole_breast",
+    "rcr_nodal"
+   ],
+   "rationale": "Eligible = whole breast or chest wall without nodal radiotherapy (RCR). No citable share was found, so the value is an assumption."
+  },
+  {
+   "id": "breast_share_already_short",
+   "label": "Breast: share already on 5 sessions",
+   "default": 0.2,
+   "min": 0,
+   "max": 1,
+   "step": 0.05,
+   "unit": "share",
+   "kind": "assumption",
+   "source_ids": [],
+   "rationale": "The real current schedule mix in Finland is not public. This dial says how many eligible patients already get 5 sessions; see What units say."
+  },
+  {
+   "id": "bone_fractions_multi",
+   "label": "Bone: multi-session course",
+   "default": 5,
+   "min": 2,
+   "max": 10,
+   "step": 1,
+   "unit": "sessions",
+   "kind": "assumption",
+   "source_ids": [
+    "rich_2018_bone_pain"
+   ],
+   "rationale": "Common multi-fraction schedules are 5 x 4 Gy and 10 x 3 Gy; 5 is the conservative choice."
+  },
+  {
+   "id": "bone_fractions_single",
+   "label": "Bone: single session",
+   "default": 1,
+   "min": 1,
+   "max": 2,
+   "step": 1,
+   "unit": "sessions",
+   "kind": "sourced",
+   "source_ids": [
+    "rich_2018_bone_pain",
+    "chow_2012_bone"
+   ],
+   "rationale": "A single 8 Gy fraction gives pain relief equal to multi-fraction courses."
+  },
+  {
+   "id": "bone_retreat_single",
+   "label": "Bone: retreatment after single session",
+   "default": 0.2,
+   "min": 0,
+   "max": 0.4,
+   "step": 0.01,
+   "unit": "share",
+   "kind": "sourced",
+   "source_ids": [
+    "rich_2018_bone_retreat"
+   ],
+   "rationale": "Systematic review of randomised trials: 20% retreated after a single fraction."
+  },
+  {
+   "id": "bone_retreat_multi",
+   "label": "Bone: retreatment after multi-session course",
+   "default": 0.08,
+   "min": 0,
+   "max": 0.3,
+   "step": 0.01,
+   "unit": "share",
+   "kind": "sourced",
+   "source_ids": [
+    "rich_2018_bone_retreat"
+   ],
+   "rationale": "Same review: 8% retreated after multiple fractions."
+  },
+  {
+   "id": "bone_share_single_now",
+   "label": "Bone: share already single session",
+   "default": 0.07,
+   "min": 0,
+   "max": 1,
+   "step": 0.01,
+   "unit": "share",
+   "kind": "sourced",
+   "source_ids": [
+    "rautakorpi_2017"
+   ],
+   "rationale": "Turku University Hospital 2005-2013: 7% of all radiotherapy courses in the last year of life were single-fraction. Single centre, old and not bone-specific, so treat it as indicative."
+  },
+  {
+   "id": "kela_car_eur_per_km",
+   "label": "Kela own-car rate",
+   "default": 0.33,
+   "min": 0.2,
+   "max": 0.6,
+   "step": 0.01,
+   "unit": "€/km",
+   "kind": "sourced",
+   "source_ids": [
+    "kela_car_per_km"
+   ],
+   "rationale": "Kela's own-car rate. Used to value the trip; Kela pays it above the 25 € copayment, and taxis cost more, so this is a lower bound."
+  },
+  {
+   "id": "kela_overnight_eur",
+   "label": "Kela overnight allowance",
+   "default": 20.18,
+   "min": 0,
+   "max": 60,
+   "step": 0.01,
+   "unit": "€",
+   "kind": "sourced",
+   "source_ids": [
+    "kela_overnight"
+   ],
+   "rationale": "Kela's overnight allowance, at most 20.18 € a night."
+  }
+ ]
+}

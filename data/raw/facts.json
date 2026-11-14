@@ -1,0 +1,190 @@
+{
+  "breast_cases_national": {
+    "value": 5232,
+    "year": 2024,
+    "unit": "new cases, women",
+    "source": "fcr_breast_2024",
+    "note": "Both sexes 2024 = 5262 (the spec's figure). Includes Åland (25)."
+  },
+  "breast_cases_national_both_sexes": {
+    "value": 5262,
+    "year": 2024,
+    "source": "fcr_breast_2024"
+  },
+  "breast_cases_mainland_county_sum": {
+    "value": 5204,
+    "year": 2024,
+    "source": "fcr_breast_2024_counties",
+    "note": "Sum of 21 counties + Helsinki, women, excl. Åland."
+  },
+  "bone_retreat_single": {
+    "value": 0.2,
+    "source": "rich_2018_bone_retreat"
+  },
+  "bone_retreat_multi": {
+    "value": 0.08,
+    "source": "rich_2018_bone_retreat"
+  },
+  "bone_pain_response_single": {
+    "value": 0.61,
+    "source": "rich_2018_bone_pain",
+    "note": "overall response, ITT"
+  },
+  "bone_pain_response_multi": {
+    "value": 0.62,
+    "source": "rich_2018_bone_pain"
+  },
+  "bone_retreat_odds_ratio_chow2012": {
+    "value": 2.6,
+    "source": "chow_2012_bone",
+    "note": "retreatment 2.6-fold more likely after single fraction"
+  },
+  "breast_share_rt": {
+    "value": null,
+    "source": null,
+    "note": "No citable Nordic/European population figure found; use assumption 0.7."
+  },
+  "breast_share_eligible_short": {
+    "value": null,
+    "source": null,
+    "note": "No citable figure found; use assumption 0.6. RCR defines eligibility: non-nodal breast/chest wall without immediate reconstruction (rcr_whole_breast)."
+  },
+  "bone_share_single_now": {
+    "value": 0.07,
+    "source": "rautakorpi_2017",
+    "note": "Share of ALL RT courses in last year of life given as single fraction, Turku 2005-2013; not bone-specific."
+  },
+  "kela_car_eur_per_km": {
+    "value": 0.33,
+    "source": "kela_car_per_km"
+  },
+  "kela_overnight_eur": {
+    "value": 20.18,
+    "source": "kela_overnight"
+  },
+  "kela_copay_trip": {
+    "value": 25,
+    "source": "kela_copay_trip",
+    "note": "max per one-way trip"
+  },
+  "kela_annual_cap": {
+    "value": 300,
+    "source": "kela_annual_cap"
+  },
+  "kela_spend_2025_eur": {
+    "value": 364000000,
+    "source": "kela_spend_2025"
+  },
+  "kela_trips_2025": {
+    "value": 4600000,
+    "source": "kela_spend_2025"
+  },
+  "kela_taxi_trips_2025": {
+    "value": 3300000,
+    "source": "kela_spend_2025"
+  },
+  "kela_taxi_spend_2025_eur": {
+    "value": 227000000,
+    "source": "kela_taxi_2025"
+  },
+  "kela_per_resident_max_kainuu_eur": {
+    "value": 157,
+    "source": "kela_regional_2025"
+  },
+  "kela_per_resident_min_helsinki_eur": {
+    "value": 23,
+    "source": "kela_regional_2025"
+  },
+  "distance_or_palliative_50km": {
+    "value": 0.84,
+    "source": "distance_meta_2022",
+    "note": "OR for receiving palliative RT, >=50 km vs <50 km; = 16% lower odds"
+  },
+  "lung_hr_50km": {
+    "value": 1.47,
+    "ci": [
+      1.07,
+      2.01
+    ],
+    "source": "paakkola_2024"
+  },
+  "roadmap_palliative_threshold_km": {
+    "value": 100,
+    "source": "roadmap_100km",
+    "page": 13
+  },
+  "roadmap_outcome_threshold_km": {
+    "value": 50,
+    "source": "roadmap_50km",
+    "page": 13
+  },
+  "roadmap_central_hospital_km": {
+    "value": 400,
+    "source": "roadmap_400_700km",
+    "page": 13
+  },
+  "roadmap_university_hospital_km": {
+    "value": 700,
+    "source": "roadmap_400_700km",
+    "page": 13
+  },
+  "turku_thesis_threshold_km": {
+    "value": 100,
+    "source": "rautakorpi_thesis",
+    "note": "median 110 d from last RT to death for >100 km vs 80-83 d others"
+  },
+  "fastforward_10y_recurrence_short": {
+    "value": 0.021,
+    "ci": [
+      0.015,
+      0.031
+    ],
+    "source": "fastforward_10y_2026",
+    "note": "26 Gy/5 fr, 10-year cumulative incidence of ipsilateral breast recurrence"
+  },
+  "fastforward_10y_recurrence_long": {
+    "value": 0.036,
+    "ci": [
+      0.027,
+      0.049
+    ],
+    "source": "fastforward_10y_2026",
+    "note": "40 Gy/15 fr"
+  },
+  "fastforward_10y_n_itt": {
+    "value": 4087,
+    "source": "fastforward_10y_2026"
+  },
+  "fastforward_n": {
+    "value": 4096,
+    "source": "fastforward_2020_n",
+    "note": "2020 paper; 4110 enrolled per 2026 paper"
+  },
+  "fastforward_late_effects_10y_long": {
+    "value": 0.131,
+    "source": "fastforward_10y_2026",
+    "note": "moderate/marked clinician-reported breast/chest wall effects, 40 Gy"
+  },
+  "fastforward_late_effects_10y_short": {
+    "value": 0.144,
+    "source": "fastforward_10y_2026",
+    "note": "26 Gy"
+  },
+  "breast_fractions_long": {
+    "value": 15,
+    "source": "fastforward_2020"
+  },
+  "breast_fractions_short": {
+    "value": 5,
+    "source": "fastforward_2020"
+  },
+  "bone_fractions_single": {
+    "value": 1,
+    "source": "rich_2018_bone_retreat"
+  },
+  "tays_rt_patients_per_year": {
+    "value": 3400,
+    "source": "tays_catchment",
+    "note": "approx., Tays radiotherapy unit"
+  }
+}

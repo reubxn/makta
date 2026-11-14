@@ -1,0 +1,62 @@
+[
+  {
+    "snapshot": "jyvaskyla__breast-pathway-sadehoito.txt",
+    "indication": "breast",
+    "stated_default_fractions": 15,
+    "stated_alternatives": null,
+    "criteria_for_short_course": null,
+    "distance_mentioned": false,
+    "quote_fi": "Sädehoitoa annetaan yleensä 15 kertaa peräkkäisinä arkipäivinä.",
+    "quote_en": "Radiotherapy is usually given 15 times on consecutive weekdays.",
+    "confidence": "high"
+  },
+  {
+    "snapshot": "jyvaskyla__breast-rt-leaflet.txt",
+    "indication": "breast",
+    "stated_default_fractions": null,
+    "stated_alternatives": [
+      "5 sessions",
+      "15 sessions"
+    ],
+    "criteria_for_short_course": null,
+    "distance_mentioned": false,
+    "quote_fi": "Sädehoitoa annetaan 5 tai 15 kertaa yksilöllisesti tehdyn suunnitelman mukaisesti ja sen vaikutus on paikallinen.",
+    "quote_en": "Radiotherapy is given 5 or 15 times according to an individually made plan, and its effect is local.",
+    "confidence": "high"
+  },
+  {
+    "snapshot": "kuopio__sadehoito.txt",
+    "indication": "bone",
+    "stated_default_fractions": null,
+    "stated_alternatives": [
+      "1-10 sessions (palliative radiotherapy, usual range; not bone-specific)"
+    ],
+    "criteria_for_short_course": null,
+    "distance_mentioned": false,
+    "quote_fi": "Oireita lievittävä eli palliatiivinen sädehoito on kestoltaan lyhyempi ja sisältää tavallisesti yhdestä kymmeneen hoitokertaa.",
+    "quote_en": "Symptom-relieving, i.e. palliative, radiotherapy is shorter in duration and usually comprises one to ten treatment sessions.",
+    "confidence": "medium"
+  },
+  {
+    "snapshot": "oulu__breast-pathway.txt",
+    "indication": "breast",
+    "stated_default_fractions": null,
+    "stated_alternatives": null,
+    "criteria_for_short_course": null,
+    "distance_mentioned": false,
+    "quote_fi": "Sädehoitojakson pituus vaihtelee 1–4 viikkoon. Lopullinen hoidon kesto selviää suunnitelman teon yhteydessä.",
+    "quote_en": "The length of the radiotherapy course varies from 1 to 4 weeks. The final duration of treatment becomes clear when the plan is made.",
+    "confidence": "high"
+  },
+  {
+    "snapshot": "oulu__breast-pathway.txt",
+    "indication": "bone",
+    "stated_default_fractions": null,
+    "stated_alternatives": null,
+    "criteria_for_short_course": null,
+    "distance_mentioned": false,
+    "quote_fi": "Palliatiivista sädehoitoa käytetään myös esim. luus­toe­tä­pe­säk­kei­den, yksittäisten si­säe­li­ne­tä­pe­säk­kei­den ja aivoetäpesäkkeiden hoitoon.",
+    "quote_en": "Palliative radiotherapy is also used, e.g., to treat bone metastases, single visceral metastases and brain metastases.",
+    "confidence": "medium"
+  }
+]

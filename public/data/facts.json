@@ -1,0 +1,221 @@
+{
+ "generated": "2026-11-14",
+ "facts": [
+  {
+   "id": "story_distance",
+   "kind": "sourced",
+   "source_ids": [
+    "roadmap_100km",
+    "roadmap_50km",
+    "asli_2018"
+   ],
+   "text": "The national cancer roadmap notes that palliative radiotherapy is used less by patients living more than 100 km from the nearest unit, and that outcomes are worse beyond 50 km.",
+   "note": "Roadmap p. 13. The 100 km finding cites Norwegian data (Åsli 2018); the 50 km finding cites one Ostrobothnia lung cancer study."
+  },
+  {
+   "id": "evidence_bone",
+   "kind": "sourced",
+   "source_ids": [
+    "rich_2018_bone_pain",
+    "rich_2018_bone_retreat",
+    "chow_2012_bone"
+   ],
+   "text": "Randomised trials: a single 8 Gy session relieves pain as well as a multi-session course (61% vs 62% respond), at the cost of more retreatment (20% vs 8%)."
+  },
+  {
+   "id": "evidence_breast",
+   "kind": "sourced",
+   "source_ids": [
+    "fastforward_2020",
+    "fastforward_2020_n",
+    "fastforward_10y_2026",
+    "rcr_whole_breast",
+    "rcr_nodal"
+   ],
+   "text": "FAST-Forward (4,096 patients): 5 sessions in one week is at least as good as 15 sessions over three weeks; 10-year breast recurrence 2.1% vs 3.6%. Applies to whole breast or chest wall without nodal radiotherapy."
+  },
+  {
+   "id": "turku_baseline",
+   "kind": "sourced",
+   "source_ids": [
+    "rautakorpi_2017"
+   ],
+   "text": "At Turku University Hospital in 2005-2013, only 7% of radiotherapy courses in patients' last year of life were single-session.",
+   "note": "Single centre, old and covering all courses, not only bone metastases."
+  },
+  {
+   "id": "distance_meta",
+   "kind": "sourced",
+   "source_ids": [
+    "distance_meta_2022"
+   ],
+   "text": "Meta-analysis: living 50 km or more from a radiotherapy centre goes with 16% lower odds of receiving palliative radiotherapy (OR 0.84)."
+  },
+  {
+   "id": "daily_weeks",
+   "kind": "sourced",
+   "source_ids": [
+    "lahti_daily_weeks"
+   ],
+   "text": "Radiotherapy patients often attend daily for several weeks."
+  },
+  {
+   "id": "kela_spend",
+   "kind": "sourced",
+   "source_ids": [
+    "kela_spend_2025",
+    "kela_regional_2025"
+   ],
+   "text": "Kela paid 364 million euros of travel reimbursement in 2025 for 4.6 million trips; per resident it was highest in Kainuu (157 €) and lowest in Helsinki (23 €)."
+  },
+  {
+   "id": "kela_rules",
+   "kind": "sourced",
+   "source_ids": [
+    "kela_copay_trip",
+    "kela_annual_cap",
+    "kela_car_per_km",
+    "kela_overnight"
+   ],
+   "text": "Patients pay up to 25 € per one-way trip and at most 300 € a year; own-car travel is valued at 0.33 €/km and the overnight allowance is up to 20.18 €."
+  },
+  {
+   "id": "units_count",
+   "kind": "sourced",
+   "source_ids": [
+    "rovaniemi_no_unit",
+    "national_13_units",
+    "unit_oulu"
+   ],
+   "text": "12 public radiotherapy units serve mainland Finland. Lapland has none: its patients are treated in Oulu.",
+   "note": "Unit list verified from each unit's public pages; the private Docrates clinic in Helsinki is excluded."
+  },
+  {
+   "id": "over_100km",
+   "kind": "calculated",
+   "source_ids": [
+    "osrm_table",
+    "statfin_population",
+    "wikidata_coords"
+   ],
+   "text": "89 municipalities, home to 637,661 people, are more than 100 km by road from their nearest unit.",
+   "note": "Road distance from each municipality's centre point; population 31 Dec 2025."
+  },
+  {
+   "id": "breast_cases",
+   "kind": "sourced",
+   "source_ids": [
+    "fcr_breast_2024",
+    "fcr_breast_2024_counties"
+   ],
+   "text": "5,232 women were diagnosed with breast cancer in Finland in 2024 (5,204 on the mainland, excluding Åland)."
+  }
+ ],
+ "goal3": [
+  {
+   "id": "g3_target_times",
+   "short": "Goal 3: treatment within target times",
+   "fi": "Potilaat pääsevät hoitoon tavoiteaikojen puitteissa",
+   "en": "Patients receive treatment within target times",
+   "source_ids": [
+    "strategy_goal3",
+    "roadmap_goal3_access"
+   ]
+  },
+  {
+   "id": "g3_effectiveness",
+   "short": "Goal 3.1: indicators for agreed cancers",
+   "fi": "Kansalliset ja yhtenäiset tavoitteet ja keskeisimmät vaikuttavuuden seurantamittarit määritetty sovittuihin syöpiin.",
+   "en": "National targets and key effectiveness indicators defined for agreed cancers",
+   "source_ids": [
+    "strategy_goal3_1"
+   ]
+  },
+  {
+   "id": "g_equity",
+   "short": "Regional differences monitored",
+   "fi": "ovat käytettävissä palvelutoiminnassa ja niillä ohjataan toimintaa",
+   "en": "Regional differences in treatment are available and used to steer services (cross-cutting indicator)",
+   "source_ids": [
+    "strategy_equity"
+   ]
+  }
+ ],
+ "limitations": [
+  {
+   "title": "Current schedule mix unknown",
+   "text": "How many patients already get the short schedules in Finland is not public. Matka shows it as an adjustable assumption next to what units say on their own pages."
+  },
+  {
+   "title": "Centre-point distances",
+   "text": "Distances run from each municipality's centre point (Wikidata coordinate), not from where patients live. In large municipalities real trips can be much longer or shorter."
+  },
+  {
+   "title": "Population allocation",
+   "text": "Breast cases per municipality are allocated from county counts by female population weighted by age-specific incidence. They are calculated, not registry counts.",
+   "source_ids": [
+    "fcr_breast_2024_counties",
+    "fcr_breast_age5"
+   ]
+  },
+  {
+   "title": "Bone counts not public",
+   "text": "No citable yearly count of palliative bone radiotherapy courses was found, so the bone lever is shown per patient only."
+  },
+  {
+   "title": "Nearest unit, not referral unit",
+   "text": "Each municipality is routed to the unit with the shortest drive among its three nearest. Real referral paths can differ (for example, some Satakunta patients are treated in Turku)."
+  },
+  {
+   "title": "Private units excluded",
+   "text": "Private clinics (for example Docrates in Helsinki) are excluded; Matka covers the public units only."
+  },
+  {
+   "title": "Åland excluded",
+   "text": "Åland has a separate health system and is left out of the map and totals."
+  },
+  {
+   "title": "OSRM road data",
+   "text": "Drive times come from the public OSRM server on OpenStreetMap data: free-flow driving with no traffic, weather or ferry waits.",
+   "source_ids": [
+    "osrm_table"
+   ]
+  },
+  {
+   "title": "Kela cost is a lower bound",
+   "text": "Trips are valued at Kela's own-car rate plus the overnight allowance. Taxis cost more, and Kela pays the own-car rate only above the 25 € copayment.",
+   "source_ids": [
+    "kela_car_per_km",
+    "kela_copay_trip"
+   ]
+  },
+  {
+   "title": "Commuting model",
+   "text": "Within the threshold the patient travels daily; beyond it they stay near the unit on weeknights and go home at weekends. Real choices vary (patient hotels, transport by ambulance, family help)."
+  },
+  {
+   "title": "Roadmap distance facts",
+   "text": "The roadmap's 100 km finding cites Norwegian data and its 50 km finding one Finnish lung study; they frame the threshold but were not measured for these schedules.",
+   "source_ids": [
+    "roadmap_100km",
+    "asli_2018",
+    "paakkola_2024"
+   ]
+  },
+  {
+   "title": "Turku baseline",
+   "text": "The 7% single-session figure is from one hospital in 2005-2013 and covers all courses in the last year of life, not only bone metastases.",
+   "source_ids": [
+    "rautakorpi_2017"
+   ]
+  },
+  {
+   "title": "Eligibility and treatment shares",
+   "text": "The shares of breast patients treated with radiotherapy (70%) and eligible for 5 sessions (60%) are assumptions; no citable Finnish figure was found."
+  },
+  {
+   "title": "Clinical decision",
+   "text": "Schedule choice is a clinical decision for each patient. Matka proposes options for clinical teams to evaluate; it does not prescribe."
+  }
+ ]
+}

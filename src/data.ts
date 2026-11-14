@@ -83,6 +83,7 @@ export interface Goal3Indicator {
 export interface Cases {
   year: number | string;
   national_cases: number;
+  mainland_cases: number;
   kind: Kind;
   source_ids: string[];
   note: string;
@@ -158,7 +159,13 @@ async function get<T>(name: string, optional = false): Promise<T | null> {
     if (optional) return null;
     throw new Error(`Failed to load ${name}: ${res.status}`);
   }
-  return (await res.json()) as T;
+  try {
+    return (await res.json()) as T;
+  } catch (e) {
+    // Static servers may answer a missing file with index.html.
+    if (optional) return null;
+    throw new Error(`Failed to parse ${name}: ${e}`);
+  }
 }
 
 export async function loadData(): Promise<AppData> {

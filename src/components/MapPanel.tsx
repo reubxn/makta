@@ -7,6 +7,7 @@ import { useData } from '../context';
 import { currentBurden, equivalentDistanceFraction, perPatient, type Indication, type MetricKey, type Params } from '../model/metrics';
 import { easeInOut, fmt } from '../hooks';
 import { Prov } from './Prov';
+import { FactText } from './FactText';
 
 export interface FlyRequest {
   target: 'finland' | 'muni';
@@ -14,8 +15,8 @@ export interface FlyRequest {
   nonce: number;
 }
 
-const FINLAND: MapViewState = { longitude: 25.6, latitude: 64.3, zoom: 4.35, pitch: 45, bearing: 0 };
-const FINLAND_FLAT: MapViewState = { ...FINLAND, latitude: 65.0, zoom: 4.45, pitch: 0 };
+const FINLAND: MapViewState = { longitude: 26.3, latitude: 63.75, zoom: 4.5, pitch: 45, bearing: -8 };
+const FINLAND_FLAT: MapViewState = { ...FINLAND, latitude: 65.1, zoom: 4.5, pitch: 0, bearing: 0 };
 
 const RAMP_LO = [0xe8, 0xee, 0xf5];
 const RAMP_HI = [0x0b, 0x3d, 0x6e];
@@ -30,7 +31,7 @@ const METRICS: [MetricKey, string][] = [
   ['hours', 'Hours on the road'],
   ['roundTrips', 'Round trips'],
 ];
-const MAX_COLUMN_M = 230_000;
+const MAX_COLUMN_M = 190_000;
 
 interface Props {
   indication: Indication;
@@ -60,7 +61,7 @@ export function MapPanel(props: Props) {
     } else if (fly.code) {
       const m = data.muniByCode[fly.code];
       if (m) {
-        setViewState({ longitude: m.lon - 1.2, latitude: m.lat - 2.1, zoom: 5.6, pitch: pitched ? 45 : 0, bearing: 0, transitionDuration: 1600, transitionInterpolator: new FlyToInterpolator({ curve: 1.3 }), transitionEasing: easeInOut } as MapViewState);
+        setViewState({ longitude: m.lon - 0.8, latitude: m.lat - 2.6, zoom: 4.95, pitch: pitched ? 45 : 0, bearing: -8, transitionDuration: 1600, transitionInterpolator: new FlyToInterpolator({ curve: 1.3 }), transitionEasing: easeInOut } as MapViewState);
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -144,11 +145,11 @@ export function MapPanel(props: Props) {
       id: 'columns',
       data: rows,
       diskResolution: 14,
-      radius: 5200,
+      radius: 6500,
       extruded: true,
       getPosition: (d: (typeof rows)[number]) => [d.lon, d.lat],
       getElevation: (d: (typeof rows)[number]) => (d.value / maxLong) * MAX_COLUMN_M,
-      getFillColor: (d: (typeof rows)[number]) => (d.code === selected ? [14, 124, 102, 255] : [...ramp(0.35 + 0.65 * (d.value / maxLong)), 235]),
+      getFillColor: (d: (typeof rows)[number]) => (d.code === selected ? [14, 124, 102, 255] : [...ramp(0.35 + 0.65 * (d.value / maxLong)), d.value > 0.01 ? 235 : 0]),
       material: { ambient: 0.55, diffuse: 0.55, shininess: 16, specularColor: [40, 40, 40] },
       pickable: true,
       updateTriggers: { getElevation: [rows, maxLong], getFillColor: [rows, maxLong, selected], getPosition: [rows] },
@@ -216,6 +217,9 @@ export function MapPanel(props: Props) {
           </button>
         </div>
       </div>
+      <div className="story-caption">
+        <FactText id="story_distance" />
+      </div>
       {fold && <div className="fold-banner">We can't move the hospital. The schedule can.</div>}
       <DeckGL
         views={new MapView({ repeat: false })}
@@ -236,7 +240,7 @@ export function MapPanel(props: Props) {
           <span>
             {metricLabel[0].toUpperCase() + metricLabel.slice(1)} per patient, {indication === 'bone' ? 'bone metastases' : 'breast'}
           </span>
-          <Prov kind="calculated" ids={data.routesMeta.source_ids} note={data.routesMeta.note} />
+          <Prov kind="calculated" ids={data.routesMeta.source_ids} note={`${data.routesMeta.note} Ringed dots: radiotherapy units.`} />
         </div>
         <div className="legend-bar" />
         <div className="legend-scale num">
@@ -245,7 +249,6 @@ export function MapPanel(props: Props) {
           <span>{fmt(maxLong, maxLong < 10 ? 1 : 0)}</span>
         </div>
       </div>
-      <div className="map-note">Distance from each municipality's centre point by road. Dots: radiotherapy units.</div>
     </section>
   );
 }
