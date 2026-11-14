@@ -8,28 +8,28 @@
   "affected_patients_per_year": 28.2,
   "nights_away_removed": 0,
   "round_trips_removed": 282,
-  "hours_on_road_removed": 410,
-  "km_removed": 26829,
-  "kela_lower_bound_eur_removed": 8854,
+  "hours_on_road_removed": 475,
+  "km_removed": 32226,
+  "kela_lower_bound_eur_removed": 10635,
   "machine_sessions_freed": 282,
   "kind": "calculated",
   "note": "Breast only; bone yearly counts are not public. Kela cost is a lower bound (own-car rate; taxis cost more)."
  },
  "hardest_hit_municipalities": [
   {
-   "municipality": "Askola",
+   "municipality": "Myrskylä",
    "nearest_unit_town": "Helsinki",
-   "road_km": 66,
-   "drive_hours": 1.0,
+   "road_km": 96,
+   "drive_hours": 1.4,
    "breast_15_sessions": {
     "nights_away": 0,
     "round_trips": 16,
-    "hours_on_road": 32
+    "hours_on_road": 45
    },
    "breast_5_sessions": {
     "nights_away": 0,
     "round_trips": 6,
-    "hours_on_road": 12
+    "hours_on_road": 17
    },
    "bone_multi_fraction_expected": {
     "nights_away": 0.0,
@@ -49,18 +49,18 @@
   },
   {
    "municipality": "Lapinjärvi",
-   "nearest_unit_town": "Kotka",
-   "road_km": 58,
-   "drive_hours": 0.9,
+   "nearest_unit_town": "Helsinki",
+   "road_km": 94,
+   "drive_hours": 1.2,
    "breast_15_sessions": {
     "nights_away": 0,
     "round_trips": 16,
-    "hours_on_road": 30
+    "hours_on_road": 40
    },
    "breast_5_sessions": {
     "nights_away": 0,
     "round_trips": 6,
-    "hours_on_road": 11
+    "hours_on_road": 15
    },
    "bone_multi_fraction_expected": {
     "nights_away": 0.0,
@@ -79,19 +79,19 @@
    ]
   },
   {
-   "municipality": "Porvoo",
+   "municipality": "Loviisa",
    "nearest_unit_town": "Helsinki",
-   "road_km": 51,
-   "drive_hours": 0.8,
+   "road_km": 89,
+   "drive_hours": 1.1,
    "breast_15_sessions": {
     "nights_away": 0,
     "round_trips": 16,
-    "hours_on_road": 24
+    "hours_on_road": 37
    },
    "breast_5_sessions": {
     "nights_away": 0,
     "round_trips": 6,
-    "hours_on_road": 9
+    "hours_on_road": 14
    },
    "bone_multi_fraction_expected": {
     "nights_away": 0.0,
@@ -110,35 +110,31 @@
    ]
   }
  ],
- "nearest_units": [
+ "units_patients_are_routed_to": [
   {
    "unit": "HUS Syöpäkeskus, Sädehoitoyksikkö",
    "town": "Helsinki",
-   "municipalities_served_in_county": 3,
-   "statements": [
+   "municipalities_routed_here": 7,
+   "routing_basis": "the county's sourced catchment",
+   "unit_exists_source_id": "S36",
+   "public_schedule_pages_found": true,
+   "statements_from_public_pages": [
     {
      "indication": "bone",
      "stated_default_fractions": null,
+     "stated_alternatives": null,
      "distance_mentioned": false,
      "quote_en": "Radiotherapy can also be used for pain relief or to relieve symptoms caused by spread cancer.",
-     "url": "https://www.hus.fi/potilaalle/hoidot-ja-tutkimukset/sadehoito"
+     "source_id": "S65"
     }
    ],
-   "source_id": "S36"
-  },
+   "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
+  }
+ ],
+ "sourced_catchments_for_this_county": [
   {
-   "unit": "Sädehoitoyksikkö, Kymenlaakson keskussairaala",
-   "town": "Kotka",
-   "municipalities_served_in_county": 2,
-   "statements": [],
-   "source_id": "S38"
-  },
-  {
-   "unit": "Sädehoitoyksikkö (Päijät-Hämeen keskussairaala)",
-   "town": "Lahti",
-   "municipalities_served_in_county": 2,
-   "statements": [],
-   "source_id": "S37"
+   "source_id": "S36",
+   "says": "HUS Syöpäkeskus (Meilahti, Helsinki University Hospital) (Helsinki) delivers external beam radiotherapy to public patients"
   }
  ],
  "parameters": [
@@ -318,6 +314,26 @@
    ]
   },
   {
+   "id": "evidence_bone_short",
+   "text": "A single 8 Gy session relieves pain as well as a multi-session course, with more retreatment.",
+   "kind": "sourced",
+   "source_ids": [
+    "S31",
+    "S30",
+    "S62"
+   ]
+  },
+  {
+   "id": "evidence_breast_short",
+   "text": "5 sessions in one week is non-inferior to 15 sessions over three weeks for eligible patients.",
+   "kind": "sourced",
+   "source_ids": [
+    "S9",
+    "S11",
+    "S15"
+   ]
+  },
+  {
    "id": "turku_baseline",
    "text": "At Turku University Hospital in 2005-2013, only 7% of radiotherapy courses in patients' last year of life were single-session.",
    "kind": "sourced",
@@ -431,6 +447,45 @@
   "S35",
   "S60"
  ],
+ "citation_guide": {
+  "bone_evidence (equal pain relief, more retreatment, 8 Gy)": [
+   "S31",
+   "S30",
+   "S32",
+   "S62"
+  ],
+  "breast_evidence (non-inferior, eligibility, nodal stays 15)": [
+   "S9",
+   "S11",
+   "S15",
+   "S14"
+  ],
+  "per_patient_numbers (distance, nights, trips, hours for a municipality)": [
+   "S60",
+   "S59",
+   "S30"
+  ],
+  "county_yearly_breast_totals": [
+   "S33",
+   "S57",
+   "S34",
+   "S35",
+   "S60"
+  ],
+  "distance_and_access (roadmap)": [
+   "S21",
+   "S22",
+   "S27"
+  ],
+  "current_schedule_mix_unknown": [
+   "S16"
+  ],
+  "limitations": [
+   "S59",
+   "S57",
+   "S60"
+  ]
+ },
  "sources": [
   {
    "id": "S1",
@@ -636,20 +691,6 @@
    "supports": "HUS Syöpäkeskus (Meilahti, Helsinki University Hospital) (Helsinki) delivers external beam radiotherapy to public patients"
   },
   {
-   "id": "S37",
-   "title": "Sädehoitoyksikkö",
-   "publisher": "Päijät-Hämeen hyvinvointialue",
-   "year": 2026,
-   "supports": "Päijät-Hämeen keskussairaala (Lahti) delivers external beam radiotherapy to public patients"
-  },
-  {
-   "id": "S38",
-   "title": "Sädehoitoyksikkö",
-   "publisher": "Kymenlaakson hyvinvointialue",
-   "year": 2026,
-   "supports": "Kymenlaakson keskussairaala (Kotka) delivers external beam radiotherapy to public patients"
-  },
-  {
    "id": "S45",
    "title": "Sädehoito",
    "publisher": "OYS / Pohde",
@@ -704,6 +745,13 @@
    "publisher": "University of Turku",
    "year": 2022,
    "supports": "ASCO guideline (Lutz 2011), as cited: single-fraction 8 Gy is as effective as 20 Gy in 5 fractions for painful bone metastases"
+  },
+  {
+   "id": "S65",
+   "title": "HUS Syöpäkeskus (Meilahti, Helsinki University Hospital): public patient page (bone)",
+   "publisher": "HUS-yhtymä (Uusimaa: Itä-, Keski-, Länsi- ja Vantaan-Keravan hyvinvointialueet sekä Helsingin kaupunki)",
+   "year": 2026,
+   "supports": "What Helsinki's radiotherapy unit tells patients about the palliative / bone radiotherapy schedule"
   }
  ]
 }

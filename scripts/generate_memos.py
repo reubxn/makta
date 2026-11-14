@@ -113,13 +113,31 @@ def build_facts(county_code):
     unit_ids = sorted({routes[m["code"]]["unit_id"] for m in ms})
     unit_facts = []
     for u in unit_ids:
-        n_m = sum(1 for m in ms if routes[m["code"]]["unit_id"] == u)
+        served = [m for m in ms if routes[m["code"]]["unit_id"] == u]
+        basis = {routes[m["code"]]["basis"] for m in served}
         st = [
-            {k: s[k] for k in ("indication", "stated_default_fractions", "distance_mentioned", "quote_en", "url")}
+            {k: s.get(k) for k in ("indication", "stated_default_fractions", "stated_alternatives", "distance_mentioned", "quote_en", "source_id")}
             for s in statements
             if s["unit_id"] == u
         ]
-        unit_facts.append({"unit": units[u]["name"], "town": units[u]["town"], "municipalities_served_in_county": n_m, "statements": st, "source_id": sid(units[u].get("source_id") or units[u]["source_key"])})
+        unit_facts.append(
+            {
+                "unit": units[u]["name"],
+                "town": units[u]["town"],
+                "municipalities_routed_here": len(served),
+                "routing_basis": "the county's sourced catchment" if basis == {"county_catchment"} else "nearest unit by drive time (Matka's assumption, not a referral rule)",
+                "unit_exists_source_id": sid(units[u].get("source_id") or units[u]["source_key"]),
+                "public_schedule_pages_found": len(st) > 0,
+                "statements_from_public_pages": st,
+                "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing.",
+            }
+        )
+    CATCH = {
+        "01": ["unit_hus"], "02": ["unit_hus"], "03": ["unit_hus"], "04": ["unit_hus"], "90": ["unit_hus"],
+        "07": ["tays_catchment"], "08": ["tays_catchment"], "16": ["tays_catchment", "seinajoki_no_unit"],
+        "12": ["kys_catchment", "nova_catchment"], "13": ["kys_catchment"], "15": ["nova_catchment"], "21": ["rovaniemi_no_unit"],
+    }
+    catchments = [{"source_id": sid(k), "says": src_by_key[k]["supports"]} for k in CATCH.get(county_code, [])]
     n_stayers = sum(1 for m in ms if routes[m["code"]]["road_km"] > P["commute_threshold_km"])
     facts = {
         "county_code": county_code,
@@ -139,7 +157,8 @@ def build_facts(county_code):
             "note": "Breast only; bone yearly counts are not public. Kela cost is a lower bound (own-car rate; taxis cost more).",
         },
         "hardest_hit_municipalities": hardest,
-        "nearest_units": unit_facts,
+        "units_patients_are_routed_to": unit_facts,
+        "sourced_catchments_for_this_county": catchments,
         "parameters": [
             {"id": p["id"], "label": p["label"], "value": p["default"], "unit": p["unit"], "kind": p["kind"], "source_ids": [sid(x) for x in p["source_ids"]]}
             for p in params
@@ -150,6 +169,15 @@ def build_facts(county_code):
         "goal3_indicators": [{"text_en": g["en"], "source_ids": [sid(x) for x in g["source_ids"]]} for g in facts_file["goal3"]],
         "memo_constants": {"first_step_within_days": 30, "goal_number": 3},
         "calculated_source_ids": [sid(x) for x in cases["source_ids"]] + [sid("osrm_table")],
+        "citation_guide": {
+            "bone_evidence (equal pain relief, more retreatment, 8 Gy)": [sid(x) for x in ("rich_2018_bone_pain", "rich_2018_bone_retreat", "chow_2012_bone", "rautakorpi_thesis_8gy")],
+            "breast_evidence (non-inferior, eligibility, nodal stays 15)": [sid(x) for x in ("fastforward_2020", "fastforward_10y_2026", "rcr_whole_breast", "rcr_nodal")],
+            "per_patient_numbers (distance, nights, trips, hours for a municipality)": [sid(x) for x in ("osrm_table", "wikidata_coords", "rich_2018_bone_retreat")],
+            "county_yearly_breast_totals": [sid(x) for x in cases["source_ids"]] + [sid("osrm_table")],
+            "distance_and_access (roadmap)": [sid(x) for x in ("roadmap_100km", "roadmap_50km", "distance_meta_2022")],
+            "current_schedule_mix_unknown": [sid("rautakorpi_2017")],
+            "limitations": [sid(x) for x in ("wikidata_coords", "statfin_population", "osrm_table")],
+        },
     }
     used = set()
 
@@ -158,7 +186,7 @@ def build_facts(county_code):
             for k, v in o.items():
                 if k in ("source_ids", "calculated_source_ids") and isinstance(v, list):
                     used.update(x for x in v if x in src_by_id)
-                elif k == "source_id" and v in src_by_id:
+                elif k.endswith("source_id") and v in src_by_id:
                     used.add(v)
                 else:
                     walk(v)
@@ -179,15 +207,17 @@ PROMPT = """Write a short action memo for the director of cancer services of {co
 
 Format (plain text, no markdown headings, at most 250 words):
 - Paragraph 1: a one-sentence finding about the travel burden radiotherapy schedules put on this county's patients.
-- Then three proposals, each a short paragraph starting "1.", "2.", "3.". Each names an owner ROLE (no personal names), a concrete first step within 30 days, and the Goal 3 indicator it serves (use the indicator wording from the facts).
+- Then three proposals, each a short paragraph starting "1.", "2.", "3.". Each names an owner ROLE (no personal names), a first step within 30 days that is a review or decision by the clinical team (not a publication or a change to patient pages), and the Goal 3 indicator it serves (use the indicator wording from the facts).
   - Lead with painful bone metastases: a single 8 Gy session as the default for uncomplicated cases (equal pain relief, more retreatment).
   - Then breast: 5 sessions as the default for eligible patients (whole breast or chest wall without nodal radiotherapy), naming distance as a reason to choose it. Say "at least as good" or "non-inferior", never "better".
   - Then: publish schedule mix and radiotherapy use by distance band every year.
 - Final paragraph: one sentence on limitations.
 
 Rules:
-- Every sentence ends with the source ids that support it in square brackets, e.g. [S4] or [S4, S7]. For calculated numbers, cite the calculated_source_ids. Use only ids that appear in the facts.
-- Use only numbers that appear in the facts JSON. You may round a number if you say so ("about 1,200"). Do not compute new numbers (no sums, differences or percentages that are not in the facts).
+- Every sentence ends with the source ids that support it in square brackets, e.g. [S4] or [S4, S7]. Cite only sources that support that sentence; follow citation_guide. A statement about what a unit's page says cites that statement's own source_id. Proposal sentences cite the evidence for the proposal. Use only ids that appear in the facts.
+- Which unit serves which municipality: use routing_basis. Only say a unit "treats" or "serves" the county when the basis is the county's sourced catchment or sourced_catchments_for_this_county says so; otherwise say "the nearest unit by drive time".
+- If public_schedule_pages_found is false for a unit, you may say Matka found no public page stating its schedule; never say the unit publishes nothing.
+- Use only numbers that appear in the facts JSON, with the meaning they have there. You may round a number if you say so ("about 1,200"). Do not compute new numbers (no sums, differences or percentages that are not in the facts).
 - Frame proposals as options for clinical teams to evaluate; schedule choice is a clinical decision. No survival claims for shorter schedules.
 - Write numbers with digits (e.g. "15 sessions"), use a comma as thousands separator.
 {feedback}
@@ -232,9 +262,16 @@ def number_ok(val, raw, context, nums):
     for f in nums:
         if abs(f - val) < 1e-9:
             return True
-        if abs(round(f, 1) - val) < 1e-9 or abs(round(f) - val) < 1e-9:
+        # One-decimal rounding of a fact is fine; dropping decimals needs an explicit "about".
+        if abs(round(f, 1) - val) < 1e-9:
             return True
-    approx = re.search(r"(about|around|roughly|approximately|nearly|almost|over|more than|some)\s*$", context, re.I)
+    approx = re.search(r"(about|around|roughly|approximately|some)\s*$", context, re.I)
+    above = re.search(r"(over|more than)\s*$", context, re.I)
+    below = re.search(r"(nearly|almost|under|less than)\s*$", context, re.I)
+    if above and any(f > val and (f - val) / max(val, 1) < 0.1 for f in nums):
+        return True
+    if below and any(f < val and (val - f) / max(val, 1) < 0.1 for f in nums):
+        return True
     if approx and val >= 10:
         # Rounded figure: accept if some fact rounds to it at the precision implied by trailing zeros.
         digits = raw.replace(",", "")
@@ -271,7 +308,7 @@ def validate(text, facts):
             problems.append(f"cites {cid}, which is not in the facts' sources")
     # Every sentence ends with source ids.
     for para in [p.strip() for p in text.split("\n") if p.strip()]:
-        sentences = re.split(r"(?<=[.!?\]])\s+(?=[A-Z0-9])", para)
+        sentences = re.split(r"(?<=[.!?])\s+", para)
         for s in sentences:
             s2 = s.strip()
             if not s2 or re.fullmatch(r"\d\.", s2):
@@ -279,7 +316,14 @@ def validate(text, facts):
             if not re.search(r"\[S\d+(?:\s*,\s*S\d+)*\]\.?$", s2):
                 problems.append(f"sentence without source ids: {s2[:60]}")
     words = len(strip_ids(text).split())
-    if words > 260:
+    spelled = re.findall(r"\b(two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|fifteen|twenty|hundred|thousand)\b", strip_ids(text), re.I)
+    if spelled:
+        problems.append(f"spelled-out numbers are not checked; use digits: {sorted(set(w.lower() for w in spelled))}")
+    for para in [p.strip() for p in text.split("\n") if p.strip()][1:4]:
+        if not re.match(r"^[123]\. ", para):
+            problems.append("proposals must be three paragraphs starting 1., 2., 3.")
+            break
+    if words > 250:
         problems.append(f"{words} words (max 250)")
     if re.search(r"\bbetter\b", text, re.I):
         problems.append('uses "better"')

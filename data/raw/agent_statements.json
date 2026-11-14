@@ -12,17 +12,6 @@
  },
  {
   "snapshot": "pori__sadehoitoyksikko.txt",
-  "indication": "breast",
-  "stated_default_fractions": null,
-  "stated_alternatives": null,
-  "criteria_for_short_course": null,
-  "distance_mentioned": false,
-  "quote_fi": "Meillä hoidetaan pääasiassa seuraavia syöpätauteja: - rintasyöpä",
-  "quote_en": "We mainly treat the following cancers: - breast cancer",
-  "confidence": "low"
- },
- {
-  "snapshot": "pori__sadehoitoyksikko.txt",
   "indication": "bone",
   "stated_default_fractions": null,
   "stated_alternatives": null,

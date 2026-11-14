@@ -9,13 +9,14 @@ interface RowDef {
   label: string;
   format: (v: number) => string;
   suffix?: string;
+  sub?: string;
 }
 
 const ROWS: RowDef[] = [
   { key: 'nights', label: 'Nights away', format: (v) => fmt(v, Number.isInteger(Math.round(v * 10) / 10) ? 0 : 1) },
   { key: 'roundTrips', label: 'Round trips', format: (v) => fmt(v, Number.isInteger(Math.round(v * 10) / 10) ? 0 : 1) },
   { key: 'hours', label: 'Hours on the road', format: fmtHours },
-  { key: 'kelaEur', label: 'Kela cost, lower bound', format: (v) => fmt(v), suffix: '€' },
+  { key: 'kelaEur', label: 'Kela cost, lower bound', sub: 'own car; taxis cost more', format: (v) => fmt(v), suffix: '€' },
 ];
 
 function Tweened({ v, format, className }: { v: number; format: (v: number) => string; className: string }) {
@@ -36,7 +37,7 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
   const commuter = isCommuter(route, params);
   const nLong = indication === 'bone' ? params.bone_fractions_multi : params.breast_fractions_long;
   const nShort = indication === 'bone' ? params.bone_fractions_single : params.breast_fractions_short;
-  const routeIds = [...data.routesMeta.source_ids, unit?.source_id ?? ''].filter(Boolean);
+  const routeIds = [...data.routesMeta.source_ids, unit?.source_id ?? '', route.basis_source ?? ''].filter(Boolean);
   const paramIds = data.parameters
     .filter((p) => p.id.startsWith(indication) || p.id.startsWith('kela') || p.id === 'commute_threshold_km' || p.id === 'planning_visit')
     .flatMap((p) => p.source_ids);
@@ -51,10 +52,10 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
         <h2 className="card-title" data-testid="card-title">
           {m.name_fi}
         </h2>
-        <div className="card-sub">{m.county_name_fi}</div>
+        <div className="card-sub">{m.county_name_en ?? m.county_name_fi}</div>
       </div>
       <div className="route-line">
-        <span style={{ display: 'inline-flex', gap: 5, alignItems: 'center' }} title="Nearest radiotherapy unit by drive time">
+        <span style={{ display: 'inline-flex', gap: 5, alignItems: 'center' }} title={route.basis === 'county_catchment' ? 'The unit that serves this county, as its sources state' : 'Nearest radiotherapy unit by drive time'}>
           <MapPin size={15} /> <b>{unit?.town ?? route.unit_id}</b>
         </span>
         <span style={{ display: 'inline-flex', gap: 5, alignItems: 'center' }} className="num">
@@ -63,13 +64,18 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
         <span style={{ display: 'inline-flex', gap: 5, alignItems: 'center' }} className="num">
           <Clock size={15} /> {Math.floor(route.drive_min / 60)} h {String(Math.round(route.drive_min % 60)).padStart(2, '0')} min
         </span>
-        <Prov kind="calculated" ids={routeIds} note={`${data.routesMeta.note}${route.method === 'estimated' ? ' This route is ESTIMATED (OSRM unavailable).' : ''}`} />
+        <span className="route-micro">{route.basis === 'county_catchment' ? 'Serves the county' : 'Nearest by drive'} · from centre point</span>
+        <Prov kind="calculated" ids={routeIds} note={`${route.basis === 'county_catchment' ? 'Routed to the unit that serves this county, as its sources state.' : 'Routed to the nearest unit by drive time (an assumption, not a referral rule).'} ${data.routesMeta.note}${route.method === 'estimated' ? ' This route is ESTIMATED (OSRM unavailable).' : ''}`} />
       </div>
       <div className="ba-head">
         <span>
           {indication === 'bone' ? `${nLong} sessions → single session` : `${nLong} → ${nShort} sessions`}, per patient
         </span>
         <Prov kind="calculated" ids={Array.from(new Set(paramIds))} note={calcNote} />
+      </div>
+      <div className="small-note today-note">
+        Today, if {Math.round(shareNow * 100)}% already get the short schedule: <b className="num">{fmt(today.nights, 1)}</b> nights away.{' '}
+        <Prov kind="assumption" ids={data.parameters.find((p) => p.id === (indication === 'bone' ? 'bone_share_single_now' : 'breast_share_already_short'))?.source_ids ?? []} note="The real current schedule mix in Finland is not public." />
       </div>
       {ROWS.map((r) => {
         const diff = after[r.key] - before[r.key];
@@ -79,6 +85,7 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
           <div className="ba-row" key={r.key}>
             <div className="ba-label" title={label}>
               {r.label}
+              {r.sub && <span className="label-sub">({r.sub})</span>}
               {up && lever && <span className="up-note">↑ {r.format(diff)} (retreatment)</span>}
             </div>
             {lever ? (
@@ -92,10 +99,8 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
               <div className="ba-values">
                 <Tweened v={before[r.key]} format={r.format} className="big before" />
                 {r.suffix && <span className="unit-suffix">{r.suffix}</span>}
+                <span className="after-hint" title={`With ${indication === 'bone' ? 'a single session' : `${nShort} sessions`}`}>→ {r.format(after[r.key])}{r.suffix ? ` ${r.suffix}` : ''} if short</span>
               </div>
-            )}
-            {!lever && (
-              <div className="after-hint">→ {r.format(after[r.key])}{r.suffix ? ` ${r.suffix}` : ''} with {indication === 'bone' ? 'a single session' : `${nShort} sessions`}</div>
             )}
           </div>
         );
@@ -103,11 +108,6 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
       {lever && indication === 'bone' && (before.roundTrips < after.roundTrips) && (
         <div className="bone-up-note">Fewer nights away; some patients need a second session, so trips can rise slightly.</div>
       )}
-      <div className="small-note">
-        Today, with the assumed {Math.round(shareNow * 100)}% already on the short schedule: about{' '}
-        <b className="num">{fmt(today.nights, 1)}</b> nights away per patient.{' '}
-        <Prov kind="assumption" ids={data.parameters.find((p) => p.id === (indication === 'bone' ? 'bone_share_single_now' : 'breast_share_already_short'))?.source_ids ?? []} note="The real current schedule mix in Finland is not public." />
-      </div>
     </aside>
   );
 }

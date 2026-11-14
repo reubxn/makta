@@ -110,57 +110,75 @@
    ]
   }
  ],
- "nearest_units": [
+ "units_patients_are_routed_to": [
   {
    "unit": "Sädehoitoyksikkö, Sairaala Nova",
    "town": "Jyväskylä",
-   "municipalities_served_in_county": 2,
-   "statements": [
+   "municipalities_routed_here": 2,
+   "routing_basis": "nearest unit by drive time (Matka's assumption, not a referral rule)",
+   "unit_exists_source_id": "S42",
+   "public_schedule_pages_found": true,
+   "statements_from_public_pages": [
     {
      "indication": "breast",
      "stated_default_fractions": 15,
+     "stated_alternatives": null,
      "distance_mentioned": false,
      "quote_en": "Radiotherapy is usually given 15 times on consecutive weekdays.",
-     "url": "https://www.hyvaks.fi/asiakkaana/hoitopolut/rintasyopapotilaan-hoitopolku/sadehoito"
+     "source_id": "S66"
     },
     {
      "indication": "breast",
      "stated_default_fractions": null,
+     "stated_alternatives": [
+      "5 sessions",
+      "15 sessions"
+     ],
      "distance_mentioned": false,
      "quote_en": "Radiotherapy is given 5 or 15 times according to an individually made plan, and its effect is local.",
-     "url": "https://www.hyvaks.fi/sites/default/files/ohjeet/Rintaleikkauksen%20jalkeinen%20sadehoito.pdf"
+     "source_id": "S67"
     }
    ],
-   "source_id": "S42"
+   "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
   },
   {
    "unit": "Sädehoitoyksikkö, Satasairaala",
    "town": "Pori",
-   "municipalities_served_in_county": 2,
-   "statements": [
+   "municipalities_routed_here": 2,
+   "routing_basis": "nearest unit by drive time (Matka's assumption, not a referral rule)",
+   "unit_exists_source_id": "S46",
+   "public_schedule_pages_found": true,
+   "statements_from_public_pages": [
     {
      "indication": "bone",
      "stated_default_fractions": null,
+     "stated_alternatives": null,
      "distance_mentioned": false,
      "quote_en": "pain caused by metastases, i.e. we give symptomatic treatment.",
-     "url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/"
-    },
-    {
-     "indication": "breast",
-     "stated_default_fractions": null,
-     "distance_mentioned": false,
-     "quote_en": "We mainly treat the following cancers: - breast cancer",
-     "url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/"
+     "source_id": "S70"
     }
    ],
-   "source_id": "S46"
+   "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
   },
   {
    "unit": "Sädehoito-osasto, Vaasan keskussairaala",
    "town": "Vaasa",
-   "municipalities_served_in_county": 14,
-   "statements": [],
-   "source_id": "S41"
+   "municipalities_routed_here": 14,
+   "routing_basis": "nearest unit by drive time (Matka's assumption, not a referral rule)",
+   "unit_exists_source_id": "S41",
+   "public_schedule_pages_found": false,
+   "statements_from_public_pages": [],
+   "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
+  }
+ ],
+ "sourced_catchments_for_this_county": [
+  {
+   "source_id": "S20",
+   "says": "Tays radiotherapy treats Pirkanmaa, most of Kanta-Häme and part of South Ostrobothnia"
+  },
+  {
+   "source_id": "S53",
+   "says": "Seinäjoki has no radiotherapy unit; South Ostrobothnia patients are mainly treated in Vaasa"
   }
  ],
  "parameters": [
@@ -340,6 +358,26 @@
    ]
   },
   {
+   "id": "evidence_bone_short",
+   "text": "A single 8 Gy session relieves pain as well as a multi-session course, with more retreatment.",
+   "kind": "sourced",
+   "source_ids": [
+    "S31",
+    "S30",
+    "S62"
+   ]
+  },
+  {
+   "id": "evidence_breast_short",
+   "text": "5 sessions in one week is non-inferior to 15 sessions over three weeks for eligible patients.",
+   "kind": "sourced",
+   "source_ids": [
+    "S9",
+    "S11",
+    "S15"
+   ]
+  },
+  {
    "id": "turku_baseline",
    "text": "At Turku University Hospital in 2005-2013, only 7% of radiotherapy courses in patients' last year of life were single-session.",
    "kind": "sourced",
@@ -453,6 +491,45 @@
   "S35",
   "S60"
  ],
+ "citation_guide": {
+  "bone_evidence (equal pain relief, more retreatment, 8 Gy)": [
+   "S31",
+   "S30",
+   "S32",
+   "S62"
+  ],
+  "breast_evidence (non-inferior, eligibility, nodal stays 15)": [
+   "S9",
+   "S11",
+   "S15",
+   "S14"
+  ],
+  "per_patient_numbers (distance, nights, trips, hours for a municipality)": [
+   "S60",
+   "S59",
+   "S30"
+  ],
+  "county_yearly_breast_totals": [
+   "S33",
+   "S57",
+   "S34",
+   "S35",
+   "S60"
+  ],
+  "distance_and_access (roadmap)": [
+   "S21",
+   "S22",
+   "S27"
+  ],
+  "current_schedule_mix_unknown": [
+   "S16"
+  ],
+  "limitations": [
+   "S59",
+   "S57",
+   "S60"
+  ]
+ },
  "sources": [
   {
    "id": "S1",
@@ -551,6 +628,13 @@
    "publisher": "Päijät-Hämeen hyvinvointialue (STT Info)",
    "year": 2026,
    "supports": "Radiotherapy patients often attend daily for several weeks"
+  },
+  {
+   "id": "S20",
+   "title": "Omavalvontasuunnitelma, Syövänhoidon vastuualue",
+   "publisher": "Pirkanmaan hyvinvointialue (Pirha)",
+   "year": 2026,
+   "supports": "Tays radiotherapy treats Pirkanmaa, most of Kanta-Häme and part of South Ostrobothnia"
   },
   {
    "id": "S21",
@@ -686,6 +770,13 @@
    "supports": "Lapland has no radiotherapy unit of its own; Lapland patients receive radiotherapy at OYS in Oulu"
   },
   {
+   "id": "S53",
+   "title": "Syöpätaudit",
+   "publisher": "Etelä-Pohjanmaan hyvinvointialue",
+   "year": 2026,
+   "supports": "Seinäjoki has no radiotherapy unit; South Ostrobothnia patients are mainly treated in Vaasa"
+  },
+  {
    "id": "S56",
    "title": "Changes in the use of chemoradiotherapy for non-small cell lung cancer after guideline implementation in Finland between 2016 and 2020 (Cancer Treatment and Research Communications)",
    "publisher": "Wichmann V et al.",
@@ -726,6 +817,27 @@
    "publisher": "University of Turku",
    "year": 2022,
    "supports": "ASCO guideline (Lutz 2011), as cited: single-fraction 8 Gy is as effective as 20 Gy in 5 fractions for painful bone metastases"
+  },
+  {
+   "id": "S66",
+   "title": "Keski-Suomen Sairaala Nova: public patient page (breast)",
+   "publisher": "Keski-Suomen hyvinvointialue",
+   "year": 2026,
+   "supports": "What Jyväskylä's radiotherapy unit tells patients about the breast radiotherapy schedule"
+  },
+  {
+   "id": "S67",
+   "title": "Keski-Suomen Sairaala Nova: public patient page (breast)",
+   "publisher": "Keski-Suomen hyvinvointialue",
+   "year": 2026,
+   "supports": "What Jyväskylä's radiotherapy unit tells patients about the breast radiotherapy schedule"
+  },
+  {
+   "id": "S70",
+   "title": "Satasairaala: public patient page (bone)",
+   "publisher": "Satakunnan hyvinvointialue",
+   "year": 2026,
+   "supports": "What Pori's radiotherapy unit tells patients about the palliative / bone radiotherapy schedule"
   }
  ]
 }

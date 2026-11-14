@@ -110,28 +110,39 @@
    ]
   }
  ],
- "nearest_units": [
+ "units_patients_are_routed_to": [
   {
    "unit": "OYSin Sädehoidon yksikkö",
    "town": "Oulu",
-   "municipalities_served_in_county": 21,
-   "statements": [
+   "municipalities_routed_here": 21,
+   "routing_basis": "the county's sourced catchment",
+   "unit_exists_source_id": "S45",
+   "public_schedule_pages_found": true,
+   "statements_from_public_pages": [
     {
      "indication": "bone",
      "stated_default_fractions": null,
+     "stated_alternatives": null,
      "distance_mentioned": false,
      "quote_en": "Palliative radiotherapy is also used, e.g., to treat bone metastases, single visceral metastases and brain metastases.",
-     "url": "https://oys.fi/palvelumme/syopataudit/rintasyopapotilaan-hoitopolku/"
+     "source_id": "S69"
     },
     {
      "indication": "breast",
      "stated_default_fractions": null,
+     "stated_alternatives": null,
      "distance_mentioned": false,
      "quote_en": "The length of the radiotherapy course varies from 1 to 4 weeks. The final duration of treatment becomes clear when the plan is made.",
-     "url": "https://oys.fi/palvelumme/syopataudit/rintasyopapotilaan-hoitopolku/"
+     "source_id": "S69"
     }
    ],
-   "source_id": "S45"
+   "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
+  }
+ ],
+ "sourced_catchments_for_this_county": [
+  {
+   "source_id": "S52",
+   "says": "Lapland has no radiotherapy unit of its own; Lapland patients receive radiotherapy at OYS in Oulu"
   }
  ],
  "parameters": [
@@ -311,6 +322,26 @@
    ]
   },
   {
+   "id": "evidence_bone_short",
+   "text": "A single 8 Gy session relieves pain as well as a multi-session course, with more retreatment.",
+   "kind": "sourced",
+   "source_ids": [
+    "S31",
+    "S30",
+    "S62"
+   ]
+  },
+  {
+   "id": "evidence_breast_short",
+   "text": "5 sessions in one week is non-inferior to 15 sessions over three weeks for eligible patients.",
+   "kind": "sourced",
+   "source_ids": [
+    "S9",
+    "S11",
+    "S15"
+   ]
+  },
+  {
    "id": "turku_baseline",
    "text": "At Turku University Hospital in 2005-2013, only 7% of radiotherapy courses in patients' last year of life were single-session.",
    "kind": "sourced",
@@ -424,6 +455,45 @@
   "S35",
   "S60"
  ],
+ "citation_guide": {
+  "bone_evidence (equal pain relief, more retreatment, 8 Gy)": [
+   "S31",
+   "S30",
+   "S32",
+   "S62"
+  ],
+  "breast_evidence (non-inferior, eligibility, nodal stays 15)": [
+   "S9",
+   "S11",
+   "S15",
+   "S14"
+  ],
+  "per_patient_numbers (distance, nights, trips, hours for a municipality)": [
+   "S60",
+   "S59",
+   "S30"
+  ],
+  "county_yearly_breast_totals": [
+   "S33",
+   "S57",
+   "S34",
+   "S35",
+   "S60"
+  ],
+  "distance_and_access (roadmap)": [
+   "S21",
+   "S22",
+   "S27"
+  ],
+  "current_schedule_mix_unknown": [
+   "S16"
+  ],
+  "limitations": [
+   "S59",
+   "S57",
+   "S60"
+  ]
+ },
  "sources": [
   {
    "id": "S1",
@@ -676,6 +746,13 @@
    "publisher": "University of Turku",
    "year": 2022,
    "supports": "ASCO guideline (Lutz 2011), as cited: single-fraction 8 Gy is as effective as 20 Gy in 5 fractions for painful bone metastases"
+  },
+  {
+   "id": "S69",
+   "title": "Oulun yliopistollinen sairaala (OYS), E-talo: public patient page (bone)",
+   "publisher": "Pohjois-Pohjanmaan hyvinvointialue (Pohde)",
+   "year": 2026,
+   "supports": "What Oulu's radiotherapy unit tells patients about the palliative / bone radiotherapy schedule"
   }
  ]
 }

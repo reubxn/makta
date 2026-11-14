@@ -176,7 +176,7 @@ function Matka({ data }: { data: AppData }) {
           <TotalsStrip params={s.params} leverOn={s.levers.breast} boneLever={s.levers.bone} indication={s.indication} highlight={s.highlightTotals} />
         </div>
       )}
-      {view === 'units' && <UnitsTab />}
+      {view === 'units' && <UnitsTab params={s.params} onParam={(id, v) => setS((p) => ({ ...p, params: { ...p.params, [id]: v } }))} />}
       {view === 'memo' && (
         <MemoTab county={s.memoCounty} run={s.memoRun} onCounty={(memoCounty) => update({ memoCounty })} onRun={() => setS((p) => ({ ...p, memoRun: p.memoRun + 1 }))} />
       )}

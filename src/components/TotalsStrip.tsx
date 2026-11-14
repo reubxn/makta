@@ -47,7 +47,7 @@ export function TotalsStrip({ params, leverOn, boneLever, indication, highlight 
       <section className={`panel strip strip-bone${highlight ? ' highlight' : ''}`} aria-label="Bone metastases summary" data-testid="totals">
         <div>
           <div className="stat-label">
-            Painful bone metastases: every patient in the {far.length} municipalities more than {params.commute_threshold_km} km by road from a unit ({farPop.toLocaleString('en-GB')} people)
+            Painful bone metastases: a patient living in any of the {far.length} municipalities more than {params.commute_threshold_km} km by road from a unit (home to {farPop.toLocaleString('en-GB')} people)
             <Prov kind="calculated" ids={[...data.routesMeta.source_ids, 'statfin_population', ...boneIds]} note="Expected nights away per course for a patient beyond the commuting threshold, including retreatment. The same for every such municipality, because stayers spend the treatment weeknights near the unit." />
           </div>
           <div className="bone-line num">
@@ -76,7 +76,7 @@ export function TotalsStrip({ params, leverOn, boneLever, indication, highlight 
       <div className="strip-side">
         <div className="strip-caption">
           {leverOn
-            ? `Breast, all of Finland, per year · about ${fmtRounded(totals.national.patients)} eligible patients`
+            ? `Breast, all of Finland, per year · about ${fmtRounded(totals.national.patients)} eligible patients (cases allocated by population)`
             : 'Breast, all of Finland, per year · switch the lever on to see what 5 sessions would remove'}
         </div>
         {chips}

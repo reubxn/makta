@@ -21,6 +21,8 @@ export interface RouteRow {
   road_km: number;
   drive_min: number;
   method: 'osrm' | 'estimated';
+  basis?: 'county_catchment' | 'nearest_drive_time';
+  basis_source?: string | null;
 }
 
 export interface Unit {
@@ -102,6 +104,7 @@ export interface UnitStatement {
   url: string;
   accessed: string;
   confidence: string | number | null;
+  source_id?: string;
 }
 
 export interface UnitStatements {
@@ -194,7 +197,7 @@ export async function loadData(): Promise<AppData> {
   }
   const defaults = Object.fromEntries(params!.parameters.map((p) => [p.id, p.default])) as unknown as Params;
   const countyNames: Record<string, string> = {};
-  for (const x of municipalities) countyNames[x.county_code] = x.county_name_fi;
+  for (const x of municipalities) countyNames[x.county_code] = x.county_name_en ?? x.county_name_fi;
   return {
     municipalities,
     muniByCode,

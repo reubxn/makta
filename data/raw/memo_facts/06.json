@@ -110,30 +110,28 @@
    ]
   }
  ],
- "nearest_units": [
+ "units_patients_are_routed_to": [
   {
    "unit": "Sädehoitoyksikkö, Satasairaala",
    "town": "Pori",
-   "municipalities_served_in_county": 16,
-   "statements": [
+   "municipalities_routed_here": 16,
+   "routing_basis": "nearest unit by drive time (Matka's assumption, not a referral rule)",
+   "unit_exists_source_id": "S46",
+   "public_schedule_pages_found": true,
+   "statements_from_public_pages": [
     {
      "indication": "bone",
      "stated_default_fractions": null,
+     "stated_alternatives": null,
      "distance_mentioned": false,
      "quote_en": "pain caused by metastases, i.e. we give symptomatic treatment.",
-     "url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/"
-    },
-    {
-     "indication": "breast",
-     "stated_default_fractions": null,
-     "distance_mentioned": false,
-     "quote_en": "We mainly treat the following cancers: - breast cancer",
-     "url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/"
+     "source_id": "S70"
     }
    ],
-   "source_id": "S46"
+   "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
   }
  ],
+ "sourced_catchments_for_this_county": [],
  "parameters": [
   {
    "id": "commute_threshold_km",
@@ -311,6 +309,26 @@
    ]
   },
   {
+   "id": "evidence_bone_short",
+   "text": "A single 8 Gy session relieves pain as well as a multi-session course, with more retreatment.",
+   "kind": "sourced",
+   "source_ids": [
+    "S31",
+    "S30",
+    "S62"
+   ]
+  },
+  {
+   "id": "evidence_breast_short",
+   "text": "5 sessions in one week is non-inferior to 15 sessions over three weeks for eligible patients.",
+   "kind": "sourced",
+   "source_ids": [
+    "S9",
+    "S11",
+    "S15"
+   ]
+  },
+  {
    "id": "turku_baseline",
    "text": "At Turku University Hospital in 2005-2013, only 7% of radiotherapy courses in patients' last year of life were single-session.",
    "kind": "sourced",
@@ -424,6 +442,45 @@
   "S35",
   "S60"
  ],
+ "citation_guide": {
+  "bone_evidence (equal pain relief, more retreatment, 8 Gy)": [
+   "S31",
+   "S30",
+   "S32",
+   "S62"
+  ],
+  "breast_evidence (non-inferior, eligibility, nodal stays 15)": [
+   "S9",
+   "S11",
+   "S15",
+   "S14"
+  ],
+  "per_patient_numbers (distance, nights, trips, hours for a municipality)": [
+   "S60",
+   "S59",
+   "S30"
+  ],
+  "county_yearly_breast_totals": [
+   "S33",
+   "S57",
+   "S34",
+   "S35",
+   "S60"
+  ],
+  "distance_and_access (roadmap)": [
+   "S21",
+   "S22",
+   "S27"
+  ],
+  "current_schedule_mix_unknown": [
+   "S16"
+  ],
+  "limitations": [
+   "S59",
+   "S57",
+   "S60"
+  ]
+ },
  "sources": [
   {
    "id": "S1",
@@ -683,6 +740,13 @@
    "publisher": "University of Turku",
    "year": 2022,
    "supports": "ASCO guideline (Lutz 2011), as cited: single-fraction 8 Gy is as effective as 20 Gy in 5 fractions for painful bone metastases"
+  },
+  {
+   "id": "S70",
+   "title": "Satasairaala: public patient page (bone)",
+   "publisher": "Satakunnan hyvinvointialue",
+   "year": 2026,
+   "supports": "What Pori's radiotherapy unit tells patients about the palliative / bone radiotherapy schedule"
   }
  ]
 }

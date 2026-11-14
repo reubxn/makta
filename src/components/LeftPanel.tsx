@@ -105,7 +105,12 @@ export function LeftPanel({ s, update }: { s: UiState; update: (p: Partial<UiSta
       </div>
 
       {byId[dial] && (
-        <ParamSlider p={byId[dial]} value={s.params[dial]} onChange={(v) => setParam(dial, v)} highlight />
+        <div className="slider-row highlight" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          <ParamSlider p={byId[dial]} value={s.params[dial]} onChange={(v) => setParam(dial, v)} />
+          {s.indication === 'breast' && byId['breast_share_eligible_short'] && (
+            <ParamSlider p={byId['breast_share_eligible_short']} value={s.params.breast_share_eligible_short} onChange={(v) => setParam('breast_share_eligible_short', v)} />
+          )}
+        </div>
       )}
 
       <div ref={drawerRef}>
@@ -116,7 +121,7 @@ export function LeftPanel({ s, update }: { s: UiState; update: (p: Partial<UiSta
       {s.drawerOpen && (
         <div className="assumptions">
           {data.parameters
-            .filter((p) => p.id !== dial)
+            .filter((p) => p.id !== dial && !(s.indication === 'breast' && p.id === 'breast_share_eligible_short'))
             .map((p) => (
               <ParamSlider key={p.id} p={p} value={s.params[p.id]} onChange={(v) => setParam(p.id, v)} />
             ))}

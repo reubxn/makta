@@ -12,5 +12,33 @@
   "kind": "report",
   "verified": true,
   "snapshot": "data/raw/sources/rautakorpi_thesis.txt"
+ },
+ {
+  "key": "kys_catchment",
+  "title": "Sädehoito (KYS)",
+  "publisher": "Pohjois-Savon hyvinvointialue",
+  "year": 2026,
+  "url": "https://pshyvinvointialue.fi/fi/sadehoito",
+  "accessed": "2026-11-14",
+  "supports": "KYS radiotherapy in Kuopio treats patients from the North Savo and South Savo wellbeing services counties",
+  "quote": "Hoidamme potilaita Pohjois- ja Etelä-Savon hyvinvointialueilta",
+  "note": "EN: We treat patients from the North and South Savo wellbeing services counties.",
+  "kind": "web",
+  "verified": true,
+  "snapshot": "data/raw/unit_evidence/kuopio_kys.txt"
+ },
+ {
+  "key": "nova_catchment",
+  "title": "Sädehoito (Sairaala Nova)",
+  "publisher": "Keski-Suomen hyvinvointialue",
+  "year": 2026,
+  "url": "https://www.hyvaks.fi/asiointi/sadehoito",
+  "accessed": "2026-11-14",
+  "supports": "Sairaala Nova radiotherapy in Jyväskylä treats patients from the Central Finland and South Savo wellbeing services counties",
+  "quote": "Yksikössä hoidetaan Keski-Suomen ja Etelä-Savon hyvinvointialueiden potilaita.",
+  "note": "EN: The unit treats patients from the Central Finland and South Savo wellbeing services counties.",
+  "kind": "web",
+  "verified": true,
+  "snapshot": "data/raw/unit_evidence/jyvaskyla.txt"
  }
 ]

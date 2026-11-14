@@ -3,7 +3,7 @@
  "model": null,
  "generated": "2026-11-14",
  "pages_read": 6,
- "statements_extracted": 8,
+ "statements_extracted": 7,
  "dropped": 0,
  "statements": [
   {
@@ -18,7 +18,8 @@
    "url": "https://www.hus.fi/potilaalle/hoidot-ja-tutkimukset/sadehoito",
    "accessed": "2026-11-14",
    "confidence": "low",
-   "snapshot": "data/raw/pages/hus__sadehoito.txt"
+   "snapshot": "data/raw/pages/hus__sadehoito.txt",
+   "source_id": "S65"
   },
   {
    "unit_id": "jyvaskyla",
@@ -32,7 +33,8 @@
    "url": "https://www.hyvaks.fi/asiakkaana/hoitopolut/rintasyopapotilaan-hoitopolku/sadehoito",
    "accessed": "2026-11-14",
    "confidence": "high",
-   "snapshot": "data/raw/pages/jyvaskyla__breast-pathway-sadehoito.txt"
+   "snapshot": "data/raw/pages/jyvaskyla__breast-pathway-sadehoito.txt",
+   "source_id": "S66"
   },
   {
    "unit_id": "jyvaskyla",
@@ -49,7 +51,8 @@
    "url": "https://www.hyvaks.fi/sites/default/files/ohjeet/Rintaleikkauksen%20jalkeinen%20sadehoito.pdf",
    "accessed": "2026-11-14",
    "confidence": "high",
-   "snapshot": "data/raw/pages/jyvaskyla__breast-rt-leaflet.txt"
+   "snapshot": "data/raw/pages/jyvaskyla__breast-rt-leaflet.txt",
+   "source_id": "S67"
   },
   {
    "unit_id": "kuopio",
@@ -65,7 +68,8 @@
    "url": "https://pshyvinvointialue.fi/sadehoito",
    "accessed": "2026-11-14",
    "confidence": "medium",
-   "snapshot": "data/raw/pages/kuopio__sadehoito.txt"
+   "snapshot": "data/raw/pages/kuopio__sadehoito.txt",
+   "source_id": "S68"
   },
   {
    "unit_id": "oulu",
@@ -79,7 +83,8 @@
    "url": "https://oys.fi/palvelumme/syopataudit/rintasyopapotilaan-hoitopolku/",
    "accessed": "2026-11-14",
    "confidence": "medium",
-   "snapshot": "data/raw/pages/oulu__breast-pathway.txt"
+   "snapshot": "data/raw/pages/oulu__breast-pathway.txt",
+   "source_id": "S69"
   },
   {
    "unit_id": "oulu",
@@ -93,7 +98,8 @@
    "url": "https://oys.fi/palvelumme/syopataudit/rintasyopapotilaan-hoitopolku/",
    "accessed": "2026-11-14",
    "confidence": "high",
-   "snapshot": "data/raw/pages/oulu__breast-pathway.txt"
+   "snapshot": "data/raw/pages/oulu__breast-pathway.txt",
+   "source_id": "S69"
   },
   {
    "unit_id": "pori",
@@ -107,21 +113,8 @@
    "url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/",
    "accessed": "2026-11-14",
    "confidence": "low",
-   "snapshot": "data/raw/pages/pori__sadehoitoyksikko.txt"
-  },
-  {
-   "unit_id": "pori",
-   "indication": "breast",
-   "stated_default_fractions": null,
-   "stated_alternatives": null,
-   "criteria_for_short_course": null,
-   "distance_mentioned": false,
-   "quote_fi": "Meillä hoidetaan pääasiassa seuraavia syöpätauteja: - rintasyöpä",
-   "quote_en": "We mainly treat the following cancers: - breast cancer",
-   "url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/",
-   "accessed": "2026-11-14",
-   "confidence": "low",
-   "snapshot": "data/raw/pages/pori__sadehoitoyksikko.txt"
+   "snapshot": "data/raw/pages/pori__sadehoitoyksikko.txt",
+   "source_id": "S70"
   }
  ],
  "note": "Each quote_fi was checked to be an exact (whitespace-normalised) substring of the saved page text; statements failing the check were dropped."

@@ -63,6 +63,19 @@ def osrm_table(sources, destinations):
     return data["durations"], data["distances"]
 
 
+# Sourced single-unit catchments: route these counties to the unit that serves them,
+# not the nearest by drive time. Other counties use the nearest unit (labelled so).
+CATCHMENT = {
+    "01": ("hus", "unit_hus"),  # HUS handles all external radiotherapy in Uusimaa
+    "02": ("hus", "unit_hus"),
+    "03": ("hus", "unit_hus"),
+    "04": ("hus", "unit_hus"),
+    "90": ("hus", "unit_hus"),
+    "08": ("tampere", "tays_catchment"),  # Tays: all of Pirkanmaa
+    "21": ("oulu", "rovaniemi_no_unit"),  # Lapland patients are treated at OYS
+}
+
+
 def main():
     munis = json.loads((ROOT / "public/data/municipalities.json").read_text())["municipalities"]
     units = json.loads((ROOT / "public/data/rt_units.json").read_text())["units"]
@@ -111,6 +124,16 @@ def main():
                         }
                     )
             best = min(candidates, key=lambda c: c["drive_min"])
+            basis, basis_source = "nearest_drive_time", None
+            if m["county_code"] in CATCHMENT:
+                uid, skey = CATCHMENT[m["county_code"]]
+                j = unit_ids.index(uid)
+                sl = haversine_km(m["lat"], m["lon"], units[j]["lat"], units[j]["lon"])
+                if table is not None and table[0][i][j] is not None:
+                    best = {"unit_id": uid, "straight_km": round(sl, 1), "road_km": round(table[1][i][j] / 1000, 1), "drive_min": round(table[0][i][j] / 60, 1), "method": "osrm"}
+                else:
+                    best = {"unit_id": uid, "straight_km": round(sl, 1), "road_km": round(sl * 1.3, 1), "drive_min": round(sl * 1.3 / 70 * 60, 1), "method": "estimated"}
+                basis, basis_source = "county_catchment", skey
             if best["method"] == "osrm":
                 n_osrm += 1
             else:
@@ -121,6 +144,8 @@ def main():
                 "road_km": best["road_km"],
                 "drive_min": best["drive_min"],
                 "method": best["method"],
+                "basis": basis,
+                "basis_source": basis_source,
                 "candidates": candidates,
             }
 
@@ -128,8 +153,9 @@ def main():
         "generated": time.strftime("%Y-%m-%d"),
         "kind": "calculated",
         "source_ids": ["osrm_table", "wikidata_coords"],
-        "note": "Road km and drive minutes from each municipality's centre point (not where patients live) "
-        "to the radiotherapy unit with the shortest drive among the 3 nearest by straight line. "
+        "note": "Road km and drive minutes from each municipality's centre point (not where patients live). "
+        "Uusimaa and Helsinki route to HUS, Pirkanmaa to Tays and Lapland to OYS, as their sources state; "
+        "other municipalities route to the unit with the shortest drive among the 3 nearest by straight line. "
         "OpenStreetMap data via the public OSRM demo server; 'estimated' = straight line x 1.3 at 70 km/h.",
         "counts": {"osrm": n_osrm, "estimated": n_est},
         "routes": results,

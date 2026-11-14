@@ -32,7 +32,7 @@ export function MemoTab({ county, run, onCounty, onRun }: { county: string; run:
     [data.countyNames],
   );
 
-  const body = memo ? renderMemo(memo.text.slice(0, shown), (id) => setOpenSrc(id)) : null;
+  const body = memo ? renderMemo(memo.text.slice(0, shown).replace(/\[[^\]]*$/, ''), (id) => setOpenSrc(id)) : null;
   const srcs = openSrc ? openSrc.split(',').map((id) => data.sourceById[id]).filter(Boolean) : [];
 
   return (
@@ -61,7 +61,7 @@ export function MemoTab({ county, run, onCounty, onRun }: { county: string; run:
             </button>
             {memos && (
               <div className="small-note">
-                Written {memos.method === 'llm-api' ? `by ${memos.model ?? 'Claude'} via the API` : 'by an AI agent in-session'} on {memos.generated}. Proposals for clinical teams to evaluate.
+                Written {memos.method === 'llm-api' ? `by ${memos.model ?? 'Claude'} via the API` : 'by an AI agent in-session (no API key was available), with the same prompt and validator'} on {memos.generated}. Proposals for clinical teams to evaluate.
               </div>
             )}
             {srcs.map((src) => (
@@ -83,10 +83,10 @@ export function MemoTab({ county, run, onCounty, onRun }: { county: string; run:
             {memo && (
               <>
                 <div className="memo-head">
-                  <div className="small-note">To: Director of cancer services, {memo.county_name}</div>
+                  <div className="small-note">To: Director of cancer services, {data.countyNames[memo.county_code] ?? memo.county_name}</div>
                   {shown >= memo.text.length && (
                     <span className="trace-badge">
-                      <CheckCircle2 size={15} /> {memo.numbers_passed} of {memo.numbers_checked} numbers traced to sources
+                      <CheckCircle2 size={15} /> {memo.numbers_passed} of {memo.numbers_checked} numbers traced to the sourced facts
                     </span>
                   )}
                 </div>

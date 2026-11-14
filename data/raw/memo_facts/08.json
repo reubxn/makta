@@ -8,9 +8,9 @@
   "affected_patients_per_year": 191.9,
   "nights_away_removed": 37,
   "round_trips_removed": 1889,
-  "hours_on_road_removed": 1502,
-  "km_removed": 85921,
-  "kela_lower_bound_eur_removed": 29106,
+  "hours_on_road_removed": 1508,
+  "km_removed": 85915,
+  "kela_lower_bound_eur_removed": 29104,
   "machine_sessions_freed": 1919,
   "kind": "calculated",
   "note": "Breast only; bone yearly counts are not public. Kela cost is a lower bound (own-car rate; taxis cost more)."
@@ -79,14 +79,14 @@
    ]
   },
   {
-   "municipality": "Kuhmoinen",
-   "nearest_unit_town": "Jyväskylä",
-   "road_km": 94,
-   "drive_hours": 1.4,
+   "municipality": "Parkano",
+   "nearest_unit_town": "Tampere",
+   "road_km": 88,
+   "drive_hours": 1.3,
    "breast_15_sessions": {
     "nights_away": 0,
     "round_trips": 16,
-    "hours_on_road": 43
+    "hours_on_road": 42
    },
    "breast_5_sessions": {
     "nights_away": 0,
@@ -110,57 +110,22 @@
    ]
   }
  ],
- "nearest_units": [
-  {
-   "unit": "Sädehoitoyksikkö, Sairaala Nova",
-   "town": "Jyväskylä",
-   "municipalities_served_in_county": 2,
-   "statements": [
-    {
-     "indication": "breast",
-     "stated_default_fractions": 15,
-     "distance_mentioned": false,
-     "quote_en": "Radiotherapy is usually given 15 times on consecutive weekdays.",
-     "url": "https://www.hyvaks.fi/asiakkaana/hoitopolut/rintasyopapotilaan-hoitopolku/sadehoito"
-    },
-    {
-     "indication": "breast",
-     "stated_default_fractions": null,
-     "distance_mentioned": false,
-     "quote_en": "Radiotherapy is given 5 or 15 times according to an individually made plan, and its effect is local.",
-     "url": "https://www.hyvaks.fi/sites/default/files/ohjeet/Rintaleikkauksen%20jalkeinen%20sadehoito.pdf"
-    }
-   ],
-   "source_id": "S42"
-  },
-  {
-   "unit": "Sädehoitoyksikkö, Satasairaala",
-   "town": "Pori",
-   "municipalities_served_in_county": 1,
-   "statements": [
-    {
-     "indication": "bone",
-     "stated_default_fractions": null,
-     "distance_mentioned": false,
-     "quote_en": "pain caused by metastases, i.e. we give symptomatic treatment.",
-     "url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/"
-    },
-    {
-     "indication": "breast",
-     "stated_default_fractions": null,
-     "distance_mentioned": false,
-     "quote_en": "We mainly treat the following cancers: - breast cancer",
-     "url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/"
-    }
-   ],
-   "source_id": "S46"
-  },
+ "units_patients_are_routed_to": [
   {
    "unit": "Sädehoitoyksikkö, Tays",
    "town": "Tampere",
-   "municipalities_served_in_county": 20,
-   "statements": [],
-   "source_id": "S40"
+   "municipalities_routed_here": 23,
+   "routing_basis": "the county's sourced catchment",
+   "unit_exists_source_id": "S40",
+   "public_schedule_pages_found": false,
+   "statements_from_public_pages": [],
+   "note": "If no public page was found, write that Matka found no public page stating a schedule; never claim the unit publishes nothing."
+  }
+ ],
+ "sourced_catchments_for_this_county": [
+  {
+   "source_id": "S20",
+   "says": "Tays radiotherapy treats Pirkanmaa, most of Kanta-Häme and part of South Ostrobothnia"
   }
  ],
  "parameters": [
@@ -340,6 +305,26 @@
    ]
   },
   {
+   "id": "evidence_bone_short",
+   "text": "A single 8 Gy session relieves pain as well as a multi-session course, with more retreatment.",
+   "kind": "sourced",
+   "source_ids": [
+    "S31",
+    "S30",
+    "S62"
+   ]
+  },
+  {
+   "id": "evidence_breast_short",
+   "text": "5 sessions in one week is non-inferior to 15 sessions over three weeks for eligible patients.",
+   "kind": "sourced",
+   "source_ids": [
+    "S9",
+    "S11",
+    "S15"
+   ]
+  },
+  {
    "id": "turku_baseline",
    "text": "At Turku University Hospital in 2005-2013, only 7% of radiotherapy courses in patients' last year of life were single-session.",
    "kind": "sourced",
@@ -453,6 +438,45 @@
   "S35",
   "S60"
  ],
+ "citation_guide": {
+  "bone_evidence (equal pain relief, more retreatment, 8 Gy)": [
+   "S31",
+   "S30",
+   "S32",
+   "S62"
+  ],
+  "breast_evidence (non-inferior, eligibility, nodal stays 15)": [
+   "S9",
+   "S11",
+   "S15",
+   "S14"
+  ],
+  "per_patient_numbers (distance, nights, trips, hours for a municipality)": [
+   "S60",
+   "S59",
+   "S30"
+  ],
+  "county_yearly_breast_totals": [
+   "S33",
+   "S57",
+   "S34",
+   "S35",
+   "S60"
+  ],
+  "distance_and_access (roadmap)": [
+   "S21",
+   "S22",
+   "S27"
+  ],
+  "current_schedule_mix_unknown": [
+   "S16"
+  ],
+  "limitations": [
+   "S59",
+   "S57",
+   "S60"
+  ]
+ },
  "sources": [
   {
    "id": "S1",
@@ -551,6 +575,13 @@
    "publisher": "Päijät-Hämeen hyvinvointialue (STT Info)",
    "year": 2026,
    "supports": "Radiotherapy patients often attend daily for several weeks"
+  },
+  {
+   "id": "S20",
+   "title": "Omavalvontasuunnitelma, Syövänhoidon vastuualue",
+   "publisher": "Pirkanmaan hyvinvointialue (Pirha)",
+   "year": 2026,
+   "supports": "Tays radiotherapy treats Pirkanmaa, most of Kanta-Häme and part of South Ostrobothnia"
   },
   {
    "id": "S21",
@@ -658,25 +689,11 @@
    "supports": "Tampereen yliopistollinen sairaala (Tays), Radius (Tampere) delivers external beam radiotherapy to public patients"
   },
   {
-   "id": "S42",
-   "title": "Sädehoito",
-   "publisher": "Keski-Suomen hyvinvointialue",
-   "year": 2026,
-   "supports": "Keski-Suomen Sairaala Nova (Jyväskylä) delivers external beam radiotherapy to public patients"
-  },
-  {
    "id": "S45",
    "title": "Sädehoito",
    "publisher": "OYS / Pohde",
    "year": 2026,
    "supports": "Oulun yliopistollinen sairaala (OYS), E-talo (Oulu) delivers external beam radiotherapy to public patients"
-  },
-  {
-   "id": "S46",
-   "title": "Sädehoitoyksikkö, Satasairaala",
-   "publisher": "Satakunnan hyvinvointialue",
-   "year": 2026,
-   "supports": "Satasairaala (Pori) delivers external beam radiotherapy to public patients"
   },
   {
    "id": "S52",

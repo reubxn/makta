@@ -33,7 +33,7 @@ function bboxOf(features: GeoJSON.Feature[]): BBox {
 /** Fit a bbox into the map, leaving room for the overlays (headline top-left, legend bottom-left). */
 function fitView(bbox: BBox, size: { width: number; height: number }, pitched: boolean): MapViewState {
   const vp = new WebMercatorViewport({ width: size.width, height: size.height });
-  const pad = { top: 64, bottom: 36, left: Math.min(250, size.width * 0.33), right: 44 };
+  const pad = { top: 64, bottom: 36, left: Math.min(290, size.width * 0.38), right: 44 };
   const { longitude, latitude, zoom } = vp.fitBounds([[bbox[0], bbox[1]], [bbox[2], bbox[3]]], { padding: pad });
   if (!pitched) return { longitude, latitude, zoom, pitch: 0, bearing: 0 };
   // Pitching compresses the far (north) side: move the centre south and zoom in slightly.
@@ -243,6 +243,10 @@ export function MapPanel(props: Props) {
   const metricLabel = METRICS.find(([k]) => k === metric)![1].toLowerCase();
   const metricWord = metric === 'nights' ? 'nights away' : metric === 'hours' ? 'hours on the road' : 'round trips';
   const fmtMetric = (v: number) => fmt(v, Math.abs(v - Math.round(v)) > 0.05 ? 1 : 0);
+  const farStats = useMemo(() => {
+    const far = data.municipalities.filter((m) => data.routes[m.code] && data.routes[m.code].road_km > params.commute_threshold_km);
+    return { n: far.length, pop: far.reduce((a, m) => a + m.population, 0) };
+  }, [data, params.commute_threshold_km]);
   const headline = useMemo(() => {
     const val = (code: string) => {
       const r = data.routes[code];
@@ -296,11 +300,21 @@ export function MapPanel(props: Props) {
         </p>
         <p className="map-subline">
           Per patient, {indication === 'bone' ? 'one course for painful bone metastases' : 'one breast radiotherapy course'}{lever ? ', short schedule' : ''}{' '}
-          <Prov kind="calculated" ids={data.routesMeta.source_ids} note={data.routesMeta.note} />
+          <Prov kind="calculated" ids={[...data.routesMeta.source_ids, ...data.parameters.filter((p) => p.id.startsWith(indication)).flatMap((p) => p.source_ids)]} note={data.routesMeta.note} />
         </p>
+        {indication === 'bone' && lever && metric !== 'nights' && (
+          <p className="metric-note">Retreatment adds trips for patients who stay near the unit; the gain is nights away.</p>
+        )}
       </div>
       <div className="map-story">
-        <FactText id={indication === 'bone' ? 'story_distance' : 'over_100km'} />
+        {indication === 'bone' ? (
+          <FactText id="story_distance" />
+        ) : (
+          <span>
+            {farStats.n} municipalities, home to {farStats.pop.toLocaleString('en-GB')} people, are more than {params.commute_threshold_km} km by road from their unit.{' '}
+            <Prov kind="calculated" ids={['osrm_table', 'statfin_population', 'wikidata_coords']} note="Road distance from each municipality's centre point; population 31 Dec 2025. Follows the commuting-threshold slider." />
+          </span>
+        )}
       </div>
       {fold && <div className="fold-banner">We can't move the hospital. The schedule can.</div>}
       <DeckGL

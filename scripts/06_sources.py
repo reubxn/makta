@@ -52,6 +52,33 @@ def main():
     addenda = FRAG / "addenda.json"
     if addenda.exists():
         entries += [e for e in json.loads(addenda.read_text()) if e.get("verified") is not False]
+    # Unit statement pages (Phase 3) become sources too, so statements and memos can cite them.
+    stp = ROOT / "public/data/unit_statements.json"
+    statements = json.loads(stp.read_text()) if stp.exists() else None
+    units_by_id = {u["id"]: u for u in json.loads((ROOT / "public/data/rt_units.json").read_text())["units"]}
+    url_key = {}
+    if statements:
+        for st in statements["statements"]:
+            if st["url"] in url_key:
+                continue
+            key = "page_" + Path(st["snapshot"]).stem.replace("__", "_").replace("-", "_")
+            words = (st.get("quote_fi") or "").replace("\u00ad", "").split()
+            u = units_by_id[st["unit_id"]]
+            url_key[st["url"]] = key
+            entries.append(
+                {
+                    "key": key,
+                    "title": f"{u['hospital']}: public patient page ({st['indication']})",
+                    "publisher": u.get("county_name_fi", ""),
+                    "year": 2026,
+                    "url": st["url"],
+                    "accessed": st["accessed"],
+                    "supports": f"What {u['town']}'s radiotherapy unit tells patients about the {('breast' if st['indication'] == 'breast' else 'palliative / bone')} radiotherapy schedule",
+                    "quote": " ".join(words[:25]) or None,
+                    "note": "Snapshot " + st["snapshot"] + ("; quote shortened to its first 25 words" if len(words) > 25 else ""),
+                    "kind": "web",
+                }
+            )
     keys = set()
     out = []
     for i, e in enumerate(entries, 1):
@@ -85,6 +112,10 @@ def main():
     for u in units["units"]:
         u["source_id"] = by_key[u["source_key"]]
     up.write_text(json.dumps(units, ensure_ascii=False, indent=1))
+    if statements:
+        for st in statements["statements"]:
+            st["source_id"] = by_key[url_key[st["url"]]]
+        stp.write_text(json.dumps(statements, ensure_ascii=False, indent=1))
 
 
 if __name__ == "__main__":
