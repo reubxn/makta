@@ -97,5 +97,5 @@ Keep the fold toggle off by default.
 - [x] Memo: 4 s stream, superscript citations, numbered sources
 - [x] tests/e2e/layout.spec.ts (overlap + clipping at 1280/1440/1920, screenshots/redesign/)
 - [x] Design critic round 1 + fixes
-- [~] Design critic round 2 + fixes
-- [~] MORNING.md
+- [x] Design critic round 2 + fixes
+- [x] MORNING.md (status, llm-api confirmation, new demo script, not done)

@@ -2,7 +2,7 @@
 
 ## 0. Redesign status (branch `redesign`)
 
-**STATUS_PLACEHOLDER**
+**The redesign is solid and ready to present (finished about 02:45 Helsinki, well before the 07:00 cut-off).** All checks below pass on the final commit. If anything misbehaves on the presenting laptop, `claude/sharp-sagan-uaohy1` still has the old demo, untouched.
 
 - Branch: `redesign`, cut from `claude/sharp-sagan-uaohy1` at its tip **236197c** (one screenshot-only commit after 96dad9b). `claude/sharp-sagan-uaohy1` is untouched. The cloud session also mirrors every push to `claude/funny-franklin-79imfr` (the platform's session branch); it holds the same commits.
 - The old demo is still on `claude/sharp-sagan-uaohy1`. To present it instead: `git checkout claude/sharp-sagan-uaohy1`.
@@ -15,7 +15,47 @@ Then open http://localhost:4173. Everything is bundled: no tile server, no keys,
 
 ### Checks
 
-CHECKS_PLACEHOLDER
+All run on the final commit of `redesign`:
+
+- `npx vitest run`: **21 tests pass** (4 new: lever-off yearly burden, lever-on removed = old totals, current − removed = same patients on 5 sessions, trip dots 4 → 2).
+- `.venv/bin/python -I scripts/09_check_data.py`: **passes**. It now also checks `route_lines.json` (all 292 routes present, km/min equal to routes.json, endpoints snapped to the municipality centre and the unit) and `basemap.json`.
+- `npx playwright test tests/e2e/layout.spec.ts --trace off`: **passes at 1280×720, 1440×900 and 1920×1080**. Every demo step (16 per size), checked for overlapping panels, cards and labels within the same `data-layer`, for clipped text (`scrollWidth > clientWidth`), and for boxes cut off by their scroll container or the window. It also asserts the map is ≥ 60% of the width, no console errors, and no request leaving localhost. Screenshots: `screenshots/redesign/<size>/`.
+- `npx playwright test tests/e2e/demo.spec.ts --trace off`: **passes**. Keys 0–7, no console errors, no external requests, the bone card line unclipped, and key 2 ends the counter at exactly "676 km · 9 h 22 min". Screenshots: `screenshots/redesign/demo-1440x900/`.
+- `npx playwright test tests/e2e/viewports.spec.ts --trace off`: **passes** (512×384 to 1920×1080). The fitBounds fallback is kept.
+- `npx oxlint`: 0 errors, 3 warnings (fast-refresh export and a setState-in-effect in MemoTab, all harmless).
+- Data scripts: `scripts/11_natural_earth.py` (raw.githubusercontent.com reachable; 18 MB raw cache in `data/raw/naturalearth/`, gitignored). `scripts/10_route_lines.py` (router.project-osrm.org reachable; 292 routes fetched once and cached in `data/raw/osrm_routes/`, committed like the other OSRM caches). The largest difference between the OSRM route length and routes.json `road_km` is 0.0 km.
+
+### Design critic rounds
+
+Two fresh design-critic sub-agents reviewed the screenshots. Their fixes were applied, and the layout test was re-run after each round.
+
+- **Round 1 (applied):**
+  - Fluid `rem` type scale (14px up to ~1330px wide, ~17.5px at 1920), so text grows on large projectors.
+  - The lever has an explicit On/Off state and a larger switch.
+  - Teal is kept for data only: routes, the selection, the lever-on state and "after" values. UI underlines, links and slider thumbs are graphite.
+  - Darker choropleth.
+  - The terrain sits on the flat choropleth (zero-height areas keep their fill), with softer light and lower relief.
+  - County outlines are drawn only when zoomed in (they speckled the archipelago).
+  - A faint ghost of the folded-away route.
+  - Only the remaining nights turn teal.
+  - Non-breaking "non-inferior" and "8 Gy"; markers stay on the line with their last word.
+  - The memo body is in sans.
+  - Short county names in the memo picker.
+  - The before/after table was rebuilt to fit at 1280.
+- **Round 1 (not applied):** shifting the map when the drawer opens. The owner's plan makes the drawer an overlay.
+- **Round 2 (applied):**
+  - Trip dots, night icons, the km/hours counter and hospital labels scale with the type.
+  - The legend is built from the map's actual colour ramp, and route lines are darker.
+  - The national view (keys 0/1) shows the selected route in graphite; teal and the dots arrive with key 2 or a click.
+  - The totals highlight is a 3px graphite top rule.
+  - Links, the memo button, citation numbers, the traced badge and the map hover are graphite.
+  - The lever title is in Zilla Slab, with larger page headings.
+  - Drawer width in `rem`; the popover is wider and taller.
+  - Balanced caption, and wrap fixes.
+- **Round 2 (not applied):** clamping the flight's bearing to near-north and docking the counter in a corner. The brief says the bearing follows the direction of travel and the label rides with the dot.
+- Also fixed during testing:
+  - deck.gl camera transitions could be cancelled by a React re-render, leaving key 5 flat at 1920. All camera moves are now animated by Matka itself.
+  - Fold dropped all grey routes (deck.gl needed fresh path arrays).
 
 ### AI steps: confirmed API-generated
 
