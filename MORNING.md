@@ -16,7 +16,7 @@ Then open http://localhost:4173. Everything is bundled: no tile server, no keys,
 
 ### Live on Vercel
 
-**https://matka-hack-europe.vercel.app** shows `redesign` at 3df9a03, built by Vercel with `npm ci` and `npm run build`.
+**https://matka-hack-europe.vercel.app** shows the latest `main` (= `redesign`), built by Vercel with `npm ci` and `npm run build`.
 - The production URL is public. Preview deployments stay behind Vercel login.
 - Checked from a browser after deploy: the page loads; key 2 ends at "676 km · 9 h 22 min"; key 3 gives 6 nights and 2 dots; the memo shows its traced badge.
 - No console errors, and no requests leave the site.
@@ -27,10 +27,7 @@ How it is set up:
 - The project is linked to `reubxn/makta`.
 - Framework: Vite, Node 22.x, output `dist`.
 
-**Production branch is the repo's default, `main`**, which does not contain the app. So:
-- A push to `redesign` creates a protected *preview* deployment, not production.
-- A push to `main` would deploy `main` to production.
-- To update production after changes, redeploy `redesign` to production (Claude can do this through the Vercel connector), or merge `redesign` into `main`.
+**`main` now holds the redesign** (fast-forwarded to `redesign` on the owner's go-ahead). It is the project's production branch, so every push to `main` redeploys https://matka-hack-europe.vercel.app automatically. Pushes to other branches create login-protected previews.
 
 The Vercel CLI (65.16.0) is installed in the cloud container but not logged in: `api.vercel.com` is not on this environment's network allowlist. Deployment went through the Vercel connector instead.
 
