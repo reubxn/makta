@@ -361,7 +361,11 @@ export function MapPanel(props: Props) {
     return out;
   }, [data, fold, indication, params]);
   const routePaths = useMemo(
-    () => Object.entries(geoms).map(([code, g]) => ({ code, path: foldFrac[code] < 1 ? subPath(g, 1 - foldFrac[code], 1) : g.path })),
+    () =>
+      Object.entries(geoms).map(([code, g]) => ({
+        code,
+        path: (foldFrac[code] < 1 ? subPath(g, 1 - foldFrac[code], 1) : g.path).map((p) => [p[0], p[1]] as LonLat),
+      })),
     [geoms, foldFrac],
   );
   const selGeom = useMemo(() => {

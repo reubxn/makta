@@ -16,7 +16,9 @@ function fmtParam(p: Parameter, v: number): string {
   if (p.unit === '€/km') return `${v.toFixed(2)} €/km`;
   if (p.unit === '€') return `${v.toFixed(2)} €`;
   if (p.unit === 'km') return `${Math.round(v)} km`;
-  return `${Math.round(v * 100) / 100}${p.unit ? ' ' + p.unit : ''}`;
+  const n = Math.round(v * 100) / 100;
+  const unit = n === 1 && p.unit.endsWith('s') ? p.unit.slice(0, -1) : p.unit;
+  return `${n}${unit ? ' ' + unit : ''}`;
 }
 
 export function ParamSlider({ p, value, onChange, className }: { p: Parameter; value: number; onChange: (v: number) => void; className?: string }) {

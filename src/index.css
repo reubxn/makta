@@ -129,7 +129,8 @@ input[type='range']::-moz-range-thumb { width: 12px; height: 12px; background: v
 .plain { font-size: 14.5px; line-height: 1.42; margin: 2px 0 0; color: var(--ink); }
 .stay { font-size: 12.5px; line-height: 1.4; color: var(--ink-2); margin: 0; }
 table.ba { width: 100%; border-collapse: collapse; margin-top: 4px; table-layout: fixed; }
-table.ba th { font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); text-align: right; padding: 0 0 5px; border-bottom: 1px solid var(--line-2); white-space: nowrap; }
+table.ba col.vcol { width: 29%; }
+table.ba th { font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); text-align: right; padding: 0 0 5px; border-bottom: 1px solid var(--line-2); vertical-align: bottom; line-height: 1.25; }
 table.ba th:first-child { text-align: left; }
 table.ba td { padding: 5px 0 4px; border-bottom: 1px solid var(--line); vertical-align: baseline; }
 table.ba td.l { font-size: 12.5px; color: var(--ink-2); line-height: 1.25; padding-right: 6px; }
@@ -231,7 +232,8 @@ table.data td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertica
 
 /* Shorter screens (1280x720 and similar): compact the right column so card + totals fit. */
 @media (max-height: 820px) {
-  .card { padding: 12px 18px 10px; gap: 6px; }
+  .card { padding: 12px 18px 10px; gap: 5px; }
+  table.ba col.vcol { width: 26%; }
   .card > .kicker { display: none; }
   .card-title { font-size: 26px; }
   .plain { font-size: 13.5px; }

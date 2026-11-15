@@ -71,7 +71,12 @@ function Matka({ data }: { data: AppData }) {
   const update = useCallback((patch: Partial<UiState>) => setS((prev) => ({ ...prev, ...patch })), []);
 
   const later = (ms: number, fn: () => void) => {
-    timers.current.push(window.setTimeout(fn, ms));
+    // Tests can hold a demo sequence mid-way (window.__matkaHold = true) to screenshot it.
+    const run = () => {
+      if ((window as unknown as { __matkaHold?: boolean }).__matkaHold) timers.current.push(window.setTimeout(run, 100));
+      else fn();
+    };
+    timers.current.push(window.setTimeout(run, ms));
   };
   const clearTimers = () => {
     timers.current.forEach((t) => clearTimeout(t));
@@ -127,8 +132,8 @@ function Matka({ data }: { data: AppData }) {
           // Burden terrain: fly out, tilt, terrain rises on 15 sessions; then the breast lever sinks it.
           setS((p) => ({ ...p, tab: 'map', indication: 'breast', levers: { ...p.levers, breast: false }, terrain: true, fold: false, highlightTotals: true, help: false, drawerOpen: false }));
           flyTo('terrain');
-          later(3400, () => setS((p) => ({ ...p, levers: { ...p.levers, breast: true } })));
-          later(9000, () => update({ highlightTotals: false }));
+          later(4200, () => setS((p) => ({ ...p, levers: { ...p.levers, breast: true } })));
+          later(10000, () => update({ highlightTotals: false }));
           break;
         case '6':
           update({ tab: 'units', help: false });

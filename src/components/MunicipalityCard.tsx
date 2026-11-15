@@ -55,7 +55,7 @@ export function NightIcons({ before, after, lever }: { before: number; after: nu
   const slots = Math.ceil(before - 1e-6);
   if (slots <= 0) return <span className="nights-none">No nights away: travels in for each session.</span>;
   return (
-    <span className="nights" data-testid="night-icons" data-nights={fmt(lever ? after : before, 1)} aria-label={`${fmt(lever ? after : before, 1)} nights away`}>
+    <span className="nights" data-testid="night-icons" data-nights={oneDp(lever ? after : before)} aria-label={`${oneDp(lever ? after : before)} nights away`}>
       {Array.from({ length: slots }, (_, i) => (
         <Moon key={i} fill={shown - i} color={lever ? '#00626a' : '#3c4242'} />
       ))}
@@ -117,8 +117,8 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
       <table className={`ba${lever ? ' on' : ''}`} data-box="ba-table" data-testid="ba-table">
         <colgroup>
           <col />
-          <col style={{ width: '31%' }} />
-          <col style={{ width: '31%' }} />
+          <col className="vcol" />
+          <col className="vcol" />
         </colgroup>
         <thead>
           <tr>

@@ -60,7 +60,7 @@ export function TotalsStrip({ params, leverOn, boneLever, indication, highlight 
   const patients = year.current.patients;
   return (
     <section className={`totals${leverOn ? ' on' : ''}${highlight ? ' highlight' : ''}`} aria-label="National yearly totals" data-testid="totals" data-box="totals">
-      <p className="kicker">{leverOn ? 'Removed every year with 5 sessions' : 'Every year on 15 sessions'}</p>
+      <p className="kicker">{leverOn ? 'Removed every year' : 'Every year, today'}</p>
       <p className="totals-lede" data-testid="totals-lede">
         {leverOn ? (
           <>
@@ -106,7 +106,7 @@ export function TotalsStrip({ params, leverOn, boneLever, indication, highlight 
         </div>
       </div>
       <p className="totals-foot" data-testid="breast-cases">
-        From {data.cases.national_cases.toLocaleString('en-GB')} new breast cancer cases in women in Finland ({data.cases.year}){casesMarker}.{' '}
+        From {data.cases.national_cases.toLocaleString('en-GB')} new cases in women ({data.cases.year}){casesMarker}.{' '}
         {goal && (
           <>
             {goal.short}

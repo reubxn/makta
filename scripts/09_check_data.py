@@ -163,6 +163,35 @@ for name in ("unit_statements.json", "memos.json"):
             if st["unit_id"] not in uids:
                 errors.append(f"statement for unknown unit {st['unit_id']}")
 
+# Road route geometry (scripts/10_route_lines.py) and the offline basemap (scripts/11_natural_earth.py).
+rl = load("route_lines.json")
+check_ids("route_lines.json", rl.get("source_ids", []))
+routes_j = load("routes.json")["routes"]
+munis_j = {m["code"]: m for m in load("municipalities.json")["municipalities"]}
+units_j = {u["id"]: u for u in load("rt_units.json")["units"]}
+missing = set(routes_j) - set(rl["routes"])
+if missing:
+    errors.append(f"route_lines.json missing {len(missing)} routes: {sorted(missing)[:5]}")
+for code, line in rl["routes"].items():
+    r = routes_j.get(code)
+    if not r:
+        errors.append(f"route line for unknown municipality {code}")
+        continue
+    if line["unit_id"] != r["unit_id"] or line["km"] != r["road_km"] or line["min"] != r["drive_min"]:
+        errors.append(f"route line {code} disagrees with routes.json")
+    a, b = line["path"][0], line["path"][-1]
+    m, u = munis_j[code], units_j[r["unit_id"]]
+    if abs(a[0] - m["lon"]) > 1e-4 or abs(a[1] - m["lat"]) > 1e-4 or abs(b[0] - u["lon"]) > 1e-4 or abs(b[1] - u["lat"]) > 1e-4:
+        errors.append(f"route line {code} endpoints not snapped to centre/unit")
+    if any(not all(map(math.isfinite, pt)) for pt in line["path"]):
+        errors.append(f"route line {code} has non-finite coordinates")
+notes.append(f"route lines: {len(rl['routes'])}, {sum(len(x['path']) for x in rl['routes'].values())} points")
+bm = load("basemap.json")
+for k in ("lakes", "land", "borders"):
+    if not bm.get(k, {}).get("features"):
+        errors.append(f"basemap.json has no {k}")
+notes.append(f"basemap: {len(bm['lakes']['features'])} lakes, {len(bm['land']['features'])} land, {len(bm['borders']['features'])} border lines")
+
 for n in notes:
     print("note:", n)
 if errors:

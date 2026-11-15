@@ -2,8 +2,9 @@ import { test, expect, type Page } from '@playwright/test';
 import fs from 'node:fs';
 
 // Runs demo keys 0-7, fails on console errors or any external request, saves screenshots.
+// (Per-size screenshots of every step, with the overlap/clipping checks, are in layout.spec.ts.)
 
-const SHOTS = 'screenshots';
+const SHOTS = 'screenshots/redesign/demo-1440x900';
 
 async function shot(page: Page, name: string) {
   await page.screenshot({ path: `${SHOTS}/${name}.png` });
@@ -31,11 +32,11 @@ test('demo keys 0-7', async ({ page, baseURL }) => {
   await shot(page, '00-initial');
 
   const steps: [string, string, number][] = [
-    ['1', '01-finland', 1500],
-    ['2', '02-utsjoki', 2000],
-    ['3', '03-breast-lever', 3200],
-    ['4', '04-bone-lever', 3000],
-    ['5', '05-totals', 2500],
+    ['1', '01-finland', 2000],
+    ['2', '02-utsjoki', 9000],
+    ['3', '03-breast-lever', 3500],
+    ['4', '04-bone-lever', 3500],
+    ['5', '05-terrain', 8000],
     ['6', '06-units', 1200],
     ['7', '07-memo-lapland', 6000],
   ];
@@ -70,10 +71,13 @@ test('demo keys 0-7', async ({ page, baseURL }) => {
     }
   }
 
-  // Key 2 must select Utsjoki.
-  await page.keyboard.press('2');
+  // Key 2 must select Utsjoki and end the route counter exactly at the routes.json values.
+  await page.keyboard.press('1');
   await page.waitForTimeout(1500);
+  await page.keyboard.press('2');
   await expect(page.getByTestId('card-title')).toContainText('Utsjoki');
+  await expect(page.getByTestId('travel-label')).toHaveText('676 km · 9 h 22 min', { timeout: 20_000 });
+  await expect(page.getByTestId('route-line')).toContainText('676 km · 9 h 22 min');
 
   // Help overlay and reset.
   await page.keyboard.press('?');
