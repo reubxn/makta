@@ -114,7 +114,7 @@ export function TotalsStrip({ params, leverOn, boneLever, indication, highlight 
         </span>{' '}
         {goal && (
           <>
-            {goal.short.split(' ').slice(0, -1).join(' ')}{' '}
+            {goal.short.split(' ').slice(0, -1).join(' ').replace('Goal 3', 'Goal\u00a03')}{' '}
             <span className="nowrap">
               {goal.short.split(' ').slice(-1)[0]}
               <Prov kind="sourced" ids={goal.source_ids} note={`${goal.fi} — ${goal.en}`} />.

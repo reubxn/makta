@@ -54,11 +54,12 @@ const LIGHTING = [
 const MUNI_LINE: [number, number, number, number] = [255, 255, 255, 210];
 const BORDER: [number, number, number] = [178, 184, 184];
 const COUNTY_LINE: [number, number, number, number] = [60, 66, 66, 70];
-const ROUTE_LINE: [number, number, number, number] = [60, 66, 66, 140];
+const ROUTE_LINE: [number, number, number, number] = [60, 66, 66, 195];
+const ROUTE_QUIET: [number, number, number, number] = [60, 66, 66, 255];
 const TEAL_A: [number, number, number, number] = [0, 98, 106, 255];
 const CASING: [number, number, number, number] = [255, 255, 255, 230];
 const GHOST: [number, number, number, number] = [0, 98, 106, 90];
-const HIGHLIGHT: [number, number, number, number] = [0, 98, 106, 55];
+const HIGHLIGHT: [number, number, number, number] = [60, 66, 66, 40];
 
 const METRICS: [MetricKey, string][] = [
   ['nights', 'Nights away'],
@@ -170,6 +171,10 @@ interface Box {
 }
 const hit = (a: Box, b: Box, m = 2) => a.x < b.x + b.w + m && b.x < a.x + a.w + m && a.y < b.y + b.h + m && b.y < a.y + a.h + m;
 let measureCtx: CanvasRenderingContext2D | null = null;
+/** Root font size in px (the type scale is fluid); map labels scale with it. */
+function rootPx(): number {
+  return parseFloat(getComputedStyle(document.documentElement).fontSize) || 14;
+}
 function textWidth(s: string, px = 12): number {
   if (!measureCtx) measureCtx = document.createElement('canvas').getContext('2d');
   if (!measureCtx) return s.length * px * 0.6;
@@ -207,7 +212,7 @@ function RouteDots({ geom, viewState, size, n, flightS }: { geom: Geom; viewStat
     <span data-testid="trip-dots" data-count={fr.length}>
       {fr.map((f, i) => {
         const [x, y] = vp.project(pointAt(geom, f));
-        const r = flightS !== null ? 7 : 5;
+        const r = flightS !== null ? 9 : 7;
         return <span key={i} className="tripdot" style={{ left: x - r, top: y - r, width: 2 * r, height: 2 * r }} />;
       })}
     </span>
@@ -221,6 +226,7 @@ interface Props {
   metric: MetricKey;
   onMetric: (m: MetricKey) => void;
   selected: string;
+  routeFocus: boolean;
   onSelect: (code: string) => void;
   fly: FlyRequest;
   fold: boolean;
@@ -230,7 +236,7 @@ interface Props {
 }
 
 export function MapPanel(props: Props) {
-  const { indication, lever, params, metric, selected, fly, fold, terrain } = props;
+  const { indication, lever, params, metric, selected, fly, fold, terrain, routeFocus } = props;
   const { data } = useData();
   const [viewState, setViewState] = useState<MapViewState>(FINLAND);
   const [hover, setHover] = useState<{ x: number; y: number; code: string } | null>(null);
@@ -501,7 +507,7 @@ export function MapPanel(props: Props) {
       visible: !terrainOn,
       getPath: (d: (typeof routePaths)[number]) => d.path,
       getColor: ROUTE_LINE,
-      getWidth: 1,
+      getWidth: 1.2,
       widthUnits: 'pixels',
       widthMinPixels: 1,
       jointRounded: false,
@@ -531,7 +537,7 @@ export function MapPanel(props: Props) {
     }),
     new PathLayer({
       id: 'selected-route-casing',
-      visible: !terrainOn,
+      visible: !terrainOn && routeFocus,
       data: selPathData,
       getPath: (d: LonLat[]) => d,
       getColor: CASING,
@@ -546,8 +552,8 @@ export function MapPanel(props: Props) {
       visible: !terrainOn,
       data: selPathData,
       getPath: (d: LonLat[]) => d,
-      getColor: TEAL_A,
-      getWidth: 3,
+      getColor: routeFocus ? TEAL_A : ROUTE_QUIET,
+      getWidth: routeFocus ? 3 : 1.6,
       widthUnits: 'pixels',
       jointRounded: true,
       capRounded: true,
@@ -572,18 +578,19 @@ export function MapPanel(props: Props) {
     const marks = data.units
       .map((u) => {
         const [x, y] = vp.project([u.lon, u.lat]);
-        return { u, x, y, on: u.id === selUnit };
+        return { u, x, y, on: u.id === selUnit && routeFocus };
       })
       .filter((m) => Number.isFinite(m.x) && m.x > -10 && m.y > -10 && m.x < size.width + 10 && m.y < size.height + 10);
     const obstacles: Box[] = marks.map((m) => ({ x: m.x - 6, y: m.y - 6, w: 12, h: 12 }));
-    let travel: { x: number; y: number; text: string } | null = null;
+    let travel: { x: number; y: number; text: string; fpx: number; h: number } | null = null;
     if (flight && flight.code === selected && geoms[selected]) {
       const r = data.routes[selected];
       const p = pointAt(geoms[selected], flight.s);
       const [x, y] = vp.project(p);
       const text = `${fmt(flight.s * r.road_km)} km · ${fmtDrive(flight.s * r.drive_min)}`;
-      const w = textWidth(text, 16) + 18;
-      const h = 26;
+      const fpx = Math.round(rootPx() * 1.2);
+      const w = textWidth(text, fpx) + 20;
+      const h = Math.round(fpx * 1.6);
       const cands: Box[] = [
         { x: x + 12, y: y - h - 6, w, h },
         { x: x - w - 12, y: y - h - 6, w, h },
@@ -592,16 +599,17 @@ export function MapPanel(props: Props) {
       ];
       const b = cands.find((c) => inside(c) && !obstacles.some((o) => hit(c, o))) ?? cands.find(inside);
       if (b) {
-        travel = { x: b.x, y: b.y, text };
+        travel = { x: b.x, y: b.y, text, fpx, h };
         obstacles.push(b);
       }
     }
     const order = [...marks].sort((a, b) => Number(b.on) - Number(a.on) || (served[b.u.id] ?? 0) - (served[a.u.id] ?? 0));
-    const labels: { id: string; x: number; y: number; text: string; on: boolean }[] = [];
+    const labels: { id: string; x: number; y: number; text: string; on: boolean; fpx: number; h: number }[] = [];
     for (const m of order) {
       const text = m.u.town === 'Helsinki' ? 'HUS Helsinki' : m.u.town;
-      const w = textWidth(text) + 6;
-      const h = 16;
+      const fpx = Math.round(rootPx() * (m.on ? 1 : 0.86) * 10) / 10;
+      const w = textWidth(text, fpx) + 8;
+      const h = Math.round(fpx * 1.4);
       const cands: Box[] = [
         { x: m.x + 9, y: m.y - h / 2, w, h },
         { x: m.x - 9 - w, y: m.y - h / 2, w, h },
@@ -615,10 +623,10 @@ export function MapPanel(props: Props) {
       const b = cands.find((c) => inside(c) && !obstacles.some((o) => hit(c, o)));
       if (!b) continue; // skip a label rather than overlap
       obstacles.push(b);
-      labels.push({ id: m.u.id, x: b.x, y: b.y, text, on: m.on });
+      labels.push({ id: m.u.id, x: b.x, y: b.y, text, on: m.on, fpx, h });
     }
     return { marks, labels, travel };
-  }, [size, viewState, data, selected, flight, geoms]);
+  }, [size, viewState, data, selected, flight, geoms, routeFocus]);
 
   /* ---------- caption ---------- */
   const metricWord = metric === 'nights' ? 'nights away' : metric === 'hours' ? 'hours on the road' : 'round trips';
@@ -665,15 +673,15 @@ export function MapPanel(props: Props) {
               <span key={m.u.id} className={`hmark${m.on ? ' on' : ''}`} style={{ left: m.x - 5, top: m.y - 5 }} data-box="hmark" title={m.u.hospital} />
             ))}
             {overlay.labels.map((l) => (
-              <span key={l.id} className={`hlabel${l.on ? ' on' : ''}`} style={{ left: l.x, top: l.y }} data-box="hlabel" data-testid="hospital-label">
+              <span key={l.id} className={`hlabel${l.on ? ' on' : ''}`} style={{ left: l.x, top: l.y, fontSize: l.fpx, height: l.h, lineHeight: `${l.h}px` }} data-box="hlabel" data-testid="hospital-label">
                 {l.text}
               </span>
             ))}
-            {selGeom && size && !terrainOn && (
+            {selGeom && size && !terrainOn && routeFocus && (
               <RouteDots geom={selGeom} viewState={viewState} size={size} n={nDots} flightS={flight?.flying && flight.code === selected ? flight.s : null} />
             )}
             {overlay.travel && (
-              <span className="travel num" style={{ left: overlay.travel.x, top: overlay.travel.y }} data-box="travel" data-testid="travel-label">
+              <span className="travel num" style={{ left: overlay.travel.x, top: overlay.travel.y, fontSize: overlay.travel.fpx, height: overlay.travel.h, lineHeight: `${overlay.travel.h}px` }} data-box="travel" data-testid="travel-label">
                 {overlay.travel.text}
               </span>
             )}
@@ -692,7 +700,7 @@ export function MapPanel(props: Props) {
             <Prov kind="calculated" ids={data.routesMeta.source_ids} note={`${data.routesMeta.note} Squares: radiotherapy units. Grey lines: each municipality's road route to its unit (OSRM, OpenStreetMap). Lakes and coastline: Natural Earth 10m, bundled locally.`} />
           </span>
           <span className="num">0</span>
-          <span className="legend-bar" />
+          <span className="legend-bar" style={{ background: `linear-gradient(90deg, rgb(${RAMP_LO.join(',')}), rgb(${RAMP_HI.join(',')}))` }} />
           <span className="num">{fmt(maxLong, maxLong < 10 ? 1 : 0)}</span>
         </div>
         <div className="caption-text">

@@ -26,8 +26,11 @@ export function ParamSlider({ p, value, onChange, className }: { p: Parameter; v
     <div className={`slider-row${className ? ' ' + className : ''}`}>
       <label htmlFor={`param-${p.id}`}>
         <span>
-          {p.label}
-          <Prov kind={p.kind} ids={p.source_ids} note={p.rationale} />
+          {p.label.split(' ').slice(0, -1).join(' ')}{' '}
+          <span className="nowrap">
+            {p.label.split(' ').slice(-1)[0]}
+            <Prov kind={p.kind} ids={p.source_ids} note={p.rationale} />
+          </span>
         </span>
         <span className="val num">{fmtParam(p, value)}</span>
       </label>

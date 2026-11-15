@@ -22,6 +22,8 @@ export interface UiState {
   params: Params;
   metric: MetricKey;
   selected: string;
+  /** Teal route + trip dots for the selection; off on the national view (keys 0/1) until key 2 or a click. */
+  routeFocus: boolean;
   terrain: boolean;
   highlightTotals: boolean;
   drawerOpen: boolean;
@@ -39,6 +41,7 @@ function initialState(data: AppData): UiState {
     params: { ...data.defaults },
     metric: 'nights',
     selected: data.muniByCode[DEFAULT_MUNI] ? DEFAULT_MUNI : data.municipalities[0].code,
+    routeFocus: false,
     terrain: false,
     highlightTotals: false,
     drawerOpen: false,
@@ -88,7 +91,7 @@ function Matka({ data }: { data: AppData }) {
 
   const select = useCallback(
     (code: string) => {
-      update({ selected: code });
+      update({ selected: code, routeFocus: true });
     },
     [update],
   );
@@ -111,12 +114,12 @@ function Matka({ data }: { data: AppData }) {
       clearTimers();
       switch (k) {
         case '1':
-          update({ tab: 'map', highlightTotals: false, help: false, terrain: false });
+          update({ tab: 'map', highlightTotals: false, help: false, terrain: false, routeFocus: false });
           flyTo('finland');
           break;
         case '2':
           // Utsjoki, breast, 15 sessions: fly the road route to Oulu with 16 nights away in the card.
-          setS((p) => ({ ...p, tab: 'map', selected: DEFAULT_MUNI, indication: 'breast', levers: { ...p.levers, breast: false }, terrain: false, highlightTotals: false, help: false, drawerOpen: false }));
+          setS((p) => ({ ...p, tab: 'map', selected: DEFAULT_MUNI, routeFocus: true, indication: 'breast', levers: { ...p.levers, breast: false }, terrain: false, highlightTotals: false, help: false, drawerOpen: false }));
           flyTo('flight', DEFAULT_MUNI);
           break;
         case '3':
@@ -171,6 +174,7 @@ function Matka({ data }: { data: AppData }) {
             metric={s.metric}
             onMetric={(metric) => update({ metric })}
             selected={s.selected}
+            routeFocus={s.routeFocus}
             onSelect={select}
             fly={fly}
             fold={s.fold}

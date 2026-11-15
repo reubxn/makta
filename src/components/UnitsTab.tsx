@@ -101,13 +101,13 @@ export function UnitsTab({ params, onParam }: { params: Params; onParam: (id: ke
             {publishing} of {nUnits} units {publishing === 1 ? "publishes" : "publish"} which schedule they use.
           </h3>
           <p>
-            The ask: every unit publishes its schedule mix, and radiotherapy use by distance band, every year.{' '}
+            The ask: every unit publishes its schedule mix, and radiotherapy use by distance band, every year.
             <Prov kind="calculated" ids={Array.from(new Set(st.statements.map((x) => x.source_id ?? '').filter(Boolean)))} note="Counted from the verified statements below: a unit counts if one of its public pages states a usual number of sessions for breast or bone radiotherapy. Units = the 12 public radiotherapy units." />
           </p>
         </div>
         <p className="summary-line" data-testid="units-summary">
           {breast15} of {nUnits} units state 15 sessions as the usual breast schedule{breastConflict ? ' (its own leaflet also says 5 or 15)' : ''}; {n(breast5).toLowerCase() === 'no' ? 'none' : breast5} state 5 as standard.{' '}
-          {n(boneAny)} unit{boneAny === 1 ? '' : 's'} state a session count for painful bone metastases.{' '}
+          {n(boneAny)} unit{boneAny === 1 ? '' : 's'} state a session count for painful bone metastases.
           <Prov kind="calculated" ids={Array.from(new Set(st.statements.map((x) => x.source_id ?? '').filter(Boolean)))} note="Counted from the verified statements below; units = the 12 public radiotherapy units." />
         </p>
         <div className="panel" style={{ padding: '14px 18px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>

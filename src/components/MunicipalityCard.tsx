@@ -40,7 +40,7 @@ function Moon({ fill, color }: { fill: number; color: string }) {
       <svg viewBox="0 0 24 24">
         <path d={MOON} fill="none" stroke="#c9cdcd" strokeWidth="1.5" />
       </svg>
-      <span className="fill" style={{ width: `${Math.max(0, Math.min(1, fill)) * 12}px` }}>
+      <span className="fill" style={{ width: `${Math.max(0, Math.min(1, fill)) * 100}%` }}>
         <svg viewBox="0 0 24 24">
           <path d={MOON} fill={color} stroke={color} strokeWidth="1.5" />
         </svg>

@@ -20,8 +20,10 @@ export function Prov({ kind, ids, note, children }: { kind: Kind; ids: string[];
   const open = (e: React.MouseEvent) => {
     e.stopPropagation();
     const r = (e.currentTarget as HTMLElement).getBoundingClientRect();
-    const h = Math.min(400, window.innerHeight * 0.6);
-    const x = Math.min(window.innerWidth - 396, Math.max(16, r.left - 180));
+    const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 14;
+    const w = Math.min(27 * rem, window.innerWidth - 32);
+    const h = window.innerHeight * 0.72;
+    const x = Math.min(window.innerWidth - w - 16, Math.max(16, r.left - w / 2));
     const y = r.bottom + 6 + h > window.innerHeight - 40 ? Math.max(16, r.top - h - 6) : r.bottom + 6;
     setPos({ x, y });
   };

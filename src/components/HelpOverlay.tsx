@@ -1,8 +1,8 @@
 const KEYS: [string, string][] = [
   ['1', 'All of Finland: every municipality joined to its unit by road'],
   ['2', 'Utsjoki: fly the 676 km road route to Oulu'],
-  ['3', 'Breast: switch on 5 sessions for eligible patients (trips 4 → 2, nights 16 → 6)'],
-  ['4', 'Bone metastases: switch on a single 8 Gy session'],
+  ['3', 'Breast: switch on 5 sessions for eligible patients (trips 4\u00a0→\u00a02, nights 16\u00a0→\u00a06)'],
+  ['4', 'Bone metastases: switch on a single 8\u00a0Gy session'],
   ['5', 'Burden terrain: fly out and tilt, then switch on the breast lever'],
   ['6', 'Open What units say'],
   ['7', 'Open the Lapland county memo and write it'],
