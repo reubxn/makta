@@ -218,7 +218,8 @@ Rules:
 - Format of every sentence: text, then a space, then the ids in brackets, then the full stop, e.g. "Pain relief is equal [S31, S30]." Never put the full stop before the brackets, and never start a sentence with brackets.
 - No label-only sentences or fragments ("Owner: X.", "Breast.", "Limitations: ..."): write the owner role inside a full sentence that ends with ids, e.g. "1. The head of radiotherapy at OYS could evaluate ... [S31, S30]."
 - Each proposal's first step is one sentence starting "Within 30 days, the clinical team reviews ..." or "Within 30 days, the <role> and the clinical team decide ...".
-- Do not use the words "only", "better" or spelled-out numbers ("five"); use digits.
+- Never use the word "only" (not even "the only figure"), nor "better", nor spelled-out numbers ("five"); use digits.
+- A first step must not be a publication: say "decide which figures to report", not "publish".
 - Stay under 230 words.
 - Every sentence ends with the source ids that support it in square brackets, e.g. [S4] or [S4, S7]. Cite only sources that support that sentence; follow citation_guide. A statement about what a unit's page says cites that statement's own source_id. Proposal sentences cite the evidence for the proposal. Use only ids that appear in the facts.
 - Which unit serves which municipality: use routing_basis. Only say a unit "treats" or "serves" the county when the basis is the county's sourced catchment or sourced_catchments_for_this_county says so; otherwise say "the nearest unit by drive time".
@@ -408,10 +409,24 @@ def main():
     if c_api is None:
         print("ANTHROPIC_API_KEY missing: use --facts-only, write memos in-session, then --agent <file>")
         sys.exit(2)
+    import hashlib
+
+    cache_dir = ROOT / "data" / "raw" / "memo_api"
+    cache_dir.mkdir(parents=True, exist_ok=True)
     for c in codes:
         facts = all_facts[c]
+        # Resumable: a memo that passed validation is reused while its facts, prompt and model are unchanged.
+        key = hashlib.sha256((MODEL + PROMPT + json.dumps(facts, sort_keys=True, ensure_ascii=False)).encode()).hexdigest()[:16]
+        cached = cache_dir / f"{c}_{key}.json"
+        if cached.exists():
+            m = json.loads(cached.read_text())
+            checked, passed, problems = validate(m["text"], facts)
+            if not problems:
+                print(f"{c}: cached, {passed}/{checked} numbers ok")
+                memos.append({**m, "numbers_checked": checked, "numbers_passed": passed, "problems": [], "validated": True})
+                continue
         feedback = ""
-        for attempt in range(1, 4):
+        for attempt in range(1, 5):
             msg = c_api.messages.create(
                 model=MODEL,
                 max_tokens=16000,
@@ -428,6 +443,8 @@ def main():
             time.sleep(1)
         if problems:
             failed.append(c)
+        else:
+            cached.write_text(json.dumps({"county_code": c, "county_name": facts["county_name_fi"], "text": text, "attempts": attempt, "source_ids": sorted(set(re.findall(r"S\d+", text)), key=lambda x: int(x[1:]))}, ensure_ascii=False, indent=1))
         memos.append(
             {"county_code": c, "county_name": facts["county_name_fi"], "text": text, "numbers_checked": checked, "numbers_passed": passed, "attempts": attempt, "source_ids": sorted(set(re.findall(r"S\d+", text)), key=lambda x: int(x[1:])), "problems": problems, "validated": not problems}
         )
