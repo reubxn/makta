@@ -1,0 +1,20 @@
+{
+ "county_code": "06",
+ "county_name": "Satakunnan hyvinvointialue",
+ "text": "Karvia is hardest hit, 95 road km from the nearest unit by drive time in Pori, with 0 nights away for 15 breast sessions versus 0 for 5 [S60, S59].\n\n1. The head of radiotherapy could evaluate a single 8 Gy session as the default for uncomplicated painful bone metastases (equal pain relief, more retreatment), serving the indicator National targets and key effectiveness indicators defined for agreed cancers [S31, S30, S61]. In Karvia, expected nights away are 0.0 with multiple sessions versus 0.0 with a single 8 Gy session [S60, S30]. Within 30 days, the clinical team reviews uncomplicated cases [S31].\n\n2. The head of breast radiotherapy could evaluate 5 sessions as the default for eligible patients (whole breast or chest wall without nodal radiotherapy), citing distance and non-inferiority to 15 sessions, serving the indicator Patients receive treatment within target times [S9, S15, S25]. Yearly, this removes 0 nights away and frees 790 machine sessions (calculated; breast cancer alone) [S33, S60]. Within 30 days, the clinical team reviews eligibility [S15, S14].\n\n3. The analytics lead could evaluate publishing schedule mix and radiotherapy use by distance band yearly, serving the indicator Regional differences in treatment are available and used to steer services (cross-cutting indicator) [S26, S21]. Within 30 days, the analytics lead and the clinical team decide which figures to report [S26].\n\nDistances use municipality centre points, not addresses [S59, S60].",
+ "attempts": 4,
+ "source_ids": [
+  "S9",
+  "S14",
+  "S15",
+  "S21",
+  "S25",
+  "S26",
+  "S30",
+  "S31",
+  "S33",
+  "S59",
+  "S60",
+  "S61"
+ ]
+}

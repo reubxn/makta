@@ -1,0 +1,27 @@
+{
+ "county_code": "16",
+ "county_name": "Etelä-Pohjanmaan hyvinvointialue",
+ "text": "In Vimpeli, 136 km by road from Vaasa, the nearest unit by drive time, 15 breast sessions mean 16 nights away versus 6 with 5 [S60, S59].\n\n1. The head of radiotherapy could evaluate a single 8 Gy session as default for uncomplicated painful bone metastases: equal pain relief, more retreatment [S31, S30, S32, S62]. In Vimpeli, expected nights away are 2.4 with a single 8 Gy session versus 6.2 with multiple fractions [S60, S59, S30]. Within 30 days, the clinical team reviews default eligibility [S31, S30]. This serves \"National targets and key effectiveness indicators defined for agreed cancers\" [S61].\n\n2. The breast oncology lead could evaluate 5 sessions as default for eligible patients without nodal radiotherapy, non-inferior to 15, with distance a reason to choose it [S9, S11, S15, S14]. Calculated for breast alone, it removes 124 nights away and frees 551 machine sessions yearly [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews eligibility [S15, S14]. This serves \"Patients receive treatment within target times\" [S25, S24].\n\n3. The director of cancer services could evaluate annual reporting of schedule mix and radiotherapy use by distance band [S21]. Within 30 days, the director of cancer services and the clinical team decide which figures to report [S21]. This serves \"Regional differences in treatment are available and used to steer services\" [S26].\n\nDistances are road estimates [S59, S57, S60].",
+ "attempts": 1,
+ "source_ids": [
+  "S9",
+  "S11",
+  "S14",
+  "S15",
+  "S21",
+  "S24",
+  "S25",
+  "S26",
+  "S30",
+  "S31",
+  "S32",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S61",
+  "S62"
+ ]
+}

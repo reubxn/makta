@@ -1,0 +1,24 @@
+{
+ "county_code": "08",
+ "county_name": "Pirkanmaan hyvinvointialue",
+ "text": "Radiotherapy travel burdens Pirkanmaa patients, hardest in Virrat, 114 km by road from Tampere, where 15 breast sessions mean 16 nights away versus 6 with 5 sessions [S60, S59].\n\n1. The head of radiotherapy at Tays could evaluate a single 8 Gy session as default for uncomplicated painful bone metastases (equal pain relief, more retreatment), serving \"Patients receive treatment within target times\" [S31, S30, S25, S24]. In Virrat, expected nights away are 6.2 with a multi-fraction course versus 2.4 with a single 8 Gy session [S60, S30]. Within 30 days, the clinical team reviews uncomplicated cases [S31, S30].\n\n2. The head of radiotherapy could also evaluate 5 sessions, non-inferior to 15, as default for eligible patients with whole breast or chest wall without nodal radiotherapy, with distance as a reason, serving \"National targets and key effectiveness indicators defined for agreed cancers\" [S9, S15, S61]. Calculated for breast alone, this could remove 37 nights away and free 1,919 machine sessions a year [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews eligibility [S15, S14].\n\n3. The quality manager for cancer services could evaluate reporting schedule mix and radiotherapy use by distance band yearly, serving \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S26]. Within 30 days, the quality manager and the clinical team decide which figures to report [S26].\n\nDistances use municipality centre points and the current schedule mix is unknown [S59, S16].",
+ "attempts": 2,
+ "source_ids": [
+  "S9",
+  "S14",
+  "S15",
+  "S16",
+  "S24",
+  "S25",
+  "S26",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S61"
+ ]
+}

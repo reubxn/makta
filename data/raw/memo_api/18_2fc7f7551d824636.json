@@ -1,0 +1,23 @@
+{
+ "county_code": "18",
+ "county_name": "Keski-Pohjanmaan hyvinvointialue",
+ "text": "Lestijärvi is hardest hit, 189 road km from Jyväskylä, with 16 nights away for 15 breast sessions versus 6 for 5 [S60, S59].\n\n1. The head of radiotherapy could evaluate a single 8 Gy session as default for uncomplicated painful bone metastases, with equal pain relief but more retreatment [S31, S30]. Lestijärvi's expected nights away are 6.2 with the multi-fraction course versus 2.4 with a single 8 Gy session [S60]. Within 30 days, the clinical team reviews which cases count as uncomplicated [S31]. It serves the Goal 3 indicator \"Patients receive treatment within target times\" [S24].\n\n2. The breast lead could evaluate 5 sessions as default for eligible patients (whole breast or chest wall without nodal radiotherapy), naming distance as a reason, as it is non-inferior [S9, S15, S14]. Yearly, the county would avoid 202 nights away and free 202 machine sessions (calculated, breast cancer alone) [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews eligibility and distance as a reason [S15]. It serves the Goal 3 indicator \"Patients receive treatment within target times\" [S25].\n\n3. The cancer services analyst could evaluate yearly reporting of schedule mix and radiotherapy use by distance band [S16]. Within 30 days, the analyst and the clinical team decide which figures to report [S16]. It serves the Goal 3 indicator \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S26].\n\nDistances use municipality centre points, and the current schedule mix is unknown [S59, S60, S16].",
+ "attempts": 1,
+ "source_ids": [
+  "S9",
+  "S14",
+  "S15",
+  "S16",
+  "S24",
+  "S25",
+  "S26",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60"
+ ]
+}

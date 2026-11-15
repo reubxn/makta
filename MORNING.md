@@ -80,7 +80,7 @@ Two fresh design-critic sub-agents reviewed the screenshots. Their fixes were ap
 
 ### AI steps: confirmed API-generated
 
-- `public/data/memos.json`: `method: llm-api`, `model: claude-sonnet-5-5`, generated 2026-11-14, 22 memos, all 22 stored `validated: true` with numbers_passed = numbers_checked. `scripts/09_check_data.py` re-runs the validator live and passes.
+- `public/data/memos.json`: `method: llm-api`, `model: claude-sonnet-5-5`, **v2 generated 2026-11-15** by another session on `claude/sharp-sagan-uaohy1` and merged into `redesign`. All 22 memos are stored with `validated: true` and numbers_passed = numbers_checked; Lapland's has 16 of 16 numbers traced. Each memo now names its hardest-hit municipality and the county's yearly totals. `scripts/09_check_data.py` re-runs the validator live and passes.
 - `public/data/unit_statements.json`: `method: llm-api`, `model: claude-sonnet-5-5`, generated 2026-11-14, 12 pages read.
 - The memo tab still shows the "numbers traced" badge only when a memo's stored `validated` flag is true.
 
@@ -159,7 +159,7 @@ Press `0` before you start. `?` shows the keys.
 - **0:55 (key 4):** Painful bone metastases: a single 8 Gy session relieves pain as well, with more retreatment, and the model includes it. Utsjoki: 6.2 → 2.4 expected nights away; "Fewer nights away; trips about the same, because some patients need a second session." Per patient only: no national count of bone courses is published.
 - **1:10 (key 5):** Fly out, tilt: the burden terrain, hours on the road per patient at every point of Finland. "Close in, you lose hours driving in every day; that's the ring around each hospital. Far out, you lose nights and long drives; that's the climb north." Then the lever flips and the whole landscape sinks: "Five sessions cuts both." Totals highlighted.
 - **1:25 (key 6):** What units say: "1 of 12 units publishes which schedule it uses." So the current mix stays an assumption you can set (Assumptions drawer). Read by AI via the API, quotes checked against the saved pages.
-- **1:40 (key 7):** Lapland's memo writes itself in four seconds; superscript numbers are its sources, listed beneath; 9 of 9 numbers traced. Its first steps are clinical-team reviews.
+- **1:40 (key 7):** Lapland's memo writes itself in four seconds: Utsjoki, 676 km from Oulu, 16 nights away with 15 breast sessions versus 6 with 5; county-wide, 445 nights away removed and 454 machine sessions freed a year. Superscript numbers are its sources, listed beneath; every number is traced, and every first step is a clinical-team review.
 - **1:55 The ask:**
   - 5 sessions as the default for eligible breast patients, with distance named as a reason to choose it.
   - A single 8 Gy session as the default for uncomplicated painful bone metastases.

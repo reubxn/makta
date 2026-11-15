@@ -1,0 +1,27 @@
+{
+ "county_code": "15",
+ "county_name": "Keski-Suomen hyvinvointialue",
+ "text": "In Kinnula, 164 km by road from Jyväskylä, 15 breast sessions mean 16 nights away versus 6 with 5 [S60, S59].\n\n1. The head of radiotherapy could evaluate a single 8 Gy session as default for uncomplicated painful bone metastases (equal pain relief, more retreatment), serving \"National targets and key effectiveness indicators defined for agreed cancers\" [S31, S30, S62, S61]. In Kinnula, expected nights away are 6.2 with multi-fraction versus 2.4 with a single 8 Gy session [S60, S30]. Within 30 days, the clinical team reviews which cases qualify [S31, S62].\n\n2. The breast lead could evaluate 5 sessions as default for eligible patients (whole breast or chest wall without nodal radiotherapy), naming distance as a reason, as it is non-inferior, serving \"Patients receive treatment within target times\" [S9, S11, S15, S14, S25, S24]. Yearly county-wide, this removes 71 nights away and frees 850 machine sessions (calculated, breast) [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews eligibility and distance criteria [S15, S14].\n\n3. The quality manager could report schedule mix and radiotherapy use by distance band yearly, serving \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S21, S27, S26]. Within 30 days, the quality manager and the clinical team decide which figures to report [S21, S27].\n\nDistances use municipality centre points and the current schedule mix is unknown [S59, S60, S57].",
+ "attempts": 4,
+ "source_ids": [
+  "S9",
+  "S11",
+  "S14",
+  "S15",
+  "S21",
+  "S24",
+  "S25",
+  "S26",
+  "S27",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S61",
+  "S62"
+ ]
+}
