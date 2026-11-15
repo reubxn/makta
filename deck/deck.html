@@ -250,8 +250,8 @@ ol.tl li::before { content: ''; position: absolute; left: -6px; top: 4px; width:
 .ns { border-top: 2px solid var(--accent); padding-top: 14px; }
 .nn { font-family: var(--serif); font-size: 46px; font-weight: 300; color: var(--accent); line-height: 1; display: block; margin-bottom: 10px; }
 .ns p { font-size: 17px; line-height: 1.45; }
-.close { font-family: var(--serif); font-weight: 300; font-style: italic; font-size: 44px; margin-top: 44px; color: var(--ink); }
-.check { margin-top: 30px; background: var(--panel); border-left: 3px solid var(--accent); padding: 14px 18px 16px; max-width: 1000px; }
+.close { font-family: var(--serif); font-weight: 300; font-style: italic; font-size: 44px; margin-top: 28px; color: var(--ink); }
+.check { margin-top: 24px; background: var(--panel); border-left: 3px solid var(--accent); padding: 14px 18px 16px; max-width: 1000px; }
 .check p:last-child { font-size: 15px; margin-top: 6px; line-height: 1.6; }
 .key { display: inline-block; min-width: 20px; padding: 0 5px; border: 1px solid var(--ink-3); background: #fff; font-size: 13px; font-weight: 600; line-height: 19px; text-align: center; margin: 0 1px; }
 .links { margin-top: 18px; font-size: 15px; color: var(--ink-2); }
@@ -273,6 +273,18 @@ table.ptab { width: 100%; border-collapse: collapse; }
 .ptab th { text-align: left; font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); padding: 0 8px 5px 0; border-bottom: 1px solid var(--ink-3); }
 .ptab td { font-size: 12px; padding: 4px 8px 4px 0; border-bottom: 1px solid var(--line); }
 .ptab td:nth-child(3) { font-weight: 700; color: var(--ink-2); }
+
+/* review round: small reasons, bone table, AstraZeneca's role */
+.why { color: var(--ink-2); font-size: 0.86em; }
+table.bonet { margin-top: 2px; }
+.bonet th { font-size: 11.5px; }
+.bonet td { font-size: 13.5px; padding: 4px 0 5px; }
+.bonet td:not(:first-child) { font-size: 22px; width: 78px; }
+.measure p + p { margin-top: 6px; }
+.measure p b { color: var(--ink); }
+.azrole { margin-top: 22px; font-size: 15px; line-height: 1.5; border-top: 1px solid var(--line); padding-top: 12px; color: var(--ink-2); max-width: 1100px; }
+.azrole b { color: var(--ink); }
+.nw { white-space: nowrap; }
 </style></head>
 <body>
 <section class="slide s-title" data-slide="1">
@@ -289,11 +301,11 @@ table.ptab { width: 100%; border-collapse: collapse; }
       <p class="lede">Matka shows what a radiotherapy course costs patients in every Finnish municipality, in trips, nights away and hours on the road, and how much evidence-based shorter schedules would remove.</p>
       <div class="duo">
         <div><div class="v num">637,661<sup class="k">C</sup></div><div class="l">people in 89 municipalities live more than 100&nbsp;km by road from their radiotherapy unit</div></div>
-        <div><div class="v num teal">17,500<sup class="k">C</sup></div><div class="l">radiotherapy machine sessions freed a year if eligible breast patients get 5 sessions instead of 15</div></div>
+        <div><div class="v num teal">17,500<sup class="k">C</sup></div><div class="l">machine sessions freed a year if eligible breast patients get 5 sessions, not 15. At the default assumptions; 0 to 21,900 depending on today's unpublished mix.</div></div>
       </div>
-      <div class="askbox"><p class="kicker">The ask</p><p>A 12-month pilot at OYS in Oulu: 5 sessions as the default for eligible breast patients, a single 8&nbsp;Gy session for uncomplicated painful bone metastases, and the schedule mix published every year.</p></div>
+      <div class="askbox"><p class="kicker">The proposal</p><p>A 12-month pilot at OYS (Oulu University Hospital): 5 sessions as the default for eligible breast patients, a single 8&nbsp;Gy session for uncomplicated painful bone metastases, and the schedule mix published every year.</p></div>
     </div>
-    <figure class="tr"><img src="img/terrain.jpg" alt="Matka burden terrain over Finland"><figcaption>In the app: height = nights away per breast patient on 15 sessions. The burden stands in the north and east.</figcaption></figure>
+    <figure class="tr"><img src="img/terrain.jpg" alt="Matka burden terrain over Finland"><figcaption>In the app: height = nights away per breast patient on 15 sessions; flat = within 100&nbsp;km. The burden stands in the north and east.</figcaption></figure>
   </div></div>
   <footer class="foot"><div class="src">Live app: <b>matka-hack-europe.vercel.app</b> · Code and data: <b>github.com/reubxn/makta</b>. Calculated with the app's model at its default assumptions from population <span class="cite">[S57]</span>, OSRM road routes <span class="cite">[S60]</span> and Cancer Registry cases <span class="cite">[S33, S34, S35]</span>.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
 </section>
@@ -315,7 +327,7 @@ table.ptab { width: 100%; border-collapse: collapse; }
     </figure>
     <div class="cells">
       <div class="cell"><div class="v num">12<sup class="k">S</sup></div><p>public radiotherapy units serve mainland Finland. Lapland has none: its patients are treated in Oulu.</p></div>
-      <div class="cell"><div class="v num">676&nbsp;km<sup class="k">C</sup></div><p>from Utsjoki to OYS in Oulu, one way: 9 h 22 min by road.</p></div>
+      <div class="cell"><div class="v num">676&nbsp;km<sup class="k">C</sup></div><p>from Utsjoki to OYS (Oulu University Hospital), one way: 9 h 22 min by road.</p></div>
       <div class="cell"><div class="v num">&gt;100&nbsp;km<sup class="k">S</sup></div><p>The national roadmap: palliative radiotherapy is used less by patients living more than 100&nbsp;km from a unit (p.&nbsp;13).</p></div>
       <div class="cell"><div class="v num">OR 0.84<sup class="k">S</sup></div><p>Meta-analysis: living 50&nbsp;km or more from a centre goes with 16% lower odds of receiving palliative radiotherapy.</p></div>
       <div class="cell wide"><div class="v num">157 € <span class="vs">vs</span> 23 €<sup class="k">S</sup></div><p>Kela travel reimbursement per resident in 2025: Kainuu, the highest, against Helsinki, the lowest. All reimbursed travel, not only radiotherapy.</p></div>
@@ -342,7 +354,7 @@ table.ptab { width: 100%; border-collapse: collapse; }
   <div class="pcards">
     <div class="pcard">
       <p class="kicker">Radiotherapy after breast surgery</p>
-      <p class="pq">Common schedule today: 15 sessions over 3 weeks<sup class="k">S</sup></p>
+      <p class="pq">Long schedule: 15 sessions over 3 weeks<sup class="k">S</sup>. One Finnish unit's page says it usually gives 15.<sup class="k">S</sup></p>
       <div class="prow"><span>From Utsjoki, 676&nbsp;km</span><b class="num">16 nights away · 4 round trips · 75 h on the road<sup class="k">C</sup></b><span class="moons" title="16 nights"><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i><i class="moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg></i></span></div>
       <div class="prow"><span>Within 100&nbsp;km</span><b class="num">16 round trips<sup class="k">C</sup></b></div>
     </div>
@@ -359,7 +371,7 @@ table.ptab { width: 100%; border-collapse: collapse; }
     </div>
   </div>
   <p class="pline">Radiotherapy patients often attend daily for several weeks<sup class="k">S</sup>. Every session also takes a treatment-machine slot, and Goal 3 tracks whether <b>patients receive treatment within target times</b><sup class="k">S</sup>.</p></div>
-  <footer class="foot"><div class="src">Daily attendance <span class="cite">[S19]</span>. 40 Gy in 15 fractions over 3 weeks <span class="cite">[S9, S14]</span>. The 5-session bone comparator is an assumption (20 Gy in 5 fractions is a common comparator) <span class="cite">[S62]</span>. Goal 3 indicator <span class="cite">[S24, S25]</span>. Calculated with Matka's model; the 100&nbsp;km threshold and the planning visit are assumptions.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
+  <footer class="foot"><div class="src">Daily attendance <span class="cite">[S19]</span>. 40 Gy in 15 fractions over 3 weeks, the FAST-Forward control arm <span class="cite">[S9]</span>; Jyväskylä's page <span class="cite">[S65]</span>. The 5-session bone comparator is an assumption (20 Gy in 5 fractions is a common comparator) <span class="cite">[S62]</span>. Goal 3 indicator <span class="cite">[S24, S25]</span>. Calculated with Matka's model; the 100&nbsp;km threshold and the planning visit are assumptions.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
 </section>
 
 <section class="slide " data-slide="4">
@@ -373,25 +385,25 @@ table.ptab { width: 100%; border-collapse: collapse; }
     <div class="evc">
       <p class="kicker">Breast, after surgery</p>
       <div class="v num">4,096<sup class="k">S</sup></div><p class="vl">patients randomised in FAST-Forward</p>
-      <p><b>26 Gy in 5 sessions over 1 week is non-inferior</b> to 40 Gy in 15 over 3 weeks.<sup class="k">S</sup></p>
-      <p>At 10 years, a similar level of cancer control: breast recurrence 2.1% vs 3.6%; late moderate or marked breast effects 14.4% vs 13.1%.<sup class="k">S</sup></p>
+      <p><b>26 Gy in 5 sessions over 1 week is <span class="nw">non-inferior</span></b> to 40 Gy in 15 over 3 weeks.<sup class="k">S</sup></p>
+      <p>At 10 years, a similar level of cancer control. 5 vs 15 sessions: breast recurrence 2.1% vs 3.6%; late moderate or marked breast effects 14.4% vs 13.1%. A <span class="nw">non-inferior</span>ity trial, not a superiority result.<sup class="k">S</sup></p>
       <p class="elig">Eligible: whole breast or chest wall <b>without nodal radiotherapy</b>. 15 sessions stays standard when nodes are treated.<sup class="k">S</sup></p>
     </div>
     <div class="evc">
       <p class="kicker">Painful bone metastases</p>
       <div class="v num">61% <span class="vs">vs</span> 62%<sup class="k">S</sup></div><p class="vl">pain response, single vs multiple sessions, 29 randomised trials</p>
       <p><b>Retreatment 20% vs 8%</b>: the cost of a single session. Matka counts it.<sup class="k">S</sup></p>
-      <p>Guidelines name a single 8&nbsp;Gy session.<sup class="k">S</sup></p>
+      <p>An ASCO guideline, as cited in a Finnish thesis: a single 8&nbsp;Gy session is as effective as 20&nbsp;Gy in 5. Which cases count as uncomplicated is for the clinical team to define.<sup class="k">S</sup></p>
     </div>
     <div class="evc dim">
       <p class="kicker">Today's practice in Finland</p>
-      <div class="v num">1 <span class="vs">of</span> 12<sup class="k">C</sup></div><p class="vl">units publishes which schedule it uses</p>
-      <p>No unit page found states 5 breast sessions as standard, a session count for painful bone metastases, or distance as a reason.<sup class="k">C</sup></p>
+      <div class="v num">1 <span class="vs">of</span> 12<sup class="k">C</sup></div><p class="vl">units has a public page stating its usual breast schedule (15; its leaflet also says 5 or 15)</p>
+      <p>Matka read 12 pages from 6 units; for the other 6, no page was found or the site could not be reached. No page read states 5 sessions as standard, a bone session count, or distance as a reason.<sup class="k">C</sup></p>
       <p>Turku University Hospital, 2005–2013: 7% of courses in the last year of life were single-session. One centre, all indications.<sup class="k">S</sup></p>
     </div>
   </div>
   <p class="pline">No survival claims are made for the shorter schedules. They apply to eligible patients only; schedule choice stays a clinical decision.</p></div>
-  <footer class="foot"><div class="src">FAST-Forward: Brunt et al., Lancet 2020 <span class="cite">[S9, S10]</span>; 10-year results, Lancet Oncol 2026, 26 Gy vs 40 Gy arms <span class="cite">[S11]</span>. RCR consensus <span class="cite">[S15, S14]</span>. Rich et al., Radiother Oncol 2018 <span class="cite">[S31, S30]</span>, updating Chow et al. 2012 <span class="cite">[S32]</span>. ASCO guideline as cited <span class="cite">[S62]</span>. Unit pages read 14 Nov 2026 <span class="cite">[S65, S66, S67, S68]</span>; the Turku and Tampere sites could not be reached. Rautakorpi et al., Acta Oncol 2017 <span class="cite">[S16]</span>.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
+  <footer class="foot"><div class="src">FAST-Forward: Brunt et al., Lancet 2020 <span class="cite">[S9, S10]</span>; 10-year results, Lancet Oncol 2026, 26 Gy vs 40 Gy arms; late effects as recorded with the source <span class="cite">[S11]</span>. RCR consensus <span class="cite">[S15, S14]</span>. Rich et al., Radiother Oncol 2018 <span class="cite">[S31, S30]</span>, updating Chow et al. 2012 <span class="cite">[S32]</span>. ASCO guideline as cited <span class="cite">[S62]</span>. Unit pages read 14 Nov 2026 <span class="cite">[S65, S66, S67, S68]</span>; the Turku and Tampere sites could not be reached. Rautakorpi et al., Acta Oncol 2017 <span class="cite">[S16]</span>.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
 </section>
 
 <section class="slide " data-slide="5">
@@ -399,7 +411,7 @@ table.ptab { width: 100%; border-collapse: collapse; }
     <div class="wm"><i></i>Matka<span class="sec">What Matka does</span></div>
     <div class="topr">S sourced · C calculated · A assumption<span class="pg">5 / 12</span></div>
   </header>
-  <h1>Matka turns public data into each municipality’s travel burden and a sourced memo for each county</h1>
+  <h1>Pick any municipality: its travel burden before and after the switch, every number traced to a source</h1>
   <div class="body">
   <div class="mgrid">
     <figure class="appshot"><img src="img/app-breast.jpg" alt="Matka app, Utsjoki selected, breast lever on">
@@ -411,7 +423,7 @@ table.ptab { width: 100%; border-collapse: collapse; }
     </figure>
     <ol class="feat">
       <li><b>The lever.</b> Switch the default schedule; map, card and totals update.</li>
-      <li><b>One patient, before → after:</b> nights away, round trips, hours on the road, Kela cost (lower bound).</li>
+      <li><b>One patient, before → after:</b> nights away, round trips, hours on the road, travel cost at Kela's rates (a lower bound).</li>
       <li><b>Every year, nationally:</b> machine sessions, nights, trips and hours.</li>
       <li><b>The real road route</b> from each municipality to its unit.</li>
       <li><b>Every number is marked S, C or A.</b> Click it for the source and a verbatim quote.</li>
@@ -426,12 +438,12 @@ table.ptab { width: 100%; border-collapse: collapse; }
     <div class="wm"><i></i>Matka<span class="sec">What changes if counties act</span></div>
     <div class="topr">S sourced · C calculated · A assumption<span class="pg">6 / 12</span></div>
   </header>
-  <h1>5 sessions for eligible breast patients would free about 17,500 radiotherapy machine sessions a year</h1>
+  <h1>At the default assumptions, 5 sessions for eligible breast patients would free about 17,500 machine sessions a year</h1>
   <div class="body">
   <div class="cgrid">
     <div class="cl">
       <p class="kicker">Every year, nationally, breast<sup class="k">C</sup></p>
-      <p class="clede">About <b class="num">1,750</b> eligible breast patients a year are still on 15 sessions. Moving them to 5 removes:</p>
+      <p class="clede">If 20% already get 5 sessions (an assumption: the mix is not published), about <b class="num">1,750</b> eligible breast patients a year are on 15. Moving them to 5 removes:</p>
       <div class="bars">
         <div class="brow"><div class="bl">Machine sessions</div><div class="track"><div class="rem" style="width:66.7%"></div></div><div class="bv num"><b class="teal">17,500</b> <span>of 26,200</span></div></div>
         <div class="brow"><div class="bl">Nights away</div><div class="track"><div class="rem" style="width:62.5%"></div></div><div class="bv num"><b class="teal">1,950</b> <span>of 3,120</span></div></div>
@@ -440,7 +452,7 @@ table.ptab { width: 100%; border-collapse: collapse; }
         <div class="bkey">Whole bar: these patients' yearly burden on 15 sessions today. <i class="sw tealsw"></i>Removed by moving them to 5.</div>
         <p class="assume">Assumptions, each a slider in the app<sup class="k">A</sup>: <b>70%</b> of new breast cancers get radiotherapy · <b>60%</b> of them are eligible for 5 sessions · <b>20%</b> of those already get 5.</p>
       </div>
-      <p class="goal">Freed machine sessions serve Goal 3: patients receive treatment within target times.<sup class="k">S</sup></p>
+      <p class="goal">Freed machine sessions could help Goal 3: patients receive treatment within target times.<sup class="k">S</sup> Waiting times are not modelled.</p>
     </div>
     <div class="cr">
       <p class="kicker">One patient from Utsjoki, breast<sup class="k">C</sup></p>
@@ -449,14 +461,19 @@ table.ptab { width: 100%; border-collapse: collapse; }
         <tr><td>Nights away</td><td>16</td><td class="teal">6</td></tr>
         <tr><td>Round trips</td><td>4</td><td class="teal">2</td></tr>
         <tr><td>Hours on the road</td><td>75</td><td class="teal">37</td></tr>
-        <tr><td>Kela €, at least</td><td>2,107</td><td class="teal">1,013</td></tr>
+        <tr><td>Travel cost, €, at least</td><td>2,107</td><td class="teal">1,013</td></tr>
       </table>
       <p class="kicker k2">Painful bone metastases, single 8&nbsp;Gy<sup class="k">C</sup></p>
-      <p class="bone">Beyond 100&nbsp;km: <b class="num">6.2 → <span class="teal">2.4</span></b> nights away per course. Within 100&nbsp;km: <b class="num">6.2 → <span class="teal">2.4</span></b> round trips.</p>
-      <p class="bone small">Retreatment is included, so far patients make about the same number of trips (2.2 → 2.4). Per patient only: no national count of bone courses is published.</p>
+      <table class="pp bonet num">
+        <thead><tr><th></th><th>5 sessions</th><th>1 session</th></tr></thead>
+        <tr><td>Beyond 100&nbsp;km: nights away</td><td>6.2</td><td class="teal">2.4</td></tr>
+        <tr><td>Beyond 100&nbsp;km: round trips</td><td>2.2</td><td>2.4</td></tr>
+        <tr><td>Within 100&nbsp;km: round trips</td><td>6.2</td><td class="teal">2.4</td></tr>
+      </table>
+      <p class="bone small">Expected per course, retreatment included (20% vs 8%): far patients' trips stay about the same. Per patient only: no national count of bone courses is published.</p>
     </div>
   </div></div>
-  <footer class="foot"><div class="src">Calculated with Matka's model at its defaults: 5,204 new breast cancers in women on the mainland, 2024 <span class="cite">[S33, S34]</span> × 70% treated with radiotherapy (A) × 60% eligible (A) × (1 − 20% already on 5 sessions, A), allocated by age-weighted female population <span class="cite">[S35, S57]</span>; rounded to 3 significant figures, as in the app. Kela lower bound: 0.33 €/km + 20.18 € a night <span class="cite">[S6, S7]</span>. Retreatment <span class="cite">[S30]</span>. Goal 3 <span class="cite">[S24, S25]</span>.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
+  <footer class="foot"><div class="src">Calculated with Matka's model at its defaults: 5,204 new breast cancers in women on the mainland, 2024 (5,232 with Åland) <span class="cite">[S33, S34]</span> × 70% treated with radiotherapy (A) × 60% eligible (A) × (1 − 20% already on 5 sessions, A), allocated by age-weighted female population <span class="cite">[S35, S57]</span>; rounded to 3 significant figures, as in the app. Travel cost: km × Kela's own-car rate 0.33 €/km + its overnight allowance 20.18 € <span class="cite">[S6, S7]</span>; a lower bound on cost (taxis cost more), not Kela's payout (patients pay up to 25 € a trip <span class="cite">[S4]</span>). Retreatment <span class="cite">[S30]</span>. Goal 3 <span class="cite">[S24, S25]</span>.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
 </section>
 
 <section class="slide " data-slide="7">
@@ -473,12 +490,12 @@ table.ptab { width: 100%; border-collapse: collapse; }
       <p class="cfoot">The other 10 of 22 areas have no municipality beyond 100&nbsp;km, so no nights away to remove.</p>
     </div>
     <div class="wside">
-      <div class="wbig"><div class="v num teal">40%<sup class="k">C</sup></div><p>of all nights removed fall in the 56 municipalities routed to <b>OYS in Oulu</b>, home to 9% of the eligible patients.</p></div>
-      <p>Lapland has no unit: 20 of its 21 municipalities are beyond 100&nbsp;km, and the switch removes <b class="num">9.8</b> nights per eligible patient.<sup class="k">C</sup></p>
-      <p>Near a unit the switch still matters: a patient within 100&nbsp;km makes <b class="num">16 → 6</b> round trips.<sup class="k">C</sup></p>
+      <div class="wbig"><div class="v num teal">40%<sup class="k">C</sup></div><p>of all nights removed fall in the 56 municipalities routed to <b>OYS</b> (Oulu University Hospital), home to 9% of the eligible patients.</p></div>
+      <p>Nights away arise only beyond the 100&nbsp;km commuting threshold, an assumption. OYS has the largest share at every threshold from 50 to 300&nbsp;km: 15% at 50&nbsp;km, 69% at 150&nbsp;km.<sup class="k">C</sup></p>
+      <p>Near a unit the switch saves trips instead: <b class="num">16 → 6</b> round trips. Hours on the road saved are about the same near and far: 9.3 vs 9.1 per patient.<sup class="k">C</sup></p>
     </div>
   </div></div>
-  <footer class="foot"><div class="src">Calculated with Matka's model at its defaults, summed by wellbeing services county; the City of Helsinki is its own area. Lapland is routed to OYS by its published catchment <span class="cite">[S52]</span>; other municipalities go to the nearest unit by drive time, an assumption <span class="cite">[S60]</span> (Kainuu splits Oulu 5, Kuopio 2, Joensuu 1).</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
+  <footer class="foot"><div class="src">Calculated with Matka's model at its defaults, summed by area: the 21 wellbeing services counties and the City of Helsinki. Threshold shares: the same model, threshold moved. Lapland is routed to OYS by its published catchment <span class="cite">[S52]</span>; other municipalities go to the nearest unit by drive time, an assumption <span class="cite">[S60]</span> (Kainuu splits Oulu 5, Kuopio 2, Joensuu 1).</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
 </section>
 
 <section class="slide " data-slide="8">
@@ -486,22 +503,22 @@ table.ptab { width: 100%; border-collapse: collapse; }
     <div class="wm"><i></i>Matka<span class="sec">The recommendation</span></div>
     <div class="topr">S sourced · C calculated · A assumption<span class="pg">8 / 12</span></div>
   </header>
-  <h1>Three changes for every county: two defaults the evidence supports, and one number published every year</h1>
+  <h1>Two defaults the evidence supports, and one yearly number that makes them checkable, for every unit and the counties it serves</h1>
   <div class="body">
   <table class="rec">
     <thead><tr><th class="c1">Change</th><th>Owner</th><th>First step, within 30 days</th><th>Goal 3 indicator it serves</th></tr></thead>
     <tr><td class="c1"><div class="c1w"><span class="rn">1</span><div><b>5 sessions as the default for eligible breast patients</b> (whole breast or chest wall, no nodal radiotherapy), with distance named as a reason to choose it.<sup class="k">S</sup></div></div></td>
-      <td>Breast radiotherapy lead</td><td>Clinical team reviews its eligibility criteria and last year's schedule mix.</td><td>Patients receive treatment within target times<sup class="k">S</sup></td></tr>
+      <td>Breast radiotherapy lead</td><td>Clinical team reviews its eligibility criteria and last year's schedule mix.</td><td>Patients receive treatment within target times<sup class="k">S</sup> <span class="why">(frees machine sessions)</span></td></tr>
     <tr><td class="c1"><div class="c1w"><span class="rn">2</span><div><b>A single 8&nbsp;Gy session as the default for uncomplicated painful bone metastases</b>, with retreatment tracked.<sup class="k">S</sup></div></div></td>
-      <td>Head of radiotherapy</td><td>Clinical team agrees which bone cases count as uncomplicated and reviews retreatment rates.</td><td>National targets and effectiveness indicators for agreed cancers<sup class="k">S</sup></td></tr>
+      <td>Head of radiotherapy</td><td>Clinical team agrees which bone cases count as uncomplicated and reviews retreatment rates.</td><td>National targets and effectiveness indicators for agreed cancers<sup class="k">S</sup> <span class="why">(single-session rate as an indicator)</span></td></tr>
     <tr><td class="c1"><div class="c1w"><span class="rn">3</span><div><b>Publish the schedule mix, and radiotherapy use by distance band, every year.</b><sup class="k">S</sup></div></div></td>
       <td>Director of cancer services, with the unit's quality manager</td><td>Agree the distance bands and the data to extract.</td><td>Regional differences in treatment are available and used to steer services<sup class="k">S</sup></td></tr>
   </table>
   <div class="recnote">
-    <p><b>Why all three:</b> the evidence exists, the burden is measurable, and change 3 makes changes 1 and 2 checkable. Today Matka found a published schedule for 1 of 12 units.</p>
+    <p><b>Why all three:</b> the bone change targets the access gap the roadmap describes beyond 100&nbsp;km; the breast change frees machine capacity, and nights for far patients; change 3 makes both checkable.</p>
     <p><b>Proposals for clinical teams to evaluate.</b> Schedule choice stays a clinical decision for each patient. Each county's memo in the app carries these proposals with its own numbers.</p>
   </div></div>
-  <footer class="foot"><div class="src">Breast <span class="cite">[S9, S11, S15, S14]</span>. Bone <span class="cite">[S31, S30, S62]</span>. Distance and palliative radiotherapy use <span class="cite">[S21, S27]</span>. Goal 3 indicators: target times <span class="cite">[S24, S25]</span>; agreed-cancer indicators <span class="cite">[S61]</span>; regional differences <span class="cite">[S26]</span>.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
+  <footer class="foot"><div class="src">Breast <span class="cite">[S9, S11, S15, S14]</span>. Bone <span class="cite">[S31, S30, S62]</span>. Distance and palliative radiotherapy use <span class="cite">[S21, S27]</span>. Goal 3 indicators: target times <span class="cite">[S24, S25]</span>; agreed-cancer indicators <span class="cite">[S61]</span>; regional differences <span class="cite">[S26]</span>. The county memos pair changes 1 and 2 with the first two indicators either way round; both fit.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
 </section>
 
 <section class="slide " data-slide="9">
@@ -514,8 +531,8 @@ table.ptab { width: 100%; border-collapse: collapse; }
   <div class="pgrid">
     <div class="pl">
       <p class="kicker">OYS catchment, as modelled<sup class="k">C</sup></p>
-      <p class="pscope"><b class="num">56</b> municipalities, <b class="num">41</b> beyond 100&nbsp;km, home to <b class="num">607,715</b> people. Lapland has no unit of its own, and Utsjoki, 676&nbsp;km away, is the longest drive in Matka's routing.</p>
-      <p class="pscope">About <b class="num">157</b> eligible breast patients a year on 15 sessions. If all switch, every year:</p>
+      <p class="pscope"><b class="num">56</b> municipalities with <b class="num">607,715</b> residents in all; <b class="num">41</b> of them beyond 100&nbsp;km. Lapland has no unit of its own; Utsjoki, 676&nbsp;km away, is the longest drive in Matka's routing.</p>
+      <p class="pscope">At the default assumptions, about <b class="num">157</b> eligible breast patients a year on 15 sessions. OYS's page says courses last 1–4 weeks, so some may already get 5; the baseline will show it. If all switch, every year:</p>
       <div class="v num teal">1,570<sup class="k">C</sup></div><p class="vl">machine sessions freed</p>
       <div class="trio num">
         <div><b class="teal">780</b><span>nights away</span></div>
@@ -528,13 +545,14 @@ table.ptab { width: 100%; border-collapse: collapse; }
         <li><span class="when">Days 0–30</span><span>OYS clinical teams review breast eligibility criteria and which bone cases count as uncomplicated. Extract last year's schedule mix and retreatment rate as the baseline.</span></li>
         <li><span class="when">Month 2</span><span>Teams decide whether to adopt the two defaults. If adopted, distance is named as a reason to choose 5 sessions.</span></li>
         <li><span class="when">Month 6</span><span>Interim report, by distance band.</span></li>
-        <li><span class="when">Month 12</span><span>Published report. Decide whether to extend to the other units.</span></li>
+        <li><span class="when">Month 12</span><span>Published report. Extend to other units if the short-schedule share rose with no rise in side effects, and retreatment after a single session stayed near the trials' 20%.</span></li>
       </ol>
       <div class="measure"><p class="kicker">Measured at baseline and month 12</p>
-        <p>Share of eligible breast patients on 5 sessions · share of uncomplicated bone metastases on a single 8&nbsp;Gy session · retreatment rate · nights away and round trips per course, by distance band · machine sessions freed · time to start of radiotherapy</p></div>
+        <p><b>Uptake and burden:</b> share of eligible breast patients on 5 sessions · share of uncomplicated bone metastases on a single 8&nbsp;Gy session · nights away and round trips per course, by distance band · machine sessions freed · time to start of radiotherapy</p>
+        <p><b>Safety and outcomes:</b> acute skin reactions and patient-reported breast effects · pain response after bone radiotherapy · retreatment rate · patients' own schedule preference</p></div>
     </div>
   </div></div>
-  <footer class="foot"><div class="src">Expected size calculated with Matka's model at its defaults; the baseline replaces the 20% "already on 5 sessions" assumption. Routing: Lapland by its published catchment <span class="cite">[S52]</span>; North Ostrobothnia, Kainuu and Central Ostrobothnia municipalities by nearest drive time, an assumption <span class="cite">[S60]</span>. Rounded to 3 significant figures.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
+  <footer class="foot"><div class="src">Expected size calculated with Matka's model at its defaults; the baseline replaces the 20% "already on 5 sessions" assumption. OYS's page <span class="cite">[S68]</span>. OYS has the largest share of nights removed at every commuting threshold from 50 to 300 km. Routing: Lapland by its published catchment <span class="cite">[S52]</span>; North Ostrobothnia, Kainuu and Central Ostrobothnia municipalities by nearest drive time, an assumption <span class="cite">[S60]</span>. Rounded to 3 significant figures.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
 </section>
 
 <section class="slide " data-slide="10">
@@ -546,7 +564,7 @@ table.ptab { width: 100%; border-collapse: collapse; }
   <div class="body">
   <div class="aigrid">
     <div class="ail">
-      <div class="airow"><p class="kicker">Read</p><div class="aiv num">12</div><div><b>public unit pages read by AI.</b> Strict schema; null when a page does not say. Every Finnish quote must match the saved page word for word: 4 statements kept, 3 dropped. Result: 1 of 12 units publishes which schedule it uses.</div></div>
+      <div class="airow"><p class="kicker">Read</p><div class="aiv num">12</div><div><b>public pages from 6 of the 12 units, read by AI.</b> Strict schema; null when a page does not say. Every Finnish quote must match the saved page word for word: 4 statements kept, 3 dropped. Result: 1 unit states its usual breast schedule.</div></div>
       <div class="airow"><p class="kicker">Compute</p><div class="aiv num">0</div><div><b>AI in the numbers.</b> Pure, unit-tested functions: 21 of 21 tests pass, including national totals = sum of counties. A data check confirms every municipality has a route and every fact a kind and known sources. 14 parameters: 7 sourced, 7 assumptions, each a slider.</div></div>
       <div class="airow"><p class="kicker">Write</p><div class="aiv num">264/264</div><div><b>numbers traced in 22 county memos.</b> A validator extracts every number and checks it against the facts given to the writer. A sentence without source ids, "better" or a survival claim fails.</div></div>
       <p class="aifoot">68 sources, each with a short verbatim quote. Every number in this deck is checked against the repo data by a script, like the memos.</p>
@@ -580,7 +598,7 @@ table.ptab { width: 100%; border-collapse: collapse; }
       <span class="rlo num" style="left:37.0%">9,990 <em>at 40%</em></span><span class="rhi num" style="left:83.3%">22,500 <em>at 90%</em></span></div></div>
       </div>
       <p class="snote">If half the eligible patients already get 5 sessions, the switch frees <b class="num">10,900</b>; if all do, nothing. That is why change 3 asks units to publish the mix.</p>
-      <p class="snote">Commuting threshold 30–300 km<sup class="k">A</sup>: sessions freed unchanged; nights away removed <b class="num">7,860</b> to <b class="num">120</b>.</p>
+      <p class="snote">Commuting threshold 30–300&nbsp;km<sup class="k">A</sup>: sessions freed unchanged; nights away removed <b class="num">7,860</b> to <b class="num">120</b>. OYS's share of them stays the largest from 50&nbsp;km up.</p>
     </div>
     <div class="lims">
       <p class="kicker">Also limits the numbers</p>
@@ -608,10 +626,11 @@ table.ptab { width: 100%; border-collapse: collapse; }
   <h1>Next step: one introduction and one year of OYS data, to replace our assumptions with real numbers</h1>
   <div class="body">
   <div class="next">
-    <div class="ns"><span class="nn">1</span><p><b>An introduction</b> to the OYS head of radiotherapy and Lapland's director of cancer services. Lapland's memo is already written, every number traced.</p></div>
+    <div class="ns"><span class="nn">1</span><p><b>An introduction</b> to the head of radiotherapy at OYS (Oulu University Hospital) and Lapland's director of cancer services. Lapland's memo is already written, every number traced.</p></div>
     <div class="ns"><span class="nn">2</span><p><b>Last year's aggregate schedule mix and retreatment rate</b> from OYS. It replaces the "already on 5 sessions" assumption and sets the pilot baseline.</p></div>
     <div class="ns"><span class="nn">3</span><p><b>We rerun Matka with those numbers</b> and update the memos for the counties OYS serves. The same memo already exists for all 22 areas.</p></div>
   </div>
+  <p class="azrole"><b>What we ask of AstraZeneca:</b> one introduction, as non-promotional scientific exchange. OYS and the county own the decision, the pilot and its data; only aggregate counts are shared.</p>
   <p class="close">We can’t move the hospital. The schedule can.</p>
   <div class="check"><p class="kicker">Check it yourself in five minutes</p>
     <p>Open <b>matka-hack-europe.vercel.app</b>. Press <span class="key">2</span> to fly the road from Utsjoki to Oulu; <span class="key">3</span> turns the breast lever on. Click any S, C or A marker for its source and quote. <span class="key">7</span> writes Lapland's memo. Code and data: <b>github.com/reubxn/makta</b>.</p></div></div>
@@ -624,7 +643,7 @@ table.ptab { width: 100%; border-collapse: collapse; }
     <div class="topr">S sourced · C calculated · A assumption<span class="pg">A1</span></div>
   </header>
   <h1>Sources cited in this deck (1 of 2)</h1>
-  <div class="body"><ul class="srcs"><li><b>S3</b> Kelan matkakorvausmenot kasvoivat (per-resident spend). <span class="pub">Kela, 2026.</span> <span class="url">kela.fi/tietotarjotin/1369368-kelan-matkakorvausmenot-kasvoivat-taust…</span></li><li><b>S6</b> Matkakorvaukset (oma auto). <span class="pub">Kela, 2026.</span> <span class="url">kela.fi/matkat</span></li><li><b>S7</b> Matkakorvaukset (yöpymisraha). <span class="pub">Kela, 2026.</span> <span class="url">kela.fi/matkat</span></li><li><b>S9</b> Hypofractionated breast radiotherapy for 1 week versus 3 weeks (FAST-Forward): 5-year e… <span class="pub">The Lancet, 2020.</span> <span class="url">doi.org/10.1016/S0140-6736(20)30932-6</span></li><li><b>S10</b> FAST-Forward 2020 (sample size). <span class="pub">The Lancet, 2020.</span> <span class="url">doi.org/10.1016/S0140-6736(20)30932-6</span></li><li><b>S11</b> Hypofractionated breast radiotherapy for 1 week versus 3 weeks (FAST-Forward): 10-year… <span class="pub">The Lancet Oncology, 2026.</span> <span class="url">doi.org/10.1016/S1470-2045(26)00076-8</span></li><li><b>S14</b> Radiotherapy dose fractionation, fourth edition: 03 Breast cancer. <span class="pub">The Royal College of Radiologists, 2024.</span> <span class="url">rcr.ac.uk/media/br2aqgpd/03-breast-cancer-radiotherapy-dose-fractiona…</span></li><li><b>S15</b> Radiotherapy dose fractionation, fourth edition: 03 Breast cancer. <span class="pub">The Royal College of Radiologists, 2024.</span> <span class="url">rcr.ac.uk/media/br2aqgpd/03-breast-cancer-radiotherapy-dose-fractiona…</span></li><li><b>S16</b> Assessing the utilization of radiotherapy near end of life at a Finnish University Hosp… <span class="pub">Acta Oncologica, 2017.</span> <span class="url">medicaljournalssweden.se/actaoncologica/article/view/25257</span></li><li><b>S19</b> Päijät-Hämeen hyvinvointialue: Uusi sädehoitolaite vahvistaa syövänhoitoa. <span class="pub">Päijät-Hämeen hyvinvointialue (STT Info), 2026.</span> <span class="url">sttinfo.fi/tiedote/72243478/paijat-hameen-hyvinvointialue-uusi-sadeho…</span></li><li><b>S21</b> Kansallinen syöpästrategia 2026–2035: Toimeenpanon tiekartta vuosille 2026–2031. <span class="pub">Kansallisen syöpästrategian toimeenpanon käynni…, 2026.</span> <span class="url">files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpa…</span></li><li><b>S24</b> Kansallinen syöpästrategia 2026–2035: Toimeenpanon tiekartta vuosille 2026–2031. <span class="pub">Kansallisen syöpästrategian toimeenpanon käynni…, 2026.</span> <span class="url">files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpa…</span></li><li><b>S25</b> Kansallinen syöpästrategia 2026–2035. <span class="pub">Sosiaali- ja terveysministeriö / Kansallinen sy…, 2026.</span> <span class="url">files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035…</span></li><li><b>S26</b> Kansallinen syöpästrategia 2026–2035. <span class="pub">Sosiaali- ja terveysministeriö / Kansallinen sy…, 2026.</span> <span class="url">files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035…</span></li><li><b>S27</b> Geographical distance and reduced access to palliative radiotherapy: systematic review… <span class="pub">BMJ Supportive & Palliative Care, 2022.</span> <span class="url">doi.org/10.1136/bmjspcare-2021-003356</span></li><li><b>S29</b> Factors influencing access to palliative radiotherapy: a Norwegian population-based stu… <span class="pub">Acta Oncologica, 2018.</span> <span class="url">doi.org/10.1080/0284186X.2018.1468087</span></li><li><b>S30</b> Update of the systematic review of palliative radiation therapy fractionation for bone… <span class="pub">Radiotherapy and Oncology, 2018.</span> <span class="url">doi.org/10.1016/j.radonc.2018.01.003</span></li></ul></div>
+  <div class="body"><ul class="srcs"><li><b>S3</b> Kelan matkakorvausmenot kasvoivat (per-resident spend). <span class="pub">Kela, 2026.</span> <span class="url">kela.fi/tietotarjotin/1369368-kelan-matkakorvausmenot-kasvoivat-taust…</span></li><li><b>S4</b> Matkakorvaukset. <span class="pub">Kela, 2026.</span> <span class="url">kela.fi/matkat</span></li><li><b>S6</b> Matkakorvaukset (oma auto). <span class="pub">Kela, 2026.</span> <span class="url">kela.fi/matkat</span></li><li><b>S7</b> Matkakorvaukset (yöpymisraha). <span class="pub">Kela, 2026.</span> <span class="url">kela.fi/matkat</span></li><li><b>S9</b> Hypofractionated breast radiotherapy for 1 week versus 3 weeks (FAST-Forward): 5-year e… <span class="pub">The Lancet, 2020.</span> <span class="url">doi.org/10.1016/S0140-6736(20)30932-6</span></li><li><b>S10</b> FAST-Forward 2020 (sample size). <span class="pub">The Lancet, 2020.</span> <span class="url">doi.org/10.1016/S0140-6736(20)30932-6</span></li><li><b>S11</b> Hypofractionated breast radiotherapy for 1 week versus 3 weeks (FAST-Forward): 10-year… <span class="pub">The Lancet Oncology, 2026.</span> <span class="url">doi.org/10.1016/S1470-2045(26)00076-8</span></li><li><b>S14</b> Radiotherapy dose fractionation, fourth edition: 03 Breast cancer. <span class="pub">The Royal College of Radiologists, 2024.</span> <span class="url">rcr.ac.uk/media/br2aqgpd/03-breast-cancer-radiotherapy-dose-fractiona…</span></li><li><b>S15</b> Radiotherapy dose fractionation, fourth edition: 03 Breast cancer. <span class="pub">The Royal College of Radiologists, 2024.</span> <span class="url">rcr.ac.uk/media/br2aqgpd/03-breast-cancer-radiotherapy-dose-fractiona…</span></li><li><b>S16</b> Assessing the utilization of radiotherapy near end of life at a Finnish University Hosp… <span class="pub">Acta Oncologica, 2017.</span> <span class="url">medicaljournalssweden.se/actaoncologica/article/view/25257</span></li><li><b>S19</b> Päijät-Hämeen hyvinvointialue: Uusi sädehoitolaite vahvistaa syövänhoitoa. <span class="pub">Päijät-Hämeen hyvinvointialue (STT Info), 2026.</span> <span class="url">sttinfo.fi/tiedote/72243478/paijat-hameen-hyvinvointialue-uusi-sadeho…</span></li><li><b>S21</b> Kansallinen syöpästrategia 2026–2035: Toimeenpanon tiekartta vuosille 2026–2031. <span class="pub">Kansallisen syöpästrategian toimeenpanon käynni…, 2026.</span> <span class="url">files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpa…</span></li><li><b>S24</b> Kansallinen syöpästrategia 2026–2035: Toimeenpanon tiekartta vuosille 2026–2031. <span class="pub">Kansallisen syöpästrategian toimeenpanon käynni…, 2026.</span> <span class="url">files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpa…</span></li><li><b>S25</b> Kansallinen syöpästrategia 2026–2035. <span class="pub">Sosiaali- ja terveysministeriö / Kansallinen sy…, 2026.</span> <span class="url">files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035…</span></li><li><b>S26</b> Kansallinen syöpästrategia 2026–2035. <span class="pub">Sosiaali- ja terveysministeriö / Kansallinen sy…, 2026.</span> <span class="url">files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035…</span></li><li><b>S27</b> Geographical distance and reduced access to palliative radiotherapy: systematic review… <span class="pub">BMJ Supportive & Palliative Care, 2022.</span> <span class="url">doi.org/10.1136/bmjspcare-2021-003356</span></li><li><b>S29</b> Factors influencing access to palliative radiotherapy: a Norwegian population-based stu… <span class="pub">Acta Oncologica, 2018.</span> <span class="url">doi.org/10.1080/0284186X.2018.1468087</span></li><li><b>S30</b> Update of the systematic review of palliative radiation therapy fractionation for bone… <span class="pub">Radiotherapy and Oncology, 2018.</span> <span class="url">doi.org/10.1016/j.radonc.2018.01.003</span></li></ul></div>
   <footer class="foot"><div class="src">S-numbers match the app's Sources &amp; limitations tab (public/data/sources.json: 68 sources, each with URL, access date and a verbatim quote). All accessed 14 Nov 2026.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
 </section>
 
@@ -664,8 +683,8 @@ table.ptab { width: 100%; border-collapse: collapse; }
     </div>
     <table class="ptab">
       <thead><tr><th>Parameter</th><th>Default</th><th>Kind</th><th>Sources</th></tr></thead>
-      <tr><td>Commuting threshold</td><td class="num">100 km</td><td>A</td><td>S21</td></tr><tr><td>Planning visits before treatment</td><td class="num">1 trip</td><td>A</td><td>–</td></tr><tr><td>Breast: long schedule</td><td class="num">15 sessions</td><td>S</td><td>S9, S14</td></tr><tr><td>Breast: short schedule</td><td class="num">5 sessions</td><td>S</td><td>S9, S15</td></tr><tr><td>Breast: share treated with radiotherapy</td><td class="num">70%</td><td>A</td><td>–</td></tr><tr><td>Breast: share eligible for 5 sessions</td><td class="num">60%</td><td>A</td><td>S15, S14</td></tr><tr><td>Breast: share already on 5 sessions</td><td class="num">20%</td><td>A</td><td>–</td></tr><tr><td>Bone: multi-session course</td><td class="num">5 sessions</td><td>A</td><td>S62</td></tr><tr><td>Bone: single session</td><td class="num">1 session</td><td>S</td><td>S62, S31, S32</td></tr><tr><td>Bone: retreatment after single session</td><td class="num">20%</td><td>S</td><td>S30</td></tr><tr><td>Bone: retreatment after multi-session course</td><td class="num">8%</td><td>S</td><td>S30</td></tr><tr><td>Bone: share already single session</td><td class="num">7%</td><td>A</td><td>S16</td></tr><tr><td>Kela own-car rate</td><td class="num">0.33 €/km</td><td>S</td><td>S6</td></tr><tr><td>Kela overnight allowance</td><td class="num">20.18 €</td><td>S</td><td>S7</td></tr>
+      <tr><td>Commuting threshold</td><td class="num">100 km</td><td>A</td><td>S21 <span class="why">(context)</span></td></tr><tr><td>Planning visits before treatment</td><td class="num">1 trip</td><td>A</td><td>–</td></tr><tr><td>Breast: long schedule</td><td class="num">15 sessions</td><td>S</td><td>S9, S14</td></tr><tr><td>Breast: short schedule</td><td class="num">5 sessions</td><td>S</td><td>S9, S15</td></tr><tr><td>Breast: share treated with radiotherapy</td><td class="num">70%</td><td>A</td><td>–</td></tr><tr><td>Breast: share eligible for 5 sessions</td><td class="num">60%</td><td>A</td><td>S15, S14 <span class="why">(context)</span></td></tr><tr><td>Breast: share already on 5 sessions</td><td class="num">20%</td><td>A</td><td>–</td></tr><tr><td>Bone: multi-session course</td><td class="num">5 sessions</td><td>A</td><td>S62 <span class="why">(context)</span></td></tr><tr><td>Bone: single session</td><td class="num">1 session</td><td>S</td><td>S62, S31, S32</td></tr><tr><td>Bone: retreatment after single session</td><td class="num">20%</td><td>S</td><td>S30</td></tr><tr><td>Bone: retreatment after multi-session course</td><td class="num">8%</td><td>S</td><td>S30</td></tr><tr><td>Bone: share already single session</td><td class="num">7%</td><td>A</td><td>S16 <span class="why">(context)</span></td></tr><tr><td>Kela own-car rate</td><td class="num">0.33 €/km</td><td>S</td><td>S6</td></tr><tr><td>Kela overnight allowance</td><td class="num">20.18 €</td><td>S</td><td>S7</td></tr>
     </table>
   </div></div>
-  <footer class="foot"><div class="src">Parameters from public/data/parameters.json; each is a slider in the app's Assumptions drawer. Routes: OSRM <span class="cite">[S60]</span> from Wikidata centre points <span class="cite">[S59]</span>; cases <span class="cite">[S33, S34, S35]</span>; population <span class="cite">[S57]</span>.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
+  <footer class="foot"><div class="src">Parameters from public/data/parameters.json; each is a slider in the app's Assumptions drawer. For an assumption (A), the sources frame or define it; they do not give its value. Routes: OSRM <span class="cite">[S60]</span> from Wikidata centre points <span class="cite">[S59]</span>; cases <span class="cite">[S33, S34, S35]</span>; population <span class="cite">[S57]</span>.</div><div class="disc">Proposals for clinical teams to evaluate, not clinical advice.</div></footer>
 </section></body></html>

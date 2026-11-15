@@ -12,16 +12,10 @@ IMG.mkdir(exist_ok=True)
 
 CROPS = {
     # name: (shot, (left, top, right, bottom) in CSS px, max output width px)
-    "terrain": ("05a-terrain", (470, 92, 990, 690), 1200),
-    "terrain-sunk": ("05b-terrain-sunk", (470, 92, 990, 690), 1200),
-    "finland": ("01-finland", (556, 96, 960, 806), 1000),
-    "card-breast": ("03-breast-lever", (1242, 53, 1600, 531), 900),
-    "card-bone": ("04-bone-lever", (1242, 53, 1600, 720), 900),
-    "app-breast": ("03-breast-lever", (0, 0, 1600, 900), 2400),
-    "units": ("06-units", (200, 76, 1400, 560), 2000),
-    "memo": ("07-memo-lapland", (515, 180, 1395, 810), 1800),
-    "provenance": ("11-provenance", (1160, 180, 1588, 830), 900),
-    "assumptions": ("05d-assumptions", (272, 52, 647, 864), 800),
+    "terrain": ("05a-terrain", (470, 92, 990, 690), 1200), 1200),
+    "finland": ("01-finland", (556, 96, 960, 806), 1000), 900), 900),
+    "app-breast": ("03-breast-lever", (0, 0, 1600, 900), 2400), 2000),
+    "memo": ("07-memo-lapland", (515, 180, 1395, 810), 1800), 900), 800),
 }
 
 for name, (shot, box, maxw) in CROPS.items():

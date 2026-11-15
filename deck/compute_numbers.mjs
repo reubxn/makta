@@ -211,6 +211,43 @@ out.provenance = {
   limitations: facts.limitations.length,
 };
 
+// 10b. Which units the AI actually read: page snapshots in data/raw/pages are named <unit>__<page>.txt
+{
+  const { readdirSync } = await import('node:fs');
+  const files = readdirSync(path.join(root, 'data/raw/pages')).filter((f) => f.endsWith('.txt'));
+  const unitIds = [...new Set(files.map((f) => f.split('__')[0]))].sort();
+  out.ai.units_pages_from = unitIds.length;
+  out.ai.units_pages_from_ids = unitIds;
+  out.ai.units_no_page_read = units.length - unitIds.length;
+}
+
+// 10c. Robustness of the concentration finding to the commuting-threshold assumption:
+// share of nights removed in the municipalities routed to each unit, at several thresholds.
+out.threshold_robustness = [30, 50, 100, 150, 200, 300].map((t) => {
+  const tt = breastTotals(rows, { ...defaults, commute_threshold_km: t }, true);
+  const byUnit = {};
+  for (const r of rows) byUnit[r.route.unit_id] = (byUnit[r.route.unit_id] ?? 0) + tt.byMunicipality[r.code].nights;
+  const ranked = Object.entries(byUnit).sort((a, b) => b[1] - a[1]);
+  return {
+    threshold_km: t,
+    top_unit: ranked[0][0],
+    oys_share_nights: r1((100 * byUnit.oulu) / tt.national.nights),
+    oys_rank: ranked.findIndex(([u]) => u === 'oulu') + 1,
+  };
+});
+
+// 10d. How the 22 county memos pair the first two proposals with Goal 3 indicators
+{
+  const pair = {};
+  for (const m of memoList) {
+    const paras = m.text.split('\n').filter((p) => p.trim());
+    const ind = (p) => (/target times/.test(p) ? 'target_times' : /agreed cancers/.test(p) ? 'agreed_cancers' : 'other');
+    const key = `${ind(paras[1])}+${ind(paras[2])}`;
+    pair[key] = (pair[key] ?? 0) + 1;
+  }
+  out.ai.memo_indicator_pairings = pair;
+}
+
 // 11. Unit tests (the deck states the count): run vitest and record the result
 {
   const { execSync } = await import('node:child_process');

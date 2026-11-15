@@ -40,6 +40,12 @@ const U = N.utsjoki, NT = N.national, OYS = N.pilot.oys_catchment, AI = N.ai, BC
 const utsKm = f0(U.road_km);
 const lap = BC.find((c) => c.code === '21');
 const sens = Object.fromEntries(N.sensitivity.map((s) => [s.id, s]));
+const TR = Object.fromEntries(N.threshold_robustness.map((t) => [t.threshold_km, t]));
+const oysFirstFrom = Math.min(...N.threshold_robustness.filter((t) => t.oys_rank === 1).map((t) => t.threshold_km));
+const oysFirstTo = Math.max(...N.threshold_robustness.map((t) => t.threshold_km));
+must(N.threshold_robustness.filter((t) => t.threshold_km >= oysFirstFrom).every((t) => t.oys_rank === 1), 'OYS first at every threshold from oysFirstFrom');
+const saMax = sens.breast_share_already_short.at_min.machineSessions; // most freed: nobody on 5 sessions yet
+const OYSNAME = 'OYS (Oulu University Hospital)';
 
 // one moon per night away, as in the app's town card (partial moon for fractions)
 const MOON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 1 1 9.8 3.5a6.9 6.9 0 0 0 10.7 10.7z"/></svg>';
@@ -86,11 +92,11 @@ slides.push(slide({
       <p class="lede">Matka shows what a radiotherapy course costs patients in every Finnish municipality, in trips, nights away and hours on the road, and how much evidence-based shorter schedules would remove.</p>
       <div class="duo">
         <div><div class="v num">${f0(N.over_threshold.population)}${k('C')}</div><div class="l">people in ${N.over_threshold.municipalities} municipalities live more than ${P.commute_threshold_km.default}&nbsp;km by road from their radiotherapy unit</div></div>
-        <div><div class="v num teal">${fr(NT.removed.machineSessions)}${k('C')}</div><div class="l">radiotherapy machine sessions freed a year if eligible breast patients get ${P.breast_fractions_short.default} sessions instead of ${P.breast_fractions_long.default}</div></div>
+        <div><div class="v num teal">${fr(NT.removed.machineSessions)}${k('C')}</div><div class="l">machine sessions freed a year if eligible breast patients get ${P.breast_fractions_short.default} sessions, not ${P.breast_fractions_long.default}. At the default assumptions; 0 to ${fr(saMax)} depending on today's unpublished mix.</div></div>
       </div>
-      <div class="askbox"><p class="kicker">The ask</p><p>A 12-month pilot at OYS in Oulu: ${P.breast_fractions_short.default} sessions as the default for eligible breast patients, a single 8&nbsp;Gy session for uncomplicated painful bone metastases, and the schedule mix published every year.</p></div>
+      <div class="askbox"><p class="kicker">The proposal</p><p>A 12-month pilot at ${OYSNAME}: ${P.breast_fractions_short.default} sessions as the default for eligible breast patients, a single 8&nbsp;Gy session for uncomplicated painful bone metastases, and the schedule mix published every year.</p></div>
     </div>
-    <figure class="tr"><img src="img/terrain.jpg" alt="Matka burden terrain over Finland"><figcaption>In the app: height = nights away per breast patient on ${P.breast_fractions_long.default} sessions. The burden stands in the north and east.</figcaption></figure>
+    <figure class="tr"><img src="img/terrain.jpg" alt="Matka burden terrain over Finland"><figcaption>In the app: height = nights away per breast patient on ${P.breast_fractions_long.default} sessions; flat = within ${P.commute_threshold_km.default}&nbsp;km. The burden stands in the north and east.</figcaption></figure>
   </div>`,
   foot: `Live app: <b>matka-hack-europe.vercel.app</b> · Code and data: <b>github.com/reubxn/makta</b>. Calculated with the app's model at its default assumptions from population ${cite('S57')}, OSRM road routes ${cite('S60')} and Cancer Registry cases ${cite('S33', 'S34', 'S35')}.`,
 }));
@@ -110,7 +116,7 @@ slides.push(slide({
     </figure>
     <div class="cells">
       <div class="cell"><div class="v num">12${k('S')}</div><p>public radiotherapy units serve mainland Finland. Lapland has none: its patients are treated in Oulu.</p></div>
-      <div class="cell"><div class="v num">${utsKm}&nbsp;km${k('C')}</div><p>from Utsjoki to OYS in Oulu, one way: ${U.drive_hm} by road.</p></div>
+      <div class="cell"><div class="v num">${utsKm}&nbsp;km${k('C')}</div><p>from Utsjoki to ${OYSNAME}, one way: ${U.drive_hm} by road.</p></div>
       <div class="cell"><div class="v num">&gt;${P.commute_threshold_km.default}&nbsp;km${k('S')}</div><p>The national roadmap: palliative radiotherapy is used less by patients living more than ${P.commute_threshold_km.default}&nbsp;km from a unit (p.&nbsp;13).</p></div>
       <div class="cell"><div class="v num">OR 0.84${k('S')}</div><p>Meta-analysis: living 50&nbsp;km or more from a centre goes with 16% lower odds of receiving palliative radiotherapy.</p></div>
       <div class="cell wide"><div class="v num">157 € <span class="vs">vs</span> 23 €${k('S')}</div><p>Kela travel reimbursement per resident in 2025: Kainuu, the highest, against Helsinki, the lowest. All reimbursed travel, not only radiotherapy.</p></div>
@@ -135,7 +141,7 @@ slides.push(slide({
   <div class="pcards">
     <div class="pcard">
       <p class="kicker">Radiotherapy after breast surgery</p>
-      <p class="pq">Common schedule today: ${P.breast_fractions_long.default} sessions over 3 weeks${k('S')}</p>
+      <p class="pq">Long schedule: ${P.breast_fractions_long.default} sessions over 3 weeks${k('S')}. One Finnish unit's page says it usually gives ${P.breast_fractions_long.default}.${k('S')}</p>
       <div class="prow"><span>From Utsjoki, ${utsKm}&nbsp;km</span><b class="num">${f0(U.breast_long.nights)} nights away · ${f0(U.breast_long.roundTrips)} round trips · ${f0(U.breast_long.hours)} h on the road${k('C')}</b>${moons(U.breast_long.nights)}</div>
       <div class="prow"><span>Within ${P.commute_threshold_km.default}&nbsp;km</span><b class="num">${f0(N.breast_commuter.long.roundTrips)} round trips${k('C')}</b></div>
     </div>
@@ -152,7 +158,7 @@ slides.push(slide({
     </div>
   </div>
   <p class="pline">Radiotherapy patients often attend daily for several weeks${k('S')}. Every session also takes a treatment-machine slot, and Goal 3 tracks whether <b>patients receive treatment within target times</b>${k('S')}.</p>`,
-  foot: `Daily attendance ${cite('S19')}. 40 Gy in 15 fractions over 3 weeks ${cite('S9', 'S14')}. The 5-session bone comparator is an assumption (20 Gy in 5 fractions is a common comparator) ${cite('S62')}. Goal 3 indicator ${cite('S24', 'S25')}. Calculated with Matka's model; the ${P.commute_threshold_km.default}&nbsp;km threshold and the planning visit are assumptions.`,
+  foot: `Daily attendance ${cite('S19')}. 40 Gy in 15 fractions over 3 weeks, the FAST-Forward control arm ${cite('S9')}; Jyväskylä's page ${cite('S65')}. The 5-session bone comparator is an assumption (20 Gy in 5 fractions is a common comparator) ${cite('S62')}. Goal 3 indicator ${cite('S24', 'S25')}. Calculated with Matka's model; the ${P.commute_threshold_km.default}&nbsp;km threshold and the planning visit are assumptions.`,
 }));
 
 // ===== 4. Evidence =====
@@ -165,30 +171,30 @@ slides.push(slide({
       <p class="kicker">Breast, after surgery</p>
       <div class="v num">4,096${k('S')}</div><p class="vl">patients randomised in FAST-Forward</p>
       <p><b>26 Gy in ${P.breast_fractions_short.default} sessions over 1 week is non-inferior</b> to 40 Gy in ${P.breast_fractions_long.default} over 3 weeks.${k('S')}</p>
-      <p>At 10 years, a similar level of cancer control: breast recurrence 2.1% vs 3.6%; late moderate or marked breast effects 14.4% vs 13.1%.${k('S')}</p>
+      <p>At 10 years, a similar level of cancer control. ${P.breast_fractions_short.default} vs ${P.breast_fractions_long.default} sessions: breast recurrence 2.1% vs 3.6%; late moderate or marked breast effects 14.4% vs 13.1%. A non-inferiority trial, not a superiority result.${k('S')}</p>
       <p class="elig">Eligible: whole breast or chest wall <b>without nodal radiotherapy</b>. ${P.breast_fractions_long.default} sessions stays standard when nodes are treated.${k('S')}</p>
     </div>
     <div class="evc">
       <p class="kicker">Painful bone metastases</p>
       <div class="v num">61% <span class="vs">vs</span> 62%${k('S')}</div><p class="vl">pain response, single vs multiple sessions, 29 randomised trials</p>
       <p><b>Retreatment ${pct(P.bone_retreat_single.default)} vs ${pct(P.bone_retreat_multi.default)}</b>: the cost of a single session. Matka counts it.${k('S')}</p>
-      <p>Guidelines name a single 8&nbsp;Gy session.${k('S')}</p>
+      <p>An ASCO guideline, as cited in a Finnish thesis: a single 8&nbsp;Gy session is as effective as 20&nbsp;Gy in 5. Which cases count as uncomplicated is for the clinical team to define.${k('S')}</p>
     </div>
     <div class="evc dim">
       <p class="kicker">Today's practice in Finland</p>
-      <div class="v num">1 <span class="vs">of</span> ${AI.units_total}${k('C')}</div><p class="vl">units publishes which schedule it uses</p>
-      <p>No unit page found states ${P.breast_fractions_short.default} breast sessions as standard, a session count for painful bone metastases, or distance as a reason.${k('C')}</p>
+      <div class="v num">1 <span class="vs">of</span> ${AI.units_total}${k('C')}</div><p class="vl">units has a public page stating its usual breast schedule (${P.breast_fractions_long.default}; its leaflet also says ${P.breast_fractions_short.default} or ${P.breast_fractions_long.default})</p>
+      <p>Matka read ${AI.units_pages_read} pages from ${AI.units_pages_from} units; for the other ${AI.units_no_page_read}, no page was found or the site could not be reached. No page read states ${P.breast_fractions_short.default} sessions as standard, a bone session count, or distance as a reason.${k('C')}</p>
       <p>Turku University Hospital, 2005–2013: ${pct(P.bone_share_single_now.default)} of courses in the last year of life were single-session. One centre, all indications.${k('S')}</p>
     </div>
   </div>
   <p class="pline">No survival claims are made for the shorter schedules. They apply to eligible patients only; schedule choice stays a clinical decision.</p>`,
-  foot: `FAST-Forward: Brunt et al., Lancet 2020 ${cite('S9', 'S10')}; 10-year results, Lancet Oncol 2026, 26 Gy vs 40 Gy arms ${cite('S11')}. RCR consensus ${cite('S15', 'S14')}. Rich et al., Radiother Oncol 2018 ${cite('S31', 'S30')}, updating Chow et al. 2012 ${cite('S32')}. ASCO guideline as cited ${cite('S62')}. Unit pages read 14 Nov 2026 ${cite('S65', 'S66', 'S67', 'S68')}; the Turku and Tampere sites could not be reached. Rautakorpi et al., Acta Oncol 2017 ${cite('S16')}.`,
+  foot: `FAST-Forward: Brunt et al., Lancet 2020 ${cite('S9', 'S10')}; 10-year results, Lancet Oncol 2026, 26 Gy vs 40 Gy arms; late effects as recorded with the source ${cite('S11')}. RCR consensus ${cite('S15', 'S14')}. Rich et al., Radiother Oncol 2018 ${cite('S31', 'S30')}, updating Chow et al. 2012 ${cite('S32')}. ASCO guideline as cited ${cite('S62')}. Unit pages read 14 Nov 2026 ${cite('S65', 'S66', 'S67', 'S68')}; the Turku and Tampere sites could not be reached. Rautakorpi et al., Acta Oncol 2017 ${cite('S16')}.`,
 }));
 
 // ===== 5. What Matka does =====
 slides.push(slide({
   section: 'What Matka does',
-  title: 'Matka turns public data into each municipality’s travel burden and a sourced memo for each county',
+  title: 'Pick any municipality: its travel burden before and after the switch, every number traced to a source',
   body: `
   <div class="mgrid">
     <figure class="appshot"><img src="img/app-breast.jpg" alt="Matka app, Utsjoki selected, breast lever on">
@@ -200,7 +206,7 @@ slides.push(slide({
     </figure>
     <ol class="feat">
       <li><b>The lever.</b> Switch the default schedule; map, card and totals update.</li>
-      <li><b>One patient, before → after:</b> nights away, round trips, hours on the road, Kela cost (lower bound).</li>
+      <li><b>One patient, before → after:</b> nights away, round trips, hours on the road, travel cost at Kela's rates (a lower bound).</li>
       <li><b>Every year, nationally:</b> machine sessions, nights, trips and hours.</li>
       <li><b>The real road route</b> from each municipality to its unit.</li>
       <li><b>Every number is marked S, C or A.</b> Click it for the source and a verbatim quote.</li>
@@ -217,12 +223,12 @@ const bar = (label, rem, cur) => {
 };
 slides.push(slide({
   section: 'What changes if counties act',
-  title: `${P.breast_fractions_short.default} sessions for eligible breast patients would free about ${fr(NT.removed.machineSessions)} radiotherapy machine sessions a year`,
+  title: `At the default assumptions, ${P.breast_fractions_short.default} sessions for eligible breast patients would free about ${fr(NT.removed.machineSessions)} machine sessions a year`,
   body: `
   <div class="cgrid">
     <div class="cl">
       <p class="kicker">Every year, nationally, breast${k('C')}</p>
-      <p class="clede">About <b class="num">${fr(NT.current.patients)}</b> eligible breast patients a year are still on ${P.breast_fractions_long.default} sessions. Moving them to ${P.breast_fractions_short.default} removes:</p>
+      <p class="clede">If ${pct(P.breast_share_already_short.default)} already get ${P.breast_fractions_short.default} sessions (an assumption: the mix is not published), about <b class="num">${fr(NT.current.patients)}</b> eligible breast patients a year are on ${P.breast_fractions_long.default}. Moving them to ${P.breast_fractions_short.default} removes:</p>
       <div class="bars">
         ${bar('Machine sessions', NT.removed.machineSessions, NT.current.machineSessions)}
         ${bar('Nights away', NT.removed.nights, NT.current.nights)}
@@ -231,7 +237,7 @@ slides.push(slide({
         <div class="bkey">Whole bar: these patients' yearly burden on ${P.breast_fractions_long.default} sessions today. <i class="sw tealsw"></i>Removed by moving them to ${P.breast_fractions_short.default}.</div>
         <p class="assume">Assumptions, each a slider in the app${k('A')}: <b>${pct(P.breast_share_rt.default)}</b> of new breast cancers get radiotherapy · <b>${pct(P.breast_share_eligible_short.default)}</b> of them are eligible for ${P.breast_fractions_short.default} sessions · <b>${pct(P.breast_share_already_short.default)}</b> of those already get ${P.breast_fractions_short.default}.</p>
       </div>
-      <p class="goal">Freed machine sessions serve Goal 3: patients receive treatment within target times.${k('S')}</p>
+      <p class="goal">Freed machine sessions could help Goal 3: patients receive treatment within target times.${k('S')} Waiting times are not modelled.</p>
     </div>
     <div class="cr">
       <p class="kicker">One patient from Utsjoki, breast${k('C')}</p>
@@ -240,14 +246,19 @@ slides.push(slide({
         <tr><td>Nights away</td><td>${f0(U.breast_long.nights)}</td><td class="teal">${f0(U.breast_short.nights)}</td></tr>
         <tr><td>Round trips</td><td>${f0(U.breast_long.roundTrips)}</td><td class="teal">${f0(U.breast_short.roundTrips)}</td></tr>
         <tr><td>Hours on the road</td><td>${f0(U.breast_long.hours)}</td><td class="teal">${f0(U.breast_short.hours)}</td></tr>
-        <tr><td>Kela €, at least</td><td>${f0(U.breast_long.kelaEur)}</td><td class="teal">${f0(U.breast_short.kelaEur)}</td></tr>
+        <tr><td>Travel cost, €, at least</td><td>${f0(U.breast_long.kelaEur)}</td><td class="teal">${f0(U.breast_short.kelaEur)}</td></tr>
       </table>
       <p class="kicker k2">Painful bone metastases, single 8&nbsp;Gy${k('C')}</p>
-      <p class="bone">Beyond ${P.commute_threshold_km.default}&nbsp;km: <b class="num">${f1(N.bone.stayer_long.nights)} → <span class="teal">${f1(N.bone.stayer_short.nights)}</span></b> nights away per course. Within ${P.commute_threshold_km.default}&nbsp;km: <b class="num">${f1(N.bone.commuter_long.roundTrips)} → <span class="teal">${f1(N.bone.commuter_short.roundTrips)}</span></b> round trips.</p>
-      <p class="bone small">Retreatment is included, so far patients make about the same number of trips (${f1(N.bone.stayer_long.roundTrips)} → ${f1(N.bone.stayer_short.roundTrips)}). Per patient only: no national count of bone courses is published.</p>
+      <table class="pp bonet num">
+        <thead><tr><th></th><th>${P.bone_fractions_multi.default} sessions</th><th>1 session</th></tr></thead>
+        <tr><td>Beyond ${P.commute_threshold_km.default}&nbsp;km: nights away</td><td>${f1(N.bone.stayer_long.nights)}</td><td class="teal">${f1(N.bone.stayer_short.nights)}</td></tr>
+        <tr><td>Beyond ${P.commute_threshold_km.default}&nbsp;km: round trips</td><td>${f1(N.bone.stayer_long.roundTrips)}</td><td>${f1(N.bone.stayer_short.roundTrips)}</td></tr>
+        <tr><td>Within ${P.commute_threshold_km.default}&nbsp;km: round trips</td><td>${f1(N.bone.commuter_long.roundTrips)}</td><td class="teal">${f1(N.bone.commuter_short.roundTrips)}</td></tr>
+      </table>
+      <p class="bone small">Expected per course, retreatment included (${pct(P.bone_retreat_single.default)} vs ${pct(P.bone_retreat_multi.default)}): far patients' trips stay about the same. Per patient only: no national count of bone courses is published.</p>
     </div>
   </div>`,
-  foot: `Calculated with Matka's model at its defaults: ${f0(NT.cases_mainland)} new breast cancers in women on the mainland, ${NT.cases_year} ${cite('S33', 'S34')} × ${pct(P.breast_share_rt.default)} treated with radiotherapy (A) × ${pct(P.breast_share_eligible_short.default)} eligible (A) × (1 − ${pct(P.breast_share_already_short.default)} already on 5 sessions, A), allocated by age-weighted female population ${cite('S35', 'S57')}; rounded to 3 significant figures, as in the app. Kela lower bound: 0.33 €/km + 20.18 € a night ${cite('S6', 'S7')}. Retreatment ${cite('S30')}. Goal 3 ${cite('S24', 'S25')}.`,
+  foot: `Calculated with Matka's model at its defaults: ${f0(NT.cases_mainland)} new breast cancers in women on the mainland, ${NT.cases_year} (${f0(NT.cases_national)} with Åland) ${cite('S33', 'S34')} × ${pct(P.breast_share_rt.default)} treated with radiotherapy (A) × ${pct(P.breast_share_eligible_short.default)} eligible (A) × (1 − ${pct(P.breast_share_already_short.default)} already on 5 sessions, A), allocated by age-weighted female population ${cite('S35', 'S57')}; rounded to 3 significant figures, as in the app. Travel cost: km × Kela's own-car rate 0.33 €/km + its overnight allowance 20.18 € ${cite('S6', 'S7')}; a lower bound on cost (taxis cost more), not Kela's payout (patients pay up to 25 € a trip ${cite('S4')}). Retreatment ${cite('S30')}. Goal 3 ${cite('S24', 'S25')}.`,
 }));
 
 // ===== 7. Where it lands =====
@@ -266,33 +277,33 @@ slides.push(slide({
       <p class="cfoot">The other ${CC.areas_zero_nights} of ${CC.areas} areas have no municipality beyond ${P.commute_threshold_km.default}&nbsp;km, so no nights away to remove.</p>
     </div>
     <div class="wside">
-      <div class="wbig"><div class="v num teal">${Math.round(N.pilot.oys_share_of_national_nights_removed)}%${k('C')}</div><p>of all nights removed fall in the ${OYS.municipalities} municipalities routed to <b>OYS in Oulu</b>, home to ${Math.round(N.pilot.oys_share_of_national_patients)}% of the eligible patients.</p></div>
-      <p>Lapland has no unit: ${lap.municipalities_over_threshold} of its ${lap.municipalities} municipalities are beyond ${P.commute_threshold_km.default}&nbsp;km, and the switch removes <b class="num">${f1(lap.nights_per_patient)}</b> nights per eligible patient.${k('C')}</p>
-      <p>Near a unit the switch still matters: a patient within ${P.commute_threshold_km.default}&nbsp;km makes <b class="num">${f0(N.breast_commuter.long.roundTrips)} → ${f0(N.breast_commuter.short.roundTrips)}</b> round trips.${k('C')}</p>
+      <div class="wbig"><div class="v num teal">${Math.round(N.pilot.oys_share_of_national_nights_removed)}%${k('C')}</div><p>of all nights removed fall in the ${OYS.municipalities} municipalities routed to <b>OYS</b> (Oulu University Hospital), home to ${Math.round(N.pilot.oys_share_of_national_patients)}% of the eligible patients.</p></div>
+      <p>Nights away arise only beyond the ${P.commute_threshold_km.default}&nbsp;km commuting threshold, an assumption. OYS has the largest share at every threshold from ${oysFirstFrom} to ${oysFirstTo}&nbsp;km: ${Math.round(TR[50].oys_share_nights)}% at 50&nbsp;km, ${Math.round(TR[150].oys_share_nights)}% at 150&nbsp;km.${k('C')}</p>
+      <p>Near a unit the switch saves trips instead: <b class="num">${f0(N.breast_commuter.long.roundTrips)} → ${f0(N.breast_commuter.short.roundTrips)}</b> round trips. Hours on the road saved are about the same near and far: ${f1(N.distance_split.near_hours_per_patient_removed)} vs ${f1(N.distance_split.far_hours_per_patient_removed)} per patient.${k('C')}</p>
     </div>
   </div>`,
-  foot: `Calculated with Matka's model at its defaults, summed by wellbeing services county; the City of Helsinki is its own area. Lapland is routed to OYS by its published catchment ${cite('S52')}; other municipalities go to the nearest unit by drive time, an assumption ${cite('S60')} (Kainuu splits Oulu 5, Kuopio 2, Joensuu 1).`,
+  foot: `Calculated with Matka's model at its defaults, summed by area: the 21 wellbeing services counties and the City of Helsinki. Threshold shares: the same model, threshold moved. Lapland is routed to OYS by its published catchment ${cite('S52')}; other municipalities go to the nearest unit by drive time, an assumption ${cite('S60')} (Kainuu splits Oulu 5, Kuopio 2, Joensuu 1).`,
 }));
 
 // ===== 8. Recommendation =====
 slides.push(slide({
   section: 'The recommendation',
-  title: 'Three changes for every county: two defaults the evidence supports, and one number published every year',
+  title: 'Two defaults the evidence supports, and one yearly number that makes them checkable, for every unit and the counties it serves',
   body: `
   <table class="rec">
     <thead><tr><th class="c1">Change</th><th>Owner</th><th>First step, within 30 days</th><th>Goal 3 indicator it serves</th></tr></thead>
     <tr><td class="c1"><div class="c1w"><span class="rn">1</span><div><b>${P.breast_fractions_short.default} sessions as the default for eligible breast patients</b> (whole breast or chest wall, no nodal radiotherapy), with distance named as a reason to choose it.${k('S')}</div></div></td>
-      <td>Breast radiotherapy lead</td><td>Clinical team reviews its eligibility criteria and last year's schedule mix.</td><td>Patients receive treatment within target times${k('S')}</td></tr>
+      <td>Breast radiotherapy lead</td><td>Clinical team reviews its eligibility criteria and last year's schedule mix.</td><td>Patients receive treatment within target times${k('S')} <span class="why">(frees machine sessions)</span></td></tr>
     <tr><td class="c1"><div class="c1w"><span class="rn">2</span><div><b>A single 8&nbsp;Gy session as the default for uncomplicated painful bone metastases</b>, with retreatment tracked.${k('S')}</div></div></td>
-      <td>Head of radiotherapy</td><td>Clinical team agrees which bone cases count as uncomplicated and reviews retreatment rates.</td><td>National targets and effectiveness indicators for agreed cancers${k('S')}</td></tr>
+      <td>Head of radiotherapy</td><td>Clinical team agrees which bone cases count as uncomplicated and reviews retreatment rates.</td><td>National targets and effectiveness indicators for agreed cancers${k('S')} <span class="why">(single-session rate as an indicator)</span></td></tr>
     <tr><td class="c1"><div class="c1w"><span class="rn">3</span><div><b>Publish the schedule mix, and radiotherapy use by distance band, every year.</b>${k('S')}</div></div></td>
       <td>Director of cancer services, with the unit's quality manager</td><td>Agree the distance bands and the data to extract.</td><td>Regional differences in treatment are available and used to steer services${k('S')}</td></tr>
   </table>
   <div class="recnote">
-    <p><b>Why all three:</b> the evidence exists, the burden is measurable, and change 3 makes changes 1 and 2 checkable. Today Matka found a published schedule for 1 of ${AI.units_total} units.</p>
+    <p><b>Why all three:</b> the bone change targets the access gap the roadmap describes beyond ${P.commute_threshold_km.default}&nbsp;km; the breast change frees machine capacity, and nights for far patients; change 3 makes both checkable.</p>
     <p><b>Proposals for clinical teams to evaluate.</b> Schedule choice stays a clinical decision for each patient. Each county's memo in the app carries these proposals with its own numbers.</p>
   </div>`,
-  foot: `Breast ${cite('S9', 'S11', 'S15', 'S14')}. Bone ${cite('S31', 'S30', 'S62')}. Distance and palliative radiotherapy use ${cite('S21', 'S27')}. Goal 3 indicators: target times ${cite('S24', 'S25')}; agreed-cancer indicators ${cite('S61')}; regional differences ${cite('S26')}.`,
+  foot: `Breast ${cite('S9', 'S11', 'S15', 'S14')}. Bone ${cite('S31', 'S30', 'S62')}. Distance and palliative radiotherapy use ${cite('S21', 'S27')}. Goal 3 indicators: target times ${cite('S24', 'S25')}; agreed-cancer indicators ${cite('S61')}; regional differences ${cite('S26')}. The county memos pair changes 1 and 2 with the first two indicators either way round; both fit.`,
 }));
 
 // ===== 9. Pilot =====
@@ -303,8 +314,8 @@ slides.push(slide({
   <div class="pgrid">
     <div class="pl">
       <p class="kicker">OYS catchment, as modelled${k('C')}</p>
-      <p class="pscope"><b class="num">${OYS.municipalities}</b> municipalities, <b class="num">${OYS.municipalities_over_threshold}</b> beyond ${P.commute_threshold_km.default}&nbsp;km, home to <b class="num">${f0(OYS.population)}</b> people. Lapland has no unit of its own, and Utsjoki, ${utsKm}&nbsp;km away, is the longest drive in Matka's routing.</p>
-      <p class="pscope">About <b class="num">${f0(OYS.still_long_patients)}</b> eligible breast patients a year on ${P.breast_fractions_long.default} sessions. If all switch, every year:</p>
+      <p class="pscope"><b class="num">${OYS.municipalities}</b> municipalities with <b class="num">${f0(OYS.population)}</b> residents in all; <b class="num">${OYS.municipalities_over_threshold}</b> of them beyond ${P.commute_threshold_km.default}&nbsp;km. Lapland has no unit of its own; Utsjoki, ${utsKm}&nbsp;km away, is the longest drive in Matka's routing.</p>
+      <p class="pscope">At the default assumptions, about <b class="num">${f0(OYS.still_long_patients)}</b> eligible breast patients a year on ${P.breast_fractions_long.default} sessions. OYS's page says courses last 1–4 weeks, so some may already get ${P.breast_fractions_short.default}; the baseline will show it. If all switch, every year:</p>
       <div class="v num teal">${fr(OYS.machineSessions)}${k('C')}</div><p class="vl">machine sessions freed</p>
       <div class="trio num">
         <div><b class="teal">${fr(OYS.nights)}</b><span>nights away</span></div>
@@ -317,13 +328,14 @@ slides.push(slide({
         <li><span class="when">Days 0–30</span><span>OYS clinical teams review breast eligibility criteria and which bone cases count as uncomplicated. Extract last year's schedule mix and retreatment rate as the baseline.</span></li>
         <li><span class="when">Month 2</span><span>Teams decide whether to adopt the two defaults. If adopted, distance is named as a reason to choose ${P.breast_fractions_short.default} sessions.</span></li>
         <li><span class="when">Month 6</span><span>Interim report, by distance band.</span></li>
-        <li><span class="when">Month 12</span><span>Published report. Decide whether to extend to the other units.</span></li>
+        <li><span class="when">Month 12</span><span>Published report. Extend to other units if the short-schedule share rose with no rise in side effects, and retreatment after a single session stayed near the trials' ${pct(P.bone_retreat_single.default)}.</span></li>
       </ol>
       <div class="measure"><p class="kicker">Measured at baseline and month 12</p>
-        <p>Share of eligible breast patients on ${P.breast_fractions_short.default} sessions · share of uncomplicated bone metastases on a single 8&nbsp;Gy session · retreatment rate · nights away and round trips per course, by distance band · machine sessions freed · time to start of radiotherapy</p></div>
+        <p><b>Uptake and burden:</b> share of eligible breast patients on ${P.breast_fractions_short.default} sessions · share of uncomplicated bone metastases on a single 8&nbsp;Gy session · nights away and round trips per course, by distance band · machine sessions freed · time to start of radiotherapy</p>
+        <p><b>Safety and outcomes:</b> acute skin reactions and patient-reported breast effects · pain response after bone radiotherapy · retreatment rate · patients' own schedule preference</p></div>
     </div>
   </div>`,
-  foot: `Expected size calculated with Matka's model at its defaults; the baseline replaces the ${pct(P.breast_share_already_short.default)} "already on 5 sessions" assumption. Routing: Lapland by its published catchment ${cite('S52')}; North Ostrobothnia, Kainuu and Central Ostrobothnia municipalities by nearest drive time, an assumption ${cite('S60')}. Rounded to 3 significant figures.`,
+  foot: `Expected size calculated with Matka's model at its defaults; the baseline replaces the ${pct(P.breast_share_already_short.default)} "already on 5 sessions" assumption. OYS's page ${cite('S68')}. OYS has the largest share of nights removed at every commuting threshold from ${oysFirstFrom} to ${oysFirstTo} km. Routing: Lapland by its published catchment ${cite('S52')}; North Ostrobothnia, Kainuu and Central Ostrobothnia municipalities by nearest drive time, an assumption ${cite('S60')}. Rounded to 3 significant figures.`,
 }));
 
 // ===== 10. AI and trust =====
@@ -333,7 +345,7 @@ slides.push(slide({
   body: `
   <div class="aigrid">
     <div class="ail">
-      <div class="airow"><p class="kicker">Read</p><div class="aiv num">${AI.units_pages_read}</div><div><b>public unit pages read by AI.</b> Strict schema; null when a page does not say. Every Finnish quote must match the saved page word for word: ${AI.units_statements_extracted} statements kept, ${AI.units_statements_dropped} dropped. Result: 1 of ${AI.units_total} units publishes which schedule it uses.</div></div>
+      <div class="airow"><p class="kicker">Read</p><div class="aiv num">${AI.units_pages_read}</div><div><b>public pages from ${AI.units_pages_from} of the ${AI.units_total} units, read by AI.</b> Strict schema; null when a page does not say. Every Finnish quote must match the saved page word for word: ${AI.units_statements_extracted} statements kept, ${AI.units_statements_dropped} dropped. Result: 1 unit states its usual breast schedule.</div></div>
       <div class="airow"><p class="kicker">Compute</p><div class="aiv num">0</div><div><b>AI in the numbers.</b> Pure, unit-tested functions: ${N.tests.passed} of ${N.tests.total} tests pass, including national totals = sum of counties. A data check confirms every municipality has a route and every fact a kind and known sources. ${PARAMS.length} parameters: ${N.provenance.parameters_by_kind.sourced} sourced, ${N.provenance.parameters_by_kind.assumption} assumptions, each a slider.</div></div>
       <div class="airow"><p class="kicker">Write</p><div class="aiv num">${AI.memo_numbers_passed}/${AI.memo_numbers_checked}</div><div><b>numbers traced in ${AI.memos} county memos.</b> A validator extracts every number and checks it against the facts given to the writer. A sentence without source ids, "better" or a survival claim fails.</div></div>
       <p class="aifoot">${N.provenance.sources} sources, each with a short verbatim quote. Every number in this deck is checked against the repo data by a script, like the memos.</p>
@@ -369,7 +381,7 @@ slides.push(slide({
         ${rng(sr, sr.at_min.machineSessions, sr.at_max.machineSessions, pct(sr.min), pct(sr.max))}
       </div>
       <p class="snote">If half the eligible patients already get ${P.breast_fractions_short.default} sessions, the switch frees <b class="num">${fr(N.sensitivity_already_short_half.machineSessions)}</b>; if all do, nothing. That is why change 3 asks units to publish the mix.</p>
-      <p class="snote">Commuting threshold ${st.min}–${st.max} km${k('A')}: sessions freed unchanged; nights away removed <b class="num">${fr(st.at_min.nights)}</b> to <b class="num">${fr(st.at_max.nights)}</b>.</p>
+      <p class="snote">Commuting threshold ${st.min}–${st.max}&nbsp;km${k('A')}: sessions freed unchanged; nights away removed <b class="num">${fr(st.at_min.nights)}</b> to <b class="num">${fr(st.at_max.nights)}</b>. OYS's share of them stays the largest from ${oysFirstFrom}&nbsp;km up.</p>
     </div>
     <div class="lims">
       <p class="kicker">Also limits the numbers</p>
@@ -395,10 +407,11 @@ slides.push(slide({
   title: 'Next step: one introduction and one year of OYS data, to replace our assumptions with real numbers',
   body: `
   <div class="next">
-    <div class="ns"><span class="nn">1</span><p><b>An introduction</b> to the OYS head of radiotherapy and Lapland's director of cancer services. Lapland's memo is already written, every number traced.</p></div>
+    <div class="ns"><span class="nn">1</span><p><b>An introduction</b> to the head of radiotherapy at ${OYSNAME} and Lapland's director of cancer services. Lapland's memo is already written, every number traced.</p></div>
     <div class="ns"><span class="nn">2</span><p><b>Last year's aggregate schedule mix and retreatment rate</b> from OYS. It replaces the "already on ${P.breast_fractions_short.default} sessions" assumption and sets the pilot baseline.</p></div>
     <div class="ns"><span class="nn">3</span><p><b>We rerun Matka with those numbers</b> and update the memos for the counties OYS serves. The same memo already exists for all ${AI.memos} areas.</p></div>
   </div>
+  <p class="azrole"><b>What we ask of AstraZeneca:</b> one introduction, as non-promotional scientific exchange. OYS and the county own the decision, the pilot and its data; only aggregate counts are shared.</p>
   <p class="close">We can’t move the hospital. The schedule can.</p>
   <div class="check"><p class="kicker">Check it yourself in five minutes</p>
     <p>Open <b>matka-hack-europe.vercel.app</b>. Press <span class="key">2</span> to fly the road from Utsjoki to Oulu; <span class="key">3</span> turns the breast lever on. Click any S, C or A marker for its source and quote. <span class="key">7</span> writes Lapland's memo. Code and data: <b>github.com/reubxn/makta</b>.</p></div>`,
@@ -454,10 +467,10 @@ slides.push(slide({
     </div>
     <table class="ptab">
       <thead><tr><th>Parameter</th><th>Default</th><th>Kind</th><th>Sources</th></tr></thead>
-      ${PARAMS.map((p) => `<tr><td>${p.label}</td><td class="num">${pv(p)}</td><td>${kindLetter[p.kind]}</td><td>${pidToS(p.source_ids).join(', ') || '–'}</td></tr>`).join('')}
+      ${PARAMS.map((p) => `<tr><td>${p.label}</td><td class="num">${pv(p)}</td><td>${kindLetter[p.kind]}</td><td>${pidToS(p.source_ids).join(', ') || '–'}${p.kind === 'assumption' && p.source_ids.length ? ' <span class="why">(context)</span>' : ''}</td></tr>`).join('')}
     </table>
   </div>`,
-  foot: `Parameters from public/data/parameters.json; each is a slider in the app's Assumptions drawer. Routes: OSRM ${cite('S60')} from Wikidata centre points ${cite('S59')}; cases ${cite('S33', 'S34', 'S35')}; population ${cite('S57')}.`,
+  foot: `Parameters from public/data/parameters.json; each is a slider in the app's Assumptions drawer. For an assumption (A), the sources frame or define it; they do not give its value. Routes: OSRM ${cite('S60')} from Wikidata centre points ${cite('S59')}; cases ${cite('S33', 'S34', 'S35')}; population ${cite('S57')}.`,
 }));
 
 // make sure every cited id exists
@@ -470,7 +483,7 @@ if (missing.length) console.warn('parameter sources not in the sources appendix:
 // ---------- talk track (deck/notes.md), from the same numbers ----------
 const notes = `# Matka: 2-minute talk track
 
-About WORDS words: two minutes at a calm pace. Slide numbers in brackets. Every number below is on the slides and in the app.
+About WORDS words: two minutes at a steady pace (about 160 words a minute). Slide numbers in brackets. Every number below is on the slides and in the app.
 
 **[1] 0:00**
 Same cancer, same treatment. Different distance. Matka shows what radiotherapy costs patients in travel, municipality by municipality, and what shorter schedules would remove.
@@ -479,25 +492,25 @@ Same cancer, same treatment. Different distance. Matka shows what radiotherapy c
 ${f0(N.over_threshold.population)} people in ${N.over_threshold.municipalities} municipalities live more than ${P.commute_threshold_km.default} km by road from their unit. Lapland has none: from Utsjoki it is ${utsKm} km to Oulu, ${U.drive_hm} each way. The national roadmap itself says palliative radiotherapy is used less beyond ${P.commute_threshold_km.default} km.
 
 **[3] 0:25**
-Distance bites at one step: radiotherapy, where the schedule sets the travel. ${P.breast_fractions_long.default} breast sessions from Utsjoki means ${f0(U.breast_long.nights)} nights away.
+Distance bites at radiotherapy, where the schedule sets the travel: ${P.breast_fractions_long.default} breast sessions from Utsjoki means ${f0(U.breast_long.nights)} nights away.
 
 **[4] 0:35**
-For eligible patients, the evidence is there. FAST-Forward, 4,096 patients: ${P.breast_fractions_short.default} sessions in one week is non-inferior to ${P.breast_fractions_long.default} over three. For painful bone metastases, a single 8 Gy session relieves pain as well, with more retreatment, which we count. Yet Matka found a published schedule for 1 of ${AI.units_total} units.
+The evidence: in FAST-Forward, 4,096 patients, ${P.breast_fractions_short.default} sessions in one week is non-inferior to ${P.breast_fractions_long.default} over three. For painful bone metastases, a single 8 Gy session relieves pain as well, with more retreatment, which we count. Yet just 1 of ${AI.units_total} units states its usual breast schedule publicly.
 
 **[5] 0:50**
-Matka puts it on a map with a lever, and every number clicks through to its source.
+Matka maps it with a lever; every number clicks through to its source.
 
 **[6–7] 1:00**
-Moving the roughly ${fr(NT.current.patients)} eligible breast patients still on ${P.breast_fractions_long.default} sessions to ${P.breast_fractions_short.default} frees about ${fr(NT.removed.machineSessions)} machine sessions a year, and ${fr(NT.removed.nights)} nights away. Six counties carry ${Math.round(CC.top6_share_nights)}% of those nights. The OYS catchment alone carries ${Math.round(N.pilot.oys_share_of_national_nights_removed)}%.
+At default assumptions, moving about ${fr(NT.current.patients)} eligible breast patients a year from ${P.breast_fractions_long.default} sessions to ${P.breast_fractions_short.default} frees about ${fr(NT.removed.machineSessions)} machine sessions and ${fr(NT.removed.nights)} nights away. Oulu University Hospital's catchment carries ${Math.round(N.pilot.oys_share_of_national_nights_removed)}% of those nights, the largest share at any commuting threshold from ${oysFirstFrom} km up.
 
 **[8–9] 1:15**
-Three changes. ${P.breast_fractions_short.default} sessions as the default for eligible breast patients, with distance named as a reason. A single 8 Gy session for uncomplicated painful bone metastases. And every unit publishes its schedule mix by distance band, every year. Each has an owner, a 30-day first step and a Goal 3 indicator. We ask for a 12-month pilot at OYS.
+Three changes. ${P.breast_fractions_short.default} sessions as the default for eligible breast patients, with distance named as a reason. A single 8 Gy session for uncomplicated painful bone metastases. And every unit publishes its schedule mix by distance band, every year. Each has an owner, a 30-day first step and a Goal 3 indicator. We propose a 12-month pilot at OYS that measures side effects and retreatment, not only travel.
 
 **[10–11] 1:35**
-AI read the units' pages and wrote ${AI.memos} county memos, but never computes: ${AI.memo_numbers_passed} of ${AI.memo_numbers_checked} memo numbers trace to the facts. The biggest unknown is today's schedule mix, so we show the range, not a point.
+AI read unit pages and wrote ${AI.memos} county memos; it never computes, and ${AI.memo_numbers_passed} of ${AI.memo_numbers_checked} memo numbers trace to the facts. Today's schedule mix is the biggest unknown, so we show a range.
 
 **[12] 1:50**
-Next step: an introduction to OYS and Lapland, and one year of their data. We can't move the hospital. The schedule can.
+Next step: one introduction to OYS and Lapland, as non-promotional scientific exchange, and a year of their aggregate data. We can't move the hospital. The schedule can.
 
 ---
 
@@ -506,7 +519,9 @@ Next step: an introduction to OYS and Lapland, and one year of their data. We ca
 - **"Is 5 sessions better?"** No: non-inferior, with a similar level of cancer control at 10 years. It applies to whole breast or chest wall without nodal radiotherapy; ${P.breast_fractions_long.default} sessions stays standard when nodes are treated.
 - **"Bone: doesn't a single session mean more trips?"** Beyond ${P.commute_threshold_km.default} km, nights away fall from ${f1(N.bone.stayer_long.nights)} to ${f1(N.bone.stayer_short.nights)}, but trips stay about the same (${f1(N.bone.stayer_long.roundTrips)} to ${f1(N.bone.stayer_short.roundTrips)}) because ${pct(P.bone_retreat_single.default)} need retreatment. We show that rather than hide it.
 - **"What if units already use 5 sessions?"** Then the gain is smaller: at ${pct(0.5)} already on 5 sessions it is about ${fr(N.sensitivity_already_short_half.machineSessions)} sessions a year. Nobody publishes the mix, which is why change 3 exists.
-- **"Why OYS?"** It serves Lapland, which has no unit, and has the longest drive in Matka's routing (Utsjoki, ${utsKm} km).
+- **"Why OYS?"** It serves Lapland, which has no unit, has the longest drive in Matka's routing (Utsjoki, ${utsKm} km), and carries the largest share of nights removed at every commuting threshold from ${oysFirstFrom} to ${oysFirstTo} km (${Math.round(TR[50].oys_share_nights)}% at 50 km, ${Math.round(TR[150].oys_share_nights)}% at 150 km).
+- **"Is the € figure what Kela pays?"** No: it is km at Kela's own-car rate plus its overnight allowance, a lower bound on travel cost. Kela pays less, because patients pay up to 25 € a trip.
+- **"What do you want from AstraZeneca?"** One introduction, as non-promotional scientific exchange. OYS and the county own the decision, the pilot and its data.
 `;
 const trackWords = notes.split('---')[0].split('\n').filter((l) => l && !l.startsWith('**[') && !l.startsWith('#') && !l.startsWith('About')).join(' ').split(/\s+/).filter(Boolean).length;
 writeFileSync(path.join(D, 'notes.md'), notes.replace('WORDS', String(Math.round(trackWords / 10) * 10)));
@@ -515,6 +530,6 @@ const css = readFileSync(path.join(D, 'deck.css'), 'utf8');
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><title>Matka: same cancer, same treatment, different distance</title>
 <style>${css}</style></head>
-<body>${slides.join('\n')}</body></html>`;
+<body>${slides.join('\n').replace(/non-inferior/g, '<span class="nw">non-inferior</span>')}</body></html>`;
 writeFileSync(path.join(D, 'deck.html'), html);
 console.log(`deck.html: ${slides.length} slides, ${ids.length} sources cited`);

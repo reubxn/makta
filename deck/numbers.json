@@ -644,6 +644,20 @@
       ],
       "problems": [],
       "validated": true
+    },
+    "units_pages_from": 6,
+    "units_pages_from_ids": [
+      "hus",
+      "jyvaskyla",
+      "kuopio",
+      "oulu",
+      "pori",
+      "vaasa"
+    ],
+    "units_no_page_read": 6,
+    "memo_indicator_pairings": {
+      "agreed_cancers+target_times": 11,
+      "target_times+agreed_cancers": 11
     }
   },
   "provenance": {
@@ -655,6 +669,44 @@
     },
     "limitations": 15
   },
+  "threshold_robustness": [
+    {
+      "threshold_km": 30,
+      "top_unit": "hus",
+      "oys_share_nights": 12.7,
+      "oys_rank": 2
+    },
+    {
+      "threshold_km": 50,
+      "top_unit": "oulu",
+      "oys_share_nights": 14.7,
+      "oys_rank": 1
+    },
+    {
+      "threshold_km": 100,
+      "top_unit": "oulu",
+      "oys_share_nights": 40,
+      "oys_rank": 1
+    },
+    {
+      "threshold_km": 150,
+      "top_unit": "oulu",
+      "oys_share_nights": 69,
+      "oys_rank": 1
+    },
+    {
+      "threshold_km": 200,
+      "top_unit": "oulu",
+      "oys_share_nights": 86.9,
+      "oys_rank": 1
+    },
+    {
+      "threshold_km": 300,
+      "top_unit": "oulu",
+      "oys_share_nights": 100,
+      "oys_rank": 1
+    }
+  ],
   "tests": {
     "total": 21,
     "passed": 21,
