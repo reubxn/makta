@@ -5,9 +5,9 @@ For the AstraZeneca judges (innovation director and Medical Affairs). Scoring: a
 Tell it as what happened: what we read, the problem we found, the evidence, what we built, what we're asking for.
 
 **Two voices**
-- **A** opens and closes (0:00–1:04 and 1:40–2:00).
-- **B** takes the middle (1:04–1:40).
-- B stays at the laptop and presses everything; A faces the judges.
+- **A is you.** You open and close (0:00–1:04 and 1:40–2:00), facing the judges.
+- **B is Balint.** He takes the middle (1:04–1:40), stays at the laptop, and presses every key and the one click.
+- If Balint should open instead, just swap the letters.
 
 Don't learn it word for word. Know the beats and say them your way. Only the **bold** numbers have to be exact.
 

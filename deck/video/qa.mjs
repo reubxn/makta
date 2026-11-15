@@ -6,7 +6,7 @@ import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { CAPTIONS, DEMO_OFFSET, TOTAL_SECONDS } from './timeline.mjs';
+import { ACTIONS, CAPTIONS, DEMO_OFFSET, TOTAL_SECONDS } from './timeline.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const video = process.argv[2] ?? path.join(HERE, '..', 'matka-demo.mp4');
@@ -14,12 +14,14 @@ const dir = path.join(HERE, 'out', 'qa');
 fs.rmSync(dir, { recursive: true, force: true });
 fs.mkdirSync(dir, { recursive: true });
 
+const keyAt = (k) => ACTIONS.find((a) => a.do === 'key' && a.key === k).t;
 const moments = [
   [1.5, 'title card'],
   [2.75, 'title -> demo crossfade'],
   ...CAPTIONS.map((c) => [DEMO_OFFSET + (c.start + c.end) / 2, `caption: ${c.text}`]),
-  [DEMO_OFFSET + 12.3, 'counter reaches 676 km'],
-  [DEMO_OFFSET + 64.9, 'terrain sinking'],
+  // key 2: 1.2 s fly-in + 5 s along the road; key 5: the lever flips 4.2 s in and the terrain sinks over 1.6 s.
+  [DEMO_OFFSET + keyAt('2') + 6.3, 'counter reaches 676 km'],
+  [DEMO_OFFSET + keyAt('5') + 4.9, 'terrain sinking'],
   [DEMO_OFFSET + 99.75, 'demo -> end crossfade'],
   [110, 'end card, mid reveal'],
   [TOTAL_SECONDS - 0.1, 'last frame'],
