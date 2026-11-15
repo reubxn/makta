@@ -14,6 +14,26 @@ npm ci && npm run build && npx vite preview --port 4173
 
 Then open http://localhost:4173. Everything is bundled: no tile server, no keys, no request leaves localhost (the Playwright specs fail if one does).
 
+### Live on Vercel
+
+**https://matka-hack-europe.vercel.app** shows `redesign` at 3df9a03, built by Vercel with `npm ci` and `npm run build`.
+- The production URL is public. Preview deployments stay behind Vercel login.
+- Checked from a browser after deploy: the page loads; key 2 ends at "676 km · 9 h 22 min"; key 3 gives 6 nights and 2 dots; the memo shows its traced badge.
+- No console errors, and no requests leave the site.
+- Screenshot: `screenshots/redesign/vercel-live-1440x900.png`.
+
+How it is set up:
+- Vercel project `matka` in the **Team HackEurope** Vercel team. That is the account the Vercel connector is signed in as, and it has GitHub access to `reubxn`.
+- The project is linked to `reubxn/makta`.
+- Framework: Vite, Node 22.x, output `dist`.
+
+**Production branch is the repo's default, `main`**, which does not contain the app. So:
+- A push to `redesign` creates a protected *preview* deployment, not production.
+- A push to `main` would deploy `main` to production.
+- To update production after changes, redeploy `redesign` to production (Claude can do this through the Vercel connector), or merge `redesign` into `main`.
+
+The Vercel CLI (65.16.0) is installed in the cloud container but not logged in: `api.vercel.com` is not on this environment's network allowlist. Deployment went through the Vercel connector instead.
+
 ### Checks
 
 All run on the final commit of `redesign`:
@@ -97,7 +117,6 @@ Two fresh design-critic sub-agents reviewed the screenshots. Their fixes were ap
 
 ## 1. Previous status (still true)
 
-- Vercel: skipped. The Vercel CLI isn't installed or logged in.
 - The API key used for the memos and unit statements is in the gitignored `.env`, never committed. It was pasted in chat, so rotate it after judging.
 - Breast leads (key 3), bone is key 4, the "1 of 12 units publishes which schedule it uses" headline, Rovaniemi has no unit (Lapland routes to OYS), Uusimaa/Helsinki/Pirkanmaa/Lapland follow sourced catchments and the other municipalities go to the nearest unit by drive time (an assumption; Kanta-Häme and Kainuu are named in the limitations), 5,232 new breast cases in women in 2024 (5,204 mainland used).
 
