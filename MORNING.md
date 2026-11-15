@@ -1,123 +1,80 @@
-# MORNING
+# MORNING: Matka, presentation day
 
-## 0. Redesign status (branch `redesign`)
+## 1. Status
 
-**The redesign is solid and ready to present (finished about 02:45 Helsinki, well before the 07:00 cut-off).** All checks below pass on the final commit. If anything misbehaves on the presenting laptop, `claude/sharp-sagan-uaohy1` still has the old demo, untouched.
+- **Live:** https://matka-hack-europe.vercel.app (public). Vercel rebuilds it automatically on every push to `main`.
+- **Code:** `main` and `redesign` hold the same thing: the redesigned app plus the v2 API memos.
+- **Fallback:** the old design is on `claude/sharp-sagan-uaohy1`, with the same v2 memos.
+- **Checks:** all pass on the current code.
+  - Vitest: 23 tests.
+  - Data check: re-validates all 22 memos live.
+  - Playwright layout test at 1280×720, 1440×900 and 1920×1080.
+  - Demo spec.
+  - Viewport spec, from 512×384 up.
+- **Still to do yourself:** rehearse once on the presenting laptop (section 4).
 
-- Branch: `redesign`, cut from `claude/sharp-sagan-uaohy1` at its tip **236197c** (one screenshot-only commit after 96dad9b). `claude/sharp-sagan-uaohy1` is untouched. The cloud session also mirrors every push to `claude/funny-franklin-79imfr` (the platform's session branch); it holds the same commits.
-- The old demo is still on `claude/sharp-sagan-uaohy1`. To present it instead: `git checkout claude/sharp-sagan-uaohy1`.
-- While the redesign was being built, another session pushed two commits to `claude/sharp-sagan-uaohy1` (a6a58e1, 4b36382). They change only `scripts/generate_memos.py`, not the data; `memos.json` is unchanged. They are merged into `redesign`, so `redesign` contains everything on the old branch.
+## 2. Run it locally (no internet needed)
 
 ```bash
 npm ci && npm run build && npx vite preview --port 4173
 ```
 
-Then open http://localhost:4173. Everything is bundled: no tile server, no keys, no request leaves localhost (the Playwright specs fail if one does).
+Open http://localhost:4173. Everything is bundled: no tile server, no keys, no request leaves the machine. If the venue Wi-Fi is bad, use this instead of the Vercel link.
 
-### Live on Vercel
+## 3. Demo script (2 minutes)
 
-**https://matka-hack-europe.vercel.app** shows the latest `main` (= `redesign`), built by Vercel with `npm ci` and `npm run build`.
-- The production URL is public. Preview deployments stay behind Vercel login.
-- Checked from a browser after deploy: the page loads; key 2 ends at "676 km · 9 h 22 min"; key 3 gives 6 nights and 2 dots; the memo shows its traced badge.
-- No console errors, and no requests leave the site.
-- Screenshot: `screenshots/redesign/vercel-live-1440x900.png`.
+Press `0` before you start. `?` shows the keys; `Esc` closes overlays.
 
-How it is set up:
-- Vercel project `matka` in the **Team HackEurope** Vercel team. That is the account the Vercel connector is signed in as, and it has GitHub access to `reubxn`.
-- The project is linked to `reubxn/makta`.
-- Framework: Vite, Node 22.x, output `dist`.
+- **0:00 (key 1):** Finland, flat. Every municipality is joined to its radiotherapy unit by its real road route; the squares are the 12 units.
+  - "Same cancer, same treatment. Different distance."
+  - Caption: 89 municipalities, home to 637,661 people, are more than 100 km by road from their unit. The national roadmap (p. 13) says palliative radiotherapy is used less beyond 100 km.
+  - Totals, right: every year about 1,750 eligible breast patients are still on 15 sessions. Between them: 26,200 machine sessions, 3,120 nights away, 25,600 round trips and 26,700 hours on the road.
+- **0:15 (key 2):** Utsjoki. The camera flies the road to OYS in Oulu, and the counter runs to 676 km and 9 h 22 min.
+  - Card: "One patient from Utsjoki: 15 sessions over three weeks, or 5 in one week."
+  - Sixteen moons: 16 nights away. Four dots on the route: four journeys.
+- **0:35 (key 3):** Breast, the lead lever: 5 sessions as the default for eligible patients (whole breast or chest wall, no nodes).
+  - Journeys 4 → 2, nights 16 → 6 (ten moons fade), hours on the road 75 → 37.
+  - FAST-Forward, 4,096 patients, 10-year follow-up: non-inferior.
+  - The totals switch to what's removed: 17,500 machine sessions freed, 1,950 nights away, 15,900 round trips, 16,200 hours on the road.
+- **0:55 (key 4):** Painful bone metastases. A single 8 Gy session relieves pain as well, with more retreatment, and the model includes it.
+  - Utsjoki: 6.2 → 2.4 expected nights away.
+  - Card: "Fewer nights away; trips about the same, because some patients need a second session."
+- **1:10 (key 5):** Fly out and tilt: the burden terrain, hours on the road per patient at every point of Finland.
+  - "Close in, you lose hours driving in every day; that's the ring around each hospital. Far out, you lose nights and long drives; that's the climb north."
+  - The lever flips and the landscape sinks: "Five sessions cuts both."
+- **1:25 (key 6):** What units say: "1 of 12 units publishes which schedule it uses." So the current mix stays an assumption you can set, in the Assumptions drawer.
+- **1:40 (key 7):** Lapland's memo writes itself in four seconds.
+  - Utsjoki, 676 km from Oulu: 16 nights away with 15 breast sessions versus 6 with 5.
+  - County-wide: 445 nights away removed and 454 machine sessions freed a year.
+  - Every number is traced to a source, and every first step is a clinical-team review.
+- **1:55 The ask:**
+  - 5 sessions as the default for eligible breast patients, with distance named as a reason to choose it.
+  - A single 8 Gy session as the default for uncomplicated painful bone metastases.
+  - Every unit publishes its schedule mix and radiotherapy use by distance band, every year.
+- Optional: switch on **Fold inward** above the map: "We can't move the hospital. The schedule can."
 
-**`main` now holds the redesign** (fast-forwarded to `redesign` on the owner's go-ahead). It is the project's production branch, so every push to `main` redeploys https://matka-hack-europe.vercel.app automatically. Pushes to other branches create login-protected previews.
+## 4. Rehearse once on the presenting laptop
 
-The Vercel CLI (65.16.0) is installed in the cloud container but not logged in: `api.vercel.com` is not on this environment's network allowlist. Deployment went through the Vercel connector instead.
+The animations were only ever seen in a browser with no GPU, so check them on real hardware:
 
-### Checks
+- **Key 2:** the flight should be smooth and end with the counter at 676 km · 9 h 22 min.
+- **Key 5:** the terrain should rise, pause, then sink without stuttering. It rebuilds its contour bands in 8 steps.
+- **Projector resolution:** anything from 1280×720 to 1920×1080 is tested. Below that it still works, but it gets cramped.
+- **If key 2 or key 5 is rough:** skip it. Keys 1, 3, 4, 6 and 7 tell the story without them.
 
-All run on the final commit of `redesign`:
+## 5. Likely questions, short answers
 
-- `npx vitest run`: **23 tests pass** (6 new; the grid terrain uses the same model as the card, and the lever lowers every point; lever-off yearly burden, lever-on removed = old totals, current − removed = same patients on 5 sessions, trip dots 4 → 2).
-- `.venv/bin/python -I scripts/09_check_data.py`: **passes**. It now also checks `route_lines.json` (all 292 routes present, km/min equal to routes.json, endpoints snapped to the municipality centre and the unit) and `basemap.json`.
-- `npx playwright test tests/e2e/layout.spec.ts --trace off`: **passes at 1280×720, 1440×900 and 1920×1080**. Every demo step (16 per size), checked for overlapping panels, cards and labels within the same `data-layer`, for clipped text (`scrollWidth > clientWidth`), and for boxes cut off by their scroll container or the window. It also asserts the map is ≥ 60% of the width, no console errors, and no request leaving localhost. Screenshots: `screenshots/redesign/<size>/`.
-- `npx playwright test tests/e2e/demo.spec.ts --trace off`: **passes**. Keys 0–7, no console errors, no external requests, the bone card line unclipped, and key 2 ends the counter at exactly "676 km · 9 h 22 min". Screenshots: `screenshots/redesign/demo-1440x900/`.
-- `npx playwright test tests/e2e/viewports.spec.ts --trace off`: **passes** (512×384 to 1920×1080). The fitBounds fallback is kept.
-- `npx oxlint`: 0 errors, 3 warnings (fast-refresh export and a setState-in-effect in MemoTab, all harmless).
-- Data scripts: `scripts/12_drive_grid.py` (OSRM table, 45 requests, cached in `data/raw/osrm_grid/`; 3,864 grid points). `scripts/11_natural_earth.py` (raw.githubusercontent.com reachable; 18 MB raw cache in `data/raw/naturalearth/`, gitignored). `scripts/10_route_lines.py` (router.project-osrm.org reachable; 292 routes fetched once and cached in `data/raw/osrm_routes/`, committed like the other OSRM caches). The largest difference between the OSRM route length and routes.json `road_km` is 0.0 km.
+- **"Why does everyone far away get exactly 16 nights?"** The model assumes anyone more than 100 km by road stays near the unit on treatment weeknights: 15 sessions + 1 planning visit = 16 nights, however far beyond 100 km they live. Within 100 km they commute and have 0 nights. The 100 km threshold is an assumption you can change in the drawer.
+- **"What's the ring in the terrain?"** People within 100 km drive in for every session, so they log more hours than people just beyond 100 km, who stay over and drive weekly. The sharp edge comes from the model's hard 100 km cut-off; real patients near 100 km decide either way.
+- **"Where do the distances come from?"** OSRM road routing (OpenStreetMap), from each municipality's centre point to its unit. The terrain uses a 10 km grid of drive times instead. 101 of its 3,866 points were snapped onto Russian roads or long ferry waits; they were dropped and filled from their neighbours.
+- **"Which unit does each municipality go to?"** Uusimaa, Helsinki, Pirkanmaa and Lapland follow their sourced catchments (Lapland has no unit and goes to OYS). Everyone else goes to the nearest unit by drive time, which is an assumption.
+- **"How many patients is that?"** 5,232 new breast cancer cases in women in 2024 (Finnish Cancer Registry); the model uses the 5,204 on the mainland. × 70% treated with radiotherapy × 60% eligible for 5 sessions × 80% not already on 5 sessions ≈ 1,750 a year. The three shares are assumptions.
+- **"Why is bone only per patient?"** No national count of bone radiotherapy courses is published.
+- **"Do we know what units do today?"** No. Only 1 of 12 units publishes which schedule it uses, which is why the ask includes publishing it.
+- **"Did the AI write the memos?"** Yes, through the Anthropic API (claude-sonnet-5-5). Every number in each memo is checked against the sourced facts it was given, and the "numbers traced" badge appears only for memos that pass that check. All 22 pass.
+- **"Is this clinical advice?"** No. They are proposals for clinical teams to evaluate. The evidence is FAST-Forward for breast and the Rich 2018 review for bone.
 
-### Design critic rounds
-
-Two fresh design-critic sub-agents reviewed the screenshots. Their fixes were applied, and the layout test was re-run after each round.
-
-- **Round 1 (applied):**
-  - Fluid `rem` type scale (14px up to ~1330px wide, ~17.5px at 1920), so text grows on large projectors.
-  - The lever has an explicit On/Off state and a larger switch.
-  - Teal is kept for data only: routes, the selection, the lever-on state and "after" values. UI underlines, links and slider thumbs are graphite.
-  - Darker choropleth.
-  - The terrain sits on the flat choropleth (zero-height areas keep their fill), with softer light and lower relief.
-  - County outlines are drawn only when zoomed in (they speckled the archipelago).
-  - A faint ghost of the folded-away route.
-  - Only the remaining nights turn teal.
-  - Non-breaking "non-inferior" and "8 Gy"; markers stay on the line with their last word.
-  - The memo body is in sans.
-  - Short county names in the memo picker.
-  - The before/after table was rebuilt to fit at 1280.
-- **Round 1 (not applied):** shifting the map when the drawer opens. The owner's plan makes the drawer an overlay.
-- **Round 2 (applied):**
-  - Trip dots, night icons, the km/hours counter and hospital labels scale with the type.
-  - The legend is built from the map's actual colour ramp, and route lines are darker.
-  - The national view (keys 0/1) shows the selected route in graphite; teal and the dots arrive with key 2 or a click.
-  - The totals highlight is a 3px graphite top rule.
-  - Links, the memo button, citation numbers, the traced badge and the map hover are graphite.
-  - The lever title is in Zilla Slab, with larger page headings.
-  - Drawer width in `rem`; the popover is wider and taller.
-  - Balanced caption, and wrap fixes.
-- **Round 2 (not applied):** clamping the flight's bearing to near-north and docking the counter in a corner. The brief says the bearing follows the direction of travel and the label rides with the dot.
-- Also fixed during testing:
-  - deck.gl camera transitions could be cancelled by a React re-render, leaving key 5 flat at 1920. All camera moves are now animated by Matka itself.
-  - Fold dropped all grey routes (deck.gl needed fresh path arrays).
-
-### AI steps: confirmed API-generated
-
-- `public/data/memos.json`: `method: llm-api`, `model: claude-sonnet-5-5`, **v2 generated 2026-11-15** by another session on `claude/sharp-sagan-uaohy1` and merged into `redesign`. All 22 memos are stored with `validated: true` and numbers_passed = numbers_checked; Lapland's has 16 of 16 numbers traced. Each memo now names its hardest-hit municipality and the county's yearly totals. `scripts/09_check_data.py` re-runs the validator live and passes.
-- `public/data/unit_statements.json`: `method: llm-api`, `model: claude-sonnet-5-5`, generated 2026-11-14, 12 pages read.
-- The memo tab still shows the "numbers traced" badge only when a memo's stored `validated` flag is true.
-
-### What changed in the redesign
-
-- **Visual language:** Zilla Slab (OFL, self-hosted via @fontsource) for headings, light italic Zilla Slab hero line, Helvetica Neue/Helvetica/Arial body. Graphite #3C4242 / #6B7272, white, #F8F8F8 panels, #E1E1E1 hairlines, one accent (teal #00626A, also the "after" values). Radius 0, no shadows, no pills; tabs, indication and metric switches are text with a 2px underline. No AstraZeneca logo or colours (named in the footer as text only). Inter is no longer loaded.
-- **Provenance:** badges are now quiet superscript markers (S / C / A) with the same popover. The footer explains them once: "S sourced · C calculated · A assumption: click a marker for its sources".
-- **Layout:** rail `clamp(216px,17vw,256px)` | map | right column `clamp(280px,22.5vw,340px)`, hairlines between. The map canvas is 60.3% of the width at 1280, 60.4% at 1440 and 68.9% at 1920 (the layout test asserts ≥ 60%). The whole-UI CSS zoom below 1440×900 from 96dad9b is gone: the fluid grid replaces it. The fitBounds fallback and `tests/e2e/viewports.spec.ts` are kept.
-- **Rail:** indication (Breast | Bone metastases), the lever, one line of evidence, the Assumptions toggle. All sliders, the "Today, if X% already get the short schedule…" line and Reset live in the **Assumptions drawer**, an overlay over the map edge (Esc closes it).
-- **Town card:** Zilla Slab name; "To Oulu · 676 km · 9 h 22 min" with a C marker; plain English: "One patient from Utsjoki: 15 sessions over three weeks, or 5 in one week."; whether they commute or stay (A marker on the 100 km threshold); a compact before/after table with "after" in teal when the lever is on; one moon icon per night away under the nights row (removed nights fade to a hairline outline; fractional bone values are partial icons).
-- **Totals (never zeros, machine sessions first):** lever off = the yearly burden of the eligible breast patients still on 15 sessions (about 1,750 patients: 26,200 machine sessions, 3,120 nights away, 25,600 round trips, 26,700 hours on the road). Lever on = what moving them to 5 sessions removes (17,500 machine sessions, 1,950 nights, 15,900 round trips, 16,200 hours). New pure functions `breastStillLong` / `breastYear` / `tripDots` in `src/model/metrics.ts` with Vitest tests. Bone stays per patient beyond 100 km (6.2 → 2.4 nights away per course), because no national count of bone courses exists.
-- **Map:** the needle columns are gone. Natural Earth 10m lakes, land and land borders are bundled (`public/data/basemap.json`, 667 kB). Every municipality is joined to its unit by its real OSRM road route (`public/data/route_lines.json`, 196 kB) in thin graphite; units are square DOM markers with labels placed greedily without collisions (a label is skipped rather than overlap). The headline overlay and the floating "89 municipalities" card are gone; one caption is docked under the map with the legend.
-- **Selecting a municipality** draws its route in teal with N dots looping along it, N = round trips per patient (breast 4 → 2).
-- **Key 2:** 1.2 s fly-in to Utsjoki, then 5 s following the road to Oulu at pitch 55 with the bearing following the road, a teal dot and a label counting km and hours. It ends exactly at routes.json (676 km · 9 h 22 min), then pulls back north-up to a tilted overview of the route.
-- **Key 5:** fly out to Finland at pitch 45 with the **burden terrain** on, breast lever off. Height = hours on the road per patient, computed on a ~10 km grid of real drive times (`scripts/12_drive_grid.py` → `public/data/drive_grid.json`, 3,864 points, same model function as the card). It is drawn as stacked 3-hour contour bands. Valleys sit at each unit, there is a ridge at the daily-commute limit, and the ground climbs north towards Utsjoki. The camera pauses, then the lever flips and the terrain sinks. The totals block highlights. The Terrain button now also tilts the camera (on) and flattens it (off).
-- **Fold inward** stays off by default. When on, each route is truncated toward its unit to the distance at which the long course would cost the km the short course costs today, and the caption reads "We can't move the hospital. The schedule can."
-- **Memo tab:** the whole memo streams in 4 s (elapsed-time based, any length); citations become superscript numbers in order of first use, with a numbered source list beneath that fills in as sources are first cited.
-
-### Deviations from the local plan, and why
-
-- The Natural Earth clip box is 3–48°E, 54.5–74°N, not 14–36.5°E, 57.5–71.5°N: at 1920×1080 the old box's edge showed as a rectangle around Finland. basemap.json is 667 kB (581 lakes) instead of 473 kB.
-- The terrain height is **hours on the road per patient on a drive-time grid**, not nights away per municipality. With the 100 km rule, nights per patient can only be 0 or 16 (a flat mesa), while hours vary point by point and still sink with the lever. Owner's decision on the night of the redesign. Card, totals and memos are unchanged: they still use municipality centre points. 101 grid points snapped by OSRM onto Russian roads or long ferry waits (route far longer than their municipality's own) were dropped and refilled from neighbours; the data note says so. The ring's sharp edge comes from the model's hard 100 km commuting cut-off.
-- Trip dots and the flight label are DOM elements (like the hospital markers), so deck.gl does not redraw every frame.
-- Two test-only hooks: `window.__matkaFlightHold = 0.42` holds the key-2 flight part-way, and `window.__matkaHold = true` holds a demo key's timed steps. They are only used by `tests/e2e/layout.spec.ts` to take deterministic screenshots in a software-rendered browser.
-
-### Not done / known limits
-
-- **Software-rendered browsers are slow.** In this cloud container (no GPU, SwiftShader), a deck.gl redraw takes about a second, so the key-2 flight shows few frames and animations lag in headless runs. Tests use long waits and the hold hooks. On a laptop with a GPU it is smooth. **Rehearse once on the presenting laptop.**
-- The flight's dot moves along the drawn OSRM route; its km/hours label is proportional to distance along the route and ends exactly at the routes.json values (676 km · 9 h 22 min). Mid-route values are therefore approximate (constant average speed).
-- Route lines are drawn from municipality centre points, like the distances. Ferry links in the archipelago follow OSRM.
-- The Assumptions drawer overlays the left part of the map (by design) and covers part of the caption while open.
-- The old screenshots in `screenshots/*.png` and `screenshots/design/` show the previous design. The new ones are in `screenshots/redesign/`.
-- `tests/e2e/design.spec.ts` (DESIGN_ROUND captures from the old design passes) was not updated or run; it is skipped unless DESIGN_ROUND is set.
-
-## 1. Previous status (still true)
-
-- The API key used for the memos and unit statements is in the gitignored `.env`, never committed. It was pasted in chat, so rotate it after judging.
-- Breast leads (key 3), bone is key 4, the "1 of 12 units publishes which schedule it uses" headline, Rovaniemi has no unit (Lapland routes to OYS), Uusimaa/Helsinki/Pirkanmaa/Lapland follow sourced catchments and the other municipalities go to the nearest unit by drive time (an assumption; Kanta-Häme and Kainuu are named in the limitations), 5,232 new breast cases in women in 2024 (5,204 mainland used).
-
-## 3. Assumptions in use
+## 6. Assumptions in use
 
 | Parameter | Value |
 |---|---|
@@ -131,40 +88,119 @@ Two fresh design-critic sub-agents reviewed the screenshots. Their fixes were ap
 
 Also assumed:
 
-- Distances run from municipality centre points.
+- Distances run from municipality centre points; the terrain uses a 10 km grid.
 - Breast cases are allocated to municipalities by age-weighted female population.
-- Routing outside the sourced catchments is nearest by drive time.
+- Routing outside the sourced catchments goes to the nearest unit by drive time.
 
 Sourced: 15 vs 5 sessions, single 8 Gy, retreatment 20% vs 8% (Rich 2018, S30), Kela 0.33 €/km and 20.18 €/night.
 
-## 4. Unverified
+## 7. Known limits and unverified points
 
-- The real Finnish schedule mix (not public).
-- Kanta-Häme and Kainuu referral paths.
-- The Turku and Tampere unit pages (sites unreachable during the search).
-- Breast radiotherapy and eligibility shares for Finland.
-- The Rich 2018 corrigendum content was not checked.
+- The real Finnish schedule mix is not public.
+- Kanta-Häme and Kainuu referral paths are unverified.
+- The Turku and Tampere unit pages are unverified: their sites were unreachable during the search.
+- The breast radiotherapy and eligibility shares are not Finnish figures.
+- The Rich 2018 corrigendum was not checked.
 - The roadmap's 100 km fact cites Norwegian data (Åsli 2018).
+- The flight's km/hours counter assumes a constant average speed along the route. It ends exactly at the routed values, but mid-route readings are approximate.
+- The Assumptions drawer covers the left part of the map while it is open (by design).
 
-## 5. Demo script (2 minutes, redesign)
-
-Press `0` before you start. `?` shows the keys.
-
-- **0:00 (key 1):** Finland, flat and north-up. Every municipality is joined to its radiotherapy unit by its real road route; the 12 units are the squares. "Same cancer, same treatment. Different distance." Caption: 89 municipalities, home to 637,661 people, are more than 100 km by road from their unit. The national roadmap (p. 13): palliative radiotherapy is used less beyond 100 km. Right, totals: every year about 1,750 eligible breast patients are still on 15 sessions; between them 26,200 machine sessions, 3,120 nights away, 25,600 round trips, 26,700 hours on the road.
-- **0:15 (key 2):** Utsjoki. The camera flies the road to OYS in Oulu: the counter runs to 676 km and 9 h 22 min. The card: "One patient from Utsjoki: 15 sessions over three weeks, or 5 in one week." Sixteen moons: 16 nights away. Four dots on the route: four journeys.
-- **0:35 (key 3):** Breast, the lead lever: 5 sessions as default for eligible patients (whole breast or chest wall, no nodes). Journeys 4 → 2, nights 16 → 6 (ten moons fade), hours on the road 75 → 37. FAST-Forward, 4,096 patients, 10-year follow-up: non-inferior. Totals switch to what's removed: 17,500 machine sessions freed, 1,950 nights away, 15,900 round trips, 16,200 hours on the road.
-- **0:55 (key 4):** Painful bone metastases: a single 8 Gy session relieves pain as well, with more retreatment, and the model includes it. Utsjoki: 6.2 → 2.4 expected nights away; "Fewer nights away; trips about the same, because some patients need a second session." Per patient only: no national count of bone courses is published.
-- **1:10 (key 5):** Fly out, tilt: the burden terrain, hours on the road per patient at every point of Finland. "Close in, you lose hours driving in every day; that's the ring around each hospital. Far out, you lose nights and long drives; that's the climb north." Then the lever flips and the whole landscape sinks: "Five sessions cuts both." Totals highlighted.
-- **1:25 (key 6):** What units say: "1 of 12 units publishes which schedule it uses." So the current mix stays an assumption you can set (Assumptions drawer). Read by AI via the API, quotes checked against the saved pages.
-- **1:40 (key 7):** Lapland's memo writes itself in four seconds: Utsjoki, 676 km from Oulu, 16 nights away with 15 breast sessions versus 6 with 5; county-wide, 445 nights away removed and 454 machine sessions freed a year. Superscript numbers are its sources, listed beneath; every number is traced, and every first step is a clinical-team review.
-- **1:55 The ask:**
-  - 5 sessions as the default for eligible breast patients, with distance named as a reason to choose it.
-  - A single 8 Gy session as the default for uncomplicated painful bone metastases.
-  - Every unit publishes its schedule mix and radiotherapy use by distance band, every year.
-- Optional: toggle **Fold inward** over the map: "We can't move the hospital. The schedule can."
-
-## 6. Questions for the AstraZeneca mentor
+## 8. Questions for the AstraZeneca mentor
 
 1. "A breast patient living 300 km from the unit: does she get 15 sessions or 5 today, and is distance an accepted reason for the short course?"
 2. "For painful bone metastases in someone 200 km out, how often is it a single 8 Gy in practice, and can planning and treatment happen in one visit?"
 3. "Which Goal 3 indicator would you file this under: target access times or regional equality? Would you accept a new one, travel burden per radiotherapy course by county?"
+
+## 9. After judging
+
+- Rotate the Anthropic API key: it is in the gitignored `.env`, but it was pasted in chat.
+- Housekeeping:
+  - Old-design screenshots are still in `screenshots/*.png` and `screenshots/design/`.
+  - `tests/e2e/design.spec.ts` still targets the old design (it is skipped unless `DESIGN_ROUND` is set).
+  - `oxlint` shows 3 warnings.
+
+---
+
+## Appendix: how this was built (overnight log)
+
+### Branches
+
+- `redesign` was cut from `claude/sharp-sagan-uaohy1` at 236197c (a screenshot-only commit after 96dad9b).
+- Overnight, another session pushed to `claude/sharp-sagan-uaohy1`:
+  - a memo-generator fix (a6a58e1, 4b36382);
+  - the v2 memos (049d6fa, ff3b6c8).
+  Both were merged into `redesign`.
+- `main` was fast-forwarded to `redesign` on the owner's go-ahead, so nothing on `main` was lost.
+- Every push was mirrored to `claude/funny-franklin-79imfr`, the cloud session's own branch.
+
+### Vercel
+
+- **Project:** `matka` in the **Team HackEurope** Vercel team. That is the account the Vercel connector is signed in as, and it has GitHub access to `reubxn`.
+- **Build:** linked to `reubxn/makta`; production branch `main`; Vite, Node 22.x, `npm ci`, `npm run build`, output `dist`.
+- **Access:** production is public; preview deployments need a Vercel login.
+- **Checked live, in a browser, after deploying:**
+  - key 2 ends at 676 km · 9 h 22 min;
+  - key 3 gives 6 nights and 2 dots;
+  - key 5 terrain renders;
+  - the memo shows its traced badge;
+  - no console errors, and no requests leave the site.
+  Screenshots: `screenshots/redesign/vercel-live-*.png`.
+- **CLI:** the Vercel CLI (65.16.0) is installed in the cloud container but not logged in, because `api.vercel.com` is not on its network allowlist. Deploys went through the Vercel connector.
+
+### What changed in the redesign
+
+- **Visual language:**
+  - Zilla Slab headings (OFL, self-hosted), with the hero line in light italic; Helvetica Neue/Helvetica/Arial for body text.
+  - Graphite #3C4242 / #6B7272 text on white, #F8F8F8 panels, #E1E1E1 hairlines.
+  - One accent: teal #00626A, used for data and "after" values.
+  - Radius 0, no shadows, no pills.
+  - Fluid type that grows on large projectors.
+  - No AstraZeneca logo or colours; AstraZeneca is named in the footer as text only.
+- **Provenance:** superscript S / C / A markers with the sources popover, explained once in the footer.
+- **Layout:** rail | map (≥ 60% of the width, asserted by the test) | town card and totals. All sliders, the "Today, if X% already…" line and Reset are in the Assumptions drawer. The whole-UI zoom below 1440×900 is gone.
+- **Town card:**
+  - Plain-English line, plus whether the patient commutes or stays over.
+  - Before/after table with "after" in teal.
+  - One moon icon per night away; removed nights fade to an outline.
+- **Totals:** never zero, machine sessions first. With the lever off they show the yearly burden of eligible patients still on 15 sessions; with it on, what moving them to 5 removes (`breastYear` in `src/model/metrics.ts`).
+- **Map:**
+  - Natural Earth lakes and coastline, bundled.
+  - Every municipality's OSRM road route to its unit.
+  - Hospital squares with collision-free labels.
+  - Selecting a municipality draws its route in teal, with one dot per round trip.
+  - Key 2: a 1.2 s fly-in, 5 s following the road at 55° tilt with the bearing following the road, then a pull-back.
+  - Key 5: the burden terrain, hours on the road per patient on the 10 km drive-time grid, drawn as 3-hour contour bands. It sinks when the lever flips. The Terrain button also tilts and flattens the camera.
+- **Memo tab:** the whole memo streams in 4 s, with superscript citation numbers and a numbered source list.
+
+### Data scripts (all cached, never fetched twice)
+
+- `10_route_lines.py`: 292 OSRM routes. The largest difference from the routes.json km is 0.0 km.
+- `11_natural_earth.py`: basemap clipped to 3–48°E, 54.5–74°N (667 kB). The raw downloads are gitignored.
+- `12_drive_grid.py`: 3,866 grid points in 45 OSRM requests; 101 implausible points dropped and filled from neighbours (86 kB).
+
+### AI steps (confirmed API-generated)
+
+- `memos.json`: `llm-api`, claude-sonnet-5-5, v2 from 2026-11-15. All 22 are validated; Lapland's has 16 of 16 numbers traced.
+- `unit_statements.json`: `llm-api`, claude-sonnet-5-5, 2026-11-14, from 12 pages.
+
+### Design review
+
+Two fresh design-critic rounds reviewed the screenshots, and their fixes were applied:
+- fluid type and a stronger lever;
+- teal kept for data only;
+- terrain drawn over the flat map;
+- map marks that scale with the type, and a legend built from the real colour scale;
+- the national view stays graphite until key 2;
+- the lever title in serif.
+
+Not applied, because the owner's brief decides otherwise:
+- moving the map when the drawer opens (the drawer stays an overlay);
+- keeping the flight's camera pointing north (the bearing follows the road).
+
+Also fixed during testing:
+- deck.gl camera transitions could be cancelled by a re-render; Matka now animates the camera itself;
+- Fold dropped all grey routes.
+
+### Test-only hooks
+
+`window.__matkaFlightHold` (holds the key-2 flight part-way) and `window.__matkaHold` (holds a demo key's timed steps). Only the layout test uses them, so it can take deterministic screenshots in a software-rendered browser.
