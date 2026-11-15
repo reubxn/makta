@@ -2,8 +2,9 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import DeckGL from '@deck.gl/react';
 import { AmbientLight, DirectionalLight, LightingEffect, MapView, WebMercatorViewport, type MapViewState, type PickingInfo } from '@deck.gl/core';
 import { GeoJsonLayer, PathLayer } from '@deck.gl/layers';
+import { contours } from 'd3-contour';
 import { useData } from '../context';
-import { currentBurden, equivalentDistanceFraction, perPatient, tripDots, type Indication, type MetricKey, type Params } from '../model/metrics';
+import { currentBurden, equivalentDistanceFraction, gridHours, perPatient, tripDots, type Indication, type MetricKey, type Params } from '../model/metrics';
 import { easeInOut, fmt, useTween } from '../hooks';
 import { Prov } from './Prov';
 import { fmtDrive } from './MunicipalityCard';
@@ -20,7 +21,9 @@ type BBox = [number, number, number, number];
 type Mode = 'flat' | 'tilt45' | 'tilt40';
 
 const FINLAND: MapViewState = { longitude: 25.8, latitude: 65.0, zoom: 4.4, pitch: 0, bearing: 0 };
-const ELEV_PER_NIGHT = 6_500; // metres of "burden terrain" per night away per patient
+const ELEV_PER_HOUR = 1_000; // metres of "burden terrain" per hour on the road per patient
+const TERRAIN_STEP_H = 3; // contour band step, hours on the road per patient
+const EMPTY_FC: GeoJSON.FeatureCollection = { type: 'FeatureCollection', features: [] };
 const FLIGHT_ZOOM = 7.0;
 const FLIGHT_PITCH = 55;
 const FLY_IN_MS = 1200;
@@ -352,27 +355,37 @@ export function MapPanel(props: Props) {
     }
     return out;
   }, [data, indication, lever, params, metric]);
-  // Terrain height = nights away per patient. Attribute transitions force slow GPU read-backs, so the
-  // lever's "sink" is a uniform: every stayer has the same nights (sessions + planning [+ retreatment]),
-  // commuters have none, so long -> short is one exact ratio for all municipalities.
-  const longNightsByCode = useMemo(() => {
-    const out: Record<string, number> = {};
-    for (const m of data.municipalities) {
-      const r = data.routes[m.code];
-      if (r) out[m.code] = perPatient(r, indication, 'long', params).nights;
-    }
-    return out;
-  }, [data, indication, params]);
-  const terrainData = useMemo(
-    () => ({ type: 'FeatureCollection', features: data.geo.features.filter((f) => (longNightsByCode[f.properties!.code] ?? 0) > 0) }) as GeoJSON.FeatureCollection,
-    [data, longNightsByCode],
-  );
-  const sinkRatio = useMemo(() => {
-    const stayer = { road_km: params.commute_threshold_km + 1, drive_min: 60 };
-    const long = perPatient(stayer, indication, 'long', params).nights;
-    return long > 0 ? perPatient(stayer, indication, 'short', params).nights / long : 1;
-  }, [indication, params]);
-  const sinkK = useTween(lever ? sinkRatio : 1, terrain ? 1600 : 1);
+  // Burden terrain: hours on the road per patient at every point of a ~10 km drive-time grid (same model
+  // as the card), drawn as stacked contour bands. The lever animates the field from the long to the short
+  // schedule; contours are recomputed in a few steps rather than every frame.
+  const grid = data.driveGrid;
+  const fieldLong = useMemo(() => (terrain ? gridHours(grid, indication, 'long', params) : null), [grid, indication, params, terrain]);
+  const fieldShort = useMemo(() => (terrain ? gridHours(grid, indication, 'short', params) : null), [grid, indication, params, terrain]);
+  const terrainMax = useMemo(() => {
+    let mx = 0;
+    for (const ind of ['breast', 'bone'] as Indication[]) for (const v of gridHours(grid, ind, 'long', params)) mx = Math.max(mx, v);
+    return mx || 1;
+  }, [grid, params]);
+  const leverK = useTween(lever ? 1 : 0, terrain ? 1500 : 1);
+  const leverStep = Math.round(leverK * 8) / 8;
+  const terrainData = useMemo(() => {
+    if (!fieldLong || !fieldShort) return EMPTY_FC;
+    const values = new Array<number>(fieldLong.length);
+    for (let i = 0; i < values.length; i++) values[i] = fieldLong[i] < 0 ? -1 : fieldLong[i] + (fieldShort[i] - fieldLong[i]) * leverStep;
+    const step = TERRAIN_STEP_H;
+    const thresholds: number[] = [];
+    for (let t = step; t < terrainMax; t += step) thresholds.push(t);
+    const bands = contours().size([grid.cols, grid.rows]).thresholds(thresholds)(values);
+    const toLonLat = ([x, y]: number[]) => [grid.lon0 + (x - 0.5) * grid.dlon, grid.lat0 + (y - 0.5) * grid.dlat];
+    const features = bands
+      .filter((b) => b.coordinates.length)
+      .map((b) => ({
+        type: 'Feature' as const,
+        properties: { t: b.value },
+        geometry: { type: 'MultiPolygon' as const, coordinates: b.coordinates.map((poly) => poly.map((ring) => ring.map(toLonLat))) },
+      }));
+    return { type: 'FeatureCollection', features } as GeoJSON.FeatureCollection;
+  }, [fieldLong, fieldShort, leverStep, terrainMax, grid]);
   // Stable colour scale per metric: the largest long-schedule value across both indications.
   const maxLong = useMemo(() => {
     let mx = 0;
@@ -470,16 +483,12 @@ export function MapPanel(props: Props) {
       filled: true,
       stroked: false,
       extruded: true,
-      getFillColor: (f: GeoJSON.Feature) => ramp((valueByCode[f.properties!.code] ?? 0) / maxLong, TERRAIN_HI),
-      getElevation: (f: GeoJSON.Feature) => (longNightsByCode[f.properties!.code] ?? 0) * ELEV_PER_NIGHT,
-      elevationScale: terrainOn ? terrainK * sinkK : 0,
+      getFillColor: (f: GeoJSON.Feature) => ramp((f.properties!.t as number) / terrainMax, TERRAIN_HI),
+      getElevation: (f: GeoJSON.Feature) => (f.properties!.t as number) * ELEV_PER_HOUR,
+      elevationScale: terrainOn ? terrainK : 0,
       material: MATERIAL,
-      pickable: true,
-      autoHighlight: true,
-      highlightColor: HIGHLIGHT,
-      updateTriggers: { getFillColor: [valueByCode, maxLong], getElevation: [longNightsByCode] },
-      onClick: onMuniClick,
-      onHover: onMuniHover,
+      pickable: false,
+      updateTriggers: { getFillColor: [terrainMax], getElevation: [terrainData] },
     }),
     new GeoJsonLayer({
       id: 'counties',
@@ -696,20 +705,20 @@ export function MapPanel(props: Props) {
       <div className="mapcaption" data-box="mapcaption" data-testid="map-caption">
         <div className="legend" data-box="legend">
           <span className="legend-title">
-            {METRICS.find(([k]) => k === metric)![1]} per patient, {indication === 'bone' ? 'bone' : 'breast'}
+            {terrain ? 'Height: hours on the road' : `${METRICS.find(([k]) => k === metric)![1]} per patient, ${indication === 'bone' ? 'bone' : 'breast'}`}
             <Prov kind="calculated" ids={data.routesMeta.source_ids} note={`${data.routesMeta.note} Squares: radiotherapy units. Grey lines: each municipality's road route to its unit (OSRM, OpenStreetMap). Lakes and coastline: Natural Earth 10m, bundled locally.`} />
           </span>
           <span className="num">0</span>
-          <span className="legend-bar" style={{ background: `linear-gradient(90deg, rgb(${RAMP_LO.join(',')}), rgb(${RAMP_HI.join(',')}))` }} />
-          <span className="num">{fmt(maxLong, maxLong < 10 ? 1 : 0)}</span>
+          <span className="legend-bar" style={{ background: `linear-gradient(90deg, rgb(${RAMP_LO.join(',')}), rgb(${(terrain ? TERRAIN_HI : RAMP_HI).join(',')}))` }} />
+          <span className="num">{terrain ? `${fmt(terrainMax)} h` : fmt(maxLong, maxLong < 10 ? 1 : 0)}</span>
         </div>
         <div className="caption-text">
           {fold ? (
             <span className="fold-line">We can't move the hospital. The schedule can.</span>
           ) : terrain ? (
             <span>
-              Height: nights away per patient on the current schedule. {farStats.n} municipalities are more than {params.commute_threshold_km} km by road from their unit.
-              <Prov kind="calculated" ids={['osrm_table', 'statfin_population', 'wikidata_coords']} note="Road distance from each municipality's centre point. Follows the commuting-threshold slider." />
+              Height: hours on the road per patient on the current schedule, from drive times on a 10 km grid.
+              <Prov kind="calculated" ids={grid.source_ids} note={grid.note} /> Near each unit people drive in daily; beyond {params.commute_threshold_km} km they stay over and make long weekly trips.
             </span>
           ) : (
             <span>

@@ -192,6 +192,16 @@ for k in ("lakes", "land", "borders"):
         errors.append(f"basemap.json has no {k}")
 notes.append(f"basemap: {len(bm['lakes']['features'])} lakes, {len(bm['land']['features'])} land, {len(bm['borders']['features'])} border lines")
 
+dg = load("drive_grid.json")
+check_ids("drive_grid.json", dg.get("source_ids", []))
+n = dg["cols"] * dg["rows"]
+if len(dg["km"]) != n or len(dg["min"]) != n:
+    errors.append("drive_grid.json arrays do not match cols x rows")
+inside = [m for m in dg["min"] if m is not None]
+if len(inside) < 3000 or max(inside) > 900 or min(inside) < 0:
+    errors.append(f"drive_grid.json implausible: {len(inside)} points, max {max(inside)} min")
+notes.append(f"drive grid: {len(inside)} points inside Finland, max drive {max(inside):.0f} min")
+
 for n in notes:
     print("note:", n)
 if errors:

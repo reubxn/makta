@@ -243,3 +243,30 @@ export function equivalentDistanceFraction(route: Route, indication: Indication,
   const x = candidates.length ? Math.max(...candidates) : T;
   return Math.max(0, Math.min(1, x / d));
 }
+
+/** Drive-time grid (public/data/drive_grid.json): row-major from the south-west corner; null outside Finland. */
+export interface DriveGrid {
+  lon0: number;
+  lat0: number;
+  dlon: number;
+  dlat: number;
+  cols: number;
+  rows: number;
+  km: (number | null)[];
+  min: (number | null)[];
+}
+
+/**
+ * Hours on the road per patient at every grid point, with the same model as the card (perPatient).
+ * Points outside Finland get -1 so contours never include them.
+ */
+export function gridHours(g: DriveGrid, indication: Indication, schedule: 'long' | 'short', p: Params): Float64Array {
+  const out = new Float64Array(g.cols * g.rows).fill(-1);
+  for (let i = 0; i < out.length; i++) {
+    const km = g.km[i];
+    const min = g.min[i];
+    if (km == null || min == null) continue;
+    out[i] = perPatient({ road_km: km, drive_min: min }, indication, schedule, p).hours;
+  }
+  return out;
+}

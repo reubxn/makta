@@ -1,4 +1,4 @@
-import type { Params } from './model/metrics';
+import type { DriveGrid, Params } from './model/metrics';
 
 export type Kind = 'sourced' | 'calculated' | 'assumption';
 
@@ -173,6 +173,7 @@ export interface AppData {
   routeLines: Record<string, RouteLine>;
   routeLinesMeta: { kind: Kind; source_ids: string[]; note: string };
   basemap: Basemap;
+  driveGrid: DriveGrid & { note: string; source_ids: string[] };
 }
 
 async function get<T>(name: string, optional = false): Promise<T | null> {
@@ -191,7 +192,7 @@ async function get<T>(name: string, optional = false): Promise<T | null> {
 }
 
 export async function loadData(): Promise<AppData> {
-  const [m, geo, counties, routes, units, sources, params, facts, cases, statements, memos, lines, basemap] =
+  const [m, geo, counties, routes, units, sources, params, facts, cases, statements, memos, lines, basemap, driveGrid] =
     await Promise.all([
       get<{ municipalities: Municipality[] }>('municipalities.json'),
       get<GeoJSON.FeatureCollection>('municipalities.geojson'),
@@ -206,6 +207,7 @@ export async function loadData(): Promise<AppData> {
       get<Memos>('memos.json', true),
       get<{ routes: Record<string, RouteLine>; kind: Kind; source_ids: string[]; note: string }>('route_lines.json'),
       get<Basemap>('basemap.json'),
+      get<DriveGrid & { note: string; source_ids: string[] }>('drive_grid.json'),
     ]);
   const municipalities = m!.municipalities;
   const muniByCode = Object.fromEntries(municipalities.map((x) => [x.code, x]));
@@ -242,5 +244,6 @@ export async function loadData(): Promise<AppData> {
     routeLines: lines!.routes,
     routeLinesMeta: { kind: lines!.kind, source_ids: lines!.source_ids, note: lines!.note },
     basemap: basemap!,
+    driveGrid: driveGrid!,
   };
 }

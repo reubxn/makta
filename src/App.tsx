@@ -180,7 +180,10 @@ function Matka({ data }: { data: AppData }) {
             fold={s.fold}
             onFold={(fold) => update({ fold })}
             terrain={s.terrain}
-            onTerrain={(terrain) => update({ terrain })}
+            onTerrain={(terrain) => {
+              update({ terrain });
+              flyTo(terrain ? 'terrain' : 'finland');
+            }}
           />
           <div className="right" data-box="right">
             <MunicipalityCard code={s.selected} indication={s.indication} lever={lever} params={s.params} />

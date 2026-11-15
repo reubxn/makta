@@ -4,6 +4,7 @@ import {
   breastStillLong,
   breastTotals,
   breastYear,
+  gridHours,
   tripDots,
   equivalentDistanceFraction,
   courseBurden,
@@ -170,6 +171,22 @@ describe('breastYear (totals block: never zeros)', () => {
     expect(tripDots(perPatient(far, 'breast', 'short', P))).toBe(2);
     expect(tripDots(perPatient(far, 'bone', 'short', P))).toBe(2);
     expect(tripDots({ roundTrips: 0, nights: 0, km: 0, hours: 0, kelaEur: 0 })).toBe(1);
+  });
+});
+
+describe('gridHours (burden terrain)', () => {
+  const g = { lon0: 20, lat0: 60, dlon: 1, dlat: 1, cols: 3, rows: 1, km: [12, null, 480], min: [18, null, 400] };
+  it('matches perPatient hours point by point; outside is -1', () => {
+    const h = gridHours(g, 'breast', 'long', P);
+    expect(h[0]).toBeCloseTo(perPatient(near, 'breast', 'long', P).hours);
+    expect(h[1]).toBe(-1);
+    expect(h[2]).toBeCloseTo(perPatient(far, 'breast', 'long', P).hours);
+  });
+  it('the lever lowers every point', () => {
+    const a = gridHours(g, 'breast', 'long', P);
+    const b = gridHours(g, 'breast', 'short', P);
+    expect(b[0]).toBeLessThan(a[0]);
+    expect(b[2]).toBeLessThan(a[2]);
   });
 });
 
