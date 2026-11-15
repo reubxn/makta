@@ -17,6 +17,8 @@ interface RowDef {
   label: string;
   format: (v: number) => string;
   suffix?: string;
+  /** Label may wrap onto a second line (the other labels stay on one). */
+  wrap?: boolean;
 }
 
 const oneDp = (v: number) => fmt(v, Number.isInteger(Math.round(v * 10) / 10) ? 0 : 1);
@@ -24,7 +26,9 @@ const ROWS: RowDef[] = [
   { key: 'nights', label: 'Nights away', format: oneDp },
   { key: 'roundTrips', label: 'Round trips', format: oneDp },
   { key: 'hours', label: 'Hours on the road', format: fmtHours },
-  { key: 'kelaEur', label: 'Kela €, at least', format: (v) => fmt(v) },
+  // Valued at Kela's rates: a lower bound on what the travel costs, not what Kela pays out.
+  // Non-breaking spaces: where the column is narrow, it wraps as "Travel cost, €," / "at least".
+  { key: 'kelaEur', label: 'Travel\u00a0cost, €, at\u00a0least', format: (v) => fmt(v), wrap: true },
 ];
 
 function Tweened({ v, format }: { v: number; format: (v: number) => string }) {
@@ -78,12 +82,14 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
   const routeIds = [...data.routesMeta.source_ids, unit?.source_id ?? '', route.basis_source ?? ''].filter(Boolean);
   const paramIds = data.parameters
     .filter((p) => p.id.startsWith(indication) || p.id.startsWith('kela') || p.id === 'commute_threshold_km' || p.id === 'planning_visit')
-    .flatMap((p) => p.source_ids);
+    .flatMap((p) => p.source_ids)
+    .concat('kela_copay_trip');
   const thresholdParam = data.parameters.find((p) => p.id === 'commute_threshold_km');
   const calcNote =
     `Per patient on a ${nLong}-session course vs a ${nShort}-session course, including one planning visit` +
     (indication === 'bone' ? ' and expected retreatment.' : '.') +
-    ' Kela: own-car rate plus overnight allowance; taxis cost more, so this is a lower bound.';
+    ` Travel cost: km × Kela's own-car rate (${params.kela_car_eur_per_km.toFixed(2)} €/km) + nights × its overnight allowance (${params.kela_overnight_eur.toFixed(2)} €).` +
+    " A lower bound on what the travel costs (taxis cost more). It is not Kela's payout: Kela pays less, because the patient pays up to 25 € per one-way trip.";
   const plain =
     indication === 'bone'
       ? `One patient from ${m.name_fi}: ${nLong} sessions in ${weeks(nLong)}, or ${nShort === 1 ? 'a single session' : `${nShort} sessions`}.`
@@ -142,7 +148,7 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
             const up = after[r.key] - before[r.key] > 0.05;
             return [
               <tr key={r.key}>
-                <td className="l">{r.label}</td>
+                <td className={r.wrap ? 'l wrap' : 'l'}>{r.label}</td>
                 <td className="v before">
                   <Tweened v={before[r.key]} format={r.format} />
                   {r.suffix && <small>{r.suffix}</small>}

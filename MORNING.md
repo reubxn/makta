@@ -1,5 +1,35 @@
 # MORNING
 
+## Medical Affairs label fixes (2026-11-15)
+
+A Medical Affairs reviewer flagged two labels in the app as overclaiming. Both now match the corrected wording in the deck (`deck/` on `claude/peaceful-meitner-1ocams`). Changes are on `claude/gallant-clarke-4aqnv0`, cut from `redesign` at 36c7ae4.
+
+- **What units say, headline.** Was "1 of 12 units publishes which schedule they use." It is now "1 of 12 units has a public page stating its usual breast schedule.", followed by "Matka read 12 pages from 6 units; for the other 6, no page was found or the site could not be reached."
+  - Both counts are computed from data. `unit_statements.json` now lists every page read (`pages`: unit, URL, snapshot), including the pages that stated nothing (HUS, Pori, Vaasa).
+  - `scripts/extract_schedules.py` writes that list. `--pages-only` refreshes it without calling the model.
+  - `scripts/09_check_data.py` checks that the list matches `data/raw/pages/` and `pages_read`.
+- **Town card, last row.** Was "Kela €, at least". It is now "Travel cost, €, at least".
+  - The value is unchanged: km × Kela's own-car rate + nights × the overnight allowance. That is a lower bound on what the travel costs, not what Kela pays (the patient pays up to 25 € per one-way trip).
+  - The card's "Per patient" provenance note now says so and cites the copayment (S4).
+  - The limitation "Kela cost is a lower bound" is now "Travel cost is a lower bound, not Kela's payout" (`scripts/07_parameters_facts.py`, regenerated `facts.json`).
+- **Layout.** The longer label wraps as "Travel cost, €," / "at least" (non-breaking spaces; only this label wraps).
+  - On short screens (≤ 820 px high) the card gap went from 5 to 4 px, so the bone view at 1280×720 still fits. About 4 px are left over.
+  - In off-demo cases on short screens (a county name that wraps to two lines, in the bone view), the right column now scrolls a little sooner. It is `overflow-y: auto`, so nothing is cut off for good.
+- **Checks, all on the final commit:**
+  - `npx vitest run`: 23 pass.
+  - `npm run build`: OK.
+  - `python3 -I scripts/09_check_data.py`: OK ("12 pages from 6 of 12 units").
+  - `npx playwright test tests/e2e/layout.spec.ts --trace off`: passes at 1280×720, 1440×900 and 1920×1080, with no clipped text in the card. Screenshots were checked by eye.
+  - `tests/e2e/demo.spec.ts`: passes.
+- **Deck screenshot is stale.** `deck/img/app-breast.jpg` (on `claude/peaceful-meitner-1ocams`) still shows the old card label "Kela €, at least". Recapture it from a build of this branch (`npm run build && npx vite preview --port 4173`), then run:
+
+  ```bash
+  node deck/capture.mjs && python3 deck/crop.py
+  ```
+
+  Re-render the deck afterwards.
+- **Vercel production** (matka-hack-europe.vercel.app) still shows the old labels until this branch is redeployed to production.
+
 ## 0. Redesign status (branch `redesign`)
 
 **The redesign is solid and ready to present (finished about 02:45 Helsinki, well before the 07:00 cut-off).** All checks below pass on the final commit. If anything misbehaves on the presenting laptop, `claude/sharp-sagan-uaohy1` still has the old demo, untouched.
@@ -118,7 +148,7 @@ Two fresh design-critic sub-agents reviewed the screenshots. Their fixes were ap
 ## 1. Previous status (still true)
 
 - The API key used for the memos and unit statements is in the gitignored `.env`, never committed. It was pasted in chat, so rotate it after judging.
-- Breast leads (key 3), bone is key 4, the "1 of 12 units publishes which schedule it uses" headline, Rovaniemi has no unit (Lapland routes to OYS), Uusimaa/Helsinki/Pirkanmaa/Lapland follow sourced catchments and the other municipalities go to the nearest unit by drive time (an assumption; Kanta-Häme and Kainuu are named in the limitations), 5,232 new breast cases in women in 2024 (5,204 mainland used).
+- Breast leads (key 3), bone is key 4, the "1 of 12 units has a public page stating its usual breast schedule" headline (12 pages read from 6 of 12 units), Rovaniemi has no unit (Lapland routes to OYS), Uusimaa/Helsinki/Pirkanmaa/Lapland follow sourced catchments and the other municipalities go to the nearest unit by drive time (an assumption; Kanta-Häme and Kainuu are named in the limitations), 5,232 new breast cases in women in 2024 (5,204 mainland used).
 
 ## 3. Assumptions in use
 
@@ -158,7 +188,7 @@ Press `0` before you start. `?` shows the keys.
 - **0:35 (key 3):** Breast, the lead lever: 5 sessions as default for eligible patients (whole breast or chest wall, no nodes). Journeys 4 → 2, nights 16 → 6 (ten moons fade), hours on the road 75 → 37. FAST-Forward, 4,096 patients, 10-year follow-up: non-inferior. Totals switch to what's removed: 17,500 machine sessions freed, 1,950 nights away, 15,900 round trips, 16,200 hours on the road.
 - **0:55 (key 4):** Painful bone metastases: a single 8 Gy session relieves pain as well, with more retreatment, and the model includes it. Utsjoki: 6.2 → 2.4 expected nights away; "Fewer nights away; trips about the same, because some patients need a second session." Per patient only: no national count of bone courses is published.
 - **1:10 (key 5):** Fly out, tilt: the burden terrain, hours on the road per patient at every point of Finland. "Close in, you lose hours driving in every day; that's the ring around each hospital. Far out, you lose nights and long drives; that's the climb north." Then the lever flips and the whole landscape sinks: "Five sessions cuts both." Totals highlighted.
-- **1:25 (key 6):** What units say: "1 of 12 units publishes which schedule it uses." So the current mix stays an assumption you can set (Assumptions drawer). Read by AI via the API, quotes checked against the saved pages.
+- **1:25 (key 6):** What units say: "1 of 12 units has a public page stating its usual breast schedule." Matka read 12 pages from 6 units; for the other 6, no page was found or the site could not be reached. So the current mix stays an assumption you can set (Assumptions drawer). Read by AI via the API, quotes checked against the saved pages.
 - **1:40 (key 7):** Lapland's memo writes itself in four seconds; superscript numbers are its sources, listed beneath; 9 of 9 numbers traced. Its first steps are clinical-team reviews.
 - **1:55 The ask:**
   - 5 sessions as the default for eligible breast patients, with distance named as a reason to choose it.

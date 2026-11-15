@@ -30,7 +30,7 @@ export interface Burden {
   nights: number;
   km: number;
   hours: number;
-  /** Kela reimbursement, lower bound: own-car rate plus overnight allowance. */
+  /** Travel cost at Kela's rates (own-car rate plus overnight allowance): a lower bound on cost, not Kela's payout. */
   kelaEur: number;
 }
 

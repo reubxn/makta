@@ -8,6 +8,8 @@ text, otherwise the statement's quote is dropped (and the statement too, if it h
 Output: public/data/unit_statements.json with method "llm-api".
 If ANTHROPIC_API_KEY is missing, run with --agent <file.json> to validate statements extracted
 in-session by an agent (same schema), which are written with method "agent-extracted".
+The output also lists every page read ("pages": unit, URL, snapshot), so the app can say how many
+units the pages came from. --pages-only refreshes just that list in the existing output, without the model.
 """
 import argparse
 import json
@@ -110,6 +112,18 @@ def verify(statements, body):
     return kept, dropped
 
 
+def page_index(snapshots, units):
+    """Every snapshot read, by unit: the app counts the units the pages came from."""
+    pages = []
+    for p in snapshots:
+        unit_id = p.name.split("__")[0]
+        if unit_id not in units:
+            continue
+        url, accessed, _ = read_snapshot(p)
+        pages.append({"unit_id": unit_id, "url": url, "accessed": accessed, "snapshot": f"data/raw/pages/{p.name}"})
+    return pages
+
+
 def run_llm(c, url, body):
     import hashlib
 
@@ -136,10 +150,17 @@ def run_llm(c, url, body):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--agent", help="JSON file of agent-extracted statements to validate (no-key fallback)")
+    ap.add_argument("--pages-only", action="store_true", help="only refresh the list of pages read in the existing output")
     args = ap.parse_args()
 
     snapshots = sorted(PAGES.glob("*.txt"))
     units = {u["id"] for u in json.loads((ROOT / "public/data/rt_units.json").read_text())["units"]}
+    if args.pages_only:
+        out = json.loads(OUT.read_text())
+        out["pages"] = page_index(snapshots, units)
+        OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1))
+        print(f"wrote {OUT}: {len(out['pages'])} pages from {len({p['unit_id'] for p in out['pages']})} units")
+        return
     statements, dropped = [], 0
     c = None if args.agent else client()
     if args.agent:
@@ -200,6 +221,7 @@ def main():
         "statements": final,
         "note": "Each quote_fi was checked to be an exact (whitespace-normalised) substring of the saved page text; "
         "statements failing the check were dropped.",
+        "pages": page_index(snapshots, units),
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1))
     b = [s for s in final if s["indication"] == "breast" and s["stated_default_fractions"] is not None]

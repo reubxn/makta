@@ -107,11 +107,21 @@ export interface UnitStatement {
   source_id?: string;
 }
 
+/** One public page the AI read: the unit it belongs to and its saved snapshot. */
+export interface UnitPage {
+  unit_id: string;
+  url: string;
+  accessed: string;
+  snapshot: string;
+}
+
 export interface UnitStatements {
   method: string;
   generated: string;
   model?: string;
   pages_read: number;
+  /** Every page read, including pages that stated nothing (scripts/extract_schedules.py). */
+  pages?: UnitPage[];
   statements: UnitStatement[];
   dropped?: number;
   summary?: Record<string, unknown>;

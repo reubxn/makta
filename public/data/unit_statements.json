@@ -74,5 +74,79 @@
    "source_id": "S68"
   }
  ],
- "note": "Each quote_fi was checked to be an exact (whitespace-normalised) substring of the saved page text; statements failing the check were dropped."
+ "note": "Each quote_fi was checked to be an exact (whitespace-normalised) substring of the saved page text; statements failing the check were dropped.",
+ "pages": [
+  {
+   "unit_id": "hus",
+   "url": "https://www.hus.fi/potilaalle/hoidot-ja-tutkimukset/syopa/rintasyovan-hoitopolku/rintasyovan-hoito",
+   "accessed": "2026-11-14",
+   "snapshot": "data/raw/pages/hus__breast-pathway-hoito.txt"
+  },
+  {
+   "unit_id": "hus",
+   "url": "https://www.hus.fi/potilaalle/hoidot-ja-tutkimukset/sadehoito",
+   "accessed": "2026-11-14",
+   "snapshot": "data/raw/pages/hus__sadehoito.txt"
+  },
+  {
+   "unit_id": "jyvaskyla",
+   "url": "https://www.hyvaks.fi/asiakkaana/hoitopolut/rintasyopapotilaan-hoitopolku/sadehoito",
+   "accessed": "2026-11-14",
+   "snapshot": "data/raw/pages/jyvaskyla__breast-pathway-sadehoito.txt"
+  },
+  {
+   "unit_id": "jyvaskyla",
+   "url": "https://www.hyvaks.fi/sites/default/files/ohjeet/Rintaleikkauksen%20jalkeinen%20sadehoito.pdf",
+   "accessed": "2026-11-14",
+   "snapshot": "data/raw/pages/jyvaskyla__breast-rt-leaflet.txt"
+  },
+  {
+   "unit_id": "jyvaskyla",
+   "url": "https://www.hyvaks.fi/palvelumme/syopataudit-ja-sadehoito/sadehoidon-opas",
+   "accessed": "2026-11-14",
+   "snapshot": "data/raw/pages/jyvaskyla__sadehoidon-opas.txt"
+  },
+  {
+   "unit_id": "kuopio",
+   "url": "https://pshyvinvointialue.fi/sadehoito",
+   "accessed": "2026-11-14",
+   "snapshot": "data/raw/pages/kuopio__sadehoito.txt"
+  },
+  {
+   "unit_id": "kuopio",
+   "url": "https://pshyvinvointialue.fi/ulkoinen-s%C3%A4dehoito",
+   "accessed": "2026-11-14",
+   "snapshot": "data/raw/pages/kuopio__ulkoinen-sadehoito.txt"
+  },
+  {
+   "unit_id": "oulu",
+   "url": "https://oys.fi/palvelumme/syopataudit/rintasyopapotilaan-hoitopolku/",
+   "accessed": "2026-11-14",
+   "snapshot": "data/raw/pages/oulu__breast-pathway.txt"
+  },
+  {
+   "unit_id": "oulu",
+   "url": "https://oys.fi/palvelut/sadehoito/?area=oulu",
+   "accessed": "2026-11-14",
+   "snapshot": "data/raw/pages/oulu__sadehoito.txt"
+  },
+  {
+   "unit_id": "pori",
+   "url": "https://satakunnanhyvinvointialue.fi/palvelut/sairaala/syopataudit-ja-sadehoito/rintasyopa/",
+   "accessed": "2026-11-14",
+   "snapshot": "data/raw/pages/pori__rintasyopa.txt"
+  },
+  {
+   "unit_id": "pori",
+   "url": "https://satakunnanhyvinvointialue.fi/sadehoitoyksikko/",
+   "accessed": "2026-11-14",
+   "snapshot": "data/raw/pages/pori__sadehoitoyksikko.txt"
+  },
+  {
+   "unit_id": "vaasa",
+   "url": "https://pohjanmaanhyvinvointi.fi/palvelumme/terveys-ja-sairaanhoitopalvelut/sairaalapalvelut/kasvain-ja-syopahoito/sadehoito-osasto/",
+   "accessed": "2026-11-14",
+   "snapshot": "data/raw/pages/vaasa__sadehoito-osasto.txt"
+  }
+ ]
 }

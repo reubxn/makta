@@ -78,9 +78,13 @@ export function UnitsTab({ params, onParam }: { params: Params; onParam: (id: ke
   const breast15 = unitsWith('breast', 15);
   const breast5 = unitsWith('breast', 5);
   const boneAny = new Set(st.statements.filter((s) => s.indication === 'bone' && s.stated_default_fractions != null).map((s) => s.unit_id)).size;
-  const unitsWithPages = Object.keys(byUnit).length;
-  // A unit "publishes which schedule it uses" if a public page states a usual session count for breast or bone.
-  const publishing = new Set(st.statements.filter((s) => s.stated_default_fractions != null).map((s) => s.unit_id)).size;
+  const unitsWithStatements = Object.keys(byUnit).length;
+  // Headline: units with a public page that states a usual number of breast sessions.
+  const breastStated = new Set(st.statements.filter((s) => s.indication === 'breast' && s.stated_default_fractions != null).map((s) => s.unit_id)).size;
+  // The pages read came from fewer units than there are: count them from the list of pages read.
+  const pagesRead = st.pages?.length ?? st.pages_read;
+  const unitsRead = st.pages ? new Set(st.pages.map((p) => p.unit_id)).size : null;
+  const statementIds = Array.from(new Set(st.statements.map((x) => x.source_id ?? '').filter(Boolean)));
   const breastConflict = st.statements.some(
     (s) => s.indication === 'breast' && s.stated_default_fractions == null && (Array.isArray(s.stated_alternatives) ? s.stated_alternatives.length > 1 : !!s.stated_alternatives),
   );
@@ -98,17 +102,29 @@ export function UnitsTab({ params, onParam }: { params: Params; onParam: (id: ke
         </div>
         <div className="units-headline" data-testid="units-headline">
           <h3>
-            {publishing} of {nUnits} units {publishing === 1 ? "publishes" : "publish"} which schedule they use.
+            {breastStated} of {nUnits} units {breastStated === 1 ? 'has a public page stating its' : 'have a public page stating their'} usual breast schedule.
           </h3>
-          <p>
-            The ask: every unit publishes its schedule mix, and radiotherapy use by distance band, every year.
-            <Prov kind="calculated" ids={Array.from(new Set(st.statements.map((x) => x.source_id ?? '').filter(Boolean)))} note="Counted from the verified statements below: a unit counts if one of its public pages states a usual number of sessions for breast or bone radiotherapy. Units = the 12 public radiotherapy units." />
+          <p className="units-coverage" data-testid="units-coverage">
+            Matka read {pagesRead} {pagesRead === 1 ? 'page' : 'pages'}
+            {unitsRead != null && (
+              <>
+                {' '}from {unitsRead} {unitsRead === 1 ? 'unit' : 'units'}
+                {unitsRead < nUnits && `; for the other ${nUnits - unitsRead}, no page was found or the site could not be reached`}
+              </>
+            )}
+            .
+            <Prov
+              kind="calculated"
+              ids={statementIds}
+              note={`Counted from the verified statements below: a unit counts if one of its public pages states a usual number of sessions for breast radiotherapy. Units read = units with at least one saved page; a page that states no schedule still counts as read. Some unit sites could not be reached (see "Unit pages not all reachable" in Sources & limitations). Units = the ${nUnits} public radiotherapy units.`}
+            />
           </p>
+          <p>The ask: every unit publishes its schedule mix, and radiotherapy use by distance band, every year.</p>
         </div>
         <p className="summary-line" data-testid="units-summary">
           {breast15} of {nUnits} units state 15 sessions as the usual breast schedule{breastConflict ? ' (its own leaflet also says 5 or 15)' : ''}; {n(breast5).toLowerCase() === 'no' ? 'none' : breast5} state 5 as standard.{' '}
           {n(boneAny)} unit{boneAny === 1 ? '' : 's'} state a session count for painful bone metastases.
-          <Prov kind="calculated" ids={Array.from(new Set(st.statements.map((x) => x.source_id ?? '').filter(Boolean)))} note="Counted from the verified statements below; units = the 12 public radiotherapy units." />
+          <Prov kind="calculated" ids={statementIds} note="Counted from the verified statements below; units = the 12 public radiotherapy units." />
         </p>
         <div className="panel" style={{ padding: '14px 18px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
           <div>
@@ -118,7 +134,7 @@ export function UnitsTab({ params, onParam }: { params: Params; onParam: (id: ke
           <div style={{ paddingTop: 22 }}>{byParam('bone_share_single_now')}</div>
         </div>
         <p className="lede" style={{ marginTop: -8 }}>
-          For {nUnits - unitsWithPages} of {nUnits} units, Matka found no public page stating a breast or bone schedule. That is why Matka shows the current mix as an adjustable assumption, and why the ask includes publishing the schedule mix every year.
+          For {nUnits - unitsWithStatements} of {nUnits} units, Matka found no public page stating a breast or bone schedule. That is why Matka shows the current mix as an adjustable assumption, and why the ask includes publishing the schedule mix every year.
         </p>
         <div className="table-wrap">
           <table className="data">

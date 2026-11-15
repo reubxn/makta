@@ -162,6 +162,24 @@ for name in ("unit_statements.json", "memos.json"):
         for st in j["statements"]:
             if st["unit_id"] not in uids:
                 errors.append(f"statement for unknown unit {st['unit_id']}")
+        # The app counts the units the pages came from; the list must match the saved snapshots.
+        pages = j.get("pages")
+        if pages is None:
+            errors.append("unit_statements.json has no pages list (run scripts/extract_schedules.py --pages-only)")
+        else:
+            saved = sorted(f"data/raw/pages/{p.name}" for p in (ROOT / "data/raw/pages").glob("*.txt"))
+            if sorted(pg["snapshot"] for pg in pages) != saved:
+                errors.append("unit_statements.json pages differ from the snapshots in data/raw/pages")
+            if len(pages) != j["pages_read"]:
+                errors.append(f"unit_statements.json pages_read {j['pages_read']} != {len(pages)} pages listed")
+            for pg in pages:
+                if pg["unit_id"] not in uids:
+                    errors.append(f"page for unknown unit {pg['unit_id']}")
+            read_urls = {(pg["unit_id"], pg["url"]) for pg in pages}
+            for st in j["statements"]:
+                if (st["unit_id"], st["url"]) not in read_urls:
+                    errors.append(f"statement {st['unit_id']} cites a page not in the pages list: {st['url']}")
+            notes.append(f"unit pages: {len(pages)} pages from {len({pg['unit_id'] for pg in pages})} of {len(uids)} units")
 
 # Road route geometry (scripts/10_route_lines.py) and the offline basemap (scripts/11_natural_earth.py).
 rl = load("route_lines.json")
