@@ -1,0 +1,26 @@
+{
+ "county_code": "10",
+ "county_name": "Kymenlaakson hyvinvointialue",
+ "text": "In Miehikkälä, 64 km by road from the nearest unit by drive time (Kotka), 15 or 5 breast sessions both mean 0 nights away but 16 round trips versus 6 [S60, S59].\n\n1. The radiotherapy lead could evaluate a single 8 Gy session as the default for uncomplicated painful bone metastases (equal pain relief, more retreatment); expected nights away in Miehikkälä are 0.0 versus 0.0 for a multi-session course, serving \"Patients receive treatment within target times\" [S31, S30, S62, S60, S59, S25, S24]. Within 30 days, the clinical team reviews this default [S31, S30].\n\n2. The radiotherapy lead could evaluate 5 sessions, non-inferior to 15, as the default for eligible patients (whole breast or chest wall without nodal radiotherapy), with distance as a reason, serving \"Patients receive treatment within target times\" [S9, S11, S15, S14, S25, S24]. Yearly, the county avoids 0 nights away and frees 578 machine sessions (calculated, breast alone) [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews eligibility [S15, S14].\n\n3. The director of cancer services could publish schedule mix and radiotherapy use by distance band yearly, serving \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S26, S21]. Within 30 days, the director and the clinical team decide which figures to report [S26].\n\nDistances are road estimates and the current schedule mix is unknown [S59, S60, S16].",
+ "attempts": 2,
+ "source_ids": [
+  "S9",
+  "S11",
+  "S14",
+  "S15",
+  "S16",
+  "S21",
+  "S24",
+  "S25",
+  "S26",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S62"
+ ]
+}

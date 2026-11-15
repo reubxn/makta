@@ -1,0 +1,27 @@
+{
+ "county_code": "02",
+ "county_name": "Keski-Uudenmaan hyvinvointialue",
+ "text": "Mäntsälä, the hardest-hit municipality at 61 road km from the Helsinki unit, has 0 nights away with 15 breast sessions and 0 with 5 [S60, S33, S57, S34, S35].\n\n1. The head of radiotherapy could evaluate a single 8 Gy session as default for uncomplicated painful bone metastases, with equal pain relief and more retreatment [S31, S30, S32, S62]. Within 30 days, the clinical team reviews which cases are uncomplicated, for the indicator \"Patients receive treatment within target times\" [S31, S30, S25, S24]. For Mäntsälä, expected nights away are 0.0 with the multi-fraction course and 0.0 with a single 8 Gy session [S60, S59, S30].\n\n2. The head of radiotherapy could evaluate 5 sessions as default for eligible patients, citing distance, as it is non-inferior to 15 sessions [S9, S11, S15, S14]. Within 30 days, the clinical team reviews who is eligible (whole breast or chest wall, no nodal radiotherapy), for the indicator \"Patients receive treatment within target times\" [S15, S14, S25, S24]. Yearly, this removes 0 nights away and frees 645 machine sessions (calculated for breast cancer) [S33, S57, S34, S35, S60].\n\n3. Within 30 days, the director of cancer services and the clinical team decide which figures to report in a yearly publication of schedule mix and radiotherapy use by distance band, for the indicator \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S21, S26].\n\nDistances are road km from municipality centre points and the current schedule mix is unknown [S59, S60, S16].",
+ "attempts": 2,
+ "source_ids": [
+  "S9",
+  "S11",
+  "S14",
+  "S15",
+  "S16",
+  "S21",
+  "S24",
+  "S25",
+  "S26",
+  "S30",
+  "S31",
+  "S32",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S62"
+ ]
+}

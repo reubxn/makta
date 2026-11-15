@@ -102,7 +102,7 @@ Sourced: 15 vs 5 sessions, single 8 Gy, retreatment 20% vs 8% (Rich 2018, S30), 
 - **0:55 (key 4):** Painful bone metastases: a single 8 Gy session gives equal pain relief, with more retreatment, and the model includes it. Utsjoki goes from 6.2 to 2.4 expected nights away. "Fewer nights away; trips about the same, because some patients need a second session." The baseline is Turku: single fractions were 7% of courses in the last year of life.
 - **1:10 (key 5):** National totals, breast, per year, from 5,232 new cases in women (2024). The lever removes about 1,950 nights away, 15,900 round trips and 16,200 hours on the road, and frees 17,500 machine sessions. Goal 3: patients receive treatment within target times.
 - **1:25 (key 6):** What units say. "1 of 12 units publishes which schedule it uses." Most units don't publish theirs, so the current mix stays an assumption you can set. Read by AI, with verbatim quotes checked against the saved pages.
-- **1:40 (key 7):** Lapland's memo writes itself, with every number traced to a source. Its first steps are clinical-team reviews.
+- **1:40 (key 7):** Lapland's memo writes itself: Utsjoki, 676 km from Oulu, 16 nights away with 15 breast sessions versus 6 with 5; county-wide, 445 nights away removed and 454 machine sessions freed a year. Every number is traced to a source, and every first step is a clinical-team review.
 - **1:55 The ask:**
   - 5 sessions as the default for eligible breast patients, with distance named as a reason to choose it.
   - A single 8 Gy session as the default for uncomplicated painful bone metastases.
