@@ -24,7 +24,7 @@ const ROWS: RowDef[] = [
   { key: 'nights', label: 'Nights away', format: oneDp },
   { key: 'roundTrips', label: 'Round trips', format: oneDp },
   { key: 'hours', label: 'Hours on the road', format: fmtHours },
-  { key: 'kelaEur', label: 'Kela cost, at least', format: (v) => fmt(v), suffix: '€' },
+  { key: 'kelaEur', label: 'Kela €, at least', format: (v) => fmt(v) },
 ];
 
 function Tweened({ v, format }: { v: number; format: (v: number) => string }) {
@@ -127,8 +127,14 @@ export function MunicipalityCard({ code, indication, lever, params }: { code: st
               Per patient
               <Prov kind="calculated" ids={Array.from(new Set(paramIds))} note={calcNote} />
             </th>
-            <th>{nLong} sessions</th>
-            <th>{nShort === 1 ? 'Single' : `${nShort} sessions`}</th>
+            <th>
+              <span className="th-n">{nLong}</span>
+              <span className="th-u">sessions</span>
+            </th>
+            <th>
+              <span className="th-n">{nShort === 1 ? '1' : nShort}</span>
+              <span className="th-u">{nShort === 1 ? 'session' : 'sessions'}</span>
+            </th>
           </tr>
         </thead>
         <tbody>
