@@ -1,83 +1,91 @@
 1
-00:00:02,800 --> 00:00:05,100
-Two women. Same breast cancer, same treatment.
+00:00:02,800 --> 00:00:07,700
+For the AstraZeneca challenge, we started with Finland's national cancer roadmap.
 
 2
-00:00:05,100 --> 00:00:08,500
-Helsinki: 9 minutes from the hospital. Home every night.
+00:00:07,700 --> 00:00:12,500
+One line stuck with us: people over 100 km from a radiotherapy unit get less palliative radiotherapy.
 
 3
-00:00:08,500 --> 00:00:13,100
-Utsjoki: her nearest radiotherapy unit is in Oulu…
+00:00:12,500 --> 00:00:15,100
+So: two women with the same breast cancer.
 
 4
-00:00:13,100 --> 00:00:16,500
-…676 km away. Over 9 hours each way.
+00:00:15,100 --> 00:00:19,500
+One lives in Helsinki, 9 minutes from the hospital. Home every night.
 
 5
-00:00:16,500 --> 00:00:19,500
-15 sessions: 16 nights away from home.
+00:00:19,500 --> 00:00:24,300
+The other lives in Utsjoki. Her nearest unit is in Oulu…
 
 6
-00:00:19,500 --> 00:00:25,000
-Same cancer, different distance. 89 municipalities are more than 100 km from their unit.
+00:00:24,300 --> 00:00:27,100
+…676 km away. More than 9 hours each way.
 
 7
-00:00:25,000 --> 00:00:29,300
-Lever 1 · Breast, eligible patients (no nodal radiotherapy)
+00:00:27,100 --> 00:00:30,500
+15 sessions means 16 nights away from home.
 
 8
-00:00:29,300 --> 00:00:33,500
-5 sessions in one week: at least as good as 15 over three weeks.
+00:00:30,500 --> 00:00:36,000
+Then we looked at the evidence: two shorter schedules already backed by trials.
 
 9
-00:00:33,500 --> 00:00:37,000
-FAST-Forward trial: 4,096 patients, 10-year results.
+00:00:36,000 --> 00:00:40,500
+First, breast. If the lymph nodes don't need treating…
 
 10
-00:00:37,000 --> 00:00:39,500
-Utsjoki: 16 nights away become 6.
+00:00:40,500 --> 00:00:44,500
+…5 sessions in one week is at least as good as 15 over three weeks.
 
 11
-00:00:39,500 --> 00:00:46,000
-Finland: about 17,500 machine sessions freed a year. Goal 3: treatment within target times.
+00:00:44,500 --> 00:00:47,000
+FAST-Forward trial: over 4,000 patients.
 
 12
-00:00:46,000 --> 00:00:52,000
-Lever 2 · Painful bone metastases: one 8 Gy session relieves pain as well as a longer course.
+00:00:47,000 --> 00:00:49,500
+Utsjoki: 16 nights away become 6.
 
 13
-00:00:52,000 --> 00:00:58,000
-More retreatment, and the model counts it. Nights away still fall: 6.2 → 2.4.
+00:00:49,500 --> 00:00:53,500
+Across Finland: about 17,500 radiotherapy sessions freed a year. Goal 3: treatment within target times.
 
 14
-00:00:58,000 --> 00:01:02,500
-Yet in a Turku study, only 7% of end-of-life courses were single sessions.
+00:00:53,500 --> 00:00:58,500
+Second, painful bone metastases: one 8 Gy session relieves pain as well as a longer course.
 
 15
-00:01:02,500 --> 00:01:08,000
-All of Finland. Height = nights away per patient. The north and east carry it.
+00:00:58,500 --> 00:01:03,000
+More people need a second treatment, and the model counts it.
 
 16
-00:01:08,000 --> 00:01:11,000
-5 sessions: 16 nights become 6.
+00:01:03,000 --> 00:01:07,000
+Nights away still drop: 6.2 → 2.4.
 
 17
-00:01:11,000 --> 00:01:16,000
-The national roadmap notes palliative radiotherapy is used less beyond 100 km.
+00:01:07,000 --> 00:01:12,500
+The whole country. Height = nights away per patient. The north and east carry it.
 
 18
-00:01:16,000 --> 00:01:21,500
-AI read the units' public patient pages. Every quote is checked against the page.
+00:01:12,500 --> 00:01:18,500
+With 5 sessions: 16 nights become 6.
 
 19
-00:01:21,500 --> 00:01:28,500
-Only 1 of 12 units publishes which schedule it uses. So today's mix is an assumption you can set.
+00:01:18,500 --> 00:01:23,000
+What do hospitals do today? AI read every unit's public patient pages, checking every quote.
 
 20
-00:01:28,500 --> 00:01:35,500
-A memo for every county. Lapland: no unit, 20 of 21 municipalities beyond 100 km.
+00:01:23,000 --> 00:01:27,300
+Only 1 of 12 units says which schedule it uses.
 
 21
-00:01:35,500 --> 00:01:41,900
-3 proposals, each with an owner and a first step within 30 days. 9 of 9 numbers traced.
+00:01:27,300 --> 00:01:31,500
+So today's mix is an assumption you can change.
+
+22
+00:01:31,500 --> 00:01:37,000
+To make it usable, Matka writes a memo for every county.
+
+23
+00:01:37,000 --> 00:01:41,900
+Lapland: 3 proposals, each with an owner and a first step in 30 days. 9 of 9 numbers traced.
