@@ -1,0 +1,24 @@
+{
+ "county_code": "07",
+ "county_name": "Kanta-Hämeen hyvinvointialue",
+ "text": "Tammela is hardest hit, 95 km by road to Turku, with 0 nights away for 15 breast sessions versus 0 for 5 [S60, S59].\n\n1. The radiotherapy lead could evaluate a single 8 Gy session as the default for uncomplicated painful bone metastases, with equal pain relief but more retreatment [S31, S30, S62]. Tammela's expected nights away are 0.0 with multi-fraction versus 0.0 with a single 8 Gy session [S60, S30]. Within 30 days, the clinical team reviews this default, serving the Goal 3 indicator \"Patients receive treatment within target times\" [S31, S25, S24].\n\n2. The radiotherapy lead could evaluate 5 sessions as the default for eligible patients (whole breast or chest wall without nodal radiotherapy), non-inferior to 15 sessions, citing distance as a reason [S9, S15, S14]. Yearly, the county would see 0 nights away removed and 706 machine sessions freed (calculated for breast) [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews eligibility for 5 sessions, serving the Goal 3 indicator \"Patients receive treatment within target times\" [S15, S14, S25, S24].\n\n3. The quality lead could evaluate yearly reports of schedule mix and radiotherapy use by distance band [S26, S16]. Within 30 days, the quality lead and the clinical team decide which figures to report, serving the Goal 3 indicator \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S26].\n\nDistances run from municipality centre points, and Matka found no public page stating a schedule at these units [S59, S60].",
+ "attempts": 2,
+ "source_ids": [
+  "S9",
+  "S14",
+  "S15",
+  "S16",
+  "S24",
+  "S25",
+  "S26",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S62"
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "county_code": "13",
+ "county_name": "Pohjois-Savon hyvinvointialue",
+ "text": "Kiuruvesi, 122 road km from Kuopio, its nearest unit by drive time, faces 16 nights away with 15 breast sessions versus 6 with 5 [S60, S59].\n\n1. The head of radiotherapy could evaluate a single 8 Gy session as default for uncomplicated bone metastases, with equal pain relief and more retreatment [S31, S30, S62]. Within 30 days, the clinical team reviews current bone protocols [S31, S62]. Kiuruvesi's expected nights away are 6.2 with multi-fraction courses versus 2.4 with 8 Gy [S60, S59]. It serves \"Patients receive treatment within target times\" [S25, S24].\n\n2. The breast oncology lead could evaluate 5 sessions as default for eligible patients (whole breast or chest wall without nodal radiotherapy), non-inferior to 15 sessions [S9, S15]. Within 30 days, the clinical team reviews eligibility and distance as a reason for 5 sessions [S15]. Calculated for breast alone, this removes 61 nights away and frees 763 machine sessions yearly county-wide [S33, S57, S34, S35, S60]. It serves \"National targets and key effectiveness indicators defined for agreed cancers\" [S61].\n\n3. The quality manager could evaluate yearly reports of schedule mix and radiotherapy use by distance band [S21]. Within 30 days, the quality manager and the clinical team decide which figures to report [S21]. It serves \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S26].\n\nFigures use modelled distances and assumed schedules [S60, S57].",
+ "attempts": 1,
+ "source_ids": [
+  "S9",
+  "S15",
+  "S21",
+  "S24",
+  "S25",
+  "S26",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S61",
+  "S62"
+ ]
+}

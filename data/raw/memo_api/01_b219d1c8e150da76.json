@@ -1,0 +1,26 @@
+{
+ "county_code": "01",
+ "county_name": "Itä-Uudenmaan hyvinvointialue",
+ "text": "Myrskylä patients, 96 road km from HUS Syöpäkeskus in Helsinki, face 0 nights away with 15 breast sessions versus 0 with 5 [S60, S59, S36].\n\n1. The head of radiotherapy could evaluate a single 8 Gy session as the default for uncomplicated painful bone metastases, with equal pain relief but more retreatment [S31, S30, S62]. Myrskylä's expected nights away are 0.0 with the multi-fraction course versus 0.0 with a single 8 Gy session [S60, S59]. Within 30 days, the clinical team reviews current single-session use, serving \"Patients receive treatment within target times\" [S16, S25, S24].\n\n2. The head of radiotherapy could evaluate 5 sessions as the default for eligible patients (whole breast or chest wall, no nodal radiotherapy), citing distance as a reason, since it is non-inferior to 15 sessions [S9, S11, S15]. Yearly, the county would remove 0 nights away and free 282 machine sessions (calculated for breast alone) [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews who is eligible, serving \"Patients receive treatment within target times\" [S15, S14, S25, S24].\n\n3. Within 30 days, the head of radiotherapy and the clinical team decide which schedule-mix and distance-band figures to report yearly, serving \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S26].\n\nDistances are road km from municipality centre points, and yearly figures cover breast alone [S59, S60, S57].",
+ "attempts": 4,
+ "source_ids": [
+  "S9",
+  "S11",
+  "S14",
+  "S15",
+  "S16",
+  "S24",
+  "S25",
+  "S26",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S36",
+  "S57",
+  "S59",
+  "S60",
+  "S62"
+ ]
+}

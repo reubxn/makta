@@ -1,0 +1,28 @@
+{
+ "county_code": "14",
+ "county_name": "Pohjois-Karjalan hyvinvointialue",
+ "text": "Nurmes is hardest hit: 130 road km to Kuopio, its nearest unit, with 16 nights away for 15 breast sessions versus 6 for 5 [S60, S59].\n\n1. The head of radiotherapy could evaluate a single 8 Gy session as default for uncomplicated bone metastases (equal pain relief, more retreatment) [S31, S30, S62]. In Nurmes, expected nights away are 6.2 with multiple sessions versus 2.4 with a single 8 Gy session [S60, S59]. Within 30 days, the clinical team reviews which cases suit one session [S31, S30]. It serves \"National targets and key effectiveness indicators defined for agreed cancers\" [S61].\n\n2. The breast lead could evaluate 5 sessions as default for eligible patients (whole breast or chest wall, no nodal radiotherapy), as it is non-inferior to 15, with distance a reason to choose it [S9, S11, S15, S14]. Countywide this removes 71 nights away and frees 501 machine sessions yearly (calculated) [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews eligibility criteria [S15, S14]. It serves \"Patients receive treatment within target times\" [S25, S24].\n\n3. The analytics lead could publish schedule mix and radiotherapy use by distance band yearly [S21, S27]. Within 30 days, the analytics lead and the clinical team decide which figures to report [S21]. It serves \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S26].\n\nDistances use municipal centre points and the current schedule mix is unknown [S59, S60, S16].",
+ "attempts": 3,
+ "source_ids": [
+  "S9",
+  "S11",
+  "S14",
+  "S15",
+  "S16",
+  "S21",
+  "S24",
+  "S25",
+  "S26",
+  "S27",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S61",
+  "S62"
+ ]
+}

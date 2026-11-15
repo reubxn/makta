@@ -1,0 +1,26 @@
+{
+ "county_code": "12",
+ "county_name": "Etelä-Savon hyvinvointialue",
+ "text": "Savonlinna is 141 road km from the nearest unit by drive time (Joensuu), and 15 breast sessions mean 16 nights away versus 6 with 5 [S60, S59].\n\n1. The KYS radiotherapy lead could evaluate a single 8 Gy session as default for uncomplicated painful bone metastases, with equal pain relief but more retreatment, serving \"National targets and key effectiveness indicators defined for agreed cancers\" [S31, S30, S61]. Savonlinna patients expect 6.2 nights away with multi-fraction treatment versus 2.4 with a single 8 Gy session [S60, S30]. Within 30 days, the clinical team reviews which cases could default to it [S31].\n\n2. The KYS breast oncology lead could evaluate 5 sessions as default for eligible patients (whole breast or chest wall, no nodal radiotherapy), with distance as a reason, which is non-inferior to 15, serving \"Patients receive treatment within target times\" [S9, S15, S14, S25, S24]. This would remove 353 nights away and free 440 machine sessions a year (calculated) [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews eligibility criteria for 5 sessions [S15, S14].\n\n3. The quality manager could evaluate yearly publication of schedule mix and radiotherapy use by distance band, serving \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S21, S27, S26]. Within 30 days, the quality manager and the clinical team decide which figures to report [S16].\n\nDistances are modelled and the current schedule mix is unknown [S59, S16].",
+ "attempts": 3,
+ "source_ids": [
+  "S9",
+  "S14",
+  "S15",
+  "S16",
+  "S21",
+  "S24",
+  "S25",
+  "S26",
+  "S27",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S61"
+ ]
+}

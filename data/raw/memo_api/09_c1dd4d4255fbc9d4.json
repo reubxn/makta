@@ -1,0 +1,26 @@
+{
+ "county_code": "09",
+ "county_name": "Päijät-Hämeen hyvinvointialue",
+ "text": "Sysmä is hardest hit: 91 road km from Lahti, the nearest unit by drive time, with 0 nights away with 15 breast sessions versus 0 with 5 [S60, S59].\n\n1. The radiotherapy lead could evaluate a single 8 Gy session as the default for uncomplicated painful bone metastases (equal pain relief, more retreatment), serving \"National targets and key effectiveness indicators defined for agreed cancers\" [S31, S30, S62, S61]. In Sysmä, expected nights away are 0.0 with multiple sessions and 0.0 with 8 Gy [S60, S59]. Within 30 days, the clinical team reviews single-session suitability [S31, S30].\n\n2. The breast oncology lead could evaluate 5 sessions, non-inferior to 15, as the default for eligible whole breast or chest wall patients without nodal radiotherapy, citing distance as a reason, serving \"Patients receive treatment within target times\" [S9, S15, S14, S25, S24]. Calculated for breast cancer alone, this frees 685 machine sessions and removes 0 nights away yearly [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews eligibility criteria [S15, S14].\n\n3. The cancer services director could evaluate yearly reporting of schedule mix and radiotherapy use by distance band, serving \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S21, S26]. Within 30 days, the director and the clinical team decide which figures to report [S26].\n\nCurrent schedule mix is unknown and distances are estimates [S16, S60].",
+ "attempts": 1,
+ "source_ids": [
+  "S9",
+  "S14",
+  "S15",
+  "S16",
+  "S21",
+  "S24",
+  "S25",
+  "S26",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S61",
+  "S62"
+ ]
+}

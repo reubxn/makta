@@ -1,0 +1,24 @@
+{
+ "county_code": "04",
+ "county_name": "Vantaan ja Keravan hyvinvointialue",
+ "text": "Travel burden is low: Kerava, the hardest hit, is 31 km from HUS Syöpäkeskus and has 0 nights away with 15 breast sessions versus 0 with 5 [S60, S59, S36].\n\n1. The radiotherapy head could evaluate a single 8 Gy session as the default for uncomplicated painful bone metastases (equal pain relief, more retreatment), serving the indicator \"National targets and key effectiveness indicators defined for agreed cancers\" [S31, S30, S62, S61]. Within 30 days, the clinical team reviews adopting this default [S31]. Kerava's expected nights away are 0.0 with multi-fraction and 0.0 with a single 8 Gy session [S60, S59].\n\n2. The breast lead could evaluate 5 sessions as the default for eligible patients (whole breast or chest wall without nodal radiotherapy), non-inferior to 15 sessions, serving the indicator \"Patients receive treatment within target times\" [S9, S15, S14, S25]. Within 30 days, the clinical team reviews distance as a reason for 5 sessions [S60, S59]. Yearly this removes 0 nights away and frees 830 machine sessions (calculated, breast alone) [S33, S57, S34, S35, S60].\n\n3. The quality manager could propose yearly reporting of schedule mix and radiotherapy use by distance band, serving the indicator \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S26]. Within 30 days, the quality manager and the clinical team decide which figures to report [S26].\n\nThese are modelled estimates [S59, S57, S60].",
+ "attempts": 1,
+ "source_ids": [
+  "S9",
+  "S14",
+  "S15",
+  "S25",
+  "S26",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S36",
+  "S57",
+  "S59",
+  "S60",
+  "S61",
+  "S62"
+ ]
+}

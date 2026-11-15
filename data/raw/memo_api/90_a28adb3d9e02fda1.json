@@ -1,0 +1,26 @@
+{
+ "county_code": "90",
+ "county_name": "Helsingin kaupunki",
+ "text": "Travel burden is low: Helsinki, the hardest-hit municipality, is 3 km by road from HUS Syöpäkeskus, with 0 nights away for 15 breast sessions and 0 for 5 [S60, S36].\n\n1. Within 30 days, the head of radiotherapy and the clinical team decide whether a single 8 Gy session should be the default for uncomplicated painful bone metastases, given equal pain relief but more retreatment [S31, S30]. For Helsinki, expected nights away are 0.0 with multi-fraction and 0.0 with single 8 Gy [S60]. It serves \"Patients receive treatment within target times\" [S25, S24].\n\n2. Within 30 days, the head of radiotherapy and the clinical team decide whether 5 sessions should be the default for eligible patients (whole breast or chest wall, no nodal radiotherapy), as non-inferior to 15 [S9, S15, S14]. Distance is a reason to choose 5 sessions, removing 0 nights away and freeing 1,962 machine sessions a year in the county (calculated for breast) [S33, S57, S34, S35, S60]. It serves \"National targets and key effectiveness indicators defined for agreed cancers\" [S61].\n\n3. Within 30 days, the quality manager and the clinical team decide which figures to report yearly on schedule mix and radiotherapy use by distance band [S26, S27]. It serves \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S26].\n\nSchedule mix is unknown and distances are modelled [S16, S59, S60].",
+ "attempts": 1,
+ "source_ids": [
+  "S9",
+  "S14",
+  "S15",
+  "S16",
+  "S24",
+  "S25",
+  "S26",
+  "S27",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S36",
+  "S57",
+  "S59",
+  "S60",
+  "S61"
+ ]
+}

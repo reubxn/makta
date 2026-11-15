@@ -1,0 +1,24 @@
+{
+ "county_code": "21",
+ "county_name": "Lapin hyvinvointialue",
+ "text": "Utsjoki, 676 road km from Oulu, faces 16 nights away with 15 breast sessions versus 6 with 5 [S60].\n\n1. The head of radiotherapy at OYS could evaluate a single 8 Gy session as the default for uncomplicated painful bone metastases, with equal pain relief but more retreatment [S31, S30]. In Utsjoki, expected nights away are 6.2 with multi-fraction treatment versus 2.4 with a single 8 Gy session [S60]. Within 30 days, the clinical team reviews this default, serving the indicator \"National targets and key effectiveness indicators defined for agreed cancers\" [S61].\n\n2. The OYS breast oncology lead could evaluate 5 sessions as the default for eligible patients without nodal radiotherapy, being non-inferior to 15 sessions, with distance a reason to choose it [S9, S15]. Yearly, the county would avoid 445 nights away and free 454 machine sessions (calculated, for breast) [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews patient eligibility, serving the indicator \"Patients receive treatment within target times\" [S25, S24].\n\n3. The cancer services director could publish schedule mix and radiotherapy use by distance band every year [S21]. Within 30 days, the cancer services director and the clinical team decide which figures to report, serving the indicator \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S26].\n\nDistances use municipality centre points and the schedule mix is unknown [S59, S16].",
+ "attempts": 3,
+ "source_ids": [
+  "S9",
+  "S15",
+  "S16",
+  "S21",
+  "S24",
+  "S25",
+  "S26",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S61"
+ ]
+}

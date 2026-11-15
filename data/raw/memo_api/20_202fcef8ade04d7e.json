@@ -1,0 +1,27 @@
+{
+ "county_code": "20",
+ "county_name": "Kainuun hyvinvointialue",
+ "text": "Suomussalmi is 216 km by road from Oulu, the nearest unit by drive time, so 15 breast sessions mean 16 nights away versus 6 with 5 [S60, S59].\n\n1. The radiotherapy lead could evaluate a single 8 Gy session by default for uncomplicated painful bone metastases (equal pain relief, more retreatment), serving \"Patients receive treatment within target times\" [S31, S30, S62, S25, S24]. Suomussalmi patients expect 6.2 nights away with multiple fractions versus 2.4 with a single 8 Gy session [S60, S59]. Within 30 days, the clinical team reviews which cases suit 1 session [S31, S30].\n\n2. The breast oncology lead could evaluate 5 sessions, non-inferior to 15, by default for eligible patients (whole breast or chest wall without nodal radiotherapy), citing distance, serving \"Patients receive treatment within target times\" [S9, S11, S15, S14, S25, S24]. Kainuu would avoid 208 nights away and free 208 machine sessions yearly (calculated, breast) [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews eligibility [S15, S14].\n\n3. The data lead could publish schedule mix and radiotherapy use by distance band every year, serving \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S21, S27, S26]. Within 30 days, the data lead and the clinical team decide which figures to report [S26].\n\nDistances use centre points and the current schedule mix is unknown [S59, S16].",
+ "attempts": 1,
+ "source_ids": [
+  "S9",
+  "S11",
+  "S14",
+  "S15",
+  "S16",
+  "S21",
+  "S24",
+  "S25",
+  "S26",
+  "S27",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S62"
+ ]
+}

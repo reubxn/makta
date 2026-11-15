@@ -1,0 +1,25 @@
+{
+ "county_code": "05",
+ "county_name": "Varsinais-Suomen hyvinvointialue",
+ "text": "In Somero, 85 km by road from Turku, the nearest unit by drive time, 15 breast sessions mean 16 round trips and 0 nights away, versus 6 and 0 with 5 [S60, S9].\n\n1. The radiotherapy head could evaluate a single 8 Gy session as default for uncomplicated painful bone metastases (equal pain relief, more retreatment) [S31, S30, S62]. Somero's expected nights away are 0.0 with the multi-fraction course and 0.0 with a single session [S60, S30]. Within 30 days, the clinical team reviews bone schedule choices, serving \"Patients receive treatment within target times\" [S25, S24].\n\n2. The breast oncology lead could evaluate 5 sessions as default for eligible patients (whole breast or chest wall without nodal radiotherapy), non-inferior to 15, with distance a reason to choose it [S9, S15, S27]. County-wide, breast alone could remove 0 nights away and free 1,606 machine sessions yearly (calculated) [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews eligible patients, serving \"National targets and key effectiveness indicators defined for agreed cancers\" [S15, S61].\n\n3. The director of cancer services could ask for yearly publication of schedule mix and radiotherapy use by distance band [S21]. Within 30 days, the director and the clinical team decide which figures to report, serving \"Regional differences in treatment are available and used to steer services\" [S26].\n\nFigures assume nearest-unit routing [S59, S57, S60].",
+ "attempts": 1,
+ "source_ids": [
+  "S9",
+  "S15",
+  "S21",
+  "S24",
+  "S25",
+  "S26",
+  "S27",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S61",
+  "S62"
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "county_code": "19",
+ "county_name": "Pohjois-Pohjanmaan hyvinvointialue",
+ "text": "Radiotherapy travel hits Kuusamo hardest: 218 km by road from Oulu (the nearest unit by drive time), with 16 nights away for 15 breast sessions versus 6 for 5 [S60, S59].\n\n1. The OYS radiotherapy lead could evaluate a single 8 Gy session as the default for uncomplicated painful bone metastases (equal pain relief, more retreatment), giving Kuusamo 2.4 expected nights away versus 6.2 with a multi-fraction course [S31, S30, S62, S60]. Within 30 days, the clinical team reviews which cases qualify, serving the Goal 3 indicator \"National targets and key effectiveness indicators defined for agreed cancers\" [S61].\n\n2. The breast radiotherapy lead could evaluate 5 sessions as the default for eligible patients (whole breast or chest wall without nodal radiotherapy), naming distance as a reason, as it is non-inferior to 15 sessions [S9, S11, S15, S14]. Across the county this removes 286 nights away and frees 1,068 machine sessions a year (calculated for breast alone) [S33, S57, S34, S35, S60]. Within 30 days, the clinical team reviews how to check eligibility, serving the Goal 3 indicator \"Patients receive treatment within target times\" [S25, S24].\n\n3. The quality lead could evaluate yearly reporting of schedule mix and radiotherapy use by distance band [S21, S27]. Within 30 days, the quality lead and the clinical team decide which figures to report, serving the Goal 3 indicator \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S26].\n\nDistances use municipality centre points and the current schedule mix is unknown [S59, S60, S16].",
+ "attempts": 1,
+ "source_ids": [
+  "S9",
+  "S11",
+  "S14",
+  "S15",
+  "S16",
+  "S21",
+  "S24",
+  "S25",
+  "S26",
+  "S27",
+  "S30",
+  "S31",
+  "S33",
+  "S34",
+  "S35",
+  "S57",
+  "S59",
+  "S60",
+  "S61",
+  "S62"
+ ]
+}
