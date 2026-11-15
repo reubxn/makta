@@ -1,69 +1,64 @@
 # MORNING
 
-## 1. Status
+## 0. Redesign status (branch `redesign`)
 
-Works offline: map with levers, card, totals, What units say, County memo, Sources & limitations, demo keys 0–7 and `?`.
+**STATUS_PLACEHOLDER**
+
+- Branch: `redesign`, cut from `claude/sharp-sagan-uaohy1` at its tip **236197c** (one screenshot-only commit after 96dad9b). `claude/sharp-sagan-uaohy1` is untouched. The cloud session also mirrors every push to `claude/funny-franklin-79imfr` (the platform's session branch); it holds the same commits.
+- The old demo is still on `claude/sharp-sagan-uaohy1`. To present it instead: `git checkout claude/sharp-sagan-uaohy1`.
 
 ```bash
 npm ci && npm run build && npx vite preview --port 4173
 ```
 
-Then open http://localhost:4173. Checks:
+Then open http://localhost:4173. Everything is bundled: no tile server, no keys, no request leaves localhost (the Playwright specs fail if one does).
 
-- `npx vitest run`: 17 tests pass.
-- `.venv/bin/python -I scripts/09_check_data.py`: passes. It now re-runs the memo validator live against the current data instead of trusting the stored counts.
-- `npx playwright test tests/e2e/demo.spec.ts --trace off`: passes. It runs keys 0–7, fails on any console error or any request that leaves localhost, checks that the bone card line is not clipped, and saves screenshots to `screenshots/`. The app is ready in about 0.3 s locally.
-- Vercel: skipped. The Vercel CLI isn't installed or logged in here.
+### Checks
 
-**AI steps ran through the API** (`claude-sonnet-5-5`, recorded in the JSON files). The key is in the gitignored `.env`, never committed. It was pasted in chat, so rotate it after judging.
+CHECKS_PLACEHOLDER
 
-- **Memos:** all 22 regenerated with `method: llm-api` against current data. Every memo passes the full validator.
-- **Unit statements:** `method: llm-api`, from 12 page snapshots. 6 of them are new, from a deeper search of every unit's site. Statements whose quotes failed the verbatim check were dropped. All of the drops were "nothing stated" with no quote.
+### AI steps: confirmed API-generated
 
-To rerun:
+- `public/data/memos.json`: `method: llm-api`, `model: claude-sonnet-5-5`, generated 2026-11-14, 22 memos, all 22 stored `validated: true` with numbers_passed = numbers_checked. `scripts/09_check_data.py` re-runs the validator live and passes.
+- `public/data/unit_statements.json`: `method: llm-api`, `model: claude-sonnet-5-5`, generated 2026-11-14, 12 pages read.
+- The memo tab still shows the "numbers traced" badge only when a memo's stored `validated` flag is true.
 
-```bash
-.venv/bin/python -I scripts/extract_schedules.py
-```
+### What changed in the redesign
 
-```bash
-.venv/bin/python -I scripts/06_sources.py
-```
+- **Visual language:** Zilla Slab (OFL, self-hosted via @fontsource) for headings, light italic Zilla Slab hero line, Helvetica Neue/Helvetica/Arial body. Graphite #3C4242 / #6B7272, white, #F8F8F8 panels, #E1E1E1 hairlines, one accent (teal #00626A, also the "after" values). Radius 0, no shadows, no pills; tabs, indication and metric switches are text with a 2px underline. No AstraZeneca logo or colours (named in the footer as text only). Inter is no longer loaded.
+- **Provenance:** badges are now quiet superscript markers (S / C / A) with the same popover. The footer explains them once: "S sourced · C calculated · A assumption: click a marker for its sources".
+- **Layout:** rail `clamp(216px,17vw,256px)` | map | right column `clamp(280px,22.5vw,340px)`, hairlines between. The map canvas is 60.3% of the width at 1280, 60.4% at 1440 and 68.9% at 1920 (the layout test asserts ≥ 60%). The whole-UI CSS zoom below 1440×900 from 96dad9b is gone: the fluid grid replaces it. The fitBounds fallback and `tests/e2e/viewports.spec.ts` are kept.
+- **Rail:** indication (Breast | Bone metastases), the lever, one line of evidence, the Assumptions toggle. All sliders, the "Today, if X% already get the short schedule…" line and Reset live in the **Assumptions drawer**, an overlay over the map edge (Esc closes it).
+- **Town card:** Zilla Slab name; "To Oulu · 676 km · 9 h 22 min" with a C marker; plain English: "One patient from Utsjoki: 15 sessions over three weeks, or 5 in one week."; whether they commute or stay (A marker on the 100 km threshold); a compact before/after table with "after" in teal when the lever is on; one moon icon per night away under the nights row (removed nights fade to a hairline outline; fractional bone values are partial icons).
+- **Totals (never zeros, machine sessions first):** lever off = the yearly burden of the eligible breast patients still on 15 sessions (about 1,750 patients: 26,200 machine sessions, 3,120 nights away, 25,600 round trips, 26,700 hours on the road). Lever on = what moving them to 5 sessions removes (17,500 machine sessions, 1,950 nights, 15,900 round trips, 16,200 hours). New pure functions `breastStillLong` / `breastYear` / `tripDots` in `src/model/metrics.ts` with Vitest tests. Bone stays per patient beyond 100 km (6.2 → 2.4 nights away per course), because no national count of bone courses exists.
+- **Map:** the needle columns are gone. Natural Earth 10m lakes, land and land borders are bundled (`public/data/basemap.json`, 667 kB). Every municipality is joined to its unit by its real OSRM road route (`public/data/route_lines.json`, 196 kB) in thin graphite; units are square DOM markers with labels placed greedily without collisions (a label is skipped rather than overlap). The headline overlay and the floating "89 municipalities" card are gone; one caption is docked under the map with the legend.
+- **Selecting a municipality** draws its route in teal with N dots looping along it, N = round trips per patient (breast 4 → 2).
+- **Key 2:** 1.2 s fly-in to Utsjoki, then 5 s following the road to Oulu at pitch 55 with the bearing following the road, a teal dot and a label counting km and hours. It ends exactly at routes.json (676 km · 9 h 22 min), then pulls back north-up to a tilted overview of the route.
+- **Key 5:** fly out to Finland at pitch 45 with **burden terrain** on (height = nights away per patient, breast lever off), pause, then the lever flips and the terrain sinks to 6/16 of its height. The totals block highlights.
+- **Fold inward** stays off by default. When on, each route is truncated toward its unit to the distance at which the long course would cost the km the short course costs today, and the caption reads "We can't move the hospital. The schedule can."
+- **Memo tab:** the whole memo streams in 4 s (elapsed-time based, any length); citations become superscript numbers in order of first use, with a numbered source list beneath that fills in as sources are first cited.
 
-```bash
-.venv/bin/python -I scripts/generate_memos.py
-```
+### Deviations from the local plan, and why
 
-**Small screens:** the page used to go blank when the map area was under about 100 px tall. That happens on a 1024×768 screen at 200% scaling. Fixed:
+- The Natural Earth clip box is 3–48°E, 54.5–74°N, not 14–36.5°E, 57.5–71.5°N: at 1920×1080 the old box's edge showed as a rectangle around Finland. basemap.json is 667 kB (581 lakes) instead of 473 kB.
+- The terrain is a separate extruded layer, and the lever's "sink" is a uniform scale, not an attribute transition. Exact here: every municipality beyond 100 km has the same nights (sessions + planning [+ expected retreatment]) and commuters have none. deck.gl attribute transitions forced GPU read-backs that froze software-rendered browsers for seconds.
+- Trip dots and the flight label are DOM elements (like the hospital markers), so deck.gl does not redraw every frame.
+- Two test-only hooks: `window.__matkaFlightHold = 0.42` holds the key-2 flight part-way, and `window.__matkaHold = true` holds a demo key's timed steps. They are only used by `tests/e2e/layout.spec.ts` to take deterministic screenshots in a software-rendered browser.
 
-- The map's fit margins now shrink to fit, with a safe fallback view.
-- Below 1440×900 the whole UI scales down proportionally (CSS zoom on `#root`). The map canvas cancels that zoom, so clicking and hovering stay accurate.
-- `tests/e2e/viewports.spec.ts` covers 512×384 up to 1920×1080. Screenshots are in `screenshots/viewports/`.
+### Not done / known limits
 
-The UI is designed for 1440×900; at 1024×768 everything is about 70% size.
+- **Software-rendered browsers are slow.** In this cloud container (no GPU, SwiftShader), a deck.gl redraw takes about a second, so the key-2 flight shows few frames and animations lag in headless runs. Tests use long waits and the hold hooks. On a laptop with a GPU it is smooth. **Rehearse once on the presenting laptop.**
+- The flight's dot moves along the drawn OSRM route; its km/hours label is proportional to distance along the route and ends exactly at the routes.json values (676 km · 9 h 22 min). Mid-route values are therefore approximate (constant average speed).
+- Route lines are drawn from municipality centre points, like the distances. Ferry links in the archipelago follow OSRM.
+- The Assumptions drawer overlays the left part of the map (by design) and covers part of the caption while open.
+- The old screenshots in `screenshots/*.png` and `screenshots/design/` show the previous design. The new ones are in `screenshots/redesign/`.
+- `tests/e2e/design.spec.ts` (DESIGN_ROUND captures from the old design passes) was not updated or run; it is skipped unless DESIGN_ROUND is set.
 
-New validator rules, which apply to the API path too:
+## 1. Previous status (still true)
 
-- A bone sentence, or the bone proposal, may not cite the breast case tables (S33–S35).
-- No "only", "none of the units", "does not publish" and similar wording.
-- Each "within 30 days" step must be a clinical team's review or decision, never a patient-page change or a publication.
-- The memo tab shows the "numbers traced" badge only when a memo's stored `validated` flag is true, and the data check confirms that flag against a live run.
-
-## 2. Story changes
-
-- **Breast now leads**, per the owner's post-audit instruction, which overrides SPEC §2 ("lead with bone"). The app opens on breast; key 3 = breast (columns rise to 15 sessions, pause, lever on); key 4 = bone; key 5 also switches back to breast, because the national totals are breast-only.
-- **Bone card line** (bone lever on, when trips don't fall): "Fewer nights away; trips about the same, because some patients need a second session."
-- **Premise check:** no unit states 5 sessions as its standard breast schedule, so the breast lever is not reframed.
-- **What units say** headline: "1 of 12 units publishes which schedule it uses" (Jyväskylä: breast, "usually 15 times"; its own leaflet also says "5 or 15"), tied to the ask to publish the schedule mix every year. No unit states a session count for bone metastases.
-  - Turku and Tampere are **not verified**, not absent: tyks.fi, the Pirkanmaa instruction sites and hoito-ohjeet.fi were unreachable from the build environment. The UI and limitations say so.
-  - DuckDuckGo blocked automated search, so the deeper search used each site's sitemap, site search and links.
-  - Some breast pathways (Lahti, Kotka) sit behind patient logins.
-- **Rovaniemi has no unit:** Lapland routes to OYS in Oulu (S52).
-- **Routing:**
-  - Helsinki, Uusimaa, Pirkanmaa and Lapland follow their sourced catchments.
-  - The other 222 municipalities go to the nearest unit by drive time, which is an assumption. The limitation names Kanta-Häme (split Turku 4, Lahti 4, Tampere 3, although Tays says it treats most of Kanta-Häme) and Kainuu (Oulu 5, Kuopio 2, Joensuu 1; no catchment source).
-- **Breast cases:** 5,232 new cases in women in 2024 (Finnish Cancer Registry, S33/S34). This is now shown with a Sourced badge in the totals strip. The totals use the 5,204 mainland cases.
-- **Fold inward** stays off by default.
+- Vercel: skipped. The Vercel CLI isn't installed or logged in.
+- The API key used for the memos and unit statements is in the gitignored `.env`, never committed. It was pasted in chat, so rotate it after judging.
+- Breast leads (key 3), bone is key 4, the "1 of 12 units publishes which schedule it uses" headline, Rovaniemi has no unit (Lapland routes to OYS), Uusimaa/Helsinki/Pirkanmaa/Lapland follow sourced catchments and the other municipalities go to the nearest unit by drive time (an assumption; Kanta-Häme and Kainuu are named in the limitations), 5,232 new breast cases in women in 2024 (5,204 mainland used).
 
 ## 3. Assumptions in use
 
@@ -94,19 +89,22 @@ Sourced: 15 vs 5 sessions, single 8 Gy, retreatment 20% vs 8% (Rich 2018, S30), 
 - The Rich 2018 corrigendum content was not checked.
 - The roadmap's 100 km fact cites Norwegian data (Åsli 2018).
 
-## 5. Demo script (2 minutes)
+## 5. Demo script (2 minutes, redesign)
 
-- **0:00 (key 0, then 1):** Finland, with the 12 units as dots. "Same cancer, same treatment. Different distance." The national roadmap (p. 13) says palliative radiotherapy is used less by patients living more than 100 km from a unit, and outcomes are worse beyond 50 km. 89 municipalities, home to 637,661 people, are more than 100 km by road from their unit.
-- **0:15 (key 2):** Utsjoki. The nearest unit is OYS in Oulu, 676 km and 9 h 22 min by road. A 15-session breast course means 16 nights away and 75 hours on the road.
-- **0:35 (key 3):** Breast, the lead lever. The columns stand at 15 sessions, then 5 sessions as default for eligible patients (whole breast or chest wall, no nodes). Utsjoki goes from 16 to 6 nights away and from 75 to 37 hours on the road. The columns shrink across the north and east while the south stays flat. FAST-Forward, 4,096 patients, 10-year follow-up: "at least as good, in one week."
-- **0:55 (key 4):** Painful bone metastases: a single 8 Gy session gives equal pain relief, with more retreatment, and the model includes it. Utsjoki goes from 6.2 to 2.4 expected nights away. "Fewer nights away; trips about the same, because some patients need a second session." The baseline is Turku: single fractions were 7% of courses in the last year of life.
-- **1:10 (key 5):** National totals, breast, per year, from 5,232 new cases in women (2024). The lever removes about 1,950 nights away, 15,900 round trips and 16,200 hours on the road, and frees 17,500 machine sessions. Goal 3: patients receive treatment within target times.
-- **1:25 (key 6):** What units say. "1 of 12 units publishes which schedule it uses." Most units don't publish theirs, so the current mix stays an assumption you can set. Read by AI, with verbatim quotes checked against the saved pages.
-- **1:40 (key 7):** Lapland's memo writes itself, with every number traced to a source. Its first steps are clinical-team reviews.
+Press `0` before you start. `?` shows the keys.
+
+- **0:00 (key 1):** Finland, flat and north-up. Every municipality is joined to its radiotherapy unit by its real road route; the 12 units are the squares. "Same cancer, same treatment. Different distance." Caption: 89 municipalities, home to 637,661 people, are more than 100 km by road from their unit. The national roadmap (p. 13): palliative radiotherapy is used less beyond 100 km. Right, totals: every year about 1,750 eligible breast patients are still on 15 sessions; between them 26,200 machine sessions, 3,120 nights away, 25,600 round trips, 26,700 hours on the road.
+- **0:15 (key 2):** Utsjoki. The camera flies the road to OYS in Oulu: the counter runs to 676 km and 9 h 22 min. The card: "One patient from Utsjoki: 15 sessions over three weeks, or 5 in one week." Sixteen moons: 16 nights away. Four dots on the route: four journeys.
+- **0:35 (key 3):** Breast, the lead lever: 5 sessions as default for eligible patients (whole breast or chest wall, no nodes). Journeys 4 → 2, nights 16 → 6 (ten moons fade), hours on the road 75 → 37. FAST-Forward, 4,096 patients, 10-year follow-up: non-inferior. Totals switch to what's removed: 17,500 machine sessions freed, 1,950 nights away, 15,900 round trips, 16,200 hours on the road.
+- **0:55 (key 4):** Painful bone metastases: a single 8 Gy session relieves pain as well, with more retreatment, and the model includes it. Utsjoki: 6.2 → 2.4 expected nights away; "Fewer nights away; trips about the same, because some patients need a second session." Per patient only: no national count of bone courses is published.
+- **1:10 (key 5):** Fly out, tilt: the burden terrain. Height is nights away per patient on 15 sessions; the north and east stand up, the south is flat. Then the lever flips and the terrain sinks to 6/16. Totals highlighted.
+- **1:25 (key 6):** What units say: "1 of 12 units publishes which schedule it uses." So the current mix stays an assumption you can set (Assumptions drawer). Read by AI via the API, quotes checked against the saved pages.
+- **1:40 (key 7):** Lapland's memo writes itself in four seconds; superscript numbers are its sources, listed beneath; 9 of 9 numbers traced. Its first steps are clinical-team reviews.
 - **1:55 The ask:**
   - 5 sessions as the default for eligible breast patients, with distance named as a reason to choose it.
   - A single 8 Gy session as the default for uncomplicated painful bone metastases.
   - Every unit publishes its schedule mix and radiotherapy use by distance band, every year.
+- Optional: toggle **Fold inward** over the map: "We can't move the hospital. The schedule can."
 
 ## 6. Questions for the AstraZeneca mentor
 
