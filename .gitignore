@@ -9,3 +9,6 @@ test-results/
 playwright-report/
 *.local
 data/raw/naturalearth/
+
+# demo video intermediates (lossless masters, previews, caption strips)
+deck/video/out/

@@ -151,6 +151,8 @@ Sourced: 15 vs 5 sessions, single 8 Gy, retreatment 20% vs 8% (Rich 2018, S30), 
 
 ## 5. Demo script (2 minutes, redesign)
 
+**Use `deck/demo-script.md` instead.** It's the rehearsed version, matched to the submission video (`deck/matka-demo.mp4`). It opens with Helsinki against Utsjoki, ends on the pilot ask, and adds a 30-second fallback and likely Medical Affairs questions. The older draft below is kept for reference.
+
 Press `0` before you start. `?` shows the keys.
 
 - **0:00 (key 1):** Finland, flat and north-up. Every municipality is joined to its radiotherapy unit by its real road route; the 12 units are the squares. "Same cancer, same treatment. Different distance." Caption: 89 municipalities, home to 637,661 people, are more than 100 km by road from their unit. The national roadmap (p. 13): palliative radiotherapy is used less beyond 100 km. Right, totals: every year about 1,750 eligible breast patients are still on 15 sessions; between them 26,200 machine sessions, 3,120 nights away, 25,600 round trips, 26,700 hours on the road.

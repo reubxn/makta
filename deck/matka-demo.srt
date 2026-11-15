@@ -1,0 +1,83 @@
+1
+00:00:02,800 --> 00:00:05,100
+Two women. Same breast cancer, same treatment.
+
+2
+00:00:05,100 --> 00:00:08,500
+Helsinki: 9 minutes from the hospital. Home every night.
+
+3
+00:00:08,500 --> 00:00:13,100
+Utsjoki: her nearest radiotherapy unit is in Oulu…
+
+4
+00:00:13,100 --> 00:00:16,500
+…676 km away. Over 9 hours each way.
+
+5
+00:00:16,500 --> 00:00:19,500
+15 sessions: 16 nights away from home.
+
+6
+00:00:19,500 --> 00:00:25,000
+Same cancer, different distance. 89 municipalities are more than 100 km from their unit.
+
+7
+00:00:25,000 --> 00:00:29,300
+Lever 1 · Breast, eligible patients (no nodal radiotherapy)
+
+8
+00:00:29,300 --> 00:00:33,500
+5 sessions in one week: at least as good as 15 over three weeks.
+
+9
+00:00:33,500 --> 00:00:37,000
+FAST-Forward trial: 4,096 patients, 10-year results.
+
+10
+00:00:37,000 --> 00:00:39,500
+Utsjoki: 16 nights away become 6.
+
+11
+00:00:39,500 --> 00:00:46,000
+Finland: about 17,500 machine sessions freed a year. Goal 3: treatment within target times.
+
+12
+00:00:46,000 --> 00:00:52,000
+Lever 2 · Painful bone metastases: one 8 Gy session relieves pain as well as a longer course.
+
+13
+00:00:52,000 --> 00:00:58,000
+More retreatment, and the model counts it. Nights away still fall: 6.2 → 2.4.
+
+14
+00:00:58,000 --> 00:01:02,500
+Yet in a Turku study, only 7% of end-of-life courses were single sessions.
+
+15
+00:01:02,500 --> 00:01:08,000
+All of Finland. Height = nights away per patient. The north and east carry it.
+
+16
+00:01:08,000 --> 00:01:11,000
+5 sessions: 16 nights become 6.
+
+17
+00:01:11,000 --> 00:01:16,000
+The national roadmap notes palliative radiotherapy is used less beyond 100 km.
+
+18
+00:01:16,000 --> 00:01:21,500
+AI read the units' public patient pages. Every quote is checked against the page.
+
+19
+00:01:21,500 --> 00:01:28,500
+Only 1 of 12 units publishes which schedule it uses. So today's mix is an assumption you can set.
+
+20
+00:01:28,500 --> 00:01:35,500
+A memo for every county. Lapland: no unit, 20 of 21 municipalities beyond 100 km.
+
+21
+00:01:35,500 --> 00:01:41,900
+3 proposals, each with an owner and a first step within 30 days. 9 of 9 numbers traced.

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Matka end card</title>
+<link rel="stylesheet" href="card.css" />
+<style>
+  .wrap { position: absolute; left: 180px; right: 180px; top: 96px; bottom: 120px; display: flex; flex-direction: column; }
+  ol { list-style: none; padding: 0; margin: 26px 0 0; display: flex; flex-direction: column; gap: 30px; }
+  li { display: grid; grid-template-columns: 64px 1fr; align-items: baseline; }
+  li .n { font-family: var(--serif); font-weight: 600; font-size: 46px; color: var(--accent); }
+  li .t { font-family: var(--serif); font-weight: 400; font-size: 42px; line-height: 1.22; text-wrap: balance; }
+  .nw { white-space: nowrap; }
+  li .s { grid-column: 2; font-size: 24px; line-height: 1.45; color: var(--ink-2); margin-top: 6px; }
+  .ask { margin-top: 44px; padding-top: 34px; border-top: 3px solid var(--ink); }
+  .ask .kicker { color: var(--accent); }
+  .ask .t { font-family: var(--serif); font-weight: 600; font-size: 50px; line-height: 1.18; margin-top: 12px; text-wrap: balance; }
+  .ask .s { font-size: 24px; line-height: 1.45; color: var(--ink-2); margin-top: 12px; max-width: 1400px; text-wrap: balance; }
+  .foot { position: absolute; left: 180px; right: 180px; bottom: 56px; display: flex; justify-content: space-between; font-size: 21px; color: var(--ink-2); border-top: 1px solid var(--line); padding-top: 18px; }
+  .foot b { color: var(--ink); font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="kicker r" style="--d: 0.15s">We recommend</div>
+    <ol>
+      <li class="r" style="--d: 0.4s">
+        <span class="n">1</span>
+        <span class="t">5 sessions as the default for eligible breast patients, naming distance as a reason to choose it.</span>
+        <span class="s">Whole breast or chest wall, no nodal radiotherapy. Non-inferior to 15 sessions (FAST-Forward, 4,096 patients).</span>
+      </li>
+      <li class="r" style="--d: 3.6s">
+        <span class="n">2</span>
+        <span class="t">A single 8 Gy session as the default for uncomplicated painful bone metastases.</span>
+        <span class="s">Equal pain relief, more retreatment (20% vs 8%), which the model counts.</span>
+      </li>
+      <li class="r" style="--d: 6.8s">
+        <span class="n">3</span>
+        <span class="t">Every unit publishes its schedule mix and radiotherapy use by distance band, every year.</span>
+        <span class="s">Today 1 of 12 units publishes which schedule it uses.</span>
+      </li>
+    </ol>
+    <div class="ask r" style="--d: 10s">
+      <div class="kicker">The ask</div>
+      <div class="t">A six-month pilot with Lapland and OYS, starting with the memo's <span class="nw">30-day</span> clinical review.</div>
+      <div class="s">Measured by schedule mix by distance band, nights away per course, machine sessions freed and treatment within target times (Goal 3).</div>
+    </div>
+  </div>
+  <div class="foot r" style="--d: 0.4s">
+    <span><b>matka-hack-europe.vercel.app</b> · public aggregate data only</span>
+    <span>Proposals for clinical teams to evaluate, not clinical advice.</span>
+  </div>
+</body>
+</html>
