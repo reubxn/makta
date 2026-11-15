@@ -9,3 +9,6 @@ test-results/
 playwright-report/
 *.local
 data/raw/naturalearth/
+
+# deck: raw app captures (re-create with node deck/capture.mjs); the cropped images in deck/img/ are committed
+deck/shots/

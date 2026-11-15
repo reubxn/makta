@@ -1,0 +1,664 @@
+{
+  "generated_by": "deck/compute_numbers.mjs",
+  "model": "src/model/metrics.ts",
+  "params": {
+    "commute_threshold_km": 100,
+    "planning_visit": 1,
+    "breast_fractions_long": 15,
+    "breast_fractions_short": 5,
+    "breast_share_rt": 0.7,
+    "breast_share_eligible_short": 0.6,
+    "breast_share_already_short": 0.2,
+    "bone_fractions_multi": 5,
+    "bone_fractions_single": 1,
+    "bone_retreat_single": 0.2,
+    "bone_retreat_multi": 0.08,
+    "bone_share_single_now": 0.07,
+    "kela_car_eur_per_km": 0.33,
+    "kela_overnight_eur": 20.18
+  },
+  "over_threshold": {
+    "municipalities": 89,
+    "population": 637661,
+    "total_municipalities": 292,
+    "total_population": 5622045,
+    "source_ids": [
+      "S60",
+      "S57",
+      "S59"
+    ]
+  },
+  "utsjoki": {
+    "code": "890",
+    "unit": "oulu",
+    "road_km": 675.8,
+    "drive_min": 562.2,
+    "drive_hm": "9 h 22 min",
+    "breast_long": {
+      "nights": 16,
+      "roundTrips": 4,
+      "hours": 75,
+      "kelaEur": 2107,
+      "km": 5406
+    },
+    "breast_short": {
+      "nights": 6,
+      "roundTrips": 2,
+      "hours": 37,
+      "kelaEur": 1013,
+      "km": 2703
+    },
+    "bone_long": {
+      "nights": 6.2,
+      "roundTrips": 2.2,
+      "hours": 40,
+      "kelaEur": 1088,
+      "km": 2919
+    },
+    "bone_short": {
+      "nights": 2.4,
+      "roundTrips": 2.4,
+      "hours": 45,
+      "kelaEur": 1119,
+      "km": 3244
+    }
+  },
+  "bone": {
+    "stayer_long": {
+      "nights": 6.2,
+      "roundTrips": 2.2
+    },
+    "stayer_short": {
+      "nights": 2.4,
+      "roundTrips": 2.4
+    },
+    "commuter_example": "Askola",
+    "commuter_long": {
+      "nights": 0,
+      "roundTrips": 6.2
+    },
+    "commuter_short": {
+      "nights": 0,
+      "roundTrips": 2.4
+    },
+    "source_ids": [
+      "S30",
+      "S31",
+      "S62"
+    ]
+  },
+  "breast_commuter": {
+    "example": "Askola",
+    "long": {
+      "nights": 0,
+      "roundTrips": 16
+    },
+    "short": {
+      "nights": 0,
+      "roundTrips": 6
+    }
+  },
+  "national": {
+    "current": {
+      "patients": 1748.5429919999992,
+      "machineSessions": 26228.144879999993,
+      "nights": 3118.816512,
+      "roundTrips": 25637.575487999995,
+      "hours": 26711.564736639975,
+      "km": 1655340.4643328001,
+      "kelaEur": 609200.0704419846
+    },
+    "current_rounded": {
+      "patients": 1750,
+      "machineSessions": 26200,
+      "nights": 3120,
+      "roundTrips": 25600,
+      "hours": 26700,
+      "km": 1660000,
+      "kelaEur": 609000
+    },
+    "removed": {
+      "patients": 1748.5429919999992,
+      "machineSessions": 17485.429919999988,
+      "nights": 1949.2603199999996,
+      "roundTrips": 15926.021663999987,
+      "hours": 16249.77420416,
+      "km": 1003655.6996927991,
+      "kelaEur": 370542.45415622357
+    },
+    "removed_rounded": {
+      "patients": 1750,
+      "machineSessions": 17500,
+      "nights": 1950,
+      "roundTrips": 15900,
+      "hours": 16200,
+      "km": 1000000,
+      "kelaEur": 371000
+    },
+    "cases_national": 5232,
+    "cases_mainland": 5204,
+    "cases_year": 2024,
+    "source_ids": [
+      "S33",
+      "S34",
+      "S35",
+      "S57",
+      "S60",
+      "S9",
+      "S15"
+    ]
+  },
+  "by_county": [
+    {
+      "code": "21",
+      "name": "Lapland",
+      "patients": 45.4,
+      "machineSessions": 454,
+      "nights": 445,
+      "roundTrips": 97,
+      "hours": 613,
+      "nights_per_patient": 9.8,
+      "hours_per_patient": 13.5,
+      "municipalities": 21,
+      "municipalities_over_threshold": 20
+    },
+    {
+      "code": "12",
+      "name": "South Savo",
+      "patients": 44,
+      "machineSessions": 440,
+      "nights": 353,
+      "roundTrips": 158,
+      "hours": 491,
+      "nights_per_patient": 8,
+      "hours_per_patient": 11.2,
+      "municipalities": 11,
+      "municipalities_over_threshold": 8
+    },
+    {
+      "code": "19",
+      "name": "North Ostrobothnia",
+      "patients": 106.8,
+      "machineSessions": 1068,
+      "nights": 286,
+      "roundTrips": 840,
+      "hours": 810,
+      "nights_per_patient": 2.7,
+      "hours_per_patient": 7.6,
+      "municipalities": 30,
+      "municipalities_over_threshold": 16
+    },
+    {
+      "code": "20",
+      "name": "Kainuu",
+      "patients": 20.8,
+      "machineSessions": 208,
+      "nights": 208,
+      "roundTrips": 42,
+      "hours": 219,
+      "nights_per_patient": 10,
+      "hours_per_patient": 10.5,
+      "municipalities": 8,
+      "municipalities_over_threshold": 8
+    },
+    {
+      "code": "18",
+      "name": "Central Ostrobothnia",
+      "patients": 20.2,
+      "machineSessions": 202,
+      "nights": 202,
+      "roundTrips": 40,
+      "hours": 153,
+      "nights_per_patient": 10,
+      "hours_per_patient": 7.6,
+      "municipalities": 8,
+      "municipalities_over_threshold": 8
+    },
+    {
+      "code": "16",
+      "name": "South Ostrobothnia",
+      "patients": 55.1,
+      "machineSessions": 551,
+      "nights": 124,
+      "roundTrips": 452,
+      "hours": 1073,
+      "nights_per_patient": 2.3,
+      "hours_per_patient": 19.5,
+      "municipalities": 18,
+      "municipalities_over_threshold": 9
+    },
+    {
+      "code": "14",
+      "name": "North Karelia",
+      "patients": 50.1,
+      "machineSessions": 501,
+      "nights": 71,
+      "roundTrips": 444,
+      "hours": 413,
+      "nights_per_patient": 1.4,
+      "hours_per_patient": 8.2,
+      "municipalities": 13,
+      "municipalities_over_threshold": 2
+    },
+    {
+      "code": "15",
+      "name": "Central Finland",
+      "patients": 85,
+      "machineSessions": 850,
+      "nights": 71,
+      "roundTrips": 793,
+      "hours": 714,
+      "nights_per_patient": 0.8,
+      "hours_per_patient": 8.4,
+      "municipalities": 22,
+      "municipalities_over_threshold": 7
+    },
+    {
+      "code": "13",
+      "name": "North Savo",
+      "patients": 76.3,
+      "machineSessions": 763,
+      "nights": 61,
+      "roundTrips": 714,
+      "hours": 747,
+      "nights_per_patient": 0.8,
+      "hours_per_patient": 9.8,
+      "municipalities": 19,
+      "municipalities_over_threshold": 5
+    },
+    {
+      "code": "17",
+      "name": "Ostrobothnia",
+      "patients": 54.4,
+      "machineSessions": 544,
+      "nights": 58,
+      "roundTrips": 498,
+      "hours": 554,
+      "nights_per_patient": 1.1,
+      "hours_per_patient": 10.2,
+      "municipalities": 14,
+      "municipalities_over_threshold": 3
+    },
+    {
+      "code": "08",
+      "name": "Pirkanmaa",
+      "patients": 191.9,
+      "machineSessions": 1919,
+      "nights": 37,
+      "roundTrips": 1889,
+      "hours": 1508,
+      "nights_per_patient": 0.2,
+      "hours_per_patient": 7.9,
+      "municipalities": 23,
+      "municipalities_over_threshold": 2
+    },
+    {
+      "code": "03",
+      "name": "West Uusimaa",
+      "patients": 150.5,
+      "machineSessions": 1505,
+      "nights": 33,
+      "roundTrips": 1479,
+      "hours": 1561,
+      "nights_per_patient": 0.2,
+      "hours_per_patient": 10.4,
+      "municipalities": 10,
+      "municipalities_over_threshold": 1
+    },
+    {
+      "code": "10",
+      "name": "Kymenlaakso",
+      "patients": 57.8,
+      "machineSessions": 578,
+      "nights": 0,
+      "roundTrips": 578,
+      "hours": 588,
+      "nights_per_patient": 0,
+      "hours_per_patient": 10.2,
+      "municipalities": 6,
+      "municipalities_over_threshold": 0
+    },
+    {
+      "code": "11",
+      "name": "South Karelia",
+      "patients": 39.6,
+      "machineSessions": 396,
+      "nights": 0,
+      "roundTrips": 396,
+      "hours": 271,
+      "nights_per_patient": 0,
+      "hours_per_patient": 6.8,
+      "municipalities": 9,
+      "municipalities_over_threshold": 0
+    },
+    {
+      "code": "90",
+      "name": "City of Helsinki",
+      "patients": 196.2,
+      "machineSessions": 1962,
+      "nights": 0,
+      "roundTrips": 1962,
+      "hours": 589,
+      "nights_per_patient": 0,
+      "hours_per_patient": 3,
+      "municipalities": 1,
+      "municipalities_over_threshold": 0
+    },
+    {
+      "code": "09",
+      "name": "Päijät-Häme",
+      "patients": 68.5,
+      "machineSessions": 685,
+      "nights": 0,
+      "roundTrips": 685,
+      "hours": 442,
+      "nights_per_patient": 0,
+      "hours_per_patient": 6.5,
+      "municipalities": 10,
+      "municipalities_over_threshold": 0
+    },
+    {
+      "code": "01",
+      "name": "East Uusimaa",
+      "patients": 28.2,
+      "machineSessions": 282,
+      "nights": 0,
+      "roundTrips": 282,
+      "hours": 475,
+      "nights_per_patient": 0,
+      "hours_per_patient": 16.8,
+      "municipalities": 7,
+      "municipalities_over_threshold": 0
+    },
+    {
+      "code": "05",
+      "name": "Southwest Finland",
+      "patients": 160.6,
+      "machineSessions": 1606,
+      "nights": 0,
+      "roundTrips": 1606,
+      "hours": 1287,
+      "nights_per_patient": 0,
+      "hours_per_patient": 8,
+      "municipalities": 27,
+      "municipalities_over_threshold": 0
+    },
+    {
+      "code": "06",
+      "name": "Satakunta",
+      "patients": 79,
+      "machineSessions": 790,
+      "nights": 0,
+      "roundTrips": 790,
+      "hours": 722,
+      "nights_per_patient": 0,
+      "hours_per_patient": 9.1,
+      "municipalities": 16,
+      "municipalities_over_threshold": 0
+    },
+    {
+      "code": "07",
+      "name": "Kanta-Häme",
+      "patients": 70.6,
+      "machineSessions": 706,
+      "nights": 0,
+      "roundTrips": 706,
+      "hours": 1428,
+      "nights_per_patient": 0,
+      "hours_per_patient": 20.2,
+      "municipalities": 11,
+      "municipalities_over_threshold": 0
+    },
+    {
+      "code": "04",
+      "name": "Vantaa and Kerava",
+      "patients": 83,
+      "machineSessions": 830,
+      "nights": 0,
+      "roundTrips": 830,
+      "hours": 729,
+      "nights_per_patient": 0,
+      "hours_per_patient": 8.8,
+      "municipalities": 2,
+      "municipalities_over_threshold": 0
+    },
+    {
+      "code": "02",
+      "name": "Central Uusimaa",
+      "patients": 64.5,
+      "machineSessions": 645,
+      "nights": 0,
+      "roundTrips": 645,
+      "hours": 863,
+      "nights_per_patient": 0,
+      "hours_per_patient": 13.4,
+      "municipalities": 6,
+      "municipalities_over_threshold": 0
+    }
+  ],
+  "county_concentration": {
+    "areas": 22,
+    "top6_names": [
+      "Lapland",
+      "South Savo",
+      "North Ostrobothnia",
+      "Kainuu",
+      "Central Ostrobothnia",
+      "South Ostrobothnia"
+    ],
+    "top6_share_nights": 83,
+    "top6_share_patients": 16.7,
+    "areas_zero_nights": 10
+  },
+  "distance_split": {
+    "far_share_patients": 11.1,
+    "far_share_hours_removed": 11,
+    "far_share_nights_removed": 100,
+    "far_patients": 194.9,
+    "far_hours_per_patient_removed": 9.1,
+    "near_hours_per_patient_removed": 9.3,
+    "far_nights_per_patient_removed": 10
+  },
+  "pilot": {
+    "oys_catchment": {
+      "municipalities": 56,
+      "municipalities_over_threshold": 41,
+      "cases": 467,
+      "patients": 157,
+      "still_long_patients": 157,
+      "machineSessions": 1570,
+      "nights": 780,
+      "roundTrips": 947,
+      "hours": 1481,
+      "population": 607715
+    },
+    "oys_counties": [
+      "North Ostrobothnia",
+      "Lapland",
+      "Kainuu",
+      "Central Ostrobothnia"
+    ],
+    "lapland": {
+      "municipalities": 21,
+      "municipalities_over_threshold": 20,
+      "cases": 135,
+      "patients": 45,
+      "still_long_patients": 45,
+      "machineSessions": 454,
+      "nights": 445,
+      "roundTrips": 97,
+      "hours": 613
+    },
+    "oys_share_of_national_nights_removed": 40,
+    "oys_share_of_national_patients": 9
+  },
+  "sensitivity": [
+    {
+      "id": "breast_share_rt",
+      "label": "Breast: share treated with radiotherapy",
+      "kind": "assumption",
+      "unit": "share",
+      "default": 0.7,
+      "min": 0.4,
+      "max": 0.9,
+      "at_min": {
+        "machineSessions": 9990,
+        "nights": 1110,
+        "patients": 999
+      },
+      "at_default": {
+        "machineSessions": 17500,
+        "nights": 1950,
+        "patients": 1750
+      },
+      "at_max": {
+        "machineSessions": 22500,
+        "nights": 2510,
+        "patients": 2250
+      }
+    },
+    {
+      "id": "breast_share_eligible_short",
+      "label": "Breast: share eligible for 5 sessions",
+      "kind": "assumption",
+      "unit": "share",
+      "default": 0.6,
+      "min": 0.3,
+      "max": 0.9,
+      "at_min": {
+        "machineSessions": 8740,
+        "nights": 975,
+        "patients": 874
+      },
+      "at_default": {
+        "machineSessions": 17500,
+        "nights": 1950,
+        "patients": 1750
+      },
+      "at_max": {
+        "machineSessions": 26200,
+        "nights": 2920,
+        "patients": 2620
+      }
+    },
+    {
+      "id": "breast_share_already_short",
+      "label": "Breast: share already on 5 sessions",
+      "kind": "assumption",
+      "unit": "share",
+      "default": 0.2,
+      "min": 0,
+      "max": 1,
+      "at_min": {
+        "machineSessions": 21900,
+        "nights": 2440,
+        "patients": 2190
+      },
+      "at_default": {
+        "machineSessions": 17500,
+        "nights": 1950,
+        "patients": 1750
+      },
+      "at_max": {
+        "machineSessions": 0,
+        "nights": 0,
+        "patients": 0
+      }
+    },
+    {
+      "id": "commute_threshold_km",
+      "label": "Commuting threshold",
+      "kind": "assumption",
+      "unit": "km",
+      "default": 100,
+      "min": 30,
+      "max": 300,
+      "at_min": {
+        "machineSessions": 17500,
+        "nights": 7860,
+        "patients": 1750
+      },
+      "at_default": {
+        "machineSessions": 17500,
+        "nights": 1950,
+        "patients": 1750
+      },
+      "at_max": {
+        "machineSessions": 17500,
+        "nights": 120,
+        "patients": 1750
+      }
+    }
+  ],
+  "sensitivity_already_short_half": {
+    "machineSessions": 10900,
+    "nights": 1220,
+    "patients": 1090
+  },
+  "ai": {
+    "units_pages_read": 12,
+    "units_statements_extracted": 4,
+    "units_statements_dropped": 3,
+    "units_method": "llm-api",
+    "units_model": "claude-sonnet-5-5",
+    "units_generated": "2026-11-14",
+    "units_total": 12,
+    "units_with_any_statement": 3,
+    "units_stating_breast_default": 1,
+    "units_stating_5_as_default": 0,
+    "units_stating_bone_default": 0,
+    "units_distance_mentioned": 0,
+    "memos": 22,
+    "memos_validated": 22,
+    "memo_numbers_checked": 264,
+    "memo_numbers_passed": 264,
+    "memo_first_attempt": 20,
+    "memos_method": "llm-api",
+    "memos_model": "claude-sonnet-5-5",
+    "memos_generated": "2026-11-14",
+    "lapland_memo": {
+      "county_code": "21",
+      "county_name": "Lapin hyvinvointialue",
+      "text": "Lapland has no radiotherapy unit, so patients go to OYS in Oulu, and 20 of 21 municipalities are beyond the 100 km commuting threshold [S52, S60].\n\n1. The head of radiotherapy at OYS could evaluate a single 8 Gy session as the default for uncomplicated painful bone metastases, giving equal pain relief with more retreatment [S31, S30, S62]. Within 30 days, the clinical team reviews its default, serving \"Patients receive treatment within target times\" [S25, S24].\n\n2. The OYS breast lead could evaluate 5 sessions as the default for eligible patients (whole breast or chest wall without nodal radiotherapy), naming distance as a reason, as it is non-inferior to 15 sessions [S9, S11, S15]. Within 30 days, the clinical team reviews its eligibility criteria, serving \"National targets and key effectiveness indicators defined for agreed cancers\" [S15, S14, S61].\n\n3. The director of cancer services could propose publishing schedule mix and radiotherapy use by distance band every year, since living far away goes with lower palliative radiotherapy use [S27, S21]. Within 30 days, the director of cancer services and the clinical team decide which data to request from OYS, serving \"Regional differences in treatment are available and used to steer services (cross-cutting indicator)\" [S26].\n\nDistances are modelled road routes from municipality centre points and the current schedule mix is unknown, so effects are estimates [S59, S60, S57].",
+      "numbers_checked": 9,
+      "numbers_passed": 9,
+      "attempts": 1,
+      "source_ids": [
+        "S9",
+        "S11",
+        "S14",
+        "S15",
+        "S21",
+        "S24",
+        "S25",
+        "S26",
+        "S27",
+        "S30",
+        "S31",
+        "S52",
+        "S57",
+        "S59",
+        "S60",
+        "S61",
+        "S62"
+      ],
+      "problems": [],
+      "validated": true
+    }
+  },
+  "provenance": {
+    "sources": 68,
+    "parameters": 14,
+    "parameters_by_kind": {
+      "assumption": 7,
+      "sourced": 7
+    },
+    "limitations": 15
+  },
+  "tests": {
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "run": "2026-11-15"
+  }
+}
