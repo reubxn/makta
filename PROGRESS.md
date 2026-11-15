@@ -84,3 +84,18 @@ Keep the fold toggle off by default.
 - Unit search: 12 snapshots (6 new). 1 of 12 units publishes a schedule (Jyväskylä, breast). Turku and Tampere sites were unreachable, so those units are unverified.
 - Breast leads (default, key 3); bone is key 4 with an unclipped card line; key 5 shows breast totals.
 - Small-window fix: fitBounds padding scales to fit, with a fallback; UI scales down below 1440x900 with an unzoomed map canvas; viewports.spec.ts.
+
+## Redesign (branch `redesign`, 2026-11-15 night)
+- [x] Branch `redesign` from claude/sharp-sagan-uaohy1 @ 236197c (old demo untouched); also mirrored to claude/funny-franklin-79imfr
+- [x] scripts/11_natural_earth.py → public/data/basemap.json (lakes, land, borders; offline)
+- [x] scripts/10_route_lines.py → public/data/route_lines.json (292 OSRM road routes, cached in data/raw/osrm_routes/)
+- [x] Visual language: Zilla Slab + Helvetica, graphite/white/#F8F8F8, one teal accent, radius 0, no shadows/pills
+- [x] Layout: rail | map (≥60%) | town card + totals; Assumptions drawer overlay; docked caption
+- [x] Map: routes, DOM hospital squares with collision-free labels, trip dots, key-2 flight, key-5 burden terrain, fold
+- [x] Totals never zero (breastYear in metrics.ts + Vitest)
+- [x] Superscript S/C/A provenance markers, footer key
+- [x] Memo: 4 s stream, superscript citations, numbered sources
+- [x] tests/e2e/layout.spec.ts (overlap + clipping at 1280/1440/1920, screenshots/redesign/)
+- [x] Design critic round 1 + fixes
+- [~] Design critic round 2 + fixes
+- [~] MORNING.md

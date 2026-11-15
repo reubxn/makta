@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import DeckGL from '@deck.gl/react';
-import { AmbientLight, DirectionalLight, FlyToInterpolator, LightingEffect, MapView, WebMercatorViewport, type MapViewState, type PickingInfo } from '@deck.gl/core';
+import { AmbientLight, DirectionalLight, LightingEffect, MapView, WebMercatorViewport, type MapViewState, type PickingInfo } from '@deck.gl/core';
 import { GeoJsonLayer, PathLayer } from '@deck.gl/layers';
 import { useData } from '../context';
 import { currentBurden, equivalentDistanceFraction, perPatient, tripDots, type Indication, type MetricKey, type Params } from '../model/metrics';
@@ -158,7 +158,7 @@ export function fitView(bbox: BBox, size: { width: number; height: number }, mod
   if (!pitch) return { longitude, latitude, zoom, pitch: 0, bearing: 0 };
   // Pitching compresses the far (north) side: move the centre south and zoom in slightly.
   const latSpan = bbox[3] - bbox[1];
-  return { longitude, latitude: latitude - latSpan * (mode === 'tilt45' ? 0.14 : 0.1), zoom: zoom + (mode === "tilt45" ? 0.2 : 0.15), pitch, bearing };
+  return { longitude, latitude: latitude - latSpan * (mode === "tilt45" ? 0.17 : 0.1), zoom: zoom + (mode === "tilt45" ? 0.38 : 0.15), pitch, bearing };
 }
 
 /* ---------- label placement ---------- */
@@ -261,8 +261,32 @@ export function MapPanel(props: Props) {
   };
   useEffect(() => () => cancelAnim(), []);
 
-  const flyTo = (v: MapViewState, ms: number) =>
-    setViewState({ ...v, transitionDuration: ms, transitionInterpolator: new FlyToInterpolator({ curve: 1.25 }), transitionEasing: easeInOut } as MapViewState);
+  // Camera moves are animated here, not with deck.gl transitions: a React re-render during a deck
+  // transition (e.g. the terrain tween) can cancel it and leave the camera where it started.
+  const viewRef = useRef<MapViewState>(FINLAND);
+  viewRef.current = viewState;
+  const flyTo = (v: MapViewState, ms: number, then?: () => void) => {
+    cancelAnimationFrame(anim.current.raf);
+    const from = { ...viewRef.current };
+    const t0 = performance.now();
+    const lerp = (a: number, b: number, k: number) => a + (b - a) * k;
+    const step = (t: number) => {
+      const u = Math.min(1, (t - t0) / ms);
+      const k = easeInOut(u);
+      // Zoom out a little mid-way on long moves, like a fly-to arc.
+      const dip = Math.min(1.2, Math.abs((v.zoom ?? 0) - (from.zoom ?? 0)) * 0.25 + Math.hypot(v.longitude - from.longitude, v.latitude - from.latitude) * 0.04);
+      setViewState({
+        longitude: lerp(from.longitude, v.longitude, k),
+        latitude: lerp(from.latitude, v.latitude, k),
+        zoom: lerp(from.zoom ?? 0, v.zoom ?? 0, k) - dip * Math.sin(Math.PI * k),
+        pitch: lerp(from.pitch ?? 0, v.pitch ?? 0, k),
+        bearing: (from.bearing ?? 0) + wrap180((v.bearing ?? 0) - (from.bearing ?? 0)) * k,
+      });
+      if (u < 1) anim.current.raf = requestAnimationFrame(step);
+      else then?.();
+    };
+    anim.current.raf = requestAnimationFrame(step);
+  };
 
   const runFlight = (code: string) => {
     const g = geoms[code];
@@ -270,9 +294,7 @@ export function MapPanel(props: Props) {
     const start = g.path[0];
     let bearing = headingAt(g, 0);
     setFlight({ code, s: 0, flying: true });
-    flyTo({ longitude: start[0], latitude: start[1], zoom: FLIGHT_ZOOM, pitch: FLIGHT_PITCH, bearing }, FLY_IN_MS);
-    anim.current.timers.push(
-      window.setTimeout(() => {
+    flyTo({ longitude: start[0], latitude: start[1], zoom: FLIGHT_ZOOM, pitch: FLIGHT_PITCH, bearing }, FLY_IN_MS, () => {
         const t0 = performance.now();
         const step = (t: number) => {
           // Tests may hold the flight at a fraction to screenshot it: window.__matkaFlightHold = 0.45.
@@ -292,8 +314,7 @@ export function MapPanel(props: Props) {
           else flyTo(fitView(bboxOf(g.path), size, 'tilt40'), 1600);
         };
         anim.current.raf = requestAnimationFrame(step);
-      }, FLY_IN_MS + 50),
-    );
+    });
   };
 
   // Fly requests (demo keys) and the first layout.
