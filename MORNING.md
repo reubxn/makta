@@ -6,6 +6,7 @@
 
 - Branch: `redesign`, cut from `claude/sharp-sagan-uaohy1` at its tip **236197c** (one screenshot-only commit after 96dad9b). `claude/sharp-sagan-uaohy1` is untouched. The cloud session also mirrors every push to `claude/funny-franklin-79imfr` (the platform's session branch); it holds the same commits.
 - The old demo is still on `claude/sharp-sagan-uaohy1`. To present it instead: `git checkout claude/sharp-sagan-uaohy1`.
+- While the redesign was being built, another session pushed two commits to `claude/sharp-sagan-uaohy1` (a6a58e1, 4b36382). They change only `scripts/generate_memos.py`, not the data; `memos.json` is unchanged. They are merged into `redesign`, so `redesign` contains everything on the old branch.
 
 ```bash
 npm ci && npm run build && npx vite preview --port 4173
