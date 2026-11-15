@@ -10,3 +10,6 @@ playwright-report/
 *.local
 data/raw/naturalearth/
 data/raw/memos_failed_run.json
+
+# demo video intermediates (lossless masters, previews, caption strips)
+deck/video/out/

@@ -23,6 +23,8 @@ Open http://localhost:4173. Everything is bundled: no tile server, no keys, no r
 
 ## 3. Demo script (2 minutes)
 
+**Use `deck/demo-script.md` instead.** It's the rehearsed version, matched to the submission video (`deck/matka-demo.mp4`). It opens with Helsinki against Utsjoki, ends on the pilot ask, and adds a 30-second fallback and likely Medical Affairs questions. The draft below is kept for reference.
+
 Press `0` before you start. `?` shows the keys; `Esc` closes overlays.
 
 - **0:00 (key 1):** Finland, flat. Every municipality is joined to its radiotherapy unit by its real road route; the squares are the 12 units.
