@@ -38,7 +38,7 @@ export function ParamSlider({ p, value, onChange, className }: { p: Parameter; v
 
 export function leverCopy(indication: Indication, params: Params) {
   return indication === 'bone'
-    ? { label: 'Single 8 Gy session as default', sub: `Instead of ${params.bone_fractions_multi} sessions. Uncomplicated painful bone metastases.` }
+    ? { label: 'Single 8\u00a0Gy session as default', sub: `Instead of ${params.bone_fractions_multi} sessions. Uncomplicated painful bone metastases.` }
     : { label: '5 sessions as default for eligible patients', sub: `Instead of ${params.breast_fractions_long} over three weeks. Whole breast or chest wall, no nodes.` };
 }
 
@@ -62,11 +62,12 @@ export function Rail({ s, update }: { s: UiState; update: (p: Partial<UiState>) 
       <div className="rail-block">
         <p className="kicker">The lever</p>
         <button className="lever" role="switch" aria-checked={lever} data-testid="lever" onClick={() => update({ levers: { ...s.levers, [s.indication]: !lever } })}>
-          <span className="lever-track" aria-hidden />
-          <span>
-            <span className="lever-text" style={{ display: 'block' }}>{copy.label}</span>
-            <span className="lever-sub" style={{ display: 'block' }}>{copy.sub}</span>
+          <span className="lever-state">
+            <span className="lever-track" aria-hidden />
+            {lever ? 'On' : 'Off'}
           </span>
+          <span className="lever-text">{copy.label}</span>
+          <span className="lever-sub">{copy.sub}</span>
         </button>
         <p className="evidence" data-box="evidence">
           <FactText id={s.indication === 'bone' ? 'evidence_bone_short' : 'evidence_breast_short'} />
@@ -75,7 +76,7 @@ export function Rail({ s, update }: { s: UiState; update: (p: Partial<UiState>) 
 
       <button className="drawer-open" aria-expanded={s.drawerOpen} onClick={() => update({ drawerOpen: !s.drawerOpen })} data-testid="assumptions-toggle">
         <span>Assumptions</span>
-        <span>{s.drawerOpen ? 'Close' : 'Open'}</span>
+        <span aria-hidden>{s.drawerOpen ? '−' : '+'}</span>
       </button>
 
       <div className="rail-foot">

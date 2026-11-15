@@ -57,7 +57,8 @@ export function NightIcons({ before, after, lever }: { before: number; after: nu
   return (
     <span className="nights" data-testid="night-icons" data-nights={oneDp(lever ? after : before)} aria-label={`${oneDp(lever ? after : before)} nights away`}>
       {Array.from({ length: slots }, (_, i) => (
-        <Moon key={i} fill={shown - i} color={lever ? '#00626a' : '#3c4242'} />
+        // Only the nights that remain turn teal; removed ones drain in graphite to an outline.
+        <Moon key={i} fill={shown - i} color={lever && i < after - 1e-6 ? '#00626a' : '#3c4242'} />
       ))}
     </span>
   );

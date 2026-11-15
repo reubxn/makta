@@ -6,9 +6,16 @@ export function FactText({ id, className }: { id: string; className?: string }) 
   const { data } = useData();
   const f = data.facts[id];
   if (!f) return null;
+  // Keep the last word and its marker together, and never break "non-inferior".
+  const text = f.text.replace(/non-/g, 'non\u2011');
+  const cut = text.lastIndexOf(' ');
   return (
     <span className={className}>
-      {f.text} <Prov kind={f.kind} ids={f.source_ids} note={f.note} />
+      {text.slice(0, cut + 1)}
+      <span className="nowrap">
+        {text.slice(cut + 1)}
+        <Prov kind={f.kind} ids={f.source_ids} note={f.note} />
+      </span>
     </span>
   );
 }

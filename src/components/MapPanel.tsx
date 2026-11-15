@@ -20,7 +20,7 @@ type BBox = [number, number, number, number];
 type Mode = 'flat' | 'tilt45' | 'tilt40';
 
 const FINLAND: MapViewState = { longitude: 25.8, latitude: 65.0, zoom: 4.4, pitch: 0, bearing: 0 };
-const ELEV_PER_NIGHT = 8_500; // metres of "burden terrain" per night away per patient
+const ELEV_PER_NIGHT = 6_500; // metres of "burden terrain" per night away per patient
 const FLIGHT_ZOOM = 7.0;
 const FLIGHT_PITCH = 55;
 const FLY_IN_MS = 1200;
@@ -30,7 +30,7 @@ const TRIP_PERIOD_MS = 3600;
 const WATER: [number, number, number] = [214, 226, 230];
 const LAND: [number, number, number] = [238, 238, 235];
 const RAMP_LO = [247, 246, 242];
-const RAMP_HI = [201, 193, 178];
+const RAMP_HI = [180, 171, 154];
 const TERRAIN_HI = [170, 160, 142];
 function ramp(t: number, hi = RAMP_HI): [number, number, number] {
   const x = Math.max(0, Math.min(1, t));
@@ -43,7 +43,7 @@ const CONTROLLER = { dragRotate: true, touchRotate: true };
 const DECK_STYLE = { position: 'absolute', inset: '0' } as const;
 const DEPTH_ALWAYS = { depthCompare: 'always' } as never;
 const LAKES_TERRAIN = { depthCompare: 'less-equal', depthBias: -1, depthBiasSlopeScale: -4 } as never;
-const MATERIAL = { ambient: 0.72, diffuse: 0.4, shininess: 4, specularColor: [0, 0, 0] as [number, number, number] };
+const MATERIAL = { ambient: 0.85, diffuse: 0.25, shininess: 4, specularColor: [0, 0, 0] as [number, number, number] };
 // Soft, neutral light: tops stay close to the legend colour, walls a little darker.
 const LIGHTING = [
   new LightingEffect({
@@ -57,6 +57,7 @@ const COUNTY_LINE: [number, number, number, number] = [60, 66, 66, 70];
 const ROUTE_LINE: [number, number, number, number] = [60, 66, 66, 140];
 const TEAL_A: [number, number, number, number] = [0, 98, 106, 255];
 const CASING: [number, number, number, number] = [255, 255, 255, 230];
+const GHOST: [number, number, number, number] = [0, 98, 106, 90];
 const HIGHLIGHT: [number, number, number, number] = [0, 98, 106, 55];
 
 const METRICS: [MetricKey, string][] = [
@@ -169,10 +170,10 @@ interface Box {
 }
 const hit = (a: Box, b: Box, m = 2) => a.x < b.x + b.w + m && b.x < a.x + a.w + m && a.y < b.y + b.h + m && b.y < a.y + a.h + m;
 let measureCtx: CanvasRenderingContext2D | null = null;
-function textWidth(s: string): number {
+function textWidth(s: string, px = 12): number {
   if (!measureCtx) measureCtx = document.createElement('canvas').getContext('2d');
-  if (!measureCtx) return s.length * 7.2;
-  measureCtx.font = '700 12px "Helvetica Neue", Helvetica, Arial, sans-serif';
+  if (!measureCtx) return s.length * px * 0.6;
+  measureCtx.font = `700 ${px}px "Helvetica Neue", Helvetica, Arial, sans-serif`;
   return measureCtx.measureText(s).width;
 }
 
@@ -335,6 +336,10 @@ export function MapPanel(props: Props) {
     }
     return out;
   }, [data, indication, params]);
+  const terrainData = useMemo(
+    () => ({ type: 'FeatureCollection', features: data.geo.features.filter((f) => (longNightsByCode[f.properties!.code] ?? 0) > 0) }) as GeoJSON.FeatureCollection,
+    [data, longNightsByCode],
+  );
   const sinkRatio = useMemo(() => {
     const stayer = { road_km: params.commute_threshold_km + 1, drive_min: 60 };
     const long = perPatient(stayer, indication, 'long', params).nights;
@@ -377,6 +382,7 @@ export function MapPanel(props: Props) {
   const selBurden = data.routes[selected] ? currentBurden(data.routes[selected], indication, lever, params) : null;
   const nDots = selBurden ? tripDots(selBurden) : 0;
   const selPathData = useMemo(() => (selGeom ? [selGeom.path] : []), [selGeom]);
+  const ghostData = useMemo(() => (fold && geoms[selected] ? [geoms[selected].path.map((p) => [p[0], p[1]] as LonLat)] : []), [fold, geoms, selected]);
 
   const selFeature = useMemo(
     () => ({ type: 'FeatureCollection', features: data.geo.features.filter((f) => f.properties!.code === selected) }) as GeoJSON.FeatureCollection,
@@ -412,10 +418,10 @@ export function MapPanel(props: Props) {
     }),
     // Flat choropleth and the extruded "burden terrain" are separate layers, so neither ever changes
     // its vertex layout mid-transition (toggling `extruded` on one layer garbles attribute transitions).
+    // The flat choropleth stays under the terrain, so zero-height municipalities keep their fill and borders.
     new GeoJsonLayer({
       id: 'municipalities',
       data: data.geo,
-      visible: !terrainOn,
       filled: true,
       stroked: true,
       getFillColor: (f: GeoJSON.Feature) => ramp((valueByCode[f.properties!.code] ?? 0) / maxLong),
@@ -432,7 +438,7 @@ export function MapPanel(props: Props) {
     (terrain || terrainOn) &&
     new GeoJsonLayer({
       id: 'terrain',
-      data: data.geo,
+      data: terrainData,
       visible: terrainOn,
       filled: true,
       stroked: false,
@@ -453,7 +459,8 @@ export function MapPanel(props: Props) {
       data: data.counties,
       filled: false,
       stroked: true,
-      visible: !terrainOn,
+      // County outlines ring every skerry in the south-west archipelago: only draw them zoomed in.
+      visible: !terrainOn && (viewState.zoom ?? 0) >= 6,
       getLineColor: COUNTY_LINE,
       lineWidthMinPixels: 1,
     }),
@@ -488,6 +495,17 @@ export function MapPanel(props: Props) {
       stroked: true,
       getLineColor: TEAL_A,
       lineWidthMinPixels: 2,
+      parameters: DEPTH_ALWAYS,
+    }),
+    // With fold on, the folded-away part of the selected route stays as a faint ghost.
+    new PathLayer({
+      id: 'selected-route-ghost',
+      visible: !terrainOn && fold,
+      data: ghostData,
+      getPath: (d: LonLat[]) => d,
+      getColor: GHOST,
+      getWidth: 1.5,
+      widthUnits: 'pixels',
       parameters: DEPTH_ALWAYS,
     }),
     new PathLayer({
@@ -543,8 +561,8 @@ export function MapPanel(props: Props) {
       const p = pointAt(geoms[selected], flight.s);
       const [x, y] = vp.project(p);
       const text = `${fmt(flight.s * r.road_km)} km · ${fmtDrive(flight.s * r.drive_min)}`;
-      const w = textWidth(text) + 12;
-      const h = 20;
+      const w = textWidth(text, 16) + 18;
+      const h = 26;
       const cands: Box[] = [
         { x: x + 12, y: y - h - 6, w, h },
         { x: x - w - 12, y: y - h - 6, w, h },

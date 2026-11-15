@@ -62,7 +62,7 @@ export function MemoTab({ county, run, onCounty, onRun }: { county: string; run:
             <select id="county" value={county} onChange={(e) => onCounty(e.target.value)}>
               {counties.map(([code, name]) => (
                 <option key={code} value={code}>
-                  {name}
+                  {name.replace(/ wellbeing services county$/i, '')}
                 </option>
               ))}
             </select>

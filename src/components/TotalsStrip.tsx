@@ -45,7 +45,7 @@ export function TotalsStrip({ params, leverOn, boneLever, indication, highlight 
           <Prov kind="calculated" ids={[...data.routesMeta.source_ids, 'statfin_population', ...boneIds]} note="Expected nights away per course for a patient beyond the commuting threshold, including retreatment. The same for every such municipality, because stayers spend the treatment weeknights near the unit." />
         </div>
         <div className="hero-stat">
-          <span className="l">nights away per course, multi-session → single 8 Gy</span>
+          <span className="l">nights away per course, multi-session → single 8 Gy</span>
         </div>
         <p className="totals-lede">
           For a patient in any of the {far.length} municipalities more than {params.commute_threshold_km} km by road from a unit, home to {farPop.toLocaleString('en-GB')} people.
@@ -95,22 +95,30 @@ export function TotalsStrip({ params, leverOn, boneLever, indication, highlight 
         <div>
           <div className="v">
             <Counter v={v.roundTrips} />
+            <Prov kind="calculated" ids={ids} note="Round trips: commuters travel for every session, stayers once a treatment week, plus one planning visit." />
           </div>
           <div className="l">round trips</div>
         </div>
         <div>
           <div className="v">
             <Counter v={v.hours} />
+            <Prov kind="calculated" ids={ids} note="Hours on the road: round trips × 2 × OSRM drive time from the municipality centre." />
           </div>
           <div className="l">hours on the road</div>
         </div>
       </div>
       <p className="totals-foot" data-testid="breast-cases">
-        From {data.cases.national_cases.toLocaleString('en-GB')} new cases in women ({data.cases.year}){casesMarker}.{' '}
+        From {data.cases.national_cases.toLocaleString('en-GB')} new cases in women{' '}
+        <span className="nowrap">
+          ({data.cases.year}){casesMarker}.
+        </span>{' '}
         {goal && (
           <>
-            {goal.short}
-            <Prov kind="sourced" ids={goal.source_ids} note={`${goal.fi} — ${goal.en}`} />.
+            {goal.short.split(' ').slice(0, -1).join(' ')}{' '}
+            <span className="nowrap">
+              {goal.short.split(' ').slice(-1)[0]}
+              <Prov kind="sourced" ids={goal.source_ids} note={`${goal.fi} — ${goal.en}`} />.
+            </span>
           </>
         )}
       </p>

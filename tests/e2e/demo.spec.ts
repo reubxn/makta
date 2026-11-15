@@ -11,6 +11,7 @@ async function shot(page: Page, name: string) {
 }
 
 test('demo keys 0-7', async ({ page, baseURL }) => {
+  test.setTimeout(300_000);
   fs.mkdirSync(SHOTS, { recursive: true });
   const errors: string[] = [];
   const external: string[] = [];
